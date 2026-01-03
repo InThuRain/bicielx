@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <title>Uso de BiciElx vs lluvia y viento</title>
@@ -11,37 +12,46 @@
       --accent: #0f766e;
       --accent2: #14b8a6;
       --text: #111827;
-      --shadow: 0 4px 10px rgba(0,0,0,0.06);
+      --shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
       --radius-lg: 18px;
       --radius-sm: 10px;
     }
-    * { box-sizing: border-box; }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: var(--bg);
       color: var(--text);
     }
+
     header {
       background: linear-gradient(120deg, var(--accent), var(--accent2));
       color: white;
       padding: 1.7rem 1rem;
       box-shadow: var(--shadow);
     }
+
     .header-inner {
       max-width: 1200px;
       margin: 0 auto;
     }
+
     h1 {
       margin: 0;
       font-size: 1.9rem;
       letter-spacing: 0.04em;
     }
+
     .subtitle {
       margin: 0.4rem 0 0;
       opacity: 0.9;
       font-size: 0.95rem;
     }
+
     main {
       max-width: 1200px;
       margin: 1.5rem auto 2.5rem;
@@ -50,26 +60,31 @@
       flex-direction: column;
       gap: 1.6rem;
     }
+
     section h2 {
       margin: 0 0 0.7rem;
       font-size: 1.4rem;
     }
+
     .section-desc {
       font-size: 0.9rem;
       color: #4b5563;
       margin-bottom: 0.6rem;
     }
+
     .section-desc code {
-      background: rgba(148,163,184,0.15);
+      background: rgba(148, 163, 184, 0.15);
       padding: 0.1rem 0.3rem;
       border-radius: 4px;
       font-size: 0.85rem;
     }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 1.2rem;
     }
+
     .card {
       background: var(--card-bg);
       border-radius: var(--radius-lg);
@@ -81,53 +96,62 @@
       cursor: pointer;
       transition: transform 0.12s ease, box-shadow 0.12s ease;
     }
+
     .card:hover {
       transform: translateY(-2px);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
     }
+
     .card img {
       width: 100%;
       height: auto;
       border-radius: var(--radius-sm);
       display: block;
     }
+
     .card-title {
       font-size: 0.95rem;
       font-weight: 600;
     }
+
     .card-desc {
       font-size: 0.85rem;
       color: #6b7280;
     }
+
     .footer-note {
       font-size: 0.8rem;
       color: #6b7280;
       margin-top: 0.5rem;
       text-align: right;
     }
+
     footer {
       font-size: 0.8rem;
       color: #6b7280;
       text-align: center;
       padding: 1rem 0 1.2rem;
     }
+
     .modal {
       position: fixed;
       inset: 0;
-      background: rgba(0,0,0,0.78);
+      background: rgba(0, 0, 0, 0.78);
       display: none;
       justify-content: center;
       align-items: center;
       z-index: 1000;
       padding: 1rem;
     }
+
     .modal img {
       max-width: 96vw;
       max-height: 92vh;
       border-radius: var(--radius-sm);
-      box-shadow: 0 0 18px rgba(0,0,0,0.7);
+      box-shadow: 0 0 18px rgba(0, 0, 0, 0.7);
       background: #000;
     }
+
     .modal-close {
       position: fixed;
       top: 18px;
@@ -138,137 +162,142 @@
       font-weight: 600;
       z-index: 1001;
     }
+
     .modal-close:hover {
       color: #e5e7eb;
     }
+
     @media (prefers-color-scheme: dark) {
       body {
         background: #020617;
         color: #e5e7eb;
       }
+
       .card {
         background: #020617;
-        box-shadow: 0 4px 16px rgba(0,0,0,0.7);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7);
       }
+
       .card-desc,
       .footer-note {
         color: #9ca3af;
       }
+
       footer {
         color: #9ca3af;
       }
     }
   </style>
 </head>
+
 <body>
-<header>
-  <div class="header-inner">
-    <h1>Uso de BiciElx vs lluvia y viento</h1>
-    <p class="subtitle">
-      Cómo cambian los usos diarios según la lluvia y la intensidad del viento, a partir de toda la serie disponible.
-    </p>
-  </div>
-</header>
-<main>
-  <section>
-    <h2>Resumen gráfico</h2>
-    <p class="section-desc">
-      Estos gráficos muestran el uso medio diario de BiciElx en función de la lluvia y del viento.
-      Las tablas detalladas se han guardado en
-      <code>tabla_lluvia_usos.csv</code>,
-      <code>frecuencia_lluvia.csv</code>,
-      <code>tabla_viento_usos.csv</code> y
-      <code>frecuencia_viento.csv</code>.
-    </p>
-    <div class="grid">
-
-      <article class="card" onclick="openModal('lluvia_usos_promedio.png')">
-        <img src="lluvia_usos_promedio.png" alt="Usos promedio por categoría de lluvia">
-        <div class="card-title">Usos promedio por categoría de lluvia</div>
-        <div class="card-desc">Comparación del uso diario medio de BiciElx según la cantidad de lluvia diaria.</div>
-      </article>
-
-      <article class="card" onclick="openModal('viento_usos_promedio.png')">
-        <img src="viento_usos_promedio.png" alt="Usos promedio por categoría de viento">
-        <div class="card-title">Usos promedio por categoría de viento</div>
-        <div class="card-desc">Comparación del uso diario medio de BiciElx según la intensidad del viento (km/h).</div>
-      </article>
-
+  <header>
+    <div class="header-inner">
+      <h1>Uso de BiciElx vs lluvia y viento</h1>
+      <p class="subtitle">
+        Cómo cambian los usos diarios según la lluvia y la intensidad del viento, a partir de toda la serie disponible.
+      </p>
     </div>
-    <p class="footer-note">
-      Haz clic sobre cualquier gráfico para verlo en grande.
-    </p>
-  </section>
-</main>
+  </header>
+  <main>
+    <section>
+      <h2>Resumen gráfico</h2>
+      <p class="section-desc">
+        Estos gráficos muestran el uso medio diario de BiciElx en función de la lluvia y del viento.
+      </p>
+      <div class="grid">
 
-<div id="imageModal" class="modal" onclick="closeModal()">
-  <span class="modal-close" onclick="closeModal()">×</span>
-  <img id="modalImg" src="">
-</div>
+        <article class="card" onclick="openModal('lluvia_usos_promedio.png')">
+          <img src="lluvia_usos_promedio.png" alt="Usos promedio por categoría de lluvia">
+          <div class="card-title">Usos promedio por categoría de lluvia</div>
+          <div class="card-desc">Comparación del uso diario medio de BiciElx según la cantidad de lluvia diaria.</div>
+        </article>
 
-<script>
-  function openModal(src) {
-    var modal = document.getElementById("imageModal");
-    var img = document.getElementById("modalImg");
-    img.src = src;
-    modal.style.display = "flex";
-  }
-  function closeModal() {
-    var modal = document.getElementById("imageModal");
-    modal.style.display = "none";
-  }
-  document.addEventListener("DOMContentLoaded", function() {
-    var img = document.getElementById("modalImg");
-    img.addEventListener("click", function(event) {
-      event.stopPropagation();
+        <article class="card" onclick="openModal('viento_usos_promedio.png')">
+          <img src="viento_usos_promedio.png" alt="Usos promedio por categoría de viento">
+          <div class="card-title">Usos promedio por categoría de viento</div>
+          <div class="card-desc">Comparación del uso diario medio de BiciElx según la intensidad del viento (km/h).
+          </div>
+        </article>
+
+      </div>
+      <p class="footer-note">
+        Haz clic sobre cualquier gráfico para verlo en grande.
+      </p>
+    </section>
+  </main>
+
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="modal-close" onclick="closeModal()">×</span>
+    <img id="modalImg" src="">
+  </div>
+
+  <script>
+    function openModal(src) {
+      var modal = document.getElementById("imageModal");
+      var img = document.getElementById("modalImg");
+      img.src = src;
+      modal.style.display = "flex";
+    }
+    function closeModal() {
+      var modal = document.getElementById("imageModal");
+      modal.style.display = "none";
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+      var img = document.getElementById("modalImg");
+      img.addEventListener("click", function (event) {
+        event.stopPropagation();
+      });
     });
-  });
-</script>
+  </script>
 
-<footer>
-  Página generada automáticamente a partir de los datos de uso y meteorología de BiciElx.
-</footer>
-
+  <footer>
+    Página generada automáticamente a partir de los datos de uso y meteorología de BiciElx.
+  </footer>
 
 
-<link href='https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap' rel='stylesheet'>
-<style>
+
+  <link href='https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap' rel='stylesheet'>
+  <style>
     .home-button {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #9acd32;
-        color: white;
-        padding: 10px 15px;
-        border-radius: 8px;
-        text-decoration: none;
-        font-family: 'Outfit', sans-serif;
-        font-weight: 600;
-        z-index: 10000;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        border: 1px solid rgba(255,255,255,0.2);
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #9acd32;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      z-index: 10000;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
     }
+
     .home-button:hover {
-        background-color: #6b8e23;
-        transform: translateY(-2px);
-        box-shadow: 0 6px 15px rgba(0,0,0,0.4);
-        color: white;
+      background-color: #6b8e23;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+      color: white;
     }
+
     @media (max-width: 768px) {
-        .home-button {
-            bottom: 15px;
-            right: 15px;
-            padding: 8px 12px;
-            font-size: 14px;
-        }
+      .home-button {
+        bottom: 15px;
+        right: 15px;
+        padding: 8px 12px;
+        font-size: 14px;
+      }
     }
-</style>
-<a href='../index.html' class='home-button'>
+  </style>
+  <a href='../index.html' class='home-button'>
     <span>&#x1F3E0;</span> Inicio
-</a>
+  </a>
 </body>
+
 </html>
