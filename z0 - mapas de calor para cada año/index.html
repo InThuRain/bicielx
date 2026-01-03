@@ -231,5 +231,46 @@
   tipoRadios.forEach(r => r.addEventListener('change', updateMap));
 </script>
 
+
+<!-- Navigation Home Button -->
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap" rel="stylesheet">
+<style>
+    .home-button {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        background-color: #9acd32;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-family: "Outfit", sans-serif;
+        font-weight: 600;
+        z-index: 10000;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid rgba(255,255,255,0.2);
+    }
+    .home-button:hover {
+        background-color: #6b8e23;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+        color: white;
+    }
+    @media (max-width: 768px) {
+        .home-button {
+            top: 10px;
+            left: 10px;
+            padding: 8px 12px;
+            font-size: 14px;
+        }
+    }
+</style>
+<a href="../index.html" class="home-button">
+    <span>��</span> Inicio
+</a>
 </body>
 </html>
