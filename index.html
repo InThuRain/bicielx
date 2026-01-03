@@ -97,16 +97,35 @@
         .card {
             background: var(--card-bg);
             border-radius: 1rem;
-            padding: 1.5rem;
             border: 1px solid rgba(255, 255, 255, 0.05);
             transition: var(--transition);
             text-decoration: none;
             color: inherit;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
             position: relative;
             overflow: hidden;
+        }
+
+        .card-thumb {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            transition: var(--transition);
+            background: #000;
+        }
+
+        .card:hover .card-thumb {
+            transform: scale(1.05);
+        }
+
+        .card-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .card::before {
@@ -119,6 +138,7 @@
             background: var(--primary);
             opacity: 0;
             transition: var(--transition);
+            z-index: 10;
         }
 
         .card:hover {
@@ -197,20 +217,28 @@
             <div class="card-list">
                 <a href="01 - evolucion mensual y anual/01 - bicielx_evolucion del sistema_mensual_y_anual con gráficos interactivos.html"
                     class="card">
-                    <div>
-                        <div class="card-title">Evolución Mensual y Anual</div>
-                        <div class="card-desc">Gráficos interactivos sobre la evolución del sistema, media móvil y
-                            estaciones activas.</div>
+                    <img src="01 - evolucion mensual y anual/01 - Usos por mes del sistema, media movil 12m y estaciones activas por mes.png"
+                        class="card-thumb" alt="Miniatura Evolución Mensual">
+                    <div class="card-content">
+                        <div>
+                            <div class="card-title">Evolución Mensual y Anual</div>
+                            <div class="card-desc">Gráficos interactivos sobre la evolución del sistema, media móvil y
+                                estaciones activas.</div>
+                        </div>
+                        <div class="card-footer">Ver Gráficos <span>→</span></div>
                     </div>
-                    <div class="card-footer">Ver Gráficos <span>→</span></div>
                 </a>
                 <a href="02 - cambio de año a año en el sistema/index.html" class="card">
-                    <div>
-                        <div class="card-title">Variación Interanual (YoY)</div>
-                        <div class="card-desc">Análisis de crecimiento y cambios porcentuales entre años consecutivos.
+                    <img src="02 - cambio de año a año en el sistema/yoy_serie_completa.png" class="card-thumb"
+                        alt="Miniatura YoY">
+                    <div class="card-content">
+                        <div>
+                            <div class="card-title">Variación Interanual (YoY)</div>
+                            <div class="card-desc">Análisis de crecimiento y cambios porcentuales entre años
+                                consecutivos.</div>
                         </div>
+                        <div class="card-footer">Ver Análisis <span>→</span></div>
                     </div>
-                    <div class="card-footer">Ver Análisis <span>→</span></div>
                 </a>
             </div>
         </section>
@@ -220,54 +248,81 @@
             <h2 class="category-title">🕒 Patrones de Uso y Hábitos</h2>
             <div class="card-list">
                 <a href="03 - media de uso del sistema por meses y por dias/index.html" class="card">
-                    <div>
-                        <div class="card-title">Uso por Meses y Días</div>
-                        <div class="card-desc">Promedios históricos de utilización según la temporalidad.</div>
+                    <img src="03 - media de uso del sistema por meses y por dias/avg_monthly_uses.png"
+                        class="card-thumb" alt="Miniatura Uso Mensual">
+                    <div class="card-content">
+                        <div>
+                            <div class="card-title">Uso por Meses y Días</div>
+                            <div class="card-desc">Promedios históricos de utilización según la temporalidad.</div>
+                        </div>
+                        <div class="card-footer">Ver Datos <span>→</span></div>
                     </div>
-                    <div class="card-footer">Ver Datos <span>→</span></div>
                 </a>
                 <a href="04 - promedio de uso segun dia de la semana - historico y 2025/index.html" class="card">
-                    <div>
-                        <div class="card-title">Uso por Día de la Semana</div>
-                        <div class="card-desc">Comparativa entre días laborables y fines de semana.</div>
+                    <img src="04 - promedio de uso segun dia de la semana - historico y 2025/weekday_usage_all_vs_2025.png"
+                        class="card-thumb" alt="Miniatura Semana">
+                    <div class="card-content">
+                        <div>
+                            <div class="card-title">Uso por Día de la Semana</div>
+                            <div class="card-desc">Comparativa entre días laborables y fines de semana.</div>
+                        </div>
+                        <div class="card-footer">Ver Gráficos <span>→</span></div>
                     </div>
-                    <div class="card-footer">Ver Gráficos <span>→</span></div>
                 </a>
                 <a href="08 - frecuencia de uso por horas según estacion destino/index.html" class="card">
-                    <div>
-                        <div class="card-title">Frecuencia Horaria (Destino)</div>
-                        <div class="card-desc">Distribución de llegadas por franja horaria y estación.</div>
+                    <img src="08 - frecuencia de uso por horas según estacion destino/000 - uso_global_destino_por_hora.png"
+                        class="card-thumb" alt="Miniatura Destino Horas">
+                    <div class="card-content">
+                        <div>
+                            <div class="card-title">Frecuencia Horaria (Destino)</div>
+                            <div class="card-desc">Distribución de llegadas por franja horaria y estación.</div>
+                        </div>
+                        <div class="card-footer">Ver Mapa Horario <span>→</span></div>
                     </div>
-                    <div class="card-footer">Ver Mapa Horario <span>→</span></div>
                 </a>
                 <a href="09 - frecuencia de uso por horas según estacion origen/index.html" class="card">
-                    <div>
-                        <div class="card-title">Frecuencia Horaria (Origen)</div>
-                        <div class="card-desc">Distribución de salidas por franja horaria y estación.</div>
+                    <img src="09 - frecuencia de uso por horas según estacion origen/000 - uso_global_por_hora.png"
+                        class="card-thumb" alt="Miniatura Origen Horas">
+                    <div class="card-content">
+                        <div>
+                            <div class="card-title">Frecuencia Horaria (Origen)</div>
+                            <div class="card-desc">Distribución de salidas por franja horaria y estación.</div>
+                        </div>
+                        <div class="card-footer">Ver Mapa Horario <span>→</span></div>
                     </div>
-                    <div class="card-footer">Ver Mapa Horario <span>→</span></div>
                 </a>
                 <a href="03b - uso medio mensual por estacion/index.html" class="card">
-                    <div>
-                        <div class="card-title">Promedio Mensual por Estación</div>
-                        <div class="card-desc">Uso medio detallado para cada punto de préstamo mes a mes.</div>
+                    <img src="03b - uso medio mensual por estacion/006 - ajuntament.png" class="card-thumb"
+                        alt="Miniatura Estación">
+                    <div class="card-content">
+                        <div>
+                            <div class="card-title">Promedio Mensual por Estación</div>
+                            <div class="card-desc">Uso medio detallado para cada punto de préstamo mes a mes.</div>
+                        </div>
+                        <div class="card-footer">Ver Datos <span>→</span></div>
                     </div>
-                    <div class="card-footer">Ver Datos <span>→</span></div>
                 </a>
                 <a href="16b - histograma duracion de viajes/index.html" class="card">
-                    <div>
-                        <div class="card-title">Duración de los Viajes</div>
-                        <div class="card-desc">Histograma con la distribución del tiempo de uso de las bicicletas.</div>
+                    <img src=".thumbnails/16b_histograma.png" class="card-thumb" alt="Miniatura Histograma">
+                    <div class="card-content">
+                        <div>
+                            <div class="card-title">Duración de los Viajes</div>
+                            <div class="card-desc">Histograma con la distribución del tiempo de uso de las bicicletas.
+                            </div>
+                        </div>
+                        <div class="card-footer">Ver Histograma <span>→</span></div>
                     </div>
-                    <div class="card-footer">Ver Histograma <span>→</span></div>
                 </a>
                 <a href="16c - analisis scatter del tiempo medio entre estaciones/index.html" class="card">
-                    <div>
-                        <div class="card-title">Análisis de Tiempo entre Estaciones</div>
-                        <div class="card-desc">Scatter plot del tiempo medio de trayecto entre los diferentes puntos.
+                    <img src=".thumbnails/16c_scatter.png" class="card-thumb" alt="Miniatura Scatter">
+                    <div class="card-content">
+                        <div>
+                            <div class="card-title">Análisis de Tiempo entre Estaciones</div>
+                            <div class="card-desc">Scatter plot del tiempo medio de trayecto entre los diferentes
+                                puntos.</div>
                         </div>
+                        <div class="card-footer">Ver Análisis <span>→</span></div>
                     </div>
-                    <div class="card-footer">Ver Análisis <span>→</span></div>
                 </a>
             </div>
         </section>
@@ -277,108 +332,156 @@
             <h2 class="category-title">🗺️ Análisis Geoespacial</h2>
             <div class="card-list">
                 <a href="12 - mapas variados de usos de las estaciones/index.html" class="card">
-                    <div>
-                        <div class="card-title">Uso de Estaciones</div>
-                        <div class="card-desc">Mapas detallados de salidas y llegadas para cada año del servicio.</div>
+                    <img src=".thumbnails/12_mapas.png" class="card-thumb" alt="Miniatura Mapas">
+                    <div class="card-content">
+                        <div>
+                            <div class="card-title">Uso de Estaciones</div>
+                            <div class="card-desc">Mapas detallados de salidas y llegadas para cada año del servicio.
+                            </div>
+                        </div>
+                        <div class="card-footer">Explorar Mapas <span>→</span></div>
                     </div>
-                    <div class="card-footer">Explorar Mapas <span>→</span></div>
                 </a>
                 <a href="17 - prestamos entre estaciones - mapa de flujos/index.html" class="card">
-                    <div>
-                        <div class="card-title">Mapa de Flujos (O-D)</div>
-                        <div class="card-desc">Visualización de las conexiones y trayectos más comunes entre estaciones.
+                    <img src=".thumbnails/17_flujos.png" class="card-thumb" alt="Miniatura Flujos">
+                    <div class="card-content">
+                        <div>
+                            <div class="card-title">Mapa de Flujos (O-D)</div>
+                            <div class="card-desc">Visualización de las conexiones y trayectos más comunes entre
+                                estaciones.</div>
                         </div>
+                        <div class="card-footer">Ver Flujos <span>→</span></div>
                     </div>
-                    <div class="card-footer">Ver Flujos <span>→</span></div>
                 </a>
                 <a href="z0 - mapas de calor para cada año/index.html" class="card">
-                    <div>
-                        <div class="card-title">Mapas de Calor</div>
-                        <div class="card-desc">Densidad de uso en la ciudad visualizada mediante heatmaps anuales.</div>
+                    <img src=".thumbnails/z0_calor.png" class="card-thumb" alt="Miniatura Calor">
+                    <div class="card-content">
+                        <div>
+                            <div class="card-title">Mapas de Calor</div>
+                            <div class="card-desc">Densidad de uso en la ciudad visualizada mediante heatmaps anuales.
+                            </div>
+                        </div>
+                        <div class="card-footer">Ver Calor <span>→</span></div>
                     </div>
-                    <div class="card-footer">Ver Calor <span>→</span></div>
                 </a>
                 <a href="13 - maps_variacion_anual uso _media_2015_2025/index.html" class="card">
-                    <div>
-                        <div class="card-title">Variación Media de Uso</div>
-                        <div class="card-desc">Mapas de la evolución de la media de uso por estación a lo largo de los
-                            años.</div>
+                    <img src=".thumbnails/13_media.png" class="card-thumb" alt="Miniatura Variación Media">
+                    <div class="card-content">
+                        <div>
+                            <div class="card-title">Variación Media de Uso</div>
+                            <div class="card-desc">Mapas de la evolución de la media de uso por estación a lo largo de
+                                los años.</div>
+                        </div>
+                        <div class="card-footer">Ver Mapas <span>→</span></div>
                     </div>
-                    <div class="card-footer">Ver Mapas <span>→</span></div>
                 </a>
                 <a href="14 - maps_variacion anuel _freq_relativa 2015_2025/index.html" class="card">
-                    <div>
-                        <div class="card-title">Variación de Frecuencia Relativa</div>
-                        <div class="card-desc">Evolución de la importancia de cada estación en el sistema global.</div>
+                    <img src=".thumbnails/14_freq_relativa.png" class="card-thumb" alt="Miniatura Freq Relativa">
+                    <div class="card-content">
+                        <div>
+                            <div class="card-title">Variación de Frecuencia Relativa</div>
+                            <div class="card-desc">Evolución de la importancia de cada estación en el sistema global.
+                            </div>
+                        </div>
+                        <div class="card-footer">Ver Variación <span>→</span></div>
                     </div>
-                    <div class="card-footer">Ver Variación <span>→</span></div>
                 </a>
                 <a href="15 - mapa estaciones donantes y receptoras - histórico y 2025/index.html" class="card">
-                    <div>
-                        <div class="card-title">Estaciones Donantes y Receptoras</div>
-                        <div class="card-desc">Análisis del saldo neto de bicicletas por estación (entradas vs salidas).
+                    <img src=".thumbnails/15_donantes.png" class="card-thumb" alt="Miniatura Donantes">
+                    <div class="card-content">
+                        <div>
+                            <div class="card-title">Estaciones Donantes y Receptoras</div>
+                            <div class="card-desc">Análisis del saldo neto de bicicletas por estación (entradas vs
+                                salidas).</div>
                         </div>
+                        <div class="card-footer">Ver Balance <span>→</span></div>
                     </div>
-                    <div class="card-footer">Ver Balance <span>→</span></div>
                 </a>
             </div>
         </section>
 
         <!-- Rankings -->
         <section class="category-section">
-            <h2 class="category-title">🏆 Rankings y Rankings</h2>
+            <h2 class="category-title">🏆 Rankings y Estadísticas</h2>
             <div class="card-list">
                 <a href="06 - Rankings anuales de Prestamos por Estacion/index.html" class="card">
-                    <div>
-                        <div class="card-title">Top Estaciones por Año</div>
-                        <div class="card-desc">Clasificación de las estaciones más utilizadas en cada ejercicio.</div>
+                    <img src="06 - Rankings anuales de Prestamos por Estacion/2024_estaciones_stack_rank_1de2.png"
+                        class="card-thumb" alt="Miniatura Rankings">
+                    <div class="card-content">
+                        <div>
+                            <div class="card-title">Top Estaciones por Año</div>
+                            <div class="card-desc">Clasificación de las estaciones más utilizadas en cada ejercicio.
+                            </div>
+                        </div>
+                        <div class="card-footer">Ver Rankings <span>→</span></div>
                     </div>
-                    <div class="card-footer">Ver Rankings <span>→</span></div>
                 </a>
                 <a href="12b - top 20 de estaciones por uso origen destino y global - total y 2025/index.html"
                     class="card">
-                    <div>
-                        <div class="card-title">Top 20 Detallado</div>
-                        <div class="card-desc">Las estaciones líderes en origen, destino y uso global.</div>
+                    <img src="12b - top 20 de estaciones por uso origen destino y global - total y 2025/top20_uso_total_global.png"
+                        class="card-thumb" alt="Miniatura Top 20">
+                    <div class="card-content">
+                        <div>
+                            <div class="card-title">Top 20 Detallado</div>
+                            <div class="card-desc">Las estaciones líderes en origen, destino y uso global.</div>
+                        </div>
+                        <div class="card-footer">Ver Top 20 <span>→</span></div>
                     </div>
-                    <div class="card-footer">Ver Top 20 <span>→</span></div>
                 </a>
                 <a href="15b - top 20 estaciones donantes y receptoras absolutas y relativas/index.html" class="card">
-                    <div>
-                        <div class="card-title">Top Donantes y Receptoras</div>
-                        <div class="card-desc">Ranking de estaciones con mayor desequilibrio de flujo.</div>
+                    <img src="15b - top 20 estaciones donantes y receptoras absolutas y relativas/top20_donantes_absolutos.png"
+                        class="card-thumb" alt="Miniatura Top Donantes">
+                    <div class="card-content">
+                        <div>
+                            <div class="card-title">Top Donantes y Receptoras</div>
+                            <div class="card-desc">Ranking de estaciones con mayor desequilibrio de flujo.</div>
+                        </div>
+                        <div class="card-footer">Ver Top 20 <span>→</span></div>
                     </div>
-                    <div class="card-footer">Ver Top 20 <span>→</span></div>
                 </a>
                 <a href="05 - Uso mensual estaciones biciElx - usos totales y proporcion del sistema/index.html"
                     class="card">
-                    <div>
-                        <div class="card-title">Cuota de Mercado por Estación</div>
-                        <div class="card-desc">Proporción de usos de cada estación respecto al total mensual.</div>
+                    <img src=".thumbnails/05_cuota.png" class="card-thumb" alt="Miniatura Cuotas">
+                    <div class="card-content">
+                        <div>
+                            <div class="card-title">Cuota de Mercado por Estación</div>
+                            <div class="card-desc">Proporción de usos de cada estación respecto al total mensual.</div>
+                        </div>
+                        <div class="card-footer">Ver Cuotas <span>→</span></div>
                     </div>
-                    <div class="card-footer">Ver Cuotas <span>→</span></div>
                 </a>
                 <a href="16 - prestamos entre estaciones/index.html" class="card">
-                    <div>
-                        <div class="card-title">Conexiones Top</div>
-                        <div class="card-desc">Resumen de las rutas más frecuentes entre estaciones.</div>
+                    <img src=".thumbnails/16_conexiones.png" class="card-thumb" alt="Miniatura Conexiones">
+                    <div class="card-content">
+                        <div>
+                            <div class="card-title">Conexiones Top</div>
+                            <div class="card-desc">Resumen de las rutas más frecuentes entre estaciones.</div>
+                        </div>
+                        <div class="card-footer">Ver Conexiones <span>→</span></div>
                     </div>
-                    <div class="card-footer">Ver Conexiones <span>→</span></div>
                 </a>
                 <a href="18 - prestamos entre estaciones - top10 por estacion/index.html" class="card">
-                    <div>
-                        <div class="card-title">Top 10 Conexiones por Estación</div>
-                        <div class="card-desc">Destinos más frecuentes para cada una de las estaciones del sistema.
+                    <img src="18 - prestamos entre estaciones - top10 por estacion/006 - ajuntament.png"
+                        class="card-thumb" alt="Miniatura Top 10">
+                    <div class="card-content">
+                        <div>
+                            <div class="card-title">Top 10 Conexiones por Estación</div>
+                            <div class="card-desc">Destinos más frecuentes para cada una de las estaciones del sistema.
+                            </div>
                         </div>
+                        <div class="card-footer">Ver Conexiones <span>→</span></div>
                     </div>
-                    <div class="card-footer">Ver Conexiones <span>→</span></div>
                 </a>
                 <a href="z1 - top20_uso_total_mensual/index.html" class="card">
-                    <div>
-                        <div class="card-title">Evolución Top 20 Mensual</div>
-                        <div class="card-desc">Animación y gráficos de la evolución del ranking mes a mes.</div>
+                    <img src="z1 - top20_uso_total_mensual/top20_uso_total_2025-05.png" class="card-thumb"
+                        alt="Miniatura Top Mensual">
+                    <div class="card-content">
+                        <div>
+                            <div class="card-title">Evolución Top 20 Mensual</div>
+                            <div class="card-desc">Animación y gráficos de la evolución del ranking mes a mes.</div>
+                        </div>
+                        <div class="card-footer">Ver Evolución <span>→</span></div>
                     </div>
-                    <div class="card-footer">Ver Evolución <span>→</span></div>
                 </a>
             </div>
         </section>
@@ -388,25 +491,38 @@
             <h2 class="category-title">🌦️ Clima y Entorno</h2>
             <div class="card-list">
                 <a href="19 - usos promedio por grados de temperatura y lluvia/index.html" class="card">
-                    <div>
-                        <div class="card-title">Impacto de Temperatura y Lluvia</div>
-                        <div class="card-desc">Cómo afectan los grados y las precipitaciones al uso de las bicis.</div>
+                    <img src="19 - usos promedio por grados de temperatura y lluvia/usos_promedio_por_grado.png"
+                        class="card-thumb" alt="Miniatura Temperatura">
+                    <div class="card-content">
+                        <div>
+                            <div class="card-title">Impacto de Temperatura y Lluvia</div>
+                            <div class="card-desc">Cómo afectan los grados y las precipitaciones al uso de las bicis.
+                            </div>
+                        </div>
+                        <div class="card-footer">Ver Impacto <span>→</span></div>
                     </div>
-                    <div class="card-footer">Ver Impacto <span>→</span></div>
                 </a>
                 <a href="20 - usos promedio por grados de viento y lluvia/index.html" class="card">
-                    <div>
-                        <div class="card-title">Impacto de Viento y Lluvia</div>
-                        <div class="card-desc">Relación entre la velocidad del viento y la demanda del servicio.</div>
+                    <img src="20 - usos promedio por grados de viento y lluvia/viento_usos_promedio.png"
+                        class="card-thumb" alt="Miniatura Viento">
+                    <div class="card-content">
+                        <div>
+                            <div class="card-title">Impacto de Viento y Lluvia</div>
+                            <div class="card-desc">Relación entre la velocidad del viento y la demanda del servicio.
+                            </div>
+                        </div>
+                        <div class="card-footer">Ver Impacto <span>→</span></div>
                     </div>
-                    <div class="card-footer">Ver Impacto <span>→</span></div>
                 </a>
-                <a href="21 mapa proximidad estaciones/index.html" class="card">
-                    <div>
-                        <div class="card-title">Proximidad entre Estaciones</div>
-                        <div class="card-desc">Análisis de la densidad y cercanía de los puntos de préstamo.</div>
+                <a href="21 mapa proximidad estaciones/21 - mapa_proximidad_500m.html" class="card">
+                    <img src=".thumbnails/21_proximidad.png" class="card-thumb" alt="Miniatura Proximidad">
+                    <div class="card-content">
+                        <div>
+                            <div class="card-title">Proximidad entre Estaciones</div>
+                            <div class="card-desc">Análisis de la densidad y cercanía de los puntos de préstamo.</div>
+                        </div>
+                        <div class="card-footer">Ver Proximidad <span>→</span></div>
                     </div>
-                    <div class="card-footer">Ver Proximidad <span>→</span></div>
                 </a>
             </div>
         </section>
