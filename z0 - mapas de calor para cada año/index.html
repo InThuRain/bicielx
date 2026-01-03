@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
-  <title>Mapas de calor anuales – BiciElx</title>
+  <title>Mapas de intensidad de uso – BiciElx</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     :root {
@@ -11,11 +12,15 @@
       --accent: #0f766e;
       --accent2: #22c55e;
       --text: #111827;
-      --shadow: 0 4px 10px rgba(0,0,0,0.08);
+      --shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
       --radius-lg: 18px;
       --radius-sm: 10px;
     }
-    * { box-sizing: border-box; }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -25,26 +30,31 @@
       display: flex;
       flex-direction: column;
     }
+
     header {
       background: linear-gradient(120deg, var(--accent), var(--accent2));
       color: white;
       padding: 1.7rem 1rem;
       box-shadow: var(--shadow);
     }
+
     .header-inner {
       max-width: 1600px;
       margin: 0 auto;
     }
+
     h1 {
       margin: 0;
       font-size: 1.9rem;
       letter-spacing: 0.04em;
     }
+
     .subtitle {
       margin: 0.4rem 0 0;
       opacity: 0.9;
       font-size: 0.95rem;
     }
+
     main {
       width: 100%;
       max-width: 1600px;
@@ -55,18 +65,21 @@
       flex-direction: column;
       gap: 0.9rem;
     }
+
     .controls {
       display: flex;
       flex-wrap: wrap;
       gap: 0.75rem;
       align-items: center;
     }
+
     .control-group {
       display: flex;
       flex-direction: column;
       gap: 0.2rem;
       font-size: 0.85rem;
     }
+
     select {
       padding: 0.45rem 0.9rem;
       border-radius: 999px;
@@ -75,15 +88,18 @@
       background: white;
       min-width: 140px;
     }
+
     .radio-group {
       display: flex;
       gap: 0.8rem;
       align-items: center;
       font-size: 0.9rem;
     }
+
     .spacer {
       flex: 1;
     }
+
     .button-link {
       display: inline-flex;
       align-items: center;
@@ -96,10 +112,12 @@
       font-size: 0.85rem;
       background: #ecfdf5;
     }
+
     .button-link:hover {
       background: #0f766e;
       color: white;
     }
+
     .iframe-wrapper {
       background: var(--card-bg);
       border-radius: var(--radius-lg);
@@ -109,12 +127,14 @@
       min-height: 520px;
       width: 100%;
     }
+
     iframe {
       width: 100%;
       height: 100%;
       border: 0;
       border-radius: var(--radius-sm);
     }
+
     footer {
       font-size: 0.8rem;
       color: #6b7280;
@@ -122,29 +142,35 @@
       padding: 0.8rem 0 1.2rem;
       flex-shrink: 0;
     }
+
     @media (max-width: 768px) {
       .iframe-wrapper {
         height: 70vh;
         min-height: 420px;
       }
     }
+
     @media (prefers-color-scheme: dark) {
       body {
         background: #020617;
         color: #e5e7eb;
       }
+
       .iframe-wrapper {
         background: #020617;
-        box-shadow: 0 4px 16px rgba(0,0,0,0.7);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7);
       }
+
       footer {
         color: #9ca3af;
       }
+
       .button-link {
         border-color: #22c55e;
         color: #a7f3d0;
         background: #022c22;
       }
+
       .button-link:hover {
         background: #22c55e;
         color: #022c22;
@@ -152,126 +178,130 @@
     }
   </style>
 </head>
+
 <body>
-<header>
-  <div class="header-inner">
-    <h1>Mapas de calor anuales</h1>
-    <p class="subtitle">
-      Visualización de la intensidad de salidas y llegadas por estación en cada año de la serie.
-    </p>
-  </div>
-</header>
-
-<main>
-  <div class="controls">
-    <div class="control-group">
-      <label for="yearSelect">Año:</label>
-      <select id="yearSelect">
-<option value="2015">2015</option>
-<option value="2016">2016</option>
-<option value="2017">2017</option>
-<option value="2018">2018</option>
-<option value="2019">2019</option>
-<option value="2020">2020</option>
-<option value="2021">2021</option>
-<option value="2022">2022</option>
-<option value="2023">2023</option>
-<option value="2024">2024</option>
-<option value="2025">2025</option>
-      </select>
+  <header>
+    <div class="header-inner">
+      <h1>Mapas de intensidad de uso</h1>
+      <p class="subtitle">
+        Visualización de la intensidad de salidas y llegadas por estación en cada año de la serie.
+      </p>
     </div>
-    <div class="control-group">
-      <span>Tipo de mapa:</span>
-      <div class="radio-group">
-        <label>
-          <input type="radio" name="tipo" value="salidas" checked> Salidas
-        </label>
-        <label>
-          <input type="radio" name="tipo" value="llegadas"> Llegadas
-        </label>
+  </header>
+
+  <main>
+    <div class="controls">
+      <div class="control-group">
+        <label for="yearSelect">Año:</label>
+        <select id="yearSelect">
+          <option value="2015">2015</option>
+          <option value="2016">2016</option>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+        </select>
       </div>
+      <div class="control-group">
+        <span>Tipo de mapa:</span>
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="tipo" value="salidas" checked> Salidas
+          </label>
+          <label>
+            <input type="radio" name="tipo" value="llegadas"> Llegadas
+          </label>
+        </div>
+      </div>
+      <div class="spacer"></div>
+      <a id="fullViewLink" href="heatmap_salidas_2015.html" target="_blank" class="button-link">
+        Ver mapa a pantalla completa
+      </a>
     </div>
-    <div class="spacer"></div>
-    <a id="fullViewLink" href="heatmap_salidas_2015.html" target="_blank" class="button-link">
-      Ver mapa a pantalla completa
-    </a>
-  </div>
 
-  <div class="iframe-wrapper">
-    <iframe id="mapFrame" src="heatmap_salidas_2015.html" title="Mapa de calor anual"></iframe>
-  </div>
-</main>
+    <div class="iframe-wrapper">
+      <iframe id="mapFrame" src="heatmap_salidas_2015.html" title="Mapa de intensidad de uso"></iframe>
+    </div>
+  </main>
 
-<footer>
-  Página generada automáticamente a partir de los datos de uso de BiciElx.
-</footer>
+  <footer>
+    Página generada automáticamente a partir de los datos de uso de BiciElx.
+  </footer>
 
-<script>
-  const yearSelect = document.getElementById('yearSelect');
-  const iframe = document.getElementById('mapFrame');
-  const fullLink = document.getElementById('fullViewLink');
-  const tipoRadios = document.querySelectorAll('input[name="tipo"]');
+  <script>
+    const yearSelect = document.getElementById('yearSelect');
+    const iframe = document.getElementById('mapFrame');
+    const fullLink = document.getElementById('fullViewLink');
+    const tipoRadios = document.querySelectorAll('input[name="tipo"]');
 
-  function currentTipo() {
-    for (const r of tipoRadios) {
-      if (r.checked) return r.value;
+    function currentTipo() {
+      for (const r of tipoRadios) {
+        if (r.checked) return r.value;
+      }
+      return 'salidas';
     }
-    return 'salidas';
-  }
 
-  function updateMap() {
-    const year = yearSelect.value;
-    const tipo = currentTipo(); // 'salidas' o 'llegadas'
-    const file = `heatmap_${tipo}_${year}.html`;
-    iframe.src = file;
-    fullLink.href = file;
-  }
+    function updateMap() {
+      const year = yearSelect.value;
+      const tipo = currentTipo(); // 'salidas' o 'llegadas'
+      const file = `heatmap_${tipo}_${year}.html`;
+      iframe.src = file;
+      fullLink.href = file;
+    }
 
-  yearSelect.addEventListener('change', updateMap);
-  tipoRadios.forEach(r => r.addEventListener('change', updateMap));
-</script>
+    yearSelect.addEventListener('change', updateMap);
+    tipoRadios.forEach(r => r.addEventListener('change', updateMap));
+  </script>
 
 
 
 
-<link href='https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap' rel='stylesheet'>
-<style>
+  <link href='https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap' rel='stylesheet'>
+  <style>
     .home-button {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #9acd32;
-        color: white;
-        padding: 10px 15px;
-        border-radius: 8px;
-        text-decoration: none;
-        font-family: 'Outfit', sans-serif;
-        font-weight: 600;
-        z-index: 10000;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        border: 1px solid rgba(255,255,255,0.2);
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #9acd32;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-family: 'Outfit', sans-serif;
+      font-weight: 600;
+      z-index: 10000;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
     }
+
     .home-button:hover {
-        background-color: #6b8e23;
-        transform: translateY(-2px);
-        box-shadow: 0 6px 15px rgba(0,0,0,0.4);
-        color: white;
+      background-color: #6b8e23;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+      color: white;
     }
+
     @media (max-width: 768px) {
-        .home-button {
-            bottom: 15px;
-            right: 15px;
-            padding: 8px 12px;
-            font-size: 14px;
-        }
+      .home-button {
+        bottom: 15px;
+        right: 15px;
+        padding: 8px 12px;
+        font-size: 14px;
+      }
     }
-</style>
-<a href='../index.html' class='home-button'>
+  </style>
+  <a href='../index.html' class='home-button'>
     <span>&#x1F3E0;</span> Inicio
-</a>
+  </a>
 </body>
+
 </html>
