@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Top 20 Nuevas Estaciones – BiciElx</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+  color: #111;
+}
+header {
+  background: linear-gradient(120deg, #0f766e, #22c55e);
+  color: white;
+  padding: 1.5rem;
+}
+h1 { margin: 0; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+}
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 0.8rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: transform .15s ease;
+}
+.card:hover { transform: scale(1.02); }
+.card img {
+  width: 100%; border-radius: 8px;
+}
+.card-title {
+  font-weight: 600;
+  margin-top: 0.4rem;
+}
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal img {
+  max-width: 96vw;
+  max-height: 95vh;
+  border-radius: 8px;
+}
+.modal-close {
+  position: fixed;
+  top: 18px; right: 26px;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+<header>
+  <h1>Top 20 estaciones nuevas (≥57)</h1>
+  <p>Comparativa para 2025 y para el mes de mayo de 2025</p>
+</header>
+
+<div class="grid">
+
+    <div class="card" onclick="openModal('top20_donantes_2025.png')">
+      <img src="top20_donantes_2025.png" alt="">
+      <div class="card-title">Top 20 Donantes (salidas) – Año 2025</div>
+    </div>
+
+    <div class="card" onclick="openModal('top20_receptoras_2025.png')">
+      <img src="top20_receptoras_2025.png" alt="">
+      <div class="card-title">Top 20 Receptoras (llegadas) – Año 2025</div>
+    </div>
+
+    <div class="card" onclick="openModal('top20_total_2025.png')">
+      <img src="top20_total_2025.png" alt="">
+      <div class="card-title">Top 20 Uso Total – Año 2025</div>
+    </div>
+
+    <div class="card" onclick="openModal('top20_donantes_mayo2025.png')">
+      <img src="top20_donantes_mayo2025.png" alt="">
+      <div class="card-title">Top 20 Donantes (salidas) – Mayo 2025</div>
+    </div>
+
+    <div class="card" onclick="openModal('top20_receptoras_mayo2025.png')">
+      <img src="top20_receptoras_mayo2025.png" alt="">
+      <div class="card-title">Top 20 Receptoras (llegadas) – Mayo 2025</div>
+    </div>
+
+    <div class="card" onclick="openModal('top20_total_mayo2025.png')">
+      <img src="top20_total_mayo2025.png" alt="">
+      <div class="card-title">Top 20 Uso Total – Mayo 2025</div>
+    </div>
+
+</div>
+
+<div id="modal" class="modal" onclick="closeModal()">
+  <span class="modal-close" onclick="closeModal()">×</span>
+  <img id="modal-img" src="">
+</div>
+
+<script>
+function openModal(src) {
+  document.getElementById('modal-img').src = src;
+  document.getElementById('modal').style.display = 'flex';
+}
+function closeModal() {
+  document.getElementById('modal').style.display = 'none';
+}
+</script>
+
+</body>
+</html>

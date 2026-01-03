@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_86b8d52258ed6ce764831ae457fb4694 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_86b8d52258ed6ce764831ae457fb4694" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_86b8d52258ed6ce764831ae457fb4694 = L.map(
+                "map_86b8d52258ed6ce764831ae457fb4694",
+                {
+                    center: [38.267, -0.7129],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_86b8d52258ed6ce764831ae457fb4694);
+
+            
+
+        
+    
+            var tile_layer_ace0bda76d1eb245b0e18c6cf1f8d51c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ace0bda76d1eb245b0e18c6cf1f8d51c.addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+            var circle_marker_2439f8352f1ccf53c225f12e8f5adf04 = L.circleMarker(
+                [38.272036, -0.694305],
+                {"bubblingMouseEvents": true, "color": "#d2d4d4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2d4d4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.628455110349254, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_5664bc011238b7d72a432471712ca076 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_29a20409bda284b258c9dc8df1274149 = $(`<div id="html_29a20409bda284b258c9dc8df1274149" style="width: 100.0%; height: 100.0%;">1 – Estació d’Autobusos<br>Media mensual 2022: 1072.3 usos<br>Media mensual 2023: 1056.5 usos<br>Δ media: -15.8 usos (-1.5%)</div>`)[0];
+                popup_5664bc011238b7d72a432471712ca076.setContent(html_29a20409bda284b258c9dc8df1274149);
+            
+        
+
+        circle_marker_2439f8352f1ccf53c225f12e8f5adf04.bindPopup(popup_5664bc011238b7d72a432471712ca076)
+        ;
+
+        
+    
+    
+            var circle_marker_3e7318904d75c64ecb0efd564bf884cb = L.circleMarker(
+                [38.268457, -0.696731],
+                {"bubblingMouseEvents": true, "color": "#cfd4d6ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#cfd4d6ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.253910434968947, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_a71b813bb05d3808ae17ced4a04a3ac7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9eb33494824a06499b370f1e60124d3 = $(`<div id="html_b9eb33494824a06499b370f1e60124d3" style="width: 100.0%; height: 100.0%;">2 – Oficina de Turisme<br>Media mensual 2022: 1327.9 usos<br>Media mensual 2023: 1276.8 usos<br>Δ media: -51.1 usos (-3.9%)</div>`)[0];
+                popup_a71b813bb05d3808ae17ced4a04a3ac7.setContent(html_b9eb33494824a06499b370f1e60124d3);
+            
+        
+
+        circle_marker_3e7318904d75c64ecb0efd564bf884cb.bindPopup(popup_a71b813bb05d3808ae17ced4a04a3ac7)
+        ;
+
+        
+    
+    
+            var circle_marker_7c151ee9eed15c07134895d309a01d3b = L.circleMarker(
+                [38.270117, -0.685963],
+                {"bubblingMouseEvents": true, "color": "#b1d8e4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b1d8e4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 38.24041139918578, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_70355a939083f9445131ab79b37be077 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e450480b10e88a75bd4c70006ee30c74 = $(`<div id="html_e450480b10e88a75bd4c70006ee30c74" style="width: 100.0%; height: 100.0%;">3 – Plaça de la Llotja<br>Media mensual 2022: 1207.8 usos<br>Media mensual 2023: 874.8 usos<br>Δ media: -332.9 usos (-27.6%)</div>`)[0];
+                popup_70355a939083f9445131ab79b37be077.setContent(html_e450480b10e88a75bd4c70006ee30c74);
+            
+        
+
+        circle_marker_7c151ee9eed15c07134895d309a01d3b.bindPopup(popup_70355a939083f9445131ab79b37be077)
+        ;
+
+        
+    
+    
+            var circle_marker_60ba65648b76412d5a26c124d18cd3cb = L.circleMarker(
+                [38.260487, -0.698565],
+                {"bubblingMouseEvents": true, "color": "#cdd4d7ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#cdd4d7ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.71394900364259, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_64b235522158ed514affb4abcd4399ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_72196791451aa02051e96a32e29386af = $(`<div id="html_72196791451aa02051e96a32e29386af" style="width: 100.0%; height: 100.0%;">4 – Plaça del Raval<br>Media mensual 2022: 884.4 usos<br>Media mensual 2023: 838.6 usos<br>Δ media: -45.8 usos (-5.2%)</div>`)[0];
+                popup_64b235522158ed514affb4abcd4399ea.setContent(html_72196791451aa02051e96a32e29386af);
+            
+        
+
+        circle_marker_60ba65648b76412d5a26c124d18cd3cb.bindPopup(popup_64b235522158ed514affb4abcd4399ea)
+        ;
+
+        
+    
+    
+            var circle_marker_790b8020ffd207357d8726f18502e2f4 = L.circleMarker(
+                [38.264171, -0.695433],
+                {"bubblingMouseEvents": true, "color": "#e1e192ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e1e192ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.510606385258209, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_5a9cffbcbc356ba974242cff6d25d02d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7c6d1c259943e1b4a163ea2ea538ac54 = $(`<div id="html_7c6d1c259943e1b4a163ea2ea538ac54" style="width: 100.0%; height: 100.0%;">5 – Centre de Congressos<br>Media mensual 2022: 1176.0 usos<br>Media mensual 2023: 1287.9 usos<br>Δ media: +111.9 usos (+9.5%)</div>`)[0];
+                popup_5a9cffbcbc356ba974242cff6d25d02d.setContent(html_7c6d1c259943e1b4a163ea2ea538ac54);
+            
+        
+
+        circle_marker_790b8020ffd207357d8726f18502e2f4.bindPopup(popup_5a9cffbcbc356ba974242cff6d25d02d)
+        ;
+
+        
+    
+    
+            var circle_marker_0e542a74b7686e7827a4550494228fd8 = L.circleMarker(
+                [38.265409, -0.699424],
+                {"bubblingMouseEvents": true, "color": "#c6d5daff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c6d5daff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.972787658024423, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_40837c7f0f3e04e701634afeb8e50f45 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b5dfd0b020104de120a15522d05645b7 = $(`<div id="html_b5dfd0b020104de120a15522d05645b7" style="width: 100.0%; height: 100.0%;">6 – Ajuntament<br>Media mensual 2022: 1946.8 usos<br>Media mensual 2023: 1742.9 usos<br>Δ media: -203.9 usos (-10.5%)</div>`)[0];
+                popup_40837c7f0f3e04e701634afeb8e50f45.setContent(html_b5dfd0b020104de120a15522d05645b7);
+            
+        
+
+        circle_marker_0e542a74b7686e7827a4550494228fd8.bindPopup(popup_40837c7f0f3e04e701634afeb8e50f45)
+        ;
+
+        
+    
+    
+            var circle_marker_06aa7b57ce87e6462b5c348cd64e44f7 = L.circleMarker(
+                [38.273904, -0.673121],
+                {"bubblingMouseEvents": true, "color": "#f6f62eff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f6f62eff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.83651167773731, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_b2c9569cf0c4166bd9c93f03c59b51c4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_38d87718663a7762f1104a22b8c128e4 = $(`<div id="html_38d87718663a7762f1104a22b8c128e4" style="width: 100.0%; height: 100.0%;">7 – Pavelló Municipal<br>Media mensual 2022: 355.8 usos<br>Media mensual 2023: 441.8 usos<br>Δ media: +85.9 usos (+24.1%)</div>`)[0];
+                popup_b2c9569cf0c4166bd9c93f03c59b51c4.setContent(html_38d87718663a7762f1104a22b8c128e4);
+            
+        
+
+        circle_marker_06aa7b57ce87e6462b5c348cd64e44f7.bindPopup(popup_b2c9569cf0c4166bd9c93f03c59b51c4)
+        ;
+
+        
+    
+    
+            var circle_marker_ae45237c06b9402c54e363d1818e570c = L.circleMarker(
+                [38.270115, -0.713323],
+                {"bubblingMouseEvents": true, "color": "#cfd4d6ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#cfd4d6ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.57703021212771, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_26c88fc1e50725810740775e210e19ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0e0e2bcbae6f8efbd2a9865954a9672f = $(`<div id="html_0e0e2bcbae6f8efbd2a9865954a9672f" style="width: 100.0%; height: 100.0%;">8 – Polivalent de Carrús<br>Media mensual 2022: 432.4 usos<br>Media mensual 2023: 417.1 usos<br>Δ media: -15.3 usos (-3.5%)</div>`)[0];
+                popup_26c88fc1e50725810740775e210e19ca.setContent(html_0e0e2bcbae6f8efbd2a9865954a9672f);
+            
+        
+
+        circle_marker_ae45237c06b9402c54e363d1818e570c.bindPopup(popup_26c88fc1e50725810740775e210e19ca)
+        ;
+
+        
+    
+    
+            var circle_marker_7ee364257fc41526f97417a6aa2dee97 = L.circleMarker(
+                [38.259831, -0.701275],
+                {"bubblingMouseEvents": true, "color": "#e5e580ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e5e580ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.999357188772235, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_7b0f82ae4b71bc867bd263da3b41c95e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e12bcec29a2c1389c54effeb7a96aecf = $(`<div id="html_e12bcec29a2c1389c54effeb7a96aecf" style="width: 100.0%; height: 100.0%;">9 – Biblioteca de Sant Josep<br>Media mensual 2022: 718.2 usos<br>Media mensual 2023: 805.8 usos<br>Δ media: +87.5 usos (+12.2%)</div>`)[0];
+                popup_7b0f82ae4b71bc867bd263da3b41c95e.setContent(html_e12bcec29a2c1389c54effeb7a96aecf);
+            
+        
+
+        circle_marker_7ee364257fc41526f97417a6aa2dee97.bindPopup(popup_7b0f82ae4b71bc867bd263da3b41c95e)
+        ;
+
+        
+    
+    
+            var circle_marker_be66baf06e8848f361cb04879f5e2d70 = L.circleMarker(
+                [38.256839, -0.691995],
+                {"bubblingMouseEvents": true, "color": "#bcd6dfff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bcd6dfff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.285408185129636, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_1357f0fc7990072a9ac88fb42cf4ad0a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dc3acc42d6665816e0aab4ec2fb1e7f7 = $(`<div id="html_dc3acc42d6665816e0aab4ec2fb1e7f7" style="width: 100.0%; height: 100.0%;">10 – L’Escorxador<br>Media mensual 2022: 222.6 usos<br>Media mensual 2023: 180.9 usos<br>Δ media: -41.7 usos (-18.7%)</div>`)[0];
+                popup_1357f0fc7990072a9ac88fb42cf4ad0a.setContent(html_dc3acc42d6665816e0aab4ec2fb1e7f7);
+            
+        
+
+        circle_marker_be66baf06e8848f361cb04879f5e2d70.bindPopup(popup_1357f0fc7990072a9ac88fb42cf4ad0a)
+        ;
+
+        
+    
+    
+            var circle_marker_e8dd0edfe04f160aaffe2f2b58b50daa = L.circleMarker(
+                [38.261942, -0.708752],
+                {"bubblingMouseEvents": true, "color": "#c4d5dbff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c4d5dbff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.384829655024642, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_b0330c4eaf4c3004ac2560b62c8b130f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3a3bffc4f8229012d13cbed723c8cce1 = $(`<div id="html_3a3bffc4f8229012d13cbed723c8cce1" style="width: 100.0%; height: 100.0%;">11 – Plaça de Crevillent<br>Media mensual 2022: 956.9 usos<br>Media mensual 2023: 836.5 usos<br>Δ media: -120.4 usos (-12.6%)</div>`)[0];
+                popup_b0330c4eaf4c3004ac2560b62c8b130f.setContent(html_3a3bffc4f8229012d13cbed723c8cce1);
+            
+        
+
+        circle_marker_e8dd0edfe04f160aaffe2f2b58b50daa.bindPopup(popup_b0330c4eaf4c3004ac2560b62c8b130f)
+        ;
+
+        
+    
+    
+            var circle_marker_e51bdaf05b8335ac92504b720f00da53 = L.circleMarker(
+                [38.268924, -0.706933],
+                {"bubblingMouseEvents": true, "color": "#dadab4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dadab4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.993786158131565, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_66fce800f38571cced391a0ecd62ab6e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c04dc1fe4b248eba8967d981eaa7a99f = $(`<div id="html_c04dc1fe4b248eba8967d981eaa7a99f" style="width: 100.0%; height: 100.0%;">12 – Ambulatori de Sant Fermí<br>Media mensual 2022: 1472.2 usos<br>Media mensual 2023: 1540.2 usos<br>Δ media: +68.0 usos (+4.6%)</div>`)[0];
+                popup_66fce800f38571cced391a0ecd62ab6e.setContent(html_c04dc1fe4b248eba8967d981eaa7a99f);
+            
+        
+
+        circle_marker_e51bdaf05b8335ac92504b720f00da53.bindPopup(popup_66fce800f38571cced391a0ecd62ab6e)
+        ;
+
+        
+    
+    
+            var circle_marker_59aa8bf484279118728d059c766e2590 = L.circleMarker(
+                [38.274553, -0.708405],
+                {"bubblingMouseEvents": true, "color": "#c0d6ddff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c0d6ddff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.7139490036426, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_335c2cb7045b73ebd5f4fbd266f07df1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7da2f0cc5bc43d88422454f4b829a17e = $(`<div id="html_7da2f0cc5bc43d88422454f4b829a17e" style="width: 100.0%; height: 100.0%;">13 – Jardí del 1r de Maig<br>Media mensual 2022: 288.7 usos<br>Media mensual 2023: 242.8 usos<br>Δ media: -45.8 usos (-15.9%)</div>`)[0];
+                popup_335c2cb7045b73ebd5f4fbd266f07df1.setContent(html_7da2f0cc5bc43d88422454f4b829a17e);
+            
+        
+
+        circle_marker_59aa8bf484279118728d059c766e2590.bindPopup(popup_335c2cb7045b73ebd5f4fbd266f07df1)
+        ;
+
+        
+    
+    
+            var circle_marker_5917b337ee48ce4e33305dd648de4de5 = L.circleMarker(
+                [38.262993, -0.688257],
+                {"bubblingMouseEvents": true, "color": "#d2d3d4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2d3d4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.445682451253474, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_38a2ab77d3dc901c568add9a6a8371b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eeb14063f96ee1cc3aa5025d2cf10520 = $(`<div id="html_eeb14063f96ee1cc3aa5025d2cf10520" style="width: 100.0%; height: 100.0%;">14 – Comissaria<br>Media mensual 2022: 592.9 usos<br>Media mensual 2023: 588.6 usos<br>Δ media: -4.3 usos (-0.7%)</div>`)[0];
+                popup_38a2ab77d3dc901c568add9a6a8371b3.setContent(html_eeb14063f96ee1cc3aa5025d2cf10520);
+            
+        
+
+        circle_marker_5917b337ee48ce4e33305dd648de4de5.bindPopup(popup_38a2ab77d3dc901c568add9a6a8371b3)
+        ;
+
+        
+    
+    
+            var circle_marker_7e9f064c21ce2b061675cd2c935f6068 = L.circleMarker(
+                [38.26573, -0.71128],
+                {"bubblingMouseEvents": true, "color": "#d7d7c1ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d7d7c1ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.8427255196057395, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_b9e029be15f08e8e4be02ab87b1397ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20b7e7d507f547a942bfbc2bfbd2bbd6 = $(`<div id="html_20b7e7d507f547a942bfbc2bfbd2bbd6" style="width: 100.0%; height: 100.0%;">15 – Av. Llibertat / Reina Victòria<br>Media mensual 2022: 664.6 usos<br>Media mensual 2023: 682.5 usos<br>Δ media: +17.9 usos (+2.7%)</div>`)[0];
+                popup_b9e029be15f08e8e4be02ab87b1397ca.setContent(html_20b7e7d507f547a942bfbc2bfbd2bbd6);
+            
+        
+
+        circle_marker_7e9f064c21ce2b061675cd2c935f6068.bindPopup(popup_b9e029be15f08e8e4be02ab87b1397ca)
+        ;
+
+        
+    
+    
+            var circle_marker_8ab64a422fce6068023ee2864710b47b = L.circleMarker(
+                [38.27609, -0.71529],
+                {"bubblingMouseEvents": true, "color": "#b9d7e0ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b9d7e0ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.039211484893945, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_b074909f43b770af93c8d4252de2b8b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_90f4ab4a5b460a0b05e533ad099ef19d = $(`<div id="html_90f4ab4a5b460a0b05e533ad099ef19d" style="width: 100.0%; height: 100.0%;">16 – Jardí d’Asp<br>Media mensual 2022: 503.9 usos<br>Media mensual 2023: 396.6 usos<br>Δ media: -107.3 usos (-21.3%)</div>`)[0];
+                popup_b074909f43b770af93c8d4252de2b8b1.setContent(html_90f4ab4a5b460a0b05e533ad099ef19d);
+            
+        
+
+        circle_marker_8ab64a422fce6068023ee2864710b47b.bindPopup(popup_b074909f43b770af93c8d4252de2b8b1)
+        ;
+
+        
+    
+    
+            var circle_marker_3727a2b1a8438489fcf0f65af523089c = L.circleMarker(
+                [38.27662, -0.67801],
+                {"bubblingMouseEvents": true, "color": "#d1d4d4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d1d4d4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.23698307263767, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_b85765f8099ea2382fd397521ca1668a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_25fac88778513428005295e805164f70 = $(`<div id="html_25fac88778513428005295e805164f70" style="width: 100.0%; height: 100.0%;">17 – Plaça de Castella<br>Media mensual 2022: 1166.9 usos<br>Media mensual 2023: 1145.2 usos<br>Δ media: -21.8 usos (-1.9%)</div>`)[0];
+                popup_b85765f8099ea2382fd397521ca1668a.setContent(html_25fac88778513428005295e805164f70);
+            
+        
+
+        circle_marker_3727a2b1a8438489fcf0f65af523089c.bindPopup(popup_b85765f8099ea2382fd397521ca1668a)
+        ;
+
+        
+    
+    
+            var circle_marker_bd07b0370a25a2878cc3d2f9a2e6ee10 = L.circleMarker(
+                [38.27832, -0.67195],
+                {"bubblingMouseEvents": true, "color": "#b9d7e0ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b9d7e0ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.810370687808017, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_0c7cf67902201e16e1befc508c0c416c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f167ffe7d3cc47c9cafd28fb187ebb9f = $(`<div id="html_f167ffe7d3cc47c9cafd28fb187ebb9f" style="width: 100.0%; height: 100.0%;">18 – Poliesportiu d’Altabix<br>Media mensual 2022: 681.0 usos<br>Media mensual 2023: 537.0 usos<br>Δ media: -144.0 usos (-21.1%)</div>`)[0];
+                popup_0c7cf67902201e16e1befc508c0c416c.setContent(html_f167ffe7d3cc47c9cafd28fb187ebb9f);
+            
+        
+
+        circle_marker_bd07b0370a25a2878cc3d2f9a2e6ee10.bindPopup(popup_0c7cf67902201e16e1befc508c0c416c)
+        ;
+
+        
+    
+    
+            var circle_marker_41f465d3cdff7da6bf4ab704bb0e572e = L.circleMarker(
+                [38.26674, -0.69328],
+                {"bubblingMouseEvents": true, "color": "#fff000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 44.0, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_e31d2ec93caf226e4d3635fd1a0f6fca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f447635045f1d6bdff632ddb38e4abd9 = $(`<div id="html_f447635045f1d6bdff632ddb38e4abd9" style="width: 100.0%; height: 100.0%;">19 – Jesuïtines<br>Media mensual 2022: 1069.2 usos<br>Media mensual 2023: 1458.1 usos<br>Δ media: +388.9 usos (+36.4%)</div>`)[0];
+                popup_e31d2ec93caf226e4d3635fd1a0f6fca.setContent(html_f447635045f1d6bdff632ddb38e4abd9);
+            
+        
+
+        circle_marker_41f465d3cdff7da6bf4ab704bb0e572e.bindPopup(popup_e31d2ec93caf226e4d3635fd1a0f6fca)
+        ;
+
+        
+    
+    
+            var circle_marker_7a86a52ca0a3f58937c4f85ff64595c1 = L.circleMarker(
+                [38.25835, -0.70852],
+                {"bubblingMouseEvents": true, "color": "#b7d7e2ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b7d7e2ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.30469252196272, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_a811e0bb1428a37a78a4043a6d6881b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_074eb5b157604ce7f64fca77cf300e6e = $(`<div id="html_074eb5b157604ce7f64fca77cf300e6e" style="width: 100.0%; height: 100.0%;">20 – Antoni Mena / Fra Jaume Torres<br>Media mensual 2022: 602.4 usos<br>Media mensual 2023: 463.3 usos<br>Δ media: -139.1 usos (-23.1%)</div>`)[0];
+                popup_a811e0bb1428a37a78a4043a6d6881b0.setContent(html_074eb5b157604ce7f64fca77cf300e6e);
+            
+        
+
+        circle_marker_7a86a52ca0a3f58937c4f85ff64595c1.bindPopup(popup_a811e0bb1428a37a78a4043a6d6881b0)
+        ;
+
+        
+    
+    
+            var circle_marker_cd02f25749fae979c673d2f586a87034 = L.circleMarker(
+                [38.25923, -0.7109],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.34454681808443, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_bccf39ef0c755644f4e98ef22d1701b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0349ec56f21b72336ef96a6ea6ebbeb3 = $(`<div id="html_0349ec56f21b72336ef96a6ea6ebbeb3" style="width: 100.0%; height: 100.0%;">21 – C.P. Mariano Benlliure<br>Media mensual 2022: 507.4 usos<br>Media mensual 2023: 666.3 usos<br>Δ media: +158.9 usos (+31.3%)</div>`)[0];
+                popup_bccf39ef0c755644f4e98ef22d1701b1.setContent(html_0349ec56f21b72336ef96a6ea6ebbeb3);
+            
+        
+
+        circle_marker_cd02f25749fae979c673d2f586a87034.bindPopup(popup_bccf39ef0c755644f4e98ef22d1701b1)
+        ;
+
+        
+    
+    
+            var circle_marker_c3e864c33a25e557d86292ae18eb4a42 = L.circleMarker(
+                [38.25399, -0.70548],
+                {"bubblingMouseEvents": true, "color": "#e0e098ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e0e098ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.311120634240416, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_0a7f6a6ea50ce64c6045b190196c837f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87b59ff4ea6125226de6f3639ecf6a94 = $(`<div id="html_87b59ff4ea6125226de6f3639ecf6a94" style="width: 100.0%; height: 100.0%;">22 – Av. Llauradors / Eslava<br>Media mensual 2022: 484.2 usos<br>Media mensual 2023: 526.1 usos<br>Δ media: +41.9 usos (+8.7%)</div>`)[0];
+                popup_0a7f6a6ea50ce64c6045b190196c837f.setContent(html_87b59ff4ea6125226de6f3639ecf6a94);
+            
+        
+
+        circle_marker_c3e864c33a25e557d86292ae18eb4a42.bindPopup(popup_0a7f6a6ea50ce64c6045b190196c837f)
+        ;
+
+        
+    
+    
+            var circle_marker_46cd341fe574c440cad0495b70a00b34 = L.circleMarker(
+                [38.25734, -0.70461],
+                {"bubblingMouseEvents": true, "color": "#c7d5daff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c7d5daff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.625241054210413, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_6fd989d17865552b2132718a51992de7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1878c32049d417b53ec81d639790273b = $(`<div id="html_1878c32049d417b53ec81d639790273b" style="width: 100.0%; height: 100.0%;">23 – Conrado del Campo / Trinquet<br>Media mensual 2022: 642.4 usos<br>Media mensual 2023: 578.0 usos<br>Δ media: -64.4 usos (-10.0%)</div>`)[0];
+                popup_6fd989d17865552b2132718a51992de7.setContent(html_1878c32049d417b53ec81d639790273b);
+            
+        
+
+        circle_marker_46cd341fe574c440cad0495b70a00b34.bindPopup(popup_6fd989d17865552b2132718a51992de7)
+        ;
+
+        
+    
+    
+            var circle_marker_ff7a0799533aa2e837a6bb5d3d00f635 = L.circleMarker(
+                [38.27553, -0.66915],
+                {"bubblingMouseEvents": true, "color": "#e9e96dff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e9e96dff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.685451039211488, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_fcef9a02ec7537d2d0c9ec0773404ab8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_583c9967993b9a2000cab5b2893ef8fd = $(`<div id="html_583c9967993b9a2000cab5b2893ef8fd" style="width: 100.0%; height: 100.0%;">24 – Policia Local<br>Media mensual 2022: 240.2 usos<br>Media mensual 2023: 276.0 usos<br>Δ media: +35.8 usos (+14.9%)</div>`)[0];
+                popup_fcef9a02ec7537d2d0c9ec0773404ab8.setContent(html_583c9967993b9a2000cab5b2893ef8fd);
+            
+        
+
+        circle_marker_ff7a0799533aa2e837a6bb5d3d00f635.bindPopup(popup_fcef9a02ec7537d2d0c9ec0773404ab8)
+        ;
+
+        
+    
+    
+            var circle_marker_9fc1ce1425f16c9c40700a4f6335567c = L.circleMarker(
+                [38.26718, -0.70259],
+                {"bubblingMouseEvents": true, "color": "#ebeb62ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ebeb62ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.053353331904866, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_8c95a446fd6fe32f5d7860ae81d94c27 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a76358fd8ca4c073fcc7bf971ecea74f = $(`<div id="html_a76358fd8ca4c073fcc7bf971ecea74f" style="width: 100.0%; height: 100.0%;">25 – Cor de Jesús<br>Media mensual 2022: 762.8 usos<br>Media mensual 2023: 889.8 usos<br>Δ media: +126.9 usos (+16.6%)</div>`)[0];
+                popup_8c95a446fd6fe32f5d7860ae81d94c27.setContent(html_a76358fd8ca4c073fcc7bf971ecea74f);
+            
+        
+
+        circle_marker_9fc1ce1425f16c9c40700a4f6335567c.bindPopup(popup_8c95a446fd6fe32f5d7860ae81d94c27)
+        ;
+
+        
+    
+    
+            var circle_marker_39455108e76c06ae3786836643c77079 = L.circleMarker(
+                [38.27425, -0.69111],
+                {"bubblingMouseEvents": true, "color": "#dadab2ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dadab2ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.962502678380105, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_ea92f8f52b0ab9948de10ba6160bdcac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_33e4a8488cbd71898a497e38faf57f27 = $(`<div id="html_33e4a8488cbd71898a497e38faf57f27" style="width: 100.0%; height: 100.0%;">26 – UMH / Escola Oficial d’Idiomes<br>Media mensual 2022: 992.8 usos<br>Media mensual 2023: 1041.1 usos<br>Δ media: +48.2 usos (+4.9%)</div>`)[0];
+                popup_ea92f8f52b0ab9948de10ba6160bdcac.setContent(html_33e4a8488cbd71898a497e38faf57f27);
+            
+        
+
+        circle_marker_39455108e76c06ae3786836643c77079.bindPopup(popup_ea92f8f52b0ab9948de10ba6160bdcac)
+        ;
+
+        
+    
+    
+            var circle_marker_e1786e1aba64a4526e631f395240f946 = L.circleMarker(
+                [38.27921, -0.68589],
+                {"bubblingMouseEvents": true, "color": "#d5d5cdff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d5d5cdff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.471394900364258, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_0e87ed30d766f250685166c15f372abd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67eaf2af26174749dc6ae93d56639204 = $(`<div id="html_67eaf2af26174749dc6ae93d56639204" style="width: 100.0%; height: 100.0%;">27 – UMH / Pavelló d’Esports<br>Media mensual 2022: 508.9 usos<br>Media mensual 2023: 513.5 usos<br>Δ media: +4.6 usos (+0.9%)</div>`)[0];
+                popup_0e87ed30d766f250685166c15f372abd.setContent(html_67eaf2af26174749dc6ae93d56639204);
+            
+        
+
+        circle_marker_e1786e1aba64a4526e631f395240f946.bindPopup(popup_0e87ed30d766f250685166c15f372abd)
+        ;
+
+        
+    
+    
+            var circle_marker_932e57933569ab0bb15bf4ccaf7ccb15 = L.circleMarker(
+                [38.262792, -0.703505],
+                {"bubblingMouseEvents": true, "color": "#cbd4d8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#cbd4d8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.250910649239355, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_eb62f265b319cb595c929dfdd1fd49b8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f17ca2e9161d9bff17c24076d498cdb6 = $(`<div id="html_f17ca2e9161d9bff17c24076d498cdb6" style="width: 100.0%; height: 100.0%;">28 – Passeig de les Germanies<br>Media mensual 2022: 1039.7 usos<br>Media mensual 2023: 969.2 usos<br>Δ media: -70.5 usos (-6.8%)</div>`)[0];
+                popup_eb62f265b319cb595c929dfdd1fd49b8.setContent(html_f17ca2e9161d9bff17c24076d498cdb6);
+            
+        
+
+        circle_marker_932e57933569ab0bb15bf4ccaf7ccb15.bindPopup(popup_eb62f265b319cb595c929dfdd1fd49b8)
+        ;
+
+        
+    
+    
+            var circle_marker_473be9ca77fa2d61b9ef192f3a523643 = L.circleMarker(
+                [38.275568, -0.703184],
+                {"bubblingMouseEvents": true, "color": "#617af1ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#617af1ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.242125562459828, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_44779dc3a7b695697d58272e2ddd200a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb514992c93e0548ce578860c9e15968 = $(`<div id="html_fb514992c93e0548ce578860c9e15968" style="width: 100.0%; height: 100.0%;">29 – Casablanca<br>Media mensual 2022: 223.7 usos<br>Media mensual 2023: 124.1 usos<br>Δ media: -99.6 usos (-44.5%)</div>`)[0];
+                popup_44779dc3a7b695697d58272e2ddd200a.setContent(html_fb514992c93e0548ce578860c9e15968);
+            
+        
+
+        circle_marker_473be9ca77fa2d61b9ef192f3a523643.bindPopup(popup_44779dc3a7b695697d58272e2ddd200a)
+        ;
+
+        
+    
+    
+            var circle_marker_4c7fddfd658d1dc324ad795e05703004 = L.circleMarker(
+                [38.27052, -0.6702],
+                {"bubblingMouseEvents": true, "color": "#e8e871ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e8e871ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.287979430040707, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_3a2778ad21a693564e526754bdd66b54 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_df7fb23f04c8768b489868d7d8eb2215 = $(`<div id="html_df7fb23f04c8768b489868d7d8eb2215" style="width: 100.0%; height: 100.0%;">30 – Squash<br>Media mensual 2022: 562.1 usos<br>Media mensual 2023: 642.7 usos<br>Δ media: +80.6 usos (+14.3%)</div>`)[0];
+                popup_3a2778ad21a693564e526754bdd66b54.setContent(html_df7fb23f04c8768b489868d7d8eb2215);
+            
+        
+
+        circle_marker_4c7fddfd658d1dc324ad795e05703004.bindPopup(popup_3a2778ad21a693564e526754bdd66b54)
+        ;
+
+        
+    
+    
+            var circle_marker_6a0786c9a6af102415a3e06f87acef50 = L.circleMarker(
+                [38.26566, -0.67728],
+                {"bubblingMouseEvents": true, "color": "#fff200ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.97900149989287, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_972fcbf911ae57216dc30fe4c11b0870 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_89b30306b4225d4122470dbd949b0a3b = $(`<div id="html_89b30306b4225d4122470dbd949b0a3b" style="width: 100.0%; height: 100.0%;">31 – Sant Antoni<br>Media mensual 2022: 380.6 usos<br>Media mensual 2023: 516.5 usos<br>Δ media: +135.9 usos (+35.7%)</div>`)[0];
+                popup_972fcbf911ae57216dc30fe4c11b0870.setContent(html_89b30306b4225d4122470dbd949b0a3b);
+            
+        
+
+        circle_marker_6a0786c9a6af102415a3e06f87acef50.bindPopup(popup_972fcbf911ae57216dc30fe4c11b0870)
+        ;
+
+        
+    
+    
+            var circle_marker_ebfcc047b2e9ab6b6262532bfefe46ae = L.circleMarker(
+                [38.27272, -0.68108],
+                {"bubblingMouseEvents": true, "color": "#ccd4d7ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ccd4d7ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.682451253481897, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_a84d6b2169aad29f2e3a28b798628af4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_132a40875901b143af147f2f03734a50 = $(`<div id="html_132a40875901b143af147f2f03734a50" style="width: 100.0%; height: 100.0%;">32 – Centre de Salut d’Altabix<br>Media mensual 2022: 895.3 usos<br>Media mensual 2023: 840.1 usos<br>Δ media: -55.2 usos (-6.2%)</div>`)[0];
+                popup_a84d6b2169aad29f2e3a28b798628af4.setContent(html_132a40875901b143af147f2f03734a50);
+            
+        
+
+        circle_marker_ebfcc047b2e9ab6b6262532bfefe46ae.bindPopup(popup_a84d6b2169aad29f2e3a28b798628af4)
+        ;
+
+        
+    
+    
+            var circle_marker_034a1f90783c0eaecda8de1f62e6ae21 = L.circleMarker(
+                [38.261175, -0.71614],
+                {"bubblingMouseEvents": true, "color": "#c1d6dcff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c1d6dcff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.750589243625459, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_4bd6b10f2073d0f869bf93f0ca2a688f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3a5a190d7f19d3be1b609f139821816f = $(`<div id="html_3a5a190d7f19d3be1b609f139821816f" style="width: 100.0%; height: 100.0%;">33 – Av. Libertat / l’Aljub<br>Media mensual 2022: 773.1 usos<br>Media mensual 2023: 658.8 usos<br>Δ media: -114.2 usos (-14.8%)</div>`)[0];
+                popup_4bd6b10f2073d0f869bf93f0ca2a688f.setContent(html_3a5a190d7f19d3be1b609f139821816f);
+            
+        
+
+        circle_marker_034a1f90783c0eaecda8de1f62e6ae21.bindPopup(popup_4bd6b10f2073d0f869bf93f0ca2a688f)
+        ;
+
+        
+    
+    
+            var circle_marker_0fa1c1981380afac32582f35b28eabbc = L.circleMarker(
+                [38.25961, -0.68586],
+                {"bubblingMouseEvents": true, "color": "#dadab3ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dadab3ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.065352474823229, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_cd9ba00d84d6092572511d05e795412a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bdbdaea7147978e2d2d5a13483d2aace = $(`<div id="html_bdbdaea7147978e2d2d5a13483d2aace" style="width: 100.0%; height: 100.0%;">34 – Hospital General<br>Media mensual 2022: 1043.8 usos<br>Media mensual 2023: 1093.1 usos<br>Δ media: +49.2 usos (+4.7%)</div>`)[0];
+                popup_cd9ba00d84d6092572511d05e795412a.setContent(html_bdbdaea7147978e2d2d5a13483d2aace);
+            
+        
+
+        circle_marker_0fa1c1981380afac32582f35b28eabbc.bindPopup(popup_cd9ba00d84d6092572511d05e795412a)
+        ;
+
+        
+    
+    
+            var circle_marker_63d0eb24fc2abd49b174fcfa4e1f85e3 = L.circleMarker(
+                [38.25515, -0.71483],
+                {"bubblingMouseEvents": true, "color": "#c0d6ddff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c0d6ddff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.173987572316266, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_9f6e0ec9df06618b2a7552b217e1cf0f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2d75289260cd827d6642e6ffadbaee5 = $(`<div id="html_b2d75289260cd827d6642e6ffadbaee5" style="width: 100.0%; height: 100.0%;">35 – Hospital del Vinalopó<br>Media mensual 2022: 253.0 usos<br>Media mensual 2023: 212.4 usos<br>Δ media: -40.6 usos (-16.0%)</div>`)[0];
+                popup_9f6e0ec9df06618b2a7552b217e1cf0f.setContent(html_b2d75289260cd827d6642e6ffadbaee5);
+            
+        
+
+        circle_marker_63d0eb24fc2abd49b174fcfa4e1f85e3.bindPopup(popup_9f6e0ec9df06618b2a7552b217e1cf0f)
+        ;
+
+        
+    
+    
+            var circle_marker_2d94d8421a14b87be73439bfda96153a = L.circleMarker(
+                [38.268272, -0.677594],
+                {"bubblingMouseEvents": true, "color": "#d6d6c6ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d6d6c6ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.9685022498392994, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_0c7647b24a5d5e0fd4291c4565693425 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_567e48363bf056b160c46fe1abb2894f = $(`<div id="html_567e48363bf056b160c46fe1abb2894f" style="width: 100.0%; height: 100.0%;">36 – I.E.S. Victoria Kent<br>Media mensual 2022: 486.6 usos<br>Media mensual 2023: 496.0 usos<br>Δ media: +9.4 usos (+1.9%)</div>`)[0];
+                popup_0c7647b24a5d5e0fd4291c4565693425.setContent(html_567e48363bf056b160c46fe1abb2894f);
+            
+        
+
+        circle_marker_2d94d8421a14b87be73439bfda96153a.bindPopup(popup_0c7647b24a5d5e0fd4291c4565693425)
+        ;
+
+        
+    
+    
+            var circle_marker_d07d4db0b9ae55e3f9a916418892404f = L.circleMarker(
+                [38.26345, -0.66528],
+                {"bubblingMouseEvents": true, "color": "#ffd500ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd500ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.405185343904009, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_cedd4cd0393d19e53b116ec38e1fbda9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_852d759c2bdcd2942cd0b5f759e88da9 = $(`<div id="html_852d759c2bdcd2942cd0b5f759e88da9" style="width: 100.0%; height: 100.0%;">37 – Hort de Travaló<br>Media mensual 2022: 158.1 usos<br>Media mensual 2023: 230.1 usos<br>Δ media: +72.0 usos (+45.5%)</div>`)[0];
+                popup_cedd4cd0393d19e53b116ec38e1fbda9.setContent(html_852d759c2bdcd2942cd0b5f759e88da9);
+            
+        
+
+        circle_marker_d07d4db0b9ae55e3f9a916418892404f.bindPopup(popup_cedd4cd0393d19e53b116ec38e1fbda9)
+        ;
+
+        
+    
+    
+            var circle_marker_e29012949cf4a33bac3a8f7b4bb91c63 = L.circleMarker(
+                [38.278264, -0.708628],
+                {"bubblingMouseEvents": true, "color": "#dcdca9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dcdca9ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.511249196485963, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_a583af4b95b80fcba2a868d866261868 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f23558495fea914831a819cedcb4acfc = $(`<div id="html_f23558495fea914831a819cedcb4acfc" style="width: 100.0%; height: 100.0%;">38 – Poliesportiu de Carrús<br>Media mensual 2022: 396.2 usos<br>Media mensual 2023: 420.6 usos<br>Δ media: +24.4 usos (+6.2%)</div>`)[0];
+                popup_a583af4b95b80fcba2a868d866261868.setContent(html_f23558495fea914831a819cedcb4acfc);
+            
+        
+
+        circle_marker_e29012949cf4a33bac3a8f7b4bb91c63.bindPopup(popup_a583af4b95b80fcba2a868d866261868)
+        ;
+
+        
+    
+    
+            var circle_marker_b1fbccd8df4f8990e82a0ae7f8f3c04c = L.circleMarker(
+                [38.271382, -0.710028],
+                {"bubblingMouseEvents": true, "color": "#d0d4d5ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d0d4d5ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.788515106063849, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_d2157cf0a6533962ad201860986a4cc1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb28430dde1953016d67d246e05c6a9a = $(`<div id="html_cb28430dde1953016d67d246e05c6a9a" style="width: 100.0%; height: 100.0%;">39 – Francesc Cantó<br>Media mensual 2022: 303.1 usos<br>Media mensual 2023: 295.4 usos<br>Δ media: -7.7 usos (-2.5%)</div>`)[0];
+                popup_d2157cf0a6533962ad201860986a4cc1.setContent(html_cb28430dde1953016d67d246e05c6a9a);
+            
+        
+
+        circle_marker_b1fbccd8df4f8990e82a0ae7f8f3c04c.bindPopup(popup_d2157cf0a6533962ad201860986a4cc1)
+        ;
+
+        
+    
+    
+            var circle_marker_3534ea87ffe61addd9cc83aa3867fc8d = L.circleMarker(
+                [38.27091, -0.701044],
+                {"bubblingMouseEvents": true, "color": "#e4e482ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e4e482ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.93036211699166, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_4e41f304ba3e773db1d6365dfacff620 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5c421e01fbb9b99f57c40edafd62e6b3 = $(`<div id="html_5c421e01fbb9b99f57c40edafd62e6b3" style="width: 100.0%; height: 100.0%;">40 – C.P. Baix Vinalopó<br>Media mensual 2022: 1216.1 usos<br>Media mensual 2023: 1361.2 usos<br>Δ media: +145.2 usos (+11.9%)</div>`)[0];
+                popup_4e41f304ba3e773db1d6365dfacff620.setContent(html_5c421e01fbb9b99f57c40edafd62e6b3);
+            
+        
+
+        circle_marker_3534ea87ffe61addd9cc83aa3867fc8d.bindPopup(popup_4e41f304ba3e773db1d6365dfacff620)
+        ;
+
+        
+    
+    
+            var circle_marker_744f6fd61daf0af68e5cdfbdf2418667 = L.circleMarker(
+                [38.281922, -0.712788],
+                {"bubblingMouseEvents": true, "color": "#d7d7c3ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d7d7c3ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.265695307478037, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_305a98f1c2a5e5b49ff81ce6353951c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_01410cb0834f31f358ccf96757469555 = $(`<div id="html_01410cb0834f31f358ccf96757469555" style="width: 100.0%; height: 100.0%;">41 – Dipòsit Municipal de Carrús<br>Media mensual 2022: 108.9 usos<br>Media mensual 2023: 111.5 usos<br>Δ media: +2.6 usos (+2.4%)</div>`)[0];
+                popup_305a98f1c2a5e5b49ff81ce6353951c3.setContent(html_01410cb0834f31f358ccf96757469555);
+            
+        
+
+        circle_marker_744f6fd61daf0af68e5cdfbdf2418667.bindPopup(popup_305a98f1c2a5e5b49ff81ce6353951c3)
+        ;
+
+        
+    
+    
+            var circle_marker_4ea82e01400abe447997c78b51045fcd = L.circleMarker(
+                [38.262263, -0.669923],
+                {"bubblingMouseEvents": true, "color": "#bdd6dfff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdd6dfff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.862652667666596, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_af6fd87bc57bed6bc4a8d6ef821dc2b9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_27d99842518df635f667109842b2de1a = $(`<div id="html_27d99842518df635f667109842b2de1a" style="width: 100.0%; height: 100.0%;">42 – Multi Aventura Travaló<br>Media mensual 2022: 153.0 usos<br>Media mensual 2023: 125.2 usos<br>Δ media: -27.8 usos (-18.2%)</div>`)[0];
+                popup_af6fd87bc57bed6bc4a8d6ef821dc2b9.setContent(html_27d99842518df635f667109842b2de1a);
+            
+        
+
+        circle_marker_4ea82e01400abe447997c78b51045fcd.bindPopup(popup_af6fd87bc57bed6bc4a8d6ef821dc2b9)
+        ;
+
+        
+    
+    
+            var circle_marker_7e60a519c6c8ea44ace5dec171a27a56 = L.circleMarker(
+                [38.261994, -0.683099],
+                {"bubblingMouseEvents": true, "color": "#e5e57eff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e5e57eff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.817013070494964, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_06b9789600d9dda5c33db536f4a9b55c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_86d39312836fdb4b0651d859d6120073 = $(`<div id="html_86d39312836fdb4b0651d859d6120073" style="width: 100.0%; height: 100.0%;">43 – Palmerars – Ciutat de la Justícia<br>Media mensual 2022: 141.3 usos<br>Media mensual 2023: 159.0 usos<br>Δ media: +17.7 usos (+12.5%)</div>`)[0];
+                popup_06b9789600d9dda5c33db536f4a9b55c.setContent(html_86d39312836fdb4b0651d859d6120073);
+            
+        
+
+        circle_marker_7e60a519c6c8ea44ace5dec171a27a56.bindPopup(popup_06b9789600d9dda5c33db536f4a9b55c)
+        ;
+
+        
+    
+    
+            var circle_marker_dd88998ffa16aa6aab6ad0af071482fa = L.circleMarker(
+                [38.2571333, -0.696961],
+                {"bubblingMouseEvents": true, "color": "#f0f049ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0f049ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.510606385258209, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_d7fdc4757927db69cb90c4a34f71da7b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7c0b9e7bbc73558697db486c6bbe3d68 = $(`<div id="html_7c0b9e7bbc73558697db486c6bbe3d68" style="width: 100.0%; height: 100.0%;">44 – Portes Encarnades<br>Media mensual 2022: 551.4 usos<br>Media mensual 2023: 663.3 usos<br>Δ media: +111.9 usos (+20.3%)</div>`)[0];
+                popup_d7fdc4757927db69cb90c4a34f71da7b.setContent(html_7c0b9e7bbc73558697db486c6bbe3d68);
+            
+        
+
+        circle_marker_dd88998ffa16aa6aab6ad0af071482fa.bindPopup(popup_d7fdc4757927db69cb90c4a34f71da7b)
+        ;
+
+        
+    
+    
+            var circle_marker_55b47fe2d2105d4361c15b82319fd62c = L.circleMarker(
+                [38.271869, -0.70703],
+                {"bubblingMouseEvents": true, "color": "#d8d8bbff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d8d8bbff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.294193271909154, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_01cdfb7dbcea3fc9d65c2b8e25c3211a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_553207897df392dd937650741cca5bf0 = $(`<div id="html_553207897df392dd937650741cca5bf0" style="width: 100.0%; height: 100.0%;">45 – Plaça de Barcelona<br>Media mensual 2022: 353.3 usos<br>Media mensual 2023: 365.9 usos<br>Δ media: +12.6 usos (+3.6%)</div>`)[0];
+                popup_01cdfb7dbcea3fc9d65c2b8e25c3211a.setContent(html_553207897df392dd937650741cca5bf0);
+            
+        
+
+        circle_marker_55b47fe2d2105d4361c15b82319fd62c.bindPopup(popup_01cdfb7dbcea3fc9d65c2b8e25c3211a)
+        ;
+
+        
+    
+    
+            var circle_marker_16008d4195841264c29202438d238fb3 = L.circleMarker(
+                [38.274244, -0.6846805],
+                {"bubblingMouseEvents": true, "color": "#fdfd0eff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fdfd0eff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.270409256481692, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_e146f6c01c6fc24230d5242899c05355 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84f188b38f16c97600f6ba62a87dc847 = $(`<div id="html_84f188b38f16c97600f6ba62a87dc847" style="width: 100.0%; height: 100.0%;">46 – UMH / Rectorado<br>Media mensual 2022: 480.1 usos<br>Media mensual 2023: 618.8 usos<br>Δ media: +138.8 usos (+28.9%)</div>`)[0];
+                popup_e146f6c01c6fc24230d5242899c05355.setContent(html_84f188b38f16c97600f6ba62a87dc847);
+            
+        
+
+        circle_marker_16008d4195841264c29202438d238fb3.bindPopup(popup_e146f6c01c6fc24230d5242899c05355)
+        ;
+
+        
+    
+    
+            var circle_marker_913d13ff746ecced2a8ba4b3f672c6af = L.circleMarker(
+                [38.26464, -0.708004],
+                {"bubblingMouseEvents": true, "color": "#f1f146ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f1f146ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.662309835011788, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_9cbf23e1c39460f2da2a9dec0f1487e1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96a353e074daf04914bca11fcb436223 = $(`<div id="html_96a353e074daf04914bca11fcb436223" style="width: 100.0%; height: 100.0%;">47 – C.P. Virgen de la Asunción<br>Media mensual 2022: 359.8 usos<br>Media mensual 2023: 434.2 usos<br>Δ media: +74.5 usos (+20.7%)</div>`)[0];
+                popup_9cbf23e1c39460f2da2a9dec0f1487e1.setContent(html_96a353e074daf04914bca11fcb436223);
+            
+        
+
+        circle_marker_913d13ff746ecced2a8ba4b3f672c6af.bindPopup(popup_9cbf23e1c39460f2da2a9dec0f1487e1)
+        ;
+
+        
+    
+    
+            var circle_marker_cb83b96f78722404095c796ce5d254fb = L.circleMarker(
+                [38.271531, -0.7175],
+                {"bubblingMouseEvents": true, "color": "#d2d3d4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2d3d4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.085708163702592, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_2a65fe4bd23f72ea969a716f6d7724ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_163f1e4221f3a3df0eb31c0cdcf2dc9f = $(`<div id="html_163f1e4221f3a3df0eb31c0cdcf2dc9f" style="width: 100.0%; height: 100.0%;">48 – Av. Corts Valencianes<br>Media mensual 2022: 121.8 usos<br>Media mensual 2023: 121.0 usos<br>Δ media: -0.8 usos (-0.7%)</div>`)[0];
+                popup_2a65fe4bd23f72ea969a716f6d7724ac.setContent(html_163f1e4221f3a3df0eb31c0cdcf2dc9f);
+            
+        
+
+        circle_marker_cb83b96f78722404095c796ce5d254fb.bindPopup(popup_2a65fe4bd23f72ea969a716f6d7724ac)
+        ;
+
+        
+    
+    
+            var circle_marker_5a1012a6775c28de046bae01ed7abd62 = L.circleMarker(
+                [38.26978, -0.681872],
+                {"bubblingMouseEvents": true, "color": "#ff0000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 39.70773516177418, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_9778cbdd5e2c9a5edb1201cee7529fb6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7daabcdc1cd979713fad4868cf392324 = $(`<div id="html_7daabcdc1cd979713fad4868cf392324" style="width: 100.0%; height: 100.0%;">49 – Av. Alicante 59<br>Media mensual 2022: 373.4 usos<br>Media mensual 2023: 720.6 usos<br>Δ media: +347.2 usos (+93.0%)</div>`)[0];
+                popup_9778cbdd5e2c9a5edb1201cee7529fb6.setContent(html_7daabcdc1cd979713fad4868cf392324);
+            
+        
+
+        circle_marker_5a1012a6775c28de046bae01ed7abd62.bindPopup(popup_9778cbdd5e2c9a5edb1201cee7529fb6)
+        ;
+
+        
+    
+    
+            var circle_marker_066e1ba24ca9987ed43ca4965808e670 = L.circleMarker(
+                [38.261464, -0.696053],
+                {"bubblingMouseEvents": true, "color": "#f5f530ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f5f530ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.98757231626313, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_d8a03f151b56b844390bc2905b3767ad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e1f4c6571ecefd53486b8878f471e8ce = $(`<div id="html_e1f4c6571ecefd53486b8878f471e8ce" style="width: 100.0%; height: 100.0%;">50 – Borreguet<br>Media mensual 2022: 569.3 usos<br>Media mensual 2023: 705.3 usos<br>Δ media: +136.0 usos (+23.9%)</div>`)[0];
+                popup_d8a03f151b56b844390bc2905b3767ad.setContent(html_e1f4c6571ecefd53486b8878f471e8ce);
+            
+        
+
+        circle_marker_066e1ba24ca9987ed43ca4965808e670.bindPopup(popup_d8a03f151b56b844390bc2905b3767ad)
+        ;
+
+        
+    
+    
+            var circle_marker_f6e08d49d5c513ea04f76aef67899228 = L.circleMarker(
+                [38.271514, -0.675147],
+                {"bubblingMouseEvents": true, "color": "#ff8800ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff8800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.336190272123424, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_3bf59e2cef562a46c9fea3f2c1a329d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f0900a22e427b3c32dbd3cac980a328 = $(`<div id="html_6f0900a22e427b3c32dbd3cac980a328" style="width: 100.0%; height: 100.0%;">51 – Ciudad deportiva zona sur<br>Media mensual 2022: 192.1 usos<br>Media mensual 2023: 321.8 usos<br>Δ media: +129.7 usos (+67.5%)</div>`)[0];
+                popup_3bf59e2cef562a46c9fea3f2c1a329d3.setContent(html_6f0900a22e427b3c32dbd3cac980a328);
+            
+        
+
+        circle_marker_f6e08d49d5c513ea04f76aef67899228.bindPopup(popup_3bf59e2cef562a46c9fea3f2c1a329d3)
+        ;
+
+        
+    
+    
+            var circle_marker_daa72fdb7abbcb06e614e1f5d2e42a0f = L.circleMarker(
+                [38.269141, -0.717211],
+                {"bubblingMouseEvents": true, "color": "#fffb00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffb00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.99100064281123, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_23b877055da05234ccf34bfad1f06454 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5409ce7d5b89d8293e8507e934d1ffbb = $(`<div id="html_5409ce7d5b89d8293e8507e934d1ffbb" style="width: 100.0%; height: 100.0%;">52 – Centro salud el Toscar<br>Media mensual 2022: 179.4 usos<br>Media mensual 2023: 237.7 usos<br>Δ media: +58.2 usos (+32.5%)</div>`)[0];
+                popup_23b877055da05234ccf34bfad1f06454.setContent(html_5409ce7d5b89d8293e8507e934d1ffbb);
+            
+        
+
+        circle_marker_daa72fdb7abbcb06e614e1f5d2e42a0f.bindPopup(popup_23b877055da05234ccf34bfad1f06454)
+        ;
+
+        
+    
+    
+            var circle_marker_6c98bca8e33be87c49b3256e53d79743 = L.circleMarker(
+                [38.272525, -0.685417],
+                {"bubblingMouseEvents": true, "color": "#e0e096ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e0e096ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.40896429475817, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_6e3f2e1af3e5930add20fb8b65c5c5b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b513dfd74df39cbaaefc7da53439453 = $(`<div id="html_1b513dfd74df39cbaaefc7da53439453" style="width: 100.0%; height: 100.0%;">53 – C.P. Victor Pradera<br>Media mensual 2022: 589.9 usos<br>Media mensual 2023: 642.5 usos<br>Δ media: +52.6 usos (+8.9%)</div>`)[0];
+                popup_6e3f2e1af3e5930add20fb8b65c5c5b1.setContent(html_1b513dfd74df39cbaaefc7da53439453);
+            
+        
+
+        circle_marker_6c98bca8e33be87c49b3256e53d79743.bindPopup(popup_6e3f2e1af3e5930add20fb8b65c5c5b1)
+        ;
+
+        
+    
+    
+            var circle_marker_b43a88f5915f1649897c6b7594786876 = L.circleMarker(
+                [38.268475, -0.686954],
+                {"bubblingMouseEvents": true, "color": "#ffe400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 39.93821220562169, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_b739b7022eabe07b6ff72cfacce28820 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d8c4717ac64ca8c04e6c3cb098c41cb = $(`<div id="html_6d8c4717ac64ca8c04e6c3cb098c41cb" style="width: 100.0%; height: 100.0%;">54 – Plaza de Benidorm<br>Media mensual 2022: 865.9 usos<br>Media mensual 2023: 1215.3 usos<br>Δ media: +349.4 usos (+40.4%)</div>`)[0];
+                popup_b739b7022eabe07b6ff72cfacce28820.setContent(html_6d8c4717ac64ca8c04e6c3cb098c41cb);
+            
+        
+
+        circle_marker_b43a88f5915f1649897c6b7594786876.bindPopup(popup_b739b7022eabe07b6ff72cfacce28820)
+        ;
+
+        
+    
+    
+            var circle_marker_f18b24dff83e52479ed610728d65b59a = L.circleMarker(
+                [38.2590083, -0.706969],
+                {"bubblingMouseEvents": true, "color": "#efef50ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#efef50ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.270506652122254, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_4c9b56b2fabdfba5fd8bb8fe2d7ab0ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8fce42569ba60315e67dd7189be2a176 = $(`<div id="html_8fce42569ba60315e67dd7189be2a176" style="width: 100.0%; height: 100.0%;">55 – Pere Joan Perpinyà<br>Media mensual 2022: 470.4 usos<br>Media mensual 2023: 560.5 usos<br>Δ media: +90.1 usos (+19.2%)</div>`)[0];
+                popup_4c9b56b2fabdfba5fd8bb8fe2d7ab0ef.setContent(html_8fce42569ba60315e67dd7189be2a176);
+            
+        
+
+        circle_marker_f18b24dff83e52479ed610728d65b59a.bindPopup(popup_4c9b56b2fabdfba5fd8bb8fe2d7ab0ef)
+        ;
+
+        
+    
+    
+            var circle_marker_0829dc9bd7ea903b3e2d21778b868447 = L.circleMarker(
+                [38.2774498, -0.691602],
+                {"bubblingMouseEvents": true, "color": "#f8f825ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f8f825ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.879580029997861, "stroke": true, "weight": 3}
+            ).addTo(map_86b8d52258ed6ce764831ae457fb4694);
+        
+    
+        var popup_79853d0b19cb38547b2f5417935a31a6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02c5e530902388cb5d11fe209a678764 = $(`<div id="html_02c5e530902388cb5d11fe209a678764" style="width: 100.0%; height: 100.0%;">56 – UMH / Torre Vaillo<br>Media mensual 2022: 224.0 usos<br>Media mensual 2023: 281.2 usos<br>Δ media: +57.2 usos (+25.5%)</div>`)[0];
+                popup_79853d0b19cb38547b2f5417935a31a6.setContent(html_02c5e530902388cb5d11fe209a678764);
+            
+        
+
+        circle_marker_0829dc9bd7ea903b3e2d21778b868447.bindPopup(popup_79853d0b19cb38547b2f5417935a31a6)
+        ;
+
+        
+    
+    
+    var color_map_81c626175621adc2f105b79d970b2b46 = {};
+
+    
+    color_map_81c626175621adc2f105b79d970b2b46.color = d3.scale.threshold()
+              .domain([0.0, 0.18633266533066134, 0.3726653306613227, 0.558997995991984, 0.7453306613226454, 0.9316633266533066, 1.117995991983968, 1.3043286573146293, 1.4906613226452907, 1.676993987975952, 1.8633266533066133, 2.049659318637275, 2.235991983967936, 2.4223246492985973, 2.6086573146292587, 2.79498997995992, 2.9813226452905814, 3.167655310621243, 3.353987975951904, 3.540320641282565, 3.7266533066132266, 3.912985971943888, 4.09931863727455, 4.285651302605211, 4.471983967935872, 4.658316633266533, 4.8446492985971945, 5.0309819639278555, 5.217314629258517, 5.403647294589178, 5.58997995991984, 5.776312625250501, 5.962645290581163, 6.148977955911824, 6.335310621242486, 6.521643286573147, 6.707975951903808, 6.894308617234469, 7.08064128256513, 7.266973947895792, 7.453306613226453, 7.639639278557115, 7.825971943887776, 8.012304609218438, 8.1986372745491, 8.38496993987976, 8.571302605210422, 8.757635270541083, 8.943967935871743, 9.130300601202405, 9.316633266533065, 9.502965931863729, 9.689298597194389, 9.87563126252505, 10.061963927855711, 10.248296593186375, 10.434629258517035, 10.620961923847696, 10.807294589178357, 10.99362725450902, 11.17995991983968, 11.366292585170342, 11.552625250501002, 11.738957915831664, 11.925290581162326, 12.111623246492986, 12.297955911823648, 12.484288577154308, 12.670621242484971, 12.856953907815631, 13.043286573146293, 13.229619238476953, 13.415951903807615, 13.602284569138277, 13.788617234468939, 13.974949899799599, 14.16128256513026, 14.347615230460923, 14.533947895791584, 14.720280561122244, 14.906613226452906, 15.092945891783568, 15.27927855711423, 15.46561122244489, 15.651943887775552, 15.838276553106212, 16.024609218436876, 16.210941883767536, 16.3972745490982, 16.58360721442886, 16.76993987975952, 16.95627254509018, 17.142605210420843, 17.328937875751507, 17.515270541082167, 17.701603206412827, 17.887935871743487, 18.074268537074147, 18.26060120240481, 18.44693386773547, 18.63326653306613, 18.819599198396794, 19.005931863727458, 19.192264529058118, 19.378597194388778, 19.564929859719438, 19.7512625250501, 19.937595190380762, 20.123927855711422, 20.310260521042082, 20.49659318637275, 20.68292585170341, 20.86925851703407, 21.05559118236473, 21.241923847695393, 21.428256513026053, 21.614589178356713, 21.800921843687373, 21.98725450901804, 22.1735871743487, 22.35991983967936, 22.54625250501002, 22.732585170340684, 22.918917835671344, 23.105250501002004, 23.291583166332664, 23.477915831663328, 23.66424849699399, 23.85058116232465, 24.03691382765531, 24.22324649298597, 24.409579158316635, 24.595911823647295, 24.782244488977955, 24.968577154308615, 25.15490981963928, 25.341242484969943, 25.527575150300603, 25.713907815631263, 25.900240480961926, 26.086573146292587, 26.272905811623247, 26.459238476953907, 26.64557114228457, 26.83190380761523, 27.018236472945894, 27.204569138276554, 27.390901803607218, 27.577234468937878, 27.763567134268538, 27.949899799599198, 28.13623246492986, 28.32256513026052, 28.508897795591185, 28.695230460921845, 28.88156312625251, 29.06789579158317, 29.25422845691383, 29.44056112224449, 29.626893787575153, 29.813226452905813, 29.999559118236473, 30.185891783567136, 30.372224448897796, 30.55855711422846, 30.74488977955912, 30.93122244488978, 31.11755511022044, 31.303887775551104, 31.490220440881764, 31.676553106212424, 31.862885771543088, 32.04921843687375, 32.23555110220441, 32.42188376753507, 32.60821643286573, 32.7945490981964, 32.98088176352705, 33.16721442885772, 33.35354709418838, 33.53987975951904, 33.7262124248497, 33.91254509018036, 34.09887775551102, 34.285210420841686, 34.471543086172346, 34.65787575150301, 34.84420841683367, 35.03054108216433, 35.21687374749499, 35.403206412825654, 35.589539078156314, 35.775871743486974, 35.962204408817634, 36.148537074148294, 36.33486973947896, 36.52120240480962, 36.70753507014028, 36.89386773547094, 37.0802004008016, 37.26653306613226, 37.45286573146293, 37.63919839679359, 37.825531062124256, 38.011863727454916, 38.198196392785576, 38.384529058116236, 38.570861723446896, 38.757194388777556, 38.943527054108216, 39.129859719438876, 39.31619238476954, 39.5025250501002, 39.68885771543086, 39.875190380761524, 40.061523046092184, 40.247855711422844, 40.434188376753504, 40.620521042084164, 40.80685370741484, 40.9931863727455, 41.17951903807616, 41.36585170340682, 41.55218436873748, 41.73851703406814, 41.9248496993988, 42.11118236472946, 42.29751503006012, 42.483847695390786, 42.670180360721446, 42.856513026052106, 43.042845691382766, 43.229178356713426, 43.415511022044086, 43.601843687374746, 43.788176352705406, 43.97450901803608, 44.16084168336674, 44.3471743486974, 44.53350701402806, 44.71983967935872, 44.90617234468938, 45.09250501002004, 45.2788376753507, 45.46517034068137, 45.65150300601203, 45.83783567134269, 46.02416833667335, 46.21050100200401, 46.39683366733467, 46.58316633266533, 46.76949899799599, 46.955831663326656, 47.142164328657316, 47.32849699398798, 47.51482965931864, 47.7011623246493, 47.88749498997996, 48.07382765531062, 48.26016032064128, 48.44649298597194, 48.63282565130261, 48.81915831663327, 49.00549098196393, 49.19182364729459, 49.37815631262525, 49.56448897795591, 49.75082164328657, 49.93715430861723, 50.1234869739479, 50.30981963927856, 50.496152304609225, 50.682484969939885, 50.868817635270545, 51.055150300601206, 51.241482965931866, 51.427815631262526, 51.61414829659319, 51.80048096192385, 51.98681362725451, 52.17314629258517, 52.35947895791583, 52.54581162324649, 52.73214428857715, 52.91847695390781, 53.10480961923848, 53.29114228456914, 53.4774749498998, 53.66380761523046, 53.85014028056113, 54.03647294589179, 54.22280561122245, 54.40913827655311, 54.59547094188377, 54.781803607214435, 54.968136272545095, 55.154468937875755, 55.340801603206415, 55.527134268537075, 55.713466933867736, 55.899799599198396, 56.086132264529056, 56.27246492985972, 56.45879759519038, 56.64513026052104, 56.8314629258517, 57.01779559118237, 57.20412825651303, 57.39046092184369, 57.57679358717435, 57.76312625250502, 57.94945891783568, 58.13579158316634, 58.322124248497, 58.50845691382766, 58.69478957915832, 58.88112224448898, 59.06745490981964, 59.253787575150305, 59.440120240480965, 59.626452905811625, 59.812785571142285, 59.999118236472945, 60.185450901803605, 60.37178356713427, 60.55811623246493, 60.74444889779559, 60.93078156312626, 61.11711422845692, 61.30344689378758, 61.48977955911824, 61.6761122244489, 61.86244488977956, 62.04877755511022, 62.23511022044088, 62.42144288577155, 62.60777555110221, 62.79410821643287, 62.98044088176353, 63.16677354709419, 63.35310621242485, 63.539438877755515, 63.725771543086175, 63.91210420841684, 64.0984368737475, 64.28476953907816, 64.47110220440882, 64.65743486973948, 64.84376753507014, 65.0301002004008, 65.21643286573146, 65.40276553106213, 65.5890981963928, 65.77543086172345, 65.9617635270541, 66.14809619238477, 66.33442885771544, 66.52076152304609, 66.70709418837676, 66.89342685370741, 67.07975951903808, 67.26609218436873, 67.4524248496994, 67.63875751503005, 67.82509018036072, 68.01142284569138, 68.19775551102204, 68.38408817635272, 68.57042084168337, 68.75675350701404, 68.94308617234469, 69.12941883767536, 69.31575150300603, 69.50208416833668, 69.68841683366735, 69.874749498998, 70.06108216432867, 70.24741482965932, 70.43374749498999, 70.62008016032064, 70.80641282565131, 70.99274549098197, 71.17907815631263, 71.3654108216433, 71.55174348697395, 71.73807615230461, 71.92440881763527, 72.11074148296593, 72.29707414829659, 72.48340681362725, 72.66973947895792, 72.85607214428858, 73.04240480961924, 73.2287374749499, 73.41507014028056, 73.60140280561122, 73.78773547094188, 73.97406813627255, 74.1604008016032, 74.34673346693387, 74.53306613226452, 74.71939879759519, 74.90573146292586, 75.09206412825652, 75.27839679358718, 75.46472945891784, 75.65106212424851, 75.83739478957916, 76.02372745490983, 76.21006012024048, 76.39639278557115, 76.5827254509018, 76.76905811623247, 76.95539078156314, 77.14172344689379, 77.32805611222446, 77.51438877755511, 77.70072144288578, 77.88705410821643, 78.0733867735471, 78.25971943887775, 78.44605210420842, 78.63238476953909, 78.81871743486974, 79.0050501002004, 79.19138276553106, 79.37771543086173, 79.56404809619238, 79.75038076152305, 79.9367134268537, 80.12304609218437, 80.30937875751503, 80.49571142284569, 80.68204408817635, 80.86837675350701, 81.05470941883767, 81.24104208416833, 81.42737474949901, 81.61370741482968, 81.80004008016033, 81.986372745491, 82.17270541082165, 82.35903807615232, 82.54537074148297, 82.73170340681364, 82.91803607214429, 83.10436873747496, 83.29070140280562, 83.47703406813628, 83.66336673346694, 83.8496993987976, 84.03603206412826, 84.22236472945892, 84.40869739478958, 84.59503006012024, 84.7813627254509, 84.96769539078157, 85.15402805611222, 85.34036072144289, 85.52669338677354, 85.71302605210421, 85.89935871743486, 86.08569138276553, 86.2720240480962, 86.45835671342685, 86.64468937875752, 86.83102204408817, 87.01735470941884, 87.20368737474949, 87.39002004008016, 87.57635270541081, 87.76268537074148, 87.94901803607216, 88.13535070140281, 88.32168336673348, 88.50801603206413, 88.6943486973948, 88.88068136272545, 89.06701402805612, 89.25334669338679, 89.43967935871744, 89.62601202404811, 89.81234468937876, 89.99867735470943, 90.18501002004008, 90.37134268537075, 90.5576753507014, 90.74400801603207, 90.93034068136274, 91.11667334669339, 91.30300601202406, 91.48933867735471, 91.67567134268538, 91.86200400801603, 92.0483366733467, 92.23466933867735, 92.42100200400802, 92.60733466933868, 92.79366733466934, 92.98])
+              .range(['#d3d3d3ff', '#d4d4d2ff', '#d4d4d1ff', '#d4d4d0ff', '#d4d4ceff', '#d5d5cdff', '#d5d5ccff', '#d5d5caff', '#d5d5c9ff', '#d6d6c8ff', '#d6d6c7ff', '#d6d6c5ff', '#d7d7c4ff', '#d7d7c3ff', '#d7d7c1ff', '#d7d7c0ff', '#d8d8bfff', '#d8d8beff', '#d8d8bcff', '#d8d8bbff', '#d9d9baff', '#d9d9b9ff', '#d9d9b7ff', '#d9d9b6ff', '#dadab5ff', '#dadab3ff', '#dadab2ff', '#dadab1ff', '#dbdbb0ff', '#dbdbaeff', '#dbdbadff', '#dcdcacff', '#dcdcabff', '#dcdca9ff', '#dcdca8ff', '#dddda7ff', '#dddda5ff', '#dddda4ff', '#dddda3ff', '#dedea2ff', '#dedea0ff', '#dede9fff', '#dede9eff', '#dfdf9dff', '#dfdf9bff', '#dfdf9aff', '#e0e099ff', '#e0e097ff', '#e0e096ff', '#e0e095ff', '#e1e194ff', '#e1e192ff', '#e1e191ff', '#e1e190ff', '#e2e28fff', '#e2e28dff', '#e2e28cff', '#e2e28bff', '#e3e389ff', '#e3e388ff', '#e3e387ff', '#e4e486ff', '#e4e484ff', '#e4e483ff', '#e4e482ff', '#e5e581ff', '#e5e57fff', '#e5e57eff', '#e5e57dff', '#e6e67bff', '#e6e67aff', '#e6e679ff', '#e6e678ff', '#e7e776ff', '#e7e775ff', '#e7e774ff', '#e8e873ff', '#e8e871ff', '#e8e870ff', '#e8e86fff', '#e9e96dff', '#e9e96cff', '#e9e96bff', '#e9e96aff', '#eaea68ff', '#eaea67ff', '#eaea66ff', '#eaea65ff', '#ebeb63ff', '#ebeb62ff', '#ebeb61ff', '#ebeb5fff', '#ecec5eff', '#ecec5dff', '#ecec5cff', '#eded5aff', '#eded59ff', '#eded58ff', '#eded57ff', '#eeee55ff', '#eeee54ff', '#eeee53ff', '#eeee51ff', '#efef50ff', '#efef4fff', '#efef4eff', '#efef4cff', '#f0f04bff', '#f0f04aff', '#f0f049ff', '#f1f147ff', '#f1f146ff', '#f1f145ff', '#f1f143ff', '#f2f242ff', '#f2f241ff', '#f2f240ff', '#f2f23eff', '#f3f33dff', '#f3f33cff', '#f3f33bff', '#f3f339ff', '#f4f438ff', '#f4f437ff', '#f4f435ff', '#f5f534ff', '#f5f533ff', '#f5f532ff', '#f5f530ff', '#f6f62fff', '#f6f62eff', '#f6f62cff', '#f6f62bff', '#f7f72aff', '#f7f729ff', '#f7f727ff', '#f7f726ff', '#f8f825ff', '#f8f824ff', '#f8f822ff', '#f9f921ff', '#f9f920ff', '#f9f91eff', '#f9f91dff', '#fafa1cff', '#fafa1bff', '#fafa19ff', '#fafa18ff', '#fbfb17ff', '#fbfb16ff', '#fbfb14ff', '#fbfb13ff', '#fcfc12ff', '#fcfc10ff', '#fcfc0fff', '#fcfc0eff', '#fdfd0dff', '#fdfd0bff', '#fdfd0aff', '#fefe09ff', '#fefe08ff', '#fefe06ff', '#fefe05ff', '#ffff04ff', '#ffff02ff', '#ffff01ff', '#ffff00ff', '#ffff00ff', '#ffff00ff', '#fffe00ff', '#fffe00ff', '#fffd00ff', '#fffc00ff', '#fffc00ff', '#fffb00ff', '#fffb00ff', '#fffa00ff', '#fffa00ff', '#fff900ff', '#fff900ff', '#fff800ff', '#fff800ff', '#fff700ff', '#fff600ff', '#fff600ff', '#fff500ff', '#fff500ff', '#fff400ff', '#fff400ff', '#fff300ff', '#fff300ff', '#fff200ff', '#fff200ff', '#fff100ff', '#fff000ff', '#fff000ff', '#ffef00ff', '#ffef00ff', '#ffee00ff', '#ffee00ff', '#ffed00ff', '#ffed00ff', '#ffec00ff', '#ffec00ff', '#ffeb00ff', '#ffea00ff', '#ffea00ff', '#ffe900ff', '#ffe900ff', '#ffe800ff', '#ffe800ff', '#ffe700ff', '#ffe700ff', '#ffe600ff', '#ffe600ff', '#ffe500ff', '#ffe500ff', '#ffe400ff', '#ffe300ff', '#ffe300ff', '#ffe200ff', '#ffe200ff', '#ffe100ff', '#ffe100ff', '#ffe000ff', '#ffe000ff', '#ffdf00ff', '#ffdf00ff', '#ffde00ff', '#ffdd00ff', '#ffdd00ff', '#ffdc00ff', '#ffdc00ff', '#ffdb00ff', '#ffdb00ff', '#ffda00ff', '#ffda00ff', '#ffd900ff', '#ffd900ff', '#ffd800ff', '#ffd700ff', '#ffd700ff', '#ffd600ff', '#ffd600ff', '#ffd500ff', '#ffd500ff', '#ffd400ff', '#ffd400ff', '#ffd300ff', '#ffd300ff', '#ffd200ff', '#ffd200ff', '#ffd100ff', '#ffd000ff', '#ffd000ff', '#ffcf00ff', '#ffcf00ff', '#ffce00ff', '#ffce00ff', '#ffcd00ff', '#ffcd00ff', '#ffcc00ff', '#ffcc00ff', '#ffcb00ff', '#ffca00ff', '#ffca00ff', '#ffc900ff', '#ffc900ff', '#ffc800ff', '#ffc800ff', '#ffc700ff', '#ffc700ff', '#ffc600ff', '#ffc600ff', '#ffc500ff', '#ffc400ff', '#ffc400ff', '#ffc300ff', '#ffc300ff', '#ffc200ff', '#ffc200ff', '#ffc100ff', '#ffc100ff', '#ffc000ff', '#ffc000ff', '#ffbf00ff', '#ffbe00ff', '#ffbe00ff', '#ffbd00ff', '#ffbd00ff', '#ffbc00ff', '#ffbc00ff', '#ffbb00ff', '#ffbb00ff', '#ffba00ff', '#ffba00ff', '#ffb900ff', '#ffb900ff', '#ffb800ff', '#ffb700ff', '#ffb700ff', '#ffb600ff', '#ffb600ff', '#ffb500ff', '#ffb500ff', '#ffb400ff', '#ffb400ff', '#ffb300ff', '#ffb300ff', '#ffb200ff', '#ffb100ff', '#ffb100ff', '#ffb000ff', '#ffb000ff', '#ffaf00ff', '#ffaf00ff', '#ffae00ff', '#ffae00ff', '#ffad00ff', '#ffad00ff', '#ffac00ff', '#ffab00ff', '#ffab00ff', '#ffaa00ff', '#ffaa00ff', '#ffa900ff', '#ffa900ff', '#ffa800ff', '#ffa800ff', '#ffa700ff', '#ffa700ff', '#ffa600ff', '#ffa600ff', '#ffa500ff', '#ffa400ff', '#ffa300ff', '#ffa200ff', '#ffa100ff', '#ffa000ff', '#ff9f00ff', '#ff9e00ff', '#ff9d00ff', '#ff9c00ff', '#ff9b00ff', '#ff9a00ff', '#ff9900ff', '#ff9800ff', '#ff9700ff', '#ff9600ff', '#ff9500ff', '#ff9400ff', '#ff9300ff', '#ff9200ff', '#ff9100ff', '#ff9000ff', '#ff8f00ff', '#ff8e00ff', '#ff8d00ff', '#ff8c00ff', '#ff8b00ff', '#ff8a00ff', '#ff8900ff', '#ff8800ff', '#ff8700ff', '#ff8600ff', '#ff8500ff', '#ff8400ff', '#ff8300ff', '#ff8200ff', '#ff8100ff', '#ff8000ff', '#ff7f00ff', '#ff7e00ff', '#ff7d00ff', '#ff7c00ff', '#ff7b00ff', '#ff7a00ff', '#ff7900ff', '#ff7800ff', '#ff7700ff', '#ff7600ff', '#ff7500ff', '#ff7400ff', '#ff7300ff', '#ff7200ff', '#ff7100ff', '#ff7000ff', '#ff6f00ff', '#ff6e00ff', '#ff6d00ff', '#ff6c00ff', '#ff6b00ff', '#ff6a00ff', '#ff6900ff', '#ff6800ff', '#ff6700ff', '#ff6600ff', '#ff6500ff', '#ff6400ff', '#ff6300ff', '#ff6200ff', '#ff6100ff', '#ff6000ff', '#ff5f00ff', '#ff5e00ff', '#ff5d00ff', '#ff5c00ff', '#ff5b00ff', '#ff5a00ff', '#ff5900ff', '#ff5800ff', '#ff5700ff', '#ff5600ff', '#ff5500ff', '#ff5400ff', '#ff5300ff', '#ff5200ff', '#ff5100ff', '#ff5000ff', '#ff4f00ff', '#ff4e00ff', '#ff4d00ff', '#ff4c00ff', '#ff4b00ff', '#ff4a00ff', '#ff4900ff', '#ff4800ff', '#ff4700ff', '#ff4600ff', '#ff4500ff', '#ff4400ff', '#ff4300ff', '#ff4200ff', '#ff4100ff', '#ff4000ff', '#ff3f00ff', '#ff3e00ff', '#ff3d00ff', '#ff3c00ff', '#ff3b00ff', '#ff3a00ff', '#ff3900ff', '#ff3800ff', '#ff3700ff', '#ff3600ff', '#ff3500ff', '#ff3400ff', '#ff3300ff', '#ff3200ff', '#ff3100ff', '#ff3000ff', '#ff2f00ff', '#ff2e00ff', '#ff2d00ff', '#ff2c00ff', '#ff2b00ff', '#ff2a00ff', '#ff2900ff', '#ff2800ff', '#ff2700ff', '#ff2600ff', '#ff2500ff', '#ff2400ff', '#ff2300ff', '#ff2200ff', '#ff2100ff', '#ff2000ff', '#ff1f00ff', '#ff1e00ff', '#ff1d00ff', '#ff1c00ff', '#ff1b00ff', '#ff1a00ff', '#ff1900ff', '#ff1800ff', '#ff1700ff', '#ff1600ff', '#ff1500ff', '#ff1400ff', '#ff1300ff', '#ff1200ff', '#ff1100ff', '#ff1000ff', '#ff0f00ff', '#ff0e00ff', '#ff0d00ff', '#ff0c00ff', '#ff0b00ff', '#ff0a00ff', '#ff0900ff', '#ff0800ff', '#ff0700ff', '#ff0600ff', '#ff0500ff', '#ff0400ff', '#ff0300ff', '#ff0200ff', '#ff0100ff', '#ff0000ff', '#ff0000ff']);
+    
+
+    color_map_81c626175621adc2f105b79d970b2b46.x = d3.scale.linear()
+              .domain([0.0, 92.98])
+              .range([0, 450 - 50]);
+
+    color_map_81c626175621adc2f105b79d970b2b46.legend = L.control({position: 'topright'});
+    color_map_81c626175621adc2f105b79d970b2b46.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_81c626175621adc2f105b79d970b2b46.legend.addTo(map_86b8d52258ed6ce764831ae457fb4694);
+
+    color_map_81c626175621adc2f105b79d970b2b46.xAxis = d3.svg.axis()
+        .scale(color_map_81c626175621adc2f105b79d970b2b46.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.0, 30.993333333333336, 61.98666666666667, 92.98]);
+
+    color_map_81c626175621adc2f105b79d970b2b46.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_81c626175621adc2f105b79d970b2b46.g = color_map_81c626175621adc2f105b79d970b2b46.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_81c626175621adc2f105b79d970b2b46.g.selectAll("rect")
+        .data(color_map_81c626175621adc2f105b79d970b2b46.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_81c626175621adc2f105b79d970b2b46.x(color_map_81c626175621adc2f105b79d970b2b46.color.domain()[i - 1]) : color_map_81c626175621adc2f105b79d970b2b46.x.range()[0],
+            x1: i < color_map_81c626175621adc2f105b79d970b2b46.color.domain().length ? color_map_81c626175621adc2f105b79d970b2b46.x(color_map_81c626175621adc2f105b79d970b2b46.color.domain()[i]) : color_map_81c626175621adc2f105b79d970b2b46.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_81c626175621adc2f105b79d970b2b46.g.call(color_map_81c626175621adc2f105b79d970b2b46.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Aumento % 2023 vs 2022 (capado a 100%)");
+    
+    var color_map_59764ba3c858dcbe4b2a1d3376b5a971 = {};
+
+    
+    color_map_59764ba3c858dcbe4b2a1d3376b5a971.color = d3.scale.threshold()
+              .domain([0.0, 0.18633266533066134, 0.3726653306613227, 0.558997995991984, 0.7453306613226454, 0.9316633266533066, 1.117995991983968, 1.3043286573146293, 1.4906613226452907, 1.676993987975952, 1.8633266533066133, 2.049659318637275, 2.235991983967936, 2.4223246492985973, 2.6086573146292587, 2.79498997995992, 2.9813226452905814, 3.167655310621243, 3.353987975951904, 3.540320641282565, 3.7266533066132266, 3.912985971943888, 4.09931863727455, 4.285651302605211, 4.471983967935872, 4.658316633266533, 4.8446492985971945, 5.0309819639278555, 5.217314629258517, 5.403647294589178, 5.58997995991984, 5.776312625250501, 5.962645290581163, 6.148977955911824, 6.335310621242486, 6.521643286573147, 6.707975951903808, 6.894308617234469, 7.08064128256513, 7.266973947895792, 7.453306613226453, 7.639639278557115, 7.825971943887776, 8.012304609218438, 8.1986372745491, 8.38496993987976, 8.571302605210422, 8.757635270541083, 8.943967935871743, 9.130300601202405, 9.316633266533065, 9.502965931863729, 9.689298597194389, 9.87563126252505, 10.061963927855711, 10.248296593186375, 10.434629258517035, 10.620961923847696, 10.807294589178357, 10.99362725450902, 11.17995991983968, 11.366292585170342, 11.552625250501002, 11.738957915831664, 11.925290581162326, 12.111623246492986, 12.297955911823648, 12.484288577154308, 12.670621242484971, 12.856953907815631, 13.043286573146293, 13.229619238476953, 13.415951903807615, 13.602284569138277, 13.788617234468939, 13.974949899799599, 14.16128256513026, 14.347615230460923, 14.533947895791584, 14.720280561122244, 14.906613226452906, 15.092945891783568, 15.27927855711423, 15.46561122244489, 15.651943887775552, 15.838276553106212, 16.024609218436876, 16.210941883767536, 16.3972745490982, 16.58360721442886, 16.76993987975952, 16.95627254509018, 17.142605210420843, 17.328937875751507, 17.515270541082167, 17.701603206412827, 17.887935871743487, 18.074268537074147, 18.26060120240481, 18.44693386773547, 18.63326653306613, 18.819599198396794, 19.005931863727458, 19.192264529058118, 19.378597194388778, 19.564929859719438, 19.7512625250501, 19.937595190380762, 20.123927855711422, 20.310260521042082, 20.49659318637275, 20.68292585170341, 20.86925851703407, 21.05559118236473, 21.241923847695393, 21.428256513026053, 21.614589178356713, 21.800921843687373, 21.98725450901804, 22.1735871743487, 22.35991983967936, 22.54625250501002, 22.732585170340684, 22.918917835671344, 23.105250501002004, 23.291583166332664, 23.477915831663328, 23.66424849699399, 23.85058116232465, 24.03691382765531, 24.22324649298597, 24.409579158316635, 24.595911823647295, 24.782244488977955, 24.968577154308615, 25.15490981963928, 25.341242484969943, 25.527575150300603, 25.713907815631263, 25.900240480961926, 26.086573146292587, 26.272905811623247, 26.459238476953907, 26.64557114228457, 26.83190380761523, 27.018236472945894, 27.204569138276554, 27.390901803607218, 27.577234468937878, 27.763567134268538, 27.949899799599198, 28.13623246492986, 28.32256513026052, 28.508897795591185, 28.695230460921845, 28.88156312625251, 29.06789579158317, 29.25422845691383, 29.44056112224449, 29.626893787575153, 29.813226452905813, 29.999559118236473, 30.185891783567136, 30.372224448897796, 30.55855711422846, 30.74488977955912, 30.93122244488978, 31.11755511022044, 31.303887775551104, 31.490220440881764, 31.676553106212424, 31.862885771543088, 32.04921843687375, 32.23555110220441, 32.42188376753507, 32.60821643286573, 32.7945490981964, 32.98088176352705, 33.16721442885772, 33.35354709418838, 33.53987975951904, 33.7262124248497, 33.91254509018036, 34.09887775551102, 34.285210420841686, 34.471543086172346, 34.65787575150301, 34.84420841683367, 35.03054108216433, 35.21687374749499, 35.403206412825654, 35.589539078156314, 35.775871743486974, 35.962204408817634, 36.148537074148294, 36.33486973947896, 36.52120240480962, 36.70753507014028, 36.89386773547094, 37.0802004008016, 37.26653306613226, 37.45286573146293, 37.63919839679359, 37.825531062124256, 38.011863727454916, 38.198196392785576, 38.384529058116236, 38.570861723446896, 38.757194388777556, 38.943527054108216, 39.129859719438876, 39.31619238476954, 39.5025250501002, 39.68885771543086, 39.875190380761524, 40.061523046092184, 40.247855711422844, 40.434188376753504, 40.620521042084164, 40.80685370741484, 40.9931863727455, 41.17951903807616, 41.36585170340682, 41.55218436873748, 41.73851703406814, 41.9248496993988, 42.11118236472946, 42.29751503006012, 42.483847695390786, 42.670180360721446, 42.856513026052106, 43.042845691382766, 43.229178356713426, 43.415511022044086, 43.601843687374746, 43.788176352705406, 43.97450901803608, 44.16084168336674, 44.3471743486974, 44.53350701402806, 44.71983967935872, 44.90617234468938, 45.09250501002004, 45.2788376753507, 45.46517034068137, 45.65150300601203, 45.83783567134269, 46.02416833667335, 46.21050100200401, 46.39683366733467, 46.58316633266533, 46.76949899799599, 46.955831663326656, 47.142164328657316, 47.32849699398798, 47.51482965931864, 47.7011623246493, 47.88749498997996, 48.07382765531062, 48.26016032064128, 48.44649298597194, 48.63282565130261, 48.81915831663327, 49.00549098196393, 49.19182364729459, 49.37815631262525, 49.56448897795591, 49.75082164328657, 49.93715430861723, 50.1234869739479, 50.30981963927856, 50.496152304609225, 50.682484969939885, 50.868817635270545, 51.055150300601206, 51.241482965931866, 51.427815631262526, 51.61414829659319, 51.80048096192385, 51.98681362725451, 52.17314629258517, 52.35947895791583, 52.54581162324649, 52.73214428857715, 52.91847695390781, 53.10480961923848, 53.29114228456914, 53.4774749498998, 53.66380761523046, 53.85014028056113, 54.03647294589179, 54.22280561122245, 54.40913827655311, 54.59547094188377, 54.781803607214435, 54.968136272545095, 55.154468937875755, 55.340801603206415, 55.527134268537075, 55.713466933867736, 55.899799599198396, 56.086132264529056, 56.27246492985972, 56.45879759519038, 56.64513026052104, 56.8314629258517, 57.01779559118237, 57.20412825651303, 57.39046092184369, 57.57679358717435, 57.76312625250502, 57.94945891783568, 58.13579158316634, 58.322124248497, 58.50845691382766, 58.69478957915832, 58.88112224448898, 59.06745490981964, 59.253787575150305, 59.440120240480965, 59.626452905811625, 59.812785571142285, 59.999118236472945, 60.185450901803605, 60.37178356713427, 60.55811623246493, 60.74444889779559, 60.93078156312626, 61.11711422845692, 61.30344689378758, 61.48977955911824, 61.6761122244489, 61.86244488977956, 62.04877755511022, 62.23511022044088, 62.42144288577155, 62.60777555110221, 62.79410821643287, 62.98044088176353, 63.16677354709419, 63.35310621242485, 63.539438877755515, 63.725771543086175, 63.91210420841684, 64.0984368737475, 64.28476953907816, 64.47110220440882, 64.65743486973948, 64.84376753507014, 65.0301002004008, 65.21643286573146, 65.40276553106213, 65.5890981963928, 65.77543086172345, 65.9617635270541, 66.14809619238477, 66.33442885771544, 66.52076152304609, 66.70709418837676, 66.89342685370741, 67.07975951903808, 67.26609218436873, 67.4524248496994, 67.63875751503005, 67.82509018036072, 68.01142284569138, 68.19775551102204, 68.38408817635272, 68.57042084168337, 68.75675350701404, 68.94308617234469, 69.12941883767536, 69.31575150300603, 69.50208416833668, 69.68841683366735, 69.874749498998, 70.06108216432867, 70.24741482965932, 70.43374749498999, 70.62008016032064, 70.80641282565131, 70.99274549098197, 71.17907815631263, 71.3654108216433, 71.55174348697395, 71.73807615230461, 71.92440881763527, 72.11074148296593, 72.29707414829659, 72.48340681362725, 72.66973947895792, 72.85607214428858, 73.04240480961924, 73.2287374749499, 73.41507014028056, 73.60140280561122, 73.78773547094188, 73.97406813627255, 74.1604008016032, 74.34673346693387, 74.53306613226452, 74.71939879759519, 74.90573146292586, 75.09206412825652, 75.27839679358718, 75.46472945891784, 75.65106212424851, 75.83739478957916, 76.02372745490983, 76.21006012024048, 76.39639278557115, 76.5827254509018, 76.76905811623247, 76.95539078156314, 77.14172344689379, 77.32805611222446, 77.51438877755511, 77.70072144288578, 77.88705410821643, 78.0733867735471, 78.25971943887775, 78.44605210420842, 78.63238476953909, 78.81871743486974, 79.0050501002004, 79.19138276553106, 79.37771543086173, 79.56404809619238, 79.75038076152305, 79.9367134268537, 80.12304609218437, 80.30937875751503, 80.49571142284569, 80.68204408817635, 80.86837675350701, 81.05470941883767, 81.24104208416833, 81.42737474949901, 81.61370741482968, 81.80004008016033, 81.986372745491, 82.17270541082165, 82.35903807615232, 82.54537074148297, 82.73170340681364, 82.91803607214429, 83.10436873747496, 83.29070140280562, 83.47703406813628, 83.66336673346694, 83.8496993987976, 84.03603206412826, 84.22236472945892, 84.40869739478958, 84.59503006012024, 84.7813627254509, 84.96769539078157, 85.15402805611222, 85.34036072144289, 85.52669338677354, 85.71302605210421, 85.89935871743486, 86.08569138276553, 86.2720240480962, 86.45835671342685, 86.64468937875752, 86.83102204408817, 87.01735470941884, 87.20368737474949, 87.39002004008016, 87.57635270541081, 87.76268537074148, 87.94901803607216, 88.13535070140281, 88.32168336673348, 88.50801603206413, 88.6943486973948, 88.88068136272545, 89.06701402805612, 89.25334669338679, 89.43967935871744, 89.62601202404811, 89.81234468937876, 89.99867735470943, 90.18501002004008, 90.37134268537075, 90.5576753507014, 90.74400801603207, 90.93034068136274, 91.11667334669339, 91.30300601202406, 91.48933867735471, 91.67567134268538, 91.86200400801603, 92.0483366733467, 92.23466933867735, 92.42100200400802, 92.60733466933868, 92.79366733466934, 92.98])
+              .range(['#d3d3d3ff', '#d3d3d3ff', '#d3d3d4ff', '#d3d3d4ff', '#d2d3d4ff', '#d2d3d4ff', '#d2d4d4ff', '#d2d4d4ff', '#d1d4d4ff', '#d1d4d4ff', '#d1d4d4ff', '#d1d4d5ff', '#d1d4d5ff', '#d0d4d5ff', '#d0d4d5ff', '#d0d4d5ff', '#d0d4d5ff', '#cfd4d5ff', '#cfd4d5ff', '#cfd4d6ff', '#cfd4d6ff', '#cfd4d6ff', '#ced4d6ff', '#ced4d6ff', '#ced4d6ff', '#ced4d6ff', '#cdd4d6ff', '#cdd4d6ff', '#cdd4d7ff', '#cdd4d7ff', '#ccd4d7ff', '#ccd4d7ff', '#ccd4d7ff', '#ccd4d7ff', '#ccd4d7ff', '#cbd4d7ff', '#cbd4d7ff', '#cbd4d8ff', '#cbd4d8ff', '#cad5d8ff', '#cad5d8ff', '#cad5d8ff', '#cad5d8ff', '#c9d5d8ff', '#c9d5d8ff', '#c9d5d8ff', '#c9d5d9ff', '#c9d5d9ff', '#c8d5d9ff', '#c8d5d9ff', '#c8d5d9ff', '#c8d5d9ff', '#c7d5d9ff', '#c7d5d9ff', '#c7d5daff', '#c7d5daff', '#c6d5daff', '#c6d5daff', '#c6d5daff', '#c6d5daff', '#c6d5daff', '#c5d5daff', '#c5d5daff', '#c5d5dbff', '#c5d5dbff', '#c4d5dbff', '#c4d5dbff', '#c4d5dbff', '#c4d5dbff', '#c4d5dbff', '#c3d5dbff', '#c3d5dbff', '#c3d6dcff', '#c3d6dcff', '#c2d6dcff', '#c2d6dcff', '#c2d6dcff', '#c2d6dcff', '#c1d6dcff', '#c1d6dcff', '#c1d6ddff', '#c1d6ddff', '#c1d6ddff', '#c0d6ddff', '#c0d6ddff', '#c0d6ddff', '#c0d6ddff', '#bfd6ddff', '#bfd6ddff', '#bfd6deff', '#bfd6deff', '#bed6deff', '#bed6deff', '#bed6deff', '#bed6deff', '#bed6deff', '#bdd6deff', '#bdd6deff', '#bdd6dfff', '#bdd6dfff', '#bcd6dfff', '#bcd6dfff', '#bcd6dfff', '#bcd6dfff', '#bbd6dfff', '#bbd6dfff', '#bbd7dfff', '#bbd7e0ff', '#bbd7e0ff', '#bad7e0ff', '#bad7e0ff', '#bad7e0ff', '#bad7e0ff', '#b9d7e0ff', '#b9d7e0ff', '#b9d7e1ff', '#b9d7e1ff', '#b8d7e1ff', '#b8d7e1ff', '#b8d7e1ff', '#b8d7e1ff', '#b8d7e1ff', '#b7d7e1ff', '#b7d7e1ff', '#b7d7e2ff', '#b7d7e2ff', '#b6d7e2ff', '#b6d7e2ff', '#b6d7e2ff', '#b6d7e2ff', '#b6d7e2ff', '#b5d7e2ff', '#b5d7e2ff', '#b5d7e3ff', '#b5d7e3ff', '#b4d7e3ff', '#b4d7e3ff', '#b4d7e3ff', '#b4d7e3ff', '#b3d8e3ff', '#b3d8e3ff', '#b3d8e3ff', '#b3d8e4ff', '#b3d8e4ff', '#b2d8e4ff', '#b2d8e4ff', '#b2d8e4ff', '#b2d8e4ff', '#b1d8e4ff', '#b1d8e4ff', '#b1d8e5ff', '#b1d8e5ff', '#b0d8e5ff', '#b0d8e5ff', '#b0d8e5ff', '#b0d8e5ff', '#b0d8e5ff', '#afd8e5ff', '#afd8e5ff', '#afd8e6ff', '#afd8e6ff', '#aed8e6ff', '#aed8e6ff', '#aed8e6ff', '#aed8e6ff', '#add8e6ff', '#add8e6ff', '#acd7e7ff', '#abd6e7ff', '#aad5e7ff', '#a9d4e7ff', '#a8d2e7ff', '#a7d1e7ff', '#a6d0e7ff', '#a5cee8ff', '#a4cde8ff', '#a3cce8ff', '#a2cae8ff', '#a1c9e8ff', '#a0c8e8ff', '#9fc7e8ff', '#9ec5e9ff', '#9dc4e9ff', '#9cc3e9ff', '#9bc1e9ff', '#9ac0e9ff', '#99bfe9ff', '#98bdeaff', '#97bceaff', '#96bbeaff', '#94b9eaff', '#93b8eaff', '#92b7eaff', '#91b6eaff', '#90b4ebff', '#8fb3ebff', '#8eb2ebff', '#8db0ebff', '#8cafebff', '#8baeebff', '#8aacebff', '#89abecff', '#88aaecff', '#87a9ecff', '#86a7ecff', '#85a6ecff', '#84a5ecff', '#83a3edff', '#82a2edff', '#81a1edff', '#809fedff', '#7f9eedff', '#7d9dedff', '#7c9cedff', '#7b9aeeff', '#7a99eeff', '#7998eeff', '#7896eeff', '#7795eeff', '#7694eeff', '#7592eeff', '#7491efff', '#7390efff', '#728eefff', '#718defff', '#708cefff', '#6f8befff', '#6e89f0ff', '#6d88f0ff', '#6c87f0ff', '#6b85f0ff', '#6a84f0ff', '#6983f0ff', '#6881f0ff', '#6780f1ff', '#657ff1ff', '#647ef1ff', '#637cf1ff', '#627bf1ff', '#617af1ff', '#6078f2ff', '#5f77f2ff', '#5e76f2ff', '#5d74f2ff', '#5c73f2ff', '#5b72f2ff', '#5a70f2ff', '#596ff3ff', '#586ef3ff', '#576df3ff', '#566bf3ff', '#556af3ff', '#5469f3ff', '#5367f3ff', '#5266f4ff', '#5165f4ff', '#5063f4ff', '#4f62f4ff', '#4d61f4ff', '#4c60f4ff', '#4b5ef5ff', '#4a5df5ff', '#495cf5ff', '#485af5ff', '#4759f5ff', '#4658f5ff', '#4556f5ff', '#4455f6ff', '#4354f6ff', '#4253f6ff', '#4151f6ff', '#4050f6ff', '#3f4ff6ff', '#3e4df6ff', '#3d4cf7ff', '#3c4bf7ff', '#3b49f7ff', '#3a48f7ff', '#3947f7ff', '#3845f7ff', '#3644f8ff', '#3543f8ff', '#3442f8ff', '#3340f8ff', '#323ff8ff', '#313ef8ff', '#303cf8ff', '#2f3bf9ff', '#2e3af9ff', '#2d38f9ff', '#2c37f9ff', '#2b36f9ff', '#2a35f9ff', '#2933faff', '#2832faff', '#2731faff', '#262ffaff', '#252efaff', '#242dfaff', '#232bfaff', '#222afbff', '#2129fbff', '#2027fbff', '#1e26fbff', '#1d25fbff', '#1c24fbff', '#1b22fbff', '#1a21fcff', '#1920fcff', '#181efcff', '#171dfcff', '#161cfcff', '#151afcff', '#1419fdff', '#1318fdff', '#1217fdff', '#1115fdff', '#1014fdff', '#0f13fdff', '#0e11fdff', '#0d10feff', '#0c0ffeff', '#0b0dfeff', '#0a0cfeff', '#090bfeff', '#0809feff', '#0608feff', '#0507ffff', '#0406ffff', '#0304ffff', '#0203ffff', '#0102ffff', '#0000ffff', '#0000ffff', '#0000ffff', '#0000feff', '#0000fdff', '#0000fcff', '#0000fcff', '#0000fbff', '#0000faff', '#0000faff', '#0000f9ff', '#0000f8ff', '#0000f8ff', '#0000f7ff', '#0000f6ff', '#0000f5ff', '#0000f5ff', '#0000f4ff', '#0000f3ff', '#0000f3ff', '#0000f2ff', '#0000f1ff', '#0000f1ff', '#0000f0ff', '#0000efff', '#0000eeff', '#0000eeff', '#0000edff', '#0000ecff', '#0000ecff', '#0000ebff', '#0000eaff', '#0000eaff', '#0000e9ff', '#0000e8ff', '#0000e7ff', '#0000e7ff', '#0000e6ff', '#0000e5ff', '#0000e5ff', '#0000e4ff', '#0000e3ff', '#0000e3ff', '#0000e2ff', '#0000e1ff', '#0000e0ff', '#0000e0ff', '#0000dfff', '#0000deff', '#0000deff', '#0000ddff', '#0000dcff', '#0000dcff', '#0000dbff', '#0000daff', '#0000d9ff', '#0000d9ff', '#0000d8ff', '#0000d7ff', '#0000d7ff', '#0000d6ff', '#0000d5ff', '#0000d5ff', '#0000d4ff', '#0000d3ff', '#0000d2ff', '#0000d2ff', '#0000d1ff', '#0000d0ff', '#0000d0ff', '#0000cfff', '#0000ceff', '#0000ceff', '#0000cdff', '#0000ccff', '#0000cbff', '#0000cbff', '#0000caff', '#0000c9ff', '#0000c9ff', '#0000c8ff', '#0000c7ff', '#0000c7ff', '#0000c6ff', '#0000c5ff', '#0000c4ff', '#0000c4ff', '#0000c3ff', '#0000c2ff', '#0000c2ff', '#0000c1ff', '#0000c0ff', '#0000c0ff', '#0000bfff', '#0000beff', '#0000bdff', '#0000bdff', '#0000bcff', '#0000bbff', '#0000bbff', '#0000baff', '#0000b9ff', '#0000b9ff', '#0000b8ff', '#0000b7ff', '#0000b6ff', '#0000b6ff', '#0000b5ff', '#0000b4ff', '#0000b4ff', '#0000b3ff', '#0000b2ff', '#0000b2ff', '#0000b1ff', '#0000b0ff', '#0000afff', '#0000afff', '#0000aeff', '#0000adff', '#0000adff', '#0000acff', '#0000abff', '#0000abff', '#0000aaff', '#0000a9ff', '#0000a8ff', '#0000a8ff', '#0000a7ff', '#0000a6ff', '#0000a6ff', '#0000a5ff', '#0000a4ff', '#0000a4ff', '#0000a3ff', '#0000a2ff', '#0000a1ff', '#0000a1ff', '#0000a0ff', '#00009fff', '#00009fff', '#00009eff', '#00009dff', '#00009dff', '#00009cff', '#00009bff', '#00009aff', '#00009aff', '#000099ff', '#000098ff', '#000098ff', '#000097ff', '#000096ff', '#000096ff', '#000095ff', '#000094ff', '#000093ff', '#000093ff', '#000092ff', '#000091ff', '#000091ff', '#000090ff', '#00008fff', '#00008fff', '#00008eff', '#00008dff', '#00008cff', '#00008cff', '#00008bff']);
+    
+
+    color_map_59764ba3c858dcbe4b2a1d3376b5a971.x = d3.scale.linear()
+              .domain([0.0, 92.98])
+              .range([0, 450 - 50]);
+
+    color_map_59764ba3c858dcbe4b2a1d3376b5a971.legend = L.control({position: 'topright'});
+    color_map_59764ba3c858dcbe4b2a1d3376b5a971.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_59764ba3c858dcbe4b2a1d3376b5a971.legend.addTo(map_86b8d52258ed6ce764831ae457fb4694);
+
+    color_map_59764ba3c858dcbe4b2a1d3376b5a971.xAxis = d3.svg.axis()
+        .scale(color_map_59764ba3c858dcbe4b2a1d3376b5a971.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.0, 30.993333333333336, 61.98666666666667, 92.98]);
+
+    color_map_59764ba3c858dcbe4b2a1d3376b5a971.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_59764ba3c858dcbe4b2a1d3376b5a971.g = color_map_59764ba3c858dcbe4b2a1d3376b5a971.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_59764ba3c858dcbe4b2a1d3376b5a971.g.selectAll("rect")
+        .data(color_map_59764ba3c858dcbe4b2a1d3376b5a971.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_59764ba3c858dcbe4b2a1d3376b5a971.x(color_map_59764ba3c858dcbe4b2a1d3376b5a971.color.domain()[i - 1]) : color_map_59764ba3c858dcbe4b2a1d3376b5a971.x.range()[0],
+            x1: i < color_map_59764ba3c858dcbe4b2a1d3376b5a971.color.domain().length ? color_map_59764ba3c858dcbe4b2a1d3376b5a971.x(color_map_59764ba3c858dcbe4b2a1d3376b5a971.color.domain()[i]) : color_map_59764ba3c858dcbe4b2a1d3376b5a971.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_59764ba3c858dcbe4b2a1d3376b5a971.g.call(color_map_59764ba3c858dcbe4b2a1d3376b5a971.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Disminuci\u00f3n % 2023 vs 2022 (capado a 100%)");
+</script>
+</html>

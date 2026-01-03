@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_85513acc3e8483cb133ec7a78253fc75 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_85513acc3e8483cb133ec7a78253fc75" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_85513acc3e8483cb133ec7a78253fc75 = L.map(
+                "map_85513acc3e8483cb133ec7a78253fc75",
+                {
+                    center: [38.267, -0.7129],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_85513acc3e8483cb133ec7a78253fc75);
+
+            
+
+        
+    
+            var tile_layer_1200203cda10a4e9214c405ea0435c1a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1200203cda10a4e9214c405ea0435c1a.addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+            var circle_marker_462119ab98eeb51205d6b87d10fc8431 = L.circleMarker(
+                [38.272036, -0.694305],
+                {"bubblingMouseEvents": true, "color": "#0000dfff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000dfff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 29.494505494505496, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_e8486f4fe5d2efa85c60e8e21d2f1583 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_85af62a0a3bc6bc1e389326e3f44cabd = $(`<div id="html_85af62a0a3bc6bc1e389326e3f44cabd" style="width: 100.0%; height: 100.0%;">1 – Estació d’Autobusos<br>Media mensual 2019: 1787.6 usos<br>Media mensual 2020: 922.4 usos<br>Δ media: -865.2 usos (-48.4%)</div>`)[0];
+                popup_e8486f4fe5d2efa85c60e8e21d2f1583.setContent(html_85af62a0a3bc6bc1e389326e3f44cabd);
+            
+        
+
+        circle_marker_462119ab98eeb51205d6b87d10fc8431.bindPopup(popup_e8486f4fe5d2efa85c60e8e21d2f1583)
+        ;
+
+        
+    
+    
+            var circle_marker_88f79ab4b1561ebd3b1fcdec9d6bf63c = L.circleMarker(
+                [38.268457, -0.696731],
+                {"bubblingMouseEvents": true, "color": "#0000f3ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000f3ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 36.62569832402235, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_1d7210634eeb74df01eb8fa8eef5e9ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_34149dc18d75919bd2f70c9c6dc750a5 = $(`<div id="html_34149dc18d75919bd2f70c9c6dc750a5" style="width: 100.0%; height: 100.0%;">2 – Oficina de Turisme<br>Media mensual 2019: 2472.0 usos<br>Media mensual 2020: 1364.8 usos<br>Δ media: -1107.2 usos (-44.8%)</div>`)[0];
+                popup_1d7210634eeb74df01eb8fa8eef5e9ca.setContent(html_34149dc18d75919bd2f70c9c6dc750a5);
+            
+        
+
+        circle_marker_88f79ab4b1561ebd3b1fcdec9d6bf63c.bindPopup(popup_1d7210634eeb74df01eb8fa8eef5e9ca)
+        ;
+
+        
+    
+    
+            var circle_marker_0491c91130b2cd3f1a17f5826b4bbe00 = L.circleMarker(
+                [38.270117, -0.685963],
+                {"bubblingMouseEvents": true, "color": "#080afeff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#080afeff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 38.99539566578673, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_5479601e65efec8988cbadca621e60b2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c3521693bf9fe7135c017da040c380f8 = $(`<div id="html_c3521693bf9fe7135c017da040c380f8" style="width: 100.0%; height: 100.0%;">3 – Plaça de la Llotja<br>Media mensual 2019: 2864.0 usos<br>Media mensual 2020: 1676.4 usos<br>Δ media: -1187.6 usos (-41.5%)</div>`)[0];
+                popup_5479601e65efec8988cbadca621e60b2.setContent(html_c3521693bf9fe7135c017da040c380f8);
+            
+        
+
+        circle_marker_0491c91130b2cd3f1a17f5826b4bbe00.bindPopup(popup_5479601e65efec8988cbadca621e60b2)
+        ;
+
+        
+    
+    
+            var circle_marker_b5fc0ab81ff542f77cc91426c00a642f = L.circleMarker(
+                [38.260487, -0.698565],
+                {"bubblingMouseEvents": true, "color": "#0000feff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000feff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.893179446252077, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_60d19658b256aaea74e04ef30b19000f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_63f897d01d623a52e8e0701d6dcfb133 = $(`<div id="html_63f897d01d623a52e8e0701d6dcfb133" style="width: 100.0%; height: 100.0%;">4 – Plaça del Raval<br>Media mensual 2019: 1577.8 usos<br>Media mensual 2020: 902.7 usos<br>Δ media: -675.1 usos (-42.8%)</div>`)[0];
+                popup_60d19658b256aaea74e04ef30b19000f.setContent(html_63f897d01d623a52e8e0701d6dcfb133);
+            
+        
+
+        circle_marker_b5fc0ab81ff542f77cc91426c00a642f.bindPopup(popup_60d19658b256aaea74e04ef30b19000f)
+        ;
+
+        
+    
+    
+            var circle_marker_a549564dade3458f23bc533b47bacc67 = L.circleMarker(
+                [38.264171, -0.695433],
+                {"bubblingMouseEvents": true, "color": "#0000fcff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000fcff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25.533550248634054, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_846f1ced5b1e7848af53a4c6eb1a4629 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f0d50d79268a97167718723095d56f9 = $(`<div id="html_0f0d50d79268a97167718723095d56f9" style="width: 100.0%; height: 100.0%;">5 – Centre de Congressos<br>Media mensual 2019: 1690.4 usos<br>Media mensual 2020: 959.7 usos<br>Δ media: -730.8 usos (-43.2%)</div>`)[0];
+                popup_846f1ced5b1e7848af53a4c6eb1a4629.setContent(html_0f0d50d79268a97167718723095d56f9);
+            
+        
+
+        circle_marker_a549564dade3458f23bc533b47bacc67.bindPopup(popup_846f1ced5b1e7848af53a4c6eb1a4629)
+        ;
+
+        
+    
+    
+            var circle_marker_848c5e504d451982a762aff9270263b8 = L.circleMarker(
+                [38.265409, -0.699424],
+                {"bubblingMouseEvents": true, "color": "#0000ffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ffff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 36.29418626066671, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_4659f3e47f0efe1ce1b4f50c0b47ad1c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e74557b8803db6a43f3e3384417f38bf = $(`<div id="html_e74557b8803db6a43f3e3384417f38bf" style="width: 100.0%; height: 100.0%;">6 – Ajuntament<br>Media mensual 2019: 2582.2 usos<br>Media mensual 2020: 1486.3 usos<br>Δ media: -1095.9 usos (-42.4%)</div>`)[0];
+                popup_4659f3e47f0efe1ce1b4f50c0b47ad1c.setContent(html_e74557b8803db6a43f3e3384417f38bf);
+            
+        
+
+        circle_marker_848c5e504d451982a762aff9270263b8.bindPopup(popup_4659f3e47f0efe1ce1b4f50c0b47ad1c)
+        ;
+
+        
+    
+    
+            var circle_marker_c74b1c86118ee2e1071fd6e65ffdabac = L.circleMarker(
+                [38.273904, -0.673121],
+                {"bubblingMouseEvents": true, "color": "#0000caff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000caff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.546219143984509, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_7b68596d72eb6ccfb98cf60c3a31ee11 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6655ef23dfdbe1e28486f4431d2d1b4d = $(`<div id="html_6655ef23dfdbe1e28486f4431d2d1b4d" style="width: 100.0%; height: 100.0%;">7 – Pavelló Municipal<br>Media mensual 2019: 748.9 usos<br>Media mensual 2020: 357.1 usos<br>Δ media: -391.8 usos (-52.3%)</div>`)[0];
+                popup_7b68596d72eb6ccfb98cf60c3a31ee11.setContent(html_6655ef23dfdbe1e28486f4431d2d1b4d);
+            
+        
+
+        circle_marker_c74b1c86118ee2e1071fd6e65ffdabac.bindPopup(popup_7b68596d72eb6ccfb98cf60c3a31ee11)
+        ;
+
+        
+    
+    
+            var circle_marker_5a4751f2d4f195ea928fc4f730d2143d = L.circleMarker(
+                [38.270115, -0.713323],
+                {"bubblingMouseEvents": true, "color": "#566bf3ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#566bf3ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.053962796979558, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_000dc6ec5270bb7bf71cb32bf488bfa0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb2e6c4051a0b405eaca3c020af4c792 = $(`<div id="html_bb2e6c4051a0b405eaca3c020af4c792" style="width: 100.0%; height: 100.0%;">8 – Polivalent de Carrús<br>Media mensual 2019: 961.8 usos<br>Media mensual 2020: 654.5 usos<br>Δ media: -307.2 usos (-31.9%)</div>`)[0];
+                popup_000dc6ec5270bb7bf71cb32bf488bfa0.setContent(html_bb2e6c4051a0b405eaca3c020af4c792);
+            
+        
+
+        circle_marker_5a4751f2d4f195ea928fc4f730d2143d.bindPopup(popup_000dc6ec5270bb7bf71cb32bf488bfa0)
+        ;
+
+        
+    
+    
+            var circle_marker_aaee3f10025571538f1e3475d122dcc8 = L.circleMarker(
+                [38.259831, -0.701275],
+                {"bubblingMouseEvents": true, "color": "#0000d0ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000d0ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.55374792804961, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_e253efb9f60e6310ac9850bdf19c5602 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a623d316eeb771d95e9c4d758f511f29 = $(`<div id="html_a623d316eeb771d95e9c4d758f511f29" style="width: 100.0%; height: 100.0%;">9 – Biblioteca de Sant Josep<br>Media mensual 2019: 1360.8 usos<br>Media mensual 2020: 663.2 usos<br>Δ media: -697.5 usos (-51.3%)</div>`)[0];
+                popup_e253efb9f60e6310ac9850bdf19c5602.setContent(html_a623d316eeb771d95e9c4d758f511f29);
+            
+        
+
+        circle_marker_aaee3f10025571538f1e3475d122dcc8.bindPopup(popup_e253efb9f60e6310ac9850bdf19c5602)
+        ;
+
+        
+    
+    
+            var circle_marker_a60552c4a09f21860aa644b6135552c4 = L.circleMarker(
+                [38.256839, -0.691995],
+                {"bubblingMouseEvents": true, "color": "#00008bff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00008bff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.645773221192215, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_ae68b95695eb5fcea463c1d4f9c7e0b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2ed08b70c27f3ce1179e266ba753e84 = $(`<div id="html_b2ed08b70c27f3ce1179e266ba753e84" style="width: 100.0%; height: 100.0%;">10 – L’Escorxador<br>Media mensual 2019: 513.4 usos<br>Media mensual 2020: 186.1 usos<br>Δ media: -327.3 usos (-63.8%)</div>`)[0];
+                popup_ae68b95695eb5fcea463c1d4f9c7e0b1.setContent(html_b2ed08b70c27f3ce1179e266ba753e84);
+            
+        
+
+        circle_marker_a60552c4a09f21860aa644b6135552c4.bindPopup(popup_ae68b95695eb5fcea463c1d4f9c7e0b1)
+        ;
+
+        
+    
+    
+            var circle_marker_281746528c2ac0759ff254d45fbd4e78 = L.circleMarker(
+                [38.261942, -0.708752],
+                {"bubblingMouseEvents": true, "color": "#5368f3ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5368f3ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.904414021732457, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_bd0a5c663c9251c6dea3ffc0d8ab078c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eaa68fd425e3e93b122ecfda3b1921f9 = $(`<div id="html_eaa68fd425e3e93b122ecfda3b1921f9" style="width: 100.0%; height: 100.0%;">11 – Plaça de Crevillent<br>Media mensual 2019: 1355.2 usos<br>Media mensual 2020: 917.3 usos<br>Δ media: -437.9 usos (-32.3%)</div>`)[0];
+                popup_bd0a5c663c9251c6dea3ffc0d8ab078c.setContent(html_eaa68fd425e3e93b122ecfda3b1921f9);
+            
+        
+
+        circle_marker_281746528c2ac0759ff254d45fbd4e78.bindPopup(popup_bd0a5c663c9251c6dea3ffc0d8ab078c)
+        ;
+
+        
+    
+    
+            var circle_marker_9a5678dd20d6eedea08005f79cf89633 = L.circleMarker(
+                [38.268924, -0.706933],
+                {"bubblingMouseEvents": true, "color": "#0000e8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000e8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 44.0, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_38de000c2eeae8fb36a4da7f9f6dea92 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ff4f7bb5895d3dba411208bd205c823e = $(`<div id="html_ff4f7bb5895d3dba411208bd205c823e" style="width: 100.0%; height: 100.0%;">12 – Ambulatori de Sant Fermí<br>Media mensual 2019: 2897.4 usos<br>Media mensual 2020: 1540.0 usos<br>Δ media: -1357.4 usos (-46.9%)</div>`)[0];
+                popup_38de000c2eeae8fb36a4da7f9f6dea92.setContent(html_ff4f7bb5895d3dba411208bd205c823e);
+            
+        
+
+        circle_marker_9a5678dd20d6eedea08005f79cf89633.bindPopup(popup_38de000c2eeae8fb36a4da7f9f6dea92)
+        ;
+
+        
+    
+    
+            var circle_marker_b77b420a6f4a5c1e9510f60b4e0b8be4 = L.circleMarker(
+                [38.274553, -0.708405],
+                {"bubblingMouseEvents": true, "color": "#2630faff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2630faff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.131192829516852, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_54427dd132b42ec0e75a9c020a50209b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19d92442791badcd256d04a98b0fbf5d = $(`<div id="html_19d92442791badcd256d04a98b0fbf5d" style="width: 100.0%; height: 100.0%;">13 – Jardí del 1r de Maig<br>Media mensual 2019: 641.0 usos<br>Media mensual 2020: 399.0 usos<br>Δ media: -242.0 usos (-37.8%)</div>`)[0];
+                popup_54427dd132b42ec0e75a9c020a50209b.setContent(html_19d92442791badcd256d04a98b0fbf5d);
+            
+        
+
+        circle_marker_b77b420a6f4a5c1e9510f60b4e0b8be4.bindPopup(popup_54427dd132b42ec0e75a9c020a50209b)
+        ;
+
+        
+    
+    
+            var circle_marker_fb2e61720fa766995cbfbce062917d72 = L.circleMarker(
+                [38.262993, -0.688257],
+                {"bubblingMouseEvents": true, "color": "#0000f8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000f8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.832402234636872, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_47ca48e6bb60871a18ceec38a799a859 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2a4e0b54bc710494bd3905a73956e89 = $(`<div id="html_b2a4e0b54bc710494bd3905a73956e89" style="width: 100.0%; height: 100.0%;">14 – Comissaria<br>Media mensual 2019: 761.4 usos<br>Media mensual 2020: 427.8 usos<br>Δ media: -333.7 usos (-43.8%)</div>`)[0];
+                popup_47ca48e6bb60871a18ceec38a799a859.setContent(html_b2a4e0b54bc710494bd3905a73956e89);
+            
+        
+
+        circle_marker_fb2e61720fa766995cbfbce062917d72.bindPopup(popup_47ca48e6bb60871a18ceec38a799a859)
+        ;
+
+        
+    
+    
+            var circle_marker_15315b9e0ae5f75603bfbb176db6b478 = L.circleMarker(
+                [38.26573, -0.71128],
+                {"bubblingMouseEvents": true, "color": "#080afeff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#080afeff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.423353183129723, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_f92d42809877e66c2b4d6268cae9798e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d1414064601e9fd8c19a65b437dc9a60 = $(`<div id="html_d1414064601e9fd8c19a65b437dc9a60" style="width: 100.0%; height: 100.0%;">15 – Av. Llibertat / Reina Victòria<br>Media mensual 2019: 1343.0 usos<br>Media mensual 2020: 785.7 usos<br>Δ media: -557.3 usos (-41.5%)</div>`)[0];
+                popup_f92d42809877e66c2b4d6268cae9798e.setContent(html_d1414064601e9fd8c19a65b437dc9a60);
+            
+        
+
+        circle_marker_15315b9e0ae5f75603bfbb176db6b478.bindPopup(popup_f92d42809877e66c2b4d6268cae9798e)
+        ;
+
+        
+    
+    
+            var circle_marker_752fca6b9599bf7e088c22d5e1c5aa31 = L.circleMarker(
+                [38.27609, -0.71529],
+                {"bubblingMouseEvents": true, "color": "#2c37f9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c37f9ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.531462950457364, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_d8cb84f6b48bd0b53f5c62e975f500f2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bcf29605cbaf043ebaf68e66dadc7228 = $(`<div id="html_bcf29605cbaf043ebaf68e66dadc7228" style="width: 100.0%; height: 100.0%;">16 – Jardí d’Asp<br>Media mensual 2019: 689.0 usos<br>Media mensual 2020: 433.4 usos<br>Δ media: -255.6 usos (-37.1%)</div>`)[0];
+                popup_d8cb84f6b48bd0b53f5c62e975f500f2.setContent(html_bcf29605cbaf043ebaf68e66dadc7228);
+            
+        
+
+        circle_marker_752fca6b9599bf7e088c22d5e1c5aa31.bindPopup(popup_d8cb84f6b48bd0b53f5c62e975f500f2)
+        ;
+
+        
+    
+    
+            var circle_marker_1f849347ce682d5ddcd53ec7898779af = L.circleMarker(
+                [38.27662, -0.67801],
+                {"bubblingMouseEvents": true, "color": "#0000ecff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ecff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 29.27595309718215, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_7055518b3e108dd3ed7d2d2214aa5325 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f8a43fd8b796dda4bf5672a86735c1c5 = $(`<div id="html_f8a43fd8b796dda4bf5672a86735c1c5" style="width: 100.0%; height: 100.0%;">17 – Plaça de Castella<br>Media mensual 2019: 1861.3 usos<br>Media mensual 2020: 1003.6 usos<br>Δ media: -857.7 usos (-46.1%)</div>`)[0];
+                popup_7055518b3e108dd3ed7d2d2214aa5325.setContent(html_f8a43fd8b796dda4bf5672a86735c1c5);
+            
+        
+
+        circle_marker_1f849347ce682d5ddcd53ec7898779af.bindPopup(popup_7055518b3e108dd3ed7d2d2214aa5325)
+        ;
+
+        
+    
+    
+            var circle_marker_07d483c201c9d528cea1566532c6c4e4 = L.circleMarker(
+                [38.27832, -0.67195],
+                {"bubblingMouseEvents": true, "color": "#3340f8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3340f8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.54945054945055, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_dbcaf71bd55c459be352fee96d8582d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_13b6a6561477d8c68a6b222252ec737a = $(`<div id="html_13b6a6561477d8c68a6b222252ec737a" style="width: 100.0%; height: 100.0%;">18 – Poliesportiu d’Altabix<br>Media mensual 2019: 988.9 usos<br>Media mensual 2020: 630.9 usos<br>Δ media: -358.0 usos (-36.2%)</div>`)[0];
+                popup_dbcaf71bd55c459be352fee96d8582d7.setContent(html_13b6a6561477d8c68a6b222252ec737a);
+            
+        
+
+        circle_marker_07d483c201c9d528cea1566532c6c4e4.bindPopup(popup_dbcaf71bd55c459be352fee96d8582d7)
+        ;
+
+        
+    
+    
+            var circle_marker_0a12cd89dbd35b620a13c34a9723fb6c = L.circleMarker(
+                [38.26674, -0.69328],
+                {"bubblingMouseEvents": true, "color": "#0000ebff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000ebff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25.95100988397078, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_999fc4b833211ab0715f6b4f7a16d395 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e72e74e3bdf64980906d0501ac13fce = $(`<div id="html_3e72e74e3bdf64980906d0501ac13fce" style="width: 100.0%; height: 100.0%;">19 – Jesuïtines<br>Media mensual 2019: 1611.2 usos<br>Media mensual 2020: 866.3 usos<br>Δ media: -744.9 usos (-46.2%)</div>`)[0];
+                popup_999fc4b833211ab0715f6b4f7a16d395.setContent(html_3e72e74e3bdf64980906d0501ac13fce);
+            
+        
+
+        circle_marker_0a12cd89dbd35b620a13c34a9723fb6c.bindPopup(popup_999fc4b833211ab0715f6b4f7a16d395)
+        ;
+
+        
+    
+    
+            var circle_marker_167cc3f907d968591550c7ab6de84100 = L.circleMarker(
+                [38.25835, -0.70852],
+                {"bubblingMouseEvents": true, "color": "#5a71f2ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5a71f2ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.031309472650253, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_c1adbfda0af2ad75f313f4357a0ba955 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96edf1e1a051256ed222edbb58dc19e8 = $(`<div id="html_96edf1e1a051256ed222edbb58dc19e8" style="width: 100.0%; height: 100.0%;">20 – Antoni Mena / Fra Jaume Torres<br>Media mensual 2019: 1083.8 usos<br>Media mensual 2020: 743.4 usos<br>Δ media: -340.4 usos (-31.4%)</div>`)[0];
+                popup_c1adbfda0af2ad75f313f4357a0ba955.setContent(html_96edf1e1a051256ed222edbb58dc19e8);
+            
+        
+
+        circle_marker_167cc3f907d968591550c7ab6de84100.bindPopup(popup_c1adbfda0af2ad75f313f4357a0ba955)
+        ;
+
+        
+    
+    
+            var circle_marker_8dcee38c6d1282792a18c3cb617c266a = L.circleMarker(
+                [38.25923, -0.7109],
+                {"bubblingMouseEvents": true, "color": "#0709feff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0709feff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.3767573208914, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_ed1e05d0db6afa2824a9ebf0bb1b8e18 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb63eb33dc7dc174eb067c911083fee4 = $(`<div id="html_eb63eb33dc7dc174eb067c911083fee4" style="width: 100.0%; height: 100.0%;">21 – C.P. Mariano Benlliure<br>Media mensual 2019: 601.5 usos<br>Media mensual 2020: 351.2 usos<br>Δ media: -250.3 usos (-41.6%)</div>`)[0];
+                popup_ed1e05d0db6afa2824a9ebf0bb1b8e18.setContent(html_eb63eb33dc7dc174eb067c911083fee4);
+            
+        
+
+        circle_marker_8dcee38c6d1282792a18c3cb617c266a.bindPopup(popup_ed1e05d0db6afa2824a9ebf0bb1b8e18)
+        ;
+
+        
+    
+    
+            var circle_marker_c1c13622e3d60f0de862dd9f16c1386b = L.circleMarker(
+                [38.25399, -0.70548],
+                {"bubblingMouseEvents": true, "color": "#0000f2ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000f2ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.274970839216651, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_820962f131f0c4ca8b70ec12b4848a4b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eff2dd4c181c8b4e4d68cf3a14964009 = $(`<div id="html_eff2dd4c181c8b4e4d68cf3a14964009" style="width: 100.0%; height: 100.0%;">22 – Av. Llauradors / Eslava<br>Media mensual 2019: 698.6 usos<br>Media mensual 2020: 383.8 usos<br>Δ media: -314.8 usos (-45.1%)</div>`)[0];
+                popup_820962f131f0c4ca8b70ec12b4848a4b.setContent(html_eff2dd4c181c8b4e4d68cf3a14964009);
+            
+        
+
+        circle_marker_c1c13622e3d60f0de862dd9f16c1386b.bindPopup(popup_820962f131f0c4ca8b70ec12b4848a4b)
+        ;
+
+        
+    
+    
+            var circle_marker_6a47b49ea23602ad3f2019acdd64dc99 = L.circleMarker(
+                [38.25734, -0.70461],
+                {"bubblingMouseEvents": true, "color": "#2730faff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2730faff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.45914420774756, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_a0ffd45f519122d01f2cdb0ba0d15411 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_80dca302d7b475910d5de5654f1a2205 = $(`<div id="html_80dca302d7b475910d5de5654f1a2205" style="width: 100.0%; height: 100.0%;">23 – Conrado del Campo / Trinquet<br>Media mensual 2019: 851.3 usos<br>Media mensual 2020: 530.3 usos<br>Δ media: -321.0 usos (-37.7%)</div>`)[0];
+                popup_a0ffd45f519122d01f2cdb0ba0d15411.setContent(html_80dca302d7b475910d5de5654f1a2205);
+            
+        
+
+        circle_marker_6a47b49ea23602ad3f2019acdd64dc99.bindPopup(popup_a0ffd45f519122d01f2cdb0ba0d15411)
+        ;
+
+        
+    
+    
+            var circle_marker_a29dd582f20b263cde7ddc630defa166 = L.circleMarker(
+                [38.27553, -0.66915],
+                {"bubblingMouseEvents": true, "color": "#b6d7e2ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b6d7e2ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.630548222726993, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_d7684b88ad86ead15e9f42611ef99874 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de4f5729664d4f586fac6e626ad66186 = $(`<div id="html_de4f5729664d4f586fac6e626ad66186" style="width: 100.0%; height: 100.0%;">24 – Policia Local<br>Media mensual 2019: 333.6 usos<br>Media mensual 2020: 278.2 usos<br>Δ media: -55.3 usos (-16.6%)</div>`)[0];
+                popup_d7684b88ad86ead15e9f42611ef99874.setContent(html_de4f5729664d4f586fac6e626ad66186);
+            
+        
+
+        circle_marker_a29dd582f20b263cde7ddc630defa166.bindPopup(popup_d7684b88ad86ead15e9f42611ef99874)
+        ;
+
+        
+    
+    
+            var circle_marker_a1edea127934ba381122edf785f9356a = L.circleMarker(
+                [38.26718, -0.70259],
+                {"bubblingMouseEvents": true, "color": "#0000c5ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000c5ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 31.608815765240347, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_600dbcca1222ca63a5ed85398a69f903 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d30638e555ac1361cc631e6bf80d271 = $(`<div id="html_6d30638e555ac1361cc631e6bf80d271" style="width: 100.0%; height: 100.0%;">25 – Cor de Jesús<br>Media mensual 2019: 1759.3 usos<br>Media mensual 2020: 822.4 usos<br>Δ media: -936.9 usos (-53.2%)</div>`)[0];
+                popup_600dbcca1222ca63a5ed85398a69f903.setContent(html_6d30638e555ac1361cc631e6bf80d271);
+            
+        
+
+        circle_marker_a1edea127934ba381122edf785f9356a.bindPopup(popup_600dbcca1222ca63a5ed85398a69f903)
+        ;
+
+        
+    
+    
+            var circle_marker_a226e37956acfffbd869e8515409b142 = L.circleMarker(
+                [38.27425, -0.69111],
+                {"bubblingMouseEvents": true, "color": "#0000b1ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000b1ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 43.66603229173062, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_3759f21575509ec33436903391d106c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb0835d3d0ed5942d55b7b6946ab0de7 = $(`<div id="html_eb0835d3d0ed5942d55b7b6946ab0de7" style="width: 100.0%; height: 100.0%;">26 – UMH / Escola Oficial d’Idiomes<br>Media mensual 2019: 2369.1 usos<br>Media mensual 2020: 1023.0 usos<br>Δ media: -1346.1 usos (-56.8%)</div>`)[0];
+                popup_3759f21575509ec33436903391d106c5.setContent(html_eb0835d3d0ed5942d55b7b6946ab0de7);
+            
+        
+
+        circle_marker_a226e37956acfffbd869e8515409b142.bindPopup(popup_3759f21575509ec33436903391d106c5)
+        ;
+
+        
+    
+    
+            var circle_marker_6f90ea0f7fa90dbd1129e6749c7a136f = L.circleMarker(
+                [38.27921, -0.68589],
+                {"bubblingMouseEvents": true, "color": "#0000a3ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000a3ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.910614525139668, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_957802f18b52685826bf45f737a705fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53c94566f9d4be5ac9b8ddd2b95a4a62 = $(`<div id="html_53c94566f9d4be5ac9b8ddd2b95a4a62" style="width: 100.0%; height: 100.0%;">27 – UMH / Pavelló d’Esports<br>Media mensual 2019: 1364.6 usos<br>Media mensual 2020: 553.2 usos<br>Δ media: -811.4 usos (-59.5%)</div>`)[0];
+                popup_957802f18b52685826bf45f737a705fc.setContent(html_53c94566f9d4be5ac9b8ddd2b95a4a62);
+            
+        
+
+        circle_marker_6f90ea0f7fa90dbd1129e6749c7a136f.bindPopup(popup_957802f18b52685826bf45f737a705fc)
+        ;
+
+        
+    
+    
+            var circle_marker_140f3e6c9a544a1727b922608b7b144f = L.circleMarker(
+                [38.262792, -0.703505],
+                {"bubblingMouseEvents": true, "color": "#1d25fbff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1d25fbff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.149119037387198, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_1e29f28bdd90fedcce43698c93cc88c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b6b7013a3522ce1a0ffea47f2c120545 = $(`<div id="html_b6b7013a3522ce1a0ffea47f2c120545" style="width: 100.0%; height: 100.0%;">28 – Passeig de les Germanies<br>Media mensual 2019: 1673.2 usos<br>Media mensual 2020: 1023.4 usos<br>Δ media: -649.8 usos (-38.8%)</div>`)[0];
+                popup_1e29f28bdd90fedcce43698c93cc88c1.setContent(html_b6b7013a3522ce1a0ffea47f2c120545);
+            
+        
+
+        circle_marker_140f3e6c9a544a1727b922608b7b144f.bindPopup(popup_1e29f28bdd90fedcce43698c93cc88c1)
+        ;
+
+        
+    
+    
+            var circle_marker_7d7378db11653e1d8db55cc662750561 = L.circleMarker(
+                [38.275568, -0.703184],
+                {"bubblingMouseEvents": true, "color": "#5266f4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5266f4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.321935048192032, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_6c7776ead09597e4ffb78de80a695e25 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b14f637fcb8bc54b3aa4150d418ce6f = $(`<div id="html_0b14f637fcb8bc54b3aa4150d418ce6f" style="width: 100.0%; height: 100.0%;">29 – Casablanca<br>Media mensual 2019: 451.9 usos<br>Media mensual 2020: 305.2 usos<br>Δ media: -146.7 usos (-32.5%)</div>`)[0];
+                popup_6c7776ead09597e4ffb78de80a695e25.setContent(html_0b14f637fcb8bc54b3aa4150d418ce6f);
+            
+        
+
+        circle_marker_7d7378db11653e1d8db55cc662750561.bindPopup(popup_6c7776ead09597e4ffb78de80a695e25)
+        ;
+
+        
+    
+    
+            var circle_marker_38d6f55d0fe56827456900178310b58a = L.circleMarker(
+                [38.27052, -0.6702],
+                {"bubblingMouseEvents": true, "color": "#1014fdff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1014fdff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.500890171281235, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_03f67065dffe1b6c0776a4eba8606b79 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d7f8393760bf994792403b88458309d = $(`<div id="html_7d7f8393760bf994792403b88458309d" style="width: 100.0%; height: 100.0%;">30 – Squash<br>Media mensual 2019: 795.8 usos<br>Media mensual 2020: 473.3 usos<br>Δ media: -322.4 usos (-40.5%)</div>`)[0];
+                popup_03f67065dffe1b6c0776a4eba8606b79.setContent(html_7d7f8393760bf994792403b88458309d);
+            
+        
+
+        circle_marker_38d6f55d0fe56827456900178310b58a.bindPopup(popup_03f67065dffe1b6c0776a4eba8606b79)
+        ;
+
+        
+    
+    
+            var circle_marker_f2ddee7d7713b55c2ef64694efe0954c = L.circleMarker(
+                [38.26566, -0.67728],
+                {"bubblingMouseEvents": true, "color": "#4e61f4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4e61f4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.61661243784149, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_37cca7b682974cf896f183c8c1c3a8d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a4810e29dded7fcdaa1e442202740d70 = $(`<div id="html_a4810e29dded7fcdaa1e442202740d70" style="width: 100.0%; height: 100.0%;">31 – Sant Antoni<br>Media mensual 2019: 476.0 usos<br>Media mensual 2020: 319.3 usos<br>Δ media: -156.7 usos (-32.9%)</div>`)[0];
+                popup_37cca7b682974cf896f183c8c1c3a8d2.setContent(html_a4810e29dded7fcdaa1e442202740d70);
+            
+        
+
+        circle_marker_f2ddee7d7713b55c2ef64694efe0954c.bindPopup(popup_37cca7b682974cf896f183c8c1c3a8d2)
+        ;
+
+        
+    
+    
+            var circle_marker_174ae3792b3079593341cb71c76a4708 = L.circleMarker(
+                [38.27272, -0.68108],
+                {"bubblingMouseEvents": true, "color": "#1318fdff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1318fdff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 26.339001780342564, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_6f456d5b3de535466a4d866b31298589 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7a4cec6e31416617749f20fe0d64fbcf = $(`<div id="html_7a4cec6e31416617749f20fe0d64fbcf" style="width: 100.0%; height: 100.0%;">32 – Centre de Salut d’Altabix<br>Media mensual 2019: 1889.6 usos<br>Media mensual 2020: 1131.5 usos<br>Δ media: -758.1 usos (-40.1%)</div>`)[0];
+                popup_6f456d5b3de535466a4d866b31298589.setContent(html_7a4cec6e31416617749f20fe0d64fbcf);
+            
+        
+
+        circle_marker_174ae3792b3079593341cb71c76a4708.bindPopup(popup_6f456d5b3de535466a4d866b31298589)
+        ;
+
+        
+    
+    
+            var circle_marker_f8ccc63254418577b4eaff19a4140dde = L.circleMarker(
+                [38.261175, -0.71614],
+                {"bubblingMouseEvents": true, "color": "#0000cbff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000cbff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.30437718705875, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_c8f7bdfd802b6f6fac3fc2150e44a9fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c9007202f189155e87da420ad062f4cb = $(`<div id="html_c9007202f189155e87da420ad062f4cb" style="width: 100.0%; height: 100.0%;">33 – Av. Libertat / l’Aljub<br>Media mensual 2019: 1192.6 usos<br>Media mensual 2020: 571.4 usos<br>Δ media: -621.2 usos (-52.1%)</div>`)[0];
+                popup_c8f7bdfd802b6f6fac3fc2150e44a9fc.setContent(html_c9007202f189155e87da420ad062f4cb);
+            
+        
+
+        circle_marker_f8ccc63254418577b4eaff19a4140dde.bindPopup(popup_c8f7bdfd802b6f6fac3fc2150e44a9fc)
+        ;
+
+        
+    
+    
+            var circle_marker_8329a0540dc53117c05426c9a573b8dc = L.circleMarker(
+                [38.25961, -0.68586],
+                {"bubblingMouseEvents": true, "color": "#bdd6deff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdd6deff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.321935048192035, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_360059886affdf24a06f8fd391602097 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a3b73f64f82b4c5388970b1eafb9a34d = $(`<div id="html_a3b73f64f82b4c5388970b1eafb9a34d" style="width: 100.0%; height: 100.0%;">34 – Hospital General<br>Media mensual 2019: 1195.2 usos<br>Media mensual 2020: 1048.6 usos<br>Δ media: -146.7 usos (-12.3%)</div>`)[0];
+                popup_360059886affdf24a06f8fd391602097.setContent(html_a3b73f64f82b4c5388970b1eafb9a34d);
+            
+        
+
+        circle_marker_8329a0540dc53117c05426c9a573b8dc.bindPopup(popup_360059886affdf24a06f8fd391602097)
+        ;
+
+        
+    
+    
+            var circle_marker_ed1b031de337321df169cb1a5c24ba9a = L.circleMarker(
+                [38.25515, -0.71483],
+                {"bubblingMouseEvents": true, "color": "#252ffaff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#252ffaff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.37896740131377, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_6232f9ccca15caa736340459548b1248 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fff97cf7c244df81417b527f5d5d21f7 = $(`<div id="html_fff97cf7c244df81417b527f5d5d21f7" style="width: 100.0%; height: 100.0%;">35 – Hospital del Vinalopó<br>Media mensual 2019: 302.8 usos<br>Media mensual 2020: 188.2 usos<br>Δ media: -114.7 usos (-37.9%)</div>`)[0];
+                popup_6232f9ccca15caa736340459548b1248.setContent(html_fff97cf7c244df81417b527f5d5d21f7);
+            
+        
+
+        circle_marker_ed1b031de337321df169cb1a5c24ba9a.bindPopup(popup_6232f9ccca15caa736340459548b1248)
+        ;
+
+        
+    
+    
+            var circle_marker_f76f0c3e5f99b90da40b4cf0a06f10ea = L.circleMarker(
+                [38.268272, -0.677594],
+                {"bubblingMouseEvents": true, "color": "#0c10feff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0c10feff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.3892811099515, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_db1f0504af13890f85a6e2e6279a43e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ae4e478a5e9ba1de475d52195bae288e = $(`<div id="html_ae4e478a5e9ba1de475d52195bae288e" style="width: 100.0%; height: 100.0%;">36 – I.E.S. Victoria Kent<br>Media mensual 2019: 944.4 usos<br>Media mensual 2020: 557.9 usos<br>Δ media: -386.5 usos (-40.9%)</div>`)[0];
+                popup_db1f0504af13890f85a6e2e6279a43e3.setContent(html_ae4e478a5e9ba1de475d52195bae288e);
+            
+        
+
+        circle_marker_f76f0c3e5f99b90da40b4cf0a06f10ea.bindPopup(popup_db1f0504af13890f85a6e2e6279a43e3)
+        ;
+
+        
+    
+    
+            var circle_marker_f6fd21938bbbdf6585b10595ca59f5a6 = L.circleMarker(
+                [38.26345, -0.66528],
+                {"bubblingMouseEvents": true, "color": "#0000f0ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000f0ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.855915034685985, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_a9af692e11196d292cc9a34ac8326611 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_959d6ff054c795213d29da66cacd16d0 = $(`<div id="html_959d6ff054c795213d29da66cacd16d0" style="width: 100.0%; height: 100.0%;">37 – Hort de Travaló<br>Media mensual 2019: 214.0 usos<br>Media mensual 2020: 117.1 usos<br>Δ media: -96.9 usos (-45.3%)</div>`)[0];
+                popup_a9af692e11196d292cc9a34ac8326611.setContent(html_959d6ff054c795213d29da66cacd16d0);
+            
+        
+
+        circle_marker_f6fd21938bbbdf6585b10595ca59f5a6.bindPopup(popup_a9af692e11196d292cc9a34ac8326611)
+        ;
+
+        
+    
+    
+            var circle_marker_31d0f2dedd2caa52e54e02ef9ac65500 = L.circleMarker(
+                [38.278264, -0.708628],
+                {"bubblingMouseEvents": true, "color": "#0000feff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000feff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.796672601141875, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_e4e9d53a71d5df3d1cb5bda28cf422e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aefdb6c36098d76027211db84325fd33 = $(`<div id="html_aefdb6c36098d76027211db84325fd33" style="width: 100.0%; height: 100.0%;">38 – Poliesportiu de Carrús<br>Media mensual 2019: 617.7 usos<br>Media mensual 2020: 353.1 usos<br>Δ media: -264.6 usos (-42.8%)</div>`)[0];
+                popup_e4e9d53a71d5df3d1cb5bda28cf422e4.setContent(html_aefdb6c36098d76027211db84325fd33);
+            
+        
+
+        circle_marker_31d0f2dedd2caa52e54e02ef9ac65500.bindPopup(popup_e4e9d53a71d5df3d1cb5bda28cf422e4)
+        ;
+
+        
+    
+    
+            var circle_marker_72fa77846cc4d2179aaae9162411101a = L.circleMarker(
+                [38.271382, -0.710028],
+                {"bubblingMouseEvents": true, "color": "#0000d6ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000d6ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.944011295966604, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_f59c748175509c3519b8edd18b1d7907 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b51c78067b41d63fad37343cb507f5e = $(`<div id="html_5b51c78067b41d63fad37343cb507f5e" style="width: 100.0%; height: 100.0%;">39 – Francesc Cantó<br>Media mensual 2019: 538.2 usos<br>Media mensual 2020: 268.6 usos<br>Δ media: -269.6 usos (-50.1%)</div>`)[0];
+                popup_f59c748175509c3519b8edd18b1d7907.setContent(html_5b51c78067b41d63fad37343cb507f5e);
+            
+        
+
+        circle_marker_72fa77846cc4d2179aaae9162411101a.bindPopup(popup_f59c748175509c3519b8edd18b1d7907)
+        ;
+
+        
+    
+    
+            var circle_marker_a1f6f631489e4a8eb141e7a4150a9c59 = L.circleMarker(
+                [38.27091, -0.701044],
+                {"bubblingMouseEvents": true, "color": "#0b0efeff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0b0efeff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.211553809319174, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_0be8b3f14d9bce01f677c3ea7f3f2d7a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef82a4b7fcc69bff9007022039dcb2b1 = $(`<div id="html_ef82a4b7fcc69bff9007022039dcb2b1" style="width: 100.0%; height: 100.0%;">40 – C.P. Baix Vinalopó<br>Media mensual 2019: 2165.2 usos<br>Media mensual 2020: 1275.8 usos<br>Δ media: -889.5 usos (-41.1%)</div>`)[0];
+                popup_0be8b3f14d9bce01f677c3ea7f3f2d7a.setContent(html_ef82a4b7fcc69bff9007022039dcb2b1);
+            
+        
+
+        circle_marker_a1f6f631489e4a8eb141e7a4150a9c59.bindPopup(popup_0be8b3f14d9bce01f677c3ea7f3f2d7a)
+        ;
+
+        
+    
+    
+            var circle_marker_cc65d26126bfc7d05b0bd9eceb8a904a = L.circleMarker(
+                [38.281922, -0.712788],
+                {"bubblingMouseEvents": true, "color": "#0000fdff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000fdff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.465467493400454, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_f75bed48ae2a1c6370061b6f50ed3b52 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af2b6df9ebd80b5503919205f37d5ac2 = $(`<div id="html_af2b6df9ebd80b5503919205f37d5ac2" style="width: 100.0%; height: 100.0%;">41 – Dipòsit Municipal de Carrús<br>Media mensual 2019: 194.4 usos<br>Media mensual 2020: 110.8 usos<br>Δ media: -83.7 usos (-43.0%)</div>`)[0];
+                popup_f75bed48ae2a1c6370061b6f50ed3b52.setContent(html_af2b6df9ebd80b5503919205f37d5ac2);
+            
+        
+
+        circle_marker_cc65d26126bfc7d05b0bd9eceb8a904a.bindPopup(popup_f75bed48ae2a1c6370061b6f50ed3b52)
+        ;
+
+        
+    
+    
+            var circle_marker_40a625b727b39046d75b99ded58fae06 = L.circleMarker(
+                [38.262263, -0.669923],
+                {"bubblingMouseEvents": true, "color": "#6e8aefff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6e8aefff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.736140954018049, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_9622750368ef63032cb0cff4be2f14d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c08ec5fd497f5832dca1a68a0cff20a = $(`<div id="html_1c08ec5fd497f5832dca1a68a0cff20a" style="width: 100.0%; height: 100.0%;">42 – Multi Aventura Travaló<br>Media mensual 2019: 203.7 usos<br>Media mensual 2020: 144.8 usos<br>Δ media: -58.9 usos (-28.9%)</div>`)[0];
+                popup_9622750368ef63032cb0cff4be2f14d3.setContent(html_1c08ec5fd497f5832dca1a68a0cff20a);
+            
+        
+
+        circle_marker_40a625b727b39046d75b99ded58fae06.bindPopup(popup_9622750368ef63032cb0cff4be2f14d3)
+        ;
+
+        
+    
+    
+            var circle_marker_68baee73a3bdc3b3b5586467daefc18c = L.circleMarker(
+                [38.261994, -0.683099],
+                {"bubblingMouseEvents": true, "color": "#c5d5dbff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c5d5dbff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.378839038056916, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_3338d366ee672597115f36bfec5af3c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9aaf5542a00f1b795a826b7e55743540 = $(`<div id="html_9aaf5542a00f1b795a826b7e55743540" style="width: 100.0%; height: 100.0%;">43 – Palmerars – Ciutat de la Justícia<br>Media mensual 2019: 160.3 usos<br>Media mensual 2020: 147.4 usos<br>Δ media: -12.9 usos (-8.0%)</div>`)[0];
+                popup_3338d366ee672597115f36bfec5af3c1.setContent(html_9aaf5542a00f1b795a826b7e55743540);
+            
+        
+
+        circle_marker_68baee73a3bdc3b3b5586467daefc18c.bindPopup(popup_3338d366ee672597115f36bfec5af3c1)
+        ;
+
+        
+    
+    
+            var circle_marker_751900892e2de921e5b5e877cde362e5 = L.circleMarker(
+                [38.2571333, -0.696961],
+                {"bubblingMouseEvents": true, "color": "#a4cce8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a4cce8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.554239057032351, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_a405442660f59faf81b62a4f93d6087a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a2d3b4821dfc9a89eb93efbe90761099 = $(`<div id="html_a2d3b4821dfc9a89eb93efbe90761099" style="width: 100.0%; height: 100.0%;">44 – Portes Encarnades<br>Media mensual 2019: 689.3 usos<br>Media mensual 2020: 534.8 usos<br>Δ media: -154.5 usos (-22.4%)</div>`)[0];
+                popup_a405442660f59faf81b62a4f93d6087a.setContent(html_a2d3b4821dfc9a89eb93efbe90761099);
+            
+        
+
+        circle_marker_751900892e2de921e5b5e877cde362e5.bindPopup(popup_a405442660f59faf81b62a4f93d6087a)
+        ;
+
+        
+    
+    
+            var circle_marker_f49296ca508a35c8b3395e0600f795d0 = L.circleMarker(
+                [38.271869, -0.70703],
+                {"bubblingMouseEvents": true, "color": "#708cefff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#708cefff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.290441402173247, "stroke": true, "weight": 3}
+            ).addTo(map_85513acc3e8483cb133ec7a78253fc75);
+        
+    
+        var popup_b4374493e4de8757143cf55b86ecd5b2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9df85b2d857f9a981213966fc34259ef = $(`<div id="html_9df85b2d857f9a981213966fc34259ef" style="width: 100.0%; height: 100.0%;">45 – Plaça de Barcelona<br>Media mensual 2019: 625.2 usos<br>Media mensual 2020: 445.7 usos<br>Δ media: -179.5 usos (-28.7%)</div>`)[0];
+                popup_b4374493e4de8757143cf55b86ecd5b2.setContent(html_9df85b2d857f9a981213966fc34259ef);
+            
+        
+
+        circle_marker_f49296ca508a35c8b3395e0600f795d0.bindPopup(popup_b4374493e4de8757143cf55b86ecd5b2)
+        ;
+
+        
+    
+    
+    var color_map_059c7c623da1d499edae5117d25e52c9 = {};
+
+    
+    color_map_059c7c623da1d499edae5117d25e52c9.color = d3.scale.threshold()
+              .domain([0.0, 0.1277755511022044, 0.2555511022044088, 0.38332665330661325, 0.5111022044088176, 0.6388777555110221, 0.7666533066132265, 0.8944288577154309, 1.0222044088176352, 1.1499799599198397, 1.2777555110220442, 1.4055310621242485, 1.533306613226453, 1.6610821643286573, 1.7888577154308618, 1.916633266533066, 2.0444088176352704, 2.172184368737475, 2.2999599198396794, 2.427735470941884, 2.5555110220440884, 2.6832865731462925, 2.811062124248497, 2.9388376753507015, 3.066613226452906, 3.19438877755511, 3.3221643286573146, 3.449939879759519, 3.5777154308617236, 3.7054909819639277, 3.833266533066132, 3.9610420841683367, 4.088817635270541, 4.216593186372745, 4.34436873747495, 4.472144288577154, 4.599919839679359, 4.727695390781563, 4.855470941883768, 4.983246492985971, 5.111022044088177, 5.2387975951903805, 5.366573146292585, 5.4943486973947895, 5.622124248496994, 5.749899799599198, 5.877675350701403, 6.005450901803607, 6.133226452905812, 6.261002004008016, 6.38877755511022, 6.516553106212425, 6.644328657314629, 6.772104208416833, 6.899879759519038, 7.027655310621242, 7.155430861723447, 7.283206412825651, 7.410981963927855, 7.53875751503006, 7.666533066132264, 7.794308617234468, 7.922084168336673, 8.049859719438878, 8.177635270541082, 8.305410821643285, 8.43318637274549, 8.560961923847696, 8.6887374749499, 8.816513026052103, 8.944288577154309, 9.072064128256514, 9.199839679358718, 9.327615230460921, 9.455390781563127, 9.58316633266533, 9.710941883767536, 9.83871743486974, 9.966492985971943, 10.094268537074148, 10.222044088176354, 10.349819639278556, 10.477595190380761, 10.605370741482966, 10.73314629258517, 10.860921843687374, 10.988697394789579, 11.116472945891783, 11.244248496993988, 11.372024048096192, 11.499799599198395, 11.6275751503006, 11.755350701402806, 11.88312625250501, 12.010901803607213, 12.138677354709419, 12.266452905811624, 12.394228456913828, 12.522004008016031, 12.649779559118237, 12.77755511022044, 12.905330661322646, 13.03310621242485, 13.160881763527053, 13.288657314629258, 13.416432865731464, 13.544208416833666, 13.671983967935871, 13.799759519038076, 13.92753507014028, 14.055310621242484, 14.183086172344689, 14.310861723446894, 14.438637274549098, 14.566412825651302, 14.694188376753507, 14.82196392785571, 14.949739478957916, 15.07751503006012, 15.205290581162323, 15.333066132264529, 15.460841683366734, 15.588617234468936, 15.716392785571141, 15.844168336673347, 15.97194388777555, 16.099719438877756, 16.22749498997996, 16.355270541082163, 16.483046092184367, 16.61082164328657, 16.738597194388777, 16.86637274549098, 16.994148296593185, 17.121923847695392, 17.249699398797596, 17.3774749498998, 17.505250501002003, 17.633026052104206, 17.76080160320641, 17.888577154308617, 18.01635270541082, 18.144128256513028, 18.27190380761523, 18.399679358717435, 18.52745490981964, 18.655230460921842, 18.783006012024046, 18.910781563126253, 19.038557114228457, 19.16633266533066, 19.294108216432868, 19.42188376753507, 19.54965931863727, 19.67743486973948, 19.805210420841682, 19.932985971943886, 20.060761523046093, 20.188537074148297, 20.3163126252505, 20.444088176352707, 20.57186372745491, 20.69963927855711, 20.82741482965932, 20.955190380761522, 21.082965931863725, 21.210741482965933, 21.338517034068136, 21.46629258517034, 21.594068136272547, 21.721843687374747, 21.84961923847695, 21.977394789579158, 22.10517034068136, 22.232945891783565, 22.360721442885772, 22.488496993987976, 22.61627254509018, 22.744048096192383, 22.871823647294587, 22.99959919839679, 23.127374749498998, 23.2551503006012, 23.38292585170341, 23.510701402805612, 23.638476953907816, 23.76625250501002, 23.894028056112223, 24.021803607214427, 24.149579158316634, 24.277354709418837, 24.40513026052104, 24.532905811623248, 24.66068136272545, 24.788456913827655, 24.91623246492986, 25.044008016032063, 25.171783567134266, 25.299559118236473, 25.427334669338677, 25.55511022044088, 25.682885771543088, 25.81066132264529, 25.93843687374749, 26.0662124248497, 26.193987975951902, 26.321763527054106, 26.449539078156313, 26.577314629258517, 26.70509018036072, 26.832865731462928, 26.960641282565128, 27.08841683366733, 27.21619238476954, 27.343967935871742, 27.471743486973946, 27.599519038076153, 27.727294589178356, 27.85507014028056, 27.982845691382764, 28.110621242484967, 28.23839679358717, 28.366172344689378, 28.49394789579158, 28.62172344689379, 28.749498997995993, 28.877274549098196, 29.005050100200403, 29.132825651302603, 29.260601202404807, 29.388376753507014, 29.516152304609218, 29.64392785571142, 29.77170340681363, 29.899478957915832, 30.027254509018036, 30.15503006012024, 30.282805611222443, 30.410581162324647, 30.538356713426854, 30.666132264529057, 30.79390781563126, 30.92168336673347, 31.049458917835672, 31.177234468937872, 31.30501002004008, 31.432785571142283, 31.560561122244486, 31.688336673346694, 31.816112224448897, 31.9438877755511, 32.07166332665331, 32.19943887775551, 32.327214428857715, 32.45498997995992, 32.58276553106212, 32.710541082164326, 32.83831663326653, 32.96609218436873, 33.093867735470944, 33.22164328657314, 33.34941883767535, 33.477194388777555, 33.60496993987976, 33.73274549098196, 33.860521042084166, 33.98829659318637, 34.11607214428857, 34.243847695390784, 34.37162324649298, 34.49939879759519, 34.627174348697395, 34.7549498997996, 34.8827254509018, 35.010501002004005, 35.13827655310621, 35.26605210420841, 35.39382765531062, 35.52160320641282, 35.64937875751503, 35.777154308617234, 35.90492985971943, 36.03270541082164, 36.160480961923845, 36.288256513026056, 36.41603206412825, 36.54380761523046, 36.67158316633267, 36.79935871743487, 36.927134268537074, 37.05490981963928, 37.18268537074148, 37.310460921843685, 37.438236472945896, 37.56601202404809, 37.6937875751503, 37.82156312625251, 37.94933867735471, 38.077114228456914, 38.20488977955912, 38.33266533066132, 38.460440881763525, 38.588216432865735, 38.71599198396793, 38.84376753507014, 38.971543086172346, 39.09931863727454, 39.22709418837675, 39.35486973947896, 39.48264529058116, 39.610420841683364, 39.738196392785575, 39.86597194388777, 39.99374749498998, 40.121523046092186, 40.24929859719438, 40.37707414829659, 40.5048496993988, 40.632625250501, 40.760400801603204, 40.888176352705415, 41.01595190380761, 41.14372745490982, 41.271503006012026, 41.39927855711422, 41.52705410821643, 41.65482965931864, 41.78260521042084, 41.910380761523044, 42.038156312625254, 42.16593186372745, 42.293707414829655, 42.421482965931865, 42.54925851703406, 42.67703406813627, 42.804809619238476, 42.93258517034068, 43.06036072144288, 43.188136272545094, 43.31591182364729, 43.443687374749494, 43.571462925851705, 43.6992384769539, 43.82701402805611, 43.954789579158316, 44.08256513026052, 44.21034068136272, 44.33811623246493, 44.46589178356713, 44.593667334669334, 44.721442885771545, 44.84921843687374, 44.97699398797595, 45.104769539078156, 45.23254509018036, 45.36032064128256, 45.488096192384766, 45.61587174348697, 45.743647294589174, 45.871422845691384, 45.99919839679358, 46.12697394789579, 46.254749498997995, 46.382525050100206, 46.5103006012024, 46.638076152304606, 46.76585170340682, 46.89362725450901, 47.021402805611224, 47.14917835671343, 47.27695390781563, 47.404729458917835, 47.53250501002004, 47.66028056112224, 47.788056112224446, 47.91583166332666, 48.04360721442885, 48.171382765531064, 48.29915831663327, 48.42693386773547, 48.554709418837675, 48.68248496993988, 48.81026052104208, 48.938036072144286, 49.065811623246496, 49.19358717434869, 49.3213627254509, 49.44913827655311, 49.57691382765531, 49.704689378757514, 49.83246492985972, 49.96024048096192, 50.088016032064125, 50.215791583166336, 50.34356713426853, 50.47134268537074, 50.59911823647295, 50.72689378757514, 50.854669338677354, 50.98244488977956, 51.11022044088176, 51.237995991983965, 51.365771543086176, 51.49354709418837, 51.62132264529058, 51.74909819639279, 51.87687374749498, 52.004649298597194, 52.1324248496994, 52.2602004008016, 52.387975951903805, 52.515751503006015, 52.64352705410821, 52.771302605210415, 52.899078156312626, 53.02685370741482, 53.15462925851703, 53.28240480961924, 53.41018036072144, 53.537955911823644, 53.665731462925855, 53.79350701402805, 53.921282565130255, 54.049058116232466, 54.17683366733466, 54.30460921843687, 54.43238476953908, 54.56016032064128, 54.687935871743484, 54.815711422845695, 54.94348697394789, 55.071262525050095, 55.199038076152306, 55.3268136272545, 55.45458917835671, 55.58236472945892, 55.71014028056112, 55.837915831663324, 55.96569138276553, 56.09346693386773, 56.221242484969935, 56.349018036072145, 56.47679358717434, 56.60456913827655, 56.732344689378756, 56.86012024048097, 56.98789579158316, 57.11567134268537, 57.24344689378758, 57.371222444889774, 57.498997995991985, 57.62677354709419, 57.75454909819639, 57.882324649298596, 58.01010020040081, 58.137875751503, 58.26565130260521, 58.39342685370742, 58.521202404809614, 58.648977955911825, 58.77675350701403, 58.90452905811623, 59.032304609218436, 59.16008016032064, 59.28785571142284, 59.41563126252505, 59.54340681362726, 59.671182364729454, 59.798957915831664, 59.92673346693387, 60.05450901803607, 60.182284569138275, 60.31006012024048, 60.43783567134268, 60.565611222444886, 60.6933867735471, 60.82116232464929, 60.948937875751504, 61.07671342685371, 61.204488977955904, 61.332264529058115, 61.46004008016032, 61.58781563126252, 61.715591182364726, 61.84336673346694, 61.97114228456913, 62.098917835671344, 62.22669338677355, 62.354468937875744, 62.482244488977955, 62.61002004008016, 62.73779559118236, 62.865571142284566, 62.993346693386776, 63.12112224448897, 63.24889779559118, 63.37667334669339, 63.504448897795584, 63.632224448897794, 63.76])
+              .range(['#d3d3d3ff', '#d4d4d2ff', '#d4d4d1ff', '#d4d4d0ff', '#d4d4ceff', '#d5d5cdff', '#d5d5ccff', '#d5d5caff', '#d5d5c9ff', '#d6d6c8ff', '#d6d6c7ff', '#d6d6c5ff', '#d7d7c4ff', '#d7d7c3ff', '#d7d7c1ff', '#d7d7c0ff', '#d8d8bfff', '#d8d8beff', '#d8d8bcff', '#d8d8bbff', '#d9d9baff', '#d9d9b9ff', '#d9d9b7ff', '#d9d9b6ff', '#dadab5ff', '#dadab3ff', '#dadab2ff', '#dadab1ff', '#dbdbb0ff', '#dbdbaeff', '#dbdbadff', '#dcdcacff', '#dcdcabff', '#dcdca9ff', '#dcdca8ff', '#dddda7ff', '#dddda5ff', '#dddda4ff', '#dddda3ff', '#dedea2ff', '#dedea0ff', '#dede9fff', '#dede9eff', '#dfdf9dff', '#dfdf9bff', '#dfdf9aff', '#e0e099ff', '#e0e097ff', '#e0e096ff', '#e0e095ff', '#e1e194ff', '#e1e192ff', '#e1e191ff', '#e1e190ff', '#e2e28fff', '#e2e28dff', '#e2e28cff', '#e2e28bff', '#e3e389ff', '#e3e388ff', '#e3e387ff', '#e4e486ff', '#e4e484ff', '#e4e483ff', '#e4e482ff', '#e5e581ff', '#e5e57fff', '#e5e57eff', '#e5e57dff', '#e6e67bff', '#e6e67aff', '#e6e679ff', '#e6e678ff', '#e7e776ff', '#e7e775ff', '#e7e774ff', '#e8e873ff', '#e8e871ff', '#e8e870ff', '#e8e86fff', '#e9e96dff', '#e9e96cff', '#e9e96bff', '#e9e96aff', '#eaea68ff', '#eaea67ff', '#eaea66ff', '#eaea65ff', '#ebeb63ff', '#ebeb62ff', '#ebeb61ff', '#ebeb5fff', '#ecec5eff', '#ecec5dff', '#ecec5cff', '#eded5aff', '#eded59ff', '#eded58ff', '#eded57ff', '#eeee55ff', '#eeee54ff', '#eeee53ff', '#eeee51ff', '#efef50ff', '#efef4fff', '#efef4eff', '#efef4cff', '#f0f04bff', '#f0f04aff', '#f0f049ff', '#f1f147ff', '#f1f146ff', '#f1f145ff', '#f1f143ff', '#f2f242ff', '#f2f241ff', '#f2f240ff', '#f2f23eff', '#f3f33dff', '#f3f33cff', '#f3f33bff', '#f3f339ff', '#f4f438ff', '#f4f437ff', '#f4f435ff', '#f5f534ff', '#f5f533ff', '#f5f532ff', '#f5f530ff', '#f6f62fff', '#f6f62eff', '#f6f62cff', '#f6f62bff', '#f7f72aff', '#f7f729ff', '#f7f727ff', '#f7f726ff', '#f8f825ff', '#f8f824ff', '#f8f822ff', '#f9f921ff', '#f9f920ff', '#f9f91eff', '#f9f91dff', '#fafa1cff', '#fafa1bff', '#fafa19ff', '#fafa18ff', '#fbfb17ff', '#fbfb16ff', '#fbfb14ff', '#fbfb13ff', '#fcfc12ff', '#fcfc10ff', '#fcfc0fff', '#fcfc0eff', '#fdfd0dff', '#fdfd0bff', '#fdfd0aff', '#fefe09ff', '#fefe08ff', '#fefe06ff', '#fefe05ff', '#ffff04ff', '#ffff02ff', '#ffff01ff', '#ffff00ff', '#ffff00ff', '#ffff00ff', '#fffe00ff', '#fffe00ff', '#fffd00ff', '#fffc00ff', '#fffc00ff', '#fffb00ff', '#fffb00ff', '#fffa00ff', '#fffa00ff', '#fff900ff', '#fff900ff', '#fff800ff', '#fff800ff', '#fff700ff', '#fff600ff', '#fff600ff', '#fff500ff', '#fff500ff', '#fff400ff', '#fff400ff', '#fff300ff', '#fff300ff', '#fff200ff', '#fff200ff', '#fff100ff', '#fff000ff', '#fff000ff', '#ffef00ff', '#ffef00ff', '#ffee00ff', '#ffee00ff', '#ffed00ff', '#ffed00ff', '#ffec00ff', '#ffec00ff', '#ffeb00ff', '#ffea00ff', '#ffea00ff', '#ffe900ff', '#ffe900ff', '#ffe800ff', '#ffe800ff', '#ffe700ff', '#ffe700ff', '#ffe600ff', '#ffe600ff', '#ffe500ff', '#ffe500ff', '#ffe400ff', '#ffe300ff', '#ffe300ff', '#ffe200ff', '#ffe200ff', '#ffe100ff', '#ffe100ff', '#ffe000ff', '#ffe000ff', '#ffdf00ff', '#ffdf00ff', '#ffde00ff', '#ffdd00ff', '#ffdd00ff', '#ffdc00ff', '#ffdc00ff', '#ffdb00ff', '#ffdb00ff', '#ffda00ff', '#ffda00ff', '#ffd900ff', '#ffd900ff', '#ffd800ff', '#ffd700ff', '#ffd700ff', '#ffd600ff', '#ffd600ff', '#ffd500ff', '#ffd500ff', '#ffd400ff', '#ffd400ff', '#ffd300ff', '#ffd300ff', '#ffd200ff', '#ffd200ff', '#ffd100ff', '#ffd000ff', '#ffd000ff', '#ffcf00ff', '#ffcf00ff', '#ffce00ff', '#ffce00ff', '#ffcd00ff', '#ffcd00ff', '#ffcc00ff', '#ffcc00ff', '#ffcb00ff', '#ffca00ff', '#ffca00ff', '#ffc900ff', '#ffc900ff', '#ffc800ff', '#ffc800ff', '#ffc700ff', '#ffc700ff', '#ffc600ff', '#ffc600ff', '#ffc500ff', '#ffc400ff', '#ffc400ff', '#ffc300ff', '#ffc300ff', '#ffc200ff', '#ffc200ff', '#ffc100ff', '#ffc100ff', '#ffc000ff', '#ffc000ff', '#ffbf00ff', '#ffbe00ff', '#ffbe00ff', '#ffbd00ff', '#ffbd00ff', '#ffbc00ff', '#ffbc00ff', '#ffbb00ff', '#ffbb00ff', '#ffba00ff', '#ffba00ff', '#ffb900ff', '#ffb900ff', '#ffb800ff', '#ffb700ff', '#ffb700ff', '#ffb600ff', '#ffb600ff', '#ffb500ff', '#ffb500ff', '#ffb400ff', '#ffb400ff', '#ffb300ff', '#ffb300ff', '#ffb200ff', '#ffb100ff', '#ffb100ff', '#ffb000ff', '#ffb000ff', '#ffaf00ff', '#ffaf00ff', '#ffae00ff', '#ffae00ff', '#ffad00ff', '#ffad00ff', '#ffac00ff', '#ffab00ff', '#ffab00ff', '#ffaa00ff', '#ffaa00ff', '#ffa900ff', '#ffa900ff', '#ffa800ff', '#ffa800ff', '#ffa700ff', '#ffa700ff', '#ffa600ff', '#ffa600ff', '#ffa500ff', '#ffa400ff', '#ffa300ff', '#ffa200ff', '#ffa100ff', '#ffa000ff', '#ff9f00ff', '#ff9e00ff', '#ff9d00ff', '#ff9c00ff', '#ff9b00ff', '#ff9a00ff', '#ff9900ff', '#ff9800ff', '#ff9700ff', '#ff9600ff', '#ff9500ff', '#ff9400ff', '#ff9300ff', '#ff9200ff', '#ff9100ff', '#ff9000ff', '#ff8f00ff', '#ff8e00ff', '#ff8d00ff', '#ff8c00ff', '#ff8b00ff', '#ff8a00ff', '#ff8900ff', '#ff8800ff', '#ff8700ff', '#ff8600ff', '#ff8500ff', '#ff8400ff', '#ff8300ff', '#ff8200ff', '#ff8100ff', '#ff8000ff', '#ff7f00ff', '#ff7e00ff', '#ff7d00ff', '#ff7c00ff', '#ff7b00ff', '#ff7a00ff', '#ff7900ff', '#ff7800ff', '#ff7700ff', '#ff7600ff', '#ff7500ff', '#ff7400ff', '#ff7300ff', '#ff7200ff', '#ff7100ff', '#ff7000ff', '#ff6f00ff', '#ff6e00ff', '#ff6d00ff', '#ff6c00ff', '#ff6b00ff', '#ff6a00ff', '#ff6900ff', '#ff6800ff', '#ff6700ff', '#ff6600ff', '#ff6500ff', '#ff6400ff', '#ff6300ff', '#ff6200ff', '#ff6100ff', '#ff6000ff', '#ff5f00ff', '#ff5e00ff', '#ff5d00ff', '#ff5c00ff', '#ff5b00ff', '#ff5a00ff', '#ff5900ff', '#ff5800ff', '#ff5700ff', '#ff5600ff', '#ff5500ff', '#ff5400ff', '#ff5300ff', '#ff5200ff', '#ff5100ff', '#ff5000ff', '#ff4f00ff', '#ff4e00ff', '#ff4d00ff', '#ff4c00ff', '#ff4b00ff', '#ff4a00ff', '#ff4900ff', '#ff4800ff', '#ff4700ff', '#ff4600ff', '#ff4500ff', '#ff4400ff', '#ff4300ff', '#ff4200ff', '#ff4100ff', '#ff4000ff', '#ff3f00ff', '#ff3e00ff', '#ff3d00ff', '#ff3c00ff', '#ff3b00ff', '#ff3a00ff', '#ff3900ff', '#ff3800ff', '#ff3700ff', '#ff3600ff', '#ff3500ff', '#ff3400ff', '#ff3300ff', '#ff3200ff', '#ff3100ff', '#ff3000ff', '#ff2f00ff', '#ff2e00ff', '#ff2d00ff', '#ff2c00ff', '#ff2b00ff', '#ff2a00ff', '#ff2900ff', '#ff2800ff', '#ff2700ff', '#ff2600ff', '#ff2500ff', '#ff2400ff', '#ff2300ff', '#ff2200ff', '#ff2100ff', '#ff2000ff', '#ff1f00ff', '#ff1e00ff', '#ff1d00ff', '#ff1c00ff', '#ff1b00ff', '#ff1a00ff', '#ff1900ff', '#ff1800ff', '#ff1700ff', '#ff1600ff', '#ff1500ff', '#ff1400ff', '#ff1300ff', '#ff1200ff', '#ff1100ff', '#ff1000ff', '#ff0f00ff', '#ff0e00ff', '#ff0d00ff', '#ff0c00ff', '#ff0b00ff', '#ff0a00ff', '#ff0900ff', '#ff0800ff', '#ff0700ff', '#ff0600ff', '#ff0500ff', '#ff0400ff', '#ff0300ff', '#ff0200ff', '#ff0100ff', '#ff0000ff', '#ff0000ff']);
+    
+
+    color_map_059c7c623da1d499edae5117d25e52c9.x = d3.scale.linear()
+              .domain([0.0, 63.76])
+              .range([0, 450 - 50]);
+
+    color_map_059c7c623da1d499edae5117d25e52c9.legend = L.control({position: 'topright'});
+    color_map_059c7c623da1d499edae5117d25e52c9.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_059c7c623da1d499edae5117d25e52c9.legend.addTo(map_85513acc3e8483cb133ec7a78253fc75);
+
+    color_map_059c7c623da1d499edae5117d25e52c9.xAxis = d3.svg.axis()
+        .scale(color_map_059c7c623da1d499edae5117d25e52c9.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.0, 21.253333333333334, 42.50666666666667, 63.76]);
+
+    color_map_059c7c623da1d499edae5117d25e52c9.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_059c7c623da1d499edae5117d25e52c9.g = color_map_059c7c623da1d499edae5117d25e52c9.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_059c7c623da1d499edae5117d25e52c9.g.selectAll("rect")
+        .data(color_map_059c7c623da1d499edae5117d25e52c9.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_059c7c623da1d499edae5117d25e52c9.x(color_map_059c7c623da1d499edae5117d25e52c9.color.domain()[i - 1]) : color_map_059c7c623da1d499edae5117d25e52c9.x.range()[0],
+            x1: i < color_map_059c7c623da1d499edae5117d25e52c9.color.domain().length ? color_map_059c7c623da1d499edae5117d25e52c9.x(color_map_059c7c623da1d499edae5117d25e52c9.color.domain()[i]) : color_map_059c7c623da1d499edae5117d25e52c9.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_059c7c623da1d499edae5117d25e52c9.g.call(color_map_059c7c623da1d499edae5117d25e52c9.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Aumento % 2020 vs 2019 (capado a 100%)");
+    
+    var color_map_b375c4255564da22cd132a85127b3fc9 = {};
+
+    
+    color_map_b375c4255564da22cd132a85127b3fc9.color = d3.scale.threshold()
+              .domain([0.0, 0.1277755511022044, 0.2555511022044088, 0.38332665330661325, 0.5111022044088176, 0.6388777555110221, 0.7666533066132265, 0.8944288577154309, 1.0222044088176352, 1.1499799599198397, 1.2777555110220442, 1.4055310621242485, 1.533306613226453, 1.6610821643286573, 1.7888577154308618, 1.916633266533066, 2.0444088176352704, 2.172184368737475, 2.2999599198396794, 2.427735470941884, 2.5555110220440884, 2.6832865731462925, 2.811062124248497, 2.9388376753507015, 3.066613226452906, 3.19438877755511, 3.3221643286573146, 3.449939879759519, 3.5777154308617236, 3.7054909819639277, 3.833266533066132, 3.9610420841683367, 4.088817635270541, 4.216593186372745, 4.34436873747495, 4.472144288577154, 4.599919839679359, 4.727695390781563, 4.855470941883768, 4.983246492985971, 5.111022044088177, 5.2387975951903805, 5.366573146292585, 5.4943486973947895, 5.622124248496994, 5.749899799599198, 5.877675350701403, 6.005450901803607, 6.133226452905812, 6.261002004008016, 6.38877755511022, 6.516553106212425, 6.644328657314629, 6.772104208416833, 6.899879759519038, 7.027655310621242, 7.155430861723447, 7.283206412825651, 7.410981963927855, 7.53875751503006, 7.666533066132264, 7.794308617234468, 7.922084168336673, 8.049859719438878, 8.177635270541082, 8.305410821643285, 8.43318637274549, 8.560961923847696, 8.6887374749499, 8.816513026052103, 8.944288577154309, 9.072064128256514, 9.199839679358718, 9.327615230460921, 9.455390781563127, 9.58316633266533, 9.710941883767536, 9.83871743486974, 9.966492985971943, 10.094268537074148, 10.222044088176354, 10.349819639278556, 10.477595190380761, 10.605370741482966, 10.73314629258517, 10.860921843687374, 10.988697394789579, 11.116472945891783, 11.244248496993988, 11.372024048096192, 11.499799599198395, 11.6275751503006, 11.755350701402806, 11.88312625250501, 12.010901803607213, 12.138677354709419, 12.266452905811624, 12.394228456913828, 12.522004008016031, 12.649779559118237, 12.77755511022044, 12.905330661322646, 13.03310621242485, 13.160881763527053, 13.288657314629258, 13.416432865731464, 13.544208416833666, 13.671983967935871, 13.799759519038076, 13.92753507014028, 14.055310621242484, 14.183086172344689, 14.310861723446894, 14.438637274549098, 14.566412825651302, 14.694188376753507, 14.82196392785571, 14.949739478957916, 15.07751503006012, 15.205290581162323, 15.333066132264529, 15.460841683366734, 15.588617234468936, 15.716392785571141, 15.844168336673347, 15.97194388777555, 16.099719438877756, 16.22749498997996, 16.355270541082163, 16.483046092184367, 16.61082164328657, 16.738597194388777, 16.86637274549098, 16.994148296593185, 17.121923847695392, 17.249699398797596, 17.3774749498998, 17.505250501002003, 17.633026052104206, 17.76080160320641, 17.888577154308617, 18.01635270541082, 18.144128256513028, 18.27190380761523, 18.399679358717435, 18.52745490981964, 18.655230460921842, 18.783006012024046, 18.910781563126253, 19.038557114228457, 19.16633266533066, 19.294108216432868, 19.42188376753507, 19.54965931863727, 19.67743486973948, 19.805210420841682, 19.932985971943886, 20.060761523046093, 20.188537074148297, 20.3163126252505, 20.444088176352707, 20.57186372745491, 20.69963927855711, 20.82741482965932, 20.955190380761522, 21.082965931863725, 21.210741482965933, 21.338517034068136, 21.46629258517034, 21.594068136272547, 21.721843687374747, 21.84961923847695, 21.977394789579158, 22.10517034068136, 22.232945891783565, 22.360721442885772, 22.488496993987976, 22.61627254509018, 22.744048096192383, 22.871823647294587, 22.99959919839679, 23.127374749498998, 23.2551503006012, 23.38292585170341, 23.510701402805612, 23.638476953907816, 23.76625250501002, 23.894028056112223, 24.021803607214427, 24.149579158316634, 24.277354709418837, 24.40513026052104, 24.532905811623248, 24.66068136272545, 24.788456913827655, 24.91623246492986, 25.044008016032063, 25.171783567134266, 25.299559118236473, 25.427334669338677, 25.55511022044088, 25.682885771543088, 25.81066132264529, 25.93843687374749, 26.0662124248497, 26.193987975951902, 26.321763527054106, 26.449539078156313, 26.577314629258517, 26.70509018036072, 26.832865731462928, 26.960641282565128, 27.08841683366733, 27.21619238476954, 27.343967935871742, 27.471743486973946, 27.599519038076153, 27.727294589178356, 27.85507014028056, 27.982845691382764, 28.110621242484967, 28.23839679358717, 28.366172344689378, 28.49394789579158, 28.62172344689379, 28.749498997995993, 28.877274549098196, 29.005050100200403, 29.132825651302603, 29.260601202404807, 29.388376753507014, 29.516152304609218, 29.64392785571142, 29.77170340681363, 29.899478957915832, 30.027254509018036, 30.15503006012024, 30.282805611222443, 30.410581162324647, 30.538356713426854, 30.666132264529057, 30.79390781563126, 30.92168336673347, 31.049458917835672, 31.177234468937872, 31.30501002004008, 31.432785571142283, 31.560561122244486, 31.688336673346694, 31.816112224448897, 31.9438877755511, 32.07166332665331, 32.19943887775551, 32.327214428857715, 32.45498997995992, 32.58276553106212, 32.710541082164326, 32.83831663326653, 32.96609218436873, 33.093867735470944, 33.22164328657314, 33.34941883767535, 33.477194388777555, 33.60496993987976, 33.73274549098196, 33.860521042084166, 33.98829659318637, 34.11607214428857, 34.243847695390784, 34.37162324649298, 34.49939879759519, 34.627174348697395, 34.7549498997996, 34.8827254509018, 35.010501002004005, 35.13827655310621, 35.26605210420841, 35.39382765531062, 35.52160320641282, 35.64937875751503, 35.777154308617234, 35.90492985971943, 36.03270541082164, 36.160480961923845, 36.288256513026056, 36.41603206412825, 36.54380761523046, 36.67158316633267, 36.79935871743487, 36.927134268537074, 37.05490981963928, 37.18268537074148, 37.310460921843685, 37.438236472945896, 37.56601202404809, 37.6937875751503, 37.82156312625251, 37.94933867735471, 38.077114228456914, 38.20488977955912, 38.33266533066132, 38.460440881763525, 38.588216432865735, 38.71599198396793, 38.84376753507014, 38.971543086172346, 39.09931863727454, 39.22709418837675, 39.35486973947896, 39.48264529058116, 39.610420841683364, 39.738196392785575, 39.86597194388777, 39.99374749498998, 40.121523046092186, 40.24929859719438, 40.37707414829659, 40.5048496993988, 40.632625250501, 40.760400801603204, 40.888176352705415, 41.01595190380761, 41.14372745490982, 41.271503006012026, 41.39927855711422, 41.52705410821643, 41.65482965931864, 41.78260521042084, 41.910380761523044, 42.038156312625254, 42.16593186372745, 42.293707414829655, 42.421482965931865, 42.54925851703406, 42.67703406813627, 42.804809619238476, 42.93258517034068, 43.06036072144288, 43.188136272545094, 43.31591182364729, 43.443687374749494, 43.571462925851705, 43.6992384769539, 43.82701402805611, 43.954789579158316, 44.08256513026052, 44.21034068136272, 44.33811623246493, 44.46589178356713, 44.593667334669334, 44.721442885771545, 44.84921843687374, 44.97699398797595, 45.104769539078156, 45.23254509018036, 45.36032064128256, 45.488096192384766, 45.61587174348697, 45.743647294589174, 45.871422845691384, 45.99919839679358, 46.12697394789579, 46.254749498997995, 46.382525050100206, 46.5103006012024, 46.638076152304606, 46.76585170340682, 46.89362725450901, 47.021402805611224, 47.14917835671343, 47.27695390781563, 47.404729458917835, 47.53250501002004, 47.66028056112224, 47.788056112224446, 47.91583166332666, 48.04360721442885, 48.171382765531064, 48.29915831663327, 48.42693386773547, 48.554709418837675, 48.68248496993988, 48.81026052104208, 48.938036072144286, 49.065811623246496, 49.19358717434869, 49.3213627254509, 49.44913827655311, 49.57691382765531, 49.704689378757514, 49.83246492985972, 49.96024048096192, 50.088016032064125, 50.215791583166336, 50.34356713426853, 50.47134268537074, 50.59911823647295, 50.72689378757514, 50.854669338677354, 50.98244488977956, 51.11022044088176, 51.237995991983965, 51.365771543086176, 51.49354709418837, 51.62132264529058, 51.74909819639279, 51.87687374749498, 52.004649298597194, 52.1324248496994, 52.2602004008016, 52.387975951903805, 52.515751503006015, 52.64352705410821, 52.771302605210415, 52.899078156312626, 53.02685370741482, 53.15462925851703, 53.28240480961924, 53.41018036072144, 53.537955911823644, 53.665731462925855, 53.79350701402805, 53.921282565130255, 54.049058116232466, 54.17683366733466, 54.30460921843687, 54.43238476953908, 54.56016032064128, 54.687935871743484, 54.815711422845695, 54.94348697394789, 55.071262525050095, 55.199038076152306, 55.3268136272545, 55.45458917835671, 55.58236472945892, 55.71014028056112, 55.837915831663324, 55.96569138276553, 56.09346693386773, 56.221242484969935, 56.349018036072145, 56.47679358717434, 56.60456913827655, 56.732344689378756, 56.86012024048097, 56.98789579158316, 57.11567134268537, 57.24344689378758, 57.371222444889774, 57.498997995991985, 57.62677354709419, 57.75454909819639, 57.882324649298596, 58.01010020040081, 58.137875751503, 58.26565130260521, 58.39342685370742, 58.521202404809614, 58.648977955911825, 58.77675350701403, 58.90452905811623, 59.032304609218436, 59.16008016032064, 59.28785571142284, 59.41563126252505, 59.54340681362726, 59.671182364729454, 59.798957915831664, 59.92673346693387, 60.05450901803607, 60.182284569138275, 60.31006012024048, 60.43783567134268, 60.565611222444886, 60.6933867735471, 60.82116232464929, 60.948937875751504, 61.07671342685371, 61.204488977955904, 61.332264529058115, 61.46004008016032, 61.58781563126252, 61.715591182364726, 61.84336673346694, 61.97114228456913, 62.098917835671344, 62.22669338677355, 62.354468937875744, 62.482244488977955, 62.61002004008016, 62.73779559118236, 62.865571142284566, 62.993346693386776, 63.12112224448897, 63.24889779559118, 63.37667334669339, 63.504448897795584, 63.632224448897794, 63.76])
+              .range(['#d3d3d3ff', '#d3d3d3ff', '#d3d3d4ff', '#d3d3d4ff', '#d2d3d4ff', '#d2d3d4ff', '#d2d4d4ff', '#d2d4d4ff', '#d1d4d4ff', '#d1d4d4ff', '#d1d4d4ff', '#d1d4d5ff', '#d1d4d5ff', '#d0d4d5ff', '#d0d4d5ff', '#d0d4d5ff', '#d0d4d5ff', '#cfd4d5ff', '#cfd4d5ff', '#cfd4d6ff', '#cfd4d6ff', '#cfd4d6ff', '#ced4d6ff', '#ced4d6ff', '#ced4d6ff', '#ced4d6ff', '#cdd4d6ff', '#cdd4d6ff', '#cdd4d7ff', '#cdd4d7ff', '#ccd4d7ff', '#ccd4d7ff', '#ccd4d7ff', '#ccd4d7ff', '#ccd4d7ff', '#cbd4d7ff', '#cbd4d7ff', '#cbd4d8ff', '#cbd4d8ff', '#cad5d8ff', '#cad5d8ff', '#cad5d8ff', '#cad5d8ff', '#c9d5d8ff', '#c9d5d8ff', '#c9d5d8ff', '#c9d5d9ff', '#c9d5d9ff', '#c8d5d9ff', '#c8d5d9ff', '#c8d5d9ff', '#c8d5d9ff', '#c7d5d9ff', '#c7d5d9ff', '#c7d5daff', '#c7d5daff', '#c6d5daff', '#c6d5daff', '#c6d5daff', '#c6d5daff', '#c6d5daff', '#c5d5daff', '#c5d5daff', '#c5d5dbff', '#c5d5dbff', '#c4d5dbff', '#c4d5dbff', '#c4d5dbff', '#c4d5dbff', '#c4d5dbff', '#c3d5dbff', '#c3d5dbff', '#c3d6dcff', '#c3d6dcff', '#c2d6dcff', '#c2d6dcff', '#c2d6dcff', '#c2d6dcff', '#c1d6dcff', '#c1d6dcff', '#c1d6ddff', '#c1d6ddff', '#c1d6ddff', '#c0d6ddff', '#c0d6ddff', '#c0d6ddff', '#c0d6ddff', '#bfd6ddff', '#bfd6ddff', '#bfd6deff', '#bfd6deff', '#bed6deff', '#bed6deff', '#bed6deff', '#bed6deff', '#bed6deff', '#bdd6deff', '#bdd6deff', '#bdd6dfff', '#bdd6dfff', '#bcd6dfff', '#bcd6dfff', '#bcd6dfff', '#bcd6dfff', '#bbd6dfff', '#bbd6dfff', '#bbd7dfff', '#bbd7e0ff', '#bbd7e0ff', '#bad7e0ff', '#bad7e0ff', '#bad7e0ff', '#bad7e0ff', '#b9d7e0ff', '#b9d7e0ff', '#b9d7e1ff', '#b9d7e1ff', '#b8d7e1ff', '#b8d7e1ff', '#b8d7e1ff', '#b8d7e1ff', '#b8d7e1ff', '#b7d7e1ff', '#b7d7e1ff', '#b7d7e2ff', '#b7d7e2ff', '#b6d7e2ff', '#b6d7e2ff', '#b6d7e2ff', '#b6d7e2ff', '#b6d7e2ff', '#b5d7e2ff', '#b5d7e2ff', '#b5d7e3ff', '#b5d7e3ff', '#b4d7e3ff', '#b4d7e3ff', '#b4d7e3ff', '#b4d7e3ff', '#b3d8e3ff', '#b3d8e3ff', '#b3d8e3ff', '#b3d8e4ff', '#b3d8e4ff', '#b2d8e4ff', '#b2d8e4ff', '#b2d8e4ff', '#b2d8e4ff', '#b1d8e4ff', '#b1d8e4ff', '#b1d8e5ff', '#b1d8e5ff', '#b0d8e5ff', '#b0d8e5ff', '#b0d8e5ff', '#b0d8e5ff', '#b0d8e5ff', '#afd8e5ff', '#afd8e5ff', '#afd8e6ff', '#afd8e6ff', '#aed8e6ff', '#aed8e6ff', '#aed8e6ff', '#aed8e6ff', '#add8e6ff', '#add8e6ff', '#acd7e7ff', '#abd6e7ff', '#aad5e7ff', '#a9d4e7ff', '#a8d2e7ff', '#a7d1e7ff', '#a6d0e7ff', '#a5cee8ff', '#a4cde8ff', '#a3cce8ff', '#a2cae8ff', '#a1c9e8ff', '#a0c8e8ff', '#9fc7e8ff', '#9ec5e9ff', '#9dc4e9ff', '#9cc3e9ff', '#9bc1e9ff', '#9ac0e9ff', '#99bfe9ff', '#98bdeaff', '#97bceaff', '#96bbeaff', '#94b9eaff', '#93b8eaff', '#92b7eaff', '#91b6eaff', '#90b4ebff', '#8fb3ebff', '#8eb2ebff', '#8db0ebff', '#8cafebff', '#8baeebff', '#8aacebff', '#89abecff', '#88aaecff', '#87a9ecff', '#86a7ecff', '#85a6ecff', '#84a5ecff', '#83a3edff', '#82a2edff', '#81a1edff', '#809fedff', '#7f9eedff', '#7d9dedff', '#7c9cedff', '#7b9aeeff', '#7a99eeff', '#7998eeff', '#7896eeff', '#7795eeff', '#7694eeff', '#7592eeff', '#7491efff', '#7390efff', '#728eefff', '#718defff', '#708cefff', '#6f8befff', '#6e89f0ff', '#6d88f0ff', '#6c87f0ff', '#6b85f0ff', '#6a84f0ff', '#6983f0ff', '#6881f0ff', '#6780f1ff', '#657ff1ff', '#647ef1ff', '#637cf1ff', '#627bf1ff', '#617af1ff', '#6078f2ff', '#5f77f2ff', '#5e76f2ff', '#5d74f2ff', '#5c73f2ff', '#5b72f2ff', '#5a70f2ff', '#596ff3ff', '#586ef3ff', '#576df3ff', '#566bf3ff', '#556af3ff', '#5469f3ff', '#5367f3ff', '#5266f4ff', '#5165f4ff', '#5063f4ff', '#4f62f4ff', '#4d61f4ff', '#4c60f4ff', '#4b5ef5ff', '#4a5df5ff', '#495cf5ff', '#485af5ff', '#4759f5ff', '#4658f5ff', '#4556f5ff', '#4455f6ff', '#4354f6ff', '#4253f6ff', '#4151f6ff', '#4050f6ff', '#3f4ff6ff', '#3e4df6ff', '#3d4cf7ff', '#3c4bf7ff', '#3b49f7ff', '#3a48f7ff', '#3947f7ff', '#3845f7ff', '#3644f8ff', '#3543f8ff', '#3442f8ff', '#3340f8ff', '#323ff8ff', '#313ef8ff', '#303cf8ff', '#2f3bf9ff', '#2e3af9ff', '#2d38f9ff', '#2c37f9ff', '#2b36f9ff', '#2a35f9ff', '#2933faff', '#2832faff', '#2731faff', '#262ffaff', '#252efaff', '#242dfaff', '#232bfaff', '#222afbff', '#2129fbff', '#2027fbff', '#1e26fbff', '#1d25fbff', '#1c24fbff', '#1b22fbff', '#1a21fcff', '#1920fcff', '#181efcff', '#171dfcff', '#161cfcff', '#151afcff', '#1419fdff', '#1318fdff', '#1217fdff', '#1115fdff', '#1014fdff', '#0f13fdff', '#0e11fdff', '#0d10feff', '#0c0ffeff', '#0b0dfeff', '#0a0cfeff', '#090bfeff', '#0809feff', '#0608feff', '#0507ffff', '#0406ffff', '#0304ffff', '#0203ffff', '#0102ffff', '#0000ffff', '#0000ffff', '#0000ffff', '#0000feff', '#0000fdff', '#0000fcff', '#0000fcff', '#0000fbff', '#0000faff', '#0000faff', '#0000f9ff', '#0000f8ff', '#0000f8ff', '#0000f7ff', '#0000f6ff', '#0000f5ff', '#0000f5ff', '#0000f4ff', '#0000f3ff', '#0000f3ff', '#0000f2ff', '#0000f1ff', '#0000f1ff', '#0000f0ff', '#0000efff', '#0000eeff', '#0000eeff', '#0000edff', '#0000ecff', '#0000ecff', '#0000ebff', '#0000eaff', '#0000eaff', '#0000e9ff', '#0000e8ff', '#0000e7ff', '#0000e7ff', '#0000e6ff', '#0000e5ff', '#0000e5ff', '#0000e4ff', '#0000e3ff', '#0000e3ff', '#0000e2ff', '#0000e1ff', '#0000e0ff', '#0000e0ff', '#0000dfff', '#0000deff', '#0000deff', '#0000ddff', '#0000dcff', '#0000dcff', '#0000dbff', '#0000daff', '#0000d9ff', '#0000d9ff', '#0000d8ff', '#0000d7ff', '#0000d7ff', '#0000d6ff', '#0000d5ff', '#0000d5ff', '#0000d4ff', '#0000d3ff', '#0000d2ff', '#0000d2ff', '#0000d1ff', '#0000d0ff', '#0000d0ff', '#0000cfff', '#0000ceff', '#0000ceff', '#0000cdff', '#0000ccff', '#0000cbff', '#0000cbff', '#0000caff', '#0000c9ff', '#0000c9ff', '#0000c8ff', '#0000c7ff', '#0000c7ff', '#0000c6ff', '#0000c5ff', '#0000c4ff', '#0000c4ff', '#0000c3ff', '#0000c2ff', '#0000c2ff', '#0000c1ff', '#0000c0ff', '#0000c0ff', '#0000bfff', '#0000beff', '#0000bdff', '#0000bdff', '#0000bcff', '#0000bbff', '#0000bbff', '#0000baff', '#0000b9ff', '#0000b9ff', '#0000b8ff', '#0000b7ff', '#0000b6ff', '#0000b6ff', '#0000b5ff', '#0000b4ff', '#0000b4ff', '#0000b3ff', '#0000b2ff', '#0000b2ff', '#0000b1ff', '#0000b0ff', '#0000afff', '#0000afff', '#0000aeff', '#0000adff', '#0000adff', '#0000acff', '#0000abff', '#0000abff', '#0000aaff', '#0000a9ff', '#0000a8ff', '#0000a8ff', '#0000a7ff', '#0000a6ff', '#0000a6ff', '#0000a5ff', '#0000a4ff', '#0000a4ff', '#0000a3ff', '#0000a2ff', '#0000a1ff', '#0000a1ff', '#0000a0ff', '#00009fff', '#00009fff', '#00009eff', '#00009dff', '#00009dff', '#00009cff', '#00009bff', '#00009aff', '#00009aff', '#000099ff', '#000098ff', '#000098ff', '#000097ff', '#000096ff', '#000096ff', '#000095ff', '#000094ff', '#000093ff', '#000093ff', '#000092ff', '#000091ff', '#000091ff', '#000090ff', '#00008fff', '#00008fff', '#00008eff', '#00008dff', '#00008cff', '#00008cff', '#00008bff']);
+    
+
+    color_map_b375c4255564da22cd132a85127b3fc9.x = d3.scale.linear()
+              .domain([0.0, 63.76])
+              .range([0, 450 - 50]);
+
+    color_map_b375c4255564da22cd132a85127b3fc9.legend = L.control({position: 'topright'});
+    color_map_b375c4255564da22cd132a85127b3fc9.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_b375c4255564da22cd132a85127b3fc9.legend.addTo(map_85513acc3e8483cb133ec7a78253fc75);
+
+    color_map_b375c4255564da22cd132a85127b3fc9.xAxis = d3.svg.axis()
+        .scale(color_map_b375c4255564da22cd132a85127b3fc9.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.0, 21.253333333333334, 42.50666666666667, 63.76]);
+
+    color_map_b375c4255564da22cd132a85127b3fc9.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_b375c4255564da22cd132a85127b3fc9.g = color_map_b375c4255564da22cd132a85127b3fc9.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_b375c4255564da22cd132a85127b3fc9.g.selectAll("rect")
+        .data(color_map_b375c4255564da22cd132a85127b3fc9.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_b375c4255564da22cd132a85127b3fc9.x(color_map_b375c4255564da22cd132a85127b3fc9.color.domain()[i - 1]) : color_map_b375c4255564da22cd132a85127b3fc9.x.range()[0],
+            x1: i < color_map_b375c4255564da22cd132a85127b3fc9.color.domain().length ? color_map_b375c4255564da22cd132a85127b3fc9.x(color_map_b375c4255564da22cd132a85127b3fc9.color.domain()[i]) : color_map_b375c4255564da22cd132a85127b3fc9.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_b375c4255564da22cd132a85127b3fc9.g.call(color_map_b375c4255564da22cd132a85127b3fc9.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Disminuci\u00f3n % 2020 vs 2019 (capado a 100%)");
+</script>
+</html>

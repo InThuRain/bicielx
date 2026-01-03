@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9c6a94abc54dc873086283ead3fedc50 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9c6a94abc54dc873086283ead3fedc50" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9c6a94abc54dc873086283ead3fedc50 = L.map(
+                "map_9c6a94abc54dc873086283ead3fedc50",
+                {
+                    center: [38.267, -0.7129],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_9c6a94abc54dc873086283ead3fedc50);
+
+            
+
+        
+    
+            var tile_layer_2b18eef8d601d9939cf53c8c748722ec = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2b18eef8d601d9939cf53c8c748722ec.addTo(map_9c6a94abc54dc873086283ead3fedc50);
+        
+    
+            var circle_marker_a4fc2c61a8404b5d1a87cf2df39368e5 = L.circleMarker(
+                [38.26901, -0.711107],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_9c6a94abc54dc873086283ead3fedc50);
+        
+    
+        var popup_a62534444fce16c3201db3688b144b69 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c98ba8524adf368ab67b522e429ada32 = $(`<div id="html_c98ba8524adf368ab67b522e429ada32" style="width: 100.0%; height: 100.0%;">72 – Plaza de madrid</div>`)[0];
+                popup_a62534444fce16c3201db3688b144b69.setContent(html_c98ba8524adf368ab67b522e429ada32);
+            
+        
+
+        circle_marker_a4fc2c61a8404b5d1a87cf2df39368e5.bindPopup(popup_a62534444fce16c3201db3688b144b69)
+        ;
+
+        
+    
+    
+            var poly_line_68029e657b8410f15c6bb83627159509 = L.polyline(
+                [[38.26151647024457, -0.7128917029950481], [38.26902547024457, -0.7112197029950481]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 14.0}
+            ).addTo(map_9c6a94abc54dc873086283ead3fedc50);
+        
+    
+            poly_line_68029e657b8410f15c6bb83627159509.bindTooltip(
+                `<div>
+                     1 viajes ← 82 – Antonio Machado 73 (media 02h 30m)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

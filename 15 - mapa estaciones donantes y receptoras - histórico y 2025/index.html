@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Saldo relativo por estación – BiciElx</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg: #f5f5f5;
+      --card-bg: #ffffff;
+      --accent: #0369a1;
+      --accent2: #0ea5e9;
+      --text: #111827;
+      --shadow: 0 4px 10px rgba(0,0,0,0.06);
+      --radius-lg: 18px;
+      --radius-sm: 10px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      background: linear-gradient(120deg, var(--accent), var(--accent2));
+      color: white;
+      padding: 1.7rem 1rem;
+      box-shadow: var(--shadow);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.9rem;
+      letter-spacing: 0.04em;
+    }
+    .subtitle {
+      margin: 0.4rem 0 0;
+      opacity: 0.9;
+      font-size: 0.95rem;
+    }
+    main {
+      max-width: 1200px;
+      margin: 1.5rem auto 2.5rem;
+      padding: 0 1rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+    }
+    .tabs {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .tab-btn {
+      border: none;
+      border-radius: 999px;
+      padding: 0.4rem 0.9rem;
+      font-size: 0.9rem;
+      cursor: pointer;
+      background: rgba(255,255,255,0.9);
+      box-shadow: var(--shadow);
+      color: #0f172a;
+      transition: background 0.12s ease, transform 0.12s ease, box-shadow 0.12s ease;
+    }
+    .tab-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    }
+    .tab-btn.active {
+      background: #0f766e;
+      color: white;
+    }
+    .map-container {
+      margin-top: 0.5rem;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      background: #000;
+      min-height: 60vh;
+    }
+    .map-frame {
+      width: 100%;
+      height: 80vh;
+      border: none;
+      display: none;
+    }
+    .map-frame.active {
+      display: block;
+    }
+    .map-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.8rem;
+      margin-top: 0.8rem;
+      flex-wrap: wrap;
+    }
+    .map-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+    .full-btn {
+      padding: 0.35rem 0.8rem;
+      font-size: 0.85rem;
+      border-radius: 999px;
+      border: 1px solid #0f766e;
+      background: white;
+      color: #0f766e;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+    .full-btn:hover {
+      background: #0f766e;
+      color: white;
+    }
+    .section-desc {
+      font-size: 0.9rem;
+      color: #4b5563;
+    }
+    footer {
+      font-size: 0.8rem;
+      color: #6b7280;
+      text-align: center;
+      padding: 0.5rem 0 1.2rem;
+    }
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #020617;
+        color: #e5e7eb;
+      }
+      .section-desc {
+        color: #9ca3af;
+      }
+      .full-btn {
+        background: #020617;
+        color: #a5f3fc;
+        border-color: #0f766e;
+      }
+      .full-btn:hover {
+        background: #0f766e;
+        color: white;
+      }
+      footer {
+        color: #9ca3af;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <h1>Saldo relativo por estación – BiciElx</h1>
+    <p class="subtitle">
+      Comparación entre el saldo acumulado de toda la serie y el saldo específico del año 2025.
+    </p>
+  </div>
+</header>
+<main>
+  <section>
+    <p class="section-desc">
+      Selecciona el mapa que quieres ver. El tamaño de los círculos refleja el saldo en número de usos
+      (cogidas – devoluciones) y el color indica si la estación es donante (rojos) o receptora (azules).
+    </p>
+    <div class="tabs">
+      <button class="tab-btn active" data-target="map_all">Saldo relativo acumulado (toda la serie)</button>
+      <button class="tab-btn" data-target="map_2025">Saldo relativo en 2025 (con umbral de usos)</button>
+    </div>
+    <div class="map-header">
+      <div class="map-title" id="mapTitle">
+        Saldo relativo acumulado (toda la serie)
+      </div>
+      <a id="fullLink" class="full-btn" href="map_saldo_relativo_total.html" target="_blank" rel="noopener">
+        Ver en pantalla completa
+      </a>
+    </div>
+    <div class="map-container">
+      <iframe
+        id="map_all"
+        class="map-frame active"
+        src="map_saldo_relativo_total.html"
+        title="Mapa de saldo relativo acumulado">
+      </iframe>
+      <iframe
+        id="map_2025"
+        class="map-frame"
+        src="map_saldo_relativo_2025.html"
+        title="Mapa de saldo relativo 2025">
+      </iframe>
+    </div>
+  </section>
+</main>
+
+<footer>
+  Página generada automáticamente a partir de los datos de uso de BiciElx.
+</footer>
+
+<script>
+  const tabs = document.querySelectorAll('.tab-btn');
+  const frames = document.querySelectorAll('.map-frame');
+  const titleEl = document.getElementById('mapTitle');
+  const fullLink = document.getElementById('fullLink');
+
+  const titles = {
+    'map_all': 'Saldo relativo acumulado (toda la serie)',
+    'map_2025': 'Saldo relativo en 2025 (con umbral de usos)'
+  };
+  const hrefs = {
+    'map_all': 'map_saldo_relativo_total.html',
+    'map_2025': 'map_saldo_relativo_2025.html'
+  };
+
+  tabs.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.getAttribute('data-target');
+
+      tabs.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      frames.forEach(f => {
+        if (f.id === target) {
+          f.classList.add('active');
+        } else {
+          f.classList.remove('active');
+        }
+      });
+
+      titleEl.textContent = titles[target] || '';
+      fullLink.href = hrefs[target] || '#';
+    });
+  });
+</script>
+
+</body>
+</html>

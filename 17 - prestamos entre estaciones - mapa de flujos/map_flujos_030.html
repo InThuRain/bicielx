@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c64c634044fa9882c3899363a48b16e0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c64c634044fa9882c3899363a48b16e0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c64c634044fa9882c3899363a48b16e0 = L.map(
+                "map_c64c634044fa9882c3899363a48b16e0",
+                {
+                    center: [38.267, -0.7129],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_c64c634044fa9882c3899363a48b16e0);
+
+            
+
+        
+    
+            var tile_layer_9c061696f81118a514f219020d64cd3d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9c061696f81118a514f219020d64cd3d.addTo(map_c64c634044fa9882c3899363a48b16e0);
+        
+    
+            var circle_marker_e8ecbb09d2b56aff6704305a4f3e34c9 = L.circleMarker(
+                [38.27052, -0.6702],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_c64c634044fa9882c3899363a48b16e0);
+        
+    
+        var popup_c6d65b853cf3e8266c5128f942cfac8c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9d6c6e5692af988db3b5e0c807664fb = $(`<div id="html_b9d6c6e5692af988db3b5e0c807664fb" style="width: 100.0%; height: 100.0%;">30 – Squash</div>`)[0];
+                popup_c6d65b853cf3e8266c5128f942cfac8c.setContent(html_b9d6c6e5692af988db3b5e0c807664fb);
+            
+        
+
+        circle_marker_e8ecbb09d2b56aff6704305a4f3e34c9.bindPopup(popup_c6d65b853cf3e8266c5128f942cfac8c)
+        ;
+
+        
+    
+    
+            var poly_line_7b0cdfc663beb152c845d92b9ccfc6a1 = L.polyline(
+                [[38.27043021647482, -0.6701962759473111], [38.27002721647482, -0.6859592759473111]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 14.0}
+            ).addTo(map_c64c634044fa9882c3899363a48b16e0);
+        
+    
+            poly_line_7b0cdfc663beb152c845d92b9ccfc6a1.bindTooltip(
+                `<div>
+                     3468 viajes → 3 – Plaça de la Llotja (media 10m 35s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_f6976c14473cde3242d634c9ea452de2 = L.polyline(
+                [[38.27043300795234, -0.6702285392067756], [38.272633007952344, -0.6811085392067756]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 12.076124567474048}
+            ).addTo(map_c64c634044fa9882c3899363a48b16e0);
+        
+    
+            poly_line_f6976c14473cde3242d634c9ea452de2.bindTooltip(
+                `<div>
+                     2912 viajes → 32 – Centre de Salut d’Altabix (media 08m 11s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_dc8ed6d1496d7ee641308ecaaa030676 = L.polyline(
+                [[38.2704528069164, -0.670124063997003], [38.25954280691641, -0.685784063997003]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 10.384083044982699}
+            ).addTo(map_c64c634044fa9882c3899363a48b16e0);
+        
+    
+            poly_line_dc8ed6d1496d7ee641308ecaaa030676.bindTooltip(
+                `<div>
+                     2423 viajes → 34 – Hospital General (media 09m 43s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_18104b13f4abd5faee35f88dcf2fae64 = L.polyline(
+                [[38.27044065798023, -0.6701463474997411], [38.262913657980235, -0.6882033474997411]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 9.885813148788927}
+            ).addTo(map_c64c634044fa9882c3899363a48b16e0);
+        
+    
+            poly_line_18104b13f4abd5faee35f88dcf2fae64.bindTooltip(
+                `<div>
+                     2279 viajes → 14 – Comissaria (media 09m 41s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_e4ff0d9ebfebac18857bd487ec4a4ce9 = L.polyline(
+                [[38.270430306128425, -0.6701936775541576], [38.268834306128426, -0.7069266775541576]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 8.411764705882353}
+            ).addTo(map_c64c634044fa9882c3899363a48b16e0);
+        
+    
+            poly_line_e4ff0d9ebfebac18857bd487ec4a4ce9.bindTooltip(
+                `<div>
+                     1853 viajes → 12 – Ambulatori de Sant Fermí (media 18m 15s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_b55b2aa8d1c9c7112315e1525d0ab714 = L.polyline(
+                [[38.27043206184831, -0.6701766349815433], [38.26665206184831, -0.6932566349815433]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 8.193771626297577}
+            ).addTo(map_c64c634044fa9882c3899363a48b16e0);
+        
+    
+            poly_line_b55b2aa8d1c9c7112315e1525d0ab714.bindTooltip(
+                `<div>
+                     1790 viajes → 19 – Jesuïtines (media 13m 22s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_8dc22f56c7d1be27229eca70d66d9413 = L.polyline(
+                [[38.270456317283184, -0.6702807034807672], [38.27655631728319, -0.6780907034807672]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 7.955017301038063}
+            ).addTo(map_c64c634044fa9882c3899363a48b16e0);
+        
+    
+            poly_line_8dc22f56c7d1be27229eca70d66d9413.bindTooltip(
+                `<div>
+                     1721 viajes → 17 – Plaça de Castella (media 08m 08s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_5a24fc0d93f735e5183e668a5e75b89c = L.polyline(
+                [[38.270434454495955, -0.6701650818627406], [38.264085454495955, -0.6953980818627405]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 7.3321799307958475}
+            ).addTo(map_c64c634044fa9882c3899363a48b16e0);
+        
+    
+            poly_line_5a24fc0d93f735e5183e668a5e75b89c.bindTooltip(
+                `<div>
+                     1541 viajes → 5 – Centre de Congressos (media 13m 03s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_4f16873c62b49a4775b181a9b94fbe25 = L.polyline(
+                [[38.270432401699054, -0.6702253529319337], [38.27416240169906, -0.6911353529319337]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 6.5501730103806235}
+            ).addTo(map_c64c634044fa9882c3899363a48b16e0);
+        
+    
+            poly_line_4f16873c62b49a4775b181a9b94fbe25.bindTooltip(
+                `<div>
+                     1315 viajes → 26 – UMH / Escola Oficial d’Idiomes (media 12m 03s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_25ddacec6a03b7c89ddff05446b9f967 = L.polyline(
+                [[38.27056307160467, -0.6700995942716174], [38.26349307160467, -0.6651795942716173]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 6.114186851211073}
+            ).addTo(map_c64c634044fa9882c3899363a48b16e0);
+        
+    
+            poly_line_25ddacec6a03b7c89ddff05446b9f967.bindTooltip(
+                `<div>
+                     1189 viajes → 37 – Hort de Travaló (media 08m 53s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_d7801b64db570f8a86d970d3b316e3cc = L.polyline(
+                [[38.270206783525175, -0.6859667240526889], [38.270609783525174, -0.6702037240526889]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 14.0}
+            ).addTo(map_c64c634044fa9882c3899363a48b16e0);
+        
+    
+            poly_line_d7801b64db570f8a86d970d3b316e3cc.bindTooltip(
+                `<div>
+                     4256 viajes ← 3 – Plaça de la Llotja (media 09m 11s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_0fc3da7707474b434fa74d9b94fb0815 = L.polyline(
+                [[38.272806992047656, -0.6810514607932244], [38.270606992047654, -0.6701714607932244]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 11.93609022556391}
+            ).addTo(map_c64c634044fa9882c3899363a48b16e0);
+        
+    
+            poly_line_0fc3da7707474b434fa74d9b94fb0815.bindTooltip(
+                `<div>
+                     3524 viajes ← 32 – Centre de Salut d’Altabix (media 07m 45s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_f3cc9ab9e0677e430f870126ded3c51c = L.polyline(
+                [[38.276683682716815, -0.6779292965192328], [38.27058368271681, -0.6701192965192329]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 10.69266917293233}
+            ).addTo(map_c64c634044fa9882c3899363a48b16e0);
+        
+    
+            poly_line_f3cc9ab9e0677e430f870126ded3c51c.bindTooltip(
+                `<div>
+                     3083 viajes ← 17 – Plaça de Castella (media 07m 22s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_c80f3262dd5ef757146974922794fbe1 = L.polyline(
+                [[38.26901369387157, -0.7069393224458425], [38.27060969387157, -0.6702063224458424]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 7.929511278195489}
+            ).addTo(map_c64c634044fa9882c3899363a48b16e0);
+        
+    
+            poly_line_c80f3262dd5ef757146974922794fbe1.bindTooltip(
+                `<div>
+                     2103 viajes ← 12 – Ambulatori de Sant Fermí (media 17m 52s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_8813780ac61e38faee657af069020250 = L.polyline(
+                [[38.266827938151685, -0.6933033650184567], [38.270607938151684, -0.6702233650184567]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 7.712406015037594}
+            ).addTo(map_c64c634044fa9882c3899363a48b16e0);
+        
+    
+            poly_line_8813780ac61e38faee657af069020250.bindTooltip(
+                `<div>
+                     2026 viajes ← 19 – Jesuïtines (media 13m 12s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_d47622dc4c317f14c27513f2246590db = L.polyline(
+                [[38.2596771930836, -0.6859359360029971], [38.27058719308359, -0.6702759360029971]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 7.193609022556391}
+            ).addTo(map_c64c634044fa9882c3899363a48b16e0);
+        
+    
+            poly_line_d47622dc4c317f14c27513f2246590db.bindTooltip(
+                `<div>
+                     1842 viajes ← 34 – Hospital General (media 12m 22s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_32871c11dad36821e51ca736e927cd19 = L.polyline(
+                [[38.26307234201977, -0.6883106525002589], [38.270599342019764, -0.6702536525002589]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 7.007518796992481}
+            ).addTo(map_c64c634044fa9882c3899363a48b16e0);
+        
+    
+            poly_line_32871c11dad36821e51ca736e927cd19.bindTooltip(
+                `<div>
+                     1776 viajes ← 14 – Comissaria (media 11m 27s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_4bc8dd497c083df4bc5a5cc95a059ecd = L.polyline(
+                [[38.26425654550404, -0.6954679181372594], [38.27060554550404, -0.6702349181372594]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 6.801691729323308}
+            ).addTo(map_c64c634044fa9882c3899363a48b16e0);
+        
+    
+            poly_line_4bc8dd497c083df4bc5a5cc95a059ecd.bindTooltip(
+                `<div>
+                     1703 viajes ← 5 – Centre de Congressos (media 13m 28s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_ddbd80620c97e884be5993cdb5d94648 = L.polyline(
+                [[38.26549668205933, -0.6994488772175589], [38.27060768205933, -0.6702248772175589]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 6.657894736842105}
+            ).addTo(map_c64c634044fa9882c3899363a48b16e0);
+        
+    
+            poly_line_ddbd80620c97e884be5993cdb5d94648.bindTooltip(
+                `<div>
+                     1652 viajes ← 6 – Ajuntament (media 14m 52s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_a3d2e6cd11dbc4a2dd64ac448087d83c = L.polyline(
+                [[38.27833558242449, -0.6718373078578376], [38.270535582424486, -0.6700873078578375]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 6.423872180451128}
+            ).addTo(map_c64c634044fa9882c3899363a48b16e0);
+        
+    
+            poly_line_a3d2e6cd11dbc4a2dd64ac448087d83c.bindTooltip(
+                `<div>
+                     1569 viajes ← 18 – Poliesportiu d’Altabix (media 08m 35s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

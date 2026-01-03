@@ -1,0 +1,963 @@
+estacion,station_name,month,month_name,avg_uses,pct
+1,Estació d’Autobusos,1,January,1146.3,3.01
+1,Estació d’Autobusos,2,February,1336.2,3.14
+1,Estació d’Autobusos,3,March,1357.2,3.13
+1,Estació d’Autobusos,4,April,1169.4,3.11
+1,Estació d’Autobusos,5,May,1492.5,3.13
+1,Estació d’Autobusos,6,June,1277.0,3.19
+1,Estació d’Autobusos,7,July,975.5,3.34
+1,Estació d’Autobusos,8,August,715.4,3.34
+1,Estació d’Autobusos,9,September,1314.0,3.19
+1,Estació d’Autobusos,10,October,1674.9,3.26
+1,Estació d’Autobusos,11,November,1521.1,3.13
+1,Estació d’Autobusos,12,December,1100.7,3.0
+2,Oficina de Turisme,1,January,1679.6,4.41
+2,Oficina de Turisme,2,February,1832.8,4.31
+2,Oficina de Turisme,3,March,1956.8,4.52
+2,Oficina de Turisme,4,April,1704.5,4.54
+2,Oficina de Turisme,5,May,2127.7,4.46
+2,Oficina de Turisme,6,June,1838.1,4.59
+2,Oficina de Turisme,7,July,1368.0,4.68
+2,Oficina de Turisme,8,August,1092.6,5.1
+2,Oficina de Turisme,9,September,1863.7,4.52
+2,Oficina de Turisme,10,October,2317.1,4.52
+2,Oficina de Turisme,11,November,2118.6,4.36
+2,Oficina de Turisme,12,December,1691.5,4.6
+3,Plaça de la Llotja,1,January,1970.6,5.17
+3,Plaça de la Llotja,2,February,1976.8,4.65
+3,Plaça de la Llotja,3,March,2008.9,4.64
+3,Plaça de la Llotja,4,April,1809.2,4.82
+3,Plaça de la Llotja,5,May,2303.3,4.82
+3,Plaça de la Llotja,6,June,2177.3,5.44
+3,Plaça de la Llotja,7,July,1614.6,5.52
+3,Plaça de la Llotja,8,August,1208.2,5.64
+3,Plaça de la Llotja,9,September,2015.4,4.89
+3,Plaça de la Llotja,10,October,2444.5,4.76
+3,Plaça de la Llotja,11,November,2326.7,4.78
+3,Plaça de la Llotja,12,December,1798.4,4.89
+4,Plaça del Raval,1,January,1138.7,2.99
+4,Plaça del Raval,2,February,1235.8,2.91
+4,Plaça del Raval,3,March,1286.4,2.97
+4,Plaça del Raval,4,April,1093.9,2.91
+4,Plaça del Raval,5,May,1450.7,3.04
+4,Plaça del Raval,6,June,1296.4,3.24
+4,Plaça del Raval,7,July,910.4,3.11
+4,Plaça del Raval,8,August,673.8,3.15
+4,Plaça del Raval,9,September,1297.2,3.15
+4,Plaça del Raval,10,October,1613.9,3.15
+4,Plaça del Raval,11,November,1461.7,3.0
+4,Plaça del Raval,12,December,1116.4,3.04
+5,Centre de Congressos,1,January,1373.3,3.6
+5,Centre de Congressos,2,February,1531.5,3.6
+5,Centre de Congressos,3,March,1531.9,3.54
+5,Centre de Congressos,4,April,1329.1,3.54
+5,Centre de Congressos,5,May,1687.5,3.54
+5,Centre de Congressos,6,June,1502.7,3.75
+5,Centre de Congressos,7,July,982.6,3.36
+5,Centre de Congressos,8,August,703.7,3.29
+5,Centre de Congressos,9,September,1458.1,3.54
+5,Centre de Congressos,10,October,1797.0,3.5
+5,Centre de Congressos,11,November,1746.9,3.59
+5,Centre de Congressos,12,December,1326.8,3.61
+6,Ajuntament,1,January,1771.9,4.65
+6,Ajuntament,2,February,2092.0,4.92
+6,Ajuntament,3,March,2164.0,5.0
+6,Ajuntament,4,April,1857.1,4.95
+6,Ajuntament,5,May,2364.9,4.95
+6,Ajuntament,6,June,2144.7,5.36
+6,Ajuntament,7,July,1536.3,5.25
+6,Ajuntament,8,August,1047.6,4.89
+6,Ajuntament,9,September,2022.4,4.9
+6,Ajuntament,10,October,2508.4,4.89
+6,Ajuntament,11,November,2380.5,4.89
+6,Ajuntament,12,December,1871.6,5.09
+7,Pavelló Municipal,1,January,456.5,1.2
+7,Pavelló Municipal,2,February,518.2,1.22
+7,Pavelló Municipal,3,March,537.2,1.24
+7,Pavelló Municipal,4,April,488.6,1.3
+7,Pavelló Municipal,5,May,519.9,1.09
+7,Pavelló Municipal,6,June,429.8,1.07
+7,Pavelló Municipal,7,July,328.7,1.12
+7,Pavelló Municipal,8,August,184.1,0.86
+7,Pavelló Municipal,9,September,501.9,1.22
+7,Pavelló Municipal,10,October,695.2,1.36
+7,Pavelló Municipal,11,November,627.8,1.29
+7,Pavelló Municipal,12,December,423.8,1.15
+8,Polivalent de Carrús,1,January,678.5,1.78
+8,Polivalent de Carrús,2,February,730.5,1.72
+8,Polivalent de Carrús,3,March,696.5,1.61
+8,Polivalent de Carrús,4,April,622.4,1.66
+8,Polivalent de Carrús,5,May,801.3,1.68
+8,Polivalent de Carrús,6,June,756.2,1.89
+8,Polivalent de Carrús,7,July,576.7,1.97
+8,Polivalent de Carrús,8,August,432.1,2.02
+8,Polivalent de Carrús,9,September,750.0,1.82
+8,Polivalent de Carrús,10,October,837.6,1.63
+8,Polivalent de Carrús,11,November,854.2,1.76
+8,Polivalent de Carrús,12,December,627.8,1.71
+9,Biblioteca de Sant Josep,1,January,890.3,2.34
+9,Biblioteca de Sant Josep,2,February,1108.5,2.61
+9,Biblioteca de Sant Josep,3,March,1126.7,2.6
+9,Biblioteca de Sant Josep,4,April,865.9,2.31
+9,Biblioteca de Sant Josep,5,May,1232.8,2.58
+9,Biblioteca de Sant Josep,6,June,999.4,2.5
+9,Biblioteca de Sant Josep,7,July,608.7,2.08
+9,Biblioteca de Sant Josep,8,August,392.1,1.83
+9,Biblioteca de Sant Josep,9,September,1037.9,2.52
+9,Biblioteca de Sant Josep,10,October,1440.1,2.81
+9,Biblioteca de Sant Josep,11,November,1375.2,2.83
+9,Biblioteca de Sant Josep,12,December,932.2,2.54
+10,L’Escorxador,1,January,424.5,1.11
+10,L’Escorxador,2,February,473.3,1.11
+10,L’Escorxador,3,March,439.5,1.01
+10,L’Escorxador,4,April,340.4,0.91
+10,L’Escorxador,5,May,508.3,1.06
+10,L’Escorxador,6,June,423.5,1.06
+10,L’Escorxador,7,July,268.5,0.92
+10,L’Escorxador,8,August,142.6,0.67
+10,L’Escorxador,9,September,461.9,1.12
+10,L’Escorxador,10,October,559.2,1.09
+10,L’Escorxador,11,November,528.8,1.09
+10,L’Escorxador,12,December,352.6,0.96
+11,Plaça de Crevillent,1,January,1082.1,2.84
+11,Plaça de Crevillent,2,February,1127.3,2.65
+11,Plaça de Crevillent,3,March,1145.4,2.64
+11,Plaça de Crevillent,4,April,1016.1,2.71
+11,Plaça de Crevillent,5,May,1260.4,2.64
+11,Plaça de Crevillent,6,June,1175.9,2.94
+11,Plaça de Crevillent,7,July,882.8,3.02
+11,Plaça de Crevillent,8,August,703.8,3.29
+11,Plaça de Crevillent,9,September,1200.1,2.91
+11,Plaça de Crevillent,10,October,1405.1,2.74
+11,Plaça de Crevillent,11,November,1342.0,2.76
+11,Plaça de Crevillent,12,December,1064.4,2.9
+12,Ambulatori de Sant Fermí,1,January,2279.6,5.98
+12,Ambulatori de Sant Fermí,2,February,2396.5,5.64
+12,Ambulatori de Sant Fermí,3,March,2415.2,5.58
+12,Ambulatori de Sant Fermí,4,April,2124.3,5.66
+12,Ambulatori de Sant Fermí,5,May,2608.2,5.46
+12,Ambulatori de Sant Fermí,6,June,2382.6,5.95
+12,Ambulatori de Sant Fermí,7,July,1785.6,6.11
+12,Ambulatori de Sant Fermí,8,August,1346.7,6.29
+12,Ambulatori de Sant Fermí,9,September,2446.8,5.93
+12,Ambulatori de Sant Fermí,10,October,2860.9,5.58
+12,Ambulatori de Sant Fermí,11,November,2784.8,5.72
+12,Ambulatori de Sant Fermí,12,December,2166.5,5.9
+13,Jardí del 1r de Maig,1,January,526.5,1.38
+13,Jardí del 1r de Maig,2,February,499.5,1.17
+13,Jardí del 1r de Maig,3,March,522.8,1.21
+13,Jardí del 1r de Maig,4,April,465.8,1.24
+13,Jardí del 1r de Maig,5,May,531.7,1.11
+13,Jardí del 1r de Maig,6,June,530.1,1.32
+13,Jardí del 1r de Maig,7,July,464.4,1.59
+13,Jardí del 1r de Maig,8,August,374.3,1.75
+13,Jardí del 1r de Maig,9,September,543.4,1.32
+13,Jardí del 1r de Maig,10,October,608.6,1.19
+13,Jardí del 1r de Maig,11,November,576.0,1.18
+13,Jardí del 1r de Maig,12,December,473.8,1.29
+14,Comissaria,1,January,640.7,1.68
+14,Comissaria,2,February,767.3,1.8
+14,Comissaria,3,March,714.3,1.65
+14,Comissaria,4,April,532.4,1.42
+14,Comissaria,5,May,810.6,1.7
+14,Comissaria,6,June,579.5,1.45
+14,Comissaria,7,July,213.7,0.73
+14,Comissaria,8,August,127.8,0.6
+14,Comissaria,9,September,722.5,1.75
+14,Comissaria,10,October,939.1,1.83
+14,Comissaria,11,November,884.3,1.82
+14,Comissaria,12,December,550.3,1.5
+15,Av. Llibertat / Reina Victòria,1,January,1061.6,2.79
+15,Av. Llibertat / Reina Victòria,2,February,1055.1,2.48
+15,Av. Llibertat / Reina Victòria,3,March,1065.5,2.46
+15,Av. Llibertat / Reina Victòria,4,April,939.8,2.5
+15,Av. Llibertat / Reina Victòria,5,May,1152.3,2.41
+15,Av. Llibertat / Reina Victòria,6,June,1039.5,2.6
+15,Av. Llibertat / Reina Victòria,7,July,850.6,2.91
+15,Av. Llibertat / Reina Victòria,8,August,659.2,3.08
+15,Av. Llibertat / Reina Victòria,9,September,1111.6,2.7
+15,Av. Llibertat / Reina Victòria,10,October,1289.1,2.51
+15,Av. Llibertat / Reina Victòria,11,November,1212.7,2.49
+15,Av. Llibertat / Reina Victòria,12,December,950.7,2.59
+16,Jardí d’Asp,1,January,562.8,1.48
+16,Jardí d’Asp,2,February,589.1,1.39
+16,Jardí d’Asp,3,March,574.4,1.33
+16,Jardí d’Asp,4,April,517.5,1.38
+16,Jardí d’Asp,5,May,621.9,1.3
+16,Jardí d’Asp,6,June,543.9,1.36
+16,Jardí d’Asp,7,July,419.4,1.43
+16,Jardí d’Asp,8,August,328.3,1.53
+16,Jardí d’Asp,9,September,615.9,1.49
+16,Jardí d’Asp,10,October,714.6,1.39
+16,Jardí d’Asp,11,November,667.2,1.37
+16,Jardí d’Asp,12,December,516.8,1.41
+17,Plaça de Castella,1,January,1388.3,3.64
+17,Plaça de Castella,2,February,1516.3,3.57
+17,Plaça de Castella,3,March,1558.2,3.6
+17,Plaça de Castella,4,April,1411.5,3.76
+17,Plaça de Castella,5,May,1777.4,3.72
+17,Plaça de Castella,6,June,1560.5,3.9
+17,Plaça de Castella,7,July,1156.4,3.95
+17,Plaça de Castella,8,August,905.5,4.23
+17,Plaça de Castella,9,September,1656.1,4.02
+17,Plaça de Castella,10,October,1920.9,3.74
+17,Plaça de Castella,11,November,1793.9,3.69
+17,Plaça de Castella,12,December,1327.8,3.61
+18,Poliesportiu d’Altabix,1,January,692.5,1.82
+18,Poliesportiu d’Altabix,2,February,756.6,1.78
+18,Poliesportiu d’Altabix,3,March,786.7,1.82
+18,Poliesportiu d’Altabix,4,April,682.5,1.82
+18,Poliesportiu d’Altabix,5,May,905.6,1.9
+18,Poliesportiu d’Altabix,6,June,822.3,2.05
+18,Poliesportiu d’Altabix,7,July,611.7,2.09
+18,Poliesportiu d’Altabix,8,August,421.8,1.97
+18,Poliesportiu d’Altabix,9,September,851.3,2.06
+18,Poliesportiu d’Altabix,10,October,1001.8,1.95
+18,Poliesportiu d’Altabix,11,November,932.8,1.92
+18,Poliesportiu d’Altabix,12,December,701.5,1.91
+19,Jesuïtines,1,January,1278.1,3.35
+19,Jesuïtines,2,February,1435.4,3.38
+19,Jesuïtines,3,March,1452.9,3.35
+19,Jesuïtines,4,April,1266.6,3.37
+19,Jesuïtines,5,May,1546.2,3.24
+19,Jesuïtines,6,June,1338.4,3.34
+19,Jesuïtines,7,July,916.7,3.13
+19,Jesuïtines,8,August,741.9,3.46
+19,Jesuïtines,9,September,1326.8,3.22
+19,Jesuïtines,10,October,1708.0,3.33
+19,Jesuïtines,11,November,1647.5,3.39
+19,Jesuïtines,12,December,1335.7,3.64
+20,Antoni Mena / Fra Jaume Torres,1,January,770.3,2.02
+20,Antoni Mena / Fra Jaume Torres,2,February,840.9,1.98
+20,Antoni Mena / Fra Jaume Torres,3,March,806.2,1.86
+20,Antoni Mena / Fra Jaume Torres,4,April,685.5,1.83
+20,Antoni Mena / Fra Jaume Torres,5,May,882.3,1.85
+20,Antoni Mena / Fra Jaume Torres,6,June,822.1,2.05
+20,Antoni Mena / Fra Jaume Torres,7,July,608.2,2.08
+20,Antoni Mena / Fra Jaume Torres,8,August,427.6,2.0
+20,Antoni Mena / Fra Jaume Torres,9,September,800.1,1.94
+20,Antoni Mena / Fra Jaume Torres,10,October,962.8,1.88
+20,Antoni Mena / Fra Jaume Torres,11,November,873.4,1.8
+20,Antoni Mena / Fra Jaume Torres,12,December,720.4,1.96
+21,C.P. Mariano Benlliure,1,January,491.5,1.29
+21,C.P. Mariano Benlliure,2,February,513.4,1.21
+21,C.P. Mariano Benlliure,3,March,534.2,1.23
+21,C.P. Mariano Benlliure,4,April,457.0,1.22
+21,C.P. Mariano Benlliure,5,May,584.6,1.22
+21,C.P. Mariano Benlliure,6,June,510.8,1.28
+21,C.P. Mariano Benlliure,7,July,394.4,1.35
+21,C.P. Mariano Benlliure,8,August,300.9,1.4
+21,C.P. Mariano Benlliure,9,September,580.7,1.41
+21,C.P. Mariano Benlliure,10,October,605.8,1.18
+21,C.P. Mariano Benlliure,11,November,577.0,1.19
+21,C.P. Mariano Benlliure,12,December,472.8,1.29
+22,Av. Llauradors / Eslava,1,January,568.8,1.49
+22,Av. Llauradors / Eslava,2,February,600.8,1.41
+22,Av. Llauradors / Eslava,3,March,592.4,1.37
+22,Av. Llauradors / Eslava,4,April,527.8,1.41
+22,Av. Llauradors / Eslava,5,May,654.5,1.37
+22,Av. Llauradors / Eslava,6,June,598.1,1.49
+22,Av. Llauradors / Eslava,7,July,385.6,1.32
+22,Av. Llauradors / Eslava,8,August,303.4,1.42
+22,Av. Llauradors / Eslava,9,September,641.0,1.55
+22,Av. Llauradors / Eslava,10,October,705.5,1.38
+22,Av. Llauradors / Eslava,11,November,657.4,1.35
+22,Av. Llauradors / Eslava,12,December,487.6,1.33
+23,Conrado del Campo / Trinquet,1,January,669.8,1.76
+23,Conrado del Campo / Trinquet,2,February,715.1,1.68
+23,Conrado del Campo / Trinquet,3,March,730.8,1.69
+23,Conrado del Campo / Trinquet,4,April,629.3,1.68
+23,Conrado del Campo / Trinquet,5,May,786.6,1.65
+23,Conrado del Campo / Trinquet,6,June,710.0,1.77
+23,Conrado del Campo / Trinquet,7,July,578.3,1.98
+23,Conrado del Campo / Trinquet,8,August,447.0,2.09
+23,Conrado del Campo / Trinquet,9,September,758.5,1.84
+23,Conrado del Campo / Trinquet,10,October,883.4,1.72
+23,Conrado del Campo / Trinquet,11,November,847.1,1.74
+23,Conrado del Campo / Trinquet,12,December,683.3,1.86
+24,Policia Local,1,January,277.8,0.73
+24,Policia Local,2,February,304.1,0.72
+24,Policia Local,3,March,316.2,0.73
+24,Policia Local,4,April,288.6,0.77
+24,Policia Local,5,May,396.5,0.83
+24,Policia Local,6,June,410.4,1.02
+24,Policia Local,7,July,278.1,0.95
+24,Policia Local,8,August,189.4,0.88
+24,Policia Local,9,September,393.7,0.95
+24,Policia Local,10,October,433.1,0.84
+24,Policia Local,11,November,390.9,0.8
+24,Policia Local,12,December,260.9,0.71
+25,Cor de Jesús,1,January,1235.0,3.24
+25,Cor de Jesús,2,February,1296.3,3.05
+25,Cor de Jesús,3,March,1328.5,3.07
+25,Cor de Jesús,4,April,1138.6,3.03
+25,Cor de Jesús,5,May,1427.5,2.99
+25,Cor de Jesús,6,June,1299.3,3.24
+25,Cor de Jesús,7,July,929.1,3.18
+25,Cor de Jesús,8,August,678.2,3.17
+25,Cor de Jesús,9,September,1346.0,3.26
+25,Cor de Jesús,10,October,1618.0,3.15
+25,Cor de Jesús,11,November,1504.8,3.09
+25,Cor de Jesús,12,December,1164.1,3.17
+26,UMH / Escola Oficial d’Idiomes,1,January,1746.6,4.58
+26,UMH / Escola Oficial d’Idiomes,2,February,1804.6,4.24
+26,UMH / Escola Oficial d’Idiomes,3,March,1760.6,4.06
+26,UMH / Escola Oficial d’Idiomes,4,April,1272.2,3.39
+26,UMH / Escola Oficial d’Idiomes,5,May,1824.7,3.82
+26,UMH / Escola Oficial d’Idiomes,6,June,1333.9,3.33
+26,UMH / Escola Oficial d’Idiomes,7,July,713.0,2.44
+26,UMH / Escola Oficial d’Idiomes,8,August,311.7,1.46
+26,UMH / Escola Oficial d’Idiomes,9,September,1484.9,3.6
+26,UMH / Escola Oficial d’Idiomes,10,October,2455.4,4.79
+26,UMH / Escola Oficial d’Idiomes,11,November,2404.0,4.94
+26,UMH / Escola Oficial d’Idiomes,12,December,1466.9,3.99
+27,UMH / Pavelló d’Esports,1,January,666.0,1.75
+27,UMH / Pavelló d’Esports,2,February,1007.6,2.37
+27,UMH / Pavelló d’Esports,3,March,1046.7,2.42
+27,UMH / Pavelló d’Esports,4,April,729.0,1.94
+27,UMH / Pavelló d’Esports,5,May,994.4,2.08
+27,UMH / Pavelló d’Esports,6,June,633.7,1.58
+27,UMH / Pavelló d’Esports,7,July,372.3,1.27
+27,UMH / Pavelló d’Esports,8,August,69.6,0.32
+27,UMH / Pavelló d’Esports,9,September,739.8,1.79
+27,UMH / Pavelló d’Esports,10,October,1338.9,2.61
+27,UMH / Pavelló d’Esports,11,November,1388.6,2.85
+27,UMH / Pavelló d’Esports,12,December,805.0,2.19
+28,Passeig de les Germanies,1,January,1196.5,3.14
+28,Passeig de les Germanies,2,February,1311.0,3.08
+28,Passeig de les Germanies,3,March,1337.8,3.09
+28,Passeig de les Germanies,4,April,1148.3,3.06
+28,Passeig de les Germanies,5,May,1428.3,2.99
+28,Passeig de les Germanies,6,June,1309.8,3.27
+28,Passeig de les Germanies,7,July,998.2,3.41
+28,Passeig de les Germanies,8,August,714.2,3.33
+28,Passeig de les Germanies,9,September,1360.1,3.3
+28,Passeig de les Germanies,10,October,1605.8,3.13
+28,Passeig de les Germanies,11,November,1516.8,3.12
+28,Passeig de les Germanies,12,December,1193.8,3.25
+29,Casablanca,1,January,382.6,1.0
+29,Casablanca,2,February,421.0,0.99
+29,Casablanca,3,March,423.0,0.98
+29,Casablanca,4,April,383.8,1.02
+29,Casablanca,5,May,483.8,1.01
+29,Casablanca,6,June,453.7,1.13
+29,Casablanca,7,July,348.6,1.19
+29,Casablanca,8,August,238.6,1.11
+29,Casablanca,9,September,448.8,1.09
+29,Casablanca,10,October,468.6,0.91
+29,Casablanca,11,November,453.2,0.93
+29,Casablanca,12,December,362.6,0.99
+30,Squash,1,January,642.8,1.69
+30,Squash,2,February,649.8,1.53
+30,Squash,3,March,699.5,1.61
+30,Squash,4,April,622.6,1.66
+30,Squash,5,May,762.7,1.6
+30,Squash,6,June,663.9,1.66
+30,Squash,7,July,508.0,1.74
+30,Squash,8,August,367.2,1.71
+30,Squash,9,September,701.2,1.7
+30,Squash,10,October,844.2,1.65
+30,Squash,11,November,774.1,1.59
+30,Squash,12,December,564.8,1.54
+31,Sant Antoni,1,January,426.0,1.12
+31,Sant Antoni,2,February,443.6,1.04
+31,Sant Antoni,3,March,428.1,0.99
+31,Sant Antoni,4,April,362.6,0.97
+31,Sant Antoni,5,May,500.9,1.05
+31,Sant Antoni,6,June,469.0,1.17
+31,Sant Antoni,7,July,361.0,1.23
+31,Sant Antoni,8,August,315.1,1.47
+31,Sant Antoni,9,September,499.5,1.21
+31,Sant Antoni,10,October,591.6,1.15
+31,Sant Antoni,11,November,538.1,1.11
+31,Sant Antoni,12,December,414.8,1.13
+32,Centre de Salut d’Altabix,1,January,1253.6,3.29
+32,Centre de Salut d’Altabix,2,February,1343.1,3.16
+32,Centre de Salut d’Altabix,3,March,1388.3,3.21
+32,Centre de Salut d’Altabix,4,April,1268.1,3.38
+32,Centre de Salut d’Altabix,5,May,1569.5,3.29
+32,Centre de Salut d’Altabix,6,June,1475.0,3.68
+32,Centre de Salut d’Altabix,7,July,1055.1,3.61
+32,Centre de Salut d’Altabix,8,August,797.6,3.72
+32,Centre de Salut d’Altabix,9,September,1438.4,3.49
+32,Centre de Salut d’Altabix,10,October,1752.1,3.42
+32,Centre de Salut d’Altabix,11,November,1635.3,3.36
+32,Centre de Salut d’Altabix,12,December,1221.8,3.33
+33,Av. Libertat / l’Aljub,1,January,833.8,2.19
+33,Av. Libertat / l’Aljub,2,February,852.5,2.01
+33,Av. Libertat / l’Aljub,3,March,819.2,1.89
+33,Av. Libertat / l’Aljub,4,April,724.7,1.93
+33,Av. Libertat / l’Aljub,5,May,804.3,1.68
+33,Av. Libertat / l’Aljub,6,June,860.2,2.15
+33,Av. Libertat / l’Aljub,7,July,793.3,2.71
+33,Av. Libertat / l’Aljub,8,August,604.3,2.82
+33,Av. Libertat / l’Aljub,9,September,929.0,2.25
+33,Av. Libertat / l’Aljub,10,October,1111.3,2.17
+33,Av. Libertat / l’Aljub,11,November,1009.2,2.07
+33,Av. Libertat / l’Aljub,12,December,927.8,2.52
+34,Hospital General,1,January,1034.0,2.71
+34,Hospital General,2,February,1101.2,2.59
+34,Hospital General,3,March,1132.2,2.61
+34,Hospital General,4,April,1016.1,2.71
+34,Hospital General,5,May,1279.3,2.68
+34,Hospital General,6,June,1168.0,2.92
+34,Hospital General,7,July,821.5,2.81
+34,Hospital General,8,August,707.5,3.3
+34,Hospital General,9,September,1014.9,2.46
+34,Hospital General,10,October,1265.8,2.47
+34,Hospital General,11,November,1217.4,2.5
+34,Hospital General,12,December,960.8,2.61
+35,Hospital del Vinalopó,1,January,217.8,0.57
+35,Hospital del Vinalopó,2,February,271.1,0.64
+35,Hospital del Vinalopó,3,March,272.9,0.63
+35,Hospital del Vinalopó,4,April,253.9,0.68
+35,Hospital del Vinalopó,5,May,317.2,0.66
+35,Hospital del Vinalopó,6,June,241.2,0.6
+35,Hospital del Vinalopó,7,July,198.9,0.68
+35,Hospital del Vinalopó,8,August,139.6,0.65
+35,Hospital del Vinalopó,9,September,231.4,0.56
+35,Hospital del Vinalopó,10,October,321.3,0.63
+35,Hospital del Vinalopó,11,November,326.9,0.67
+35,Hospital del Vinalopó,12,December,232.5,0.63
+36,I.E.S. Victoria Kent,1,January,577.8,1.52
+36,I.E.S. Victoria Kent,2,February,647.5,1.52
+36,I.E.S. Victoria Kent,3,March,636.1,1.47
+36,I.E.S. Victoria Kent,4,April,548.8,1.46
+36,I.E.S. Victoria Kent,5,May,648.7,1.36
+36,I.E.S. Victoria Kent,6,June,634.9,1.59
+36,I.E.S. Victoria Kent,7,July,474.2,1.62
+36,I.E.S. Victoria Kent,8,August,368.2,1.72
+36,I.E.S. Victoria Kent,9,September,706.5,1.71
+36,I.E.S. Victoria Kent,10,October,856.4,1.67
+36,I.E.S. Victoria Kent,11,November,750.5,1.54
+36,I.E.S. Victoria Kent,12,December,543.4,1.48
+37,Hort de Travaló,1,January,152.6,0.4
+37,Hort de Travaló,2,February,167.1,0.39
+37,Hort de Travaló,3,March,175.2,0.4
+37,Hort de Travaló,4,April,161.6,0.43
+37,Hort de Travaló,5,May,222.1,0.47
+37,Hort de Travaló,6,June,186.9,0.47
+37,Hort de Travaló,7,July,146.0,0.5
+37,Hort de Travaló,8,August,142.3,0.66
+37,Hort de Travaló,9,September,192.1,0.47
+37,Hort de Travaló,10,October,249.1,0.49
+37,Hort de Travaló,11,November,199.9,0.41
+37,Hort de Travaló,12,December,155.4,0.42
+38,Poliesportiu de Carrús,1,January,418.9,1.1
+38,Poliesportiu de Carrús,2,February,474.1,1.12
+38,Poliesportiu de Carrús,3,March,449.0,1.04
+38,Poliesportiu de Carrús,4,April,365.4,0.97
+38,Poliesportiu de Carrús,5,May,476.5,1.0
+38,Poliesportiu de Carrús,6,June,406.6,1.02
+38,Poliesportiu de Carrús,7,July,327.9,1.12
+38,Poliesportiu de Carrús,8,August,231.6,1.08
+38,Poliesportiu de Carrús,9,September,467.0,1.13
+38,Poliesportiu de Carrús,10,October,575.4,1.12
+38,Poliesportiu de Carrús,11,November,499.0,1.03
+38,Poliesportiu de Carrús,12,December,390.5,1.06
+39,Francesc Cantó,1,January,329.8,0.87
+39,Francesc Cantó,2,February,341.8,0.8
+39,Francesc Cantó,3,March,338.8,0.78
+39,Francesc Cantó,4,April,314.5,0.84
+39,Francesc Cantó,5,May,383.2,0.8
+39,Francesc Cantó,6,June,379.3,0.95
+39,Francesc Cantó,7,July,314.9,1.08
+39,Francesc Cantó,8,August,221.9,1.04
+39,Francesc Cantó,9,September,372.4,0.9
+39,Francesc Cantó,10,October,409.4,0.8
+39,Francesc Cantó,11,November,350.0,0.72
+39,Francesc Cantó,12,December,295.0,0.8
+40,C.P. Baix Vinalopó,1,January,1464.1,3.84
+40,C.P. Baix Vinalopó,2,February,1625.6,3.82
+40,C.P. Baix Vinalopó,3,March,1555.7,3.59
+40,C.P. Baix Vinalopó,4,April,1136.7,3.03
+40,C.P. Baix Vinalopó,5,May,1479.0,3.1
+40,C.P. Baix Vinalopó,6,June,1247.8,3.12
+40,C.P. Baix Vinalopó,7,July,985.0,3.37
+40,C.P. Baix Vinalopó,8,August,713.0,3.33
+40,C.P. Baix Vinalopó,9,September,1251.3,3.03
+40,C.P. Baix Vinalopó,10,October,1899.6,3.7
+40,C.P. Baix Vinalopó,11,November,1834.9,3.77
+40,C.P. Baix Vinalopó,12,December,1425.1,3.88
+41,Dipòsit Municipal de Carrús,1,January,128.9,0.34
+41,Dipòsit Municipal de Carrús,2,February,160.6,0.38
+41,Dipòsit Municipal de Carrús,3,March,137.0,0.32
+41,Dipòsit Municipal de Carrús,4,April,109.9,0.29
+41,Dipòsit Municipal de Carrús,5,May,142.0,0.3
+41,Dipòsit Municipal de Carrús,6,June,114.0,0.28
+41,Dipòsit Municipal de Carrús,7,July,102.0,0.35
+41,Dipòsit Municipal de Carrús,8,August,64.5,0.3
+41,Dipòsit Municipal de Carrús,9,September,117.7,0.29
+41,Dipòsit Municipal de Carrús,10,October,151.3,0.29
+41,Dipòsit Municipal de Carrús,11,November,136.2,0.28
+41,Dipòsit Municipal de Carrús,12,December,89.7,0.24
+42,Multi Aventura Travaló,1,January,122.6,0.32
+42,Multi Aventura Travaló,2,February,139.9,0.33
+42,Multi Aventura Travaló,3,March,138.7,0.32
+42,Multi Aventura Travaló,4,April,122.6,0.33
+42,Multi Aventura Travaló,5,May,189.6,0.4
+42,Multi Aventura Travaló,6,June,153.8,0.38
+42,Multi Aventura Travaló,7,July,139.5,0.48
+42,Multi Aventura Travaló,8,August,120.8,0.56
+42,Multi Aventura Travaló,9,September,178.0,0.43
+42,Multi Aventura Travaló,10,October,189.7,0.37
+42,Multi Aventura Travaló,11,November,169.3,0.35
+42,Multi Aventura Travaló,12,December,88.4,0.24
+43,Palmerars – Ciutat de la Justícia,1,January,135.2,0.35
+43,Palmerars – Ciutat de la Justícia,2,February,138.6,0.33
+43,Palmerars – Ciutat de la Justícia,3,March,155.6,0.36
+43,Palmerars – Ciutat de la Justícia,4,April,132.7,0.35
+43,Palmerars – Ciutat de la Justícia,5,May,168.4,0.35
+43,Palmerars – Ciutat de la Justícia,6,June,156.8,0.39
+43,Palmerars – Ciutat de la Justícia,7,July,168.7,0.58
+43,Palmerars – Ciutat de la Justícia,8,August,109.5,0.51
+43,Palmerars – Ciutat de la Justícia,9,September,174.8,0.42
+43,Palmerars – Ciutat de la Justícia,10,October,205.3,0.4
+43,Palmerars – Ciutat de la Justícia,11,November,167.8,0.35
+43,Palmerars – Ciutat de la Justícia,12,December,117.2,0.32
+44,Portes Encarnades,1,January,588.2,1.54
+44,Portes Encarnades,2,February,673.7,1.58
+44,Portes Encarnades,3,March,582.4,1.34
+44,Portes Encarnades,4,April,541.6,1.44
+44,Portes Encarnades,5,May,649.7,1.36
+44,Portes Encarnades,6,June,586.7,1.47
+44,Portes Encarnades,7,July,471.2,1.61
+44,Portes Encarnades,8,August,414.0,1.93
+44,Portes Encarnades,9,September,702.8,1.7
+44,Portes Encarnades,10,October,825.3,1.61
+44,Portes Encarnades,11,November,767.8,1.58
+44,Portes Encarnades,12,December,581.8,1.58
+45,Plaça de Barcelona,1,January,424.5,1.11
+45,Plaça de Barcelona,2,February,457.7,1.08
+45,Plaça de Barcelona,3,March,361.3,0.83
+45,Plaça de Barcelona,4,April,353.6,0.94
+45,Plaça de Barcelona,5,May,448.7,0.94
+45,Plaça de Barcelona,6,June,435.7,1.09
+45,Plaça de Barcelona,7,July,392.7,1.34
+45,Plaça de Barcelona,8,August,313.3,1.46
+45,Plaça de Barcelona,9,September,472.5,1.15
+45,Plaça de Barcelona,10,October,586.2,1.14
+45,Plaça de Barcelona,11,November,563.3,1.16
+45,Plaça de Barcelona,12,December,443.5,1.21
+46,UMH / Rectorado,1,January,495.2,1.3
+46,UMH / Rectorado,2,February,764.2,1.8
+46,UMH / Rectorado,3,March,745.2,1.72
+46,UMH / Rectorado,4,April,606.5,1.62
+46,UMH / Rectorado,5,May,781.5,1.64
+46,UMH / Rectorado,6,June,514.3,1.28
+46,UMH / Rectorado,7,July,287.0,0.98
+46,UMH / Rectorado,8,August,193.3,0.9
+46,UMH / Rectorado,9,September,532.3,1.29
+46,UMH / Rectorado,10,October,857.3,1.67
+46,UMH / Rectorado,11,November,699.0,1.44
+46,UMH / Rectorado,12,December,504.0,1.37
+47,C.P. Virgen de la Asunción,1,January,419.8,1.1
+47,C.P. Virgen de la Asunción,2,February,491.2,1.16
+47,C.P. Virgen de la Asunción,3,March,468.8,1.08
+47,C.P. Virgen de la Asunción,4,April,432.0,1.15
+47,C.P. Virgen de la Asunción,5,May,577.2,1.21
+47,C.P. Virgen de la Asunción,6,June,434.0,1.08
+47,C.P. Virgen de la Asunción,7,July,372.3,1.27
+47,C.P. Virgen de la Asunción,8,August,266.0,1.24
+47,C.P. Virgen de la Asunción,9,September,431.3,1.05
+47,C.P. Virgen de la Asunción,10,October,511.0,1.0
+47,C.P. Virgen de la Asunción,11,November,512.0,1.05
+47,C.P. Virgen de la Asunción,12,December,329.5,0.9
+48,Av. Corts Valencianes,1,January,142.5,0.37
+48,Av. Corts Valencianes,2,February,145.2,0.34
+48,Av. Corts Valencianes,3,March,133.8,0.31
+48,Av. Corts Valencianes,4,April,118.2,0.31
+48,Av. Corts Valencianes,5,May,164.0,0.34
+48,Av. Corts Valencianes,6,June,128.7,0.32
+48,Av. Corts Valencianes,7,July,75.7,0.26
+48,Av. Corts Valencianes,8,August,39.7,0.19
+48,Av. Corts Valencianes,9,September,120.3,0.29
+48,Av. Corts Valencianes,10,October,119.8,0.23
+48,Av. Corts Valencianes,11,November,131.5,0.27
+48,Av. Corts Valencianes,12,December,115.5,0.31
+49,Av. Alicante 59,1,January,587.5,1.54
+49,Av. Alicante 59,2,February,654.5,1.54
+49,Av. Alicante 59,3,March,604.2,1.39
+49,Av. Alicante 59,4,April,801.7,2.14
+49,Av. Alicante 59,5,May,826.7,1.73
+49,Av. Alicante 59,6,June,665.5,1.66
+49,Av. Alicante 59,7,July,533.0,1.82
+49,Av. Alicante 59,8,August,446.5,2.08
+49,Av. Alicante 59,9,September,614.5,1.49
+49,Av. Alicante 59,10,October,783.5,1.53
+49,Av. Alicante 59,11,November,692.7,1.42
+49,Av. Alicante 59,12,December,577.0,1.57
+50,Borreguet,1,January,591.0,1.55
+50,Borreguet,2,February,659.8,1.55
+50,Borreguet,3,March,732.0,1.69
+50,Borreguet,4,April,654.0,1.74
+50,Borreguet,5,May,792.8,1.66
+50,Borreguet,6,June,615.3,1.54
+50,Borreguet,7,July,482.7,1.65
+50,Borreguet,8,August,363.3,1.7
+50,Borreguet,9,September,664.0,1.61
+50,Borreguet,10,October,934.7,1.82
+50,Borreguet,11,November,724.2,1.49
+50,Borreguet,12,December,568.5,1.55
+51,Ciudad deportiva zona sur,1,January,306.5,0.8
+51,Ciudad deportiva zona sur,2,February,349.8,0.82
+51,Ciudad deportiva zona sur,3,March,350.0,0.81
+51,Ciudad deportiva zona sur,4,April,341.8,0.91
+51,Ciudad deportiva zona sur,5,May,417.0,0.87
+51,Ciudad deportiva zona sur,6,June,283.7,0.71
+51,Ciudad deportiva zona sur,7,July,240.3,0.82
+51,Ciudad deportiva zona sur,8,August,180.0,0.84
+51,Ciudad deportiva zona sur,9,September,308.7,0.75
+51,Ciudad deportiva zona sur,10,October,470.7,0.92
+51,Ciudad deportiva zona sur,11,November,421.0,0.87
+51,Ciudad deportiva zona sur,12,December,230.0,0.63
+52,Centro salud el Toscar,1,January,176.5,0.46
+52,Centro salud el Toscar,2,February,245.5,0.58
+52,Centro salud el Toscar,3,March,260.5,0.6
+52,Centro salud el Toscar,4,April,220.8,0.59
+52,Centro salud el Toscar,5,May,258.2,0.54
+52,Centro salud el Toscar,6,June,216.7,0.54
+52,Centro salud el Toscar,7,July,176.0,0.6
+52,Centro salud el Toscar,8,August,139.7,0.65
+52,Centro salud el Toscar,9,September,214.7,0.52
+52,Centro salud el Toscar,10,October,267.0,0.52
+52,Centro salud el Toscar,11,November,235.0,0.48
+52,Centro salud el Toscar,12,December,192.0,0.52
+53,C.P. Victor Pradera,1,January,653.3,1.71
+53,C.P. Victor Pradera,2,February,665.5,1.57
+53,C.P. Victor Pradera,3,March,714.0,1.65
+53,C.P. Victor Pradera,4,April,686.2,1.83
+53,C.P. Victor Pradera,5,May,895.5,1.88
+53,C.P. Victor Pradera,6,June,626.3,1.56
+53,C.P. Victor Pradera,7,July,552.3,1.89
+53,C.P. Victor Pradera,8,August,476.7,2.23
+53,C.P. Victor Pradera,9,September,692.7,1.68
+53,C.P. Victor Pradera,10,October,845.0,1.65
+53,C.P. Victor Pradera,11,November,773.7,1.59
+53,C.P. Victor Pradera,12,December,571.3,1.55
+54,Plaza de Benidorm,1,January,1167.7,3.06
+54,Plaza de Benidorm,2,February,827.8,1.95
+54,Plaza de Benidorm,3,March,982.8,2.27
+54,Plaza de Benidorm,4,April,923.2,2.46
+54,Plaza de Benidorm,5,May,1048.0,2.2
+54,Plaza de Benidorm,6,June,957.0,2.39
+54,Plaza de Benidorm,7,July,784.3,2.68
+54,Plaza de Benidorm,8,August,578.7,2.7
+54,Plaza de Benidorm,9,September,1056.7,2.56
+54,Plaza de Benidorm,10,October,1424.7,2.78
+54,Plaza de Benidorm,11,November,1413.0,2.9
+54,Plaza de Benidorm,12,December,747.8,2.03
+55,Pere Joan Perpinyà,1,January,635.3,1.67
+55,Pere Joan Perpinyà,2,February,517.8,1.22
+55,Pere Joan Perpinyà,3,March,600.8,1.39
+55,Pere Joan Perpinyà,4,April,589.0,1.57
+55,Pere Joan Perpinyà,5,May,623.2,1.31
+55,Pere Joan Perpinyà,6,June,517.0,1.29
+55,Pere Joan Perpinyà,7,July,417.7,1.43
+55,Pere Joan Perpinyà,8,August,315.0,1.47
+55,Pere Joan Perpinyà,9,September,547.7,1.33
+55,Pere Joan Perpinyà,10,October,695.3,1.36
+55,Pere Joan Perpinyà,11,November,695.3,1.43
+55,Pere Joan Perpinyà,12,December,533.0,1.45
+56,UMH / Torre Vaillo,1,January,179.8,0.47
+56,UMH / Torre Vaillo,2,February,238.5,0.56
+56,UMH / Torre Vaillo,3,March,275.2,0.64
+56,UMH / Torre Vaillo,4,April,230.2,0.61
+56,UMH / Torre Vaillo,5,May,351.5,0.74
+56,UMH / Torre Vaillo,6,June,438.7,1.1
+56,UMH / Torre Vaillo,7,July,298.0,1.02
+56,UMH / Torre Vaillo,8,August,205.0,0.96
+56,UMH / Torre Vaillo,9,September,343.0,0.83
+56,UMH / Torre Vaillo,10,October,287.3,0.56
+56,UMH / Torre Vaillo,11,November,297.7,0.61
+56,UMH / Torre Vaillo,12,December,119.2,0.32
+57,IES Torrellano,5,May,12.0,0.03
+58,Polideportivo Torrellano,1,January,1.0,0.0
+58,Polideportivo Torrellano,2,February,2.0,0.0
+58,Polideportivo Torrellano,3,March,11.0,0.03
+58,Polideportivo Torrellano,4,April,26.0,0.07
+58,Polideportivo Torrellano,5,May,33.0,0.07
+58,Polideportivo Torrellano,7,July,1.0,0.0
+58,Polideportivo Torrellano,10,October,1.0,0.0
+58,Polideportivo Torrellano,12,December,1.0,0.0
+59,Calle San Crispín 1 Torrellano,5,May,28.0,0.06
+59,Calle San Crispín 1 Torrellano,12,December,2.0,0.01
+60,Carrer de la Figuera 2 Torrellano,2,February,2.0,0.0
+60,Carrer de la Figuera 2 Torrellano,3,March,9.0,0.02
+60,Carrer de la Figuera 2 Torrellano,4,April,23.0,0.06
+60,Carrer de la Figuera 2 Torrellano,5,May,55.0,0.12
+60,Carrer de la Figuera 2 Torrellano,8,August,6.0,0.03
+60,Carrer de la Figuera 2 Torrellano,12,December,2.0,0.01
+61,Avenida Novelda 191,1,January,8.0,0.02
+61,Avenida Novelda 191,2,February,15.0,0.04
+61,Avenida Novelda 191,3,March,11.0,0.03
+61,Avenida Novelda 191,4,April,13.0,0.03
+61,Avenida Novelda 191,5,May,11.0,0.02
+62,Calle Inca con brea,1,January,3.0,0.01
+62,Calle Inca con brea,2,February,25.0,0.06
+62,Calle Inca con brea,3,March,14.0,0.03
+62,Calle Inca con brea,4,April,14.0,0.04
+62,Calle Inca con brea,5,May,16.0,0.03
+63,CEIP Eugeni d’Ors,2,February,59.0,0.14
+63,CEIP Eugeni d’Ors,3,March,44.0,0.1
+63,CEIP Eugeni d’Ors,4,April,43.0,0.11
+63,CEIP Eugeni d’Ors,5,May,56.0,0.12
+64,Jardín 25 de abril,2,February,1.0,0.0
+64,Jardín 25 de abril,3,March,43.0,0.1
+64,Jardín 25 de abril,4,April,96.0,0.26
+64,Jardín 25 de abril,5,May,55.0,0.12
+65,C.P. El toscar,1,January,1.0,0.0
+65,C.P. El toscar,3,March,50.0,0.12
+65,C.P. El toscar,4,April,122.0,0.32
+65,C.P. El toscar,5,May,156.0,0.33
+66,Jardín escritor Juan Fuster,1,January,1.0,0.0
+66,Jardín escritor Juan Fuster,2,February,75.0,0.18
+66,Jardín escritor Juan Fuster,3,March,96.0,0.22
+66,Jardín escritor Juan Fuster,4,April,80.0,0.21
+66,Jardín escritor Juan Fuster,5,May,101.0,0.21
+67,Calle Grao con Victoria Kent,2,February,161.0,0.38
+67,Calle Grao con Victoria Kent,3,March,201.0,0.46
+67,Calle Grao con Victoria Kent,4,April,238.0,0.63
+67,Calle Grao con Victoria Kent,5,May,275.0,0.58
+68,Arturo Salvetti Pardo,2,February,1.0,0.0
+68,Arturo Salvetti Pardo,3,March,74.0,0.17
+68,Arturo Salvetti Pardo,4,April,47.0,0.13
+68,Arturo Salvetti Pardo,5,May,48.0,0.1
+68,Arturo Salvetti Pardo,12,December,3.0,0.01
+69,Olegario Domarco Seller 44,2,February,4.0,0.01
+69,Olegario Domarco Seller 44,3,March,260.0,0.6
+69,Olegario Domarco Seller 44,4,April,336.0,0.89
+69,Olegario Domarco Seller 44,5,May,422.0,0.88
+70,Libertad-Diagonal,1,January,301.0,0.79
+70,Libertad-Diagonal,2,February,634.0,1.49
+70,Libertad-Diagonal,3,March,642.0,1.48
+70,Libertad-Diagonal,4,April,676.0,1.8
+70,Libertad-Diagonal,5,May,911.0,1.91
+70,Libertad-Diagonal,12,December,1.0,0.0
+71,IES Carrús,1,January,1.0,0.0
+71,IES Carrús,2,February,300.0,0.71
+71,IES Carrús,3,March,328.0,0.76
+71,IES Carrús,4,April,382.0,1.02
+71,IES Carrús,5,May,506.0,1.06
+72,Plaza de madrid,1,January,1.0,0.0
+73,Plaza de la aparadora,2,February,228.0,0.54
+73,Plaza de la aparadora,3,March,271.0,0.63
+73,Plaza de la aparadora,4,April,277.0,0.74
+73,Plaza de la aparadora,5,May,338.0,0.71
+73,Plaza de la aparadora,12,December,4.0,0.01
+74,IES Nit de l´Albà,1,January,3.0,0.01
+74,IES Nit de l´Albà,2,February,322.0,0.76
+74,IES Nit de l´Albà,3,March,428.0,0.99
+74,IES Nit de l´Albà,4,April,411.0,1.09
+74,IES Nit de l´Albà,5,May,464.0,0.97
+74,IES Nit de l´Albà,12,December,9.0,0.02
+75,L´aljub,1,January,422.0,1.11
+75,L´aljub,2,February,730.0,1.72
+75,L´aljub,3,March,864.0,1.99
+75,L´aljub,4,April,754.0,2.01
+75,L´aljub,5,May,890.0,1.86
+75,L´aljub,12,December,3.0,0.01
+76,Puente Altamira,1,January,141.0,0.37
+76,Puente Altamira,2,February,372.0,0.87
+76,Puente Altamira,3,March,359.0,0.83
+76,Puente Altamira,4,April,433.0,1.15
+76,Puente Altamira,5,May,660.0,1.38
+77,Plaza Obispo Siuri,1,January,3.0,0.01
+77,Plaza Obispo Siuri,2,February,7.0,0.02
+77,Plaza Obispo Siuri,3,March,268.0,0.62
+77,Plaza Obispo Siuri,4,April,387.0,1.03
+77,Plaza Obispo Siuri,5,May,394.0,0.83
+77,Plaza Obispo Siuri,12,December,1.0,0.0
+78,Jorge Juan 24,1,January,2.0,0.01
+78,Jorge Juan 24,2,February,353.0,0.83
+78,Jorge Juan 24,3,March,575.0,1.33
+78,Jorge Juan 24,4,April,530.0,1.41
+78,Jorge Juan 24,5,May,638.0,1.34
+79,Intercambiador pasarela,4,April,122.0,0.32
+79,Intercambiador pasarela,5,May,316.0,0.66
+80,Reina Victoria con Gabriel Miró,1,January,166.0,0.44
+80,Reina Victoria con Gabriel Miró,2,February,545.0,1.28
+80,Reina Victoria con Gabriel Miró,3,March,575.0,1.33
+80,Reina Victoria con Gabriel Miró,4,April,673.0,1.79
+80,Reina Victoria con Gabriel Miró,5,May,717.0,1.5
+81,C.S. Doctor Sapena,1,January,1.0,0.0
+81,C.S. Doctor Sapena,2,February,289.0,0.68
+81,C.S. Doctor Sapena,3,March,370.0,0.85
+81,C.S. Doctor Sapena,4,April,362.0,0.96
+81,C.S. Doctor Sapena,5,May,349.0,0.73
+81,C.S. Doctor Sapena,12,December,1.0,0.0
+82,Antonio Machado 73,1,January,199.0,0.52
+82,Antonio Machado 73,2,February,186.0,0.44
+82,Antonio Machado 73,3,March,239.0,0.55
+82,Antonio Machado 73,4,April,289.0,0.77
+82,Antonio Machado 73,5,May,270.0,0.57
+83,Conrado del campo 35,1,January,53.0,0.14
+83,Conrado del campo 35,2,February,195.0,0.46
+83,Conrado del campo 35,3,March,297.0,0.69
+83,Conrado del campo 35,4,April,283.0,0.75
+83,Conrado del campo 35,5,May,343.0,0.72
+83,Conrado del campo 35,12,December,1.0,0.0
+84,Fernanda Santa María 64,1,January,30.0,0.08
+84,Fernanda Santa María 64,2,February,201.0,0.47
+84,Fernanda Santa María 64,3,March,233.0,0.54
+84,Fernanda Santa María 64,4,April,300.0,0.8
+84,Fernanda Santa María 64,5,May,348.0,0.73
+85,Sor Josefa Alcorta 34,1,January,43.0,0.11
+85,Sor Josefa Alcorta 34,2,February,456.0,1.07
+85,Sor Josefa Alcorta 34,3,March,455.0,1.05
+85,Sor Josefa Alcorta 34,4,April,535.0,1.42
+85,Sor Josefa Alcorta 34,5,May,622.0,1.3
+86,El Corte Inglés,1,January,284.0,0.75
+86,El Corte Inglés,2,February,328.0,0.77
+86,El Corte Inglés,3,March,294.0,0.68
+86,El Corte Inglés,4,April,388.0,1.03
+86,El Corte Inglés,5,May,417.0,0.87
+87,CEIP Sanchis Guarner,1,January,11.0,0.03
+87,CEIP Sanchis Guarner,2,February,161.0,0.38
+87,CEIP Sanchis Guarner,3,March,160.0,0.37
+87,CEIP Sanchis Guarner,4,April,172.0,0.46
+87,CEIP Sanchis Guarner,5,May,162.0,0.34
+88,Pistas del Pla,1,January,12.0,0.03
+88,Pistas del Pla,2,February,161.0,0.38
+88,Pistas del Pla,3,March,235.0,0.54
+88,Pistas del Pla,4,April,232.0,0.62
+88,Pistas del Pla,5,May,325.0,0.68
+88,Pistas del Pla,12,December,1.0,0.0
+89,CEIP Dama d´Elx,2,February,85.0,0.2
+89,CEIP Dama d´Elx,3,March,200.0,0.46
+89,CEIP Dama d´Elx,4,April,262.0,0.7
+89,CEIP Dama d´Elx,5,May,302.0,0.63
+90,Centro salud el Pla,1,January,3.0,0.01
+90,Centro salud el Pla,2,February,132.0,0.31
+90,Centro salud el Pla,3,March,170.0,0.39
+90,Centro salud el Pla,4,April,198.0,0.53
+90,Centro salud el Pla,5,May,314.0,0.66
+91,Centro social el Pla,2,February,145.0,0.34
+91,Centro social el Pla,3,March,217.0,0.5
+91,Centro social el Pla,4,April,218.0,0.58
+91,Centro social el Pla,5,May,311.0,0.65
+92,Parking Candalix,1,January,1.0,0.0
+92,Parking Candalix,2,February,4.0,0.01
+92,Parking Candalix,3,March,19.0,0.04
+92,Parking Candalix,4,April,159.0,0.42
+92,Parking Candalix,5,May,202.0,0.42
+93,Parque Rey Jaume I,1,January,275.0,0.72
+93,Parque Rey Jaume I,2,February,409.0,0.96
+93,Parque Rey Jaume I,3,March,430.0,0.99
+93,Parque Rey Jaume I,4,April,498.0,1.33
+93,Parque Rey Jaume I,5,May,754.0,1.58
+93,Parque Rey Jaume I,12,December,22.0,0.06
+94,Parking Gran Teatre,1,January,327.0,0.86
+94,Parking Gran Teatre,2,February,525.0,1.23
+94,Parking Gran Teatre,3,March,559.0,1.29
+94,Parking Gran Teatre,4,April,480.0,1.28
+94,Parking Gran Teatre,5,May,537.0,1.12
+94,Parking Gran Teatre,12,December,12.0,0.03
+95,IES Vicente Verdu,1,January,7.0,0.02
+95,IES Vicente Verdu,2,February,52.0,0.12
+95,IES Vicente Verdu,3,March,50.0,0.12
+95,IES Vicente Verdu,4,April,49.0,0.13
+95,IES Vicente Verdu,5,May,56.0,0.12
+96,Puente de Santa Teresa,1,January,114.0,0.3
+96,Puente de Santa Teresa,2,February,644.0,1.51
+96,Puente de Santa Teresa,3,March,802.0,1.85
+96,Puente de Santa Teresa,4,April,851.0,2.27
+96,Puente de Santa Teresa,5,May,1012.0,2.12
+96,Puente de Santa Teresa,12,December,1.0,0.0
+97,Huerto del cura,1,January,21.0,0.06
+97,Huerto del cura,2,February,126.0,0.3
+97,Huerto del cura,3,March,187.0,0.43
+97,Huerto del cura,4,April,179.0,0.48
+97,Huerto del cura,5,May,274.0,0.57
+97,Huerto del cura,12,December,2.0,0.01
+98,IES Sixto Marco,1,January,55.0,0.14
+98,IES Sixto Marco,2,February,320.0,0.75
+98,IES Sixto Marco,3,March,455.0,1.05
+98,IES Sixto Marco,4,April,368.0,0.98
+98,IES Sixto Marco,5,May,468.0,0.98
+98,IES Sixto Marco,12,December,2.0,0.01
+99,IES La Asunción,1,January,57.0,0.15
+99,IES La Asunción,2,February,263.0,0.62
+99,IES La Asunción,3,March,249.0,0.57
+99,IES La Asunción,4,April,298.0,0.79
+99,IES La Asunción,5,May,370.0,0.78
+100,C.S. Raval,1,January,8.0,0.02
+100,C.S. Raval,2,February,281.0,0.66
+100,C.S. Raval,3,March,307.0,0.71
+100,C.S. Raval,4,April,340.0,0.91
+100,C.S. Raval,5,May,632.0,1.32
+101,UMH-La Galia,1,January,36.0,0.09
+101,UMH-La Galia,2,February,144.0,0.34
+101,UMH-La Galia,3,March,175.0,0.4
+101,UMH-La Galia,4,April,221.0,0.59
+101,UMH-La Galia,5,May,334.0,0.7
+102,UMH-Altabix,1,January,82.0,0.22
+102,UMH-Altabix,2,February,393.0,0.92
+102,UMH-Altabix,3,March,379.0,0.87
+102,UMH-Altabix,4,April,312.0,0.83
+102,UMH-Altabix,5,May,597.0,1.25
+103,UMH-Altet,1,January,38.0,0.1
+103,UMH-Altet,2,February,248.0,0.58
+103,UMH-Altet,3,March,382.0,0.88
+103,UMH-Altet,4,April,318.0,0.85
+103,UMH-Altet,5,May,338.0,0.71
+103,UMH-Altet,12,December,1.0,0.0
+104,UMH-Arenals,1,January,40.0,0.1
+104,UMH-Arenals,2,February,228.0,0.54
+104,UMH-Arenals,3,March,228.0,0.53
+104,UMH-Arenals,4,April,174.0,0.46
+104,UMH-Arenals,5,May,220.0,0.46
+104,UMH-Arenals,12,December,1.0,0.0
+105,Almansa con Avda. Novelda,1,January,46.0,0.12
+105,Almansa con Avda. Novelda,2,February,135.0,0.32
+105,Almansa con Avda. Novelda,3,March,170.0,0.39
+105,Almansa con Avda. Novelda,4,April,165.0,0.44
+105,Almansa con Avda. Novelda,5,May,158.0,0.33
+106,Estadio Manolo Jaén,2,February,272.0,0.64
+106,Estadio Manolo Jaén,3,March,363.0,0.84
+106,Estadio Manolo Jaén,4,April,370.0,0.99
+106,Estadio Manolo Jaén,5,May,416.0,0.87
+107,Josefina Manresa,2,February,11.0,0.03
+107,Josefina Manresa,3,March,18.0,0.04
+107,Josefina Manresa,4,April,98.0,0.26
+107,Josefina Manresa,5,May,137.0,0.29
+108,José Ferrández Cruz,1,January,16.0,0.04
+108,José Ferrández Cruz,2,February,129.0,0.3
+108,José Ferrández Cruz,3,March,118.0,0.27
+108,José Ferrández Cruz,4,April,173.0,0.46
+108,José Ferrández Cruz,5,May,167.0,0.35
+109,Parque Huerto del Torreret,1,January,8.0,0.02
+109,Parque Huerto del Torreret,2,February,222.0,0.52
+109,Parque Huerto del Torreret,3,March,378.0,0.87
+109,Parque Huerto del Torreret,4,April,458.0,1.22
+109,Parque Huerto del Torreret,5,May,446.0,0.93
+109,Parque Huerto del Torreret,12,December,1.0,0.0
+110,Avda Novelda con Obispo Barrachina,2,February,147.0,0.35
+110,Avda Novelda con Obispo Barrachina,3,March,214.0,0.49
+110,Avda Novelda con Obispo Barrachina,4,April,214.0,0.57
+110,Avda Novelda con Obispo Barrachina,5,May,350.0,0.73
+111,Avenida Alicante 38,1,January,7.0,0.02
+111,Avenida Alicante 38,2,February,347.0,0.82
+111,Avenida Alicante 38,3,March,484.0,1.12
+111,Avenida Alicante 38,4,April,403.0,1.07
+111,Avenida Alicante 38,5,May,605.0,1.27
+112,CEIP San Fernando,1,January,19.0,0.05
+112,CEIP San Fernando,2,February,123.0,0.29
+112,CEIP San Fernando,3,March,119.0,0.27
+112,CEIP San Fernando,4,April,95.0,0.25
+112,CEIP San Fernando,5,May,127.0,0.27
+112,CEIP San Fernando,9,September,1.0,0.0
+113,Alcalde Juan Hernández,2,February,90.0,0.21
+113,Alcalde Juan Hernández,3,March,115.0,0.27
+113,Alcalde Juan Hernández,4,April,124.0,0.33
+113,Alcalde Juan Hernández,5,May,142.0,0.3
+114,Jardin Biólogo Antonio de Zulueta,2,February,105.0,0.25
+114,Jardin Biólogo Antonio de Zulueta,3,March,103.0,0.24
+114,Jardin Biólogo Antonio de Zulueta,4,April,99.0,0.26
+114,Jardin Biólogo Antonio de Zulueta,5,May,140.0,0.29
+114,Jardin Biólogo Antonio de Zulueta,12,December,1.0,0.0
+115,Passeig d´Atzavares,1,January,2.0,0.01
+115,Passeig d´Atzavares,2,February,89.0,0.21
+115,Passeig d´Atzavares,3,March,159.0,0.37
+115,Passeig d´Atzavares,4,April,168.0,0.45
+115,Passeig d´Atzavares,5,May,213.0,0.45

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Patrones temporales de uso – BiciElx</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg: #f5f5f5;
+      --card-bg: #ffffff;
+      --accent: #0f766e;
+      --accent2: #14b8a6;
+      --text: #111827;
+      --shadow: 0 4px 10px rgba(0,0,0,0.06);
+      --radius-lg: 18px;
+      --radius-sm: 10px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      background: linear-gradient(120deg, var(--accent), var(--accent2));
+      color: white;
+      padding: 1.7rem 1rem;
+      box-shadow: var(--shadow);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.9rem;
+      letter-spacing: 0.04em;
+    }
+    .subtitle {
+      margin: 0.4rem 0 0;
+      opacity: 0.9;
+      font-size: 0.95rem;
+    }
+    main {
+      max-width: 1200px;
+      margin: 1.5rem auto 2.5rem;
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+    }
+    section h2 {
+      margin: 0 0 0.7rem;
+      font-size: 1.4rem;
+    }
+    .section-desc {
+      font-size: 0.9rem;
+      color: #4b5563;
+      margin-bottom: 0.6rem;
+    }
+    .section-desc code {
+      background: rgba(148,163,184,0.15);
+      padding: 0.1rem 0.3rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.2rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow);
+      padding: 0.9rem 0.9rem 0.95rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      cursor: pointer;
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: var(--radius-sm);
+      display: block;
+    }
+    .card-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+    .card-desc {
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+    .footer-note {
+      font-size: 0.8rem;
+      color: #6b7280;
+      margin-top: 0.5rem;
+      text-align: right;
+    }
+    footer {
+      font-size: 0.8rem;
+      color: #6b7280;
+      text-align: center;
+      padding: 1rem 0 1.2rem;
+    }
+    /* Modal para ampliar imágenes */
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.78);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      padding: 1rem;
+    }
+    .modal img {
+      max-width: 96vw;
+      max-height: 92vh;
+      border-radius: var(--radius-sm);
+      box-shadow: 0 0 18px rgba(0,0,0,0.7);
+      background: #000;
+    }
+    .modal-close {
+      position: fixed;
+      top: 18px;
+      right: 26px;
+      font-size: 2.1rem;
+      color: #f9fafb;
+      cursor: pointer;
+      font-weight: 600;
+      z-index: 1001;
+    }
+    .modal-close:hover {
+      color: #e5e7eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #020617;
+        color: #e5e7eb;
+      }
+      .card {
+        background: #020617;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.7);
+      }
+      .card-desc,
+      .footer-note {
+        color: #9ca3af;
+      }
+      footer {
+        color: #9ca3af;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <h1>Patrones temporales de uso – BiciElx</h1>
+    <p class="subtitle">
+      Promedio mensual por mes del año, promedio por día del año y usos diarios día a día, año a año (con el mismo eje Y).
+    </p>
+  </div>
+</header>
+<main>
+  <section>
+    <h2>Patrones medios del sistema</h2>
+    <p class="section-desc">
+      Esta sección resume el comportamiento medio del sistema:
+      el uso mensual típico según el mes y el uso diario promedio según el día del año.
+
+    </p>
+    <div class="grid">
+
+      <article class="card" onclick="openModal('avg_monthly_uses.png')">
+        <img src="avg_monthly_uses.png" alt="Promedio de usos mensuales según el mes del año">
+        <div class="card-title">Promedio de usos mensuales según el mes del año</div>
+        <div class="card-desc">Muestra el número medio de usos mensuales del sistema para cada mes, promediando sobre todos los años.</div>
+      </article>
+
+      <article class="card" onclick="openModal('avg_daily_by_dayofyear.png')">
+        <img src="avg_daily_by_dayofyear.png" alt="Uso medio diario según el día del año">
+        <div class="card-title">Uso medio diario según el día del año</div>
+        <div class="card-desc">Promedio del uso diario para cada día del año (01-01 a 12-31), agregando todas las temporadas disponibles.</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Usos diarios por día del año, año a año</h2>
+    <p class="section-desc">
+      Cada gráfico muestra, para un año concreto, los usos diarios alineados de 01-01 a 12-31.
+      Todos utilizan el <strong>mismo eje Y</strong>, para que la comparación visual de intensidades sea directa.
+    </p>
+    <div class="grid">
+
+      <article class="card" onclick="openModal('daily_by_dayofyear_2015.png')">
+        <img src="daily_by_dayofyear_2015.png" alt="Usos diarios por día del año en 2015">
+        <div class="card-title">Usos diarios por día del año en 2015</div>
+        <div class="card-desc">Evolución de los usos diarios a lo largo del año 2015, alineada de 01-01 a 12-31 (eje Y común).</div>
+      </article>
+
+      <article class="card" onclick="openModal('daily_by_dayofyear_2016.png')">
+        <img src="daily_by_dayofyear_2016.png" alt="Usos diarios por día del año en 2016">
+        <div class="card-title">Usos diarios por día del año en 2016</div>
+        <div class="card-desc">Evolución de los usos diarios a lo largo del año 2016, alineada de 01-01 a 12-31 (eje Y común).</div>
+      </article>
+
+      <article class="card" onclick="openModal('daily_by_dayofyear_2017.png')">
+        <img src="daily_by_dayofyear_2017.png" alt="Usos diarios por día del año en 2017">
+        <div class="card-title">Usos diarios por día del año en 2017</div>
+        <div class="card-desc">Evolución de los usos diarios a lo largo del año 2017, alineada de 01-01 a 12-31 (eje Y común).</div>
+      </article>
+
+      <article class="card" onclick="openModal('daily_by_dayofyear_2018.png')">
+        <img src="daily_by_dayofyear_2018.png" alt="Usos diarios por día del año en 2018">
+        <div class="card-title">Usos diarios por día del año en 2018</div>
+        <div class="card-desc">Evolución de los usos diarios a lo largo del año 2018, alineada de 01-01 a 12-31 (eje Y común).</div>
+      </article>
+
+      <article class="card" onclick="openModal('daily_by_dayofyear_2019.png')">
+        <img src="daily_by_dayofyear_2019.png" alt="Usos diarios por día del año en 2019">
+        <div class="card-title">Usos diarios por día del año en 2019</div>
+        <div class="card-desc">Evolución de los usos diarios a lo largo del año 2019, alineada de 01-01 a 12-31 (eje Y común).</div>
+      </article>
+
+      <article class="card" onclick="openModal('daily_by_dayofyear_2020.png')">
+        <img src="daily_by_dayofyear_2020.png" alt="Usos diarios por día del año en 2020">
+        <div class="card-title">Usos diarios por día del año en 2020</div>
+        <div class="card-desc">Evolución de los usos diarios a lo largo del año 2020, alineada de 01-01 a 12-31 (eje Y común).</div>
+      </article>
+
+      <article class="card" onclick="openModal('daily_by_dayofyear_2021.png')">
+        <img src="daily_by_dayofyear_2021.png" alt="Usos diarios por día del año en 2021">
+        <div class="card-title">Usos diarios por día del año en 2021</div>
+        <div class="card-desc">Evolución de los usos diarios a lo largo del año 2021, alineada de 01-01 a 12-31 (eje Y común).</div>
+      </article>
+
+      <article class="card" onclick="openModal('daily_by_dayofyear_2022.png')">
+        <img src="daily_by_dayofyear_2022.png" alt="Usos diarios por día del año en 2022">
+        <div class="card-title">Usos diarios por día del año en 2022</div>
+        <div class="card-desc">Evolución de los usos diarios a lo largo del año 2022, alineada de 01-01 a 12-31 (eje Y común).</div>
+      </article>
+
+      <article class="card" onclick="openModal('daily_by_dayofyear_2023.png')">
+        <img src="daily_by_dayofyear_2023.png" alt="Usos diarios por día del año en 2023">
+        <div class="card-title">Usos diarios por día del año en 2023</div>
+        <div class="card-desc">Evolución de los usos diarios a lo largo del año 2023, alineada de 01-01 a 12-31 (eje Y común).</div>
+      </article>
+
+      <article class="card" onclick="openModal('daily_by_dayofyear_2024.png')">
+        <img src="daily_by_dayofyear_2024.png" alt="Usos diarios por día del año en 2024">
+        <div class="card-title">Usos diarios por día del año en 2024</div>
+        <div class="card-desc">Evolución de los usos diarios a lo largo del año 2024, alineada de 01-01 a 12-31 (eje Y común).</div>
+      </article>
+
+      <article class="card" onclick="openModal('daily_by_dayofyear_2025.png')">
+        <img src="daily_by_dayofyear_2025.png" alt="Usos diarios por día del año en 2025">
+        <div class="card-title">Usos diarios por día del año en 2025</div>
+        <div class="card-desc">Evolución de los usos diarios a lo largo del año 2025, alineada de 01-01 a 12-31 (eje Y común).</div>
+      </article>
+
+    </div>
+    <p class="footer-note">
+      Haz clic sobre cualquier gráfico para verlo en grande.
+    </p>
+  </section>
+</main>
+
+<!-- Modal global para ampliar imágenes -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <span class="modal-close" onclick="closeModal()">×</span>
+  <img id="modalImg" src="">
+</div>
+
+<script>
+  function openModal(src) {
+    var modal = document.getElementById("imageModal");
+    var img = document.getElementById("modalImg");
+    img.src = src;
+    modal.style.display = "flex";
+  }
+  function closeModal() {
+    var modal = document.getElementById("imageModal");
+    modal.style.display = "none";
+  }
+  // Evitar que el click en la imagen cierre el modal
+  document.addEventListener("DOMContentLoaded", function() {
+    var img = document.getElementById("modalImg");
+    img.addEventListener("click", function(event) {
+      event.stopPropagation();
+    });
+  });
+</script>
+
+<footer>
+  Página generada automáticamente a partir de los datos de uso de BiciElx
+  (promedios mensuales y diarios; usos diarios alineados por día del año, con eje Y común).
+</footer>
+</body>
+</html>

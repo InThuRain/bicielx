@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4dbdc222791c9b7238d693d989537baa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4dbdc222791c9b7238d693d989537baa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4dbdc222791c9b7238d693d989537baa = L.map(
+                "map_4dbdc222791c9b7238d693d989537baa",
+                {
+                    center: [38.267, -0.7129],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_4dbdc222791c9b7238d693d989537baa);
+
+            
+
+        
+    
+            var tile_layer_706d3103aec248821d0b967960a807a5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_706d3103aec248821d0b967960a807a5.addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+            var circle_marker_73948e6186e626a594030137dda682bb = L.circleMarker(
+                [38.272036, -0.694305],
+                {"bubblingMouseEvents": true, "color": "#83cb88ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#83cb88ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.95281052841931, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_ed9dc5e3e549e1d565629939c002253e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be7005abf6d6874f9cef677231b1b949 = $(`<div id="html_be7005abf6d6874f9cef677231b1b949" style="width: 100.0%; height: 100.0%;">1 – Estació d’Autobusos<br>Media mensual 2015: 1237.2 usos</div>`)[0];
+                popup_ed9dc5e3e549e1d565629939c002253e.setContent(html_be7005abf6d6874f9cef677231b1b949);
+            
+        
+
+        circle_marker_73948e6186e626a594030137dda682bb.bindPopup(popup_ed9dc5e3e549e1d565629939c002253e)
+        ;
+
+        
+    
+    
+            var circle_marker_52c6b15efea6c3b63d85525dad0b4f26 = L.circleMarker(
+                [38.268457, -0.696731],
+                {"bubblingMouseEvents": true, "color": "#2ea052ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ea052ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 31.356761540437923, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_710c3cb04de906b2161d723b29d518bf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d60401972b4530bc22560dc9142ffb1 = $(`<div id="html_1d60401972b4530bc22560dc9142ffb1" style="width: 100.0%; height: 100.0%;">2 – Oficina de Turisme<br>Media mensual 2015: 1996.4 usos</div>`)[0];
+                popup_710c3cb04de906b2161d723b29d518bf.setContent(html_1d60401972b4530bc22560dc9142ffb1);
+            
+        
+
+        circle_marker_52c6b15efea6c3b63d85525dad0b4f26.bindPopup(popup_710c3cb04de906b2161d723b29d518bf)
+        ;
+
+        
+    
+    
+            var circle_marker_000efeafd1dc573b33bd3e7fe36e1384 = L.circleMarker(
+                [38.270117, -0.685963],
+                {"bubblingMouseEvents": true, "color": "#16863eff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#16863eff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 37.859944617317076, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_f03774be532e414f82df53a1bfe54f4c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_84e466a682a1b4538009809264f79708 = $(`<div id="html_84e466a682a1b4538009809264f79708" style="width: 100.0%; height: 100.0%;">3 – Plaça de la Llotja<br>Media mensual 2015: 2471.0 usos</div>`)[0];
+                popup_f03774be532e414f82df53a1bfe54f4c.setContent(html_84e466a682a1b4538009809264f79708);
+            
+        
+
+        circle_marker_000efeafd1dc573b33bd3e7fe36e1384.bindPopup(popup_f03774be532e414f82df53a1bfe54f4c)
+        ;
+
+        
+    
+    
+            var circle_marker_ce5cb1ce76cef40d4e057f244b9842b6 = L.circleMarker(
+                [38.260487, -0.698565],
+                {"bubblingMouseEvents": true, "color": "#69be78ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#69be78ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.95489451597248, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_9d434236e7f74d62197425a01933c553 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_184e5dd7fe93b1a27130779fb3a077c5 = $(`<div id="html_184e5dd7fe93b1a27130779fb3a077c5" style="width: 100.0%; height: 100.0%;">4 – Plaça del Raval<br>Media mensual 2015: 1456.2 usos</div>`)[0];
+                popup_9d434236e7f74d62197425a01933c553.setContent(html_184e5dd7fe93b1a27130779fb3a077c5);
+            
+        
+
+        circle_marker_ce5cb1ce76cef40d4e057f244b9842b6.bindPopup(popup_9d434236e7f74d62197425a01933c553)
+        ;
+
+        
+    
+    
+            var circle_marker_440253517c603219de2ec809f6735de6 = L.circleMarker(
+                [38.264171, -0.695433],
+                {"bubblingMouseEvents": true, "color": "#78c581ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#78c581ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.237460389962603, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_f9e91fb613522f4edc0ac926b111d9a1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cfc7069162e5114bb8c4f6a168219a9e = $(`<div id="html_cfc7069162e5114bb8c4f6a168219a9e" style="width: 100.0%; height: 100.0%;">5 – Centre de Congressos<br>Media mensual 2015: 1330.9 usos</div>`)[0];
+                popup_f9e91fb613522f4edc0ac926b111d9a1.setContent(html_cfc7069162e5114bb8c4f6a168219a9e);
+            
+        
+
+        circle_marker_440253517c603219de2ec809f6735de6.bindPopup(popup_f9e91fb613522f4edc0ac926b111d9a1)
+        ;
+
+        
+    
+    
+            var circle_marker_bca76d5f1fb60477f273c2261afb5a18 = L.circleMarker(
+                [38.265409, -0.699424],
+                {"bubblingMouseEvents": true, "color": "#2c9e50ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2c9e50ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 31.957406720146164, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_f453572c599c5688cfa8af1ffd5778c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb89c9853acda4443d0af0b77e52397b = $(`<div id="html_cb89c9853acda4443d0af0b77e52397b" style="width: 100.0%; height: 100.0%;">6 – Ajuntament<br>Media mensual 2015: 2040.2 usos</div>`)[0];
+                popup_f453572c599c5688cfa8af1ffd5778c0.setContent(html_cb89c9853acda4443d0af0b77e52397b);
+            
+        
+
+        circle_marker_bca76d5f1fb60477f273c2261afb5a18.bindPopup(popup_f453572c599c5688cfa8af1ffd5778c0)
+        ;
+
+        
+    
+    
+            var circle_marker_c8ea9225b40a42fa865a1cd1fc32c2f8 = L.circleMarker(
+                [38.273904, -0.673121],
+                {"bubblingMouseEvents": true, "color": "#cbebc5ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#cbebc5ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.19797881755117, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_b5aa01a8671c2a2188cfede31b0d4c44 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de2ca71d4b912346ee98ed5f7e894c43 = $(`<div id="html_de2ca71d4b912346ee98ed5f7e894c43" style="width: 100.0%; height: 100.0%;">7 – Pavelló Municipal<br>Media mensual 2015: 379.3 usos</div>`)[0];
+                popup_b5aa01a8671c2a2188cfede31b0d4c44.setContent(html_de2ca71d4b912346ee98ed5f7e894c43);
+            
+        
+
+        circle_marker_c8ea9225b40a42fa865a1cd1fc32c2f8.bindPopup(popup_b5aa01a8671c2a2188cfede31b0d4c44)
+        ;
+
+        
+    
+    
+            var circle_marker_d51a05902a34c40d282bad6b92c9f3bc = L.circleMarker(
+                [38.270115, -0.713323],
+                {"bubblingMouseEvents": true, "color": "#aadda4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aadda4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.665762653801137, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_d9073cd5220710e9a663733fe982dd41 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e9cbbd8266b70c234dc524b6f428de8 = $(`<div id="html_2e9cbbd8266b70c234dc524b6f428de8" style="width: 100.0%; height: 100.0%;">8 – Polivalent de Carrús<br>Media mensual 2015: 851.3 usos</div>`)[0];
+                popup_d9073cd5220710e9a663733fe982dd41.setContent(html_2e9cbbd8266b70c234dc524b6f428de8);
+            
+        
+
+        circle_marker_d51a05902a34c40d282bad6b92c9f3bc.bindPopup(popup_d9073cd5220710e9a663733fe982dd41)
+        ;
+
+        
+    
+    
+            var circle_marker_e14e4f47759a59bb3f388f9ed57c16c8 = L.circleMarker(
+                [38.259831, -0.701275],
+                {"bubblingMouseEvents": true, "color": "#a0d99aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a0d99aff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.46769819292586, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_23ca10f99eaa628ec84b59b691cf8643 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ed10f5771f583b28ef0da8e9d380794 = $(`<div id="html_2ed10f5771f583b28ef0da8e9d380794" style="width: 100.0%; height: 100.0%;">9 – Biblioteca de Sant Josep<br>Media mensual 2015: 982.8 usos</div>`)[0];
+                popup_23ca10f99eaa628ec84b59b691cf8643.setContent(html_2ed10f5771f583b28ef0da8e9d380794);
+            
+        
+
+        circle_marker_e14e4f47759a59bb3f388f9ed57c16c8.bindPopup(popup_23ca10f99eaa628ec84b59b691cf8643)
+        ;
+
+        
+    
+    
+            var circle_marker_86c627b2ddfaaba6d09e63fd205c6955 = L.circleMarker(
+                [38.256839, -0.691995],
+                {"bubblingMouseEvents": true, "color": "#bde5b7ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bde5b7ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.898598304262183, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_67899cc50cbd77c160f89f240e2a98ec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_466ff442bbe4cddd6443ee2048442e6e = $(`<div id="html_466ff442bbe4cddd6443ee2048442e6e" style="width: 100.0%; height: 100.0%;">10 – L’Escorxador<br>Media mensual 2015: 576.4 usos</div>`)[0];
+                popup_67899cc50cbd77c160f89f240e2a98ec.setContent(html_466ff442bbe4cddd6443ee2048442e6e);
+            
+        
+
+        circle_marker_86c627b2ddfaaba6d09e63fd205c6955.bindPopup(popup_67899cc50cbd77c160f89f240e2a98ec)
+        ;
+
+        
+    
+    
+            var circle_marker_26175faeb2e8e556986252d2de87493e = L.circleMarker(
+                [38.261942, -0.708752],
+                {"bubblingMouseEvents": true, "color": "#79c682ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#79c682ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.09700533843387, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_2cd6b8c451d6d13a99ff4c2c25fe2574 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3a9458d3371de1ec7ed0c159d41a1956 = $(`<div id="html_3a9458d3371de1ec7ed0c159d41a1956" style="width: 100.0%; height: 100.0%;">11 – Plaça de Crevillent<br>Media mensual 2015: 1320.7 usos</div>`)[0];
+                popup_2cd6b8c451d6d13a99ff4c2c25fe2574.setContent(html_3a9458d3371de1ec7ed0c159d41a1956);
+            
+        
+
+        circle_marker_26175faeb2e8e556986252d2de87493e.bindPopup(popup_2cd6b8c451d6d13a99ff4c2c25fe2574)
+        ;
+
+        
+    
+    
+            var circle_marker_b3f738890e0cdfd3535d7df367293b4b = L.circleMarker(
+                [38.268924, -0.706933],
+                {"bubblingMouseEvents": true, "color": "#006d2cff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006d2cff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 44.0, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_9719055865b951e283227479ccbd81d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_41d0eee010b2b7c025c3c0489b52dd21 = $(`<div id="html_41d0eee010b2b7c025c3c0489b52dd21" style="width: 100.0%; height: 100.0%;">12 – Ambulatori de Sant Fermí<br>Media mensual 2015: 2919.1 usos</div>`)[0];
+                popup_9719055865b951e283227479ccbd81d0.setContent(html_41d0eee010b2b7c025c3c0489b52dd21);
+            
+        
+
+        circle_marker_b3f738890e0cdfd3535d7df367293b4b.bindPopup(popup_9719055865b951e283227479ccbd81d0)
+        ;
+
+        
+    
+    
+            var circle_marker_fc604f5d9db9542a85c5d81db00036c7 = L.circleMarker(
+                [38.274553, -0.708405],
+                {"bubblingMouseEvents": true, "color": "#abdda5ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#abdda5ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.447657655085786, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_62e68ff45ab236602177a69284c82e65 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5de815ac3a46f58d14798e0be6b1f814 = $(`<div id="html_5de815ac3a46f58d14798e0be6b1f814" style="width: 100.0%; height: 100.0%;">13 – Jardí del 1r de Maig<br>Media mensual 2015: 835.4 usos</div>`)[0];
+                popup_62e68ff45ab236602177a69284c82e65.setContent(html_5de815ac3a46f58d14798e0be6b1f814);
+            
+        
+
+        circle_marker_fc604f5d9db9542a85c5d81db00036c7.bindPopup(popup_62e68ff45ab236602177a69284c82e65)
+        ;
+
+        
+    
+    
+            var circle_marker_3d45ce384c35b93627924f22a0847191 = L.circleMarker(
+                [38.262993, -0.688257],
+                {"bubblingMouseEvents": true, "color": "#c1e7bcff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c1e7bcff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.023894487424705, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_92a7d25b17c0c2108be60cfb0a26a960 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a5b34760a89f8c46e5bf88325a022c6 = $(`<div id="html_6a5b34760a89f8c46e5bf88325a022c6" style="width: 100.0%; height: 100.0%;">14 – Comissaria<br>Media mensual 2015: 512.6 usos</div>`)[0];
+                popup_92a7d25b17c0c2108be60cfb0a26a960.setContent(html_6a5b34760a89f8c46e5bf88325a022c6);
+            
+        
+
+        circle_marker_3d45ce384c35b93627924f22a0847191.bindPopup(popup_92a7d25b17c0c2108be60cfb0a26a960)
+        ;
+
+        
+    
+    
+            var circle_marker_130b64445fdf5a741bd535fe57c8c565 = L.circleMarker(
+                [38.26573, -0.71128],
+                {"bubblingMouseEvents": true, "color": "#82ca87ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#82ca87ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.023609009677692, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_49c1b4f6d15f2630c50b96679ded2fbb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eff2b47b00e0f2ec2cb72a21c74e3cdd = $(`<div id="html_eff2b47b00e0f2ec2cb72a21c74e3cdd" style="width: 100.0%; height: 100.0%;">15 – Av. Llibertat / Reina Victòria<br>Media mensual 2015: 1242.3 usos</div>`)[0];
+                popup_49c1b4f6d15f2630c50b96679ded2fbb.setContent(html_eff2b47b00e0f2ec2cb72a21c74e3cdd);
+            
+        
+
+        circle_marker_130b64445fdf5a741bd535fe57c8c565.bindPopup(popup_49c1b4f6d15f2630c50b96679ded2fbb)
+        ;
+
+        
+    
+    
+            var circle_marker_1f8b31c050372dc67f91c5dffd5ec79b = L.circleMarker(
+                [38.27609, -0.71529],
+                {"bubblingMouseEvents": true, "color": "#b8e3b2ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b8e3b2ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.885209397927431, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_00a0376b4aa3d26c0d347f5ee46bfb26 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f64e64b86432ef9c38b20ae72a3589da = $(`<div id="html_f64e64b86432ef9c38b20ae72a3589da" style="width: 100.0%; height: 100.0%;">16 – Jardí d’Asp<br>Media mensual 2015: 648.4 usos</div>`)[0];
+                popup_00a0376b4aa3d26c0d347f5ee46bfb26.setContent(html_f64e64b86432ef9c38b20ae72a3589da);
+            
+        
+
+        circle_marker_1f8b31c050372dc67f91c5dffd5ec79b.bindPopup(popup_00a0376b4aa3d26c0d347f5ee46bfb26)
+        ;
+
+        
+    
+    
+            var circle_marker_0d8de39b3ec63d378040b25c9184f1a3 = L.circleMarker(
+                [38.27662, -0.67801],
+                {"bubblingMouseEvents": true, "color": "#46ad61ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#46ad61ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 28.143424020097633, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_201e921f9cc5ad9d232bbcbb6f2cabb1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96663f12ea206b659cb65f3547ebe338 = $(`<div id="html_96663f12ea206b659cb65f3547ebe338" style="width: 100.0%; height: 100.0%;">17 – Plaça de Castella<br>Media mensual 2015: 1761.9 usos</div>`)[0];
+                popup_201e921f9cc5ad9d232bbcbb6f2cabb1.setContent(html_96663f12ea206b659cb65f3547ebe338);
+            
+        
+
+        circle_marker_0d8de39b3ec63d378040b25c9184f1a3.bindPopup(popup_201e921f9cc5ad9d232bbcbb6f2cabb1)
+        ;
+
+        
+    
+    
+            var circle_marker_388443a820c0cb2088f11f8f88061c7e = L.circleMarker(
+                [38.27832, -0.67195],
+                {"bubblingMouseEvents": true, "color": "#a8dca2ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a8dca2ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.02203888206914, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_a4abb926db9a78b558aab4ac78c5fad1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56430e3743f02edc7c3b78319ab7e06d = $(`<div id="html_56430e3743f02edc7c3b78319ab7e06d" style="width: 100.0%; height: 100.0%;">18 – Poliesportiu d’Altabix<br>Media mensual 2015: 877.3 usos</div>`)[0];
+                popup_a4abb926db9a78b558aab4ac78c5fad1.setContent(html_56430e3743f02edc7c3b78319ab7e06d);
+            
+        
+
+        circle_marker_388443a820c0cb2088f11f8f88061c7e.bindPopup(popup_a4abb926db9a78b558aab4ac78c5fad1)
+        ;
+
+        
+    
+    
+            var circle_marker_5fab01100533ce1ccfa5a5717183a629 = L.circleMarker(
+                [38.26674, -0.69328],
+                {"bubblingMouseEvents": true, "color": "#6ec17aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6ec17aff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.44446030431928, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_a37983bffff86a0ab1d1f747237f89d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_85850ef14f3a07d7ec084e914379b039 = $(`<div id="html_85850ef14f3a07d7ec084e914379b039" style="width: 100.0%; height: 100.0%;">19 – Jesuïtines<br>Media mensual 2015: 1419.0 usos</div>`)[0];
+                popup_a37983bffff86a0ab1d1f747237f89d3.setContent(html_85850ef14f3a07d7ec084e914379b039);
+            
+        
+
+        circle_marker_5fab01100533ce1ccfa5a5717183a629.bindPopup(popup_a37983bffff86a0ab1d1f747237f89d3)
+        ;
+
+        
+    
+    
+            var circle_marker_e8193dc7d855374f0a530836e30c7941 = L.circleMarker(
+                [38.25835, -0.70852],
+                {"bubblingMouseEvents": true, "color": "#9fd89aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9fd89aff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.563618715921095, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_953136262cebd9436dc03529e518913a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb4aabafa745d8ecbb39ad0fa929da1e = $(`<div id="html_cb4aabafa745d8ecbb39ad0fa929da1e" style="width: 100.0%; height: 100.0%;">20 – Antoni Mena / Fra Jaume Torres<br>Media mensual 2015: 989.8 usos</div>`)[0];
+                popup_953136262cebd9436dc03529e518913a.setContent(html_cb4aabafa745d8ecbb39ad0fa929da1e);
+            
+        
+
+        circle_marker_e8193dc7d855374f0a530836e30c7941.bindPopup(popup_953136262cebd9436dc03529e518913a)
+        ;
+
+        
+    
+    
+            var circle_marker_5b3efa148b3b13b40da2c44b9f0839a7 = L.circleMarker(
+                [38.25923, -0.7109],
+                {"bubblingMouseEvents": true, "color": "#c5e8c0ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c5e8c0ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.291929544092039, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_87845fdad795fd9c6f94036931d23352 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef374daf9884b10b6db06437bc553307 = $(`<div id="html_ef374daf9884b10b6db06437bc553307" style="width: 100.0%; height: 100.0%;">21 – C.P. Mariano Benlliure<br>Media mensual 2015: 459.2 usos</div>`)[0];
+                popup_87845fdad795fd9c6f94036931d23352.setContent(html_ef374daf9884b10b6db06437bc553307);
+            
+        
+
+        circle_marker_5b3efa148b3b13b40da2c44b9f0839a7.bindPopup(popup_87845fdad795fd9c6f94036931d23352)
+        ;
+
+        
+    
+    
+            var circle_marker_6cd10a0c5cf02fe7c43922cf9c84db9d = L.circleMarker(
+                [38.25399, -0.70548],
+                {"bubblingMouseEvents": true, "color": "#b6e2b0ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b6e2b0ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.332838505238517, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_1318a5eed291ffc2a7119deb4c2951e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56bc14cfc7c014025518a2f77d6b387f = $(`<div id="html_56bc14cfc7c014025518a2f77d6b387f" style="width: 100.0%; height: 100.0%;">22 – Av. Llauradors / Eslava<br>Media mensual 2015: 681.1 usos</div>`)[0];
+                popup_1318a5eed291ffc2a7119deb4c2951e7.setContent(html_56bc14cfc7c014025518a2f77d6b387f);
+            
+        
+
+        circle_marker_6cd10a0c5cf02fe7c43922cf9c84db9d.bindPopup(popup_1318a5eed291ffc2a7119deb4c2951e7)
+        ;
+
+        
+    
+    
+            var circle_marker_71683f4753d386249d600e415cef990e = L.circleMarker(
+                [38.25734, -0.70461],
+                {"bubblingMouseEvents": true, "color": "#b4e1aeff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b4e1aeff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.658283136829484, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_b606659baeeb8a49cc0880d9b60dba7f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c9dfc87875e9aab42f8bcb5cce54a4b = $(`<div id="html_2c9dfc87875e9aab42f8bcb5cce54a4b" style="width: 100.0%; height: 100.0%;">23 – Conrado del Campo / Trinquet<br>Media mensual 2015: 704.8 usos</div>`)[0];
+                popup_b606659baeeb8a49cc0880d9b60dba7f.setContent(html_2c9dfc87875e9aab42f8bcb5cce54a4b);
+            
+        
+
+        circle_marker_71683f4753d386249d600e415cef990e.bindPopup(popup_b606659baeeb8a49cc0880d9b60dba7f)
+        ;
+
+        
+    
+    
+            var circle_marker_a8d9948c7418504565890f385daaeda0 = L.circleMarker(
+                [38.27553, -0.66915],
+                {"bubblingMouseEvents": true, "color": "#caeac4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#caeac4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.395529418481829, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_175ea72e8482bc37eb9a3a7a4d5f0608 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51f2102c22862499c35417a1d541cb74 = $(`<div id="html_51f2102c22862499c35417a1d541cb74" style="width: 100.0%; height: 100.0%;">24 – Policia Local<br>Media mensual 2015: 393.8 usos</div>`)[0];
+                popup_175ea72e8482bc37eb9a3a7a4d5f0608.setContent(html_51f2102c22862499c35417a1d541cb74);
+            
+        
+
+        circle_marker_a8d9948c7418504565890f385daaeda0.bindPopup(popup_175ea72e8482bc37eb9a3a7a4d5f0608)
+        ;
+
+        
+    
+    
+            var circle_marker_f0d70d6a3ed426a16097a614a377b9f7 = L.circleMarker(
+                [38.26718, -0.70259],
+                {"bubblingMouseEvents": true, "color": "#63bb74ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#63bb74ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.729110165862572, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_10fdc9c34f282d388e153f605597f4d5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ff15d62972977ffa40be4e896bac09e = $(`<div id="html_7ff15d62972977ffa40be4e896bac09e" style="width: 100.0%; height: 100.0%;">25 – Cor de Jesús<br>Media mensual 2015: 1512.8 usos</div>`)[0];
+                popup_10fdc9c34f282d388e153f605597f4d5.setContent(html_7ff15d62972977ffa40be4e896bac09e);
+            
+        
+
+        circle_marker_f0d70d6a3ed426a16097a614a377b9f7.bindPopup(popup_10fdc9c34f282d388e153f605597f4d5)
+        ;
+
+        
+    
+    
+            var circle_marker_cff550f31bc5a6ac841566e8dbb63299 = L.circleMarker(
+                [38.27425, -0.69111],
+                {"bubblingMouseEvents": true, "color": "#31a354ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#31a354ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.672756858602867, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_03d468b2ced700a8c700aabe332d10f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a4decd96835f62421ebde5181238cc9 = $(`<div id="html_2a4decd96835f62421ebde5181238cc9" style="width: 100.0%; height: 100.0%;">26 – UMH / Escola Oficial d’Idiomes<br>Media mensual 2015: 1946.5 usos</div>`)[0];
+                popup_03d468b2ced700a8c700aabe332d10f3.setContent(html_2a4decd96835f62421ebde5181238cc9);
+            
+        
+
+        circle_marker_cff550f31bc5a6ac841566e8dbb63299.bindPopup(popup_03d468b2ced700a8c700aabe332d10f3)
+        ;
+
+        
+    
+    
+            var circle_marker_80931f7ebf1f18ac20e8789be7ae56bd = L.circleMarker(
+                [38.27921, -0.68589],
+                {"bubblingMouseEvents": true, "color": "#aedfa8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aedfa8ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.787633103999543, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_1174881d17976286a17f19018b42a943 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd5651a914dd7f360b8e5801f4054746 = $(`<div id="html_dd5651a914dd7f360b8e5801f4054746" style="width: 100.0%; height: 100.0%;">27 – UMH / Pavelló d’Esports<br>Media mensual 2015: 787.2 usos</div>`)[0];
+                popup_1174881d17976286a17f19018b42a943.setContent(html_dd5651a914dd7f360b8e5801f4054746);
+            
+        
+
+        circle_marker_80931f7ebf1f18ac20e8789be7ae56bd.bindPopup(popup_1174881d17976286a17f19018b42a943)
+        ;
+
+        
+    
+    
+            var circle_marker_fa6590205d8463f9b904756d601c1916 = L.circleMarker(
+                [38.262792, -0.703505],
+                {"bubblingMouseEvents": true, "color": "#7dc884ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7dc884ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.60027405863713, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_df562eeacead909f53c702d0e124591b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_360019180b4aaba7812b099d2e22fc1b = $(`<div id="html_360019180b4aaba7812b099d2e22fc1b" style="width: 100.0%; height: 100.0%;">28 – Passeig de les Germanies<br>Media mensual 2015: 1284.4 usos</div>`)[0];
+                popup_df562eeacead909f53c702d0e124591b.setContent(html_360019180b4aaba7812b099d2e22fc1b);
+            
+        
+
+        circle_marker_fa6590205d8463f9b904756d601c1916.bindPopup(popup_df562eeacead909f53c702d0e124591b)
+        ;
+
+        
+    
+    
+            var circle_marker_2473cb01acc9daa3d332679ef6851afc = L.circleMarker(
+                [38.275568, -0.703184],
+                {"bubblingMouseEvents": true, "color": "#b7e2b1ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b7e2b1ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.040509292300666, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_2a715782fab6484f1f4d3db200affe69 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab2de203a1e6cfd33f2dc53251c5202e = $(`<div id="html_ab2de203a1e6cfd33f2dc53251c5202e" style="width: 100.0%; height: 100.0%;">29 – Casablanca<br>Media mensual 2015: 659.8 usos</div>`)[0];
+                popup_2a715782fab6484f1f4d3db200affe69.setContent(html_ab2de203a1e6cfd33f2dc53251c5202e);
+            
+        
+
+        circle_marker_2473cb01acc9daa3d332679ef6851afc.bindPopup(popup_2a715782fab6484f1f4d3db200affe69)
+        ;
+
+        
+    
+    
+            var circle_marker_0f65e7ca3c80dd20e8690b2994422980 = L.circleMarker(
+                [38.27052, -0.6702],
+                {"bubblingMouseEvents": true, "color": "#b5e1afff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b5e1afff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.47100973479117, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_98eb0cad4250e1bd7f9ac71080773b10 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_faf1207e39bb0e9fec30f7e3d98c9d07 = $(`<div id="html_faf1207e39bb0e9fec30f7e3d98c9d07" style="width: 100.0%; height: 100.0%;">30 – Squash<br>Media mensual 2015: 691.2 usos</div>`)[0];
+                popup_98eb0cad4250e1bd7f9ac71080773b10.setContent(html_faf1207e39bb0e9fec30f7e3d98c9d07);
+            
+        
+
+        circle_marker_0f65e7ca3c80dd20e8690b2994422980.bindPopup(popup_98eb0cad4250e1bd7f9ac71080773b10)
+        ;
+
+        
+    
+    
+            var circle_marker_62b4e540c9b94a17086da31902e4c85d = L.circleMarker(
+                [38.27272, -0.68108],
+                {"bubblingMouseEvents": true, "color": "#50b267ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#50b267ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 27.004938765023265, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_e10f15e8f358f610d24ba9218b3ecdcb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1ae1adb763a8dd35f8a93fb7c75a834 = $(`<div id="html_f1ae1adb763a8dd35f8a93fb7c75a834" style="width: 100.0%; height: 100.0%;">32 – Centre de Salut d’Altabix<br>Media mensual 2015: 1678.8 usos</div>`)[0];
+                popup_e10f15e8f358f610d24ba9218b3ecdcb.setContent(html_f1ae1adb763a8dd35f8a93fb7c75a834);
+            
+        
+
+        circle_marker_62b4e540c9b94a17086da31902e4c85d.bindPopup(popup_e10f15e8f358f610d24ba9218b3ecdcb)
+        ;
+
+        
+    
+    
+            var circle_marker_bba9af6ecafcdea727ec8afd9daf5147 = L.circleMarker(
+                [38.261175, -0.71614],
+                {"bubblingMouseEvents": true, "color": "#a8dca2ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a8dca2ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.064289588626565, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_f59bdba5d3085c40dd79f70ac27913bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac6a1a87c699a3dd57a27550e64a9d23 = $(`<div id="html_ac6a1a87c699a3dd57a27550e64a9d23" style="width: 100.0%; height: 100.0%;">33 – Av. Libertat / l’Aljub<br>Media mensual 2015: 880.4 usos</div>`)[0];
+                popup_f59bdba5d3085c40dd79f70ac27913bb.setContent(html_ac6a1a87c699a3dd57a27550e64a9d23);
+            
+        
+
+        circle_marker_bba9af6ecafcdea727ec8afd9daf5147.bindPopup(popup_f59bdba5d3085c40dd79f70ac27913bb)
+        ;
+
+        
+    
+    
+            var circle_marker_cac4137d3cb983a4af6fc0365d63c63c = L.circleMarker(
+                [38.25961, -0.68586],
+                {"bubblingMouseEvents": true, "color": "#a0d99aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a0d99aff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.480259213794284, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_6201c76513ae40e02f676c26bde1b884 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d7a255c734a35649e775a2ea0179240 = $(`<div id="html_5d7a255c734a35649e775a2ea0179240" style="width: 100.0%; height: 100.0%;">34 – Hospital General<br>Media mensual 2015: 983.8 usos</div>`)[0];
+                popup_6201c76513ae40e02f676c26bde1b884.setContent(html_5d7a255c734a35649e775a2ea0179240);
+            
+        
+
+        circle_marker_cac4137d3cb983a4af6fc0365d63c63c.bindPopup(popup_6201c76513ae40e02f676c26bde1b884)
+        ;
+
+        
+    
+    
+            var circle_marker_72aab14683e3282819888c9a51dbba93 = L.circleMarker(
+                [38.25515, -0.71483],
+                {"bubblingMouseEvents": true, "color": "#d5efd0ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d5efd0ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.247594849981444, "stroke": true, "weight": 3}
+            ).addTo(map_4dbdc222791c9b7238d693d989537baa);
+        
+    
+        var popup_a5e3a2eef96b7ce4062f701bc36cd974 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_98387c5f6b846433a966559bd3d3a37f = $(`<div id="html_98387c5f6b846433a966559bd3d3a37f" style="width: 100.0%; height: 100.0%;">35 – Hospital del Vinalopó<br>Media mensual 2015: 237.0 usos</div>`)[0];
+                popup_a5e3a2eef96b7ce4062f701bc36cd974.setContent(html_98387c5f6b846433a966559bd3d3a37f);
+            
+        
+
+        circle_marker_72aab14683e3282819888c9a51dbba93.bindPopup(popup_a5e3a2eef96b7ce4062f701bc36cd974)
+        ;
+
+        
+    
+    
+    var color_map_1b5101395edffe70803a3c525881d867 = {};
+
+    
+    color_map_1b5101395edffe70803a3c525881d867.color = d3.scale.threshold()
+              .domain([0.0, 5.849866399465598, 11.699732798931196, 17.549599198396795, 23.39946559786239, 29.249331997327992, 35.09919839679359, 40.94906479625919, 46.79893119572478, 52.64879759519038, 58.498663994655985, 64.34853039412158, 70.19839679358718, 76.04826319305278, 81.89812959251837, 87.74799599198397, 93.59786239144957, 99.44772879091518, 105.29759519038076, 111.14746158984636, 116.99732798931197, 122.84719438877755, 128.69706078824316, 134.54692718770875, 140.39679358717436, 146.24665998663997, 152.09652638610555, 157.94639278557113, 163.79625918503675, 169.64612558450236, 175.49599198396794, 181.34585838343355, 187.19572478289913, 193.04559118236472, 198.89545758183036, 204.74532398129594, 210.59519038076152, 216.44505678022713, 222.29492317969272, 228.14478957915833, 233.99465597862394, 239.84452237808952, 245.6943887775551, 251.54425517702072, 257.3941215764863, 263.2439879759519, 269.0938543754175, 274.94372077488316, 280.7935871743487, 286.6434535738143, 292.49331997327994, 298.3431863727455, 304.1930527722111, 310.0429191716767, 315.89278557114227, 321.7426519706079, 327.5925183700735, 333.4423847695391, 339.2922511690047, 345.1421175684703, 350.9919839679359, 356.8418503674015, 362.6917167668671, 368.54158316633266, 374.39144956579827, 380.2413159652639, 386.09118236472943, 391.9410487641951, 397.7909151636607, 403.64078156312627, 409.4906479625919, 415.3405143620575, 421.19038076152304, 427.04024716098866, 432.89011356045427, 438.7399799599198, 444.58984635938543, 450.4397127588511, 456.28957915831666, 462.13944555778227, 467.9893119572479, 473.83917835671343, 479.68904475617904, 485.53891115564466, 491.3887775551102, 497.2386439545758, 503.08851035404143, 508.938376753507, 514.7882431529727, 520.6381095524382, 526.4879759519038, 532.3378423513694, 538.187708750835, 544.0375751503007, 549.8874415497663, 555.7373079492319, 561.5871743486974, 567.4370407481631, 573.2869071476287, 579.1367735470942, 584.9866399465599, 590.8365063460254, 596.686372745491, 602.5362391449567, 608.3861055444222, 614.2359719438878, 620.0858383433534, 625.935704742819, 631.7855711422845, 637.6354375417502, 643.4853039412158, 649.3351703406813, 655.185036740147, 661.0349031396127, 666.8847695390782, 672.7346359385439, 678.5845023380094, 684.434368737475, 690.2842351369407, 696.1341015364062, 701.9839679358718, 707.8338343353374, 713.683700734803, 719.5335671342685, 725.3834335337342, 731.2332999331998, 737.0831663326653, 742.933032732131, 748.7828991315965, 754.6327655310621, 760.4826319305278, 766.3324983299933, 772.1823647294589, 778.0322311289246, 783.8820975283902, 789.7319639278558, 795.5818303273214, 801.431696726787, 807.2815631262525, 813.1314295257182, 818.9812959251838, 824.8311623246493, 830.681028724115, 836.5308951235805, 842.3807615230461, 848.2306279225118, 854.0804943219773, 859.9303607214429, 865.7802271209085, 871.6300935203741, 877.4799599198396, 883.3298263193053, 889.1796927187709, 895.0295591182364, 900.8794255177022, 906.7292919171678, 912.5791583166333, 918.429024716099, 924.2788911155645, 930.1287575150301, 935.9786239144958, 941.8284903139613, 947.6783567134269, 953.5282231128925, 959.3780895123581, 965.2279559118236, 971.0778223112893, 976.9276887107549, 982.7775551102204, 988.6274215096861, 994.4772879091516, 1000.3271543086172, 1006.1770207080829, 1012.0268871075484, 1017.876753507014, 1023.7266199064798, 1029.5764863059453, 1035.4263527054109, 1041.2762191048764, 1047.126085504342, 1052.9759519038075, 1058.8258183032733, 1064.6756847027389, 1070.5255511022044, 1076.37541750167, 1082.2252839011358, 1088.0751503006013, 1093.9250167000669, 1099.7748830995326, 1105.624749498998, 1111.4746158984638, 1117.3244822979293, 1123.1743486973949, 1129.0242150968604, 1134.8740814963262, 1140.7239478957915, 1146.5738142952573, 1152.4236806947229, 1158.2735470941884, 1164.123413493654, 1169.9732798931198, 1175.823146292585, 1181.6730126920509, 1187.5228790915164, 1193.372745490982, 1199.2226118904478, 1205.0724782899133, 1210.9223446893789, 1216.7722110888444, 1222.6220774883102, 1228.4719438877755, 1234.3218102872413, 1240.1716766867069, 1246.0215430861724, 1251.871409485638, 1257.7212758851038, 1263.571142284569, 1269.4210086840349, 1275.2708750835004, 1281.120741482966, 1286.9706078824315, 1292.8204742818973, 1298.6703406813626, 1304.5202070808284, 1310.370073480294, 1316.2199398797595, 1322.0698062792253, 1327.9196726786909, 1333.7695390781564, 1339.619405477622, 1345.4692718770877, 1351.319138276553, 1357.1690046760189, 1363.0188710754844, 1368.86873747495, 1374.7186038744155, 1380.5684702738813, 1386.4183366733466, 1392.2682030728124, 1398.118069472278, 1403.9679358717435, 1409.817802271209, 1415.6676686706749, 1421.5175350701402, 1427.367401469606, 1433.2172678690715, 1439.067134268537, 1444.9170006680029, 1450.7668670674684, 1456.616733466934, 1462.4665998663995, 1468.3164662658653, 1474.1663326653306, 1480.0161990647964, 1485.866065464262, 1491.7159318637275, 1497.565798263193, 1503.4156646626589, 1509.2655310621242, 1515.11539746159, 1520.9652638610555, 1526.815130260521, 1532.6649966599866, 1538.5148630594524, 1544.3647294589177, 1550.2145958583835, 1556.0644622578493, 1561.9143286573146, 1567.7641950567804, 1573.614061456246, 1579.4639278557115, 1585.313794255177, 1591.1636606546429, 1597.0135270541082, 1602.863393453574, 1608.7132598530395, 1614.563126252505, 1620.4129926519706, 1626.2628590514364, 1632.1127254509017, 1637.9625918503675, 1643.812458249833, 1649.6623246492986, 1655.5121910487642, 1661.36205744823, 1667.2119238476953, 1673.061790247161, 1678.9116566466269, 1684.7615230460922, 1690.611389445558, 1696.4612558450235, 1702.311122244489, 1708.1609886439546, 1714.0108550434204, 1719.8607214428857, 1725.7105878423515, 1731.560454241817, 1737.4103206412826, 1743.2601870407482, 1749.110053440214, 1754.9599198396793, 1760.809786239145, 1766.6596526386106, 1772.5095190380762, 1778.3593854375417, 1784.2092518370075, 1790.0591182364728, 1795.9089846359386, 1801.7588510354044, 1807.6087174348697, 1813.4585838343355, 1819.308450233801, 1825.1583166332666, 1831.0081830327322, 1836.858049432198, 1842.7079158316633, 1848.557782231129, 1854.4076486305946, 1860.2575150300602, 1866.1073814295257, 1871.9572478289915, 1877.8071142284568, 1883.6569806279226, 1889.5068470273882, 1895.3567134268537, 1901.2065798263193, 1907.056446225785, 1912.9063126252504, 1918.7561790247162, 1924.606045424182, 1930.4559118236473, 1936.305778223113, 1942.1556446225786, 1948.0055110220442, 1953.8553774215097, 1959.7052438209755, 1965.5551102204408, 1971.4049766199066, 1977.2548430193722, 1983.1047094188377, 1988.9545758183033, 1994.804442217769, 2000.6543086172344, 2006.5041750167002, 2012.3540414161657, 2018.2039078156313, 2024.0537742150968, 2029.9036406145626, 2035.753507014028, 2041.6033734134937, 2047.4532398129595, 2053.303106212425, 2059.1529726118906, 2065.002839011356, 2070.8527054108217, 2076.7025718102873, 2082.552438209753, 2088.4023046092184, 2094.252171008684, 2100.10203740815, 2105.951903807615, 2111.801770207081, 2117.6516366065466, 2123.501503006012, 2129.3513694054777, 2135.2012358049433, 2141.051102204409, 2146.900968603875, 2152.75083500334, 2158.6007014028055, 2164.4505678022715, 2170.300434201737, 2176.1503006012026, 2182.000167000668, 2187.8500334001337, 2193.6998997995993, 2199.5497661990653, 2205.3996325985304, 2211.249498997996, 2217.099365397462, 2222.9492317969275, 2228.7990981963926, 2234.6489645958586, 2240.498830995324, 2246.3486973947897, 2252.1985637942553, 2258.048430193721, 2263.8982965931864, 2269.7481629926524, 2275.598029392118, 2281.447895791583, 2287.297762191049, 2293.1476285905146, 2298.99749498998, 2304.8473613894457, 2310.6972277889113, 2316.547094188377, 2322.396960587843, 2328.246826987308, 2334.0966933867735, 2339.9465597862395, 2345.796426185705, 2351.64629258517, 2357.496158984636, 2363.3460253841017, 2369.1958917835673, 2375.045758183033, 2380.8956245824984, 2386.745490981964, 2392.59535738143, 2398.4452237808955, 2404.2950901803606, 2410.1449565798266, 2415.994822979292, 2421.8446893787577, 2427.6945557782233, 2433.544422177689, 2439.3942885771544, 2445.2441549766204, 2451.0940213760855, 2456.943887775551, 2462.793754175017, 2468.6436205744826, 2474.4934869739477, 2480.3433533734137, 2486.1932197728793, 2492.043086172345, 2497.8929525718104, 2503.742818971276, 2509.5926853707415, 2515.4425517702075, 2521.292418169673, 2527.142284569138, 2532.992150968604, 2538.8420173680697, 2544.6918837675353, 2550.541750167001, 2556.3916165664664, 2562.241482965932, 2568.091349365398, 2573.941215764863, 2579.7910821643286, 2585.6409485637946, 2591.49081496326, 2597.3406813627253, 2603.1905477621913, 2609.040414161657, 2614.8902805611224, 2620.740146960588, 2626.5900133600535, 2632.439879759519, 2638.289746158985, 2644.1396125584506, 2649.9894789579157, 2655.8393453573817, 2661.6892117568473, 2667.539078156313, 2673.3889445557784, 2679.238810955244, 2685.0886773547095, 2690.9385437541755, 2696.7884101536406, 2702.638276553106, 2708.488142952572, 2714.3380093520377, 2720.187875751503, 2726.037742150969, 2731.8876085504344, 2737.7374749499, 2743.5873413493655, 2749.437207748831, 2755.2870741482966, 2761.1369405477626, 2766.986806947228, 2772.8366733466933, 2778.6865397461593, 2784.536406145625, 2790.3862725450904, 2796.236138944556, 2802.0860053440215, 2807.935871743487, 2813.785738142953, 2819.635604542418, 2825.4854709418837, 2831.3353373413497, 2837.1852037408153, 2843.0350701402804, 2848.8849365397464, 2854.734802939212, 2860.5846693386775, 2866.434535738143, 2872.2844021376086, 2878.134268537074, 2883.98413493654, 2889.8340013360057, 2895.683867735471, 2901.533734134937, 2907.3836005344024, 2913.233466933868, 2919.0833333333335])
+              .range(['#e5f5e0ff', '#e5f5e0ff', '#e5f5e0ff', '#e4f5dfff', '#e4f5dfff', '#e3f5deff', '#e3f4deff', '#e3f4ddff', '#e2f4ddff', '#e2f4ddff', '#e1f4dcff', '#e1f4dcff', '#e0f3dbff', '#e0f3dbff', '#e0f3dbff', '#dff3daff', '#dff3daff', '#def3d9ff', '#def2d9ff', '#def2d8ff', '#ddf2d8ff', '#ddf2d8ff', '#dcf2d7ff', '#dcf2d7ff', '#dcf1d6ff', '#dbf1d6ff', '#dbf1d6ff', '#daf1d5ff', '#daf1d5ff', '#d9f1d4ff', '#d9f0d4ff', '#d9f0d3ff', '#d8f0d3ff', '#d8f0d3ff', '#d7f0d2ff', '#d7f0d2ff', '#d7efd1ff', '#d6efd1ff', '#d6efd1ff', '#d5efd0ff', '#d5efd0ff', '#d5efcfff', '#d4eecfff', '#d4eeceff', '#d3eeceff', '#d3eeceff', '#d3eecdff', '#d2eecdff', '#d2edccff', '#d1edccff', '#d1edccff', '#d0edcbff', '#d0edcbff', '#d0edcaff', '#cfeccaff', '#cfecc9ff', '#ceecc9ff', '#ceecc9ff', '#ceecc8ff', '#cdebc8ff', '#cdebc7ff', '#ccebc7ff', '#ccebc7ff', '#ccebc6ff', '#cbebc6ff', '#cbeac5ff', '#caeac5ff', '#caeac4ff', '#c9eac4ff', '#c9eac4ff', '#c9eac3ff', '#c8e9c3ff', '#c8e9c2ff', '#c7e9c2ff', '#c7e9c2ff', '#c7e9c1ff', '#c6e9c1ff', '#c6e8c0ff', '#c5e8c0ff', '#c5e8bfff', '#c5e8bfff', '#c4e8bfff', '#c4e8beff', '#c3e7beff', '#c3e7bdff', '#c3e7bdff', '#c2e7bdff', '#c2e7bcff', '#c1e7bcff', '#c1e6bbff', '#c0e6bbff', '#c0e6baff', '#c0e6baff', '#bfe6baff', '#bfe6b9ff', '#bee5b9ff', '#bee5b8ff', '#bee5b8ff', '#bde5b8ff', '#bde5b7ff', '#bce5b7ff', '#bce4b6ff', '#bce4b6ff', '#bbe4b5ff', '#bbe4b5ff', '#bae4b5ff', '#bae4b4ff', '#b9e3b4ff', '#b9e3b3ff', '#b9e3b3ff', '#b8e3b3ff', '#b8e3b2ff', '#b7e3b2ff', '#b7e2b1ff', '#b7e2b1ff', '#b6e2b0ff', '#b6e2b0ff', '#b5e2b0ff', '#b5e2afff', '#b5e1afff', '#b4e1aeff', '#b4e1aeff', '#b3e1aeff', '#b3e1adff', '#b3e1adff', '#b2e0acff', '#b2e0acff', '#b1e0abff', '#b1e0abff', '#b0e0abff', '#b0dfaaff', '#b0dfaaff', '#afdfa9ff', '#afdfa9ff', '#aedfa9ff', '#aedfa8ff', '#aedea8ff', '#addea7ff', '#addea7ff', '#acdea6ff', '#acdea6ff', '#acdea6ff', '#abdda5ff', '#abdda5ff', '#aadda4ff', '#aadda4ff', '#a9dda4ff', '#a9dda3ff', '#a9dca3ff', '#a8dca2ff', '#a8dca2ff', '#a7dca1ff', '#a7dca1ff', '#a7dca1ff', '#a6dba0ff', '#a6dba0ff', '#a5db9fff', '#a5db9fff', '#a5db9fff', '#a4db9eff', '#a4da9eff', '#a3da9dff', '#a3da9dff', '#a2da9cff', '#a2da9cff', '#a2da9cff', '#a1d99bff', '#a1d99bff', '#a0d99aff', '#9fd89aff', '#9fd89aff', '#9ed899ff', '#9dd899ff', '#9dd798ff', '#9cd798ff', '#9bd797ff', '#9bd697ff', '#9ad697ff', '#99d696ff', '#99d596ff', '#98d595ff', '#97d595ff', '#97d494ff', '#96d494ff', '#95d494ff', '#95d393ff', '#94d393ff', '#93d392ff', '#92d292ff', '#92d291ff', '#91d291ff', '#90d191ff', '#90d190ff', '#8fd190ff', '#8ed08fff', '#8ed08fff', '#8dd08eff', '#8ccf8eff', '#8ccf8eff', '#8bcf8dff', '#8ace8dff', '#8ace8cff', '#89ce8cff', '#88cd8bff', '#88cd8bff', '#87cd8bff', '#86cc8aff', '#86cc8aff', '#85cc89ff', '#84cb89ff', '#84cb88ff', '#83cb88ff', '#82ca88ff', '#82ca87ff', '#81ca87ff', '#80c986ff', '#80c986ff', '#7fc985ff', '#7ec985ff', '#7ec885ff', '#7dc884ff', '#7cc884ff', '#7cc783ff', '#7bc783ff', '#7ac782ff', '#79c682ff', '#79c682ff', '#78c681ff', '#77c581ff', '#77c580ff', '#76c580ff', '#75c47fff', '#75c47fff', '#74c47fff', '#73c37eff', '#73c37eff', '#72c37dff', '#71c27dff', '#71c27cff', '#70c27cff', '#6fc17cff', '#6fc17bff', '#6ec17bff', '#6dc07aff', '#6dc07aff', '#6cc079ff', '#6bbf79ff', '#6bbf79ff', '#6abf78ff', '#69be78ff', '#69be77ff', '#68be77ff', '#67bd76ff', '#67bd76ff', '#66bd76ff', '#65bc75ff', '#65bc75ff', '#64bc74ff', '#63bb74ff', '#62bb73ff', '#62bb73ff', '#61ba73ff', '#60ba72ff', '#60ba72ff', '#5fba71ff', '#5eb971ff', '#5eb970ff', '#5db970ff', '#5cb870ff', '#5cb86fff', '#5bb86fff', '#5ab76eff', '#5ab76eff', '#59b76dff', '#58b66dff', '#58b66dff', '#57b66cff', '#56b56cff', '#56b56bff', '#55b56bff', '#54b46aff', '#54b46aff', '#53b46aff', '#52b369ff', '#52b369ff', '#51b368ff', '#50b268ff', '#50b267ff', '#4fb267ff', '#4eb167ff', '#4eb166ff', '#4db166ff', '#4cb065ff', '#4cb065ff', '#4bb064ff', '#4aaf64ff', '#49af64ff', '#49af63ff', '#48ae63ff', '#47ae62ff', '#47ae62ff', '#46ad61ff', '#45ad61ff', '#45ad61ff', '#44ac60ff', '#43ac60ff', '#43ac5fff', '#42ac5fff', '#41ab5eff', '#41ab5eff', '#40ab5eff', '#3faa5dff', '#3faa5dff', '#3eaa5cff', '#3da95cff', '#3da95bff', '#3ca95bff', '#3ba85bff', '#3ba85aff', '#3aa85aff', '#39a759ff', '#39a759ff', '#38a758ff', '#37a658ff', '#37a658ff', '#36a657ff', '#35a557ff', '#35a556ff', '#34a556ff', '#33a455ff', '#32a455ff', '#32a455ff', '#31a354ff', '#31a354ff', '#30a354ff', '#30a253ff', '#30a253ff', '#2fa253ff', '#2fa153ff', '#2fa152ff', '#2fa152ff', '#2ea052ff', '#2ea052ff', '#2ea051ff', '#2d9f51ff', '#2d9f51ff', '#2d9f51ff', '#2c9e50ff', '#2c9e50ff', '#2c9e50ff', '#2c9d50ff', '#2b9d4fff', '#2b9d4fff', '#2b9d4fff', '#2a9c4fff', '#2a9c4eff', '#2a9c4eff', '#299b4eff', '#299b4eff', '#299b4dff', '#299a4dff', '#289a4dff', '#289a4dff', '#28994dff', '#27994cff', '#27994cff', '#27984cff', '#27984cff', '#26984bff', '#26974bff', '#26974bff', '#25974bff', '#25964aff', '#25964aff', '#24964aff', '#24954aff', '#249549ff', '#249549ff', '#239449ff', '#239449ff', '#239448ff', '#229348ff', '#229348ff', '#229348ff', '#229247ff', '#219247ff', '#219247ff', '#219147ff', '#209146ff', '#209146ff', '#209046ff', '#1f9046ff', '#1f9046ff', '#1f8f45ff', '#1f8f45ff', '#1e8f45ff', '#1e8e45ff', '#1e8e44ff', '#1d8e44ff', '#1d8e44ff', '#1d8d44ff', '#1c8d43ff', '#1c8d43ff', '#1c8c43ff', '#1c8c43ff', '#1b8c42ff', '#1b8b42ff', '#1b8b42ff', '#1a8b42ff', '#1a8a41ff', '#1a8a41ff', '#1a8a41ff', '#198941ff', '#198940ff', '#198940ff', '#188840ff', '#188840ff', '#18883fff', '#17873fff', '#17873fff', '#17873fff', '#17863fff', '#16863eff', '#16863eff', '#16853eff', '#15853eff', '#15853dff', '#15843dff', '#14843dff', '#14843dff', '#14833cff', '#14833cff', '#13833cff', '#13823cff', '#13823bff', '#12823bff', '#12813bff', '#12813bff', '#12813aff', '#11803aff', '#11803aff', '#11803aff', '#108039ff', '#107f39ff', '#107f39ff', '#0f7f39ff', '#0f7e38ff', '#0f7e38ff', '#0f7e38ff', '#0e7d38ff', '#0e7d38ff', '#0e7d37ff', '#0d7c37ff', '#0d7c37ff', '#0d7c37ff', '#0d7b36ff', '#0c7b36ff', '#0c7b36ff', '#0c7a36ff', '#0b7a35ff', '#0b7a35ff', '#0b7935ff', '#0a7935ff', '#0a7934ff', '#0a7834ff', '#0a7834ff', '#097834ff', '#097733ff', '#097733ff', '#087733ff', '#087633ff', '#087632ff', '#077632ff', '#077532ff', '#077532ff', '#077531ff', '#067431ff', '#067431ff', '#067431ff', '#057331ff', '#057330ff', '#057330ff', '#057230ff', '#047230ff', '#04722fff', '#04712fff', '#03712fff', '#03712fff', '#03712eff', '#02702eff', '#02702eff', '#02702eff', '#026f2dff', '#016f2dff', '#016f2dff', '#016e2dff', '#006e2cff', '#006e2cff', '#006d2cff', '#006d2cff']);
+    
+
+    color_map_1b5101395edffe70803a3c525881d867.x = d3.scale.linear()
+              .domain([0.0, 2919.0833333333335])
+              .range([0, 450 - 50]);
+
+    color_map_1b5101395edffe70803a3c525881d867.legend = L.control({position: 'topright'});
+    color_map_1b5101395edffe70803a3c525881d867.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_1b5101395edffe70803a3c525881d867.legend.addTo(map_4dbdc222791c9b7238d693d989537baa);
+
+    color_map_1b5101395edffe70803a3c525881d867.xAxis = d3.svg.axis()
+        .scale(color_map_1b5101395edffe70803a3c525881d867.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.0, 973.0277777777778, 1946.0555555555557, 2919.0833333333335]);
+
+    color_map_1b5101395edffe70803a3c525881d867.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_1b5101395edffe70803a3c525881d867.g = color_map_1b5101395edffe70803a3c525881d867.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_1b5101395edffe70803a3c525881d867.g.selectAll("rect")
+        .data(color_map_1b5101395edffe70803a3c525881d867.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_1b5101395edffe70803a3c525881d867.x(color_map_1b5101395edffe70803a3c525881d867.color.domain()[i - 1]) : color_map_1b5101395edffe70803a3c525881d867.x.range()[0],
+            x1: i < color_map_1b5101395edffe70803a3c525881d867.color.domain().length ? color_map_1b5101395edffe70803a3c525881d867.x(color_map_1b5101395edffe70803a3c525881d867.color.domain()[i]) : color_map_1b5101395edffe70803a3c525881d867.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_1b5101395edffe70803a3c525881d867.g.call(color_map_1b5101395edffe70803a3c525881d867.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Media mensual de usos");
+</script>
+</html>

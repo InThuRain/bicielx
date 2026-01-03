@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Uso por hora del día – evolución anual</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg: #f5f5f5;
+      --card-bg: #ffffff;
+      --accent: #0f766e;
+      --accent2: #14b8a6;
+      --text: #111827;
+      --shadow: 0 4px 10px rgba(0,0,0,0.06);
+      --radius-lg: 18px;
+      --radius-sm: 10px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      background: linear-gradient(120deg, var(--accent), var(--accent2));
+      color: white;
+      padding: 1.7rem 1rem;
+      box-shadow: var(--shadow);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.9rem;
+      letter-spacing: 0.04em;
+    }
+    .subtitle {
+      margin: 0.4rem 0 0;
+      opacity: 0.9;
+      font-size: 0.95rem;
+    }
+    main {
+      max-width: 1200px;
+      margin: 1.5rem auto 2.5rem;
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+    }
+    section h2 {
+      margin: 0 0 0.7rem;
+      font-size: 1.4rem;
+    }
+    .section-desc {
+      font-size: 0.9rem;
+      color: #4b5563;
+      margin-bottom: 0.6rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.2rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow);
+      padding: 0.9rem 0.9rem 0.95rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      cursor: pointer;
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: var(--radius-sm);
+      display: block;
+    }
+    .card-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+    .card-desc {
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+    .footer-note {
+      font-size: 0.8rem;
+      color: #6b7280;
+      margin-top: 0.5rem;
+      text-align: right;
+    }
+    footer {
+      font-size: 0.8rem;
+      color: #6b7280;
+      text-align: center;
+      padding: 1rem 0 1.2rem;
+    }
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.78);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      padding: 1rem;
+    }
+    .modal img {
+      max-width: 96vw;
+      max-height: 92vh;
+      border-radius: var(--radius-sm);
+      box-shadow: 0 0 18px rgba(0,0,0,0.7);
+      background: #000;
+    }
+    .modal-close {
+      position: fixed;
+      top: 18px;
+      right: 26px;
+      font-size: 2.1rem;
+      color: #f9fafb;
+      cursor: pointer;
+      font-weight: 600;
+      z-index: 1001;
+    }
+    .modal-close:hover {
+      color: #e5e7eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #020617;
+        color: #e5e7eb;
+      }
+      .card {
+        background: #020617;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.7);
+      }
+      .card-desc,
+      .footer-note {
+        color: #9ca3af;
+      }
+      footer {
+        color: #9ca3af;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <h1>Uso por hora del día – evolución anual</h1>
+    <p class="subtitle">
+      Comparación de la distribución horaria del uso de BiciElx: serie global y detalle año a año.
+    </p>
+  </div>
+</header>
+<main>
+  <section>
+    <h2>Gráficos globales y anuales</h2>
+    <p class="section-desc">
+      Cada tarjeta muestra la distribución de usos por hora del día. Haz clic en cualquier gráfico para verlo en grande.
+    </p>
+    <div class="grid">
+
+      <article class="card" onclick="openModal('hourly_usage_global_all_years.png')">
+        <img src="hourly_usage_global_all_years.png" alt="Uso global por hora del día (toda la serie)">
+        <div class="card-title">Uso global por hora del día (toda la serie)</div>
+        <div class="card-desc">Distribución horaria agregada de todos los años disponibles.</div>
+      </article>
+
+      <article class="card" onclick="openModal('hourly_usage_2015.png')">
+        <img src="hourly_usage_2015.png" alt="Uso por hora del día en 2015">
+        <div class="card-title">Uso por hora del día en 2015</div>
+        <div class="card-desc">Distribución horaria de los usos de BiciElx durante el año 2015.</div>
+      </article>
+
+      <article class="card" onclick="openModal('hourly_usage_2016.png')">
+        <img src="hourly_usage_2016.png" alt="Uso por hora del día en 2016">
+        <div class="card-title">Uso por hora del día en 2016</div>
+        <div class="card-desc">Distribución horaria de los usos de BiciElx durante el año 2016.</div>
+      </article>
+
+      <article class="card" onclick="openModal('hourly_usage_2017.png')">
+        <img src="hourly_usage_2017.png" alt="Uso por hora del día en 2017">
+        <div class="card-title">Uso por hora del día en 2017</div>
+        <div class="card-desc">Distribución horaria de los usos de BiciElx durante el año 2017.</div>
+      </article>
+
+      <article class="card" onclick="openModal('hourly_usage_2018.png')">
+        <img src="hourly_usage_2018.png" alt="Uso por hora del día en 2018">
+        <div class="card-title">Uso por hora del día en 2018</div>
+        <div class="card-desc">Distribución horaria de los usos de BiciElx durante el año 2018.</div>
+      </article>
+
+      <article class="card" onclick="openModal('hourly_usage_2019.png')">
+        <img src="hourly_usage_2019.png" alt="Uso por hora del día en 2019">
+        <div class="card-title">Uso por hora del día en 2019</div>
+        <div class="card-desc">Distribución horaria de los usos de BiciElx durante el año 2019.</div>
+      </article>
+
+      <article class="card" onclick="openModal('hourly_usage_2020.png')">
+        <img src="hourly_usage_2020.png" alt="Uso por hora del día en 2020">
+        <div class="card-title">Uso por hora del día en 2020</div>
+        <div class="card-desc">Distribución horaria de los usos de BiciElx durante el año 2020.</div>
+      </article>
+
+      <article class="card" onclick="openModal('hourly_usage_2021.png')">
+        <img src="hourly_usage_2021.png" alt="Uso por hora del día en 2021">
+        <div class="card-title">Uso por hora del día en 2021</div>
+        <div class="card-desc">Distribución horaria de los usos de BiciElx durante el año 2021.</div>
+      </article>
+
+      <article class="card" onclick="openModal('hourly_usage_2022.png')">
+        <img src="hourly_usage_2022.png" alt="Uso por hora del día en 2022">
+        <div class="card-title">Uso por hora del día en 2022</div>
+        <div class="card-desc">Distribución horaria de los usos de BiciElx durante el año 2022.</div>
+      </article>
+
+      <article class="card" onclick="openModal('hourly_usage_2023.png')">
+        <img src="hourly_usage_2023.png" alt="Uso por hora del día en 2023">
+        <div class="card-title">Uso por hora del día en 2023</div>
+        <div class="card-desc">Distribución horaria de los usos de BiciElx durante el año 2023.</div>
+      </article>
+
+      <article class="card" onclick="openModal('hourly_usage_2024.png')">
+        <img src="hourly_usage_2024.png" alt="Uso por hora del día en 2024">
+        <div class="card-title">Uso por hora del día en 2024</div>
+        <div class="card-desc">Distribución horaria de los usos de BiciElx durante el año 2024.</div>
+      </article>
+
+      <article class="card" onclick="openModal('hourly_usage_2025.png')">
+        <img src="hourly_usage_2025.png" alt="Uso por hora del día en 2025">
+        <div class="card-title">Uso por hora del día en 2025</div>
+        <div class="card-desc">Distribución horaria de los usos de BiciElx durante el año 2025.</div>
+      </article>
+
+    </div>
+    <p class="footer-note">
+      Datos agregados por hora del día para toda la serie y para cada año disponible.
+    </p>
+  </section>
+</main>
+
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <span class="modal-close" onclick="closeModal()">×</span>
+  <img id="modalImg" src="">
+</div>
+
+<script>
+  function openModal(src) {
+    var modal = document.getElementById("imageModal");
+    var img = document.getElementById("modalImg");
+    img.src = src;
+    modal.style.display = "flex";
+  }
+  function closeModal() {
+    var modal = document.getElementById("imageModal");
+    modal.style.display = "none";
+  }
+  document.addEventListener("DOMContentLoaded", function() {
+    var img = document.getElementById("modalImg");
+    img.addEventListener("click", function(event) {
+      event.stopPropagation();
+    });
+  });
+</script>
+
+<footer>
+  Página generada automáticamente a partir de los datos de uso de BiciElx.
+</footer>
+</body>
+</html>

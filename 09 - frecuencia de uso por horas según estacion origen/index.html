@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Uso por hora del día – BiciElx</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg: #f5f5f5;
+      --card-bg: #ffffff;
+      --accent: #0f766e;
+      --accent2: #14b8a6;
+      --text: #111827;
+      --shadow: 0 4px 10px rgba(0,0,0,0.06);
+      --radius-lg: 18px;
+      --radius-sm: 10px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      background: linear-gradient(120deg, var(--accent), var(--accent2));
+      color: white;
+      padding: 1.7rem 1rem;
+      box-shadow: var(--shadow);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.9rem;
+      letter-spacing: 0.04em;
+    }
+    .subtitle {
+      margin: 0.4rem 0 0;
+      opacity: 0.9;
+      font-size: 0.95rem;
+    }
+    main {
+      max-width: 1200px;
+      margin: 1.5rem auto 2.5rem;
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+    }
+    section h2 {
+      margin: 0 0 0.7rem;
+      font-size: 1.4rem;
+    }
+    .section-desc {
+      font-size: 0.9rem;
+      color: #4b5563;
+      margin-bottom: 0.6rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.2rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow);
+      padding: 0.9rem 0.9rem 0.95rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      cursor: pointer;
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: var(--radius-sm);
+      display: block;
+    }
+    .card-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+    .card-desc {
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+    .footer-note {
+      font-size: 0.8rem;
+      color: #6b7280;
+      margin-top: 0.5rem;
+      text-align: right;
+    }
+    footer {
+      font-size: 0.8rem;
+      color: #6b7280;
+      text-align: center;
+      padding: 1rem 0 1.2rem;
+    }
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.78);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      padding: 1rem;
+    }
+    .modal img {
+      max-width: 96vw;
+      max-height: 92vh;
+      border-radius: var(--radius-sm);
+      box-shadow: 0 0 18px rgba(0,0,0,0.7);
+      background: #000;
+    }
+    .modal-close {
+      position: fixed;
+      top: 18px;
+      right: 26px;
+      font-size: 2.1rem;
+      color: #f9fafb;
+      cursor: pointer;
+      font-weight: 600;
+      z-index: 1001;
+    }
+    .modal-close:hover {
+      color: #e5e7eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #020617;
+        color: #e5e7eb;
+      }
+      .card {
+        background: #020617;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.7);
+      }
+      .card-desc,
+      .footer-note {
+        color: #9ca3af;
+      }
+      footer {
+        color: #9ca3af;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <h1>Uso por hora del día – estaciones de origen</h1>
+    <p class="subtitle">
+      Distribución horaria de los usos de BiciElx: vista global y detalle por estación de origen.
+    </p>
+  </div>
+</header>
+<main>
+  <section>
+    <h2>Gráficos por estación y global</h2>
+    <p class="section-desc">
+      Cada tarjeta corresponde a una estación (como origen) o al uso global del sistema.
+      Haz clic en cualquier gráfico para verlo en grande.
+    </p>
+    <div class="grid">
+
+      <article class="card" onclick="openModal('000 - uso_global_por_hora.png')">
+        <img src="000 - uso_global_por_hora.png" alt="Uso global de BiciElx por hora del día">
+        <div class="card-title">Uso global de BiciElx por hora del día</div>
+        <div class="card-desc">Distribución horaria de todos los usos del sistema, sumando todas las estaciones.</div>
+      </article>
+
+      <article class="card" onclick="openModal('001 - estació_d’autobusos.png')">
+        <img src="001 - estació_d’autobusos.png" alt="Estación 001 – Estació d’Autobusos">
+        <div class="card-title">Estación 001 – Estació d’Autobusos</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('002 - oficina_de_turisme.png')">
+        <img src="002 - oficina_de_turisme.png" alt="Estación 002 – Oficina de Turisme">
+        <div class="card-title">Estación 002 – Oficina de Turisme</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('003 - plaça_de_la_llotja.png')">
+        <img src="003 - plaça_de_la_llotja.png" alt="Estación 003 – Plaça de la Llotja">
+        <div class="card-title">Estación 003 – Plaça de la Llotja</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('004 - plaça_del_raval.png')">
+        <img src="004 - plaça_del_raval.png" alt="Estación 004 – Plaça del Raval">
+        <div class="card-title">Estación 004 – Plaça del Raval</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('005 - centre_de_congressos.png')">
+        <img src="005 - centre_de_congressos.png" alt="Estación 005 – Centre de Congressos">
+        <div class="card-title">Estación 005 – Centre de Congressos</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('006 - ajuntament.png')">
+        <img src="006 - ajuntament.png" alt="Estación 006 – Ajuntament">
+        <div class="card-title">Estación 006 – Ajuntament</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('007 - pavelló_municipal.png')">
+        <img src="007 - pavelló_municipal.png" alt="Estación 007 – Pavelló Municipal">
+        <div class="card-title">Estación 007 – Pavelló Municipal</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('008 - polivalent_de_carrús.png')">
+        <img src="008 - polivalent_de_carrús.png" alt="Estación 008 – Polivalent de Carrús">
+        <div class="card-title">Estación 008 – Polivalent de Carrús</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('009 - biblioteca_de_sant_josep.png')">
+        <img src="009 - biblioteca_de_sant_josep.png" alt="Estación 009 – Biblioteca de Sant Josep">
+        <div class="card-title">Estación 009 – Biblioteca de Sant Josep</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('010 - l’escorxador.png')">
+        <img src="010 - l’escorxador.png" alt="Estación 010 – L’Escorxador">
+        <div class="card-title">Estación 010 – L’Escorxador</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('011 - plaça_de_crevillent.png')">
+        <img src="011 - plaça_de_crevillent.png" alt="Estación 011 – Plaça de Crevillent">
+        <div class="card-title">Estación 011 – Plaça de Crevillent</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('012 - ambulatori_de_sant_fermí.png')">
+        <img src="012 - ambulatori_de_sant_fermí.png" alt="Estación 012 – Ambulatori de Sant Fermí">
+        <div class="card-title">Estación 012 – Ambulatori de Sant Fermí</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('013 - jardí_del_1r_de_maig.png')">
+        <img src="013 - jardí_del_1r_de_maig.png" alt="Estación 013 – Jardí del 1r de Maig">
+        <div class="card-title">Estación 013 – Jardí del 1r de Maig</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('014 - comissaria.png')">
+        <img src="014 - comissaria.png" alt="Estación 014 – Comissaria">
+        <div class="card-title">Estación 014 – Comissaria</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('015 - av._llibertat___reina_victòria.png')">
+        <img src="015 - av._llibertat___reina_victòria.png" alt="Estación 015 – Av. Llibertat / Reina Victòria">
+        <div class="card-title">Estación 015 – Av. Llibertat / Reina Victòria</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('016 - jardí_d’asp.png')">
+        <img src="016 - jardí_d’asp.png" alt="Estación 016 – Jardí d’Asp">
+        <div class="card-title">Estación 016 – Jardí d’Asp</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('017 - plaça_de_castella.png')">
+        <img src="017 - plaça_de_castella.png" alt="Estación 017 – Plaça de Castella">
+        <div class="card-title">Estación 017 – Plaça de Castella</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('018 - poliesportiu_d’altabix.png')">
+        <img src="018 - poliesportiu_d’altabix.png" alt="Estación 018 – Poliesportiu d’Altabix">
+        <div class="card-title">Estación 018 – Poliesportiu d’Altabix</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('019 - jesuïtines.png')">
+        <img src="019 - jesuïtines.png" alt="Estación 019 – Jesuïtines">
+        <div class="card-title">Estación 019 – Jesuïtines</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('020 - antoni_mena___fra_jaume_torres.png')">
+        <img src="020 - antoni_mena___fra_jaume_torres.png" alt="Estación 020 – Antoni Mena / Fra Jaume Torres">
+        <div class="card-title">Estación 020 – Antoni Mena / Fra Jaume Torres</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('021 - c.p._mariano_benlliure.png')">
+        <img src="021 - c.p._mariano_benlliure.png" alt="Estación 021 – C.P. Mariano Benlliure">
+        <div class="card-title">Estación 021 – C.P. Mariano Benlliure</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('022 - av._llauradors___eslava.png')">
+        <img src="022 - av._llauradors___eslava.png" alt="Estación 022 – Av. Llauradors / Eslava">
+        <div class="card-title">Estación 022 – Av. Llauradors / Eslava</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('023 - conrado_del_campo___trinquet.png')">
+        <img src="023 - conrado_del_campo___trinquet.png" alt="Estación 023 – Conrado del Campo / Trinquet">
+        <div class="card-title">Estación 023 – Conrado del Campo / Trinquet</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('024 - policia_local.png')">
+        <img src="024 - policia_local.png" alt="Estación 024 – Policia Local">
+        <div class="card-title">Estación 024 – Policia Local</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('025 - cor_de_jesús.png')">
+        <img src="025 - cor_de_jesús.png" alt="Estación 025 – Cor de Jesús">
+        <div class="card-title">Estación 025 – Cor de Jesús</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('026 - umh___escola_oficial_d’idiomes.png')">
+        <img src="026 - umh___escola_oficial_d’idiomes.png" alt="Estación 026 – UMH / Escola Oficial d’Idiomes">
+        <div class="card-title">Estación 026 – UMH / Escola Oficial d’Idiomes</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('027 - umh___pavelló_d’esports.png')">
+        <img src="027 - umh___pavelló_d’esports.png" alt="Estación 027 – UMH / Pavelló d’Esports">
+        <div class="card-title">Estación 027 – UMH / Pavelló d’Esports</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('028 - passeig_de_les_germanies.png')">
+        <img src="028 - passeig_de_les_germanies.png" alt="Estación 028 – Passeig de les Germanies">
+        <div class="card-title">Estación 028 – Passeig de les Germanies</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('029 - casablanca.png')">
+        <img src="029 - casablanca.png" alt="Estación 029 – Casablanca">
+        <div class="card-title">Estación 029 – Casablanca</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('030 - squash.png')">
+        <img src="030 - squash.png" alt="Estación 030 – Squash">
+        <div class="card-title">Estación 030 – Squash</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('031 - sant_antoni.png')">
+        <img src="031 - sant_antoni.png" alt="Estación 031 – Sant Antoni">
+        <div class="card-title">Estación 031 – Sant Antoni</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('032 - centre_de_salut_d’altabix.png')">
+        <img src="032 - centre_de_salut_d’altabix.png" alt="Estación 032 – Centre de Salut d’Altabix">
+        <div class="card-title">Estación 032 – Centre de Salut d’Altabix</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('033 - av._libertat___l’aljub.png')">
+        <img src="033 - av._libertat___l’aljub.png" alt="Estación 033 – Av. Libertat / l’Aljub">
+        <div class="card-title">Estación 033 – Av. Libertat / l’Aljub</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('034 - hospital_general.png')">
+        <img src="034 - hospital_general.png" alt="Estación 034 – Hospital General">
+        <div class="card-title">Estación 034 – Hospital General</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('035 - hospital_del_vinalopó.png')">
+        <img src="035 - hospital_del_vinalopó.png" alt="Estación 035 – Hospital del Vinalopó">
+        <div class="card-title">Estación 035 – Hospital del Vinalopó</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('036 - i.e.s._victoria_kent.png')">
+        <img src="036 - i.e.s._victoria_kent.png" alt="Estación 036 – I.E.S. Victoria Kent">
+        <div class="card-title">Estación 036 – I.E.S. Victoria Kent</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('037 - hort_de_travaló.png')">
+        <img src="037 - hort_de_travaló.png" alt="Estación 037 – Hort de Travaló">
+        <div class="card-title">Estación 037 – Hort de Travaló</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('038 - poliesportiu_de_carrús.png')">
+        <img src="038 - poliesportiu_de_carrús.png" alt="Estación 038 – Poliesportiu de Carrús">
+        <div class="card-title">Estación 038 – Poliesportiu de Carrús</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('039 - francesc_cantó.png')">
+        <img src="039 - francesc_cantó.png" alt="Estación 039 – Francesc Cantó">
+        <div class="card-title">Estación 039 – Francesc Cantó</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('040 - c.p._baix_vinalopó.png')">
+        <img src="040 - c.p._baix_vinalopó.png" alt="Estación 040 – C.P. Baix Vinalopó">
+        <div class="card-title">Estación 040 – C.P. Baix Vinalopó</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('041 - dipòsit_municipal_de_carrús.png')">
+        <img src="041 - dipòsit_municipal_de_carrús.png" alt="Estación 041 – Dipòsit Municipal de Carrús">
+        <div class="card-title">Estación 041 – Dipòsit Municipal de Carrús</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('042 - multi_aventura_travaló.png')">
+        <img src="042 - multi_aventura_travaló.png" alt="Estación 042 – Multi Aventura Travaló">
+        <div class="card-title">Estación 042 – Multi Aventura Travaló</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('043 - palmerars_–_ciutat_de_la_justícia.png')">
+        <img src="043 - palmerars_–_ciutat_de_la_justícia.png" alt="Estación 043 – Palmerars – Ciutat de la Justícia">
+        <div class="card-title">Estación 043 – Palmerars – Ciutat de la Justícia</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('044 - portes_encarnades.png')">
+        <img src="044 - portes_encarnades.png" alt="Estación 044 – Portes Encarnades">
+        <div class="card-title">Estación 044 – Portes Encarnades</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('045 - plaça_de_barcelona.png')">
+        <img src="045 - plaça_de_barcelona.png" alt="Estación 045 – Plaça de Barcelona">
+        <div class="card-title">Estación 045 – Plaça de Barcelona</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('046 - umh___rectorado.png')">
+        <img src="046 - umh___rectorado.png" alt="Estación 046 – UMH / Rectorado">
+        <div class="card-title">Estación 046 – UMH / Rectorado</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('047 - c.p._virgen_de_la_asunción.png')">
+        <img src="047 - c.p._virgen_de_la_asunción.png" alt="Estación 047 – C.P. Virgen de la Asunción">
+        <div class="card-title">Estación 047 – C.P. Virgen de la Asunción</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('048 - av._corts_valencianes.png')">
+        <img src="048 - av._corts_valencianes.png" alt="Estación 048 – Av. Corts Valencianes">
+        <div class="card-title">Estación 048 – Av. Corts Valencianes</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('049 - av._alicante_59.png')">
+        <img src="049 - av._alicante_59.png" alt="Estación 049 – Av. Alicante 59">
+        <div class="card-title">Estación 049 – Av. Alicante 59</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('050 - borreguet.png')">
+        <img src="050 - borreguet.png" alt="Estación 050 – Borreguet">
+        <div class="card-title">Estación 050 – Borreguet</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('051 - ciudad_deportiva_zona_sur.png')">
+        <img src="051 - ciudad_deportiva_zona_sur.png" alt="Estación 051 – Ciudad deportiva zona sur">
+        <div class="card-title">Estación 051 – Ciudad deportiva zona sur</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('052 - centro_salud_el_toscar.png')">
+        <img src="052 - centro_salud_el_toscar.png" alt="Estación 052 – Centro salud el Toscar">
+        <div class="card-title">Estación 052 – Centro salud el Toscar</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('053 - c.p._victor_pradera.png')">
+        <img src="053 - c.p._victor_pradera.png" alt="Estación 053 – C.P. Victor Pradera">
+        <div class="card-title">Estación 053 – C.P. Victor Pradera</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('054 - plaza_de_benidorm.png')">
+        <img src="054 - plaza_de_benidorm.png" alt="Estación 054 – Plaza de Benidorm">
+        <div class="card-title">Estación 054 – Plaza de Benidorm</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('055 - pere_joan_perpinyà.png')">
+        <img src="055 - pere_joan_perpinyà.png" alt="Estación 055 – Pere Joan Perpinyà">
+        <div class="card-title">Estación 055 – Pere Joan Perpinyà</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('056 - umh___torre_vaillo.png')">
+        <img src="056 - umh___torre_vaillo.png" alt="Estación 056 – UMH / Torre Vaillo">
+        <div class="card-title">Estación 056 – UMH / Torre Vaillo</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('057 - ies_torrellano.png')">
+        <img src="057 - ies_torrellano.png" alt="Estación 057 – IES Torrellano">
+        <div class="card-title">Estación 057 – IES Torrellano</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('058 - polideportivo_torrellano.png')">
+        <img src="058 - polideportivo_torrellano.png" alt="Estación 058 – Polideportivo Torrellano">
+        <div class="card-title">Estación 058 – Polideportivo Torrellano</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('059 - calle_san_crispín_1_torrellano.png')">
+        <img src="059 - calle_san_crispín_1_torrellano.png" alt="Estación 059 – Calle San Crispín 1 Torrellano">
+        <div class="card-title">Estación 059 – Calle San Crispín 1 Torrellano</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('060 - carrer_de_la_figuera_2_torrellano.png')">
+        <img src="060 - carrer_de_la_figuera_2_torrellano.png" alt="Estación 060 – Carrer de la Figuera 2 Torrellano">
+        <div class="card-title">Estación 060 – Carrer de la Figuera 2 Torrellano</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('061 - avenida_novelda_191.png')">
+        <img src="061 - avenida_novelda_191.png" alt="Estación 061 – Avenida Novelda 191">
+        <div class="card-title">Estación 061 – Avenida Novelda 191</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('062 - calle_inca_con_brea.png')">
+        <img src="062 - calle_inca_con_brea.png" alt="Estación 062 – Calle Inca con brea">
+        <div class="card-title">Estación 062 – Calle Inca con brea</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('063 - ceip_eugeni_d’ors.png')">
+        <img src="063 - ceip_eugeni_d’ors.png" alt="Estación 063 – CEIP Eugeni d’Ors">
+        <div class="card-title">Estación 063 – CEIP Eugeni d’Ors</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('064 - jardín_25_de_abril.png')">
+        <img src="064 - jardín_25_de_abril.png" alt="Estación 064 – Jardín 25 de abril">
+        <div class="card-title">Estación 064 – Jardín 25 de abril</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('065 - c.p._el_toscar.png')">
+        <img src="065 - c.p._el_toscar.png" alt="Estación 065 – C.P. El toscar">
+        <div class="card-title">Estación 065 – C.P. El toscar</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('066 - jardín_escritor_juan_fuster.png')">
+        <img src="066 - jardín_escritor_juan_fuster.png" alt="Estación 066 – Jardín escritor Juan Fuster">
+        <div class="card-title">Estación 066 – Jardín escritor Juan Fuster</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('067 - calle_grao_con_victoria_kent.png')">
+        <img src="067 - calle_grao_con_victoria_kent.png" alt="Estación 067 – Calle Grao con Victoria Kent">
+        <div class="card-title">Estación 067 – Calle Grao con Victoria Kent</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('068 - arturo_salvetti_pardo.png')">
+        <img src="068 - arturo_salvetti_pardo.png" alt="Estación 068 – Arturo Salvetti Pardo">
+        <div class="card-title">Estación 068 – Arturo Salvetti Pardo</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('069 - olegario_domarco_seller_44.png')">
+        <img src="069 - olegario_domarco_seller_44.png" alt="Estación 069 – Olegario Domarco Seller 44">
+        <div class="card-title">Estación 069 – Olegario Domarco Seller 44</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('070 - libertad-diagonal.png')">
+        <img src="070 - libertad-diagonal.png" alt="Estación 070 – Libertad-Diagonal">
+        <div class="card-title">Estación 070 – Libertad-Diagonal</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('071 - ies_carrús.png')">
+        <img src="071 - ies_carrús.png" alt="Estación 071 – IES Carrús">
+        <div class="card-title">Estación 071 – IES Carrús</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('073 - plaza_de_la_aparadora.png')">
+        <img src="073 - plaza_de_la_aparadora.png" alt="Estación 073 – Plaza de la aparadora">
+        <div class="card-title">Estación 073 – Plaza de la aparadora</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('074 - ies_nit_de_l´albà.png')">
+        <img src="074 - ies_nit_de_l´albà.png" alt="Estación 074 – IES Nit de l´Albà">
+        <div class="card-title">Estación 074 – IES Nit de l´Albà</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('075 - l´aljub.png')">
+        <img src="075 - l´aljub.png" alt="Estación 075 – L´aljub">
+        <div class="card-title">Estación 075 – L´aljub</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('076 - puente_altamira.png')">
+        <img src="076 - puente_altamira.png" alt="Estación 076 – Puente Altamira">
+        <div class="card-title">Estación 076 – Puente Altamira</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('077 - plaza_obispo_siuri.png')">
+        <img src="077 - plaza_obispo_siuri.png" alt="Estación 077 – Plaza Obispo Siuri">
+        <div class="card-title">Estación 077 – Plaza Obispo Siuri</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('078 - jorge_juan_24.png')">
+        <img src="078 - jorge_juan_24.png" alt="Estación 078 – Jorge Juan 24">
+        <div class="card-title">Estación 078 – Jorge Juan 24</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('079 - intercambiador_pasarela.png')">
+        <img src="079 - intercambiador_pasarela.png" alt="Estación 079 – Intercambiador pasarela">
+        <div class="card-title">Estación 079 – Intercambiador pasarela</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('080 - reina_victoria_con_gabriel_miró.png')">
+        <img src="080 - reina_victoria_con_gabriel_miró.png" alt="Estación 080 – Reina Victoria con Gabriel Miró">
+        <div class="card-title">Estación 080 – Reina Victoria con Gabriel Miró</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('081 - c.s._doctor_sapena.png')">
+        <img src="081 - c.s._doctor_sapena.png" alt="Estación 081 – C.S. Doctor Sapena">
+        <div class="card-title">Estación 081 – C.S. Doctor Sapena</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('082 - antonio_machado_73.png')">
+        <img src="082 - antonio_machado_73.png" alt="Estación 082 – Antonio Machado 73">
+        <div class="card-title">Estación 082 – Antonio Machado 73</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('083 - conrado_del_campo_35.png')">
+        <img src="083 - conrado_del_campo_35.png" alt="Estación 083 – Conrado del campo 35">
+        <div class="card-title">Estación 083 – Conrado del campo 35</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('084 - fernanda_santa_maría_64.png')">
+        <img src="084 - fernanda_santa_maría_64.png" alt="Estación 084 – Fernanda Santa María 64">
+        <div class="card-title">Estación 084 – Fernanda Santa María 64</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('085 - sor_josefa_alcorta_34.png')">
+        <img src="085 - sor_josefa_alcorta_34.png" alt="Estación 085 – Sor Josefa Alcorta 34">
+        <div class="card-title">Estación 085 – Sor Josefa Alcorta 34</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('086 - el_corte_inglés.png')">
+        <img src="086 - el_corte_inglés.png" alt="Estación 086 – El Corte Inglés">
+        <div class="card-title">Estación 086 – El Corte Inglés</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('087 - ceip_sanchis_guarner.png')">
+        <img src="087 - ceip_sanchis_guarner.png" alt="Estación 087 – CEIP Sanchis Guarner">
+        <div class="card-title">Estación 087 – CEIP Sanchis Guarner</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('088 - pistas_del_pla.png')">
+        <img src="088 - pistas_del_pla.png" alt="Estación 088 – Pistas del Pla">
+        <div class="card-title">Estación 088 – Pistas del Pla</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('089 - ceip_dama_d´elx.png')">
+        <img src="089 - ceip_dama_d´elx.png" alt="Estación 089 – CEIP Dama d´Elx">
+        <div class="card-title">Estación 089 – CEIP Dama d´Elx</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('090 - centro_salud_el_pla.png')">
+        <img src="090 - centro_salud_el_pla.png" alt="Estación 090 – Centro salud el Pla">
+        <div class="card-title">Estación 090 – Centro salud el Pla</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('091 - centro_social_el_pla.png')">
+        <img src="091 - centro_social_el_pla.png" alt="Estación 091 – Centro social el Pla">
+        <div class="card-title">Estación 091 – Centro social el Pla</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('092 - parking_candalix.png')">
+        <img src="092 - parking_candalix.png" alt="Estación 092 – Parking Candalix">
+        <div class="card-title">Estación 092 – Parking Candalix</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('093 - parque_rey_jaume_i.png')">
+        <img src="093 - parque_rey_jaume_i.png" alt="Estación 093 – Parque Rey Jaume I">
+        <div class="card-title">Estación 093 – Parque Rey Jaume I</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('094 - parking_gran_teatre.png')">
+        <img src="094 - parking_gran_teatre.png" alt="Estación 094 – Parking Gran Teatre">
+        <div class="card-title">Estación 094 – Parking Gran Teatre</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('095 - ies_vicente_verdu.png')">
+        <img src="095 - ies_vicente_verdu.png" alt="Estación 095 – IES Vicente Verdu">
+        <div class="card-title">Estación 095 – IES Vicente Verdu</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('096 - puente_de_santa_teresa.png')">
+        <img src="096 - puente_de_santa_teresa.png" alt="Estación 096 – Puente de Santa Teresa">
+        <div class="card-title">Estación 096 – Puente de Santa Teresa</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('097 - huerto_del_cura.png')">
+        <img src="097 - huerto_del_cura.png" alt="Estación 097 – Huerto del cura">
+        <div class="card-title">Estación 097 – Huerto del cura</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('098 - ies_sixto_marco.png')">
+        <img src="098 - ies_sixto_marco.png" alt="Estación 098 – IES Sixto Marco">
+        <div class="card-title">Estación 098 – IES Sixto Marco</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('099 - ies_la_asunción.png')">
+        <img src="099 - ies_la_asunción.png" alt="Estación 099 – IES La Asunción">
+        <div class="card-title">Estación 099 – IES La Asunción</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('100 - c.s._raval.png')">
+        <img src="100 - c.s._raval.png" alt="Estación 100 – C.S. Raval">
+        <div class="card-title">Estación 100 – C.S. Raval</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('101 - umh-la_galia.png')">
+        <img src="101 - umh-la_galia.png" alt="Estación 101 – UMH-La Galia">
+        <div class="card-title">Estación 101 – UMH-La Galia</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('102 - umh-altabix.png')">
+        <img src="102 - umh-altabix.png" alt="Estación 102 – UMH-Altabix">
+        <div class="card-title">Estación 102 – UMH-Altabix</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('103 - umh-altet.png')">
+        <img src="103 - umh-altet.png" alt="Estación 103 – UMH-Altet">
+        <div class="card-title">Estación 103 – UMH-Altet</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('104 - umh-arenals.png')">
+        <img src="104 - umh-arenals.png" alt="Estación 104 – UMH-Arenals">
+        <div class="card-title">Estación 104 – UMH-Arenals</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('105 - almansa_con_avda._novelda.png')">
+        <img src="105 - almansa_con_avda._novelda.png" alt="Estación 105 – Almansa con Avda. Novelda">
+        <div class="card-title">Estación 105 – Almansa con Avda. Novelda</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('106 - estadio_manolo_jaén.png')">
+        <img src="106 - estadio_manolo_jaén.png" alt="Estación 106 – Estadio Manolo Jaén">
+        <div class="card-title">Estación 106 – Estadio Manolo Jaén</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('107 - josefina_manresa.png')">
+        <img src="107 - josefina_manresa.png" alt="Estación 107 – Josefina Manresa">
+        <div class="card-title">Estación 107 – Josefina Manresa</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('108 - josé_ferrández_cruz.png')">
+        <img src="108 - josé_ferrández_cruz.png" alt="Estación 108 – José Ferrández Cruz">
+        <div class="card-title">Estación 108 – José Ferrández Cruz</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('109 - parque_huerto_del_torreret.png')">
+        <img src="109 - parque_huerto_del_torreret.png" alt="Estación 109 – Parque Huerto del Torreret">
+        <div class="card-title">Estación 109 – Parque Huerto del Torreret</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('110 - avda_novelda_con_obispo_barrachina.png')">
+        <img src="110 - avda_novelda_con_obispo_barrachina.png" alt="Estación 110 – Avda Novelda con Obispo Barrachina">
+        <div class="card-title">Estación 110 – Avda Novelda con Obispo Barrachina</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('111 - avenida_alicante_38.png')">
+        <img src="111 - avenida_alicante_38.png" alt="Estación 111 – Avenida Alicante 38">
+        <div class="card-title">Estación 111 – Avenida Alicante 38</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('112 - ceip_san_fernando.png')">
+        <img src="112 - ceip_san_fernando.png" alt="Estación 112 – CEIP San Fernando">
+        <div class="card-title">Estación 112 – CEIP San Fernando</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('113 - alcalde_juan_hernández.png')">
+        <img src="113 - alcalde_juan_hernández.png" alt="Estación 113 – Alcalde Juan Hernández">
+        <div class="card-title">Estación 113 – Alcalde Juan Hernández</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('114 - jardin_biólogo_antonio_de_zulueta.png')">
+        <img src="114 - jardin_biólogo_antonio_de_zulueta.png" alt="Estación 114 – Jardin Biólogo Antonio de Zulueta">
+        <div class="card-title">Estación 114 – Jardin Biólogo Antonio de Zulueta</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+      <article class="card" onclick="openModal('115 - passeig_d´atzavares.png')">
+        <img src="115 - passeig_d´atzavares.png" alt="Estación 115 – Passeig d´Atzavares">
+        <div class="card-title">Estación 115 – Passeig d´Atzavares</div>
+        <div class="card-desc">Número de usos por hora del día como estación de origen.</div>
+      </article>
+
+    </div>
+    <p class="footer-note">
+      Datos agregados por hora del día, utilizando toda la serie de BiciElx disponible.
+    </p>
+  </section>
+</main>
+
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <span class="modal-close" onclick="closeModal()">×</span>
+  <img id="modalImg" src="">
+</div>
+
+<script>
+  function openModal(src) {
+    var modal = document.getElementById("imageModal");
+    var img = document.getElementById("modalImg");
+    img.src = src;
+    modal.style.display = "flex";
+  }
+  function closeModal() {
+    var modal = document.getElementById("imageModal");
+    modal.style.display = "none";
+  }
+  document.addEventListener("DOMContentLoaded", function() {
+    var img = document.getElementById("modalImg");
+    img.addEventListener("click", function(event) {
+      event.stopPropagation();
+    });
+  });
+</script>
+
+<footer>
+  Página generada automáticamente a partir de los datos de uso de BiciElx.
+</footer>
+</body>
+</html>

@@ -1,0 +1,2777 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d8f11277a50dc2f6c0e118e796d84bd5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d8f11277a50dc2f6c0e118e796d84bd5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d8f11277a50dc2f6c0e118e796d84bd5 = L.map(
+                "map_d8f11277a50dc2f6c0e118e796d84bd5",
+                {
+                    center: [38.267, -0.695],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+
+            
+
+        
+    
+            var tile_layer_9649dd472225618b940067a78f4e3312 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9649dd472225618b940067a78f4e3312.addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+            var circle_marker_cca29ca0fce0c9756a3447d1211a34c1 = L.circleMarker(
+                [38.272036, -0.694305],
+                {"bubblingMouseEvents": true, "color": "#ff6b00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff6b00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.898803589232303, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_e8c8437f0d2f968d598e4f7b2454662e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c2260dc372155eff78e2ddaf4babacd1 = $(`<div id="html_c2260dc372155eff78e2ddaf4babacd1" style="width: 100.0%; height: 100.0%;">Estació d’Autobusos (1) – 3450 salidas</div>`)[0];
+                popup_e8c8437f0d2f968d598e4f7b2454662e.setContent(html_c2260dc372155eff78e2ddaf4babacd1);
+            
+        
+
+        circle_marker_cca29ca0fce0c9756a3447d1211a34c1.bindPopup(popup_e8c8437f0d2f968d598e4f7b2454662e)
+        ;
+
+        
+    
+    
+            var circle_marker_5b4e869260dfa8d8f26cf27b9d3b6f23 = L.circleMarker(
+                [38.268457, -0.696731],
+                {"bubblingMouseEvents": true, "color": "#ff0000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.0, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_8035f88064da0339ea1e421675be896b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef60331f5275dbf20f56cfada3b356fa = $(`<div id="html_ef60331f5275dbf20f56cfada3b356fa" style="width: 100.0%; height: 100.0%;">Oficina de Turisme (2) – 4012 salidas</div>`)[0];
+                popup_8035f88064da0339ea1e421675be896b.setContent(html_ef60331f5275dbf20f56cfada3b356fa);
+            
+        
+
+        circle_marker_5b4e869260dfa8d8f26cf27b9d3b6f23.bindPopup(popup_8035f88064da0339ea1e421675be896b)
+        ;
+
+        
+    
+    
+            var circle_marker_91cd2369b9674983b44581b0fa3cb26e = L.circleMarker(
+                [38.270117, -0.685963],
+                {"bubblingMouseEvents": true, "color": "#ffb700ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffb700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.414506480558325, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_c4280093d6b690517585dcf2adafdfcc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ce4728be9db411298a0b33321272074 = $(`<div id="html_9ce4728be9db411298a0b33321272074" style="width: 100.0%; height: 100.0%;">Plaça de la Llotja (3) – 3053 salidas</div>`)[0];
+                popup_c4280093d6b690517585dcf2adafdfcc.setContent(html_9ce4728be9db411298a0b33321272074);
+            
+        
+
+        circle_marker_91cd2369b9674983b44581b0fa3cb26e.bindPopup(popup_c4280093d6b690517585dcf2adafdfcc)
+        ;
+
+        
+    
+    
+            var circle_marker_d9e76873377dfb06962785708702e164 = L.circleMarker(
+                [38.260487, -0.698565],
+                {"bubblingMouseEvents": true, "color": "#89ff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#89ff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.683200398803589, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_c8fd82f2ee0de7c14f63c9cb8c0b6a5e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b4549069f93eb7711cc10c8a6575b33 = $(`<div id="html_0b4549069f93eb7711cc10c8a6575b33" style="width: 100.0%; height: 100.0%;">Plaça del Raval (4) – 2055 salidas</div>`)[0];
+                popup_c8fd82f2ee0de7c14f63c9cb8c0b6a5e.setContent(html_0b4549069f93eb7711cc10c8a6575b33);
+            
+        
+
+        circle_marker_d9e76873377dfb06962785708702e164.bindPopup(popup_c8fd82f2ee0de7c14f63c9cb8c0b6a5e)
+        ;
+
+        
+    
+    
+            var circle_marker_a30aa43e0ca9a41e8015a0d0b8047a5e = L.circleMarker(
+                [38.264171, -0.695433],
+                {"bubblingMouseEvents": true, "color": "#ff5800ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff5800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.268943170488534, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_5ffa8b4fdef78b4fc1477b553f48cac5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1fb7205cf2928164099533b17077bd3 = $(`<div id="html_f1fb7205cf2928164099533b17077bd3" style="width: 100.0%; height: 100.0%;">Centre de Congressos (5) – 3549 salidas</div>`)[0];
+                popup_5ffa8b4fdef78b4fc1477b553f48cac5.setContent(html_f1fb7205cf2928164099533b17077bd3);
+            
+        
+
+        circle_marker_a30aa43e0ca9a41e8015a0d0b8047a5e.bindPopup(popup_5ffa8b4fdef78b4fc1477b553f48cac5)
+        ;
+
+        
+    
+    
+            var circle_marker_edf8408ac30a42d8407e4eaa61e48248 = L.circleMarker(
+                [38.265409, -0.699424],
+                {"bubblingMouseEvents": true, "color": "#ff1900ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff1900ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.50274177467597, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_5b8be240499bae5147d09fb370fa9419 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_396bcf8cada476ff64d9420ed3e208d4 = $(`<div id="html_396bcf8cada476ff64d9420ed3e208d4" style="width: 100.0%; height: 100.0%;">Ajuntament (6) – 3879 salidas</div>`)[0];
+                popup_5b8be240499bae5147d09fb370fa9419.setContent(html_396bcf8cada476ff64d9420ed3e208d4);
+            
+        
+
+        circle_marker_edf8408ac30a42d8407e4eaa61e48248.bindPopup(popup_5b8be240499bae5147d09fb370fa9419)
+        ;
+
+        
+    
+    
+            var circle_marker_299e34c861f109fc52fc41e941bb72c2 = L.circleMarker(
+                [38.273904, -0.673121],
+                {"bubblingMouseEvents": true, "color": "#00c738ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00c738ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.899551345962114, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_877b265b956cf2ea1d34a8e20479e087 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_222b9df7cd2ffe76d8d05d3b7767fee5 = $(`<div id="html_222b9df7cd2ffe76d8d05d3b7767fee5" style="width: 100.0%; height: 100.0%;">Pavelló Municipal (7) – 1043 salidas</div>`)[0];
+                popup_877b265b956cf2ea1d34a8e20479e087.setContent(html_222b9df7cd2ffe76d8d05d3b7767fee5);
+            
+        
+
+        circle_marker_299e34c861f109fc52fc41e941bb72c2.bindPopup(popup_877b265b956cf2ea1d34a8e20479e087)
+        ;
+
+        
+    
+    
+            var circle_marker_7d389f00b8548cd6658b45e014097586 = L.circleMarker(
+                [38.270115, -0.713323],
+                {"bubblingMouseEvents": true, "color": "#00db24ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00db24ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.295862412761715, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_3c307b200adc81089c701381737b4fd4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6dac529b6e1f903cb7ba4a2e5b877b7 = $(`<div id="html_c6dac529b6e1f903cb7ba4a2e5b877b7" style="width: 100.0%; height: 100.0%;">Polivalent de Carrús (8) – 1149 salidas</div>`)[0];
+                popup_3c307b200adc81089c701381737b4fd4.setContent(html_c6dac529b6e1f903cb7ba4a2e5b877b7);
+            
+        
+
+        circle_marker_7d389f00b8548cd6658b45e014097586.bindPopup(popup_3c307b200adc81089c701381737b4fd4)
+        ;
+
+        
+    
+    
+            var circle_marker_5cf15d665eabe090753ef252e65b7dc6 = L.circleMarker(
+                [38.259831, -0.701275],
+                {"bubblingMouseEvents": true, "color": "#b8ff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b8ff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.599202392821535, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_5b7dd23f625799edb533dc55acf21ccc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f810bea3ce5e6faaca0b32d8a41ac210 = $(`<div id="html_f810bea3ce5e6faaca0b32d8a41ac210" style="width: 100.0%; height: 100.0%;">Biblioteca de Sant Josep (9) – 2300 salidas</div>`)[0];
+                popup_5b7dd23f625799edb533dc55acf21ccc.setContent(html_f810bea3ce5e6faaca0b32d8a41ac210);
+            
+        
+
+        circle_marker_5cf15d665eabe090753ef252e65b7dc6.bindPopup(popup_5b7dd23f625799edb533dc55acf21ccc)
+        ;
+
+        
+    
+    
+            var circle_marker_1a34c58a8beca2d7d50b32897eaf97cd = L.circleMarker(
+                [38.256839, -0.691995],
+                {"bubblingMouseEvents": true, "color": "#00728dff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00728dff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.239531405782652, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_1a894ea184f3c15ad35dd9b393a64704 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21ace16b60d31d015016f0a40e28a327 = $(`<div id="html_21ace16b60d31d015016f0a40e28a327" style="width: 100.0%; height: 100.0%;">L’Escorxador (10) – 599 salidas</div>`)[0];
+                popup_1a894ea184f3c15ad35dd9b393a64704.setContent(html_21ace16b60d31d015016f0a40e28a327);
+            
+        
+
+        circle_marker_1a34c58a8beca2d7d50b32897eaf97cd.bindPopup(popup_1a894ea184f3c15ad35dd9b393a64704)
+        ;
+
+        
+    
+    
+            var circle_marker_c5df490331d688912fc2f3b5e073e53e = L.circleMarker(
+                [38.261942, -0.708752],
+                {"bubblingMouseEvents": true, "color": "#46ff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#46ff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.374626121635096, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_a12258539e1d51453ee525763ed087f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ff42ff9b88a7f64a5f11e3930bc0370e = $(`<div id="html_ff42ff9b88a7f64a5f11e3930bc0370e" style="width: 100.0%; height: 100.0%;">Plaça de Crevillent (11) – 1705 salidas</div>`)[0];
+                popup_a12258539e1d51453ee525763ed087f0.setContent(html_ff42ff9b88a7f64a5f11e3930bc0370e);
+            
+        
+
+        circle_marker_c5df490331d688912fc2f3b5e073e53e.bindPopup(popup_a12258539e1d51453ee525763ed087f0)
+        ;
+
+        
+    
+    
+            var circle_marker_d54f5ad39022a9b67d65ae21ed9a0068 = L.circleMarker(
+                [38.268924, -0.706933],
+                {"bubblingMouseEvents": true, "color": "#ff4300ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff4300ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.6839481555334, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_20b4c6c44c7a60aefd3047748a25ac04 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d004ea18812daf0d625dce1193dbe068 = $(`<div id="html_d004ea18812daf0d625dce1193dbe068" style="width: 100.0%; height: 100.0%;">Ambulatori de Sant Fermí (12) – 3660 salidas</div>`)[0];
+                popup_20b4c6c44c7a60aefd3047748a25ac04.setContent(html_d004ea18812daf0d625dce1193dbe068);
+            
+        
+
+        circle_marker_d54f5ad39022a9b67d65ae21ed9a0068.bindPopup(popup_20b4c6c44c7a60aefd3047748a25ac04)
+        ;
+
+        
+    
+    
+            var circle_marker_0ae1f1066d2e92bb42a22f4bc370923d = L.circleMarker(
+                [38.274553, -0.708405],
+                {"bubblingMouseEvents": true, "color": "#00936cff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00936cff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.882602193419741, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_46f4502720c27db2dcd7b37c469f1b76 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_43199d043820762bef16e30057a19086 = $(`<div id="html_43199d043820762bef16e30057a19086" style="width: 100.0%; height: 100.0%;">Jardí del 1r de Maig (13) – 771 salidas</div>`)[0];
+                popup_46f4502720c27db2dcd7b37c469f1b76.setContent(html_43199d043820762bef16e30057a19086);
+            
+        
+
+        circle_marker_0ae1f1066d2e92bb42a22f4bc370923d.bindPopup(popup_46f4502720c27db2dcd7b37c469f1b76)
+        ;
+
+        
+    
+    
+            var circle_marker_e6a8b68ffaebcedabd4537c232918c58 = L.circleMarker(
+                [38.262993, -0.688257],
+                {"bubblingMouseEvents": true, "color": "#44ff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#44ff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.344715852442672, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_8987b116990cd5f766ca22c5a7e924d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3ffdcaef0d3109dd9d8d249d0f0be73 = $(`<div id="html_d3ffdcaef0d3109dd9d8d249d0f0be73" style="width: 100.0%; height: 100.0%;">Comissaria (14) – 1697 salidas</div>`)[0];
+                popup_8987b116990cd5f766ca22c5a7e924d0.setContent(html_d3ffdcaef0d3109dd9d8d249d0f0be73);
+            
+        
+
+        circle_marker_e6a8b68ffaebcedabd4537c232918c58.bindPopup(popup_8987b116990cd5f766ca22c5a7e924d0)
+        ;
+
+        
+    
+    
+            var circle_marker_00ebc43a5c4e2b2a397604b54ee9d78c = L.circleMarker(
+                [38.26573, -0.71128],
+                {"bubblingMouseEvents": true, "color": "#fff000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.304087736789631, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_7264984223b26aa77a941ad026025811 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c34bcb12f2903648258bd2474cfcf50 = $(`<div id="html_1c34bcb12f2903648258bd2474cfcf50" style="width: 100.0%; height: 100.0%;">Av. Llibertat / Reina Victòria (15) – 2756 salidas</div>`)[0];
+                popup_7264984223b26aa77a941ad026025811.setContent(html_1c34bcb12f2903648258bd2474cfcf50);
+            
+        
+
+        circle_marker_00ebc43a5c4e2b2a397604b54ee9d78c.bindPopup(popup_7264984223b26aa77a941ad026025811)
+        ;
+
+        
+    
+    
+            var circle_marker_378071a62abcd4f3494287622bc68f66 = L.circleMarker(
+                [38.27609, -0.71529],
+                {"bubblingMouseEvents": true, "color": "#4eff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4eff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.52791625124626, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_a73b72e216e65582b8a1dff29daf17e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_386596c02390187183242a3f4fd3cb03 = $(`<div id="html_386596c02390187183242a3f4fd3cb03" style="width: 100.0%; height: 100.0%;">Jardí d’Asp (16) – 1746 salidas</div>`)[0];
+                popup_a73b72e216e65582b8a1dff29daf17e2.setContent(html_386596c02390187183242a3f4fd3cb03);
+            
+        
+
+        circle_marker_378071a62abcd4f3494287622bc68f66.bindPopup(popup_a73b72e216e65582b8a1dff29daf17e2)
+        ;
+
+        
+    
+    
+            var circle_marker_20f916281c42fe25a261f888b898a60a = L.circleMarker(
+                [38.27662, -0.67801],
+                {"bubblingMouseEvents": true, "color": "#ff1f00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff1f00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.394317048853438, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_bc7039c600344fd008433c25799b9a3f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bde2c1afb6351d7551a78330c3e643e1 = $(`<div id="html_bde2c1afb6351d7551a78330c3e643e1" style="width: 100.0%; height: 100.0%;">Plaça de Castella (17) – 3850 salidas</div>`)[0];
+                popup_bc7039c600344fd008433c25799b9a3f.setContent(html_bde2c1afb6351d7551a78330c3e643e1);
+            
+        
+
+        circle_marker_20f916281c42fe25a261f888b898a60a.bindPopup(popup_bc7039c600344fd008433c25799b9a3f)
+        ;
+
+        
+    
+    
+            var circle_marker_ee36e3f220e2296b8a814d55107e53f1 = L.circleMarker(
+                [38.27832, -0.67195],
+                {"bubblingMouseEvents": true, "color": "#62ff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#62ff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.931704885343969, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_6c14aa53aac606534f1580724810b70f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa3657d07df40b7e8cad8b6a26aa5c00 = $(`<div id="html_fa3657d07df40b7e8cad8b6a26aa5c00" style="width: 100.0%; height: 100.0%;">Poliesportiu d’Altabix (18) – 1854 salidas</div>`)[0];
+                popup_6c14aa53aac606534f1580724810b70f.setContent(html_fa3657d07df40b7e8cad8b6a26aa5c00);
+            
+        
+
+        circle_marker_ee36e3f220e2296b8a814d55107e53f1.bindPopup(popup_6c14aa53aac606534f1580724810b70f)
+        ;
+
+        
+    
+    
+            var circle_marker_8206dfa755d02020cf25221368927572 = L.circleMarker(
+                [38.26674, -0.69328],
+                {"bubblingMouseEvents": true, "color": "#ff4d00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff4d00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.482053838484546, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_f8f784c5a1b556343743b9f6dd7edc79 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_25a72f8612695c045635ea9c62d5d44f = $(`<div id="html_25a72f8612695c045635ea9c62d5d44f" style="width: 100.0%; height: 100.0%;">Jesuïtines (19) – 3606 salidas</div>`)[0];
+                popup_f8f784c5a1b556343743b9f6dd7edc79.setContent(html_25a72f8612695c045635ea9c62d5d44f);
+            
+        
+
+        circle_marker_8206dfa755d02020cf25221368927572.bindPopup(popup_f8f784c5a1b556343743b9f6dd7edc79)
+        ;
+
+        
+    
+    
+            var circle_marker_93b0e71791832f3b455b6e55a36ca874 = L.circleMarker(
+                [38.25835, -0.70852],
+                {"bubblingMouseEvents": true, "color": "#00e916ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00e916ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.561316051844466, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_a306814564ffffb81e5802954624f1f2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc8fb99eecbcc0dde914cb0aee90cb9a = $(`<div id="html_cc8fb99eecbcc0dde914cb0aee90cb9a" style="width: 100.0%; height: 100.0%;">Antoni Mena / Fra Jaume Torres (20) – 1220 salidas</div>`)[0];
+                popup_a306814564ffffb81e5802954624f1f2.setContent(html_cc8fb99eecbcc0dde914cb0aee90cb9a);
+            
+        
+
+        circle_marker_93b0e71791832f3b455b6e55a36ca874.bindPopup(popup_a306814564ffffb81e5802954624f1f2)
+        ;
+
+        
+    
+    
+            var circle_marker_277ce51d0d3262e041f84f8e62f57a25 = L.circleMarker(
+                [38.25923, -0.7109],
+                {"bubblingMouseEvents": true, "color": "#00d32cff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00d32cff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.123878364905284, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_15db8313a2a28e285dfea20f989fe92a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a19fc5d99839a76cc5836670ca4834ad = $(`<div id="html_a19fc5d99839a76cc5836670ca4834ad" style="width: 100.0%; height: 100.0%;">C.P. Mariano Benlliure (21) – 1103 salidas</div>`)[0];
+                popup_15db8313a2a28e285dfea20f989fe92a.setContent(html_a19fc5d99839a76cc5836670ca4834ad);
+            
+        
+
+        circle_marker_277ce51d0d3262e041f84f8e62f57a25.bindPopup(popup_15db8313a2a28e285dfea20f989fe92a)
+        ;
+
+        
+    
+    
+            var circle_marker_a13fb0d4d908a3fce1406492aa8a9414 = L.circleMarker(
+                [38.25399, -0.70548],
+                {"bubblingMouseEvents": true, "color": "#00b04fff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b04fff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.443419740777667, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_911fb792e10f38e96f21ab60ea922867 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d295f1ac76a1f52a62e15549b7c33953 = $(`<div id="html_d295f1ac76a1f52a62e15549b7c33953" style="width: 100.0%; height: 100.0%;">Av. Llauradors / Eslava (22) – 921 salidas</div>`)[0];
+                popup_911fb792e10f38e96f21ab60ea922867.setContent(html_d295f1ac76a1f52a62e15549b7c33953);
+            
+        
+
+        circle_marker_a13fb0d4d908a3fce1406492aa8a9414.bindPopup(popup_911fb792e10f38e96f21ab60ea922867)
+        ;
+
+        
+    
+    
+            var circle_marker_1b0dccb0f494680c039e0381b4c4cd32 = L.circleMarker(
+                [38.25734, -0.70461],
+                {"bubblingMouseEvents": true, "color": "#36ff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#36ff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.056829511465603, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_422f28888222ab02b9e1f09d9b78bb2f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d47be322681d32e3609983c4cec2e0ff = $(`<div id="html_d47be322681d32e3609983c4cec2e0ff" style="width: 100.0%; height: 100.0%;">Conrado del Campo / Trinquet (23) – 1620 salidas</div>`)[0];
+                popup_422f28888222ab02b9e1f09d9b78bb2f.setContent(html_d47be322681d32e3609983c4cec2e0ff);
+            
+        
+
+        circle_marker_1b0dccb0f494680c039e0381b4c4cd32.bindPopup(popup_422f28888222ab02b9e1f09d9b78bb2f)
+        ;
+
+        
+    
+    
+            var circle_marker_98233032121fa945f21438b234fee822 = L.circleMarker(
+                [38.27553, -0.66915],
+                {"bubblingMouseEvents": true, "color": "#005ba4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#005ba4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.779661016949152, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_9498e925e8ba7e92202c97e024eeaee7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f76cce2088e67728fc74573aa5ea6a9e = $(`<div id="html_f76cce2088e67728fc74573aa5ea6a9e" style="width: 100.0%; height: 100.0%;">Policia Local (24) – 476 salidas</div>`)[0];
+                popup_9498e925e8ba7e92202c97e024eeaee7.setContent(html_f76cce2088e67728fc74573aa5ea6a9e);
+            
+        
+
+        circle_marker_98233032121fa945f21438b234fee822.bindPopup(popup_9498e925e8ba7e92202c97e024eeaee7)
+        ;
+
+        
+    
+    
+            var circle_marker_4e5c2362c5a54b1e89ff10ae4c1ae2f8 = L.circleMarker(
+                [38.26718, -0.70259],
+                {"bubblingMouseEvents": true, "color": "#8aff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8aff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.701894317048854, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_d303f26dbe2c07397b4b667de0e3064a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7de49e70e1da59b12c58b4521f00e743 = $(`<div id="html_7de49e70e1da59b12c58b4521f00e743" style="width: 100.0%; height: 100.0%;">Cor de Jesús (25) – 2060 salidas</div>`)[0];
+                popup_d303f26dbe2c07397b4b667de0e3064a.setContent(html_7de49e70e1da59b12c58b4521f00e743);
+            
+        
+
+        circle_marker_4e5c2362c5a54b1e89ff10ae4c1ae2f8.bindPopup(popup_d303f26dbe2c07397b4b667de0e3064a)
+        ;
+
+        
+    
+    
+            var circle_marker_1b8f4e1ad5b90f906c55e25f0bac4aaa = L.circleMarker(
+                [38.27425, -0.69111],
+                {"bubblingMouseEvents": true, "color": "#f9ff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f9ff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.870388833499502, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_f8dab09ae377096081115152f63b4835 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_687a1b773813bbbcc7f1c670c9b1354a = $(`<div id="html_687a1b773813bbbcc7f1c670c9b1354a" style="width: 100.0%; height: 100.0%;">UMH / Escola Oficial d’Idiomes (26) – 2640 salidas</div>`)[0];
+                popup_f8dab09ae377096081115152f63b4835.setContent(html_687a1b773813bbbcc7f1c670c9b1354a);
+            
+        
+
+        circle_marker_1b8f4e1ad5b90f906c55e25f0bac4aaa.bindPopup(popup_f8dab09ae377096081115152f63b4835)
+        ;
+
+        
+    
+    
+            var circle_marker_b3646775d69286f4e0f8c0dff4ffc18d = L.circleMarker(
+                [38.27921, -0.68589],
+                {"bubblingMouseEvents": true, "color": "#4dff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4dff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.505483549351943, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_75ec1b124890d4366606f696b8115ff7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3dbfa1069cb51d8be6de72b489d6912f = $(`<div id="html_3dbfa1069cb51d8be6de72b489d6912f" style="width: 100.0%; height: 100.0%;">UMH / Pavelló d’Esports (27) – 1740 salidas</div>`)[0];
+                popup_75ec1b124890d4366606f696b8115ff7.setContent(html_3dbfa1069cb51d8be6de72b489d6912f);
+            
+        
+
+        circle_marker_b3646775d69286f4e0f8c0dff4ffc18d.bindPopup(popup_75ec1b124890d4366606f696b8115ff7)
+        ;
+
+        
+    
+    
+            var circle_marker_fb5d4d7b78b27310ec30bd9741dc8319 = L.circleMarker(
+                [38.262792, -0.703505],
+                {"bubblingMouseEvents": true, "color": "#fff600ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.191924227318045, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_eb9336d65e562c6b12becc4281e35fc5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_05b81076d9e9e3b13b2625098de737ea = $(`<div id="html_05b81076d9e9e3b13b2625098de737ea" style="width: 100.0%; height: 100.0%;">Passeig de les Germanies (28) – 2726 salidas</div>`)[0];
+                popup_eb9336d65e562c6b12becc4281e35fc5.setContent(html_05b81076d9e9e3b13b2625098de737ea);
+            
+        
+
+        circle_marker_fb5d4d7b78b27310ec30bd9741dc8319.bindPopup(popup_eb9336d65e562c6b12becc4281e35fc5)
+        ;
+
+        
+    
+    
+            var circle_marker_c1cb4933f4cf092eccb7c63171adf491 = L.circleMarker(
+                [38.275568, -0.703184],
+                {"bubblingMouseEvents": true, "color": "#00857aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00857aff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.598454636091725, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_34bbf61f5eb2722e87a93e10cdd2faeb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab29ab17febdca2bc1d6e570dbd61553 = $(`<div id="html_ab29ab17febdca2bc1d6e570dbd61553" style="width: 100.0%; height: 100.0%;">Casablanca (29) – 695 salidas</div>`)[0];
+                popup_34bbf61f5eb2722e87a93e10cdd2faeb.setContent(html_ab29ab17febdca2bc1d6e570dbd61553);
+            
+        
+
+        circle_marker_c1cb4933f4cf092eccb7c63171adf491.bindPopup(popup_34bbf61f5eb2722e87a93e10cdd2faeb)
+        ;
+
+        
+    
+    
+            var circle_marker_8df54a17a7beb3e97d309e3656a18a17 = L.circleMarker(
+                [38.27052, -0.6702],
+                {"bubblingMouseEvents": true, "color": "#31ff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#31ff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.96335992023928, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_a563d292391913d415e9095dbc23f487 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d1ab16ac3e125292cd5f6d75e98f1d4d = $(`<div id="html_d1ab16ac3e125292cd5f6d75e98f1d4d" style="width: 100.0%; height: 100.0%;">Squash (30) – 1595 salidas</div>`)[0];
+                popup_a563d292391913d415e9095dbc23f487.setContent(html_d1ab16ac3e125292cd5f6d75e98f1d4d);
+            
+        
+
+        circle_marker_8df54a17a7beb3e97d309e3656a18a17.bindPopup(popup_a563d292391913d415e9095dbc23f487)
+        ;
+
+        
+    
+    
+            var circle_marker_084afc50eb7028ba888a40b3ffe6610a = L.circleMarker(
+                [38.26566, -0.67728],
+                {"bubblingMouseEvents": true, "color": "#00ba45ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00ba45ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.634097706879362, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_cf281132712af50a3d3d9162246fd714 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_10e37fcdd15dbb07232107fac5201f8f = $(`<div id="html_10e37fcdd15dbb07232107fac5201f8f" style="width: 100.0%; height: 100.0%;">Sant Antoni (31) – 972 salidas</div>`)[0];
+                popup_cf281132712af50a3d3d9162246fd714.setContent(html_10e37fcdd15dbb07232107fac5201f8f);
+            
+        
+
+        circle_marker_084afc50eb7028ba888a40b3ffe6610a.bindPopup(popup_cf281132712af50a3d3d9162246fd714)
+        ;
+
+        
+    
+    
+            var circle_marker_83dd55230a27eb6c96d57bc03855cfbe = L.circleMarker(
+                [38.27272, -0.68108],
+                {"bubblingMouseEvents": true, "color": "#e2ff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e2ff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.414257228315055, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_8975d5c3e6d5dd56f2cb9b39090024b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_016725cd2577f8042677e11a183dc0e9 = $(`<div id="html_016725cd2577f8042677e11a183dc0e9" style="width: 100.0%; height: 100.0%;">Centre de Salut d’Altabix (32) – 2518 salidas</div>`)[0];
+                popup_8975d5c3e6d5dd56f2cb9b39090024b3.setContent(html_016725cd2577f8042677e11a183dc0e9);
+            
+        
+
+        circle_marker_83dd55230a27eb6c96d57bc03855cfbe.bindPopup(popup_8975d5c3e6d5dd56f2cb9b39090024b3)
+        ;
+
+        
+    
+    
+            var circle_marker_d41b9fe9e6238851a058304b16ecb768 = L.circleMarker(
+                [38.261175, -0.71614],
+                {"bubblingMouseEvents": true, "color": "#09ff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#09ff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.193170488534397, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_529d805c2345f7c6af21c390cb30fd46 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2b8bda03e96c79adff6a0113f426862f = $(`<div id="html_2b8bda03e96c79adff6a0113f426862f" style="width: 100.0%; height: 100.0%;">Av. Libertat / l’Aljub (33) – 1389 salidas</div>`)[0];
+                popup_529d805c2345f7c6af21c390cb30fd46.setContent(html_2b8bda03e96c79adff6a0113f426862f);
+            
+        
+
+        circle_marker_d41b9fe9e6238851a058304b16ecb768.bindPopup(popup_529d805c2345f7c6af21c390cb30fd46)
+        ;
+
+        
+    
+    
+            var circle_marker_b5bdf3549839d33e733c2692d90fbaa2 = L.circleMarker(
+                [38.25961, -0.68586],
+                {"bubblingMouseEvents": true, "color": "#ffe300ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe300ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.547108673978066, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_06a313ab9515e9aec4264518ab4f94e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf4dcf15a49b1d6403e7eebce8bb54c9 = $(`<div id="html_cf4dcf15a49b1d6403e7eebce8bb54c9" style="width: 100.0%; height: 100.0%;">Hospital General (34) – 2821 salidas</div>`)[0];
+                popup_06a313ab9515e9aec4264518ab4f94e8.setContent(html_cf4dcf15a49b1d6403e7eebce8bb54c9);
+            
+        
+
+        circle_marker_b5bdf3549839d33e733c2692d90fbaa2.bindPopup(popup_06a313ab9515e9aec4264518ab4f94e8)
+        ;
+
+        
+    
+    
+            var circle_marker_9f42827a74a4735b1abf37eef3e2e7c2 = L.circleMarker(
+                [38.25515, -0.71483],
+                {"bubblingMouseEvents": true, "color": "#008877ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008877ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.673230309072782, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_9f1acf754d6aefbb543cf4f054856692 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_36487bdfb4f91520022e58d7e524f33a = $(`<div id="html_36487bdfb4f91520022e58d7e524f33a" style="width: 100.0%; height: 100.0%;">Hospital del Vinalopó (35) – 715 salidas</div>`)[0];
+                popup_9f1acf754d6aefbb543cf4f054856692.setContent(html_36487bdfb4f91520022e58d7e524f33a);
+            
+        
+
+        circle_marker_9f42827a74a4735b1abf37eef3e2e7c2.bindPopup(popup_9f1acf754d6aefbb543cf4f054856692)
+        ;
+
+        
+    
+    
+            var circle_marker_378f86db6348584b2b189c502742bfe0 = L.circleMarker(
+                [38.268272, -0.677594],
+                {"bubblingMouseEvents": true, "color": "#21ff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21ff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.660518444666003, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_e10e6d5a04ce65c89ed988c3aa3e49ab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9deafa67b9e7e2a0a7abb0f7218dbf21 = $(`<div id="html_9deafa67b9e7e2a0a7abb0f7218dbf21" style="width: 100.0%; height: 100.0%;">I.E.S. Victoria Kent (36) – 1514 salidas</div>`)[0];
+                popup_e10e6d5a04ce65c89ed988c3aa3e49ab.setContent(html_9deafa67b9e7e2a0a7abb0f7218dbf21);
+            
+        
+
+        circle_marker_378f86db6348584b2b189c502742bfe0.bindPopup(popup_e10e6d5a04ce65c89ed988c3aa3e49ab)
+        ;
+
+        
+    
+    
+            var circle_marker_5e6cb715467c1f10262d869c6b190276 = L.circleMarker(
+                [38.26345, -0.66528],
+                {"bubblingMouseEvents": true, "color": "#004db2ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#004db2ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.506729810568295, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_05dc5f72211a89e8be242765ebc4dbfe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eea58493110e9c2b08f45f387199c31a = $(`<div id="html_eea58493110e9c2b08f45f387199c31a" style="width: 100.0%; height: 100.0%;">Hort de Travaló (37) – 403 salidas</div>`)[0];
+                popup_05dc5f72211a89e8be242765ebc4dbfe.setContent(html_eea58493110e9c2b08f45f387199c31a);
+            
+        
+
+        circle_marker_5e6cb715467c1f10262d869c6b190276.bindPopup(popup_05dc5f72211a89e8be242765ebc4dbfe)
+        ;
+
+        
+    
+    
+            var circle_marker_20ac5f0fa3a6cd4b82f2d8fe81522889 = L.circleMarker(
+                [38.278264, -0.708628],
+                {"bubblingMouseEvents": true, "color": "#0bff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0bff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.22308075772682, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_c903f993f622af93abf3095e3a9ded8d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ed170628503867eb5c5358a19423790 = $(`<div id="html_2ed170628503867eb5c5358a19423790" style="width: 100.0%; height: 100.0%;">Poliesportiu de Carrús (38) – 1397 salidas</div>`)[0];
+                popup_c903f993f622af93abf3095e3a9ded8d.setContent(html_2ed170628503867eb5c5358a19423790);
+            
+        
+
+        circle_marker_20ac5f0fa3a6cd4b82f2d8fe81522889.bindPopup(popup_c903f993f622af93abf3095e3a9ded8d)
+        ;
+
+        
+    
+    
+            var circle_marker_b903d6aba5d46ddbb4104a3c96c4b2f3 = L.circleMarker(
+                [38.271382, -0.710028],
+                {"bubblingMouseEvents": true, "color": "#00a05fff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00a05fff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.140578265204387, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_4271989952261343fe8d8ec22024f8ec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_38cd946398d018e1666f11ab3baae2b6 = $(`<div id="html_38cd946398d018e1666f11ab3baae2b6" style="width: 100.0%; height: 100.0%;">Francesc Cantó (39) – 840 salidas</div>`)[0];
+                popup_4271989952261343fe8d8ec22024f8ec.setContent(html_38cd946398d018e1666f11ab3baae2b6);
+            
+        
+
+        circle_marker_b903d6aba5d46ddbb4104a3c96c4b2f3.bindPopup(popup_4271989952261343fe8d8ec22024f8ec)
+        ;
+
+        
+    
+    
+            var circle_marker_99236e0df65d378078739e9564d7a290 = L.circleMarker(
+                [38.27091, -0.701044],
+                {"bubblingMouseEvents": true, "color": "#ff1300ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff1300ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.61864406779661, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_751a44daa79e400e3608e144644ac0a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77ba430a98e82d4a88fb9a8fb2f0bf1a = $(`<div id="html_77ba430a98e82d4a88fb9a8fb2f0bf1a" style="width: 100.0%; height: 100.0%;">C.P. Baix Vinalopó (40) – 3910 salidas</div>`)[0];
+                popup_751a44daa79e400e3608e144644ac0a4.setContent(html_77ba430a98e82d4a88fb9a8fb2f0bf1a);
+            
+        
+
+        circle_marker_99236e0df65d378078739e9564d7a290.bindPopup(popup_751a44daa79e400e3608e144644ac0a4)
+        ;
+
+        
+    
+    
+            var circle_marker_2142d40c5982c5c5ca3ca41369d805e1 = L.circleMarker(
+                [38.281922, -0.712788],
+                {"bubblingMouseEvents": true, "color": "#00629dff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00629dff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.921734795613161, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_5f25e46c13102c9a1cfd1ddc065c1a28 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_942df3cbf88a91ce63623cf429fb51d0 = $(`<div id="html_942df3cbf88a91ce63623cf429fb51d0" style="width: 100.0%; height: 100.0%;">Dipòsit Municipal de Carrús (41) – 514 salidas</div>`)[0];
+                popup_5f25e46c13102c9a1cfd1ddc065c1a28.setContent(html_942df3cbf88a91ce63623cf429fb51d0);
+            
+        
+
+        circle_marker_2142d40c5982c5c5ca3ca41369d805e1.bindPopup(popup_5f25e46c13102c9a1cfd1ddc065c1a28)
+        ;
+
+        
+    
+    
+            var circle_marker_1c45ee83c8c51c923d4f2b57d4f90cbb = L.circleMarker(
+                [38.262263, -0.669923],
+                {"bubblingMouseEvents": true, "color": "#002bd4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#002bd4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.8561814556331004, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_429f1e0425ee9fd5c962072c6cb46467 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5cc4f5f696aa5abdd640d2b3da390d55 = $(`<div id="html_5cc4f5f696aa5abdd640d2b3da390d55" style="width: 100.0%; height: 100.0%;">Multi Aventura Travaló (42) – 229 salidas</div>`)[0];
+                popup_429f1e0425ee9fd5c962072c6cb46467.setContent(html_5cc4f5f696aa5abdd640d2b3da390d55);
+            
+        
+
+        circle_marker_1c45ee83c8c51c923d4f2b57d4f90cbb.bindPopup(popup_429f1e0425ee9fd5c962072c6cb46467)
+        ;
+
+        
+    
+    
+            var circle_marker_9ce16128e27b6de14a488f728bd1e710 = L.circleMarker(
+                [38.261994, -0.683099],
+                {"bubblingMouseEvents": true, "color": "#005ca3ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#005ca3ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.805832502492523, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_750488e05ade9c1bb1e00915cf198581 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_780560bdec7a85140c0d7ec882b9d60a = $(`<div id="html_780560bdec7a85140c0d7ec882b9d60a" style="width: 100.0%; height: 100.0%;">Palmerars – Ciutat de la Justícia (43) – 483 salidas</div>`)[0];
+                popup_750488e05ade9c1bb1e00915cf198581.setContent(html_780560bdec7a85140c0d7ec882b9d60a);
+            
+        
+
+        circle_marker_9ce16128e27b6de14a488f728bd1e710.bindPopup(popup_750488e05ade9c1bb1e00915cf198581)
+        ;
+
+        
+    
+    
+            var circle_marker_9cdbf78a3e45e66a0e1f63750a0a5924 = L.circleMarker(
+                [38.2571333, -0.696961],
+                {"bubblingMouseEvents": true, "color": "#73ff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#73ff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.24950149551346, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_8e98621d039b1f3964c46b81babc3159 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d7a350108161d8d483e147b6cdbc7cdf = $(`<div id="html_d7a350108161d8d483e147b6cdbc7cdf" style="width: 100.0%; height: 100.0%;">Portes Encarnades (44) – 1939 salidas</div>`)[0];
+                popup_8e98621d039b1f3964c46b81babc3159.setContent(html_d7a350108161d8d483e147b6cdbc7cdf);
+            
+        
+
+        circle_marker_9cdbf78a3e45e66a0e1f63750a0a5924.bindPopup(popup_8e98621d039b1f3964c46b81babc3159)
+        ;
+
+        
+    
+    
+            var circle_marker_498cfd57fa91d09ba65dee2ae441a312 = L.circleMarker(
+                [38.271869, -0.70703],
+                {"bubblingMouseEvents": true, "color": "#09ff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#09ff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.189431704885344, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_1b81b001f6f1c3b532fa495d83cf688c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c5617d9dec78755d184d0c2b0c43498 = $(`<div id="html_9c5617d9dec78755d184d0c2b0c43498" style="width: 100.0%; height: 100.0%;">Plaça de Barcelona (45) – 1388 salidas</div>`)[0];
+                popup_1b81b001f6f1c3b532fa495d83cf688c.setContent(html_9c5617d9dec78755d184d0c2b0c43498);
+            
+        
+
+        circle_marker_498cfd57fa91d09ba65dee2ae441a312.bindPopup(popup_1b81b001f6f1c3b532fa495d83cf688c)
+        ;
+
+        
+    
+    
+            var circle_marker_09308c837f9da08de4906dec3d17f6ce = L.circleMarker(
+                [38.274244, -0.6846805],
+                {"bubblingMouseEvents": true, "color": "#beff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#beff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.72258225324028, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_e67402afb0f25032011fc8501fff3836 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_981ec07142ac515169dc13c38d12b8dc = $(`<div id="html_981ec07142ac515169dc13c38d12b8dc" style="width: 100.0%; height: 100.0%;">UMH / Rectorado (46) – 2333 salidas</div>`)[0];
+                popup_e67402afb0f25032011fc8501fff3836.setContent(html_981ec07142ac515169dc13c38d12b8dc);
+            
+        
+
+        circle_marker_09308c837f9da08de4906dec3d17f6ce.bindPopup(popup_e67402afb0f25032011fc8501fff3836)
+        ;
+
+        
+    
+    
+            var circle_marker_d7e30e25aa32a078742ac13b0b430a56 = L.circleMarker(
+                [38.26464, -0.708004],
+                {"bubblingMouseEvents": true, "color": "#55ff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#55ff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.673728813559322, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_fc65329089756a5ff2f2e3c06ef4b79d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_81756c16616c3cfb2454266874148a04 = $(`<div id="html_81756c16616c3cfb2454266874148a04" style="width: 100.0%; height: 100.0%;">C.P. Virgen de la Asunción (47) – 1785 salidas</div>`)[0];
+                popup_fc65329089756a5ff2f2e3c06ef4b79d.setContent(html_81756c16616c3cfb2454266874148a04);
+            
+        
+
+        circle_marker_d7e30e25aa32a078742ac13b0b430a56.bindPopup(popup_fc65329089756a5ff2f2e3c06ef4b79d)
+        ;
+
+        
+    
+    
+            var circle_marker_a42bfd561dceae3587b8e71f5ae9a5cf = L.circleMarker(
+                [38.271531, -0.7175],
+                {"bubblingMouseEvents": true, "color": "#0059a6ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0059a6ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.742273180458624, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_f489a00cd80fd5cccd5eedc182169084 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_272ff0d902ad003280105a3b6d050bf1 = $(`<div id="html_272ff0d902ad003280105a3b6d050bf1" style="width: 100.0%; height: 100.0%;">Av. Corts Valencianes (48) – 466 salidas</div>`)[0];
+                popup_f489a00cd80fd5cccd5eedc182169084.setContent(html_272ff0d902ad003280105a3b6d050bf1);
+            
+        
+
+        circle_marker_a42bfd561dceae3587b8e71f5ae9a5cf.bindPopup(popup_f489a00cd80fd5cccd5eedc182169084)
+        ;
+
+        
+    
+    
+            var circle_marker_0caa30798cf6a4dcff11c431ef310c77 = L.circleMarker(
+                [38.26978, -0.681872],
+                {"bubblingMouseEvents": true, "color": "#83ff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#83ff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.571036889332005, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_1e8ce98095a68fac66b35dd9ed22e9fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9023c0663bd238c17ff7d86a866f6024 = $(`<div id="html_9023c0663bd238c17ff7d86a866f6024" style="width: 100.0%; height: 100.0%;">Av. Alicante 59 (49) – 2025 salidas</div>`)[0];
+                popup_1e8ce98095a68fac66b35dd9ed22e9fd.setContent(html_9023c0663bd238c17ff7d86a866f6024);
+            
+        
+
+        circle_marker_0caa30798cf6a4dcff11c431ef310c77.bindPopup(popup_1e8ce98095a68fac66b35dd9ed22e9fd)
+        ;
+
+        
+    
+    
+            var circle_marker_ce8f02b537cb56724b45c1fd5b61f4da = L.circleMarker(
+                [38.261464, -0.696053],
+                {"bubblingMouseEvents": true, "color": "#88ff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#88ff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.65702891326022, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_0a66ada9a01a8de2ed49ec165aa8335d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9390bb5ebf70f2f8fb09b44096408ff9 = $(`<div id="html_9390bb5ebf70f2f8fb09b44096408ff9" style="width: 100.0%; height: 100.0%;">Borreguet (50) – 2048 salidas</div>`)[0];
+                popup_0a66ada9a01a8de2ed49ec165aa8335d.setContent(html_9390bb5ebf70f2f8fb09b44096408ff9);
+            
+        
+
+        circle_marker_ce8f02b537cb56724b45c1fd5b61f4da.bindPopup(popup_0a66ada9a01a8de2ed49ec165aa8335d)
+        ;
+
+        
+    
+    
+            var circle_marker_91490a46b13a28928ce109cfedcc6bad = L.circleMarker(
+                [38.271514, -0.675147],
+                {"bubblingMouseEvents": true, "color": "#05ff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#05ff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.114656031904287, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_e681ddc5e035abc4559d854e0a17c184 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9cafe15d9c539c4ef5b37db43abc3e28 = $(`<div id="html_9cafe15d9c539c4ef5b37db43abc3e28" style="width: 100.0%; height: 100.0%;">Ciudad deportiva zona sur (51) – 1368 salidas</div>`)[0];
+                popup_e681ddc5e035abc4559d854e0a17c184.setContent(html_9cafe15d9c539c4ef5b37db43abc3e28);
+            
+        
+
+        circle_marker_91490a46b13a28928ce109cfedcc6bad.bindPopup(popup_e681ddc5e035abc4559d854e0a17c184)
+        ;
+
+        
+    
+    
+            var circle_marker_c46cf1843573f99226950134f7e6be4b = L.circleMarker(
+                [38.269141, -0.717211],
+                {"bubblingMouseEvents": true, "color": "#00b24dff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00b24dff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.4808075772681955, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_2c619d13d61d755da16051a56e29c2b4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4700fed6dd93db68588363de9a50a5f = $(`<div id="html_d4700fed6dd93db68588363de9a50a5f" style="width: 100.0%; height: 100.0%;">Centro salud el Toscar (52) – 931 salidas</div>`)[0];
+                popup_2c619d13d61d755da16051a56e29c2b4.setContent(html_d4700fed6dd93db68588363de9a50a5f);
+            
+        
+
+        circle_marker_c46cf1843573f99226950134f7e6be4b.bindPopup(popup_2c619d13d61d755da16051a56e29c2b4)
+        ;
+
+        
+    
+    
+            var circle_marker_ef764dd520697db12f2ac947cbb1a0af = L.circleMarker(
+                [38.272525, -0.685417],
+                {"bubblingMouseEvents": true, "color": "#ecff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ecff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.627367896311068, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_829be909894e4a1d931916dad8690576 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5cc08c44620597005d9d1bb3a384c9e2 = $(`<div id="html_5cc08c44620597005d9d1bb3a384c9e2" style="width: 100.0%; height: 100.0%;">C.P. Victor Pradera (53) – 2575 salidas</div>`)[0];
+                popup_829be909894e4a1d931916dad8690576.setContent(html_5cc08c44620597005d9d1bb3a384c9e2);
+            
+        
+
+        circle_marker_ef764dd520697db12f2ac947cbb1a0af.bindPopup(popup_829be909894e4a1d931916dad8690576)
+        ;
+
+        
+    
+    
+            var circle_marker_dae90a8c9bc9e274c378589742dca51d = L.circleMarker(
+                [38.268475, -0.686954],
+                {"bubblingMouseEvents": true, "color": "#cbff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#cbff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.984297108673978, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_0944085fce2e7b040efb4ad0f7bdac99 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_185cf5e7849e8cdb99917ab828b18aa0 = $(`<div id="html_185cf5e7849e8cdb99917ab828b18aa0" style="width: 100.0%; height: 100.0%;">Plaza de Benidorm (54) – 2403 salidas</div>`)[0];
+                popup_0944085fce2e7b040efb4ad0f7bdac99.setContent(html_185cf5e7849e8cdb99917ab828b18aa0);
+            
+        
+
+        circle_marker_dae90a8c9bc9e274c378589742dca51d.bindPopup(popup_0944085fce2e7b040efb4ad0f7bdac99)
+        ;
+
+        
+    
+    
+            var circle_marker_cc2f579e924fc4f8a9d99f5620c052e9 = L.circleMarker(
+                [38.2590083, -0.706969],
+                {"bubblingMouseEvents": true, "color": "#1dff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1dff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.582003988035893, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_aff28a2f5fe334ac13bf77f25f3f7f71 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1de3f313150edb72f96abc3dd9f246c7 = $(`<div id="html_1de3f313150edb72f96abc3dd9f246c7" style="width: 100.0%; height: 100.0%;">Pere Joan Perpinyà (55) – 1493 salidas</div>`)[0];
+                popup_aff28a2f5fe334ac13bf77f25f3f7f71.setContent(html_1de3f313150edb72f96abc3dd9f246c7);
+            
+        
+
+        circle_marker_cc2f579e924fc4f8a9d99f5620c052e9.bindPopup(popup_aff28a2f5fe334ac13bf77f25f3f7f71)
+        ;
+
+        
+    
+    
+            var circle_marker_d84ccc47b02449c11ae44254e18d6962 = L.circleMarker(
+                [38.2774498, -0.691602],
+                {"bubblingMouseEvents": true, "color": "#006996ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006996ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.056331006979063, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_6ea3f6c26ddbe4d4c7aaaa80d5c91832 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b8436d6ce3397994267341356d908cb = $(`<div id="html_5b8436d6ce3397994267341356d908cb" style="width: 100.0%; height: 100.0%;">UMH / Torre Vaillo (56) – 550 salidas</div>`)[0];
+                popup_6ea3f6c26ddbe4d4c7aaaa80d5c91832.setContent(html_5b8436d6ce3397994267341356d908cb);
+            
+        
+
+        circle_marker_d84ccc47b02449c11ae44254e18d6962.bindPopup(popup_6ea3f6c26ddbe4d4c7aaaa80d5c91832)
+        ;
+
+        
+    
+    
+            var circle_marker_45dfcb0624450789bcbfe592d1360a14 = L.circleMarker(
+                [38.2954917, -0.58666],
+                {"bubblingMouseEvents": true, "color": "#0001feff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0001feff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.022432701894317, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_0c8096bbd5eee9232f23556c837db54d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1bc73bad0a2a911d5f9c5972202e0977 = $(`<div id="html_1bc73bad0a2a911d5f9c5972202e0977" style="width: 100.0%; height: 100.0%;">IES Torrellano (57) – 6 salidas</div>`)[0];
+                popup_0c8096bbd5eee9232f23556c837db54d.setContent(html_1bc73bad0a2a911d5f9c5972202e0977);
+            
+        
+
+        circle_marker_45dfcb0624450789bcbfe592d1360a14.bindPopup(popup_0c8096bbd5eee9232f23556c837db54d)
+        ;
+
+        
+    
+    
+            var circle_marker_4ece5f8df2170b71cd5bf9ab043a44b8 = L.circleMarker(
+                [38.290824, -0.5870336],
+                {"bubblingMouseEvents": true, "color": "#0005faff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0005faff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.1046859421734796, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_d15c18c4a782cf760c222d41221aa86e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a51636cac775d417c69e64fa183c4c2f = $(`<div id="html_a51636cac775d417c69e64fa183c4c2f" style="width: 100.0%; height: 100.0%;">Polideportivo Torrellano (58) – 28 salidas</div>`)[0];
+                popup_d15c18c4a782cf760c222d41221aa86e.setContent(html_a51636cac775d417c69e64fa183c4c2f);
+            
+        
+
+        circle_marker_4ece5f8df2170b71cd5bf9ab043a44b8.bindPopup(popup_d15c18c4a782cf760c222d41221aa86e)
+        ;
+
+        
+    
+    
+            var circle_marker_072377d4c9ab1196ad41c0ebcdb4d632 = L.circleMarker(
+                [38.29422, -0.587922],
+                {"bubblingMouseEvents": true, "color": "#0002fdff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0002fdff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0411266201395812, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_4bd09aa22bd73d72acc64d74e134eea7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8e00154d9e5d05419e771a3b6e50d89 = $(`<div id="html_a8e00154d9e5d05419e771a3b6e50d89" style="width: 100.0%; height: 100.0%;">Calle San Crispín 1 Torrellano (59) – 11 salidas</div>`)[0];
+                popup_4bd09aa22bd73d72acc64d74e134eea7.setContent(html_a8e00154d9e5d05419e771a3b6e50d89);
+            
+        
+
+        circle_marker_072377d4c9ab1196ad41c0ebcdb4d632.bindPopup(popup_4bd09aa22bd73d72acc64d74e134eea7)
+        ;
+
+        
+    
+    
+            var circle_marker_cb1cbc5dde81a0b094a7b77e43a73d4a = L.circleMarker(
+                [38.29203, -0.592297],
+                {"bubblingMouseEvents": true, "color": "#0009f6ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0009f6ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.190677966101695, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_fb3213df6bf98f5c720b75ec00c9b4d8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_54e866114a750e0ff11b4e8505eb01bf = $(`<div id="html_54e866114a750e0ff11b4e8505eb01bf" style="width: 100.0%; height: 100.0%;">Carrer de la Figuera 2 Torrellano (60) – 51 salidas</div>`)[0];
+                popup_fb3213df6bf98f5c720b75ec00c9b4d8.setContent(html_54e866114a750e0ff11b4e8505eb01bf);
+            
+        
+
+        circle_marker_cb1cbc5dde81a0b094a7b77e43a73d4a.bindPopup(popup_fb3213df6bf98f5c720b75ec00c9b4d8)
+        ;
+
+        
+    
+    
+            var circle_marker_b02af5ee0c8d386b1399a3721130e0b0 = L.circleMarker(
+                [38.282677, -0.722414],
+                {"bubblingMouseEvents": true, "color": "#0008f7ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0008f7ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.164506480558325, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_f828f85dd877ff13db81932ce5d690b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fd07e5ee72e6f7e6b3b68db43b9279c1 = $(`<div id="html_fd07e5ee72e6f7e6b3b68db43b9279c1" style="width: 100.0%; height: 100.0%;">Avenida Novelda 191 (61) – 44 salidas</div>`)[0];
+                popup_f828f85dd877ff13db81932ce5d690b6.setContent(html_fd07e5ee72e6f7e6b3b68db43b9279c1);
+            
+        
+
+        circle_marker_b02af5ee0c8d386b1399a3721130e0b0.bindPopup(popup_f828f85dd877ff13db81932ce5d690b6)
+        ;
+
+        
+    
+    
+            var circle_marker_b96ac9018538770f06ad56f15edef5ff = L.circleMarker(
+                [38.282058, -0.7170765],
+                {"bubblingMouseEvents": true, "color": "#000bf4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000bf4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.2205882352941178, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_314c86fe6fab7b949b8790a5bde19dff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2adc59e18ac018a1c4d581a2e75827f5 = $(`<div id="html_2adc59e18ac018a1c4d581a2e75827f5" style="width: 100.0%; height: 100.0%;">Calle Inca con brea (62) – 59 salidas</div>`)[0];
+                popup_314c86fe6fab7b949b8790a5bde19dff.setContent(html_2adc59e18ac018a1c4d581a2e75827f5);
+            
+        
+
+        circle_marker_b96ac9018538770f06ad56f15edef5ff.bindPopup(popup_314c86fe6fab7b949b8790a5bde19dff)
+        ;
+
+        
+    
+    
+            var circle_marker_83885214882ea606564eef0dab6dde93 = L.circleMarker(
+                [38.278158, -0.713415],
+                {"bubblingMouseEvents": true, "color": "#001fe0ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#001fe0ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.613160518444666, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_006ca71c9f5319251d13b21ddc427f2b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c4f1167cb4cb32044f1558a32957519b = $(`<div id="html_c4f1167cb4cb32044f1558a32957519b" style="width: 100.0%; height: 100.0%;">CEIP Eugeni d’Ors (63) – 164 salidas</div>`)[0];
+                popup_006ca71c9f5319251d13b21ddc427f2b.setContent(html_c4f1167cb4cb32044f1558a32957519b);
+            
+        
+
+        circle_marker_83885214882ea606564eef0dab6dde93.bindPopup(popup_006ca71c9f5319251d13b21ddc427f2b)
+        ;
+
+        
+    
+    
+            var circle_marker_1db1fed5564395e16a54cfca2b7050b5 = L.circleMarker(
+                [38.276291, -0.71253],
+                {"bubblingMouseEvents": true, "color": "#0014ebff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0014ebff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.3963110667996013, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_b1f1e69e5b8550d9e1afa8656f694bca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6186a235e844e61260412d9b1a6797f7 = $(`<div id="html_6186a235e844e61260412d9b1a6797f7" style="width: 100.0%; height: 100.0%;">Jardín 25 de abril (64) – 106 salidas</div>`)[0];
+                popup_b1f1e69e5b8550d9e1afa8656f694bca.setContent(html_6186a235e844e61260412d9b1a6797f7);
+            
+        
+
+        circle_marker_1db1fed5564395e16a54cfca2b7050b5.bindPopup(popup_b1f1e69e5b8550d9e1afa8656f694bca)
+        ;
+
+        
+    
+    
+            var circle_marker_c8b14a14751f2511dd30b810eca1072e = L.circleMarker(
+                [38.271889, -0.715238],
+                {"bubblingMouseEvents": true, "color": "#0030cfff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0030cfff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.9384346959122634, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_ce1598ad51071651dfe5fc898d21ad2b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_97b0f1fd4ad8d3c8c675eaf8bd69fd9b = $(`<div id="html_97b0f1fd4ad8d3c8c675eaf8bd69fd9b" style="width: 100.0%; height: 100.0%;">C.P. El toscar (65) – 251 salidas</div>`)[0];
+                popup_ce1598ad51071651dfe5fc898d21ad2b.setContent(html_97b0f1fd4ad8d3c8c675eaf8bd69fd9b);
+            
+        
+
+        circle_marker_c8b14a14751f2511dd30b810eca1072e.bindPopup(popup_ce1598ad51071651dfe5fc898d21ad2b)
+        ;
+
+        
+    
+    
+            var circle_marker_8e84c1ba3bc67edd35d5f4a59e20d074 = L.circleMarker(
+                [38.277507, -0.710252],
+                {"bubblingMouseEvents": true, "color": "#002dd2ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#002dd2ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.897308075772682, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_752d0d94d3c5f439e189c6d85694cbd1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9d5875450ebf901dd87675321eafc2c = $(`<div id="html_b9d5875450ebf901dd87675321eafc2c" style="width: 100.0%; height: 100.0%;">Jardín escritor Juan Fuster (66) – 240 salidas</div>`)[0];
+                popup_752d0d94d3c5f439e189c6d85694cbd1.setContent(html_b9d5875450ebf901dd87675321eafc2c);
+            
+        
+
+        circle_marker_8e84c1ba3bc67edd35d5f4a59e20d074.bindPopup(popup_752d0d94d3c5f439e189c6d85694cbd1)
+        ;
+
+        
+    
+    
+            var circle_marker_30afbe6e380ca70581efb2b9d8a2ac0d = L.circleMarker(
+                [38.276501, -0.704743],
+                {"bubblingMouseEvents": true, "color": "#00639cff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00639cff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.947906281156531, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_3995404f03ce61d18f0039cd2da0d41a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_adc0a95ac714dadd04995836daef80cd = $(`<div id="html_adc0a95ac714dadd04995836daef80cd" style="width: 100.0%; height: 100.0%;">Calle Grao con Victoria Kent (67) – 521 salidas</div>`)[0];
+                popup_3995404f03ce61d18f0039cd2da0d41a.setContent(html_adc0a95ac714dadd04995836daef80cd);
+            
+        
+
+        circle_marker_30afbe6e380ca70581efb2b9d8a2ac0d.bindPopup(popup_3995404f03ce61d18f0039cd2da0d41a)
+        ;
+
+        
+    
+    
+            var circle_marker_64893dac806bc3075c97d08211c33b45 = L.circleMarker(
+                [38.274429, -0.706795],
+                {"bubblingMouseEvents": true, "color": "#0012edff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0012edff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.358923230309073, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_6e44844619c4935e0999b829377f8435 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb710d91f26d880ca5d2727fabf42a08 = $(`<div id="html_bb710d91f26d880ca5d2727fabf42a08" style="width: 100.0%; height: 100.0%;">Arturo Salvetti Pardo (68) – 96 salidas</div>`)[0];
+                popup_6e44844619c4935e0999b829377f8435.setContent(html_bb710d91f26d880ca5d2727fabf42a08);
+            
+        
+
+        circle_marker_64893dac806bc3075c97d08211c33b45.bindPopup(popup_6e44844619c4935e0999b829377f8435)
+        ;
+
+        
+    
+    
+            var circle_marker_b9ab1ee7224bb481a0a50f20d76cc0ae = L.circleMarker(
+                [38.272946, -0.704659],
+                {"bubblingMouseEvents": true, "color": "#00639cff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00639cff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.936689930209372, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_0ce58a4b17bf0b6e4b444ee051c4f610 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4654bf6004afaf7b98f9e5e5bb9fd93d = $(`<div id="html_4654bf6004afaf7b98f9e5e5bb9fd93d" style="width: 100.0%; height: 100.0%;">Olegario Domarco Seller 44 (69) – 518 salidas</div>`)[0];
+                popup_0ce58a4b17bf0b6e4b444ee051c4f610.setContent(html_4654bf6004afaf7b98f9e5e5bb9fd93d);
+            
+        
+
+        circle_marker_b9ab1ee7224bb481a0a50f20d76cc0ae.bindPopup(popup_0ce58a4b17bf0b6e4b444ee051c4f610)
+        ;
+
+        
+    
+    
+            var circle_marker_dacb5a5f6e21a7e62e0800e01cdff241 = L.circleMarker(
+                [38.270459, -0.70354],
+                {"bubblingMouseEvents": true, "color": "#28ff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#28ff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.79137587238285, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_bc01934ee3d4b690dbeaf65e575070a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_537638c1d5577c7cfca159789983a8c3 = $(`<div id="html_537638c1d5577c7cfca159789983a8c3" style="width: 100.0%; height: 100.0%;">Libertad-Diagonal (70) – 1549 salidas</div>`)[0];
+                popup_bc01934ee3d4b690dbeaf65e575070a8.setContent(html_537638c1d5577c7cfca159789983a8c3);
+            
+        
+
+        circle_marker_dacb5a5f6e21a7e62e0800e01cdff241.bindPopup(popup_bc01934ee3d4b690dbeaf65e575070a8)
+        ;
+
+        
+    
+    
+            var circle_marker_985e241855b334f3a335a085731600ae = L.circleMarker(
+                [38.267937, -0.709177],
+                {"bubblingMouseEvents": true, "color": "#009669ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009669ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.946161515453639, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_e71c4f6da40d03c4d4d14ac42de36acd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_36113178e9c2a059c9bbf152b31db8c8 = $(`<div id="html_36113178e9c2a059c9bbf152b31db8c8" style="width: 100.0%; height: 100.0%;">IES Carrús (71) – 788 salidas</div>`)[0];
+                popup_e71c4f6da40d03c4d4d14ac42de36acd.setContent(html_36113178e9c2a059c9bbf152b31db8c8);
+            
+        
+
+        circle_marker_985e241855b334f3a335a085731600ae.bindPopup(popup_e71c4f6da40d03c4d4d14ac42de36acd)
+        ;
+
+        
+    
+    
+            var circle_marker_ecc4df7c36d86f4dc404f7de139efb89 = L.circleMarker(
+                [38.267258, -0.712981],
+                {"bubblingMouseEvents": true, "color": "#007c83ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#007c83ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.422731804586242, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_3cba2005b925d9937667aab22676968e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5128988fb2a903eee0127b3adc9f1227 = $(`<div id="html_5128988fb2a903eee0127b3adc9f1227" style="width: 100.0%; height: 100.0%;">Plaza de la aparadora (73) – 648 salidas</div>`)[0];
+                popup_3cba2005b925d9937667aab22676968e.setContent(html_5128988fb2a903eee0127b3adc9f1227);
+            
+        
+
+        circle_marker_ecc4df7c36d86f4dc404f7de139efb89.bindPopup(popup_3cba2005b925d9937667aab22676968e)
+        ;
+
+        
+    
+    
+            var circle_marker_3d2f3be3003648677880fad724ac8d6b = L.circleMarker(
+                [38.26302, -0.714168],
+                {"bubblingMouseEvents": true, "color": "#008d72ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008d72ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.766699900299102, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_bae17963473f719ae4c02f112f681148 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b208629e0aaadfb043f725248bc8fb1 = $(`<div id="html_1b208629e0aaadfb043f725248bc8fb1" style="width: 100.0%; height: 100.0%;">IES Nit de l´Albà (74) – 740 salidas</div>`)[0];
+                popup_bae17963473f719ae4c02f112f681148.setContent(html_1b208629e0aaadfb043f725248bc8fb1);
+            
+        
+
+        circle_marker_3d2f3be3003648677880fad724ac8d6b.bindPopup(popup_bae17963473f719ae4c02f112f681148)
+        ;
+
+        
+    
+    
+            var circle_marker_3f5fd9c9b6ce3a71ddea5a3fd319a4ea = L.circleMarker(
+                [38.26256, -0.718648],
+                {"bubblingMouseEvents": true, "color": "#7cff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7cff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.440179461615156, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_1298453c68d982fb6dbfe32b0a864822 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_31bf209c6d4478cc331cef174116dbf2 = $(`<div id="html_31bf209c6d4478cc331cef174116dbf2" style="width: 100.0%; height: 100.0%;">L´aljub (75) – 1990 salidas</div>`)[0];
+                popup_1298453c68d982fb6dbfe32b0a864822.setContent(html_31bf209c6d4478cc331cef174116dbf2);
+            
+        
+
+        circle_marker_3f5fd9c9b6ce3a71ddea5a3fd319a4ea.bindPopup(popup_1298453c68d982fb6dbfe32b0a864822)
+        ;
+
+        
+    
+    
+            var circle_marker_1563271b48f5252d23c8784b6a6a1d5a = L.circleMarker(
+                [38.267874, -0.700352],
+                {"bubblingMouseEvents": true, "color": "#00bb44ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00bb44ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.652791625124626, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_3442553f84726c48c399355433880d50 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6eb92e0b2e014b99c45e2a7b39d99643 = $(`<div id="html_6eb92e0b2e014b99c45e2a7b39d99643" style="width: 100.0%; height: 100.0%;">Puente Altamira (76) – 977 salidas</div>`)[0];
+                popup_3442553f84726c48c399355433880d50.setContent(html_6eb92e0b2e014b99c45e2a7b39d99643);
+            
+        
+
+        circle_marker_1563271b48f5252d23c8784b6a6a1d5a.bindPopup(popup_3442553f84726c48c399355433880d50)
+        ;
+
+        
+    
+    
+            var circle_marker_df8a53e38c2552988c3f6e7f801982a3 = L.circleMarker(
+                [38.2670206, -0.707669],
+                {"bubblingMouseEvents": true, "color": "#006798ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006798ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.022681954137587, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_be632d0c65752a08a0879308086de470 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3434d0f84e5dcf27c3a0208cdde0d50f = $(`<div id="html_3434d0f84e5dcf27c3a0208cdde0d50f" style="width: 100.0%; height: 100.0%;">Plaza Obispo Siuri (77) – 541 salidas</div>`)[0];
+                popup_be632d0c65752a08a0879308086de470.setContent(html_3434d0f84e5dcf27c3a0208cdde0d50f);
+            
+        
+
+        circle_marker_df8a53e38c2552988c3f6e7f801982a3.bindPopup(popup_be632d0c65752a08a0879308086de470)
+        ;
+
+        
+    
+    
+            var circle_marker_779467b47dbc28290234f6fe177d3de0 = L.circleMarker(
+                [38.266969, -0.704873],
+                {"bubblingMouseEvents": true, "color": "#00cf30ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00cf30ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.060319042871386, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_233c0fe365736e8467aa03c31eda9f73 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_65bec15d93cb29f8c0fd9640ad9845cd = $(`<div id="html_65bec15d93cb29f8c0fd9640ad9845cd" style="width: 100.0%; height: 100.0%;">Jorge Juan 24 (78) – 1086 salidas</div>`)[0];
+                popup_233c0fe365736e8467aa03c31eda9f73.setContent(html_65bec15d93cb29f8c0fd9640ad9845cd);
+            
+        
+
+        circle_marker_779467b47dbc28290234f6fe177d3de0.bindPopup(popup_233c0fe365736e8467aa03c31eda9f73)
+        ;
+
+        
+    
+    
+            var circle_marker_c6a9bd7830a440a7991da17da7e09001 = L.circleMarker(
+                [38.266367, -0.701516],
+                {"bubblingMouseEvents": true, "color": "#002ad5ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#002ad5ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.8374875373878363, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_402467376505eb81a5be87930dc2ae7e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f9bf9e1f8cc8353db5ace98699d9820 = $(`<div id="html_2f9bf9e1f8cc8353db5ace98699d9820" style="width: 100.0%; height: 100.0%;">Intercambiador pasarela (79) – 224 salidas</div>`)[0];
+                popup_402467376505eb81a5be87930dc2ae7e.setContent(html_2f9bf9e1f8cc8353db5ace98699d9820);
+            
+        
+
+        circle_marker_c6a9bd7830a440a7991da17da7e09001.bindPopup(popup_402467376505eb81a5be87930dc2ae7e)
+        ;
+
+        
+    
+    
+            var circle_marker_8f148d5ba0d1b2d29244f465a9cbc066 = L.circleMarker(
+                [38.265251, -0.702784],
+                {"bubblingMouseEvents": true, "color": "#07ff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#07ff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.148305084745761, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_145fcd1120926358b614eef9015fea9b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a9505ccd4d22f5f2178971672f69f9c = $(`<div id="html_1a9505ccd4d22f5f2178971672f69f9c" style="width: 100.0%; height: 100.0%;">Reina Victoria con Gabriel Miró (80) – 1377 salidas</div>`)[0];
+                popup_145fcd1120926358b614eef9015fea9b.setContent(html_1a9505ccd4d22f5f2178971672f69f9c);
+            
+        
+
+        circle_marker_8f148d5ba0d1b2d29244f465a9cbc066.bindPopup(popup_145fcd1120926358b614eef9015fea9b)
+        ;
+
+        
+    
+    
+            var circle_marker_ed6edda006969c03c631bebd1094ad24 = L.circleMarker(
+                [38.262342, -0.710708],
+                {"bubblingMouseEvents": true, "color": "#00708fff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00708fff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.198404785643071, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_475f1285018b5b01e655ff36952ef189 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_276fae27e4617cf17913373f0e0c2433 = $(`<div id="html_276fae27e4617cf17913373f0e0c2433" style="width: 100.0%; height: 100.0%;">C.S. Doctor Sapena (81) – 588 salidas</div>`)[0];
+                popup_475f1285018b5b01e655ff36952ef189.setContent(html_276fae27e4617cf17913373f0e0c2433);
+            
+        
+
+        circle_marker_ed6edda006969c03c631bebd1094ad24.bindPopup(popup_475f1285018b5b01e655ff36952ef189)
+        ;
+
+        
+    
+    
+            var circle_marker_dd7a2389f857ab9383371019e54b0168 = L.circleMarker(
+                [38.261501, -0.712779],
+                {"bubblingMouseEvents": true, "color": "#007c83ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#007c83ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.426470588235294, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_9db8b2a72b94b4c146670b7566ebda0e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7c1c57e47fcea6c411f371d6268c320e = $(`<div id="html_7c1c57e47fcea6c411f371d6268c320e" style="width: 100.0%; height: 100.0%;">Antonio Machado 73 (82) – 649 salidas</div>`)[0];
+                popup_9db8b2a72b94b4c146670b7566ebda0e.setContent(html_7c1c57e47fcea6c411f371d6268c320e);
+            
+        
+
+        circle_marker_dd7a2389f857ab9383371019e54b0168.bindPopup(popup_9db8b2a72b94b4c146670b7566ebda0e)
+        ;
+
+        
+    
+    
+            var circle_marker_4b1293d3e31bbe3b8af26808d63e89a6 = L.circleMarker(
+                [38.260897, -0.704218],
+                {"bubblingMouseEvents": true, "color": "#00609fff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00609fff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.880608175473579, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_cd67c1c4a79e65a37195c24d75fedc29 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ccf6538eef961c875d2e177be9e029c = $(`<div id="html_7ccf6538eef961c875d2e177be9e029c" style="width: 100.0%; height: 100.0%;">Conrado del campo 35 (83) – 503 salidas</div>`)[0];
+                popup_cd67c1c4a79e65a37195c24d75fedc29.setContent(html_7ccf6538eef961c875d2e177be9e029c);
+            
+        
+
+        circle_marker_4b1293d3e31bbe3b8af26808d63e89a6.bindPopup(popup_cd67c1c4a79e65a37195c24d75fedc29)
+        ;
+
+        
+    
+    
+            var circle_marker_455dd44e264fe6dbddd91fa5ceec3409 = L.circleMarker(
+                [38.260099, -0.706165],
+                {"bubblingMouseEvents": true, "color": "#0059a6ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0059a6ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.746011964107677, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_45124a1b578d458112de082d83e23583 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a28fef79085b3c5170b3ccf8cfdd4f7c = $(`<div id="html_a28fef79085b3c5170b3ccf8cfdd4f7c" style="width: 100.0%; height: 100.0%;">Fernanda Santa María 64 (84) – 467 salidas</div>`)[0];
+                popup_45124a1b578d458112de082d83e23583.setContent(html_a28fef79085b3c5170b3ccf8cfdd4f7c);
+            
+        
+
+        circle_marker_455dd44e264fe6dbddd91fa5ceec3409.bindPopup(popup_45124a1b578d458112de082d83e23583)
+        ;
+
+        
+    
+    
+            var circle_marker_fee1c7c5e0c6e96801c0b539a04455ac = L.circleMarker(
+                [38.258195, -0.702253],
+                {"bubblingMouseEvents": true, "color": "#00af50ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00af50ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.42098703888335, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_727b8e61f560886660fad0f59c4f096e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_67025f1987bfd783b0d31e0fea316f80 = $(`<div id="html_67025f1987bfd783b0d31e0fea316f80" style="width: 100.0%; height: 100.0%;">Sor Josefa Alcorta 34 (85) – 915 salidas</div>`)[0];
+                popup_727b8e61f560886660fad0f59c4f096e.setContent(html_67025f1987bfd783b0d31e0fea316f80);
+            
+        
+
+        circle_marker_fee1c7c5e0c6e96801c0b539a04455ac.bindPopup(popup_727b8e61f560886660fad0f59c4f096e)
+        ;
+
+        
+    
+    
+            var circle_marker_bc75e6f6fd035faaf2d35caf82d29ed3 = L.circleMarker(
+                [38.258025, -0.711979],
+                {"bubblingMouseEvents": true, "color": "#009f60ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009f60ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.11814556331007, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_3d74eaa63a7cce84da2389004dee47ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d303154491401e09382ce3d206a5d5cd = $(`<div id="html_d303154491401e09382ce3d206a5d5cd" style="width: 100.0%; height: 100.0%;">El Corte Inglés (86) – 834 salidas</div>`)[0];
+                popup_3d74eaa63a7cce84da2389004dee47ae.setContent(html_d303154491401e09382ce3d206a5d5cd);
+            
+        
+
+        circle_marker_bc75e6f6fd035faaf2d35caf82d29ed3.bindPopup(popup_3d74eaa63a7cce84da2389004dee47ae)
+        ;
+
+        
+    
+    
+            var circle_marker_e181df06f673e890adea6690fdd13e9f = L.circleMarker(
+                [38.256276, -0.710553],
+                {"bubblingMouseEvents": true, "color": "#0038c7ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0038c7ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.106679960119641, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_a28ea9dcd47fc54b66ff3b8e3c9fc7ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92094645e38c37c49df713bdff5505fe = $(`<div id="html_92094645e38c37c49df713bdff5505fe" style="width: 100.0%; height: 100.0%;">CEIP Sanchis Guarner (87) – 296 salidas</div>`)[0];
+                popup_a28ea9dcd47fc54b66ff3b8e3c9fc7ae.setContent(html_92094645e38c37c49df713bdff5505fe);
+            
+        
+
+        circle_marker_e181df06f673e890adea6690fdd13e9f.bindPopup(popup_a28ea9dcd47fc54b66ff3b8e3c9fc7ae)
+        ;
+
+        
+    
+    
+            var circle_marker_cff0d3fb31cab69d230f45438f3ac638 = L.circleMarker(
+                [38.256488, -0.707359],
+                {"bubblingMouseEvents": true, "color": "#004cb3ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#004cb3ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.499252243270189, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_9978fd7324eeba3986cdc1ffa13f156d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_34777896f59e84682b8d4db2e48416bb = $(`<div id="html_34777896f59e84682b8d4db2e48416bb" style="width: 100.0%; height: 100.0%;">Pistas del Pla (88) – 401 salidas</div>`)[0];
+                popup_9978fd7324eeba3986cdc1ffa13f156d.setContent(html_34777896f59e84682b8d4db2e48416bb);
+            
+        
+
+        circle_marker_cff0d3fb31cab69d230f45438f3ac638.bindPopup(popup_9978fd7324eeba3986cdc1ffa13f156d)
+        ;
+
+        
+    
+    
+            var circle_marker_d6bcb86491821044566fcc30aaa94135 = L.circleMarker(
+                [38.255523, -0.704612],
+                {"bubblingMouseEvents": true, "color": "#005aa5ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#005aa5ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.764705882352941, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_e14ed68b964b395722ff6925b00b927c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78ee9eef2543e85118aab9d8d5f30180 = $(`<div id="html_78ee9eef2543e85118aab9d8d5f30180" style="width: 100.0%; height: 100.0%;">CEIP Dama d´Elx (89) – 472 salidas</div>`)[0];
+                popup_e14ed68b964b395722ff6925b00b927c.setContent(html_78ee9eef2543e85118aab9d8d5f30180);
+            
+        
+
+        circle_marker_d6bcb86491821044566fcc30aaa94135.bindPopup(popup_e14ed68b964b395722ff6925b00b927c)
+        ;
+
+        
+    
+    
+            var circle_marker_cbd56e75da32c29dfd530fe04ec703cf = L.circleMarker(
+                [38.254557, -0.703065],
+                {"bubblingMouseEvents": true, "color": "#0049b6ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0049b6ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.428215353938185, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_211356022f573d92c2cb0ed3349fc50f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9a603d879505a4c610fb5100df2063b0 = $(`<div id="html_9a603d879505a4c610fb5100df2063b0" style="width: 100.0%; height: 100.0%;">Centro salud el Pla (90) – 382 salidas</div>`)[0];
+                popup_211356022f573d92c2cb0ed3349fc50f.setContent(html_9a603d879505a4c610fb5100df2063b0);
+            
+        
+
+        circle_marker_cbd56e75da32c29dfd530fe04ec703cf.bindPopup(popup_211356022f573d92c2cb0ed3349fc50f)
+        ;
+
+        
+    
+    
+            var circle_marker_9ca1d238d07a12a8e40a92a6b4a01da8 = L.circleMarker(
+                [38.252695, -0.703777],
+                {"bubblingMouseEvents": true, "color": "#0043bcff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0043bcff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.3160518444666, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_07485f8c67d2ab525a6569464824a1e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d71b862e59852ae1eabf056d8288b03 = $(`<div id="html_5d71b862e59852ae1eabf056d8288b03" style="width: 100.0%; height: 100.0%;">Centro social el Pla (91) – 352 salidas</div>`)[0];
+                popup_07485f8c67d2ab525a6569464824a1e3.setContent(html_5d71b862e59852ae1eabf056d8288b03);
+            
+        
+
+        circle_marker_9ca1d238d07a12a8e40a92a6b4a01da8.bindPopup(popup_07485f8c67d2ab525a6569464824a1e3)
+        ;
+
+        
+    
+    
+            var circle_marker_4f2491a9fb4a50651dbf8fe049f96548 = L.circleMarker(
+                [38.270671, -0.695949],
+                {"bubblingMouseEvents": true, "color": "#002cd3ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#002cd3ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.871136590229312, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_0b6060e76ff67e5d9eaa6329f758a956 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c8eb740fb82ac48c16604eb14ef5f7db = $(`<div id="html_c8eb740fb82ac48c16604eb14ef5f7db" style="width: 100.0%; height: 100.0%;">Parking Candalix (92) – 233 salidas</div>`)[0];
+                popup_0b6060e76ff67e5d9eaa6329f758a956.setContent(html_c8eb740fb82ac48c16604eb14ef5f7db);
+            
+        
+
+        circle_marker_4f2491a9fb4a50651dbf8fe049f96548.bindPopup(popup_0b6060e76ff67e5d9eaa6329f758a956)
+        ;
+
+        
+    
+    
+            var circle_marker_a5fcb3e988d685cf515c8baae61e6051 = L.circleMarker(
+                [38.26886, -0.693874],
+                {"bubblingMouseEvents": true, "color": "#00d926ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00d926ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.243519441674975, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_fd31b3b8a7963696baecff98dfd47d21 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4869e6baf19260799acee8eed1704f61 = $(`<div id="html_4869e6baf19260799acee8eed1704f61" style="width: 100.0%; height: 100.0%;">Parque Rey Jaume I (93) – 1135 salidas</div>`)[0];
+                popup_fd31b3b8a7963696baecff98dfd47d21.setContent(html_4869e6baf19260799acee8eed1704f61);
+            
+        
+
+        circle_marker_a5fcb3e988d685cf515c8baae61e6051.bindPopup(popup_fd31b3b8a7963696baecff98dfd47d21)
+        ;
+
+        
+    
+    
+            var circle_marker_13eabc80330b171f2136064955883013 = L.circleMarker(
+                [38.264977, -0.696934],
+                {"bubblingMouseEvents": true, "color": "#00ec13ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00ec13ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.61739780658026, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_9f9fec8993e2fd0b350d47f38ad1fc30 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a6d953f81ddd0bc8c6aa6ebaf4bfec3f = $(`<div id="html_a6d953f81ddd0bc8c6aa6ebaf4bfec3f" style="width: 100.0%; height: 100.0%;">Parking Gran Teatre (94) – 1235 salidas</div>`)[0];
+                popup_9f9fec8993e2fd0b350d47f38ad1fc30.setContent(html_a6d953f81ddd0bc8c6aa6ebaf4bfec3f);
+            
+        
+
+        circle_marker_13eabc80330b171f2136064955883013.bindPopup(popup_9f9fec8993e2fd0b350d47f38ad1fc30)
+        ;
+
+        
+    
+    
+            var circle_marker_804b2ed04bc11f9b41b85de7cabde059 = L.circleMarker(
+                [38.253509, -0.709495],
+                {"bubblingMouseEvents": true, "color": "#000ef1ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#000ef1ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.27666999002991, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_93e632eb4b8ffe7068fca5f135960739 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_057767e745c1b8787dd6135fb33ee494 = $(`<div id="html_057767e745c1b8787dd6135fb33ee494" style="width: 100.0%; height: 100.0%;">IES Vicente Verdu (95) – 74 salidas</div>`)[0];
+                popup_93e632eb4b8ffe7068fca5f135960739.setContent(html_057767e745c1b8787dd6135fb33ee494);
+            
+        
+
+        circle_marker_804b2ed04bc11f9b41b85de7cabde059.bindPopup(popup_93e632eb4b8ffe7068fca5f135960739)
+        ;
+
+        
+    
+    
+            var circle_marker_df5ed728b2978170b074680a486a7640 = L.circleMarker(
+                [38.263354, -0.7004],
+                {"bubblingMouseEvents": true, "color": "#0eff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0eff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.27542372881356, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_10681f06b60111b975f7e0e4b80d4e00 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_923818b669139aecc633c694701e8a2a = $(`<div id="html_923818b669139aecc633c694701e8a2a" style="width: 100.0%; height: 100.0%;">Puente de Santa Teresa (96) – 1411 salidas</div>`)[0];
+                popup_10681f06b60111b975f7e0e4b80d4e00.setContent(html_923818b669139aecc633c694701e8a2a);
+            
+        
+
+        circle_marker_df5ed728b2978170b074680a486a7640.bindPopup(popup_10681f06b60111b975f7e0e4b80d4e00)
+        ;
+
+        
+    
+    
+            var circle_marker_fd461f586b22e628a29073b920cba177 = L.circleMarker(
+                [38.264183, -0.692711],
+                {"bubblingMouseEvents": true, "color": "#004ab5ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#004ab5ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.461864406779661, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_eb5b9b1dff067d3659556e6754b89ded = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f762869a152d2538fa34996c867ea3eb = $(`<div id="html_f762869a152d2538fa34996c867ea3eb" style="width: 100.0%; height: 100.0%;">Huerto del cura (97) – 391 salidas</div>`)[0];
+                popup_eb5b9b1dff067d3659556e6754b89ded.setContent(html_f762869a152d2538fa34996c867ea3eb);
+            
+        
+
+        circle_marker_fd461f586b22e628a29073b920cba177.bindPopup(popup_eb5b9b1dff067d3659556e6754b89ded)
+        ;
+
+        
+    
+    
+            var circle_marker_67813e61b8cdb69b5b8500e86664de7a = L.circleMarker(
+                [38.267237, -0.686321],
+                {"bubblingMouseEvents": true, "color": "#009d62ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009d62ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.084496510468594, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_4fa3550fb70c5ec8d86f89b342864b2f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_49104ab4fe010458a43ad296d0ab5429 = $(`<div id="html_49104ab4fe010458a43ad296d0ab5429" style="width: 100.0%; height: 100.0%;">IES Sixto Marco (98) – 825 salidas</div>`)[0];
+                popup_4fa3550fb70c5ec8d86f89b342864b2f.setContent(html_49104ab4fe010458a43ad296d0ab5429);
+            
+        
+
+        circle_marker_67813e61b8cdb69b5b8500e86664de7a.bindPopup(popup_4fa3550fb70c5ec8d86f89b342864b2f)
+        ;
+
+        
+    
+    
+            var circle_marker_2393501f60a2f405fc9ea69fa30994ff = L.circleMarker(
+                [38.261756, -0.686113],
+                {"bubblingMouseEvents": true, "color": "#00738cff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00738cff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.247008973080758, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_d04abd51cd77e35864104eb6e335205a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_070d2d8d86db69bbf07376e44a4e4dcd = $(`<div id="html_070d2d8d86db69bbf07376e44a4e4dcd" style="width: 100.0%; height: 100.0%;">IES La Asunción (99) – 601 salidas</div>`)[0];
+                popup_d04abd51cd77e35864104eb6e335205a.setContent(html_070d2d8d86db69bbf07376e44a4e4dcd);
+            
+        
+
+        circle_marker_2393501f60a2f405fc9ea69fa30994ff.bindPopup(popup_d04abd51cd77e35864104eb6e335205a)
+        ;
+
+        
+    
+    
+            var circle_marker_b6563910b3cbe304bf89e3f23b6365fa = L.circleMarker(
+                [38.259473, -0.696563],
+                {"bubblingMouseEvents": true, "color": "#008679ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008679ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.6208873379860425, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_73bf8204aaf018315521fe695d74df13 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_95b044beb0fd354f62a8de35be48372f = $(`<div id="html_95b044beb0fd354f62a8de35be48372f" style="width: 100.0%; height: 100.0%;">C.S. Raval (100) – 701 salidas</div>`)[0];
+                popup_73bf8204aaf018315521fe695d74df13.setContent(html_95b044beb0fd354f62a8de35be48372f);
+            
+        
+
+        circle_marker_b6563910b3cbe304bf89e3f23b6365fa.bindPopup(popup_73bf8204aaf018315521fe695d74df13)
+        ;
+
+        
+    
+    
+            var circle_marker_18a238160eca40a62141c6ebdcfaf596 = L.circleMarker(
+                [38.275654, -0.693695],
+                {"bubblingMouseEvents": true, "color": "#005ea1ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#005ea1ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.839481555333998, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_5cd7739301636638bfd9a2251a73d9b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9541b05d2391674fa1c645ccd5075223 = $(`<div id="html_9541b05d2391674fa1c645ccd5075223" style="width: 100.0%; height: 100.0%;">UMH-La Galia (101) – 492 salidas</div>`)[0];
+                popup_5cd7739301636638bfd9a2251a73d9b3.setContent(html_9541b05d2391674fa1c645ccd5075223);
+            
+        
+
+        circle_marker_18a238160eca40a62141c6ebdcfaf596.bindPopup(popup_5cd7739301636638bfd9a2251a73d9b3)
+        ;
+
+        
+    
+    
+            var circle_marker_5e7d32ddb3c83a02e8da3e42319abb8c = L.circleMarker(
+                [38.276258, -0.690914],
+                {"bubblingMouseEvents": true, "color": "#00ad52ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00ad52ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.391076769690927, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_85f89d7d42cd949c1ba1f10afba3562e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8e9d9abf4474c944481131b1e668822 = $(`<div id="html_a8e9d9abf4474c944481131b1e668822" style="width: 100.0%; height: 100.0%;">UMH-Altabix (102) – 907 salidas</div>`)[0];
+                popup_85f89d7d42cd949c1ba1f10afba3562e.setContent(html_a8e9d9abf4474c944481131b1e668822);
+            
+        
+
+        circle_marker_5e7d32ddb3c83a02e8da3e42319abb8c.bindPopup(popup_85f89d7d42cd949c1ba1f10afba3562e)
+        ;
+
+        
+    
+    
+            var circle_marker_e572cd72c02f01ee08c06ede316bb832 = L.circleMarker(
+                [38.277239, -0.686979],
+                {"bubblingMouseEvents": true, "color": "#007b84ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#007b84ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.411515453639082, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_051d2b353585db4e0e8762710ac7d011 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_14e6e61c76e1c7d21204dc7a0ac4f4c7 = $(`<div id="html_14e6e61c76e1c7d21204dc7a0ac4f4c7" style="width: 100.0%; height: 100.0%;">UMH-Altet (103) – 645 salidas</div>`)[0];
+                popup_051d2b353585db4e0e8762710ac7d011.setContent(html_14e6e61c76e1c7d21204dc7a0ac4f4c7);
+            
+        
+
+        circle_marker_e572cd72c02f01ee08c06ede316bb832.bindPopup(popup_051d2b353585db4e0e8762710ac7d011)
+        ;
+
+        
+    
+    
+            var circle_marker_ec2bb468b895d6b10943f4ac2db97972 = L.circleMarker(
+                [38.277859, -0.683877],
+                {"bubblingMouseEvents": true, "color": "#0050afff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0050afff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.570289132602193, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_3aa6ed8b1297761277e1b78f84e7bf21 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21556c360a5f46c91e583aebcf5c56c6 = $(`<div id="html_21556c360a5f46c91e583aebcf5c56c6" style="width: 100.0%; height: 100.0%;">UMH-Arenals (104) – 420 salidas</div>`)[0];
+                popup_3aa6ed8b1297761277e1b78f84e7bf21.setContent(html_21556c360a5f46c91e583aebcf5c56c6);
+            
+        
+
+        circle_marker_ec2bb468b895d6b10943f4ac2db97972.bindPopup(popup_3aa6ed8b1297761277e1b78f84e7bf21)
+        ;
+
+        
+    
+    
+            var circle_marker_13e1c32e6ea5432fd8c8ebeddb9cb06d = L.circleMarker(
+                [38.279355, -0.717831],
+                {"bubblingMouseEvents": true, "color": "#005da2ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#005da2ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.817048853439681, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_e779bfc03c380c1b790a97d0ed3a6103 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_90f41353a3c8ec8d463089ac15278490 = $(`<div id="html_90f41353a3c8ec8d463089ac15278490" style="width: 100.0%; height: 100.0%;">Almansa con Avda. Novelda (105) – 486 salidas</div>`)[0];
+                popup_e779bfc03c380c1b790a97d0ed3a6103.setContent(html_90f41353a3c8ec8d463089ac15278490);
+            
+        
+
+        circle_marker_13e1c32e6ea5432fd8c8ebeddb9cb06d.bindPopup(popup_e779bfc03c380c1b790a97d0ed3a6103)
+        ;
+
+        
+    
+    
+            var circle_marker_627e991dc214d698fcdfb96d4ccf7f32 = L.circleMarker(
+                [38.276163, -0.676059],
+                {"bubblingMouseEvents": true, "color": "#008679ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#008679ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.6321036889332, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_24d3df01549070e7789243eb42e154c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_11499d8dc0f56d3c882d0b246f2065e8 = $(`<div id="html_11499d8dc0f56d3c882d0b246f2065e8" style="width: 100.0%; height: 100.0%;">Estadio Manolo Jaén (106) – 704 salidas</div>`)[0];
+                popup_24d3df01549070e7789243eb42e154c0.setContent(html_11499d8dc0f56d3c882d0b246f2065e8);
+            
+        
+
+        circle_marker_627e991dc214d698fcdfb96d4ccf7f32.bindPopup(popup_24d3df01549070e7789243eb42e154c0)
+        ;
+
+        
+    
+    
+            var circle_marker_0c6a4dad68af695e73fb74978bfd6455 = L.circleMarker(
+                [38.277962, -0.674505],
+                {"bubblingMouseEvents": true, "color": "#001be4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#001be4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.5346460618145565, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_85f7594e382e12b771d06b2ba0c6a8ec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e5d83bc3ff87046331485741a77c7687 = $(`<div id="html_e5d83bc3ff87046331485741a77c7687" style="width: 100.0%; height: 100.0%;">Josefina Manresa (107) – 143 salidas</div>`)[0];
+                popup_85f7594e382e12b771d06b2ba0c6a8ec.setContent(html_e5d83bc3ff87046331485741a77c7687);
+            
+        
+
+        circle_marker_0c6a4dad68af695e73fb74978bfd6455.bindPopup(popup_85f7594e382e12b771d06b2ba0c6a8ec)
+        ;
+
+        
+    
+    
+            var circle_marker_d0c7ac196cf6770962064e1f54dee425 = L.circleMarker(
+                [38.278938, -0.669138],
+                {"bubblingMouseEvents": true, "color": "#0046b9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0046b9ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.36839481555334, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_324e9f05cd0388aeb0987137b06444f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf5dfa629997d9df1ff682137a13af57 = $(`<div id="html_cf5dfa629997d9df1ff682137a13af57" style="width: 100.0%; height: 100.0%;">José Ferrández Cruz (108) – 366 salidas</div>`)[0];
+                popup_324e9f05cd0388aeb0987137b06444f1.setContent(html_cf5dfa629997d9df1ff682137a13af57);
+            
+        
+
+        circle_marker_d0c7ac196cf6770962064e1f54dee425.bindPopup(popup_324e9f05cd0388aeb0987137b06444f1)
+        ;
+
+        
+    
+    
+            var circle_marker_b565f143b760876173d7c378c2698ba9 = L.circleMarker(
+                [38.273918, -0.671269],
+                {"bubblingMouseEvents": true, "color": "#009f60ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#009f60ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.114406779661017, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_fd31b5bc66e5dd0ae12787023e73f97c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de51e1165785f02b61d3c93046ad9ed6 = $(`<div id="html_de51e1165785f02b61d3c93046ad9ed6" style="width: 100.0%; height: 100.0%;">Parque Huerto del Torreret (109) – 833 salidas</div>`)[0];
+                popup_fd31b5bc66e5dd0ae12787023e73f97c.setContent(html_de51e1165785f02b61d3c93046ad9ed6);
+            
+        
+
+        circle_marker_b565f143b760876173d7c378c2698ba9.bindPopup(popup_fd31b5bc66e5dd0ae12787023e73f97c)
+        ;
+
+        
+    
+    
+            var circle_marker_6a30890a40e4731ac92777c88dbe2858 = L.circleMarker(
+                [38.272922, -0.711482],
+                {"bubblingMouseEvents": true, "color": "#006c93ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006c93ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.116151545363908, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_66cfa8e93dcd8a0658941fa6a588f587 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac59637bb1386262cc63552c7845c622 = $(`<div id="html_ac59637bb1386262cc63552c7845c622" style="width: 100.0%; height: 100.0%;">Avda Novelda con Obispo Barrachina (110) – 566 salidas</div>`)[0];
+                popup_66cfa8e93dcd8a0658941fa6a588f587.setContent(html_ac59637bb1386262cc63552c7845c622);
+            
+        
+
+        circle_marker_6a30890a40e4731ac92777c88dbe2858.bindPopup(popup_66cfa8e93dcd8a0658941fa6a588f587)
+        ;
+
+        
+    
+    
+            var circle_marker_ad34bb69371c4616da9123d8df9b58ae = L.circleMarker(
+                [38.268824, -0.685301],
+                {"bubblingMouseEvents": true, "color": "#00c23dff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00c23dff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.798604187437687, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_19e5c544995b9ea10153b3d5d3df7300 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e0e63004e00b64fc808e585c75979f33 = $(`<div id="html_e0e63004e00b64fc808e585c75979f33" style="width: 100.0%; height: 100.0%;">Avenida Alicante 38 (111) – 1016 salidas</div>`)[0];
+                popup_19e5c544995b9ea10153b3d5d3df7300.setContent(html_e0e63004e00b64fc808e585c75979f33);
+            
+        
+
+        circle_marker_ad34bb69371c4616da9123d8df9b58ae.bindPopup(popup_19e5c544995b9ea10153b3d5d3df7300)
+        ;
+
+        
+    
+    
+            var circle_marker_efd3825206539538ee4d13735b83247f = L.circleMarker(
+                [38.26697, -0.68268],
+                {"bubblingMouseEvents": true, "color": "#002ad5ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#002ad5ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.8300099700897308, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_77a413d77b8af0338adf0ac873d3d107 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_781dd2b4c9e14dcb3619848a7c32533e = $(`<div id="html_781dd2b4c9e14dcb3619848a7c32533e" style="width: 100.0%; height: 100.0%;">CEIP San Fernando (112) – 222 salidas</div>`)[0];
+                popup_77a413d77b8af0338adf0ac873d3d107.setContent(html_781dd2b4c9e14dcb3619848a7c32533e);
+            
+        
+
+        circle_marker_efd3825206539538ee4d13735b83247f.bindPopup(popup_77a413d77b8af0338adf0ac873d3d107)
+        ;
+
+        
+    
+    
+            var circle_marker_8c82301fa29c49b5739d9c8a2ce060b7 = L.circleMarker(
+                [38.267015, -0.672626],
+                {"bubblingMouseEvents": true, "color": "#002dd2ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#002dd2ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.893569292123629, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_40c17ae8cdf951e0fe549d4bb0fdc4b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_18cf364cc4059800a262c8cd347f3294 = $(`<div id="html_18cf364cc4059800a262c8cd347f3294" style="width: 100.0%; height: 100.0%;">Alcalde Juan Hernández (113) – 239 salidas</div>`)[0];
+                popup_40c17ae8cdf951e0fe549d4bb0fdc4b1.setContent(html_18cf364cc4059800a262c8cd347f3294);
+            
+        
+
+        circle_marker_8c82301fa29c49b5739d9c8a2ce060b7.bindPopup(popup_40c17ae8cdf951e0fe549d4bb0fdc4b1)
+        ;
+
+        
+    
+    
+            var circle_marker_4d42516dc363534c5ff6a3ec921bbfe4 = L.circleMarker(
+                [38.262133, -0.672075],
+                {"bubblingMouseEvents": true, "color": "#0027d8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0027d8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.7701894317048854, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_ef2cfcdd5b50b8401533165c2b745b81 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fcd05b5863b32e36fec29e763b42063f = $(`<div id="html_fcd05b5863b32e36fec29e763b42063f" style="width: 100.0%; height: 100.0%;">Jardin Biólogo Antonio de Zulueta (114) – 206 salidas</div>`)[0];
+                popup_ef2cfcdd5b50b8401533165c2b745b81.setContent(html_fcd05b5863b32e36fec29e763b42063f);
+            
+        
+
+        circle_marker_4d42516dc363534c5ff6a3ec921bbfe4.bindPopup(popup_ef2cfcdd5b50b8401533165c2b745b81)
+        ;
+
+        
+    
+    
+            var circle_marker_3646e5e844d52d02f67e5fb973731f98 = L.circleMarker(
+                [38.263822, -0.663036],
+                {"bubblingMouseEvents": true, "color": "#0037c8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0037c8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.080508474576272, "stroke": true, "weight": 3}
+            ).addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+        
+    
+        var popup_86f8e61ec0e23a5a79dbb89bd7f8a7ed = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19a1ec748e62a90df64da79404cd5d62 = $(`<div id="html_19a1ec748e62a90df64da79404cd5d62" style="width: 100.0%; height: 100.0%;">Passeig d´Atzavares (115) – 289 salidas</div>`)[0];
+                popup_86f8e61ec0e23a5a79dbb89bd7f8a7ed.setContent(html_19a1ec748e62a90df64da79404cd5d62);
+            
+        
+
+        circle_marker_3646e5e844d52d02f67e5fb973731f98.bindPopup(popup_86f8e61ec0e23a5a79dbb89bd7f8a7ed)
+        ;
+
+        
+    
+    
+    var color_map_f658bf6e8ce7628198470b64291159f6 = {};
+
+    
+    color_map_f658bf6e8ce7628198470b64291159f6.color = d3.scale.threshold()
+              .domain([0.0, 8.040080160320642, 16.080160320641284, 24.120240480961925, 32.16032064128257, 40.20040080160321, 48.24048096192385, 56.28056112224449, 64.32064128256513, 72.36072144288578, 80.40080160320642, 88.44088176352706, 96.4809619238477, 104.52104208416834, 112.56112224448898, 120.60120240480961, 128.64128256513027, 136.6813627254509, 144.72144288577155, 152.76152304609218, 160.80160320641284, 168.84168336673346, 176.88176352705412, 184.92184368737475, 192.9619238476954, 201.00200400801603, 209.0420841683367, 217.0821643286573, 225.12224448897797, 233.1623246492986, 241.20240480961922, 249.24248496993988, 257.28256513026054, 265.32264529058114, 273.3627254509018, 281.40280561122245, 289.4428857715431, 297.4829659318637, 305.52304609218436, 313.563126252505, 321.60320641282567, 329.64328657314627, 337.6833667334669, 345.7234468937876, 353.76352705410824, 361.80360721442884, 369.8436873747495, 377.88376753507015, 385.9238476953908, 393.9639278557114, 402.00400801603206, 410.0440881763527, 418.0841683366734, 426.12424849699397, 434.1643286573146, 442.2044088176353, 450.24448897795594, 458.28456913827654, 466.3246492985972, 474.36472945891785, 482.40480961923845, 490.4448897795591, 498.48496993987976, 506.5250501002004, 514.5651302605211, 522.6052104208417, 530.6452905811623, 538.685370741483, 546.7254509018036, 554.7655310621243, 562.8056112224449, 570.8456913827655, 578.8857715430862, 586.9258517034068, 594.9659318637274, 603.0060120240481, 611.0460921843687, 619.0861723446894, 627.12625250501, 635.1663326653306, 643.2064128256513, 651.2464929859719, 659.2865731462925, 667.3266533066133, 675.3667334669339, 683.4068136272546, 691.4468937875752, 699.4869739478958, 707.5270541082165, 715.5671342685371, 723.6072144288577, 731.6472945891784, 739.687374749499, 747.7274549098196, 755.7675350701403, 763.8076152304609, 771.8476953907816, 779.8877755511022, 787.9278557114228, 795.9679358717435, 804.0080160320641, 812.0480961923847, 820.0881763527054, 828.128256513026, 836.1683366733467, 844.2084168336673, 852.2484969939879, 860.2885771543087, 868.3286573146293, 876.3687374749499, 884.4088176352706, 892.4488977955912, 900.4889779559119, 908.5290581162325, 916.5691382765531, 924.6092184368738, 932.6492985971944, 940.689378757515, 948.7294589178357, 956.7695390781563, 964.8096192384769, 972.8496993987976, 980.8897795591182, 988.9298597194389, 996.9699398797595, 1005.0100200400801, 1013.0501002004008, 1021.0901803607214, 1029.1302605210421, 1037.1703406813626, 1045.2104208416833, 1053.250501002004, 1061.2905811623245, 1069.3306613226453, 1077.370741482966, 1085.4108216432867, 1093.4509018036072, 1101.4909819639279, 1109.5310621242486, 1117.571142284569, 1125.6112224448898, 1133.6513026052105, 1141.691382765531, 1149.7314629258517, 1157.7715430861724, 1165.811623246493, 1173.8517034068136, 1181.8917835671343, 1189.9318637274548, 1197.9719438877755, 1206.0120240480962, 1214.0521042084167, 1222.0921843687374, 1230.1322645290581, 1238.1723446893789, 1246.2124248496993, 1254.25250501002, 1262.2925851703408, 1270.3326653306613, 1278.372745490982, 1286.4128256513027, 1294.4529058116232, 1302.4929859719439, 1310.5330661322646, 1318.573146292585, 1326.6132264529058, 1334.6533066132265, 1342.693386773547, 1350.7334669338677, 1358.7735470941884, 1366.8136272545091, 1374.8537074148296, 1382.8937875751503, 1390.933867735471, 1398.9739478957915, 1407.0140280561122, 1415.054108216433, 1423.0941883767534, 1431.1342685370741, 1439.1743486973949, 1447.2144288577153, 1455.254509018036, 1463.2945891783568, 1471.3346693386773, 1479.374749498998, 1487.4148296593187, 1495.4549098196392, 1503.4949899799599, 1511.5350701402806, 1519.5751503006013, 1527.6152304609218, 1535.6553106212425, 1543.6953907815632, 1551.7354709418837, 1559.7755511022044, 1567.8156312625251, 1575.8557114228456, 1583.8957915831663, 1591.935871743487, 1599.9759519038075, 1608.0160320641282, 1616.056112224449, 1624.0961923847694, 1632.1362725450902, 1640.1763527054109, 1648.2164328657316, 1656.256513026052, 1664.2965931863728, 1672.3366733466935, 1680.376753507014, 1688.4168336673347, 1696.4569138276554, 1704.4969939879759, 1712.5370741482966, 1720.5771543086173, 1728.6172344689378, 1736.6573146292585, 1744.6973947895792, 1752.7374749498997, 1760.7775551102204, 1768.8176352705411, 1776.8577154308616, 1784.8977955911823, 1792.937875751503, 1800.9779559118238, 1809.0180360721442, 1817.058116232465, 1825.0981963927857, 1833.1382765531062, 1841.1783567134269, 1849.2184368737476, 1857.258517034068, 1865.2985971943888, 1873.3386773547095, 1881.37875751503, 1889.4188376753507, 1897.4589178356714, 1905.4989979959919, 1913.5390781563126, 1921.5791583166333, 1929.6192384769538, 1937.6593186372745, 1945.6993987975952, 1953.739478957916, 1961.7795591182364, 1969.8196392785571, 1977.8597194388778, 1985.8997995991983, 1993.939879759519, 2001.9799599198398, 2010.0200400801602, 2018.060120240481, 2026.1002004008017, 2034.1402805611222, 2042.1803607214429, 2050.2204408817634, 2058.2605210420843, 2066.300601202405, 2074.3406813627253, 2082.380761523046, 2090.4208416833667, 2098.460921843687, 2106.501002004008, 2114.5410821643286, 2122.581162324649, 2130.62124248497, 2138.6613226452905, 2146.701402805611, 2154.741482965932, 2162.7815631262524, 2170.8216432865734, 2178.861723446894, 2186.9018036072143, 2194.9418837675353, 2202.9819639278558, 2211.0220440881762, 2219.062124248497, 2227.1022044088177, 2235.142284569138, 2243.182364729459, 2251.2224448897796, 2259.2625250501, 2267.302605210421, 2275.3426853707415, 2283.382765531062, 2291.422845691383, 2299.4629258517034, 2307.503006012024, 2315.543086172345, 2323.5831663326653, 2331.623246492986, 2339.6633266533067, 2347.703406813627, 2355.7434869739477, 2363.7835671342687, 2371.823647294589, 2379.8637274549096, 2387.9038076152306, 2395.943887775551, 2403.9839679358715, 2412.0240480961925, 2420.064128256513, 2428.1042084168334, 2436.1442885771544, 2444.184368737475, 2452.224448897796, 2460.2645290581163, 2468.304609218437, 2476.3446893787577, 2484.384769539078, 2492.4248496993987, 2500.4649298597196, 2508.50501002004, 2516.5450901803606, 2524.5851703406815, 2532.625250501002, 2540.6653306613225, 2548.7054108216435, 2556.745490981964, 2564.7855711422844, 2572.8256513026054, 2580.865731462926, 2588.9058116232463, 2596.9458917835673, 2604.9859719438878, 2613.0260521042082, 2621.066132264529, 2629.1062124248497, 2637.14629258517, 2645.186372745491, 2653.2264529058116, 2661.266533066132, 2669.306613226453, 2677.3466933867735, 2685.386773547094, 2693.426853707415, 2701.4669338677354, 2709.507014028056, 2717.547094188377, 2725.5871743486973, 2733.6272545090183, 2741.6673346693387, 2749.7074148296592, 2757.74749498998, 2765.7875751503007, 2773.827655310621, 2781.867735470942, 2789.9078156312626, 2797.947895791583, 2805.987975951904, 2814.0280561122245, 2822.068136272545, 2830.108216432866, 2838.1482965931864, 2846.188376753507, 2854.228456913828, 2862.2685370741483, 2870.308617234469, 2878.3486973947897, 2886.38877755511, 2894.4288577154307, 2902.4689378757516, 2910.509018036072, 2918.5490981963926, 2926.5891783567135, 2934.629258517034, 2942.6693386773545, 2950.7094188376755, 2958.749498997996, 2966.7895791583164, 2974.8296593186374, 2982.869739478958, 2990.9098196392783, 2998.9498997995993, 3006.9899799599198, 3015.0300601202407, 3023.070140280561, 3031.1102204408817, 3039.1503006012026, 3047.190380761523, 3055.2304609218436, 3063.2705410821645, 3071.310621242485, 3079.3507014028055, 3087.3907815631264, 3095.430861723447, 3103.4709418837674, 3111.5110220440883, 3119.551102204409, 3127.5911823647293, 3135.6312625250503, 3143.6713426853707, 3151.7114228456912, 3159.751503006012, 3167.7915831663327, 3175.831663326653, 3183.871743486974, 3191.9118236472946, 3199.951903807615, 3207.991983967936, 3216.0320641282565, 3224.072144288577, 3232.112224448898, 3240.1523046092184, 3248.192384769539, 3256.23246492986, 3264.2725450901803, 3272.312625250501, 3280.3527054108217, 3288.392785571142, 3296.432865731463, 3304.4729458917836, 3312.513026052104, 3320.553106212425, 3328.5931863727455, 3336.633266533066, 3344.673346693387, 3352.7134268537075, 3360.753507014028, 3368.793587174349, 3376.8336673346694, 3384.87374749499, 3392.913827655311, 3400.9539078156313, 3408.9939879759518, 3417.0340681362727, 3425.074148296593, 3433.1142284569137, 3441.1543086172346, 3449.194388777555, 3457.2344689378756, 3465.2745490981965, 3473.314629258517, 3481.3547094188375, 3489.3947895791584, 3497.434869739479, 3505.4749498997994, 3513.5150300601204, 3521.555110220441, 3529.5951903807613, 3537.6352705410823, 3545.6753507014027, 3553.7154308617232, 3561.755511022044, 3569.7955911823647, 3577.835671342685, 3585.875751503006, 3593.9158316633266, 3601.9559118236475, 3609.995991983968, 3618.0360721442885, 3626.0761523046094, 3634.11623246493, 3642.1563126252504, 3650.1963927855713, 3658.236472945892, 3666.2765531062123, 3674.3166332665332, 3682.3567134268537, 3690.396793587174, 3698.436873747495, 3706.4769539078156, 3714.517034068136, 3722.557114228457, 3730.5971943887776, 3738.637274549098, 3746.677354709419, 3754.7174348697395, 3762.75751503006, 3770.797595190381, 3778.8376753507014, 3786.877755511022, 3794.917835671343, 3802.9579158316633, 3810.9979959919838, 3819.0380761523047, 3827.078156312625, 3835.1182364729457, 3843.1583166332666, 3851.198396793587, 3859.2384769539076, 3867.2785571142285, 3875.318637274549, 3883.35871743487, 3891.3987975951904, 3899.438877755511, 3907.478957915832, 3915.5190380761524, 3923.559118236473, 3931.599198396794, 3939.6392785571143, 3947.6793587174348, 3955.7194388777557, 3963.759519038076, 3971.7995991983967, 3979.8396793587176, 3987.879759519038, 3995.9198396793586, 4003.9599198396795, 4012.0])
+              .range(['#0000ffff', '#0001feff', '#0003fcff', '#0004fbff', '#0006f9ff', '#0007f8ff', '#0009f6ff', '#000af5ff', '#000cf3ff', '#000df2ff', '#000ff0ff', '#0010efff', '#0012edff', '#0014ebff', '#0015eaff', '#0017e8ff', '#0018e7ff', '#001ae5ff', '#001be4ff', '#001de2ff', '#001ee1ff', '#0020dfff', '#0021deff', '#0023dcff', '#0024dbff', '#0026d9ff', '#0028d7ff', '#0029d6ff', '#002bd4ff', '#002cd3ff', '#002ed1ff', '#002fd0ff', '#0031ceff', '#0032cdff', '#0034cbff', '#0035caff', '#0037c8ff', '#0038c7ff', '#003ac5ff', '#003cc3ff', '#003dc2ff', '#003fc0ff', '#0040bfff', '#0042bdff', '#0043bcff', '#0045baff', '#0046b9ff', '#0048b7ff', '#0049b6ff', '#004bb4ff', '#004cb3ff', '#004eb1ff', '#0050afff', '#0051aeff', '#0053acff', '#0054abff', '#0056a9ff', '#0057a8ff', '#0059a6ff', '#005aa5ff', '#005ca3ff', '#005da2ff', '#005fa0ff', '#00609fff', '#00629dff', '#00649bff', '#00659aff', '#006798ff', '#006897ff', '#006a95ff', '#006b94ff', '#006d92ff', '#006e91ff', '#00708fff', '#00718eff', '#00738cff', '#00748bff', '#007689ff', '#007887ff', '#007986ff', '#007b84ff', '#007c83ff', '#007e81ff', '#007f80ff', '#00817eff', '#00827dff', '#00847bff', '#00857aff', '#008778ff', '#008877ff', '#008a75ff', '#008c73ff', '#008d72ff', '#008f70ff', '#00906fff', '#00926dff', '#00936cff', '#00956aff', '#009669ff', '#009867ff', '#009966ff', '#009b64ff', '#009c63ff', '#009e61ff', '#00a05fff', '#00a15eff', '#00a35cff', '#00a45bff', '#00a659ff', '#00a758ff', '#00a956ff', '#00aa55ff', '#00ac53ff', '#00ad52ff', '#00af50ff', '#00b04fff', '#00b24dff', '#00b44bff', '#00b54aff', '#00b748ff', '#00b847ff', '#00ba45ff', '#00bb44ff', '#00bd42ff', '#00be41ff', '#00c03fff', '#00c13eff', '#00c33cff', '#00c53aff', '#00c639ff', '#00c837ff', '#00c936ff', '#00cb34ff', '#00cc33ff', '#00ce31ff', '#00cf30ff', '#00d12eff', '#00d22dff', '#00d42bff', '#00d52aff', '#00d728ff', '#00d926ff', '#00da25ff', '#00dc23ff', '#00dd22ff', '#00df20ff', '#00e01fff', '#00e21dff', '#00e31cff', '#00e51aff', '#00e619ff', '#00e817ff', '#00e916ff', '#00eb14ff', '#00ed12ff', '#00ee11ff', '#00f00fff', '#00f10eff', '#00f30cff', '#00f40bff', '#00f609ff', '#00f708ff', '#00f906ff', '#00fa05ff', '#00fc03ff', '#00fd02ff', '#00ff00ff', '#01ff00ff', '#02ff00ff', '#04ff00ff', '#05ff00ff', '#07ff00ff', '#08ff00ff', '#0aff00ff', '#0bff00ff', '#0dff00ff', '#0eff00ff', '#10ff00ff', '#11ff00ff', '#13ff00ff', '#15ff00ff', '#16ff00ff', '#18ff00ff', '#19ff00ff', '#1bff00ff', '#1cff00ff', '#1eff00ff', '#1fff00ff', '#21ff00ff', '#22ff00ff', '#24ff00ff', '#25ff00ff', '#27ff00ff', '#29ff00ff', '#2aff00ff', '#2cff00ff', '#2dff00ff', '#2fff00ff', '#30ff00ff', '#32ff00ff', '#33ff00ff', '#35ff00ff', '#36ff00ff', '#38ff00ff', '#39ff00ff', '#3bff00ff', '#3dff00ff', '#3eff00ff', '#40ff00ff', '#41ff00ff', '#43ff00ff', '#44ff00ff', '#46ff00ff', '#47ff00ff', '#49ff00ff', '#4aff00ff', '#4cff00ff', '#4dff00ff', '#4fff00ff', '#51ff00ff', '#52ff00ff', '#54ff00ff', '#55ff00ff', '#57ff00ff', '#58ff00ff', '#5aff00ff', '#5bff00ff', '#5dff00ff', '#5eff00ff', '#60ff00ff', '#61ff00ff', '#63ff00ff', '#65ff00ff', '#66ff00ff', '#68ff00ff', '#69ff00ff', '#6bff00ff', '#6cff00ff', '#6eff00ff', '#6fff00ff', '#71ff00ff', '#72ff00ff', '#74ff00ff', '#75ff00ff', '#77ff00ff', '#79ff00ff', '#7aff00ff', '#7cff00ff', '#7dff00ff', '#7fff00ff', '#80ff00ff', '#82ff00ff', '#83ff00ff', '#85ff00ff', '#86ff00ff', '#88ff00ff', '#8aff00ff', '#8bff00ff', '#8dff00ff', '#8eff00ff', '#90ff00ff', '#91ff00ff', '#93ff00ff', '#94ff00ff', '#96ff00ff', '#97ff00ff', '#99ff00ff', '#9aff00ff', '#9cff00ff', '#9eff00ff', '#9fff00ff', '#a1ff00ff', '#a2ff00ff', '#a4ff00ff', '#a5ff00ff', '#a7ff00ff', '#a8ff00ff', '#aaff00ff', '#abff00ff', '#adff00ff', '#aeff00ff', '#b0ff00ff', '#b2ff00ff', '#b3ff00ff', '#b5ff00ff', '#b6ff00ff', '#b8ff00ff', '#b9ff00ff', '#bbff00ff', '#bcff00ff', '#beff00ff', '#bfff00ff', '#c1ff00ff', '#c2ff00ff', '#c4ff00ff', '#c6ff00ff', '#c7ff00ff', '#c9ff00ff', '#caff00ff', '#ccff00ff', '#cdff00ff', '#cfff00ff', '#d0ff00ff', '#d2ff00ff', '#d3ff00ff', '#d5ff00ff', '#d6ff00ff', '#d8ff00ff', '#daff00ff', '#dbff00ff', '#ddff00ff', '#deff00ff', '#e0ff00ff', '#e1ff00ff', '#e3ff00ff', '#e4ff00ff', '#e6ff00ff', '#e7ff00ff', '#e9ff00ff', '#eaff00ff', '#ecff00ff', '#eeff00ff', '#efff00ff', '#f1ff00ff', '#f2ff00ff', '#f4ff00ff', '#f5ff00ff', '#f7ff00ff', '#f8ff00ff', '#faff00ff', '#fbff00ff', '#fdff00ff', '#feff00ff', '#ffff00ff', '#fffd00ff', '#fffc00ff', '#fffa00ff', '#fff900ff', '#fff700ff', '#fff600ff', '#fff400ff', '#fff300ff', '#fff100ff', '#fff000ff', '#ffee00ff', '#ffed00ff', '#ffeb00ff', '#ffe900ff', '#ffe800ff', '#ffe600ff', '#ffe500ff', '#ffe300ff', '#ffe200ff', '#ffe000ff', '#ffdf00ff', '#ffdd00ff', '#ffdc00ff', '#ffda00ff', '#ffd900ff', '#ffd700ff', '#ffd500ff', '#ffd400ff', '#ffd200ff', '#ffd100ff', '#ffcf00ff', '#ffce00ff', '#ffcc00ff', '#ffcb00ff', '#ffc900ff', '#ffc800ff', '#ffc600ff', '#ffc500ff', '#ffc300ff', '#ffc100ff', '#ffc000ff', '#ffbe00ff', '#ffbd00ff', '#ffbb00ff', '#ffba00ff', '#ffb800ff', '#ffb700ff', '#ffb500ff', '#ffb400ff', '#ffb200ff', '#ffb000ff', '#ffaf00ff', '#ffad00ff', '#ffac00ff', '#ffaa00ff', '#ffa900ff', '#ffa700ff', '#ffa600ff', '#ffa400ff', '#ffa300ff', '#ffa100ff', '#ffa000ff', '#ff9e00ff', '#ff9c00ff', '#ff9b00ff', '#ff9900ff', '#ff9800ff', '#ff9600ff', '#ff9500ff', '#ff9300ff', '#ff9200ff', '#ff9000ff', '#ff8f00ff', '#ff8d00ff', '#ff8c00ff', '#ff8a00ff', '#ff8800ff', '#ff8700ff', '#ff8500ff', '#ff8400ff', '#ff8200ff', '#ff8100ff', '#ff7f00ff', '#ff7e00ff', '#ff7c00ff', '#ff7b00ff', '#ff7900ff', '#ff7800ff', '#ff7600ff', '#ff7400ff', '#ff7300ff', '#ff7100ff', '#ff7000ff', '#ff6e00ff', '#ff6d00ff', '#ff6b00ff', '#ff6a00ff', '#ff6800ff', '#ff6700ff', '#ff6500ff', '#ff6400ff', '#ff6200ff', '#ff6000ff', '#ff5f00ff', '#ff5d00ff', '#ff5c00ff', '#ff5a00ff', '#ff5900ff', '#ff5700ff', '#ff5600ff', '#ff5400ff', '#ff5300ff', '#ff5100ff', '#ff5000ff', '#ff4e00ff', '#ff4c00ff', '#ff4b00ff', '#ff4900ff', '#ff4800ff', '#ff4600ff', '#ff4500ff', '#ff4300ff', '#ff4200ff', '#ff4000ff', '#ff3f00ff', '#ff3d00ff', '#ff3c00ff', '#ff3a00ff', '#ff3800ff', '#ff3700ff', '#ff3500ff', '#ff3400ff', '#ff3200ff', '#ff3100ff', '#ff2f00ff', '#ff2e00ff', '#ff2c00ff', '#ff2b00ff', '#ff2900ff', '#ff2800ff', '#ff2600ff', '#ff2400ff', '#ff2300ff', '#ff2100ff', '#ff2000ff', '#ff1e00ff', '#ff1d00ff', '#ff1b00ff', '#ff1a00ff', '#ff1800ff', '#ff1700ff', '#ff1500ff', '#ff1400ff', '#ff1200ff', '#ff1000ff', '#ff0f00ff', '#ff0d00ff', '#ff0c00ff', '#ff0a00ff', '#ff0900ff', '#ff0700ff', '#ff0600ff', '#ff0400ff', '#ff0300ff', '#ff0100ff', '#ff0000ff']);
+    
+
+    color_map_f658bf6e8ce7628198470b64291159f6.x = d3.scale.linear()
+              .domain([0.0, 4012.0])
+              .range([0, 450 - 50]);
+
+    color_map_f658bf6e8ce7628198470b64291159f6.legend = L.control({position: 'topright'});
+    color_map_f658bf6e8ce7628198470b64291159f6.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_f658bf6e8ce7628198470b64291159f6.legend.addTo(map_d8f11277a50dc2f6c0e118e796d84bd5);
+
+    color_map_f658bf6e8ce7628198470b64291159f6.xAxis = d3.svg.axis()
+        .scale(color_map_f658bf6e8ce7628198470b64291159f6.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.0, 1337.3333333333333, 2674.6666666666665, 4012.0]);
+
+    color_map_f658bf6e8ce7628198470b64291159f6.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_f658bf6e8ce7628198470b64291159f6.g = color_map_f658bf6e8ce7628198470b64291159f6.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_f658bf6e8ce7628198470b64291159f6.g.selectAll("rect")
+        .data(color_map_f658bf6e8ce7628198470b64291159f6.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_f658bf6e8ce7628198470b64291159f6.x(color_map_f658bf6e8ce7628198470b64291159f6.color.domain()[i - 1]) : color_map_f658bf6e8ce7628198470b64291159f6.x.range()[0],
+            x1: i < color_map_f658bf6e8ce7628198470b64291159f6.color.domain().length ? color_map_f658bf6e8ce7628198470b64291159f6.x(color_map_f658bf6e8ce7628198470b64291159f6.color.domain()[i]) : color_map_f658bf6e8ce7628198470b64291159f6.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_f658bf6e8ce7628198470b64291159f6.g.call(color_map_f658bf6e8ce7628198470b64291159f6.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Salidas 2025");
+</script>
+</html>

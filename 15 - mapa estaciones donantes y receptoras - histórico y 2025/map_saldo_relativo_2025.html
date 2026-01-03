@@ -1,0 +1,2832 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_24714d8bf2cdf177a3866d0406144fe1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_24714d8bf2cdf177a3866d0406144fe1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_24714d8bf2cdf177a3866d0406144fe1 = L.map(
+                "map_24714d8bf2cdf177a3866d0406144fe1",
+                {
+                    center: [38.267, -0.7129],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+
+            
+
+        
+    
+            var tile_layer_cb8d33108024f0ac791b011eaa1ab7af = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_cb8d33108024f0ac791b011eaa1ab7af.addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+            var circle_marker_d401485429d922cf0769fcd8b20ce499 = L.circleMarker(
+                [38.272036, -0.694305],
+                {"bubblingMouseEvents": true, "color": "#8baeebff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8baeebff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.908025247971145, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_103457bb42eaf8d07a5c241126d5d212 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_659d4b3f53900fe313b449720ffbb49c = $(`<div id="html_659d4b3f53900fe313b449720ffbb49c" style="width: 100.0%; height: 100.0%;">Estació d’Autobusos (1)<br>Cogidas: 3450<br>Devoluciones: 3665<br>Diferencia: -215<br>Porcentaje: -3.0%<br>Total usos 2025: 7115</div>`)[0];
+                popup_103457bb42eaf8d07a5c241126d5d212.setContent(html_659d4b3f53900fe313b449720ffbb49c);
+            
+        
+
+        circle_marker_d401485429d922cf0769fcd8b20ce499.bindPopup(popup_103457bb42eaf8d07a5c241126d5d212)
+        ;
+
+        
+    
+    
+            var circle_marker_954149ae91e87e5d31bd82e548b8e1eb = L.circleMarker(
+                [38.268457, -0.696731],
+                {"bubblingMouseEvents": true, "color": "#ffeb00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeb00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.168620378719567, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_8d9a9e480487c3871f00383582f873d8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6541941533d8de23d64a51ddafc25226 = $(`<div id="html_6541941533d8de23d64a51ddafc25226" style="width: 100.0%; height: 100.0%;">Oficina de Turisme (2)<br>Cogidas: 4012<br>Devoluciones: 3482<br>Diferencia: 530<br>Porcentaje: 7.1%<br>Total usos 2025: 7494</div>`)[0];
+                popup_8d9a9e480487c3871f00383582f873d8.setContent(html_6541941533d8de23d64a51ddafc25226);
+            
+        
+
+        circle_marker_954149ae91e87e5d31bd82e548b8e1eb.bindPopup(popup_8d9a9e480487c3871f00383582f873d8)
+        ;
+
+        
+    
+    
+            var circle_marker_887a83168e9a8a1623fd5ab98c6d313d = L.circleMarker(
+                [38.270117, -0.685963],
+                {"bubblingMouseEvents": true, "color": "#ffe800ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.235347159603247, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_375dc85410f30a906d11b67d149667dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_347f9e54e9ed564c66c5ae4967f3512f = $(`<div id="html_347f9e54e9ed564c66c5ae4967f3512f" style="width: 100.0%; height: 100.0%;">Plaça de la Llotja (3)<br>Cogidas: 3053<br>Devoluciones: 2592<br>Diferencia: 461<br>Porcentaje: 8.2%<br>Total usos 2025: 5645</div>`)[0];
+                popup_375dc85410f30a906d11b67d149667dd.setContent(html_347f9e54e9ed564c66c5ae4967f3512f);
+            
+        
+
+        circle_marker_887a83168e9a8a1623fd5ab98c6d313d.bindPopup(popup_375dc85410f30a906d11b67d149667dd)
+        ;
+
+        
+    
+    
+            var circle_marker_76bc96f71ca96ba26811d2af4e5e1c27 = L.circleMarker(
+                [38.260487, -0.698565],
+                {"bubblingMouseEvents": true, "color": "#6179f1ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6179f1ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.030658250676285, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_00055c1977666f7cd31c38e5131e0f0e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c68582f5f7a689821959c9c1526c645 = $(`<div id="html_4c68582f5f7a689821959c9c1526c645" style="width: 100.0%; height: 100.0%;">Plaça del Raval (4)<br>Cogidas: 2055<br>Devoluciones: 2353<br>Diferencia: -298<br>Porcentaje: -6.8%<br>Total usos 2025: 4408</div>`)[0];
+                popup_00055c1977666f7cd31c38e5131e0f0e.setContent(html_4c68582f5f7a689821959c9c1526c645);
+            
+        
+
+        circle_marker_76bc96f71ca96ba26811d2af4e5e1c27.bindPopup(popup_00055c1977666f7cd31c38e5131e0f0e)
+        ;
+
+        
+    
+    
+            var circle_marker_55b1b1bef1a1eff65420a8bc275252cd = L.circleMarker(
+                [38.264171, -0.695433],
+                {"bubblingMouseEvents": true, "color": "#fffa00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffa00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.907123534715961, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_ca0addb500687800d90f3140731fb48f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_605f3f0aba15de3353892a41a191f42a = $(`<div id="html_605f3f0aba15de3353892a41a191f42a" style="width: 100.0%; height: 100.0%;">Centre de Congressos (5)<br>Cogidas: 3549<br>Devoluciones: 3408<br>Diferencia: 141<br>Porcentaje: 2.0%<br>Total usos 2025: 6957</div>`)[0];
+                popup_ca0addb500687800d90f3140731fb48f.setContent(html_605f3f0aba15de3353892a41a191f42a);
+            
+        
+
+        circle_marker_55b1b1bef1a1eff65420a8bc275252cd.bindPopup(popup_ca0addb500687800d90f3140731fb48f)
+        ;
+
+        
+    
+    
+            var circle_marker_e1127760a6228c71c22b33e73a5b4d31 = L.circleMarker(
+                [38.265409, -0.699424],
+                {"bubblingMouseEvents": true, "color": "#4a5cf5ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4a5cf5ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.157799819657349, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_a8cc44c0d7be6894a131b12cf7113d80 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a0e78d67f41c19451e2a602e011c360 = $(`<div id="html_6a0e78d67f41c19451e2a602e011c360" style="width: 100.0%; height: 100.0%;">Ajuntament (6)<br>Cogidas: 3879<br>Devoluciones: 4630<br>Diferencia: -751<br>Porcentaje: -8.8%<br>Total usos 2025: 8509</div>`)[0];
+                popup_a8cc44c0d7be6894a131b12cf7113d80.setContent(html_6a0e78d67f41c19451e2a602e011c360);
+            
+        
+
+        circle_marker_e1127760a6228c71c22b33e73a5b4d31.bindPopup(popup_a8cc44c0d7be6894a131b12cf7113d80)
+        ;
+
+        
+    
+    
+            var circle_marker_75fe23b242cffd61ab98df875af8894e = L.circleMarker(
+                [38.273904, -0.673121],
+                {"bubblingMouseEvents": true, "color": "#6c87f0ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6c87f0ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.7312894499549145, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_ffa883b1cac3913adb4cde63b35cb92a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_83d5f48a440bdc659d466f571412315a = $(`<div id="html_83d5f48a440bdc659d466f571412315a" style="width: 100.0%; height: 100.0%;">Pavelló Municipal (7)<br>Cogidas: 1043<br>Devoluciones: 1171<br>Diferencia: -128<br>Porcentaje: -5.8%<br>Total usos 2025: 2214</div>`)[0];
+                popup_ffa883b1cac3913adb4cde63b35cb92a.setContent(html_83d5f48a440bdc659d466f571412315a);
+            
+        
+
+        circle_marker_75fe23b242cffd61ab98df875af8894e.bindPopup(popup_ffa883b1cac3913adb4cde63b35cb92a)
+        ;
+
+        
+    
+    
+            var circle_marker_9a7ba535e09427b33cd992c82af7749f = L.circleMarker(
+                [38.270115, -0.713323],
+                {"bubblingMouseEvents": true, "color": "#ffec00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffec00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.015329125338143, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_d106432698ec170d406ddef1d7b659f7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_065592af48ed765085b5978afc49f2fa = $(`<div id="html_065592af48ed765085b5978afc49f2fa" style="width: 100.0%; height: 100.0%;">Polivalent de Carrús (8)<br>Cogidas: 1149<br>Devoluciones: 1000<br>Diferencia: 149<br>Porcentaje: 6.9%<br>Total usos 2025: 2149</div>`)[0];
+                popup_d106432698ec170d406ddef1d7b659f7.setContent(html_065592af48ed765085b5978afc49f2fa);
+            
+        
+
+        circle_marker_9a7ba535e09427b33cd992c82af7749f.bindPopup(popup_d106432698ec170d406ddef1d7b659f7)
+        ;
+
+        
+    
+    
+            var circle_marker_769ffb7f085810b8d5b34f322e46e833 = L.circleMarker(
+                [38.259831, -0.701275],
+                {"bubblingMouseEvents": true, "color": "#0000eeff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000eeff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.403967538322814, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_66d0552c766ca7907e51c908f6b75b0f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce1f390a1a12a3eb4d8652cee22cb458 = $(`<div id="html_ce1f390a1a12a3eb4d8652cee22cb458" style="width: 100.0%; height: 100.0%;">Biblioteca de Sant Josep (9)<br>Cogidas: 2300<br>Devoluciones: 3291<br>Diferencia: -991<br>Porcentaje: -17.7%<br>Total usos 2025: 5591</div>`)[0];
+                popup_66d0552c766ca7907e51c908f6b75b0f.setContent(html_ce1f390a1a12a3eb4d8652cee22cb458);
+            
+        
+
+        circle_marker_769ffb7f085810b8d5b34f322e46e833.bindPopup(popup_66d0552c766ca7907e51c908f6b75b0f)
+        ;
+
+        
+    
+    
+            var circle_marker_391be348fb4e507ae18610207023c22d = L.circleMarker(
+                [38.256839, -0.691995],
+                {"bubblingMouseEvents": true, "color": "#3643f8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3643f8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.920649233543733, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_5594fd4f309bdd81edf62ffd2f389457 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b7aaf15c0966a6fbcabf3332dbb6b99f = $(`<div id="html_b7aaf15c0966a6fbcabf3332dbb6b99f" style="width: 100.0%; height: 100.0%;">L’Escorxador (10)<br>Cogidas: 599<br>Devoluciones: 741<br>Diferencia: -142<br>Porcentaje: -10.6%<br>Total usos 2025: 1340</div>`)[0];
+                popup_5594fd4f309bdd81edf62ffd2f389457.setContent(html_b7aaf15c0966a6fbcabf3332dbb6b99f);
+            
+        
+
+        circle_marker_391be348fb4e507ae18610207023c22d.bindPopup(popup_5594fd4f309bdd81edf62ffd2f389457)
+        ;
+
+        
+    
+    
+            var circle_marker_3c901173fb902d184701084387e22399 = L.circleMarker(
+                [38.261942, -0.708752],
+                {"bubblingMouseEvents": true, "color": "#0000fbff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000fbff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.778178539224527, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_1cef69f1ee2f221efc48afcc44933bed = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bace8173159f379f640a59a8c07ec01c = $(`<div id="html_bace8173159f379f640a59a8c07ec01c" style="width: 100.0%; height: 100.0%;">Plaça de Crevillent (11)<br>Cogidas: 1705<br>Devoluciones: 2354<br>Diferencia: -649<br>Porcentaje: -16.0%<br>Total usos 2025: 4059</div>`)[0];
+                popup_1cef69f1ee2f221efc48afcc44933bed.setContent(html_bace8173159f379f640a59a8c07ec01c);
+            
+        
+
+        circle_marker_3c901173fb902d184701084387e22399.bindPopup(popup_1cef69f1ee2f221efc48afcc44933bed)
+        ;
+
+        
+    
+    
+            var circle_marker_3973181d872cf56ffa30ee0b142fcdd7 = L.circleMarker(
+                [38.268924, -0.706933],
+                {"bubblingMouseEvents": true, "color": "#7d9dedff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7d9dedff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.382326420198377, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_443eb81d9b55a4e4ea71409c6b4be3ba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2990c0005434649129846867146e4da3 = $(`<div id="html_2990c0005434649129846867146e4da3" style="width: 100.0%; height: 100.0%;">Ambulatori de Sant Fermí (12)<br>Cogidas: 3660<br>Devoluciones: 3984<br>Diferencia: -324<br>Porcentaje: -4.2%<br>Total usos 2025: 7644</div>`)[0];
+                popup_443eb81d9b55a4e4ea71409c6b4be3ba.setContent(html_2990c0005434649129846867146e4da3);
+            
+        
+
+        circle_marker_3973181d872cf56ffa30ee0b142fcdd7.bindPopup(popup_443eb81d9b55a4e4ea71409c6b4be3ba)
+        ;
+
+        
+    
+    
+            var circle_marker_a0dde2f48a71b47b805688ebe7f8d639 = L.circleMarker(
+                [38.274553, -0.708405],
+                {"bubblingMouseEvents": true, "color": "#ff9000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff9000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.532010820559062, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_d12846c88be429c5e0976db2f555b754 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_72d46a7e75efaf24565d31bb908edf5c = $(`<div id="html_72d46a7e75efaf24565d31bb908edf5c" style="width: 100.0%; height: 100.0%;">Jardí del 1r de Maig (13)<br>Cogidas: 771<br>Devoluciones: 362<br>Diferencia: 409<br>Porcentaje: 36.1%<br>Total usos 2025: 1133</div>`)[0];
+                popup_d12846c88be429c5e0976db2f555b754.setContent(html_72d46a7e75efaf24565d31bb908edf5c);
+            
+        
+
+        circle_marker_a0dde2f48a71b47b805688ebe7f8d639.bindPopup(popup_d12846c88be429c5e0976db2f555b754)
+        ;
+
+        
+    
+    
+            var circle_marker_33e471318ba2415065125f35e084675a = L.circleMarker(
+                [38.262993, -0.688257],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.040577096483318, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_7441aa93c039b2988988455aa48f3a97 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_27b122f5c4802881930bed34c001e511 = $(`<div id="html_27b122f5c4802881930bed34c001e511" style="width: 100.0%; height: 100.0%;">Comissaria (14)<br>Cogidas: 1697<br>Devoluciones: 1694<br>Diferencia: 3<br>Porcentaje: 0.1%<br>Total usos 2025: 3391</div>`)[0];
+                popup_7441aa93c039b2988988455aa48f3a97.setContent(html_27b122f5c4802881930bed34c001e511);
+            
+        
+
+        circle_marker_33e471318ba2415065125f35e084675a.bindPopup(popup_7441aa93c039b2988988455aa48f3a97)
+        ;
+
+        
+    
+    
+            var circle_marker_49fefb333a7af8dd7fb2d9fb940b6e25 = L.circleMarker(
+                [38.26573, -0.71128],
+                {"bubblingMouseEvents": true, "color": "#ffe200ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.99278629395852, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_d71fa24166e391cc30f8a1c08d841c56 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_05b307bf59791956a552ab6d3e154bd0 = $(`<div id="html_05b307bf59791956a552ab6d3e154bd0" style="width: 100.0%; height: 100.0%;">Av. Llibertat / Reina Victòria (15)<br>Cogidas: 2756<br>Devoluciones: 2239<br>Diferencia: 517<br>Porcentaje: 10.4%<br>Total usos 2025: 4995</div>`)[0];
+                popup_d71fa24166e391cc30f8a1c08d841c56.setContent(html_05b307bf59791956a552ab6d3e154bd0);
+            
+        
+
+        circle_marker_49fefb333a7af8dd7fb2d9fb940b6e25.bindPopup(popup_d71fa24166e391cc30f8a1c08d841c56)
+        ;
+
+        
+    
+    
+            var circle_marker_6b20e1ac1b340d4b37af9f0d2cd03331 = L.circleMarker(
+                [38.27609, -0.71529],
+                {"bubblingMouseEvents": true, "color": "#ff5900ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff5900ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.0, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_d3670fb39d30e9a1ae39de384f002a6a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eccd65cd49cff79063bf49df18d8461e = $(`<div id="html_eccd65cd49cff79063bf49df18d8461e" style="width: 100.0%; height: 100.0%;">Jardí d’Asp (16)<br>Cogidas: 1746<br>Devoluciones: 637<br>Diferencia: 1109<br>Porcentaje: 46.5%<br>Total usos 2025: 2383</div>`)[0];
+                popup_d3670fb39d30e9a1ae39de384f002a6a.setContent(html_eccd65cd49cff79063bf49df18d8461e);
+            
+        
+
+        circle_marker_6b20e1ac1b340d4b37af9f0d2cd03331.bindPopup(popup_d3670fb39d30e9a1ae39de384f002a6a)
+        ;
+
+        
+    
+    
+            var circle_marker_0744536a31221247eca94fb7772b8556 = L.circleMarker(
+                [38.27662, -0.67801],
+                {"bubblingMouseEvents": true, "color": "#fff900ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff900ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.245266005410279, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_fae027c7c66d7c03937b44f5709347b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_42a37102120379dde16d2e484e2a3a3e = $(`<div id="html_42a37102120379dde16d2e484e2a3a3e" style="width: 100.0%; height: 100.0%;">Plaça de Castella (17)<br>Cogidas: 3850<br>Devoluciones: 3684<br>Diferencia: 166<br>Porcentaje: 2.2%<br>Total usos 2025: 7534</div>`)[0];
+                popup_fae027c7c66d7c03937b44f5709347b0.setContent(html_42a37102120379dde16d2e484e2a3a3e);
+            
+        
+
+        circle_marker_0744536a31221247eca94fb7772b8556.bindPopup(popup_fae027c7c66d7c03937b44f5709347b0)
+        ;
+
+        
+    
+    
+            var circle_marker_d0d5efcf602c9c3d9792766d5cd03e17 = L.circleMarker(
+                [38.27832, -0.67195],
+                {"bubblingMouseEvents": true, "color": "#ffdd00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffdd00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.491433724075744, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_44cd3b1967024be94da2271210c2c980 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb837ca79c08908c11fa6d7e35711a09 = $(`<div id="html_fb837ca79c08908c11fa6d7e35711a09" style="width: 100.0%; height: 100.0%;">Poliesportiu d’Altabix (18)<br>Cogidas: 1854<br>Devoluciones: 1448<br>Diferencia: 406<br>Porcentaje: 12.3%<br>Total usos 2025: 3302</div>`)[0];
+                popup_44cd3b1967024be94da2271210c2c980.setContent(html_fb837ca79c08908c11fa6d7e35711a09);
+            
+        
+
+        circle_marker_d0d5efcf602c9c3d9792766d5cd03e17.bindPopup(popup_44cd3b1967024be94da2271210c2c980)
+        ;
+
+        
+    
+    
+            var circle_marker_f977c642b9c99b7d7308d42060083a0b = L.circleMarker(
+                [38.26674, -0.69328],
+                {"bubblingMouseEvents": true, "color": "#fff600ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.286744815148783, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_e5bbb0a4f167820307aa409b3b7439ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9f301c41490e5178e349343d6058ff3 = $(`<div id="html_b9f301c41490e5178e349343d6058ff3" style="width: 100.0%; height: 100.0%;">Jesuïtines (19)<br>Cogidas: 3606<br>Devoluciones: 3363<br>Diferencia: 243<br>Porcentaje: 3.5%<br>Total usos 2025: 6969</div>`)[0];
+                popup_e5bbb0a4f167820307aa409b3b7439ae.setContent(html_b9f301c41490e5178e349343d6058ff3);
+            
+        
+
+        circle_marker_f977c642b9c99b7d7308d42060083a0b.bindPopup(popup_e5bbb0a4f167820307aa409b3b7439ae)
+        ;
+
+        
+    
+    
+            var circle_marker_c1224c0f46ab7b2d653d16f09cd27dc5 = L.circleMarker(
+                [38.25835, -0.70852],
+                {"bubblingMouseEvents": true, "color": "#566cf3ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#566cf3ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.759242560865645, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_cf264f00f42ebf9c428b5f9fa84e6538 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a388db880bb11b58c9354405ea0a93c1 = $(`<div id="html_a388db880bb11b58c9354405ea0a93c1" style="width: 100.0%; height: 100.0%;">Antoni Mena / Fra Jaume Torres (20)<br>Cogidas: 1220<br>Devoluciones: 1424<br>Diferencia: -204<br>Porcentaje: -7.7%<br>Total usos 2025: 2644</div>`)[0];
+                popup_cf264f00f42ebf9c428b5f9fa84e6538.setContent(html_a388db880bb11b58c9354405ea0a93c1);
+            
+        
+
+        circle_marker_c1224c0f46ab7b2d653d16f09cd27dc5.bindPopup(popup_cf264f00f42ebf9c428b5f9fa84e6538)
+        ;
+
+        
+    
+    
+            var circle_marker_e7fffa70a2bf75a13cf2a8b724366244 = L.circleMarker(
+                [38.25923, -0.7109],
+                {"bubblingMouseEvents": true, "color": "#151bfcff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#151bfcff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.652840396753832, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_d85629a52c97b93568adfcbf9f290e3c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d2d4c363e1d3720f715f6b0fe21072f7 = $(`<div id="html_d2d4c363e1d3720f715f6b0fe21072f7" style="width: 100.0%; height: 100.0%;">C.P. Mariano Benlliure (21)<br>Cogidas: 1103<br>Devoluciones: 1447<br>Diferencia: -344<br>Porcentaje: -13.5%<br>Total usos 2025: 2550</div>`)[0];
+                popup_d85629a52c97b93568adfcbf9f290e3c.setContent(html_d2d4c363e1d3720f715f6b0fe21072f7);
+            
+        
+
+        circle_marker_e7fffa70a2bf75a13cf2a8b724366244.bindPopup(popup_d85629a52c97b93568adfcbf9f290e3c)
+        ;
+
+        
+    
+    
+            var circle_marker_52381394723c840dc4380a83cf90fe25 = L.circleMarker(
+                [38.25399, -0.70548],
+                {"bubblingMouseEvents": true, "color": "#0000caff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000caff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.23624887285843, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_d829cd7e1d73429f451e449b8e10b597 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea21aaa6387138f7a74deca3528d2ee2 = $(`<div id="html_ea21aaa6387138f7a74deca3528d2ee2" style="width: 100.0%; height: 100.0%;">Av. Llauradors / Eslava (22)<br>Cogidas: 921<br>Devoluciones: 1456<br>Diferencia: -535<br>Porcentaje: -22.5%<br>Total usos 2025: 2377</div>`)[0];
+                popup_d829cd7e1d73429f451e449b8e10b597.setContent(html_ea21aaa6387138f7a74deca3528d2ee2);
+            
+        
+
+        circle_marker_52381394723c840dc4380a83cf90fe25.bindPopup(popup_d829cd7e1d73429f451e449b8e10b597)
+        ;
+
+        
+    
+    
+            var circle_marker_e63af109dff7dc17c05970d1244fb82e = L.circleMarker(
+                [38.25734, -0.70461],
+                {"bubblingMouseEvents": true, "color": "#fffc00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffc00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4869251577998197, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_2dcf450db5c29fa8b116e4a00b383741 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3bc16d4c7676805fe128413a85a90e77 = $(`<div id="html_3bc16d4c7676805fe128413a85a90e77" style="width: 100.0%; height: 100.0%;">Conrado del Campo / Trinquet (23)<br>Cogidas: 1620<br>Devoluciones: 1584<br>Diferencia: 36<br>Porcentaje: 1.1%<br>Total usos 2025: 3204</div>`)[0];
+                popup_2dcf450db5c29fa8b116e4a00b383741.setContent(html_3bc16d4c7676805fe128413a85a90e77);
+            
+        
+
+        circle_marker_e63af109dff7dc17c05970d1244fb82e.bindPopup(popup_2dcf450db5c29fa8b116e4a00b383741)
+        ;
+
+        
+    
+    
+            var circle_marker_d1656004c7eb1fc3abe47769705a9ef9 = L.circleMarker(
+                [38.27553, -0.66915],
+                {"bubblingMouseEvents": true, "color": "#0a0dfeff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0a0dfeff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.177637511271415, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_aaa91dc850df9fd10a6c23d1af8be5df = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6686fa3eca4d6079587ee0fc326ac8d2 = $(`<div id="html_6686fa3eca4d6079587ee0fc326ac8d2" style="width: 100.0%; height: 100.0%;">Policia Local (24)<br>Cogidas: 476<br>Devoluciones: 637<br>Diferencia: -161<br>Porcentaje: -14.5%<br>Total usos 2025: 1113</div>`)[0];
+                popup_aaa91dc850df9fd10a6c23d1af8be5df.setContent(html_6686fa3eca4d6079587ee0fc326ac8d2);
+            
+        
+
+        circle_marker_d1656004c7eb1fc3abe47769705a9ef9.bindPopup(popup_aaa91dc850df9fd10a6c23d1af8be5df)
+        ;
+
+        
+    
+    
+            var circle_marker_3a1a692f09141800ddd7ac3c8507be4f = L.circleMarker(
+                [38.26718, -0.70259],
+                {"bubblingMouseEvents": true, "color": "#6078f2ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6078f2ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.098286744815149, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_f6cd72ba84d62d43c575e3e56019b983 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad038fef814b84e9f6ac4d41f9c4fbbe = $(`<div id="html_ad038fef814b84e9f6ac4d41f9c4fbbe" style="width: 100.0%; height: 100.0%;">Cor de Jesús (25)<br>Cogidas: 2060<br>Devoluciones: 2363<br>Diferencia: -303<br>Porcentaje: -6.9%<br>Total usos 2025: 4423</div>`)[0];
+                popup_f6cd72ba84d62d43c575e3e56019b983.setContent(html_ad038fef814b84e9f6ac4d41f9c4fbbe);
+            
+        
+
+        circle_marker_3a1a692f09141800ddd7ac3c8507be4f.bindPopup(popup_f6cd72ba84d62d43c575e3e56019b983)
+        ;
+
+        
+    
+    
+            var circle_marker_74be41ec57d890e7c5bbf0eff110a842 = L.circleMarker(
+                [38.27425, -0.69111],
+                {"bubblingMouseEvents": true, "color": "#fff400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.78629395852119, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_3224853fa5ed1c9f426ae560b46407e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6875c43d827bbfcde83e717793b11fe8 = $(`<div id="html_6875c43d827bbfcde83e717793b11fe8" style="width: 100.0%; height: 100.0%;">UMH / Escola Oficial d’Idiomes (26)<br>Cogidas: 2640<br>Devoluciones: 2434<br>Diferencia: 206<br>Porcentaje: 4.1%<br>Total usos 2025: 5074</div>`)[0];
+                popup_3224853fa5ed1c9f426ae560b46407e3.setContent(html_6875c43d827bbfcde83e717793b11fe8);
+            
+        
+
+        circle_marker_74be41ec57d890e7c5bbf0eff110a842.bindPopup(popup_3224853fa5ed1c9f426ae560b46407e3)
+        ;
+
+        
+    
+    
+            var circle_marker_184b306226fa2f428fa08dfc7a9d9a6f = L.circleMarker(
+                [38.27921, -0.68589],
+                {"bubblingMouseEvents": true, "color": "#fff000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.407574391343553, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_b54642c11f6c0e9b71417149f8777e2a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aac8a1c4fd0604b750d4a7a6d4fbca70 = $(`<div id="html_aac8a1c4fd0604b750d4a7a6d4fbca70" style="width: 100.0%; height: 100.0%;">UMH / Pavelló d’Esports (27)<br>Cogidas: 1740<br>Devoluciones: 1562<br>Diferencia: 178<br>Porcentaje: 5.4%<br>Total usos 2025: 3302</div>`)[0];
+                popup_b54642c11f6c0e9b71417149f8777e2a.setContent(html_aac8a1c4fd0604b750d4a7a6d4fbca70);
+            
+        
+
+        circle_marker_184b306226fa2f428fa08dfc7a9d9a6f.bindPopup(popup_b54642c11f6c0e9b71417149f8777e2a)
+        ;
+
+        
+    
+    
+            var circle_marker_fb6ebd4c491c9c0d624006561adeada1 = L.circleMarker(
+                [38.262792, -0.703505],
+                {"bubblingMouseEvents": true, "color": "#fffa00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffa00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.528403967538323, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_507c09cccf22b3cabadf9545d809aa6d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef20a1a1fc248a958f0276bdad46ee53 = $(`<div id="html_ef20a1a1fc248a958f0276bdad46ee53" style="width: 100.0%; height: 100.0%;">Passeig de les Germanies (28)<br>Cogidas: 2726<br>Devoluciones: 2613<br>Diferencia: 113<br>Porcentaje: 2.1%<br>Total usos 2025: 5339</div>`)[0];
+                popup_507c09cccf22b3cabadf9545d809aa6d.setContent(html_ef20a1a1fc248a958f0276bdad46ee53);
+            
+        
+
+        circle_marker_fb6ebd4c491c9c0d624006561adeada1.bindPopup(popup_507c09cccf22b3cabadf9545d809aa6d)
+        ;
+
+        
+    
+    
+            var circle_marker_59babbf2057550f04298c81aa6f0e0b3 = L.circleMarker(
+                [38.275568, -0.703184],
+                {"bubblingMouseEvents": true, "color": "#ffcc00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcc00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.894499549143372, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_49f1c19925a56c414f64c9762d22992c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8e777b23790326be39eabc59b9b92594 = $(`<div id="html_8e777b23790326be39eabc59b9b92594" style="width: 100.0%; height: 100.0%;">Casablanca (29)<br>Cogidas: 695<br>Devoluciones: 481<br>Diferencia: 214<br>Porcentaje: 18.2%<br>Total usos 2025: 1176</div>`)[0];
+                popup_49f1c19925a56c414f64c9762d22992c.setContent(html_8e777b23790326be39eabc59b9b92594);
+            
+        
+
+        circle_marker_59babbf2057550f04298c81aa6f0e0b3.bindPopup(popup_49f1c19925a56c414f64c9762d22992c)
+        ;
+
+        
+    
+    
+            var circle_marker_d46456e4ea2fcc82dd0096d1a6dfecec = L.circleMarker(
+                [38.27052, -0.6702],
+                {"bubblingMouseEvents": true, "color": "#8cafebff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8cafebff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.311992786293958, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_498f566960cb4d8942087b79239374aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_557db32b9bfb8e76da2df6aaa7b55ecd = $(`<div id="html_557db32b9bfb8e76da2df6aaa7b55ecd" style="width: 100.0%; height: 100.0%;">Squash (30)<br>Cogidas: 1595<br>Devoluciones: 1692<br>Diferencia: -97<br>Porcentaje: -3.0%<br>Total usos 2025: 3287</div>`)[0];
+                popup_498f566960cb4d8942087b79239374aa.setContent(html_557db32b9bfb8e76da2df6aaa7b55ecd);
+            
+        
+
+        circle_marker_d46456e4ea2fcc82dd0096d1a6dfecec.bindPopup(popup_498f566960cb4d8942087b79239374aa)
+        ;
+
+        
+    
+    
+            var circle_marker_f894903465558e92f3166363a844bfd9 = L.circleMarker(
+                [38.26566, -0.67728],
+                {"bubblingMouseEvents": true, "color": "#0000f9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000f9ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.112714156898107, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_ba317a0b39cd9335bf87d20ffd58b172 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9fe1961a4a7f9cd95a0595fff523b85b = $(`<div id="html_9fe1961a4a7f9cd95a0595fff523b85b" style="width: 100.0%; height: 100.0%;">Sant Antoni (31)<br>Cogidas: 972<br>Devoluciones: 1350<br>Diferencia: -378<br>Porcentaje: -16.3%<br>Total usos 2025: 2322</div>`)[0];
+                popup_ba317a0b39cd9335bf87d20ffd58b172.setContent(html_9fe1961a4a7f9cd95a0595fff523b85b);
+            
+        
+
+        circle_marker_f894903465558e92f3166363a844bfd9.bindPopup(popup_ba317a0b39cd9335bf87d20ffd58b172)
+        ;
+
+        
+    
+    
+            var circle_marker_44eecd39be5daba4edc29ee8539ce294 = L.circleMarker(
+                [38.27272, -0.68108],
+                {"bubblingMouseEvents": true, "color": "#fff700ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.961226330027051, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_8bca351d7c56bc157596f56f86eb401b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad8baa2ff94b56ad667b8c17b128e9e6 = $(`<div id="html_ad8baa2ff94b56ad667b8c17b128e9e6" style="width: 100.0%; height: 100.0%;">Centre de Salut d’Altabix (32)<br>Cogidas: 2518<br>Devoluciones: 2373<br>Diferencia: 145<br>Porcentaje: 3.0%<br>Total usos 2025: 4891</div>`)[0];
+                popup_8bca351d7c56bc157596f56f86eb401b.setContent(html_ad8baa2ff94b56ad667b8c17b128e9e6);
+            
+        
+
+        circle_marker_44eecd39be5daba4edc29ee8539ce294.bindPopup(popup_8bca351d7c56bc157596f56f86eb401b)
+        ;
+
+        
+    
+    
+            var circle_marker_7991116a793d231dbb342eebb88ec4e4 = L.circleMarker(
+                [38.261175, -0.71614],
+                {"bubblingMouseEvents": true, "color": "#1217fdff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1217fdff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.005410279531109, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_a524cb80c3bb4b5b8537ad55e2da3dc6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fca81606726b62814104c8d147a7c074 = $(`<div id="html_fca81606726b62814104c8d147a7c074" style="width: 100.0%; height: 100.0%;">Av. Libertat / l’Aljub (33)<br>Cogidas: 1389<br>Devoluciones: 1833<br>Diferencia: -444<br>Porcentaje: -13.8%<br>Total usos 2025: 3222</div>`)[0];
+                popup_a524cb80c3bb4b5b8537ad55e2da3dc6.setContent(html_fca81606726b62814104c8d147a7c074);
+            
+        
+
+        circle_marker_7991116a793d231dbb342eebb88ec4e4.bindPopup(popup_a524cb80c3bb4b5b8537ad55e2da3dc6)
+        ;
+
+        
+    
+    
+            var circle_marker_231dfc43311c91bc6490ee640d150adf = L.circleMarker(
+                [38.25961, -0.68586],
+                {"bubblingMouseEvents": true, "color": "#a4cce8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a4cce8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.649233543733093, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_1a3236621d1a3526ff9f4fd0502e7993 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_909db444d55feb900d24439259a467d5 = $(`<div id="html_909db444d55feb900d24439259a467d5" style="width: 100.0%; height: 100.0%;">Hospital General (34)<br>Cogidas: 2821<br>Devoluciones: 2869<br>Diferencia: -48<br>Porcentaje: -0.8%<br>Total usos 2025: 5690</div>`)[0];
+                popup_1a3236621d1a3526ff9f4fd0502e7993.setContent(html_909db444d55feb900d24439259a467d5);
+            
+        
+
+        circle_marker_231dfc43311c91bc6490ee640d150adf.bindPopup(popup_1a3236621d1a3526ff9f4fd0502e7993)
+        ;
+
+        
+    
+    
+            var circle_marker_0f32541213b8831cae507630dce434ca = L.circleMarker(
+                [38.25515, -0.71483],
+                {"bubblingMouseEvents": true, "color": "#95baeaff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#95baeaff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4328223624887286, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_bbeb71e6e460b9f6dd7233d175a60755 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0088d2fd16aa3c3d5881717ab6b66c21 = $(`<div id="html_0088d2fd16aa3c3d5881717ab6b66c21" style="width: 100.0%; height: 100.0%;">Hospital del Vinalopó (35)<br>Cogidas: 715<br>Devoluciones: 747<br>Diferencia: -32<br>Porcentaje: -2.2%<br>Total usos 2025: 1462</div>`)[0];
+                popup_bbeb71e6e460b9f6dd7233d175a60755.setContent(html_0088d2fd16aa3c3d5881717ab6b66c21);
+            
+        
+
+        circle_marker_0f32541213b8831cae507630dce434ca.bindPopup(popup_bbeb71e6e460b9f6dd7233d175a60755)
+        ;
+
+        
+    
+    
+            var circle_marker_8443f01aa1463af3b4bc45a6690c77a4 = L.circleMarker(
+                [38.268272, -0.677594],
+                {"bubblingMouseEvents": true, "color": "#3340f8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3340f8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.963931469792605, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_9cd94f65bcec400d8663ceb88e2db9a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_68a333ef06c3a4c232c16f84b0bfb157 = $(`<div id="html_68a333ef06c3a4c232c16f84b0bfb157" style="width: 100.0%; height: 100.0%;">I.E.S. Victoria Kent (36)<br>Cogidas: 1514<br>Devoluciones: 1881<br>Diferencia: -367<br>Porcentaje: -10.8%<br>Total usos 2025: 3395</div>`)[0];
+                popup_9cd94f65bcec400d8663ceb88e2db9a8.setContent(html_68a333ef06c3a4c232c16f84b0bfb157);
+            
+        
+
+        circle_marker_8443f01aa1463af3b4bc45a6690c77a4.bindPopup(popup_9cd94f65bcec400d8663ceb88e2db9a8)
+        ;
+
+        
+    
+    
+            var circle_marker_7b06a0bfb378b1e4eb97ffdb637c6c12 = L.circleMarker(
+                [38.26345, -0.66528],
+                {"bubblingMouseEvents": true, "color": "#0000bbff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000bbff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.530207394048693, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_0cb5ff28f8ef8b303c152b69da5295fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88a63849e6acccff022069f2cec86fc4 = $(`<div id="html_88a63849e6acccff022069f2cec86fc4" style="width: 100.0%; height: 100.0%;">Hort de Travaló (37)<br>Cogidas: 403<br>Devoluciones: 664<br>Diferencia: -261<br>Porcentaje: -24.5%<br>Total usos 2025: 1067</div>`)[0];
+                popup_0cb5ff28f8ef8b303c152b69da5295fe.setContent(html_88a63849e6acccff022069f2cec86fc4);
+            
+        
+
+        circle_marker_7b06a0bfb378b1e4eb97ffdb637c6c12.bindPopup(popup_0cb5ff28f8ef8b303c152b69da5295fe)
+        ;
+
+        
+    
+    
+            var circle_marker_4a31df792475399698d57299972ff0f0 = L.circleMarker(
+                [38.278264, -0.708628],
+                {"bubblingMouseEvents": true, "color": "#ff7f00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff7f00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.64472497745717, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_e6fd4d6a828647d2562ab73529c93114 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_efc718460292d2bc48f8466f8873bc62 = $(`<div id="html_efc718460292d2bc48f8466f8873bc62" style="width: 100.0%; height: 100.0%;">Poliesportiu de Carrús (38)<br>Cogidas: 1397<br>Devoluciones: 610<br>Diferencia: 787<br>Porcentaje: 39.2%<br>Total usos 2025: 2007</div>`)[0];
+                popup_e6fd4d6a828647d2562ab73529c93114.setContent(html_efc718460292d2bc48f8466f8873bc62);
+            
+        
+
+        circle_marker_4a31df792475399698d57299972ff0f0.bindPopup(popup_e6fd4d6a828647d2562ab73529c93114)
+        ;
+
+        
+    
+    
+            var circle_marker_74772fdfbbb179326cc2841e6828694b = L.circleMarker(
+                [38.271382, -0.710028],
+                {"bubblingMouseEvents": true, "color": "#fffd00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffd00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.2028854824165913, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_d16bef8cbe65da2ce3250d9b4c2bab09 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fbc1ef08efab36cd047afb73a2dd7e27 = $(`<div id="html_fbc1ef08efab36cd047afb73a2dd7e27" style="width: 100.0%; height: 100.0%;">Francesc Cantó (39)<br>Cogidas: 840<br>Devoluciones: 825<br>Diferencia: 15<br>Porcentaje: 0.9%<br>Total usos 2025: 1665</div>`)[0];
+                popup_d16bef8cbe65da2ce3250d9b4c2bab09.setContent(html_fbc1ef08efab36cd047afb73a2dd7e27);
+            
+        
+
+        circle_marker_74772fdfbbb179326cc2841e6828694b.bindPopup(popup_d16bef8cbe65da2ce3250d9b4c2bab09)
+        ;
+
+        
+    
+    
+            var circle_marker_0232de5016894aca4d2d6d82efed9658 = L.circleMarker(
+                [38.27091, -0.701044],
+                {"bubblingMouseEvents": true, "color": "#ffe800ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.169522091974752, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_6c8c56ee7bafcafc0f8a76720422576f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_276f97b9382c22d11cd5f74d195ead5e = $(`<div id="html_276f97b9382c22d11cd5f74d195ead5e" style="width: 100.0%; height: 100.0%;">C.P. Baix Vinalopó (40)<br>Cogidas: 3910<br>Devoluciones: 3306<br>Diferencia: 604<br>Porcentaje: 8.4%<br>Total usos 2025: 7216</div>`)[0];
+                popup_6c8c56ee7bafcafc0f8a76720422576f.setContent(html_276f97b9382c22d11cd5f74d195ead5e);
+            
+        
+
+        circle_marker_0232de5016894aca4d2d6d82efed9658.bindPopup(popup_6c8c56ee7bafcafc0f8a76720422576f)
+        ;
+
+        
+    
+    
+            var circle_marker_acc4a06559418d1748a88f4f75136797 = L.circleMarker(
+                [38.281922, -0.712788],
+                {"bubblingMouseEvents": true, "color": "#ffa300ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffa300ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.394950405770965, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_404b9e0e1ee3f4724383bfc3e749fe8a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23b3516a4c6ff938bed111eeb639be05 = $(`<div id="html_23b3516a4c6ff938bed111eeb639be05" style="width: 100.0%; height: 100.0%;">Dipòsit Municipal de Carrús (41)<br>Cogidas: 514<br>Devoluciones: 263<br>Diferencia: 251<br>Porcentaje: 32.3%<br>Total usos 2025: 777</div>`)[0];
+                popup_404b9e0e1ee3f4724383bfc3e749fe8a.setContent(html_23b3516a4c6ff938bed111eeb639be05);
+            
+        
+
+        circle_marker_acc4a06559418d1748a88f4f75136797.bindPopup(popup_404b9e0e1ee3f4724383bfc3e749fe8a)
+        ;
+
+        
+    
+    
+            var circle_marker_87d5321099d3040a14fd44590e7c62aa = L.circleMarker(
+                [38.262263, -0.669923],
+                {"bubblingMouseEvents": true, "color": "#0000e6ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000e6ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.433724075743914, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_70a58648f683c74180442d00c2872469 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8679d4db8ec9969db1c751ccfefc31cd = $(`<div id="html_8679d4db8ec9969db1c751ccfefc31cd" style="width: 100.0%; height: 100.0%;">Multi Aventura Travaló (42)<br>Cogidas: 229<br>Devoluciones: 335<br>Diferencia: -106<br>Porcentaje: -18.8%<br>Total usos 2025: 564</div>`)[0];
+                popup_70a58648f683c74180442d00c2872469.setContent(html_8679d4db8ec9969db1c751ccfefc31cd);
+            
+        
+
+        circle_marker_87d5321099d3040a14fd44590e7c62aa.bindPopup(popup_70a58648f683c74180442d00c2872469)
+        ;
+
+        
+    
+    
+            var circle_marker_e622dc3c0142bd236af0e1d5fd17c6e4 = L.circleMarker(
+                [38.261994, -0.683099],
+                {"bubblingMouseEvents": true, "color": "#0507ffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0507ffff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.285843101893597, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_147f5a25b21069e557114e18002f6d0e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ccbf6e854eda6f0e750719d902430ef6 = $(`<div id="html_ccbf6e854eda6f0e750719d902430ef6" style="width: 100.0%; height: 100.0%;">Palmerars – Ciutat de la Justícia (43)<br>Cogidas: 483<br>Devoluciones: 652<br>Diferencia: -169<br>Porcentaje: -14.9%<br>Total usos 2025: 1135</div>`)[0];
+                popup_147f5a25b21069e557114e18002f6d0e.setContent(html_ccbf6e854eda6f0e750719d902430ef6);
+            
+        
+
+        circle_marker_e622dc3c0142bd236af0e1d5fd17c6e4.bindPopup(popup_147f5a25b21069e557114e18002f6d0e)
+        ;
+
+        
+    
+    
+            var circle_marker_dc831b88d891a89407b7437547dc7ada = L.circleMarker(
+                [38.2571333, -0.696961],
+                {"bubblingMouseEvents": true, "color": "#97bdeaff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#97bdeaff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0414788097385035, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_4c9d1152cfe8d451918562bf249f2c24 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c4ff56db9bcbe67dff2e50c00849882a = $(`<div id="html_c4ff56db9bcbe67dff2e50c00849882a" style="width: 100.0%; height: 100.0%;">Portes Encarnades (44)<br>Cogidas: 1939<br>Devoluciones: 2016<br>Diferencia: -77<br>Porcentaje: -1.9%<br>Total usos 2025: 3955</div>`)[0];
+                popup_4c9d1152cfe8d451918562bf249f2c24.setContent(html_c4ff56db9bcbe67dff2e50c00849882a);
+            
+        
+
+        circle_marker_dc831b88d891a89407b7437547dc7ada.bindPopup(popup_4c9d1152cfe8d451918562bf249f2c24)
+        ;
+
+        
+    
+    
+            var circle_marker_4432c0c3adb98d864ab5ca636f9f6581 = L.circleMarker(
+                [38.271869, -0.70703],
+                {"bubblingMouseEvents": true, "color": "#fff400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.406672678088368, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_db2160376ddfeaf0b6b1e6a8db3e481c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc5751577b5c5db800e3d023daa733c9 = $(`<div id="html_cc5751577b5c5db800e3d023daa733c9" style="width: 100.0%; height: 100.0%;">Plaça de Barcelona (45)<br>Cogidas: 1388<br>Devoluciones: 1284<br>Diferencia: 104<br>Porcentaje: 3.9%<br>Total usos 2025: 2672</div>`)[0];
+                popup_db2160376ddfeaf0b6b1e6a8db3e481c.setContent(html_cc5751577b5c5db800e3d023daa733c9);
+            
+        
+
+        circle_marker_4432c0c3adb98d864ab5ca636f9f6581.bindPopup(popup_db2160376ddfeaf0b6b1e6a8db3e481c)
+        ;
+
+        
+    
+    
+            var circle_marker_95c20e9bfe17525d16c9f9157ad94eeb = L.circleMarker(
+                [38.274244, -0.6846805],
+                {"bubblingMouseEvents": true, "color": "#fff500ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff500ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.218214607754733, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_a2be956926d29549a0fb63fb373e33a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca161038f15de4a55d53f896b7f6b282 = $(`<div id="html_ca161038f15de4a55d53f896b7f6b282" style="width: 100.0%; height: 100.0%;">UMH / Rectorado (46)<br>Cogidas: 2333<br>Devoluciones: 2169<br>Diferencia: 164<br>Porcentaje: 3.6%<br>Total usos 2025: 4502</div>`)[0];
+                popup_a2be956926d29549a0fb63fb373e33a0.setContent(html_ca161038f15de4a55d53f896b7f6b282);
+            
+        
+
+        circle_marker_95c20e9bfe17525d16c9f9157ad94eeb.bindPopup(popup_a2be956926d29549a0fb63fb373e33a0)
+        ;
+
+        
+    
+    
+            var circle_marker_56339343811530988f0cd70bfd4b601a = L.circleMarker(
+                [38.26464, -0.708004],
+                {"bubblingMouseEvents": true, "color": "#aad5e7ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aad5e7ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.1217312894499547, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_474cc3e119a95acf4825073ae6eab797 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7aba6eec5d5bcf29fc69536f9901a493 = $(`<div id="html_7aba6eec5d5bcf29fc69536f9901a493" style="width: 100.0%; height: 100.0%;">C.P. Virgen de la Asunción (47)<br>Cogidas: 1785<br>Devoluciones: 1794<br>Diferencia: -9<br>Porcentaje: -0.3%<br>Total usos 2025: 3579</div>`)[0];
+                popup_474cc3e119a95acf4825073ae6eab797.setContent(html_7aba6eec5d5bcf29fc69536f9901a493);
+            
+        
+
+        circle_marker_56339343811530988f0cd70bfd4b601a.bindPopup(popup_474cc3e119a95acf4825073ae6eab797)
+        ;
+
+        
+    
+    
+            var circle_marker_7302fdd78b47ffab30b66dd6ced4f3d7 = L.circleMarker(
+                [38.271531, -0.7175],
+                {"bubblingMouseEvents": true, "color": "#ffbf00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffbf00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.339945897204689, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_cadc4234c9b9e59ea23fcf3bfe11f63b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c8dce8a3e7a2243305ff293a48d1bb9 = $(`<div id="html_0c8dce8a3e7a2243305ff293a48d1bb9" style="width: 100.0%; height: 100.0%;">Av. Corts Valencianes (48)<br>Cogidas: 466<br>Devoluciones: 293<br>Diferencia: 173<br>Porcentaje: 22.8%<br>Total usos 2025: 759</div>`)[0];
+                popup_cadc4234c9b9e59ea23fcf3bfe11f63b.setContent(html_0c8dce8a3e7a2243305ff293a48d1bb9);
+            
+        
+
+        circle_marker_7302fdd78b47ffab30b66dd6ced4f3d7.bindPopup(popup_cadc4234c9b9e59ea23fcf3bfe11f63b)
+        ;
+
+        
+    
+    
+            var circle_marker_18f3548a8b9cb24ad93f7f1d65a1373e = L.circleMarker(
+                [38.26978, -0.681872],
+                {"bubblingMouseEvents": true, "color": "#aad4e7ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aad4e7ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.1758340847610462, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_3c0814943366234ef458909409212a6f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9b3264f0b6c09678b3ffb23e736b5fc = $(`<div id="html_b9b3264f0b6c09678b3ffb23e736b5fc" style="width: 100.0%; height: 100.0%;">Av. Alicante 59 (49)<br>Cogidas: 2025<br>Devoluciones: 2038<br>Diferencia: -13<br>Porcentaje: -0.3%<br>Total usos 2025: 4063</div>`)[0];
+                popup_3c0814943366234ef458909409212a6f.setContent(html_b9b3264f0b6c09678b3ffb23e736b5fc);
+            
+        
+
+        circle_marker_18f3548a8b9cb24ad93f7f1d65a1373e.bindPopup(popup_3c0814943366234ef458909409212a6f)
+        ;
+
+        
+    
+    
+            var circle_marker_07856c720912d40077b5595140eaac09 = L.circleMarker(
+                [38.261464, -0.696053],
+                {"bubblingMouseEvents": true, "color": "#4759f5ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4759f5ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.532010820559062, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_c9ce21d075139dc8c8025c59cf788f4a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_752665b751d51039fde2c9b9c475dc89 = $(`<div id="html_752665b751d51039fde2c9b9c475dc89" style="width: 100.0%; height: 100.0%;">Borreguet (50)<br>Cogidas: 2048<br>Devoluciones: 2457<br>Diferencia: -409<br>Porcentaje: -9.1%<br>Total usos 2025: 4505</div>`)[0];
+                popup_c9ce21d075139dc8c8025c59cf788f4a.setContent(html_752665b751d51039fde2c9b9c475dc89);
+            
+        
+
+        circle_marker_07856c720912d40077b5595140eaac09.bindPopup(popup_c9ce21d075139dc8c8025c59cf788f4a)
+        ;
+
+        
+    
+    
+            var circle_marker_ad1124e9bc9873ab4e840e695d1bc7ae = L.circleMarker(
+                [38.271514, -0.675147],
+                {"bubblingMouseEvents": true, "color": "#5367f3ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5367f3ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.232642019837692, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_41d0d732b7e99b232cf4d244e676264c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dc26b6c2b9295b86b39a5d47c3c1cc0c = $(`<div id="html_dc26b6c2b9295b86b39a5d47c3c1cc0c" style="width: 100.0%; height: 100.0%;">Ciudad deportiva zona sur (51)<br>Cogidas: 1368<br>Devoluciones: 1607<br>Diferencia: -239<br>Porcentaje: -8.0%<br>Total usos 2025: 2975</div>`)[0];
+                popup_41d0d732b7e99b232cf4d244e676264c.setContent(html_dc26b6c2b9295b86b39a5d47c3c1cc0c);
+            
+        
+
+        circle_marker_ad1124e9bc9873ab4e840e695d1bc7ae.bindPopup(popup_41d0d732b7e99b232cf4d244e676264c)
+        ;
+
+        
+    
+    
+            var circle_marker_081f45d560eec76bcfee6c78624cdcc1 = L.circleMarker(
+                [38.269141, -0.717211],
+                {"bubblingMouseEvents": true, "color": "#ff9600ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff9600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.505861136158702, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_c3a78a83d4bb12c2e5f0225a47fa36b8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b5f09e88e23e2044c3ac03ba647c57b = $(`<div id="html_9b5f09e88e23e2044c3ac03ba647c57b" style="width: 100.0%; height: 100.0%;">Centro salud el Toscar (52)<br>Cogidas: 931<br>Devoluciones: 450<br>Diferencia: 481<br>Porcentaje: 34.8%<br>Total usos 2025: 1381</div>`)[0];
+                popup_c3a78a83d4bb12c2e5f0225a47fa36b8.setContent(html_9b5f09e88e23e2044c3ac03ba647c57b);
+            
+        
+
+        circle_marker_081f45d560eec76bcfee6c78624cdcc1.bindPopup(popup_c3a78a83d4bb12c2e5f0225a47fa36b8)
+        ;
+
+        
+    
+    
+            var circle_marker_3c5bb07b2fbf8608d845cd777b221c8c = L.circleMarker(
+                [38.272525, -0.685417],
+                {"bubblingMouseEvents": true, "color": "#fffb00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffb00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0414788097385035, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_9de22d9248c2a68cbe4a3fd8372795d1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_13ba7b113df64000e85726bb98823017 = $(`<div id="html_13ba7b113df64000e85726bb98823017" style="width: 100.0%; height: 100.0%;">C.P. Victor Pradera (53)<br>Cogidas: 2575<br>Devoluciones: 2498<br>Diferencia: 77<br>Porcentaje: 1.5%<br>Total usos 2025: 5073</div>`)[0];
+                popup_9de22d9248c2a68cbe4a3fd8372795d1.setContent(html_13ba7b113df64000e85726bb98823017);
+            
+        
+
+        circle_marker_3c5bb07b2fbf8608d845cd777b221c8c.bindPopup(popup_9de22d9248c2a68cbe4a3fd8372795d1)
+        ;
+
+        
+    
+    
+            var circle_marker_c0641d12f0add9c0b5e967ffb3f36387 = L.circleMarker(
+                [38.268475, -0.686954],
+                {"bubblingMouseEvents": true, "color": "#ffed00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffed00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.084761045987376, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_db67a36889855ebf96c47af2fc64e7fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9becd905f5091302eeb3524b7e1365a5 = $(`<div id="html_9becd905f5091302eeb3524b7e1365a5" style="width: 100.0%; height: 100.0%;">Plaza de Benidorm (54)<br>Cogidas: 2403<br>Devoluciones: 2101<br>Diferencia: 302<br>Porcentaje: 6.7%<br>Total usos 2025: 4504</div>`)[0];
+                popup_db67a36889855ebf96c47af2fc64e7fe.setContent(html_9becd905f5091302eeb3524b7e1365a5);
+            
+        
+
+        circle_marker_c0641d12f0add9c0b5e967ffb3f36387.bindPopup(popup_db67a36889855ebf96c47af2fc64e7fe)
+        ;
+
+        
+    
+    
+            var circle_marker_eb17d67912fbd1e17245e231015bcc8e = L.circleMarker(
+                [38.2590083, -0.706969],
+                {"bubblingMouseEvents": true, "color": "#1217fdff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1217fdff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.438232642019837, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_9fc46b62e75c43a434a857712d7ad910 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b1de39ab7b9ef8142ccb668c60fbeb4 = $(`<div id="html_9b1de39ab7b9ef8142ccb668c60fbeb4" style="width: 100.0%; height: 100.0%;">Pere Joan Perpinyà (55)<br>Cogidas: 1493<br>Devoluciones: 1969<br>Diferencia: -476<br>Porcentaje: -13.7%<br>Total usos 2025: 3462</div>`)[0];
+                popup_9fc46b62e75c43a434a857712d7ad910.setContent(html_9b1de39ab7b9ef8142ccb668c60fbeb4);
+            
+        
+
+        circle_marker_eb17d67912fbd1e17245e231015bcc8e.bindPopup(popup_9fc46b62e75c43a434a857712d7ad910)
+        ;
+
+        
+    
+    
+            var circle_marker_df280481740d9896bce99999a863b9a3 = L.circleMarker(
+                [38.2774498, -0.691602],
+                {"bubblingMouseEvents": true, "color": "#fff500ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff500ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.5545536519386833, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_d6c6d641efdba3c9828185aa36df9039 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cdca1057faadb90904ee8564ff868a42 = $(`<div id="html_cdca1057faadb90904ee8564ff868a42" style="width: 100.0%; height: 100.0%;">UMH / Torre Vaillo (56)<br>Cogidas: 550<br>Devoluciones: 509<br>Diferencia: 41<br>Porcentaje: 3.9%<br>Total usos 2025: 1059</div>`)[0];
+                popup_d6c6d641efdba3c9828185aa36df9039.setContent(html_cdca1057faadb90904ee8564ff868a42);
+            
+        
+
+        circle_marker_df280481740d9896bce99999a863b9a3.bindPopup(popup_d6c6d641efdba3c9828185aa36df9039)
+        ;
+
+        
+    
+    
+            var circle_marker_42d54deb56d97b2d8d57389cab184778 = L.circleMarker(
+                [38.2954917, -0.58666],
+                {"bubblingMouseEvents": true, "color": "#ffff00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffff00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_491faae433b45656b76d6fe586a6ce09 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d7730f878764da4273975ca592abe147 = $(`<div id="html_d7730f878764da4273975ca592abe147" style="width: 100.0%; height: 100.0%;">IES Torrellano (57)<br>Cogidas: 6<br>Devoluciones: 6<br>Diferencia: 0<br>Porcentaje: 0.0%<br>Total usos 2025: 12</div>`)[0];
+                popup_491faae433b45656b76d6fe586a6ce09.setContent(html_d7730f878764da4273975ca592abe147);
+            
+        
+
+        circle_marker_42d54deb56d97b2d8d57389cab184778.bindPopup(popup_491faae433b45656b76d6fe586a6ce09)
+        ;
+
+        
+    
+    
+            var circle_marker_a5c0f2c56dae698a3ccb1b92854e04f5 = L.circleMarker(
+                [38.290824, -0.5870336],
+                {"bubblingMouseEvents": true, "color": "#0000c4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000c4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.2299368800721373, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_2778e7d0ee42bd8f8c5b7e81e64bd868 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a25a5e2c380a7e3674ee80562eaa2db = $(`<div id="html_2a25a5e2c380a7e3674ee80562eaa2db" style="width: 100.0%; height: 100.0%;">Polideportivo Torrellano (58)<br>Cogidas: 28<br>Devoluciones: 45<br>Diferencia: -17<br>Porcentaje: -23.3%<br>Total usos 2025: 73</div>`)[0];
+                popup_2778e7d0ee42bd8f8c5b7e81e64bd868.setContent(html_2a25a5e2c380a7e3674ee80562eaa2db);
+            
+        
+
+        circle_marker_a5c0f2c56dae698a3ccb1b92854e04f5.bindPopup(popup_2778e7d0ee42bd8f8c5b7e81e64bd868)
+        ;
+
+        
+    
+    
+            var circle_marker_b20cc949208cb62e7306a8beb7165dae = L.circleMarker(
+                [38.29422, -0.587922],
+                {"bubblingMouseEvents": true, "color": "#0000d2ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000d2ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0811541929666366, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_f010806c358cc44fd2603f8004731e51 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_63d1e1e362aa220d9081c869fae75d03 = $(`<div id="html_63d1e1e362aa220d9081c869fae75d03" style="width: 100.0%; height: 100.0%;">Calle San Crispín 1 Torrellano (59)<br>Cogidas: 11<br>Devoluciones: 17<br>Diferencia: -6<br>Porcentaje: -21.4%<br>Total usos 2025: 28</div>`)[0];
+                popup_f010806c358cc44fd2603f8004731e51.setContent(html_63d1e1e362aa220d9081c869fae75d03);
+            
+        
+
+        circle_marker_b20cc949208cb62e7306a8beb7165dae.bindPopup(popup_f010806c358cc44fd2603f8004731e51)
+        ;
+
+        
+    
+    
+            var circle_marker_298120e9a4e396b2e3b7c5c2a9c46722 = L.circleMarker(
+                [38.29203, -0.592297],
+                {"bubblingMouseEvents": true, "color": "#ffd600ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.1758340847610462, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_dbc7b3ff2842ee1a58a3bde78c042f81 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b78ecc10a6ca5db7b58921784e6dbd63 = $(`<div id="html_b78ecc10a6ca5db7b58921784e6dbd63" style="width: 100.0%; height: 100.0%;">Carrer de la Figuera 2 Torrellano (60)<br>Cogidas: 51<br>Devoluciones: 38<br>Diferencia: 13<br>Porcentaje: 14.6%<br>Total usos 2025: 89</div>`)[0];
+                popup_dbc7b3ff2842ee1a58a3bde78c042f81.setContent(html_b78ecc10a6ca5db7b58921784e6dbd63);
+            
+        
+
+        circle_marker_298120e9a4e396b2e3b7c5c2a9c46722.bindPopup(popup_dbc7b3ff2842ee1a58a3bde78c042f81)
+        ;
+
+        
+    
+    
+            var circle_marker_a74c5ed671a73c8239c66774a6d484e5 = L.circleMarker(
+                [38.282677, -0.722414],
+                {"bubblingMouseEvents": true, "color": "#ff3f00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff3f00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.405770964833183, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_d01c7ec4ac6ec9a6416bbd8f105d2b49 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_43fb5a6901359ce857e55462d3aaf288 = $(`<div id="html_43fb5a6901359ce857e55462d3aaf288" style="width: 100.0%; height: 100.0%;">Avenida Novelda 191 (61)<br>Cogidas: 44<br>Devoluciones: 14<br>Diferencia: 30<br>Porcentaje: 51.7%<br>Total usos 2025: 58</div>`)[0];
+                popup_d01c7ec4ac6ec9a6416bbd8f105d2b49.setContent(html_43fb5a6901359ce857e55462d3aaf288);
+            
+        
+
+        circle_marker_a74c5ed671a73c8239c66774a6d484e5.bindPopup(popup_d01c7ec4ac6ec9a6416bbd8f105d2b49)
+        ;
+
+        
+    
+    
+            var circle_marker_7b0a27395425d5d7e168f061272a7a65 = L.circleMarker(
+                [38.282058, -0.7170765],
+                {"bubblingMouseEvents": true, "color": "#ff0000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.6221821460775474, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_61df1f2c03726648a9e5f63ba610a19a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5be759f8a44cc54103d19d53575ad9e4 = $(`<div id="html_5be759f8a44cc54103d19d53575ad9e4" style="width: 100.0%; height: 100.0%;">Calle Inca con brea (62)<br>Cogidas: 59<br>Devoluciones: 13<br>Diferencia: 46<br>Porcentaje: 63.9%<br>Total usos 2025: 72</div>`)[0];
+                popup_61df1f2c03726648a9e5f63ba610a19a.setContent(html_5be759f8a44cc54103d19d53575ad9e4);
+            
+        
+
+        circle_marker_7b0a27395425d5d7e168f061272a7a65.bindPopup(popup_61df1f2c03726648a9e5f63ba610a19a)
+        ;
+
+        
+    
+    
+            var circle_marker_8deb9762d6faf6f7434ddfd08f55ab21 = L.circleMarker(
+                [38.278158, -0.713415],
+                {"bubblingMouseEvents": true, "color": "#ff0700ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff0700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.7042380522993685, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_e523723687649fffca4ee94591bac67d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a7d5fdce5d40bcd788ed6e78a209d5c = $(`<div id="html_2a7d5fdce5d40bcd788ed6e78a209d5c" style="width: 100.0%; height: 100.0%;">CEIP Eugeni d’Ors (63)<br>Cogidas: 164<br>Devoluciones: 38<br>Diferencia: 126<br>Porcentaje: 62.4%<br>Total usos 2025: 202</div>`)[0];
+                popup_e523723687649fffca4ee94591bac67d.setContent(html_2a7d5fdce5d40bcd788ed6e78a209d5c);
+            
+        
+
+        circle_marker_8deb9762d6faf6f7434ddfd08f55ab21.bindPopup(popup_e523723687649fffca4ee94591bac67d)
+        ;
+
+        
+    
+    
+            var circle_marker_e7f2cfb5436df2d3b0acd06d58834f2f = L.circleMarker(
+                [38.276291, -0.71253],
+                {"bubblingMouseEvents": true, "color": "#ffe700ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.2299368800721373, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_7c8c61bd84e3811fc51dd117b33038ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e2076b71c3be3d24ec4b81df36b7fdbe = $(`<div id="html_e2076b71c3be3d24ec4b81df36b7fdbe" style="width: 100.0%; height: 100.0%;">Jardín 25 de abril (64)<br>Cogidas: 106<br>Devoluciones: 89<br>Diferencia: 17<br>Porcentaje: 8.7%<br>Total usos 2025: 195</div>`)[0];
+                popup_7c8c61bd84e3811fc51dd117b33038ca.setContent(html_e2076b71c3be3d24ec4b81df36b7fdbe);
+            
+        
+
+        circle_marker_e7f2cfb5436df2d3b0acd06d58834f2f.bindPopup(popup_7c8c61bd84e3811fc51dd117b33038ca)
+        ;
+
+        
+    
+    
+            var circle_marker_8246bdb5046890d57e4ce21d3835a2e2 = L.circleMarker(
+                [38.271889, -0.715238],
+                {"bubblingMouseEvents": true, "color": "#ff3a00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff3a00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.339945897204689, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_46745c897b92bab563afb4098b2b3a23 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_440ae3ccf55aa416ffefbc720498791d = $(`<div id="html_440ae3ccf55aa416ffefbc720498791d" style="width: 100.0%; height: 100.0%;">C.P. El toscar (65)<br>Cogidas: 251<br>Devoluciones: 78<br>Diferencia: 173<br>Porcentaje: 52.6%<br>Total usos 2025: 329</div>`)[0];
+                popup_46745c897b92bab563afb4098b2b3a23.setContent(html_440ae3ccf55aa416ffefbc720498791d);
+            
+        
+
+        circle_marker_8246bdb5046890d57e4ce21d3835a2e2.bindPopup(popup_46745c897b92bab563afb4098b2b3a23)
+        ;
+
+        
+    
+    
+            var circle_marker_60bbb90fa3ddddbec5350886ce0725bd = L.circleMarker(
+                [38.277507, -0.710252],
+                {"bubblingMouseEvents": true, "color": "#ff9000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff9000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.7177637511271415, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_a628a57fbdd956c4e07df4d2d63ada98 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_661a75b1214a04924337606558a3c9b3 = $(`<div id="html_661a75b1214a04924337606558a3c9b3" style="width: 100.0%; height: 100.0%;">Jardín escritor Juan Fuster (66)<br>Cogidas: 240<br>Devoluciones: 113<br>Diferencia: 127<br>Porcentaje: 36.0%<br>Total usos 2025: 353</div>`)[0];
+                popup_a628a57fbdd956c4e07df4d2d63ada98.setContent(html_661a75b1214a04924337606558a3c9b3);
+            
+        
+
+        circle_marker_60bbb90fa3ddddbec5350886ce0725bd.bindPopup(popup_a628a57fbdd956c4e07df4d2d63ada98)
+        ;
+
+        
+    
+    
+            var circle_marker_37fc53d0f8db334de0342af164fdefa7 = L.circleMarker(
+                [38.276501, -0.704743],
+                {"bubblingMouseEvents": true, "color": "#ffca00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffca00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.258791704238052, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_41e890b6bc2743d26cc428e24becaa76 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d18dc51e5bfa965b840290f055e7465 = $(`<div id="html_3d18dc51e5bfa965b840290f055e7465" style="width: 100.0%; height: 100.0%;">Calle Grao con Victoria Kent (67)<br>Cogidas: 521<br>Devoluciones: 354<br>Diferencia: 167<br>Porcentaje: 19.1%<br>Total usos 2025: 875</div>`)[0];
+                popup_41e890b6bc2743d26cc428e24becaa76.setContent(html_3d18dc51e5bfa965b840290f055e7465);
+            
+        
+
+        circle_marker_37fc53d0f8db334de0342af164fdefa7.bindPopup(popup_41e890b6bc2743d26cc428e24becaa76)
+        ;
+
+        
+    
+    
+            var circle_marker_e87e6c3c9e975a858850aa6b0603db30 = L.circleMarker(
+                [38.274429, -0.706795],
+                {"bubblingMouseEvents": true, "color": "#ffdb00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffdb00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.297565374211001, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_69a004c1f9f28a45d409c736dac20b48 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c6cb016d833121fb9992bec14b29123 = $(`<div id="html_3c6cb016d833121fb9992bec14b29123" style="width: 100.0%; height: 100.0%;">Arturo Salvetti Pardo (68)<br>Cogidas: 96<br>Devoluciones: 74<br>Diferencia: 22<br>Porcentaje: 12.9%<br>Total usos 2025: 170</div>`)[0];
+                popup_69a004c1f9f28a45d409c736dac20b48.setContent(html_3c6cb016d833121fb9992bec14b29123);
+            
+        
+
+        circle_marker_e87e6c3c9e975a858850aa6b0603db30.bindPopup(popup_69a004c1f9f28a45d409c736dac20b48)
+        ;
+
+        
+    
+    
+            var circle_marker_74dd1911d05b7b59eeee1b03079cd420 = L.circleMarker(
+                [38.272946, -0.704659],
+                {"bubblingMouseEvents": true, "color": "#fffc00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffc00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.1893597835888188, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_36d5b8d6eb1a799d7bef4933f2a38a29 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f63f44c77cc63aedd8b4b6f6d708514a = $(`<div id="html_f63f44c77cc63aedd8b4b6f6d708514a" style="width: 100.0%; height: 100.0%;">Olegario Domarco Seller 44 (69)<br>Cogidas: 518<br>Devoluciones: 504<br>Diferencia: 14<br>Porcentaje: 1.4%<br>Total usos 2025: 1022</div>`)[0];
+                popup_36d5b8d6eb1a799d7bef4933f2a38a29.setContent(html_f63f44c77cc63aedd8b4b6f6d708514a);
+            
+        
+
+        circle_marker_74dd1911d05b7b59eeee1b03079cd420.bindPopup(popup_36d5b8d6eb1a799d7bef4933f2a38a29)
+        ;
+
+        
+    
+    
+            var circle_marker_847c8c9bb55c033177bdbf1c196861d8 = L.circleMarker(
+                [38.270459, -0.70354],
+                {"bubblingMouseEvents": true, "color": "#96bbeaff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#96bbeaff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.892696122633003, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_d85ebf37cd7ed0f81099ad0ab9156319 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fdbdaede7419492deb200774f201b39c = $(`<div id="html_fdbdaede7419492deb200774f201b39c" style="width: 100.0%; height: 100.0%;">Libertad-Diagonal (70)<br>Cogidas: 1549<br>Devoluciones: 1615<br>Diferencia: -66<br>Porcentaje: -2.1%<br>Total usos 2025: 3164</div>`)[0];
+                popup_d85ebf37cd7ed0f81099ad0ab9156319.setContent(html_fdbdaede7419492deb200774f201b39c);
+            
+        
+
+        circle_marker_847c8c9bb55c033177bdbf1c196861d8.bindPopup(popup_d85ebf37cd7ed0f81099ad0ab9156319)
+        ;
+
+        
+    
+    
+            var circle_marker_8bf31202fc3088b02525c0e3e700e084 = L.circleMarker(
+                [38.267937, -0.709177],
+                {"bubblingMouseEvents": true, "color": "#fff400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.798016230838593, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_aefdc5dabb6bd1730d4167a382533866 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_084eb8c7da17a4d6a7a2f27a5fb5af08 = $(`<div id="html_084eb8c7da17a4d6a7a2f27a5fb5af08" style="width: 100.0%; height: 100.0%;">IES Carrús (71)<br>Cogidas: 788<br>Devoluciones: 729<br>Diferencia: 59<br>Porcentaje: 3.9%<br>Total usos 2025: 1517</div>`)[0];
+                popup_aefdc5dabb6bd1730d4167a382533866.setContent(html_084eb8c7da17a4d6a7a2f27a5fb5af08);
+            
+        
+
+        circle_marker_8bf31202fc3088b02525c0e3e700e084.bindPopup(popup_aefdc5dabb6bd1730d4167a382533866)
+        ;
+
+        
+    
+    
+            var circle_marker_e343b8c0385b025f0aa509cf1345d127 = L.circleMarker(
+                [38.267258, -0.712981],
+                {"bubblingMouseEvents": true, "color": "#ffd100ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd100ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.461677186654644, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_174c864c4eb1ebf035b6c47c6cc6f967 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d6356ab6c15e3bf30d463eb675e5c13 = $(`<div id="html_6d6356ab6c15e3bf30d463eb675e5c13" style="width: 100.0%; height: 100.0%;">Plaza de la aparadora (73)<br>Cogidas: 648<br>Devoluciones: 466<br>Diferencia: 182<br>Porcentaje: 16.3%<br>Total usos 2025: 1114</div>`)[0];
+                popup_174c864c4eb1ebf035b6c47c6cc6f967.setContent(html_6d6356ab6c15e3bf30d463eb675e5c13);
+            
+        
+
+        circle_marker_e343b8c0385b025f0aa509cf1345d127.bindPopup(popup_174c864c4eb1ebf035b6c47c6cc6f967)
+        ;
+
+        
+    
+    
+            var circle_marker_a0de71a14770379a1841637237de7810 = L.circleMarker(
+                [38.26302, -0.714168],
+                {"bubblingMouseEvents": true, "color": "#4759f5ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4759f5ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.00180342651037, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_b884a4d042a81ce83f13ed064e801a73 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_126199d28b39abfd59ce8f8e9f09d5a9 = $(`<div id="html_126199d28b39abfd59ce8f8e9f09d5a9" style="width: 100.0%; height: 100.0%;">IES Nit de l´Albà (74)<br>Cogidas: 740<br>Devoluciones: 888<br>Diferencia: -148<br>Porcentaje: -9.1%<br>Total usos 2025: 1628</div>`)[0];
+                popup_b884a4d042a81ce83f13ed064e801a73.setContent(html_126199d28b39abfd59ce8f8e9f09d5a9);
+            
+        
+
+        circle_marker_a0de71a14770379a1841637237de7810.bindPopup(popup_b884a4d042a81ce83f13ed064e801a73)
+        ;
+
+        
+    
+    
+            var circle_marker_724e98648f0253d7f2542f23ee43427a = L.circleMarker(
+                [38.26256, -0.718648],
+                {"bubblingMouseEvents": true, "color": "#ffe700ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.328223624887285, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_69c4fd5bbdabb85f58b25eef4cb10d50 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cdf369b138e1484b00375446973240e8 = $(`<div id="html_cdf369b138e1484b00375446973240e8" style="width: 100.0%; height: 100.0%;">L´aljub (75)<br>Cogidas: 1990<br>Devoluciones: 1670<br>Diferencia: 320<br>Porcentaje: 8.7%<br>Total usos 2025: 3660</div>`)[0];
+                popup_69c4fd5bbdabb85f58b25eef4cb10d50.setContent(html_cdf369b138e1484b00375446973240e8);
+            
+        
+
+        circle_marker_724e98648f0253d7f2542f23ee43427a.bindPopup(popup_69c4fd5bbdabb85f58b25eef4cb10d50)
+        ;
+
+        
+    
+    
+            var circle_marker_b97d594b160b0e18b75e8fa82221965d = L.circleMarker(
+                [38.267874, -0.700352],
+                {"bubblingMouseEvents": true, "color": "#a7d0e7ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a7d0e7ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.1487826871055002, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_7a6bc1b4ffb70d46a2e274928b054a78 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ddf3d05fcda7630e3ebc6c232e50ce6 = $(`<div id="html_3ddf3d05fcda7630e3ebc6c232e50ce6" style="width: 100.0%; height: 100.0%;">Puente Altamira (76)<br>Cogidas: 977<br>Devoluciones: 988<br>Diferencia: -11<br>Porcentaje: -0.6%<br>Total usos 2025: 1965</div>`)[0];
+                popup_7a6bc1b4ffb70d46a2e274928b054a78.setContent(html_3ddf3d05fcda7630e3ebc6c232e50ce6);
+            
+        
+
+        circle_marker_b97d594b160b0e18b75e8fa82221965d.bindPopup(popup_7a6bc1b4ffb70d46a2e274928b054a78)
+        ;
+
+        
+    
+    
+            var circle_marker_e78f53b29bc27fed2aac9edf547bbccc = L.circleMarker(
+                [38.2670206, -0.707669],
+                {"bubblingMouseEvents": true, "color": "#fff900ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff900ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.3110910730387735, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_6db731338ec0fc4fb420a2e5a89ddc1b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b0d38a60c137744e79dde30e489ecb8 = $(`<div id="html_7b0d38a60c137744e79dde30e489ecb8" style="width: 100.0%; height: 100.0%;">Plaza Obispo Siuri (77)<br>Cogidas: 541<br>Devoluciones: 518<br>Diferencia: 23<br>Porcentaje: 2.2%<br>Total usos 2025: 1059</div>`)[0];
+                popup_6db731338ec0fc4fb420a2e5a89ddc1b.setContent(html_7b0d38a60c137744e79dde30e489ecb8);
+            
+        
+
+        circle_marker_e78f53b29bc27fed2aac9edf547bbccc.bindPopup(popup_6db731338ec0fc4fb420a2e5a89ddc1b)
+        ;
+
+        
+    
+    
+            var circle_marker_5b584569c63a848745cfd59787226da1 = L.circleMarker(
+                [38.266969, -0.704873],
+                {"bubblingMouseEvents": true, "color": "#fff600ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.000901713255185, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_3455b97eb268a2af7340fc9b022c2ece = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_227f4457f9141c15e960a775d42c9d95 = $(`<div id="html_227f4457f9141c15e960a775d42c9d95" style="width: 100.0%; height: 100.0%;">Jorge Juan 24 (78)<br>Cogidas: 1086<br>Devoluciones: 1012<br>Diferencia: 74<br>Porcentaje: 3.5%<br>Total usos 2025: 2098</div>`)[0];
+                popup_3455b97eb268a2af7340fc9b022c2ece.setContent(html_227f4457f9141c15e960a775d42c9d95);
+            
+        
+
+        circle_marker_5b584569c63a848745cfd59787226da1.bindPopup(popup_3455b97eb268a2af7340fc9b022c2ece)
+        ;
+
+        
+    
+    
+            var circle_marker_a3b78f06df69320e85bc1961a10ac9cd = L.circleMarker(
+                [38.266367, -0.701516],
+                {"bubblingMouseEvents": true, "color": "#fff900ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff900ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.1352569882777277, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_df407c3611458e8e072302ec6d53c91f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce9287f1d5e9f9032aea4b18d2db791a = $(`<div id="html_ce9287f1d5e9f9032aea4b18d2db791a" style="width: 100.0%; height: 100.0%;">Intercambiador pasarela (79)<br>Cogidas: 224<br>Devoluciones: 214<br>Diferencia: 10<br>Porcentaje: 2.3%<br>Total usos 2025: 438</div>`)[0];
+                popup_df407c3611458e8e072302ec6d53c91f.setContent(html_ce9287f1d5e9f9032aea4b18d2db791a);
+            
+        
+
+        circle_marker_a3b78f06df69320e85bc1961a10ac9cd.bindPopup(popup_df407c3611458e8e072302ec6d53c91f)
+        ;
+
+        
+    
+    
+            var circle_marker_1b2d52922df90fae7a7777eda8587f4e = L.circleMarker(
+                [38.265251, -0.702784],
+                {"bubblingMouseEvents": true, "color": "#fff700ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.055004508566276, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_208e8a40507b770708c0828451f112c4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51a98394dcf0041ed29057a9866a9abf = $(`<div id="html_51a98394dcf0041ed29057a9866a9abf" style="width: 100.0%; height: 100.0%;">Reina Victoria con Gabriel Miró (80)<br>Cogidas: 1377<br>Devoluciones: 1299<br>Diferencia: 78<br>Porcentaje: 2.9%<br>Total usos 2025: 2676</div>`)[0];
+                popup_208e8a40507b770708c0828451f112c4.setContent(html_51a98394dcf0041ed29057a9866a9abf);
+            
+        
+
+        circle_marker_1b2d52922df90fae7a7777eda8587f4e.bindPopup(popup_208e8a40507b770708c0828451f112c4)
+        ;
+
+        
+    
+    
+            var circle_marker_e7f0d80ce76e0fb5cbff62628680a617 = L.circleMarker(
+                [38.262342, -0.710708],
+                {"bubblingMouseEvents": true, "color": "#0d10feff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0d10feff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.63751127141569, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_e98d8838ede86d20207d1906e2ac3b50 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c9d1340f6a3456e600a35b1c1cfaa6b = $(`<div id="html_0c9d1340f6a3456e600a35b1c1cfaa6b" style="width: 100.0%; height: 100.0%;">C.S. Doctor Sapena (81)<br>Cogidas: 588<br>Devoluciones: 783<br>Diferencia: -195<br>Porcentaje: -14.2%<br>Total usos 2025: 1371</div>`)[0];
+                popup_e98d8838ede86d20207d1906e2ac3b50.setContent(html_0c9d1340f6a3456e600a35b1c1cfaa6b);
+            
+        
+
+        circle_marker_e7f0d80ce76e0fb5cbff62628680a617.bindPopup(popup_e98d8838ede86d20207d1906e2ac3b50)
+        ;
+
+        
+    
+    
+            var circle_marker_c17385ec00a4379334da68b2dc56eea8 = L.circleMarker(
+                [38.261501, -0.712779],
+                {"bubblingMouseEvents": true, "color": "#ffe400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.555455365193868, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_cd4a385811dc91dec1cc49aa50c9dce4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f00a53172464d533174dd80503f5e2e = $(`<div id="html_0f00a53172464d533174dd80503f5e2e" style="width: 100.0%; height: 100.0%;">Antonio Machado 73 (82)<br>Cogidas: 649<br>Devoluciones: 534<br>Diferencia: 115<br>Porcentaje: 9.7%<br>Total usos 2025: 1183</div>`)[0];
+                popup_cd4a385811dc91dec1cc49aa50c9dce4.setContent(html_0f00a53172464d533174dd80503f5e2e);
+            
+        
+
+        circle_marker_c17385ec00a4379334da68b2dc56eea8.bindPopup(popup_cd4a385811dc91dec1cc49aa50c9dce4)
+        ;
+
+        
+    
+    
+            var circle_marker_99c156a0b4a53f22c764eec05904e64f = L.circleMarker(
+                [38.260897, -0.704218],
+                {"bubblingMouseEvents": true, "color": "#0e12fdff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0e12fdff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.231740306582507, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_704e04d91e1408a96e30610c5fcc369f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_57ef2c16e4817029dd9144d8ee8301a6 = $(`<div id="html_57ef2c16e4817029dd9144d8ee8301a6" style="width: 100.0%; height: 100.0%;">Conrado del campo 35 (83)<br>Cogidas: 503<br>Devoluciones: 668<br>Diferencia: -165<br>Porcentaje: -14.1%<br>Total usos 2025: 1171</div>`)[0];
+                popup_704e04d91e1408a96e30610c5fcc369f.setContent(html_57ef2c16e4817029dd9144d8ee8301a6);
+            
+        
+
+        circle_marker_99c156a0b4a53f22c764eec05904e64f.bindPopup(popup_704e04d91e1408a96e30610c5fcc369f)
+        ;
+
+        
+    
+    
+            var circle_marker_4c7a3214530a3ac6d87437279ee14524 = L.circleMarker(
+                [38.260099, -0.706165],
+                {"bubblingMouseEvents": true, "color": "#0000fbff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000fbff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.407574391343553, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_653a6745e3f945cce1f5107a1e8b32e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_98234bdbf546bd84fa00415d83448fec = $(`<div id="html_98234bdbf546bd84fa00415d83448fec" style="width: 100.0%; height: 100.0%;">Fernanda Santa María 64 (84)<br>Cogidas: 467<br>Devoluciones: 645<br>Diferencia: -178<br>Porcentaje: -16.0%<br>Total usos 2025: 1112</div>`)[0];
+                popup_653a6745e3f945cce1f5107a1e8b32e5.setContent(html_98234bdbf546bd84fa00415d83448fec);
+            
+        
+
+        circle_marker_4c7a3214530a3ac6d87437279ee14524.bindPopup(popup_653a6745e3f945cce1f5107a1e8b32e5)
+        ;
+
+        
+    
+    
+            var circle_marker_4a55d4f073218bd0dac50bdc0b3e730a = L.circleMarker(
+                [38.258195, -0.702253],
+                {"bubblingMouseEvents": true, "color": "#171dfcff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#171dfcff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.800721370604148, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_84762b3d271b984f1ede0d12c4330393 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d8c349595887ed7500c14819084c2fb3 = $(`<div id="html_d8c349595887ed7500c14819084c2fb3" style="width: 100.0%; height: 100.0%;">Sor Josefa Alcorta 34 (85)<br>Cogidas: 915<br>Devoluciones: 1196<br>Diferencia: -281<br>Porcentaje: -13.3%<br>Total usos 2025: 2111</div>`)[0];
+                popup_84762b3d271b984f1ede0d12c4330393.setContent(html_d8c349595887ed7500c14819084c2fb3);
+            
+        
+
+        circle_marker_4a55d4f073218bd0dac50bdc0b3e730a.bindPopup(popup_84762b3d271b984f1ede0d12c4330393)
+        ;
+
+        
+    
+    
+            var circle_marker_511de2776c2b22282e2bc491716209a1 = L.circleMarker(
+                [38.258025, -0.711979],
+                {"bubblingMouseEvents": true, "color": "#91b5eaff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#91b5eaff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.581605049594229, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_55696f715631e7ab75cbb46f6456a2ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19f719e50b84430c3fb553d1daac6e0d = $(`<div id="html_19f719e50b84430c3fb553d1daac6e0d" style="width: 100.0%; height: 100.0%;">El Corte Inglés (86)<br>Cogidas: 834<br>Devoluciones: 877<br>Diferencia: -43<br>Porcentaje: -2.5%<br>Total usos 2025: 1711</div>`)[0];
+                popup_55696f715631e7ab75cbb46f6456a2ce.setContent(html_19f719e50b84430c3fb553d1daac6e0d);
+            
+        
+
+        circle_marker_511de2776c2b22282e2bc491716209a1.bindPopup(popup_55696f715631e7ab75cbb46f6456a2ce)
+        ;
+
+        
+    
+    
+            var circle_marker_506ed9c60e9f05cf6fa705f47486a795 = L.circleMarker(
+                [38.256276, -0.710553],
+                {"bubblingMouseEvents": true, "color": "#303cf8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#303cf8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.000901713255185, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_cd45fc407d52c0702c40e9e4d8a08c0b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca9fbb12197711bc7d5c4770ae65fe84 = $(`<div id="html_ca9fbb12197711bc7d5c4770ae65fe84" style="width: 100.0%; height: 100.0%;">CEIP Sanchis Guarner (87)<br>Cogidas: 296<br>Devoluciones: 370<br>Diferencia: -74<br>Porcentaje: -11.1%<br>Total usos 2025: 666</div>`)[0];
+                popup_cd45fc407d52c0702c40e9e4d8a08c0b.setContent(html_ca9fbb12197711bc7d5c4770ae65fe84);
+            
+        
+
+        circle_marker_506ed9c60e9f05cf6fa705f47486a795.bindPopup(popup_cd45fc407d52c0702c40e9e4d8a08c0b)
+        ;
+
+        
+    
+    
+            var circle_marker_b6a0a80452d3fbffd0864a3c62c216e3 = L.circleMarker(
+                [38.256488, -0.707359],
+                {"bubblingMouseEvents": true, "color": "#0000f4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000f4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.204688908926961, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_35d730b3377f693d84688607234a8e9d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53638ec6799efd9b95b03ed4ea574b43 = $(`<div id="html_53638ec6799efd9b95b03ed4ea574b43" style="width: 100.0%; height: 100.0%;">Pistas del Pla (88)<br>Cogidas: 401<br>Devoluciones: 564<br>Diferencia: -163<br>Porcentaje: -16.9%<br>Total usos 2025: 965</div>`)[0];
+                popup_35d730b3377f693d84688607234a8e9d.setContent(html_53638ec6799efd9b95b03ed4ea574b43);
+            
+        
+
+        circle_marker_b6a0a80452d3fbffd0864a3c62c216e3.bindPopup(popup_35d730b3377f693d84688607234a8e9d)
+        ;
+
+        
+    
+    
+            var circle_marker_24a5c645aed5ada9a1af33b195362d84 = L.circleMarker(
+                [38.255523, -0.704612],
+                {"bubblingMouseEvents": true, "color": "#ffe000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.284941388638413, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_e22f3874267f6bd47f3466b5e19a8082 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6ac27140b6f063cc375a5fe71a04ee6b = $(`<div id="html_6ac27140b6f063cc375a5fe71a04ee6b" style="width: 100.0%; height: 100.0%;">CEIP Dama d´Elx (89)<br>Cogidas: 472<br>Devoluciones: 377<br>Diferencia: 95<br>Porcentaje: 11.2%<br>Total usos 2025: 849</div>`)[0];
+                popup_e22f3874267f6bd47f3466b5e19a8082.setContent(html_6ac27140b6f063cc375a5fe71a04ee6b);
+            
+        
+
+        circle_marker_24a5c645aed5ada9a1af33b195362d84.bindPopup(popup_e22f3874267f6bd47f3466b5e19a8082)
+        ;
+
+        
+    
+    
+            var circle_marker_747c7901dfbf9b35b2841dc00255079c = L.circleMarker(
+                [38.254557, -0.703065],
+                {"bubblingMouseEvents": true, "color": "#647df1ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#647df1ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.716862037871957, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_520621a0bb2b1cc83ddf1af2184b46e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d463c467b2f70f1d47db59e64bd7565 = $(`<div id="html_1d463c467b2f70f1d47db59e64bd7565" style="width: 100.0%; height: 100.0%;">Centro salud el Pla (90)<br>Cogidas: 382<br>Devoluciones: 435<br>Diferencia: -53<br>Porcentaje: -6.5%<br>Total usos 2025: 817</div>`)[0];
+                popup_520621a0bb2b1cc83ddf1af2184b46e4.setContent(html_1d463c467b2f70f1d47db59e64bd7565);
+            
+        
+
+        circle_marker_747c7901dfbf9b35b2841dc00255079c.bindPopup(popup_520621a0bb2b1cc83ddf1af2184b46e4)
+        ;
+
+        
+    
+    
+            var circle_marker_59a164db7e91eef0eb4c4fba94a8fc50 = L.circleMarker(
+                [38.252695, -0.703777],
+                {"bubblingMouseEvents": true, "color": "#0000d5ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000d5ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.529305680793508, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_7d6e7cc6f7fe9bd1530c6894533246d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_65468126f2ed3a4062da93d0d1ace358 = $(`<div id="html_65468126f2ed3a4062da93d0d1ace358" style="width: 100.0%; height: 100.0%;">Centro social el Pla (91)<br>Cogidas: 352<br>Devoluciones: 539<br>Diferencia: -187<br>Porcentaje: -21.0%<br>Total usos 2025: 891</div>`)[0];
+                popup_7d6e7cc6f7fe9bd1530c6894533246d0.setContent(html_65468126f2ed3a4062da93d0d1ace358);
+            
+        
+
+        circle_marker_59a164db7e91eef0eb4c4fba94a8fc50.bindPopup(popup_7d6e7cc6f7fe9bd1530c6894533246d0)
+        ;
+
+        
+    
+    
+            var circle_marker_de68c28551688102229dda430f665124 = L.circleMarker(
+                [38.270671, -0.695949],
+                {"bubblingMouseEvents": true, "color": "#ffc400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffc400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.095581605049595, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_be0cbf62a17fe784d59bcb58f1120644 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a6da54f7de1fe435f2be357a03c97591 = $(`<div id="html_a6da54f7de1fe435f2be357a03c97591" style="width: 100.0%; height: 100.0%;">Parking Candalix (92)<br>Cogidas: 233<br>Devoluciones: 152<br>Diferencia: 81<br>Porcentaje: 21.0%<br>Total usos 2025: 385</div>`)[0];
+                popup_be0cbf62a17fe784d59bcb58f1120644.setContent(html_a6da54f7de1fe435f2be357a03c97591);
+            
+        
+
+        circle_marker_de68c28551688102229dda430f665124.bindPopup(popup_be0cbf62a17fe784d59bcb58f1120644)
+        ;
+
+        
+    
+    
+            var circle_marker_f14c963a39fb1eec688452bb5fc46e4f = L.circleMarker(
+                [38.26886, -0.693874],
+                {"bubblingMouseEvents": true, "color": "#7f9fedff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7f9fedff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.298467087466186, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_0e1e8cf82e5e3b139131127045be42b9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_762ee1b5cf448da24e5854600b29d22b = $(`<div id="html_762ee1b5cf448da24e5854600b29d22b" style="width: 100.0%; height: 100.0%;">Parque Rey Jaume I (93)<br>Cogidas: 1135<br>Devoluciones: 1231<br>Diferencia: -96<br>Porcentaje: -4.1%<br>Total usos 2025: 2366</div>`)[0];
+                popup_0e1e8cf82e5e3b139131127045be42b9.setContent(html_762ee1b5cf448da24e5854600b29d22b);
+            
+        
+
+        circle_marker_f14c963a39fb1eec688452bb5fc46e4f.bindPopup(popup_0e1e8cf82e5e3b139131127045be42b9)
+        ;
+
+        
+    
+    
+            var circle_marker_548740ebf2c664a62604d4d1b189f7d3 = L.circleMarker(
+                [38.264977, -0.696934],
+                {"bubblingMouseEvents": true, "color": "#fffb00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffb00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.5680793507664563, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_2885a065fe3fb143f8f812e073fef798 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c52583b3c00bcd8a785c4746e1b61f30 = $(`<div id="html_c52583b3c00bcd8a785c4746e1b61f30" style="width: 100.0%; height: 100.0%;">Parking Gran Teatre (94)<br>Cogidas: 1235<br>Devoluciones: 1193<br>Diferencia: 42<br>Porcentaje: 1.7%<br>Total usos 2025: 2428</div>`)[0];
+                popup_2885a065fe3fb143f8f812e073fef798.setContent(html_c52583b3c00bcd8a785c4746e1b61f30);
+            
+        
+
+        circle_marker_548740ebf2c664a62604d4d1b189f7d3.bindPopup(popup_2885a065fe3fb143f8f812e073fef798)
+        ;
+
+        
+    
+    
+            var circle_marker_16112adf34c95e644d98060f2519ee26 = L.circleMarker(
+                [38.253509, -0.709495],
+                {"bubblingMouseEvents": true, "color": "#00008bff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00008bff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.892696122633003, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_58d7f411cdefa81682d492d4d8344621 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_899514ac3ee661355ce8b9246396a6ee = $(`<div id="html_899514ac3ee661355ce8b9246396a6ee" style="width: 100.0%; height: 100.0%;">IES Vicente Verdu (95)<br>Cogidas: 74<br>Devoluciones: 140<br>Diferencia: -66<br>Porcentaje: -30.8%<br>Total usos 2025: 214</div>`)[0];
+                popup_58d7f411cdefa81682d492d4d8344621.setContent(html_899514ac3ee661355ce8b9246396a6ee);
+            
+        
+
+        circle_marker_16112adf34c95e644d98060f2519ee26.bindPopup(popup_58d7f411cdefa81682d492d4d8344621)
+        ;
+
+        
+    
+    
+            var circle_marker_c43d73565fb87bea782c6fbd69068f5c = L.circleMarker(
+                [38.263354, -0.7004],
+                {"bubblingMouseEvents": true, "color": "#0000efff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000efff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.128944995491434, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_5839da801cf1f8cc6fa0da0d6bfcf55d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8c4e882c768fad0edffea348f300ae3b = $(`<div id="html_8c4e882c768fad0edffea348f300ae3b" style="width: 100.0%; height: 100.0%;">Puente de Santa Teresa (96)<br>Cogidas: 1411<br>Devoluciones: 2012<br>Diferencia: -601<br>Porcentaje: -17.6%<br>Total usos 2025: 3423</div>`)[0];
+                popup_5839da801cf1f8cc6fa0da0d6bfcf55d.setContent(html_8c4e882c768fad0edffea348f300ae3b);
+            
+        
+
+        circle_marker_c43d73565fb87bea782c6fbd69068f5c.bindPopup(popup_5839da801cf1f8cc6fa0da0d6bfcf55d)
+        ;
+
+        
+    
+    
+            var circle_marker_8217fda3550f8c52e65d210154327eee = L.circleMarker(
+                [38.264183, -0.692711],
+                {"bubblingMouseEvents": true, "color": "#a6cfe7ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a6cfe7ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0676284941388636, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_d08b09564ecae3b9e896a7f3ddfbaad7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7909433d6e546305ccb5dbcd67a59d43 = $(`<div id="html_7909433d6e546305ccb5dbcd67a59d43" style="width: 100.0%; height: 100.0%;">Huerto del cura (97)<br>Cogidas: 391<br>Devoluciones: 396<br>Diferencia: -5<br>Porcentaje: -0.6%<br>Total usos 2025: 787</div>`)[0];
+                popup_d08b09564ecae3b9e896a7f3ddfbaad7.setContent(html_7909433d6e546305ccb5dbcd67a59d43);
+            
+        
+
+        circle_marker_8217fda3550f8c52e65d210154327eee.bindPopup(popup_d08b09564ecae3b9e896a7f3ddfbaad7)
+        ;
+
+        
+    
+    
+            var circle_marker_f414f96062f5b074e81c3cade658e8a1 = L.circleMarker(
+                [38.267237, -0.686321],
+                {"bubblingMouseEvents": true, "color": "#a2cbe8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a2cbe8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.2164111812443643, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_645711ef81104793b0a425afa8a2e9e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c033bdc7c0f99f33b550942282f2168 = $(`<div id="html_1c033bdc7c0f99f33b550942282f2168" style="width: 100.0%; height: 100.0%;">IES Sixto Marco (98)<br>Cogidas: 825<br>Devoluciones: 841<br>Diferencia: -16<br>Porcentaje: -1.0%<br>Total usos 2025: 1666</div>`)[0];
+                popup_645711ef81104793b0a425afa8a2e9e7.setContent(html_1c033bdc7c0f99f33b550942282f2168);
+            
+        
+
+        circle_marker_f414f96062f5b074e81c3cade658e8a1.bindPopup(popup_645711ef81104793b0a425afa8a2e9e7)
+        ;
+
+        
+    
+    
+            var circle_marker_927e9a1dd3da0315fd51298b45609c9f = L.circleMarker(
+                [38.261756, -0.686113],
+                {"bubblingMouseEvents": true, "color": "#8db1ebff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8db1ebff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4733994589720467, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_342a3eb36243d8d708ab5615401fec2c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5c12f1365e70289014d464c5e866f525 = $(`<div id="html_5c12f1365e70289014d464c5e866f525" style="width: 100.0%; height: 100.0%;">IES La Asunción (99)<br>Cogidas: 601<br>Devoluciones: 636<br>Diferencia: -35<br>Porcentaje: -2.8%<br>Total usos 2025: 1237</div>`)[0];
+                popup_342a3eb36243d8d708ab5615401fec2c.setContent(html_5c12f1365e70289014d464c5e866f525);
+            
+        
+
+        circle_marker_927e9a1dd3da0315fd51298b45609c9f.bindPopup(popup_342a3eb36243d8d708ab5615401fec2c)
+        ;
+
+        
+    
+    
+            var circle_marker_d636f5be22b381e005067d2fd0de2230 = L.circleMarker(
+                [38.259473, -0.696563],
+                {"bubblingMouseEvents": true, "color": "#3643f8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3643f8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.245266005410279, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_2a891b77d2ccaeabd064151a4afe1b12 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_607fdd3344c36439488272e1aa886047 = $(`<div id="html_607fdd3344c36439488272e1aa886047" style="width: 100.0%; height: 100.0%;">C.S. Raval (100)<br>Cogidas: 701<br>Devoluciones: 867<br>Diferencia: -166<br>Porcentaje: -10.6%<br>Total usos 2025: 1568</div>`)[0];
+                popup_2a891b77d2ccaeabd064151a4afe1b12.setContent(html_607fdd3344c36439488272e1aa886047);
+            
+        
+
+        circle_marker_d636f5be22b381e005067d2fd0de2230.bindPopup(popup_2a891b77d2ccaeabd064151a4afe1b12)
+        ;
+
+        
+    
+    
+            var circle_marker_af501b1e768e60b3890c63a85fcb34ac = L.circleMarker(
+                [38.275654, -0.693695],
+                {"bubblingMouseEvents": true, "color": "#ffe800ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.000901713255185, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_7e5bc21f86536c8596f23a07e3f4ea52 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5877715d3351d345f63ba1becb50f973 = $(`<div id="html_5877715d3351d345f63ba1becb50f973" style="width: 100.0%; height: 100.0%;">UMH-La Galia (101)<br>Cogidas: 492<br>Devoluciones: 418<br>Diferencia: 74<br>Porcentaje: 8.1%<br>Total usos 2025: 910</div>`)[0];
+                popup_7e5bc21f86536c8596f23a07e3f4ea52.setContent(html_5877715d3351d345f63ba1becb50f973);
+            
+        
+
+        circle_marker_af501b1e768e60b3890c63a85fcb34ac.bindPopup(popup_7e5bc21f86536c8596f23a07e3f4ea52)
+        ;
+
+        
+    
+    
+            var circle_marker_a4390abc85854a28dc08a8c29a7ab89a = L.circleMarker(
+                [38.276258, -0.690914],
+                {"bubblingMouseEvents": true, "color": "#fff700ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff700ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.689810640216411, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_934efb6b1cf0162716555654a0bdd2f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_45efef7528b11f3cee0a06a7fe278cb2 = $(`<div id="html_45efef7528b11f3cee0a06a7fe278cb2" style="width: 100.0%; height: 100.0%;">UMH-Altabix (102)<br>Cogidas: 907<br>Devoluciones: 856<br>Diferencia: 51<br>Porcentaje: 2.9%<br>Total usos 2025: 1763</div>`)[0];
+                popup_934efb6b1cf0162716555654a0bdd2f3.setContent(html_45efef7528b11f3cee0a06a7fe278cb2);
+            
+        
+
+        circle_marker_a4390abc85854a28dc08a8c29a7ab89a.bindPopup(popup_934efb6b1cf0162716555654a0bdd2f3)
+        ;
+
+        
+    
+    
+            var circle_marker_4cd04fbd26857ff4ec332f65ad2fcd42 = L.circleMarker(
+                [38.277239, -0.686979],
+                {"bubblingMouseEvents": true, "color": "#90b4ebff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#90b4ebff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.459873760144274, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_1d6fa75e2b47a8383e79b06be53024a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1119643e6dc61b86252091113a3d3804 = $(`<div id="html_1119643e6dc61b86252091113a3d3804" style="width: 100.0%; height: 100.0%;">UMH-Altet (103)<br>Cogidas: 645<br>Devoluciones: 679<br>Diferencia: -34<br>Porcentaje: -2.6%<br>Total usos 2025: 1324</div>`)[0];
+                popup_1d6fa75e2b47a8383e79b06be53024a5.setContent(html_1119643e6dc61b86252091113a3d3804);
+            
+        
+
+        circle_marker_4cd04fbd26857ff4ec332f65ad2fcd42.bindPopup(popup_1d6fa75e2b47a8383e79b06be53024a5)
+        ;
+
+        
+    
+    
+            var circle_marker_24f461d480aec93268a816c436a73eb3 = L.circleMarker(
+                [38.277859, -0.683877],
+                {"bubblingMouseEvents": true, "color": "#6e89f0ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#6e89f0ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.6762849413886385, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_3e4cd6cbcdbfbda51d7b835ddbc0821f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3382c27e5857601531b14c0d6799fbe = $(`<div id="html_d3382c27e5857601531b14c0d6799fbe" style="width: 100.0%; height: 100.0%;">UMH-Arenals (104)<br>Cogidas: 420<br>Devoluciones: 470<br>Diferencia: -50<br>Porcentaje: -5.6%<br>Total usos 2025: 890</div>`)[0];
+                popup_3e4cd6cbcdbfbda51d7b835ddbc0821f.setContent(html_d3382c27e5857601531b14c0d6799fbe);
+            
+        
+
+        circle_marker_24f461d480aec93268a816c436a73eb3.bindPopup(popup_3e4cd6cbcdbfbda51d7b835ddbc0821f)
+        ;
+
+        
+    
+    
+            var circle_marker_a9b1c2a9bbe301330f7bd44824bed6e4 = L.circleMarker(
+                [38.279355, -0.717831],
+                {"bubblingMouseEvents": true, "color": "#ff6600ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff6600ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.030658250676285, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_bdeefa1bf6b7fbd64308633efc2122c7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6481425f79091d811d535aeb8e0067bf = $(`<div id="html_6481425f79091d811d535aeb8e0067bf" style="width: 100.0%; height: 100.0%;">Almansa con Avda. Novelda (105)<br>Cogidas: 486<br>Devoluciones: 188<br>Diferencia: 298<br>Porcentaje: 44.2%<br>Total usos 2025: 674</div>`)[0];
+                popup_bdeefa1bf6b7fbd64308633efc2122c7.setContent(html_6481425f79091d811d535aeb8e0067bf);
+            
+        
+
+        circle_marker_a9b1c2a9bbe301330f7bd44824bed6e4.bindPopup(popup_bdeefa1bf6b7fbd64308633efc2122c7)
+        ;
+
+        
+    
+    
+            var circle_marker_78f7c37f3f2e058e8e8e3d9849c599de = L.circleMarker(
+                [38.276163, -0.676059],
+                {"bubblingMouseEvents": true, "color": "#a3cbe8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a3cbe8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.1758340847610462, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_de7bf7c98179285aa08ecd5964fb3e9e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9fcac1c7a105a2315ee904841f1f9f1d = $(`<div id="html_9fcac1c7a105a2315ee904841f1f9f1d" style="width: 100.0%; height: 100.0%;">Estadio Manolo Jaén (106)<br>Cogidas: 704<br>Devoluciones: 717<br>Diferencia: -13<br>Porcentaje: -0.9%<br>Total usos 2025: 1421</div>`)[0];
+                popup_de7bf7c98179285aa08ecd5964fb3e9e.setContent(html_9fcac1c7a105a2315ee904841f1f9f1d);
+            
+        
+
+        circle_marker_78f7c37f3f2e058e8e8e3d9849c599de.bindPopup(popup_de7bf7c98179285aa08ecd5964fb3e9e)
+        ;
+
+        
+    
+    
+            var circle_marker_c853f88929e4f5b87b86c8268dd63698 = L.circleMarker(
+                [38.277962, -0.674505],
+                {"bubblingMouseEvents": true, "color": "#ffe800ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe800ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.297565374211001, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_20119d85a67442a40996d2f21e51c4d5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12bdc6a65723c77158114989e0f4b88a = $(`<div id="html_12bdc6a65723c77158114989e0f4b88a" style="width: 100.0%; height: 100.0%;">Josefina Manresa (107)<br>Cogidas: 143<br>Devoluciones: 121<br>Diferencia: 22<br>Porcentaje: 8.3%<br>Total usos 2025: 264</div>`)[0];
+                popup_20119d85a67442a40996d2f21e51c4d5.setContent(html_12bdc6a65723c77158114989e0f4b88a);
+            
+        
+
+        circle_marker_c853f88929e4f5b87b86c8268dd63698.bindPopup(popup_20119d85a67442a40996d2f21e51c4d5)
+        ;
+
+        
+    
+    
+            var circle_marker_e59cb46dd3bbefc540f159c1b6fe46ac = L.circleMarker(
+                [38.278938, -0.669138],
+                {"bubblingMouseEvents": true, "color": "#ffc300ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffc300ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.744815148782687, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_42af3463449210d2b2d9fe96b3bd2da3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a1a4ce2b01accb6018d00dabf3a5adf4 = $(`<div id="html_a1a4ce2b01accb6018d00dabf3a5adf4" style="width: 100.0%; height: 100.0%;">José Ferrández Cruz (108)<br>Cogidas: 366<br>Devoluciones: 237<br>Diferencia: 129<br>Porcentaje: 21.4%<br>Total usos 2025: 603</div>`)[0];
+                popup_42af3463449210d2b2d9fe96b3bd2da3.setContent(html_a1a4ce2b01accb6018d00dabf3a5adf4);
+            
+        
+
+        circle_marker_e59cb46dd3bbefc540f159c1b6fe46ac.bindPopup(popup_42af3463449210d2b2d9fe96b3bd2da3)
+        ;
+
+        
+    
+    
+            var circle_marker_cc6e075f36584e7cb4a72522fd9163b3 = L.circleMarker(
+                [38.273918, -0.671269],
+                {"bubblingMouseEvents": true, "color": "#ffe300ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe300ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.082957619477007, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_4de1e8326f4789cc6b961b23047d8f57 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_42a70b672c8dee56be3daa81a7910ecd = $(`<div id="html_42a70b672c8dee56be3daa81a7910ecd" style="width: 100.0%; height: 100.0%;">Parque Huerto del Torreret (109)<br>Cogidas: 833<br>Devoluciones: 679<br>Diferencia: 154<br>Porcentaje: 10.2%<br>Total usos 2025: 1512</div>`)[0];
+                popup_4de1e8326f4789cc6b961b23047d8f57.setContent(html_42a70b672c8dee56be3daa81a7910ecd);
+            
+        
+
+        circle_marker_cc6e075f36584e7cb4a72522fd9163b3.bindPopup(popup_4de1e8326f4789cc6b961b23047d8f57)
+        ;
+
+        
+    
+    
+            var circle_marker_36652da3eb6d15c4517b5a402f7bbad9 = L.circleMarker(
+                [38.272922, -0.711482],
+                {"bubblingMouseEvents": true, "color": "#ffc000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffc000ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.799819657348963, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_e28d58ba7ad2857dedc193f359792d76 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6fb42030a539a96c6b0f13b481aaa418 = $(`<div id="html_6fb42030a539a96c6b0f13b481aaa418" style="width: 100.0%; height: 100.0%;">Avda Novelda con Obispo Barrachina (110)<br>Cogidas: 566<br>Devoluciones: 359<br>Diferencia: 207<br>Porcentaje: 22.4%<br>Total usos 2025: 925</div>`)[0];
+                popup_e28d58ba7ad2857dedc193f359792d76.setContent(html_6fb42030a539a96c6b0f13b481aaa418);
+            
+        
+
+        circle_marker_36652da3eb6d15c4517b5a402f7bbad9.bindPopup(popup_e28d58ba7ad2857dedc193f359792d76)
+        ;
+
+        
+    
+    
+            var circle_marker_38b894e313816add56e071721c7089be = L.circleMarker(
+                [38.268824, -0.685301],
+                {"bubblingMouseEvents": true, "color": "#ffe300ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe300ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.515779981965735, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_fee1e7db99f19e03a50450452a2d584d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19f27e79dac9f1fc0a53e14c52b3b74b = $(`<div id="html_19f27e79dac9f1fc0a53e14c52b3b74b" style="width: 100.0%; height: 100.0%;">Avenida Alicante 38 (111)<br>Cogidas: 1016<br>Devoluciones: 830<br>Diferencia: 186<br>Porcentaje: 10.1%<br>Total usos 2025: 1846</div>`)[0];
+                popup_fee1e7db99f19e03a50450452a2d584d.setContent(html_19f27e79dac9f1fc0a53e14c52b3b74b);
+            
+        
+
+        circle_marker_38b894e313816add56e071721c7089be.bindPopup(popup_fee1e7db99f19e03a50450452a2d584d)
+        ;
+
+        
+    
+    
+            var circle_marker_820dcab661f494f3fb29c7a3c1f7dc44 = L.circleMarker(
+                [38.26697, -0.68268],
+                {"bubblingMouseEvents": true, "color": "#5267f4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5267f4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.527502254283138, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_54c4d8a3083912e0941f2c12b1a8ec14 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8502a2e186a6d5bba4d1faa51d484d5b = $(`<div id="html_8502a2e186a6d5bba4d1faa51d484d5b" style="width: 100.0%; height: 100.0%;">CEIP San Fernando (112)<br>Cogidas: 222<br>Devoluciones: 261<br>Diferencia: -39<br>Porcentaje: -8.1%<br>Total usos 2025: 483</div>`)[0];
+                popup_54c4d8a3083912e0941f2c12b1a8ec14.setContent(html_8502a2e186a6d5bba4d1faa51d484d5b);
+            
+        
+
+        circle_marker_820dcab661f494f3fb29c7a3c1f7dc44.bindPopup(popup_54c4d8a3083912e0941f2c12b1a8ec14)
+        ;
+
+        
+    
+    
+            var circle_marker_a8c65e4b4e6837c29c3b1f2eeb94b408 = L.circleMarker(
+                [38.267015, -0.672626],
+                {"bubblingMouseEvents": true, "color": "#fffb00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffb00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.094679891794409, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_450c63b67be2c66a4cbb8c5560dbd77b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_65de8e52aead42739b03eb1dcfc41a5f = $(`<div id="html_65de8e52aead42739b03eb1dcfc41a5f" style="width: 100.0%; height: 100.0%;">Alcalde Juan Hernández (113)<br>Cogidas: 239<br>Devoluciones: 232<br>Diferencia: 7<br>Porcentaje: 1.5%<br>Total usos 2025: 471</div>`)[0];
+                popup_450c63b67be2c66a4cbb8c5560dbd77b.setContent(html_65de8e52aead42739b03eb1dcfc41a5f);
+            
+        
+
+        circle_marker_a8c65e4b4e6837c29c3b1f2eeb94b408.bindPopup(popup_450c63b67be2c66a4cbb8c5560dbd77b)
+        ;
+
+        
+    
+    
+            var circle_marker_91202577a5e06383439fe313693b7300 = L.circleMarker(
+                [38.262133, -0.672075],
+                {"bubblingMouseEvents": true, "color": "#556af3ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#556af3ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.4733994589720467, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_b020ce1633c68049267fc90c74951cdf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9a2a045007e6f163f32db34abc5ecd7b = $(`<div id="html_9a2a045007e6f163f32db34abc5ecd7b" style="width: 100.0%; height: 100.0%;">Jardin Biólogo Antonio de Zulueta (114)<br>Cogidas: 206<br>Devoluciones: 241<br>Diferencia: -35<br>Porcentaje: -7.8%<br>Total usos 2025: 447</div>`)[0];
+                popup_b020ce1633c68049267fc90c74951cdf.setContent(html_9a2a045007e6f163f32db34abc5ecd7b);
+            
+        
+
+        circle_marker_91202577a5e06383439fe313693b7300.bindPopup(popup_b020ce1633c68049267fc90c74951cdf)
+        ;
+
+        
+    
+    
+            var circle_marker_49c62af7270efb480a16b713595965a0 = L.circleMarker(
+                [38.263822, -0.663036],
+                {"bubblingMouseEvents": true, "color": "#4f62f4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4f62f4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.716862037871957, "stroke": true, "weight": 3}
+            ).addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+    
+        var popup_a21195c77aba369a47803ff056f1dbb1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b43834129dc9d333494cec73d61530f = $(`<div id="html_3b43834129dc9d333494cec73d61530f" style="width: 100.0%; height: 100.0%;">Passeig d´Atzavares (115)<br>Cogidas: 289<br>Devoluciones: 342<br>Diferencia: -53<br>Porcentaje: -8.4%<br>Total usos 2025: 631</div>`)[0];
+                popup_a21195c77aba369a47803ff056f1dbb1.setContent(html_3b43834129dc9d333494cec73d61530f);
+            
+        
+
+        circle_marker_49c62af7270efb480a16b713595965a0.bindPopup(popup_a21195c77aba369a47803ff056f1dbb1)
+        ;
+
+        
+    
+    
+    var color_map_d0046cc386c7e8f032949945fc9c9063 = {};
+
+    
+    color_map_d0046cc386c7e8f032949945fc9c9063.color = d3.scale.threshold()
+              .domain([0.0, 0.1280338454687152, 0.2560676909374304, 0.3841015364061456, 0.5121353818748609, 0.6401692273435761, 0.7682030728122912, 0.8962369182810064, 1.0242707637497217, 1.1523046092184368, 1.2803384546871521, 1.4083723001558672, 1.5364061456245823, 1.6644399910932977, 1.7924738365620128, 1.920507682030728, 2.0485415274994434, 2.1765753729681583, 2.3046092184368736, 2.432643063905589, 2.5606769093743043, 2.688710754843019, 2.8167446003117345, 2.94477844578045, 3.0728122912491647, 3.20084613671788, 3.3288799821865953, 3.4569138276553106, 3.5849476731240255, 3.712981518592741, 3.841015364061456, 3.969049209530171, 4.097083054998887, 4.225116900467602, 4.353150745936317, 4.4811845914050314, 4.609218436873747, 4.737252282342462, 4.865286127811178, 4.993319973279893, 5.1213538187486085, 5.249387664217323, 5.377421509686038, 5.505455355154754, 5.633489200623469, 5.761523046092185, 5.8895568915609, 6.0175907370296144, 6.145624582498329, 6.273658427967044, 6.40169227343576, 6.529726118904475, 6.657759964373191, 6.7857938098419055, 6.913827655310621, 7.041861500779336, 7.169895346248051, 7.297929191716767, 7.425963037185482, 7.553996882654197, 7.682030728122912, 7.810064573591627, 7.938098419060342, 8.066132264529058, 8.194166109997774, 8.322199955466488, 8.450233800935203, 8.57826764640392, 8.706301491872633, 8.834335337341349, 8.962369182810063, 9.09040302827878, 9.218436873747494, 9.34647071921621, 9.474504564684924, 9.60253841015364, 9.730572255622356, 9.858606101091071, 9.986639946559785, 10.114673792028501, 10.242707637497217, 10.370741482965931, 10.498775328434647, 10.62680917390336, 10.754843019372077, 10.882876864840792, 11.010910710309508, 11.138944555778222, 11.266978401246938, 11.395012246715652, 11.52304609218437, 11.651079937653083, 11.7791137831218, 11.907147628590513, 12.035181474059229, 12.163215319527945, 12.291249164996659, 12.419283010465374, 12.547316855934088, 12.675350701402806, 12.80338454687152, 12.931418392340236, 13.05945223780895, 13.187486083277667, 13.315519928746381, 13.443553774215097, 13.571587619683811, 13.699621465152525, 13.827655310621243, 13.955689156089957, 14.083723001558672, 14.211756847027386, 14.339790692496102, 14.467824537964818, 14.595858383433534, 14.723892228902248, 14.851926074370963, 14.97995991983968, 15.107993765308395, 15.236027610777109, 15.364061456245825, 15.492095301714539, 15.620129147183254, 15.74816299265197, 15.876196838120684, 16.004230683589398, 16.132264529058116, 16.26029837452683, 16.388332219995547, 16.51636606546426, 16.644399910932975, 16.77243375640169, 16.900467601870407, 17.028501447339124, 17.15653529280784, 17.284569138276552, 17.412602983745266, 17.540636829213984, 17.668670674682698, 17.796704520151412, 17.924738365620126, 18.052772211088843, 18.18080605655756, 18.308839902026275, 18.43687374749499, 18.564907592963706, 18.69294143843242, 18.820975283901134, 18.94900912936985, 19.077042974838562, 19.20507682030728, 19.333110665775997, 19.46114451124471, 19.589178356713425, 19.717212202182143, 19.845246047650857, 19.97327989311957, 20.101313738588285, 20.229347584057003, 20.357381429525716, 20.485415274994434, 20.613449120463148, 20.741482965931862, 20.86951681140058, 20.997550656869294, 21.125584502338008, 21.25361834780672, 21.38165219327544, 21.509686038744153, 21.637719884212867, 21.765753729681585, 21.893787575150302, 22.021821420619016, 22.14985526608773, 22.277889111556444, 22.405922957025158, 22.533956802493876, 22.66199064796259, 22.790024493431304, 22.91805833890002, 23.04609218436874, 23.174126029837453, 23.302159875306167, 23.43019372077488, 23.5582275662436, 23.686261411712312, 23.814295257181026, 23.94232910264974, 24.070362948118458, 24.198396793587175, 24.32643063905589, 24.454464484524603, 24.582498329993317, 24.710532175462035, 24.83856602093075, 24.966599866399463, 25.094633711868177, 25.222667557336898, 25.350701402805612, 25.478735248274326, 25.60676909374304, 25.734802939211754, 25.86283678468047, 25.990870630149185, 26.1189044756179, 26.246938321086613, 26.374972166555334, 26.50300601202405, 26.631039857492762, 26.759073702961476, 26.887107548430194, 27.015141393898908, 27.143175239367622, 27.271209084836336, 27.39924293030505, 27.52727677577377, 27.655310621242485, 27.7833444667112, 27.911378312179913, 28.03941215764863, 28.167446003117345, 28.29547984858606, 28.423513694054773, 28.55154753952349, 28.679581384992204, 28.80761523046092, 28.935649075929636, 29.063682921398353, 29.191716766867067, 29.31975061233578, 29.447784457804495, 29.57581830327321, 29.703852148741927, 29.83188599421064, 29.95991983967936, 30.087953685148072, 30.21598753061679, 30.344021376085504, 30.472055221554218, 30.60008906702293, 30.72812291249165, 30.856156757960363, 30.984190603429077, 31.112224448897795, 31.24025829436651, 31.368292139835226, 31.49632598530394, 31.624359830772654, 31.75239367624137, 31.880427521710086, 32.008461367178796, 32.13649521264752, 32.26452905811623, 32.392562903584945, 32.52059674905366, 32.64863059452237, 32.776664439991094, 32.90469828545981, 33.03273213092852, 33.160765976397236, 33.28879982186595, 33.41683366733467, 33.54486751280338, 33.6729013582721, 33.80093520374081, 33.92896904920953, 34.05700289467825, 34.185036740146955, 34.31307058561568, 34.44110443108439, 34.569138276553105, 34.69717212202182, 34.82520596749053, 34.95323981295925, 35.08127365842797, 35.20930750389668, 35.337341349365396, 35.46537519483412, 35.593409040302824, 35.721442885771545, 35.84947673124025, 35.97751057670897, 36.10554442217769, 36.2335782676464, 36.36161211311512, 36.48964595858383, 36.61767980405255, 36.745713649521264, 36.87374749498998, 37.00178134045869, 37.12981518592741, 37.25784903139612, 37.38588287686484, 37.513916722333555, 37.64195056780227, 37.76998441327099, 37.8980182587397, 38.02605210420842, 38.154085949677125, 38.282119795145846, 38.41015364061456, 38.538187486083274, 38.666221331551995, 38.79425517702071, 38.92228902248942, 39.05032286795814, 39.17835671342685, 39.306390558895565, 39.434424404364286, 39.56245824983299, 39.690492095301714, 39.81852594077043, 39.94655978623914, 40.07459363170786, 40.20262747717657, 40.33066132264529, 40.458695168114005, 40.58672901358272, 40.71476285905143, 40.84279670452015, 40.97083054998887, 41.09886439545758, 41.226898240926296, 41.35493208639501, 41.482965931863724, 41.61099977733244, 41.73903362280116, 41.867067468269866, 41.99510131373859, 42.1231351592073, 42.251169004676015, 42.379202850144736, 42.50723669561344, 42.635270541082164, 42.76330438655088, 42.89133823201959, 43.019372077488306, 43.14740592295702, 43.275439768425734, 43.403473613894455, 43.53150745936317, 43.65954130483188, 43.787575150300604, 43.91560899576931, 44.04364284123803, 44.17167668670674, 44.29971053217546, 44.427744377644174, 44.55577822311289, 44.68381206858161, 44.811845914050316, 44.93987975951904, 45.06791360498775, 45.195947450456465, 45.32398129592518, 45.4520151413939, 45.58004898686261, 45.70808283233133, 45.83611667780004, 45.964150523268756, 46.09218436873748, 46.220218214206184, 46.348252059674905, 46.47628590514361, 46.60431975061233, 46.73235359608105, 46.86038744154976, 46.98842128701848, 47.1164551324872, 47.24448897795591, 47.372522823424625, 47.50055666889334, 47.62859051436205, 47.756624359830774, 47.88465820529948, 48.0126920507682, 48.140725896236916, 48.26875974170563, 48.39679358717435, 48.52482743264306, 48.65286127811178, 48.78089512358049, 48.90892896904921, 49.03696281451792, 49.164996659986635, 49.293030505455356, 49.42106435092407, 49.549098196392784, 49.6771320418615, 49.80516588733021, 49.933199732798926, 50.06123357826765, 50.189267423736354, 50.317301269205075, 50.445335114673796, 50.5733689601425, 50.701402805611224, 50.82943665107993, 50.95747049654865, 51.085504342017366, 51.21353818748608, 51.341572032954794, 51.46960587842351, 51.59763972389223, 51.72567356936094, 51.85370741482966, 51.98174126029837, 52.10977510576709, 52.2378089512358, 52.36584279670452, 52.49387664217323, 52.62191048764195, 52.74994433311067, 52.877978178579376, 53.0060120240481, 53.134045869516804, 53.262079714985525, 53.39011356045424, 53.51814740592295, 53.64618125139167, 53.77421509686039, 53.9022489423291, 54.030282787797816, 54.15831663326653, 54.286350478735244, 54.414384324203965, 54.54241816967267, 54.67045201514139, 54.7984858606101, 54.92651970607882, 55.05455355154754, 55.18258739701625, 55.31062124248497, 55.438655087953684, 55.5666889334224, 55.69472277889111, 55.822756624359826, 55.95079046982854, 56.07882431529726, 56.206858160765975, 56.33489200623469, 56.46292585170341, 56.59095969717212, 56.71899354264084, 56.847027388109545, 56.975061233578266, 57.10309507904698, 57.231128924515694, 57.35916276998441, 57.48719661545312, 57.61523046092184, 57.74326430639056, 57.87129815185927, 57.999331997327985, 58.127365842796706, 58.25539968826541, 58.383433533734134, 58.51146737920284, 58.63950122467156, 58.76753507014028, 58.89556891560899, 59.02360276107771, 59.15163660654642, 59.27967045201514, 59.40770429748385, 59.53573814295257, 59.66377198842128, 59.79180583389, 59.91983967935872, 60.04787352482743, 60.175907370296144, 60.30394121576486, 60.43197506123358, 60.560008906702286, 60.68804275217101, 60.816076597639714, 60.944110443108436, 61.07214428857716, 61.20017813404586, 61.328211979514585, 61.4562458249833, 61.58427967045201, 61.71231351592073, 61.84034736138944, 61.968381206858155, 62.096415052326876, 62.22444889779559, 62.352482743264304, 62.48051658873302, 62.60855043420173, 62.73658427967045, 62.86461812513916, 62.99265197060788, 63.120685816076595, 63.24871966154531, 63.37675350701403, 63.50478735248274, 63.63282119795146, 63.76085504342017, 63.888888888888886])
+              .range(['#ffff00ff', '#ffff00ff', '#ffff00ff', '#fffe00ff', '#fffe00ff', '#fffe00ff', '#fffd00ff', '#fffd00ff', '#fffd00ff', '#fffc00ff', '#fffc00ff', '#fffc00ff', '#fffb00ff', '#fffb00ff', '#fffa00ff', '#fffa00ff', '#fffa00ff', '#fff900ff', '#fff900ff', '#fff900ff', '#fff800ff', '#fff800ff', '#fff800ff', '#fff700ff', '#fff700ff', '#fff600ff', '#fff600ff', '#fff600ff', '#fff500ff', '#fff500ff', '#fff500ff', '#fff400ff', '#fff400ff', '#fff400ff', '#fff300ff', '#fff300ff', '#fff200ff', '#fff200ff', '#fff200ff', '#fff100ff', '#fff100ff', '#fff100ff', '#fff000ff', '#fff000ff', '#fff000ff', '#ffef00ff', '#ffef00ff', '#ffee00ff', '#ffee00ff', '#ffee00ff', '#ffed00ff', '#ffed00ff', '#ffed00ff', '#ffec00ff', '#ffec00ff', '#ffec00ff', '#ffeb00ff', '#ffeb00ff', '#ffea00ff', '#ffea00ff', '#ffea00ff', '#ffe900ff', '#ffe900ff', '#ffe900ff', '#ffe800ff', '#ffe800ff', '#ffe800ff', '#ffe700ff', '#ffe700ff', '#ffe700ff', '#ffe600ff', '#ffe600ff', '#ffe500ff', '#ffe500ff', '#ffe500ff', '#ffe400ff', '#ffe400ff', '#ffe400ff', '#ffe300ff', '#ffe300ff', '#ffe300ff', '#ffe200ff', '#ffe200ff', '#ffe100ff', '#ffe100ff', '#ffe100ff', '#ffe000ff', '#ffe000ff', '#ffe000ff', '#ffdf00ff', '#ffdf00ff', '#ffdf00ff', '#ffde00ff', '#ffde00ff', '#ffdd00ff', '#ffdd00ff', '#ffdd00ff', '#ffdc00ff', '#ffdc00ff', '#ffdc00ff', '#ffdb00ff', '#ffdb00ff', '#ffdb00ff', '#ffda00ff', '#ffda00ff', '#ffd900ff', '#ffd900ff', '#ffd900ff', '#ffd800ff', '#ffd800ff', '#ffd800ff', '#ffd700ff', '#ffd700ff', '#ffd700ff', '#ffd600ff', '#ffd600ff', '#ffd500ff', '#ffd500ff', '#ffd500ff', '#ffd400ff', '#ffd400ff', '#ffd400ff', '#ffd300ff', '#ffd300ff', '#ffd300ff', '#ffd200ff', '#ffd200ff', '#ffd200ff', '#ffd100ff', '#ffd100ff', '#ffd000ff', '#ffd000ff', '#ffd000ff', '#ffcf00ff', '#ffcf00ff', '#ffcf00ff', '#ffce00ff', '#ffce00ff', '#ffce00ff', '#ffcd00ff', '#ffcd00ff', '#ffcc00ff', '#ffcc00ff', '#ffcc00ff', '#ffcb00ff', '#ffcb00ff', '#ffcb00ff', '#ffca00ff', '#ffca00ff', '#ffca00ff', '#ffc900ff', '#ffc900ff', '#ffc800ff', '#ffc800ff', '#ffc800ff', '#ffc700ff', '#ffc700ff', '#ffc700ff', '#ffc600ff', '#ffc600ff', '#ffc600ff', '#ffc500ff', '#ffc500ff', '#ffc400ff', '#ffc400ff', '#ffc400ff', '#ffc300ff', '#ffc300ff', '#ffc300ff', '#ffc200ff', '#ffc200ff', '#ffc200ff', '#ffc100ff', '#ffc100ff', '#ffc000ff', '#ffc000ff', '#ffc000ff', '#ffbf00ff', '#ffbf00ff', '#ffbf00ff', '#ffbe00ff', '#ffbe00ff', '#ffbe00ff', '#ffbd00ff', '#ffbd00ff', '#ffbd00ff', '#ffbc00ff', '#ffbc00ff', '#ffbb00ff', '#ffbb00ff', '#ffbb00ff', '#ffba00ff', '#ffba00ff', '#ffba00ff', '#ffb900ff', '#ffb900ff', '#ffb900ff', '#ffb800ff', '#ffb800ff', '#ffb700ff', '#ffb700ff', '#ffb700ff', '#ffb600ff', '#ffb600ff', '#ffb600ff', '#ffb500ff', '#ffb500ff', '#ffb500ff', '#ffb400ff', '#ffb400ff', '#ffb300ff', '#ffb300ff', '#ffb300ff', '#ffb200ff', '#ffb200ff', '#ffb200ff', '#ffb100ff', '#ffb100ff', '#ffb100ff', '#ffb000ff', '#ffb000ff', '#ffaf00ff', '#ffaf00ff', '#ffaf00ff', '#ffae00ff', '#ffae00ff', '#ffae00ff', '#ffad00ff', '#ffad00ff', '#ffad00ff', '#ffac00ff', '#ffac00ff', '#ffab00ff', '#ffab00ff', '#ffab00ff', '#ffaa00ff', '#ffaa00ff', '#ffaa00ff', '#ffa900ff', '#ffa900ff', '#ffa900ff', '#ffa800ff', '#ffa800ff', '#ffa800ff', '#ffa700ff', '#ffa700ff', '#ffa600ff', '#ffa600ff', '#ffa600ff', '#ffa500ff', '#ffa500ff', '#ffa400ff', '#ffa300ff', '#ffa300ff', '#ffa200ff', '#ffa100ff', '#ffa100ff', '#ffa000ff', '#ffa000ff', '#ff9f00ff', '#ff9e00ff', '#ff9e00ff', '#ff9d00ff', '#ff9c00ff', '#ff9c00ff', '#ff9b00ff', '#ff9a00ff', '#ff9a00ff', '#ff9900ff', '#ff9800ff', '#ff9800ff', '#ff9700ff', '#ff9600ff', '#ff9600ff', '#ff9500ff', '#ff9400ff', '#ff9400ff', '#ff9300ff', '#ff9200ff', '#ff9200ff', '#ff9100ff', '#ff9000ff', '#ff9000ff', '#ff8f00ff', '#ff8e00ff', '#ff8e00ff', '#ff8d00ff', '#ff8c00ff', '#ff8c00ff', '#ff8b00ff', '#ff8a00ff', '#ff8a00ff', '#ff8900ff', '#ff8800ff', '#ff8800ff', '#ff8700ff', '#ff8600ff', '#ff8600ff', '#ff8500ff', '#ff8400ff', '#ff8400ff', '#ff8300ff', '#ff8200ff', '#ff8200ff', '#ff8100ff', '#ff8000ff', '#ff8000ff', '#ff7f00ff', '#ff7e00ff', '#ff7e00ff', '#ff7d00ff', '#ff7c00ff', '#ff7c00ff', '#ff7b00ff', '#ff7a00ff', '#ff7a00ff', '#ff7900ff', '#ff7800ff', '#ff7800ff', '#ff7700ff', '#ff7600ff', '#ff7600ff', '#ff7500ff', '#ff7400ff', '#ff7400ff', '#ff7300ff', '#ff7200ff', '#ff7200ff', '#ff7100ff', '#ff7000ff', '#ff7000ff', '#ff6f00ff', '#ff6e00ff', '#ff6e00ff', '#ff6d00ff', '#ff6c00ff', '#ff6c00ff', '#ff6b00ff', '#ff6a00ff', '#ff6a00ff', '#ff6900ff', '#ff6800ff', '#ff6800ff', '#ff6700ff', '#ff6600ff', '#ff6600ff', '#ff6500ff', '#ff6400ff', '#ff6400ff', '#ff6300ff', '#ff6200ff', '#ff6200ff', '#ff6100ff', '#ff6000ff', '#ff6000ff', '#ff5f00ff', '#ff5e00ff', '#ff5e00ff', '#ff5d00ff', '#ff5c00ff', '#ff5c00ff', '#ff5b00ff', '#ff5a00ff', '#ff5a00ff', '#ff5900ff', '#ff5800ff', '#ff5800ff', '#ff5700ff', '#ff5600ff', '#ff5600ff', '#ff5500ff', '#ff5400ff', '#ff5400ff', '#ff5300ff', '#ff5200ff', '#ff5200ff', '#ff5100ff', '#ff5000ff', '#ff5000ff', '#ff4f00ff', '#ff4f00ff', '#ff4e00ff', '#ff4d00ff', '#ff4d00ff', '#ff4c00ff', '#ff4b00ff', '#ff4b00ff', '#ff4a00ff', '#ff4900ff', '#ff4900ff', '#ff4800ff', '#ff4700ff', '#ff4700ff', '#ff4600ff', '#ff4500ff', '#ff4500ff', '#ff4400ff', '#ff4300ff', '#ff4300ff', '#ff4200ff', '#ff4100ff', '#ff4100ff', '#ff4000ff', '#ff3f00ff', '#ff3f00ff', '#ff3e00ff', '#ff3d00ff', '#ff3d00ff', '#ff3c00ff', '#ff3b00ff', '#ff3b00ff', '#ff3a00ff', '#ff3900ff', '#ff3900ff', '#ff3800ff', '#ff3700ff', '#ff3700ff', '#ff3600ff', '#ff3500ff', '#ff3500ff', '#ff3400ff', '#ff3300ff', '#ff3300ff', '#ff3200ff', '#ff3100ff', '#ff3100ff', '#ff3000ff', '#ff2f00ff', '#ff2f00ff', '#ff2e00ff', '#ff2d00ff', '#ff2d00ff', '#ff2c00ff', '#ff2b00ff', '#ff2b00ff', '#ff2a00ff', '#ff2900ff', '#ff2900ff', '#ff2800ff', '#ff2700ff', '#ff2700ff', '#ff2600ff', '#ff2500ff', '#ff2500ff', '#ff2400ff', '#ff2300ff', '#ff2300ff', '#ff2200ff', '#ff2100ff', '#ff2100ff', '#ff2000ff', '#ff1f00ff', '#ff1f00ff', '#ff1e00ff', '#ff1d00ff', '#ff1d00ff', '#ff1c00ff', '#ff1b00ff', '#ff1b00ff', '#ff1a00ff', '#ff1900ff', '#ff1900ff', '#ff1800ff', '#ff1700ff', '#ff1700ff', '#ff1600ff', '#ff1500ff', '#ff1500ff', '#ff1400ff', '#ff1300ff', '#ff1300ff', '#ff1200ff', '#ff1100ff', '#ff1100ff', '#ff1000ff', '#ff0f00ff', '#ff0f00ff', '#ff0e00ff', '#ff0d00ff', '#ff0d00ff', '#ff0c00ff', '#ff0b00ff', '#ff0b00ff', '#ff0a00ff', '#ff0900ff', '#ff0900ff', '#ff0800ff', '#ff0700ff', '#ff0700ff', '#ff0600ff', '#ff0500ff', '#ff0500ff', '#ff0400ff', '#ff0300ff', '#ff0300ff', '#ff0200ff', '#ff0100ff', '#ff0100ff', '#ff0000ff', '#ff0000ff']);
+    
+
+    color_map_d0046cc386c7e8f032949945fc9c9063.x = d3.scale.linear()
+              .domain([0.0, 63.888888888888886])
+              .range([0, 450 - 50]);
+
+    color_map_d0046cc386c7e8f032949945fc9c9063.legend = L.control({position: 'topright'});
+    color_map_d0046cc386c7e8f032949945fc9c9063.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_d0046cc386c7e8f032949945fc9c9063.legend.addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+
+    color_map_d0046cc386c7e8f032949945fc9c9063.xAxis = d3.svg.axis()
+        .scale(color_map_d0046cc386c7e8f032949945fc9c9063.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.0, 31.944444444444443, 63.888888888888886]);
+
+    color_map_d0046cc386c7e8f032949945fc9c9063.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_d0046cc386c7e8f032949945fc9c9063.g = color_map_d0046cc386c7e8f032949945fc9c9063.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_d0046cc386c7e8f032949945fc9c9063.g.selectAll("rect")
+        .data(color_map_d0046cc386c7e8f032949945fc9c9063.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_d0046cc386c7e8f032949945fc9c9063.x(color_map_d0046cc386c7e8f032949945fc9c9063.color.domain()[i - 1]) : color_map_d0046cc386c7e8f032949945fc9c9063.x.range()[0],
+            x1: i < color_map_d0046cc386c7e8f032949945fc9c9063.color.domain().length ? color_map_d0046cc386c7e8f032949945fc9c9063.x(color_map_d0046cc386c7e8f032949945fc9c9063.color.domain()[i]) : color_map_d0046cc386c7e8f032949945fc9c9063.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_d0046cc386c7e8f032949945fc9c9063.g.call(color_map_d0046cc386c7e8f032949945fc9c9063.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Donante (%)");
+    
+    var color_map_9c20cfd2e7024603c5a203f2266296e4 = {};
+
+    
+    color_map_9c20cfd2e7024603c5a203f2266296e4.color = d3.scale.threshold()
+              .domain([0.0, 0.061805854700054313, 0.12361170940010863, 0.18541756410016294, 0.24722341880021725, 0.3090292735002716, 0.3708351282003259, 0.43264098290038017, 0.4944468376004345, 0.5562526923004888, 0.6180585470005432, 0.6798644017005974, 0.7416702564006518, 0.803476111100706, 0.8652819658007603, 0.9270878205008146, 0.988893675200869, 1.0506995299009234, 1.1125053846009776, 1.174311239301032, 1.2361170940010864, 1.2979229487011406, 1.3597288034011947, 1.4215346581012491, 1.4833405128013035, 1.545146367501358, 1.606952222201412, 1.6687580769014665, 1.7305639316015207, 1.7923697863015748, 1.8541756410016292, 1.9159814957016836, 1.977787350401738, 2.0395932051017924, 2.101399059801847, 2.1632049145019008, 2.225010769201955, 2.2868166239020096, 2.348622478602064, 2.4104283333021184, 2.4722341880021728, 2.5340400427022267, 2.595845897402281, 2.657651752102335, 2.7194576068023895, 2.781263461502444, 2.8430693162024983, 2.9048751709025527, 2.966681025602607, 3.0284868803026614, 3.090292735002716, 3.15209858970277, 3.213904444402824, 3.2757102991028786, 3.337516153802933, 3.3993220085029874, 3.4611278632030413, 3.5229337179030957, 3.5847395726031497, 3.646545427303204, 3.7083512820032585, 3.770157136703313, 3.8319629914033673, 3.8937688461034217, 3.955574700803476, 4.0173805555035305, 4.079186410203585, 4.140992264903639, 4.202798119603694, 4.264603974303748, 4.3264098290038016, 4.388215683703856, 4.45002153840391, 4.511827393103965, 4.573633247804019, 4.6354391025040735, 4.697244957204128, 4.759050811904182, 4.820856666604237, 4.882662521304291, 4.9444683760043455, 5.006274230704399, 5.068080085404453, 5.129885940104508, 5.191691794804562, 5.253497649504616, 5.31530350420467, 5.3771093589047245, 5.438915213604779, 5.500721068304833, 5.562526923004888, 5.624332777704942, 5.6861386324049965, 5.747944487105051, 5.809750341805105, 5.87155619650516, 5.933362051205214, 5.9951679059052685, 6.056973760605323, 6.118779615305377, 6.180585470005432, 6.242391324705485, 6.30419717940554, 6.366003034105594, 6.427808888805648, 6.489614743505703, 6.551420598205757, 6.613226452905812, 6.675032307605866, 6.73683816230592, 6.798644017005975, 6.860449871706029, 6.922255726406083, 6.984061581106137, 7.0458674358061915, 7.107673290506246, 7.169479145206299, 7.231284999906354, 7.293090854606408, 7.3548967093064626, 7.416702564006517, 7.478508418706571, 7.540314273406626, 7.60212012810668, 7.6639259828067345, 7.725731837506789, 7.787537692206843, 7.849343546906898, 7.911149401606952, 7.9729552563070065, 8.034761111007061, 8.096566965707115, 8.15837282040717, 8.220178675107222, 8.281984529807279, 8.343790384507331, 8.405596239207387, 8.46740209390744, 8.529207948607496, 8.591013803307549, 8.652819658007603, 8.714625512707658, 8.776431367407712, 8.838237222107766, 8.90004307680782, 8.961848931507875, 9.02365478620793, 9.085460640907984, 9.147266495608038, 9.209072350308093, 9.270878205008147, 9.332684059708201, 9.394489914408256, 9.45629576910831, 9.518101623808365, 9.579907478508417, 9.641713333208473, 9.703519187908526, 9.765325042608582, 9.827130897308635, 9.888936752008691, 9.950742606708744, 10.012548461408798, 10.074354316108852, 10.136160170808907, 10.197966025508961, 10.259771880209016, 10.32157773490907, 10.383383589609124, 10.445189444309179, 10.506995299009231, 10.568801153709288, 10.63060700840934, 10.692412863109396, 10.754218717809449, 10.816024572509505, 10.877830427209558, 10.939636281909614, 11.001442136609667, 11.063247991309723, 11.125053846009775, 11.186859700709832, 11.248665555409884, 11.31047141010994, 11.372277264809993, 11.43408311951005, 11.495888974210102, 11.557694828910156, 11.61950068361021, 11.681306538310265, 11.74311239301032, 11.804918247710374, 11.866724102410428, 11.92852995711048, 11.990335811810537, 12.05214166651059, 12.113947521210646, 12.175753375910698, 12.237559230610755, 12.299365085310807, 12.361170940010863, 12.422976794710916, 12.48478264941097, 12.546588504111025, 12.60839435881108, 12.670200213511134, 12.732006068211188, 12.793811922911242, 12.855617777611297, 12.917423632311351, 12.979229487011406, 13.04103534171146, 13.102841196411514, 13.164647051111569, 13.226452905811623, 13.288258760511678, 13.350064615211732, 13.411870469911785, 13.47367632461184, 13.535482179311893, 13.59728803401195, 13.659093888712002, 13.720899743412058, 13.782705598112111, 13.844511452812165, 13.90631730751222, 13.968123162212274, 14.029929016912329, 14.091734871612383, 14.153540726312437, 14.215346581012492, 14.277152435712546, 14.338958290412599, 14.400764145112655, 14.462569999812708, 14.524375854512764, 14.586181709212816, 14.647987563912872, 14.709793418612925, 14.771599273312981, 14.833405128013034, 14.89521098271309, 14.957016837413143, 15.018822692113199, 15.080628546813251, 15.142434401513308, 15.20424025621336, 15.266046110913415, 15.327851965613469, 15.389657820313523, 15.451463675013578, 15.513269529713632, 15.575075384413687, 15.636881239113741, 15.698687093813795, 15.76049294851385, 15.822298803213904, 15.884104657913957, 15.945910512614013, 16.007716367314067, 16.069522222014122, 16.131328076714176, 16.19313393141423, 16.25493978611428, 16.31674564081434, 16.37855149551439, 16.440357350214445, 16.502163204914503, 16.563969059614557, 16.625774914314608, 16.687580769014662, 16.74938662371472, 16.811192478414775, 16.872998333114825, 16.93480418781488, 16.996610042514938, 17.058415897214992, 17.120221751915043, 17.182027606615097, 17.243833461315155, 17.305639316015206, 17.36744517071526, 17.429251025415315, 17.491056880115373, 17.552862734815424, 17.614668589515478, 17.676474444215533, 17.73828029891559, 17.80008615361564, 17.861892008315696, 17.92369786301575, 17.985503717715805, 18.04730957241586, 18.109115427115913, 18.170921281815968, 18.23272713651602, 18.294532991216077, 18.35633884591613, 18.418144700616185, 18.479950555316236, 18.541756410016294, 18.60356226471635, 18.665368119416403, 18.727173974116454, 18.78897982881651, 18.850785683516566, 18.91259153821662, 18.97439739291667, 19.03620324761673, 19.098009102316784, 19.159814957016835, 19.22162081171689, 19.283426666416947, 19.345232521117, 19.407038375817052, 19.468844230517107, 19.530650085217165, 19.59245593991722, 19.65426179461727, 19.716067649317324, 19.777873504017382, 19.839679358717436, 19.901485213417487, 19.96329106811754, 20.025096922817596, 20.08690277751765, 20.148708632217705, 20.21051448691776, 20.272320341617814, 20.334126196317868, 20.395932051017923, 20.457737905717977, 20.51954376041803, 20.581349615118086, 20.64315546981814, 20.704961324518194, 20.76676717921825, 20.828573033918303, 20.890378888618358, 20.952184743318412, 21.013990598018463, 21.07579645271852, 21.137602307418575, 21.19940816211863, 21.26121401681868, 21.32301987151874, 21.384825726218793, 21.446631580918847, 21.508437435618898, 21.570243290318956, 21.63204914501901, 21.693854999719065, 21.755660854419116, 21.81746670911917, 21.879272563819228, 21.94107841851928, 22.002884273219333, 22.064690127919388, 22.126495982619446, 22.188301837319496, 22.25010769201955, 22.311913546719605, 22.373719401419663, 22.435525256119714, 22.49733111081977, 22.559136965519823, 22.62094282021988, 22.68274867491993, 22.744554529619986, 22.80636038432004, 22.8681662390201, 22.92997209372015, 22.991777948420204, 23.053583803120258, 23.115389657820312, 23.177195512520367, 23.23900136722042, 23.300807221920476, 23.36261307662053, 23.424418931320584, 23.48622478602064, 23.548030640720693, 23.609836495420748, 23.671642350120802, 23.733448204820856, 23.795254059520907, 23.85705991422096, 23.91886576892102, 23.980671623621074, 24.042477478321125, 24.10428333302118, 24.166089187721237, 24.22789504242129, 24.289700897121342, 24.351506751821397, 24.413312606521455, 24.47511846122151, 24.53692431592156, 24.598730170621614, 24.660536025321672, 24.722341880021727, 24.784147734721778, 24.845953589421832, 24.90775944412189, 24.96956529882194, 25.031371153521995, 25.09317700822205, 25.154982862922108, 25.21678871762216, 25.278594572322213, 25.340400427022267, 25.402206281722325, 25.464012136422376, 25.52581799112243, 25.587623845822485, 25.649429700522543, 25.711235555222594, 25.773041409922648, 25.834847264622702, 25.896653119322753, 25.95845897402281, 26.020264828722866, 26.08207068342292, 26.14387653812297, 26.20568239282303, 26.267488247523083, 26.329294102223137, 26.39109995692319, 26.452905811623246, 26.5147116663233, 26.576517521023355, 26.638323375723406, 26.700129230423464, 26.76193508512352, 26.82374093982357, 26.885546794523624, 26.94735264922368, 27.009158503923736, 27.070964358623787, 27.13277021332384, 27.1945760680239, 27.256381922723953, 27.318187777424004, 27.37999363212406, 27.441799486824117, 27.50360534152417, 27.565411196224222, 27.627217050924276, 27.68902290562433, 27.750828760324385, 27.81263461502444, 27.874440469724494, 27.93624632442455, 27.998052179124603, 28.059858033824657, 28.12166388852471, 28.183469743224766, 28.24527559792482, 28.307081452624875, 28.36888730732493, 28.430693162024983, 28.492499016725038, 28.554304871425092, 28.616110726125147, 28.677916580825197, 28.739722435525255, 28.80152829022531, 28.863334144925364, 28.925139999625415, 28.986945854325473, 29.048751709025527, 29.110557563725582, 29.172363418425633, 29.23416927312569, 29.295975127825745, 29.3577809825258, 29.41958683722585, 29.481392691925908, 29.543198546625963, 29.605004401326013, 29.666810256026068, 29.728616110726122, 29.79042196542618, 29.85222782012623, 29.914033674826285, 29.97583952952634, 30.037645384226398, 30.09945123892645, 30.161257093626503, 30.223062948326557, 30.284868803026615, 30.346674657726666, 30.40848051242672, 30.470286367126775, 30.53209222182683, 30.593898076526884, 30.655703931226938, 30.717509785926993, 30.779315640627047, 30.8411214953271])
+              .range(['#add8e6ff', '#acd7e7ff', '#acd7e7ff', '#abd6e7ff', '#aad5e7ff', '#aad4e7ff', '#a9d3e7ff', '#a8d2e7ff', '#a8d1e7ff', '#a7d1e7ff', '#a6d0e7ff', '#a6cfe8ff', '#a5cee8ff', '#a4cde8ff', '#a3cce8ff', '#a3cbe8ff', '#a2cae8ff', '#a1cae8ff', '#a1c9e8ff', '#a0c8e8ff', '#9fc7e8ff', '#9fc6e9ff', '#9ec5e9ff', '#9dc4e9ff', '#9cc3e9ff', '#9cc3e9ff', '#9bc2e9ff', '#9ac1e9ff', '#9ac0e9ff', '#99bfe9ff', '#98bee9ff', '#98bdeaff', '#97bdeaff', '#96bceaff', '#96bbeaff', '#95baeaff', '#94b9eaff', '#93b8eaff', '#93b7eaff', '#92b6eaff', '#91b6eaff', '#91b5ebff', '#90b4ebff', '#8fb3ebff', '#8fb2ebff', '#8eb1ebff', '#8db0ebff', '#8cafebff', '#8cafebff', '#8baeebff', '#8aadebff', '#8aacecff', '#89abecff', '#88aaecff', '#88a9ecff', '#87a9ecff', '#86a8ecff', '#86a7ecff', '#85a6ecff', '#84a5ecff', '#83a4ecff', '#83a3edff', '#82a2edff', '#81a2edff', '#81a1edff', '#80a0edff', '#7f9fedff', '#7f9eedff', '#7e9dedff', '#7d9cedff', '#7c9cedff', '#7c9beeff', '#7b9aeeff', '#7a99eeff', '#7a98eeff', '#7997eeff', '#7896eeff', '#7895eeff', '#7795eeff', '#7694eeff', '#7593eeff', '#7592efff', '#7491efff', '#7390efff', '#738fefff', '#728eefff', '#718eefff', '#718defff', '#708cefff', '#6f8befff', '#6f8aefff', '#6e89f0ff', '#6d88f0ff', '#6c88f0ff', '#6c87f0ff', '#6b86f0ff', '#6a85f0ff', '#6a84f0ff', '#6983f0ff', '#6882f0ff', '#6881f0ff', '#6781f1ff', '#6680f1ff', '#657ff1ff', '#657ef1ff', '#647df1ff', '#637cf1ff', '#637bf1ff', '#627af1ff', '#617af1ff', '#6179f1ff', '#6078f2ff', '#5f77f2ff', '#5f76f2ff', '#5e75f2ff', '#5d74f2ff', '#5c74f2ff', '#5c73f2ff', '#5b72f2ff', '#5a71f2ff', '#5a70f2ff', '#596ff3ff', '#586ef3ff', '#586df3ff', '#576df3ff', '#566cf3ff', '#556bf3ff', '#556af3ff', '#5469f3ff', '#5368f3ff', '#5367f3ff', '#5266f4ff', '#5166f4ff', '#5165f4ff', '#5064f4ff', '#4f63f4ff', '#4f62f4ff', '#4e61f4ff', '#4d60f4ff', '#4c60f4ff', '#4c5ff4ff', '#4b5ef5ff', '#4a5df5ff', '#4a5cf5ff', '#495bf5ff', '#485af5ff', '#4859f5ff', '#4759f5ff', '#4658f5ff', '#4557f5ff', '#4556f5ff', '#4455f6ff', '#4354f6ff', '#4353f6ff', '#4253f6ff', '#4152f6ff', '#4151f6ff', '#4050f6ff', '#3f4ff6ff', '#3e4ef6ff', '#3e4df6ff', '#3d4cf7ff', '#3c4cf7ff', '#3c4bf7ff', '#3b4af7ff', '#3a49f7ff', '#3a48f7ff', '#3947f7ff', '#3846f7ff', '#3845f7ff', '#3745f8ff', '#3644f8ff', '#3543f8ff', '#3542f8ff', '#3441f8ff', '#3340f8ff', '#333ff8ff', '#323ff8ff', '#313ef8ff', '#313df8ff', '#303cf9ff', '#2f3bf9ff', '#2e3af9ff', '#2e39f9ff', '#2d38f9ff', '#2c38f9ff', '#2c37f9ff', '#2b36f9ff', '#2a35f9ff', '#2a34f9ff', '#2933faff', '#2832faff', '#2831faff', '#2731faff', '#2630faff', '#252ffaff', '#252efaff', '#242dfaff', '#232cfaff', '#232bfaff', '#222bfbff', '#212afbff', '#2129fbff', '#2028fbff', '#1f27fbff', '#1e26fbff', '#1e25fbff', '#1d24fbff', '#1c24fbff', '#1c23fbff', '#1b22fcff', '#1a21fcff', '#1a20fcff', '#191ffcff', '#181efcff', '#181dfcff', '#171dfcff', '#161cfcff', '#151bfcff', '#151afcff', '#1419fdff', '#1318fdff', '#1317fdff', '#1217fdff', '#1116fdff', '#1115fdff', '#1014fdff', '#0f13fdff', '#0e12fdff', '#0e11fdff', '#0d10feff', '#0c10feff', '#0c0ffeff', '#0b0efeff', '#0a0dfeff', '#0a0cfeff', '#090bfeff', '#080afeff', '#0809feff', '#0709feff', '#0608ffff', '#0507ffff', '#0506ffff', '#0405ffff', '#0304ffff', '#0303ffff', '#0203ffff', '#0102ffff', '#0101ffff', '#0000ffff', '#0000ffff', '#0000ffff', '#0000feff', '#0000feff', '#0000fdff', '#0000fdff', '#0000fcff', '#0000fcff', '#0000fcff', '#0000fbff', '#0000fbff', '#0000faff', '#0000faff', '#0000f9ff', '#0000f9ff', '#0000f8ff', '#0000f8ff', '#0000f7ff', '#0000f7ff', '#0000f6ff', '#0000f6ff', '#0000f5ff', '#0000f5ff', '#0000f5ff', '#0000f4ff', '#0000f4ff', '#0000f3ff', '#0000f3ff', '#0000f2ff', '#0000f2ff', '#0000f1ff', '#0000f1ff', '#0000f0ff', '#0000f0ff', '#0000efff', '#0000efff', '#0000eeff', '#0000eeff', '#0000eeff', '#0000edff', '#0000edff', '#0000ecff', '#0000ecff', '#0000ebff', '#0000ebff', '#0000eaff', '#0000eaff', '#0000e9ff', '#0000e9ff', '#0000e8ff', '#0000e8ff', '#0000e7ff', '#0000e7ff', '#0000e7ff', '#0000e6ff', '#0000e6ff', '#0000e5ff', '#0000e5ff', '#0000e4ff', '#0000e4ff', '#0000e3ff', '#0000e3ff', '#0000e2ff', '#0000e2ff', '#0000e1ff', '#0000e1ff', '#0000e0ff', '#0000e0ff', '#0000e0ff', '#0000dfff', '#0000dfff', '#0000deff', '#0000deff', '#0000ddff', '#0000ddff', '#0000dcff', '#0000dcff', '#0000dbff', '#0000dbff', '#0000daff', '#0000daff', '#0000d9ff', '#0000d9ff', '#0000d9ff', '#0000d8ff', '#0000d8ff', '#0000d7ff', '#0000d7ff', '#0000d6ff', '#0000d6ff', '#0000d5ff', '#0000d5ff', '#0000d4ff', '#0000d4ff', '#0000d3ff', '#0000d3ff', '#0000d2ff', '#0000d2ff', '#0000d2ff', '#0000d1ff', '#0000d1ff', '#0000d0ff', '#0000d0ff', '#0000cfff', '#0000cfff', '#0000ceff', '#0000ceff', '#0000cdff', '#0000cdff', '#0000ccff', '#0000ccff', '#0000cbff', '#0000cbff', '#0000cbff', '#0000caff', '#0000caff', '#0000c9ff', '#0000c9ff', '#0000c8ff', '#0000c8ff', '#0000c7ff', '#0000c7ff', '#0000c6ff', '#0000c6ff', '#0000c5ff', '#0000c5ff', '#0000c4ff', '#0000c4ff', '#0000c4ff', '#0000c3ff', '#0000c3ff', '#0000c2ff', '#0000c2ff', '#0000c1ff', '#0000c1ff', '#0000c0ff', '#0000c0ff', '#0000bfff', '#0000bfff', '#0000beff', '#0000beff', '#0000bdff', '#0000bdff', '#0000bdff', '#0000bcff', '#0000bcff', '#0000bbff', '#0000bbff', '#0000baff', '#0000baff', '#0000b9ff', '#0000b9ff', '#0000b8ff', '#0000b8ff', '#0000b7ff', '#0000b7ff', '#0000b6ff', '#0000b6ff', '#0000b6ff', '#0000b5ff', '#0000b5ff', '#0000b4ff', '#0000b4ff', '#0000b3ff', '#0000b3ff', '#0000b2ff', '#0000b2ff', '#0000b1ff', '#0000b1ff', '#0000b0ff', '#0000b0ff', '#0000afff', '#0000afff', '#0000afff', '#0000aeff', '#0000aeff', '#0000adff', '#0000adff', '#0000acff', '#0000acff', '#0000abff', '#0000abff', '#0000aaff', '#0000aaff', '#0000a9ff', '#0000a9ff', '#0000a8ff', '#0000a8ff', '#0000a8ff', '#0000a7ff', '#0000a7ff', '#0000a6ff', '#0000a6ff', '#0000a5ff', '#0000a5ff', '#0000a4ff', '#0000a4ff', '#0000a3ff', '#0000a3ff', '#0000a2ff', '#0000a2ff', '#0000a1ff', '#0000a1ff', '#0000a1ff', '#0000a0ff', '#0000a0ff', '#00009fff', '#00009fff', '#00009eff', '#00009eff', '#00009dff', '#00009dff', '#00009cff', '#00009cff', '#00009bff', '#00009bff', '#00009aff', '#00009aff', '#00009aff', '#000099ff', '#000099ff', '#000098ff', '#000098ff', '#000097ff', '#000097ff', '#000096ff', '#000096ff', '#000095ff', '#000095ff', '#000094ff', '#000094ff', '#000093ff', '#000093ff', '#000093ff', '#000092ff', '#000092ff', '#000091ff', '#000091ff', '#000090ff', '#000090ff', '#00008fff', '#00008fff', '#00008eff', '#00008eff', '#00008dff', '#00008dff', '#00008cff', '#00008cff', '#00008cff', '#00008bff']);
+    
+
+    color_map_9c20cfd2e7024603c5a203f2266296e4.x = d3.scale.linear()
+              .domain([0.0, 30.8411214953271])
+              .range([0, 450 - 50]);
+
+    color_map_9c20cfd2e7024603c5a203f2266296e4.legend = L.control({position: 'topright'});
+    color_map_9c20cfd2e7024603c5a203f2266296e4.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_9c20cfd2e7024603c5a203f2266296e4.legend.addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+
+    color_map_9c20cfd2e7024603c5a203f2266296e4.xAxis = d3.svg.axis()
+        .scale(color_map_9c20cfd2e7024603c5a203f2266296e4.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.0, 15.42056074766355, 30.8411214953271]);
+
+    color_map_9c20cfd2e7024603c5a203f2266296e4.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_9c20cfd2e7024603c5a203f2266296e4.g = color_map_9c20cfd2e7024603c5a203f2266296e4.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_9c20cfd2e7024603c5a203f2266296e4.g.selectAll("rect")
+        .data(color_map_9c20cfd2e7024603c5a203f2266296e4.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_9c20cfd2e7024603c5a203f2266296e4.x(color_map_9c20cfd2e7024603c5a203f2266296e4.color.domain()[i - 1]) : color_map_9c20cfd2e7024603c5a203f2266296e4.x.range()[0],
+            x1: i < color_map_9c20cfd2e7024603c5a203f2266296e4.color.domain().length ? color_map_9c20cfd2e7024603c5a203f2266296e4.x(color_map_9c20cfd2e7024603c5a203f2266296e4.color.domain()[i]) : color_map_9c20cfd2e7024603c5a203f2266296e4.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_9c20cfd2e7024603c5a203f2266296e4.g.call(color_map_9c20cfd2e7024603c5a203f2266296e4.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Receptora (%)");
+    
+            tile_layer_cb8d33108024f0ac791b011eaa1ab7af.addTo(map_24714d8bf2cdf177a3866d0406144fe1);
+        
+</script>
+</html>

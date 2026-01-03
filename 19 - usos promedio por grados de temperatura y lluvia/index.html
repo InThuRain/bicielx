@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Uso de BiciElx vs temperatura y lluvia – BiciElx</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg: #f5f5f5;
+      --card-bg: #ffffff;
+      --accent: #0f766e;
+      --accent2: #14b8a6;
+      --text: #111827;
+      --shadow: 0 4px 10px rgba(0,0,0,0.06);
+      --radius-lg: 18px;
+      --radius-sm: 10px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    header {
+      background: linear-gradient(120deg, var(--accent), var(--accent2));
+      color: white;
+      padding: 1.7rem 1rem;
+      box-shadow: var(--shadow);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.9rem;
+      letter-spacing: 0.04em;
+    }
+    .subtitle {
+      margin: 0.4rem 0 0;
+      opacity: 0.9;
+      font-size: 0.95rem;
+    }
+    main {
+      max-width: 1200px;
+      margin: 1.5rem auto 2.5rem;
+      padding: 0 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.8rem;
+    }
+    section h2 {
+      margin: 0 0 0.7rem;
+      font-size: 1.4rem;
+    }
+    .section-desc {
+      font-size: 0.9rem;
+      color: #4b5563;
+      margin-bottom: 0.6rem;
+    }
+    .section-desc code {
+      background: rgba(148,163,184,0.15);
+      padding: 0.1rem 0.3rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.2rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow);
+      padding: 0.9rem 0.9rem 0.95rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      cursor: pointer;
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: var(--radius-sm);
+      display: block;
+    }
+    .card-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+    .card-desc {
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+    .footer-note {
+      font-size: 0.8rem;
+      color: #6b7280;
+      margin-top: 0.5rem;
+      text-align: right;
+    }
+    footer {
+      font-size: 0.8rem;
+      color: #6b7280;
+      text-align: center;
+      padding: 1rem 0 1.2rem;
+    }
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.78);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      padding: 1rem;
+    }
+    .modal img {
+      max-width: 96vw;
+      max-height: 92vh;
+      border-radius: var(--radius-sm);
+      box-shadow: 0 0 18px rgba(0,0,0,0.7);
+      background: #000;
+    }
+    .modal-close {
+      position: fixed;
+      top: 18px;
+      right: 26px;
+      font-size: 2.1rem;
+      color: #f9fafb;
+      cursor: pointer;
+      font-weight: 600;
+      z-index: 1001;
+    }
+    .modal-close:hover {
+      color: #e5e7eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #020617;
+        color: #e5e7eb;
+      }
+      .card {
+        background: #020617;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.7);
+      }
+      .card-desc,
+      .footer-note {
+        color: #9ca3af;
+      }
+      footer {
+        color: #9ca3af;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <h1>Uso de BiciElx vs temperatura y lluvia</h1>
+    <p class="subtitle">
+      Relación entre el uso del sistema, la temperatura media diaria y la lluvia: visión global y detalle mes a mes.
+    </p>
+  </div>
+</header>
+<main>
+  <section>
+    <h2>Gráficos de síntesis</h2>
+    <p class="section-desc">
+      Estos gráficos resumen cómo responde el uso de BiciElx a la temperatura y la lluvia.
+      Las tablas detalladas se han guardado en
+      <code>usos_por_grado.csv</code> y
+      <code>frecuencia_temperaturas.csv</code>.
+    </p>
+    <div class="grid">
+
+      <article class="card" onclick="openModal('usos_promedio_por_grado.png')">
+        <img src="usos_promedio_por_grado.png" alt="Usos promedio por grado de temperatura media">
+        <div class="card-title">Usos promedio por grado de temperatura media</div>
+        <div class="card-desc">Promedio de usos diarios del sistema para cada grado de temperatura media, usando calendario completo.</div>
+      </article>
+
+      <article class="card" onclick="openModal('usos_vs_temp_lluvia_12meses.png')">
+        <img src="usos_vs_temp_lluvia_12meses.png" alt="Usos vs temperatura + lluvia media por mes (panel 12 meses)">
+        <div class="card-title">Usos vs temperatura + lluvia media por mes (panel 12 meses)</div>
+        <div class="card-desc">Doce gráficos (enero–diciembre) en una sola imagen, con usos promedio por grado y lluvia media diaria (solo bins con ≥3 días).</div>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Detalle mensual: un gráfico por mes</h2>
+    <p class="section-desc">
+      Aquí puedes explorar cada mes por separado, con la misma escala de temperaturas y de usos diarios,
+      para comparar mejor cómo influyen la temperatura y la lluvia en distintos momentos del año.
+    </p>
+    <div class="grid">
+
+      <article class="card" onclick="openModal('usos_vs_temp_lluvia_mes_01_Enero.png')">
+        <img src="usos_vs_temp_lluvia_mes_01_Enero.png" alt="Enero: usos vs temperatura y lluvia">
+        <div class="card-title">Enero: usos vs temperatura y lluvia</div>
+        <div class="card-desc">Relación entre usos diarios, temperatura media y lluvia en Enero.</div>
+      </article>
+
+      <article class="card" onclick="openModal('usos_vs_temp_lluvia_mes_02_Febrero.png')">
+        <img src="usos_vs_temp_lluvia_mes_02_Febrero.png" alt="Febrero: usos vs temperatura y lluvia">
+        <div class="card-title">Febrero: usos vs temperatura y lluvia</div>
+        <div class="card-desc">Relación entre usos diarios, temperatura media y lluvia en Febrero.</div>
+      </article>
+
+      <article class="card" onclick="openModal('usos_vs_temp_lluvia_mes_03_Marzo.png')">
+        <img src="usos_vs_temp_lluvia_mes_03_Marzo.png" alt="Marzo: usos vs temperatura y lluvia">
+        <div class="card-title">Marzo: usos vs temperatura y lluvia</div>
+        <div class="card-desc">Relación entre usos diarios, temperatura media y lluvia en Marzo.</div>
+      </article>
+
+      <article class="card" onclick="openModal('usos_vs_temp_lluvia_mes_04_Abril.png')">
+        <img src="usos_vs_temp_lluvia_mes_04_Abril.png" alt="Abril: usos vs temperatura y lluvia">
+        <div class="card-title">Abril: usos vs temperatura y lluvia</div>
+        <div class="card-desc">Relación entre usos diarios, temperatura media y lluvia en Abril.</div>
+      </article>
+
+      <article class="card" onclick="openModal('usos_vs_temp_lluvia_mes_05_Mayo.png')">
+        <img src="usos_vs_temp_lluvia_mes_05_Mayo.png" alt="Mayo: usos vs temperatura y lluvia">
+        <div class="card-title">Mayo: usos vs temperatura y lluvia</div>
+        <div class="card-desc">Relación entre usos diarios, temperatura media y lluvia en Mayo.</div>
+      </article>
+
+      <article class="card" onclick="openModal('usos_vs_temp_lluvia_mes_06_Junio.png')">
+        <img src="usos_vs_temp_lluvia_mes_06_Junio.png" alt="Junio: usos vs temperatura y lluvia">
+        <div class="card-title">Junio: usos vs temperatura y lluvia</div>
+        <div class="card-desc">Relación entre usos diarios, temperatura media y lluvia en Junio.</div>
+      </article>
+
+      <article class="card" onclick="openModal('usos_vs_temp_lluvia_mes_07_Julio.png')">
+        <img src="usos_vs_temp_lluvia_mes_07_Julio.png" alt="Julio: usos vs temperatura y lluvia">
+        <div class="card-title">Julio: usos vs temperatura y lluvia</div>
+        <div class="card-desc">Relación entre usos diarios, temperatura media y lluvia en Julio.</div>
+      </article>
+
+      <article class="card" onclick="openModal('usos_vs_temp_lluvia_mes_08_Agosto.png')">
+        <img src="usos_vs_temp_lluvia_mes_08_Agosto.png" alt="Agosto: usos vs temperatura y lluvia">
+        <div class="card-title">Agosto: usos vs temperatura y lluvia</div>
+        <div class="card-desc">Relación entre usos diarios, temperatura media y lluvia en Agosto.</div>
+      </article>
+
+      <article class="card" onclick="openModal('usos_vs_temp_lluvia_mes_09_Septiembre.png')">
+        <img src="usos_vs_temp_lluvia_mes_09_Septiembre.png" alt="Septiembre: usos vs temperatura y lluvia">
+        <div class="card-title">Septiembre: usos vs temperatura y lluvia</div>
+        <div class="card-desc">Relación entre usos diarios, temperatura media y lluvia en Septiembre.</div>
+      </article>
+
+      <article class="card" onclick="openModal('usos_vs_temp_lluvia_mes_10_Octubre.png')">
+        <img src="usos_vs_temp_lluvia_mes_10_Octubre.png" alt="Octubre: usos vs temperatura y lluvia">
+        <div class="card-title">Octubre: usos vs temperatura y lluvia</div>
+        <div class="card-desc">Relación entre usos diarios, temperatura media y lluvia en Octubre.</div>
+      </article>
+
+      <article class="card" onclick="openModal('usos_vs_temp_lluvia_mes_11_Noviembre.png')">
+        <img src="usos_vs_temp_lluvia_mes_11_Noviembre.png" alt="Noviembre: usos vs temperatura y lluvia">
+        <div class="card-title">Noviembre: usos vs temperatura y lluvia</div>
+        <div class="card-desc">Relación entre usos diarios, temperatura media y lluvia en Noviembre.</div>
+      </article>
+
+      <article class="card" onclick="openModal('usos_vs_temp_lluvia_mes_12_Diciembre.png')">
+        <img src="usos_vs_temp_lluvia_mes_12_Diciembre.png" alt="Diciembre: usos vs temperatura y lluvia">
+        <div class="card-title">Diciembre: usos vs temperatura y lluvia</div>
+        <div class="card-desc">Relación entre usos diarios, temperatura media y lluvia en Diciembre.</div>
+      </article>
+
+    </div>
+    <p class="footer-note">
+      Haz clic sobre cualquier gráfico para verlo en grande.
+    </p>
+  </section>
+</main>
+
+<div id="imageModal" class="modal" onclick="closeModal()">
+  <span class="modal-close" onclick="closeModal()">×</span>
+  <img id="modalImg" src="">
+</div>
+
+<script>
+  function openModal(src) {
+    var modal = document.getElementById("imageModal");
+    var img = document.getElementById("modalImg");
+    img.src = src;
+    modal.style.display = "flex";
+  }
+  function closeModal() {
+    var modal = document.getElementById("imageModal");
+    modal.style.display = "none";
+  }
+  document.addEventListener("DOMContentLoaded", function() {
+    var img = document.getElementById("modalImg");
+    img.addEventListener("click", function(event) {
+      event.stopPropagation();
+    });
+  });
+</script>
+
+<footer>
+  Página generada automáticamente a partir de los datos de uso y meteorología de BiciElx.
+</footer>
+</body>
+</html>

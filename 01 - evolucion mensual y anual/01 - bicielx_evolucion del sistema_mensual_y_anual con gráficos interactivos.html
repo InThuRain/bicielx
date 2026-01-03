@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>BiciElx – Evolución mensual y media anual</title>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<style>
+  :root {
+    --bg-body: #020617;
+    --bg-card: #0b1220;
+    --border-subtle: rgba(148,163,184,0.35);
+    --text-main: #f9fafb;
+    --text-muted: #9ca3af;
+  }
+  * { box-sizing:border-box; }
+  body {
+    margin:0;
+    padding:0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: radial-gradient(circle at top, #1f2937 0, #020617 45%);
+    color: var(--text-main);
+  }
+  .page {
+    max-width: 1300px;
+    margin: 28px auto 40px;
+    padding: 0 20px 40px;
+  }
+  h1 {
+    font-size: 26px;
+    margin-bottom: 4px;
+    letter-spacing: 0.04em;
+  }
+  .subtitle {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+  .card {
+    background: var(--bg-card);
+    border-radius: 16px;
+    border: 1px solid var(--border-subtle);
+    box-shadow:
+      0 22px 60px rgba(15,23,42,0.9),
+      0 0 0 1px rgba(15,23,42,0.5);
+    padding: 14px 18px 18px;
+  }
+  .card-header {
+    margin-bottom: 10px;
+  }
+  .card-title {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #e5e7eb;
+  }
+  .card-sub {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 2px;
+  }
+  #chart_monthly, #chart_annual {
+    width: 100%;
+    height: 460px;
+  }
+  @media (max-width: 1024px) {
+    #chart_monthly, #chart_annual {
+      height: 380px;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>Uso de BiciElx: visión mensual y anual</h1>
+  <div class="subtitle">
+    Haz clic en las leyendas para mostrar/ocultar cada serie (total de usos, media móvil, estaciones activas, variación anual…).
+  </div>
+
+  <div class="grid">
+    <!-- Panel 1: Usos totales, media móvil 12m y estaciones activas -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">Usos totales y estaciones activas (mensual)</div>
+        <div class="card-sub">
+          Serie mensual de usos totales, media móvil de 12 meses y número de estaciones activas. 
+          La media móvil solo aparece cuando hay al menos 12 meses acumulados.
+        </div>
+      </div>
+      <div id="chart_monthly"></div>
+    </div>
+
+    <!-- Panel 2: Media mensual anual y variación año a año -->
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">Media mensual por año y variación interanual</div>
+        <div class="card-sub">
+          Barras de uso medio mensual por año y línea de variación porcentual respecto al año anterior (con referencia en 0%).
+        </div>
+      </div>
+      <div id="chart_annual"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const monthlyData = {"x": ["2015-01-01", "2015-02-01", "2015-03-01", "2015-04-01", "2015-05-01", "2015-06-01", "2015-07-01", "2015-08-01", "2015-09-01", "2015-10-01", "2015-11-01", "2015-12-01", "2016-01-01", "2016-02-01", "2016-03-01", "2016-04-01", "2016-05-01", "2016-06-01", "2016-07-01", "2016-08-01", "2016-09-01", "2016-10-01", "2016-11-01", "2016-12-01", "2017-01-01", "2017-02-01", "2017-03-01", "2017-04-01", "2017-05-01", "2017-06-01", "2017-07-01", "2017-08-01", "2017-09-01", "2017-10-01", "2017-11-01", "2017-12-01", "2018-01-01", "2018-02-01", "2018-03-01", "2018-04-01", "2018-05-01", "2018-06-01", "2018-07-01", "2018-08-01", "2018-09-01", "2018-10-01", "2018-11-01", "2018-12-01", "2019-01-01", "2019-02-01", "2019-03-01", "2019-04-01", "2019-05-01", "2019-06-01", "2019-07-01", "2019-08-01", "2019-09-01", "2019-10-01", "2019-11-01", "2019-12-01", "2020-01-01", "2020-02-01", "2020-03-01", "2020-04-01", "2020-05-01", "2020-06-01", "2020-07-01", "2020-08-01", "2020-09-01", "2020-10-01", "2020-11-01", "2020-12-01", "2021-01-01", "2021-02-01", "2021-03-01", "2021-04-01", "2021-05-01", "2021-06-01", "2021-07-01", "2021-08-01", "2021-09-01", "2021-10-01", "2021-11-01", "2021-12-01", "2022-01-01", "2022-02-01", "2022-03-01", "2022-04-01", "2022-05-01", "2022-06-01", "2022-07-01", "2022-08-01", "2022-09-01", "2022-10-01", "2022-11-01", "2022-12-01", "2023-01-01", "2023-02-01", "2023-03-01", "2023-04-01", "2023-05-01", "2023-06-01", "2023-07-01", "2023-08-01", "2023-09-01", "2023-10-01", "2023-11-01", "2023-12-01", "2024-01-01", "2024-02-01", "2024-03-01", "2024-04-01", "2024-05-01", "2024-06-01", "2024-07-01", "2024-08-01", "2024-09-01", "2024-10-01", "2024-11-01", "2024-12-01", "2025-01-01", "2025-02-01", "2025-03-01", "2025-04-01", "2025-05-01"], "total_uses": [18879, 17312, 21633, 20253, 23546, 20612, 9062, 7968, 20299, 24688, 27031, 21212, 21156, 24485, 21669, 24912, 27334, 23522, 16881, 12205, 23508, 27639, 26487, 18067, 18552, 22637, 26942, 20023, 29739, 25039, 18114, 13054, 25783, 30844, 29654, 20326, 23114, 21786, 23928, 23440, 29747, 24806, 19021, 13859, 25290, 32747, 28647, 23622, 25641, 26459, 29436, 25096, 33195, 26941, 20228, 13549, 24623, 34318, 29468, 22244, 23536, 27010, 13692, 2099, 7721, 12591, 12788, 9316, 17165, 19800, 18543, 14838, 10549, 13063, 16200, 12889, 16582, 14875, 10979, 7165, 15735, 17800, 16736, 13669, 12367, 16561, 16317, 12807, 19159, 17303, 13171, 10798, 19764, 25457, 24942, 18767, 18790, 18590, 23871, 18618, 20480, 18238, 12729, 10068, 17569, 22558, 21801, 15380, 17247, 19299, 17762, 18420, 21690, 16280, 13238, 9119, 16421, 20675, 19916, 15598, 19807, 26636, 26787, 27959, 33364], "rolling_12m": [null, null, null, null, null, null, null, null, null, null, null, 19374.58, 19564.33, 20162.08, 20165.08, 20553.33, 20869.0, 21111.5, 21763.08, 22116.17, 22383.58, 22629.5, 22584.17, 22322.08, 22105.08, 21951.08, 22390.5, 21983.08, 22183.5, 22309.92, 22412.67, 22483.42, 22673.0, 22940.08, 23204.0, 23392.25, 23772.42, 23701.5, 23450.33, 23735.08, 23735.75, 23716.33, 23791.92, 23859.0, 23817.92, 23976.5, 23892.58, 24167.25, 24377.83, 24767.25, 25226.25, 25364.25, 25651.58, 25829.5, 25930.08, 25904.25, 25848.67, 25979.58, 26048.0, 25933.17, 25757.75, 25803.67, 24491.67, 22575.25, 20452.42, 19256.58, 18636.58, 18283.83, 17662.33, 16452.5, 15542.08, 14924.92, 13842.67, 12680.42, 12889.42, 13788.58, 14527.0, 14717.33, 14566.58, 14387.33, 14268.17, 14101.5, 13950.92, 13853.5, 14005.0, 14296.5, 14306.25, 14299.42, 14514.17, 14716.5, 14899.17, 15201.92, 15537.67, 16175.75, 16859.58, 17284.42, 17819.67, 17988.75, 18618.25, 19102.5, 19212.58, 19290.5, 19253.67, 19192.83, 19009.92, 18768.33, 18506.58, 18224.33, 18095.75, 18154.83, 17645.75, 17629.25, 17730.08, 17566.92, 17609.33, 17530.25, 17434.58, 17277.67, 17120.58, 17138.75, 17352.08, 17963.5, 18715.58, 19510.5, 20483.33], "stations_active": [34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 34, 35, 36, 36, 36, 36, 37, 37, 37, 38, 39, 39, 39, 39, 39, 39, 39, 39, 40, 40, 40, 42, 42, 43, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 44, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 45, 46, 48, 52, 53, 56, 56, 55, 55, 55, 55, 55, 55, 55, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 56, 57, 57, 55, 56, 60, 86, 107, 111, 112, 114]};
+  const annualData  = {"years": [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025], "avg_uses": [19374.6, 22322.1, 23392.2, 24167.2, 25933.2, 14924.9, 13853.5, 17284.4, 18224.3, 17138.8, 26910.6], "pct_change": [null, 15.21, 4.79, 3.31, 7.31, -42.45, -7.18, 24.77, 5.44, -5.96, 57.02]};
+
+  // --------- Gráfico 1: mensual (total usos, rolling 12m, estaciones activas) ----------
+  function buildMonthly() {
+    const x = monthlyData.x.map(d => new Date(d));
+    const yTotal = monthlyData.total_uses;
+    const yRoll  = monthlyData.rolling_12m;
+    const yStations = monthlyData.stations_active;
+
+    const traceTotal = {
+      x: x,
+      y: yTotal,
+      mode: 'lines+markers',
+      name: 'Total usos',
+      line: { color: 'rgba(59,130,246,1)', width: 2 },
+      marker: { size: 5 },
+      yaxis: 'y1'
+    };
+
+    const traceRoll = {
+      x: x,
+      y: yRoll,
+      mode: 'lines',
+      name: 'Media móvil 12m',
+      line: { color: 'rgba(249,115,22,1)', width: 2, dash: 'dash' },
+      yaxis: 'y1'
+    };
+
+    const traceStations = {
+      x: x,
+      y: yStations,
+      mode: 'lines+markers',
+      name: 'Estaciones activas',
+      line: { color: 'rgba(34,197,94,1)', width: 2 },
+      marker: { size: 5, symbol: 'square' },
+      yaxis: 'y2'
+    };
+
+    const layout = {
+      paper_bgcolor: 'rgba(0,0,0,0)',
+      plot_bgcolor: 'rgba(15,23,42,1)',
+      margin: { l:60, r:60, t:30, b:60 },
+      hovermode: 'x unified',
+      legend: {
+        orientation: 'h',
+        yanchor: 'bottom',
+        y: 1.02,
+        xanchor: 'left',
+        x: 0
+      },
+      xaxis: {
+        title: 'Mes',
+        showgrid: true,
+        gridcolor: 'rgba(31,41,55,0.6)',
+        tickformat: '%Y-%m'
+      },
+      yaxis: {
+        title: 'Total de usos',
+        zeroline: false,
+        showgrid: true,
+        gridcolor: 'rgba(31,41,55,0.8)'
+      },
+      yaxis2: {
+        title: 'Estaciones activas',
+        overlaying: 'y',
+        side: 'right',
+        zeroline: false,
+        showgrid: false,
+        range: [0, null]   // <<< 🔥 fuerza a que comience en 0
+      },
+      hoverlabel: {
+        bgcolor: 'rgba(15,23,42,0.95)',
+        bordercolor: '#f97373',
+        font: { size:11, color:'#e5e7eb' }
+      }
+    };
+
+    Plotly.newPlot('chart_monthly', [traceTotal, traceRoll, traceStations], layout, {
+      responsive:true,
+      displaylogo:false
+    });
+  }
+
+  // --------- Gráfico 2: anual (media mensual + variación %) ----------
+  function buildAnnual() {
+    const xYears = annualData.years.map(String);
+    const yAvg   = annualData.avg_uses;
+    const yPct   = annualData.pct_change;
+
+    const barAvg = {
+      x: xYears,
+      y: yAvg,
+      type: 'bar',
+      name: 'Media mensual de usos',
+      marker: { color: 'rgba(59,130,246,1)' },
+      yaxis: 'y1'
+    };
+
+    const linePct = {
+      x: xYears,
+      y: yPct,
+      type: 'scatter',
+      mode: 'lines+markers',
+      name: 'Variación anual (%)',
+      line: { color: 'rgba(248,113,113,1)', dash: 'dash' },
+      marker: { size: 6 },
+      yaxis: 'y2'
+    };
+
+    const layout = {
+      paper_bgcolor: 'rgba(0,0,0,0)',
+      plot_bgcolor: 'rgba(15,23,42,1)',
+      margin: { l:60, r:60, t:30, b:60 },
+      hovermode: 'x unified',
+      legend: {
+        orientation: 'h',
+        yanchor: 'bottom',
+        y: 1.02,
+        xanchor: 'left',
+        x: 0
+      },
+      xaxis: {
+        title: 'Año',
+        showgrid: false
+      },
+      yaxis: {
+        title: 'Media mensual de usos',
+        zeroline: false,
+        showgrid: true,
+        gridcolor: 'rgba(31,41,55,0.8)'
+      },
+      yaxis2: {
+        title: 'Variación anual (%)',
+        overlaying: 'y',
+        side: 'right',
+        zeroline: false,
+        showgrid: false
+      },
+      shapes: [
+        {
+          type: 'line',
+          xref: 'paper',
+          x0: 0,
+          x1: 1,
+          yref: 'y2',
+          y0: 0,
+          y1: 0,
+          line: {
+            color: 'rgba(148,163,184,0.9)',
+            width: 1,
+            dash: 'solid'
+          }
+        }
+      ],
+      hoverlabel: {
+        bgcolor: 'rgba(15,23,42,0.95)',
+        bordercolor: '#f97373',
+        font: { size:11, color:'#e5e7eb' }
+      }
+    };
+
+    Plotly.newPlot('chart_annual', [barAvg, linePct], layout, {
+      responsive:true,
+      displaylogo:false
+    });
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    buildMonthly();
+    buildAnnual();
+  });
+</script>
+</body>
+</html>

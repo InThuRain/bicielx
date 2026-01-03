@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>BiciElx – Distribución de duraciones (viajes origen ≠ destino)</title>
+<style>
+  :root {
+    --bg-body: #0f172a;
+    --bg-card: #020617;
+    --accent: #fb7185;
+    --accent-soft: #fecaca;
+    --text-main: #f9fafb;
+    --text-muted: #9ca3af;
+  }
+  * { box-sizing:border-box; }
+
+  body {
+    margin:0; padding:0;
+    font-family:system-ui, sans-serif;
+    background:#0f172a;
+    color:var(--text-main);
+  }
+
+  .page {
+    max-width:1500px;       /* ← MÁS ANCHO */
+    margin:32px auto;
+    padding:0 20px;
+  }
+
+  h1 { font-size:24px; margin-bottom:4px; }
+  .subtitle { color:var(--text-muted); font-size:14px; margin-bottom:20px; }
+
+  .card {
+    background:#111827;
+    border-radius:14px;
+    padding:18px 22px;
+    border:1px solid rgba(255,255,255,0.08);
+    box-shadow:0 18px 40px rgba(0,0,0,0.35);
+  }
+
+  .chart-wrapper {
+    margin-top:10px;
+    border-radius:10px;
+    background:#0f172a;
+    border:1px solid rgba(255,255,255,0.05);
+    height:360px;              /* ← más alto */
+    padding:10px 6px 0 6px;
+    overflow:hidden;
+  }
+
+  #chart {
+    display:flex;
+    align-items:flex-end;
+    gap:4px;
+    overflow-x:auto;
+    overflow-y:hidden;
+    height:100%;
+    padding-bottom:40px;       /* ← más espacio para etiquetas */
+  }
+
+  .bar {
+    flex:0 0 18px;             /* ← barras más finas */
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+
+
+  .bar-inner {
+    width:100%;
+    background:linear-gradient(to top, rgba(248,113,113,0.10), rgba(248,113,113,0.9));
+    border-radius:6px 6px 2px 2px;
+    transition:0.15s;
+  }
+  .bar-inner.highlight {
+    background:linear-gradient(to top, #fb7185, #fecaca);
+    box-shadow:0 0 8px rgba(255,150,150,0.7);
+  }
+
+  .bar-label {
+    margin-top:8px;
+    font-size:10px;
+    color:var(--text-muted);
+    transform:rotate(-60deg);
+    transform-origin:top right;
+    white-space:nowrap;
+  }
+
+  #infoText {
+    margin-top:6px;
+    font-size:13px;
+    color:var(--accent-soft);
+  }
+  #infoText span.perc { color:#ff9aae; font-weight:bold; }
+  #infoText span.count { color:#fff; font-weight:bold; }
+
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>Distribución de duraciones de viajes</h1>
+  <p class="subtitle">Viajes entre estaciones distintas | Pasa el cursor por una barra para ver el porcentaje acumulado.</p>
+
+  <div class="card">
+    <div class="chart-wrapper">
+      <div id="chart">
+    <div class="bar" data-index="0">
+      <div class="bar-inner" style="height:1px"></div>
+      <div class="bar-label">0</div>
+    </div>
+    <div class="bar" data-index="1">
+      <div class="bar-inner" style="height:0px"></div>
+      <div class="bar-label">0-1 min</div>
+    </div>
+    <div class="bar" data-index="2">
+      <div class="bar-inner" style="height:4px"></div>
+      <div class="bar-label">1-2 min</div>
+    </div>
+    <div class="bar" data-index="3">
+      <div class="bar-inner" style="height:44px"></div>
+      <div class="bar-label">2-3 min</div>
+    </div>
+    <div class="bar" data-index="4">
+      <div class="bar-inner" style="height:117px"></div>
+      <div class="bar-label">3-4 min</div>
+    </div>
+    <div class="bar" data-index="5">
+      <div class="bar-inner" style="height:167px"></div>
+      <div class="bar-label">4-5 min</div>
+    </div>
+    <div class="bar" data-index="6">
+      <div class="bar-inner" style="height:203px"></div>
+      <div class="bar-label">5-6 min</div>
+    </div>
+    <div class="bar" data-index="7">
+      <div class="bar-inner" style="height:220px"></div>
+      <div class="bar-label">6-7 min</div>
+    </div>
+    <div class="bar" data-index="8">
+      <div class="bar-inner" style="height:211px"></div>
+      <div class="bar-label">7-8 min</div>
+    </div>
+    <div class="bar" data-index="9">
+      <div class="bar-inner" style="height:193px"></div>
+      <div class="bar-label">8-9 min</div>
+    </div>
+    <div class="bar" data-index="10">
+      <div class="bar-inner" style="height:174px"></div>
+      <div class="bar-label">9-10 min</div>
+    </div>
+    <div class="bar" data-index="11">
+      <div class="bar-inner" style="height:152px"></div>
+      <div class="bar-label">10-11 min</div>
+    </div>
+    <div class="bar" data-index="12">
+      <div class="bar-inner" style="height:131px"></div>
+      <div class="bar-label">11-12 min</div>
+    </div>
+    <div class="bar" data-index="13">
+      <div class="bar-inner" style="height:109px"></div>
+      <div class="bar-label">12-13 min</div>
+    </div>
+    <div class="bar" data-index="14">
+      <div class="bar-inner" style="height:89px"></div>
+      <div class="bar-label">13-14 min</div>
+    </div>
+    <div class="bar" data-index="15">
+      <div class="bar-inner" style="height:72px"></div>
+      <div class="bar-label">14-15 min</div>
+    </div>
+    <div class="bar" data-index="16">
+      <div class="bar-inner" style="height:57px"></div>
+      <div class="bar-label">15-16 min</div>
+    </div>
+    <div class="bar" data-index="17">
+      <div class="bar-inner" style="height:46px"></div>
+      <div class="bar-label">16-17 min</div>
+    </div>
+    <div class="bar" data-index="18">
+      <div class="bar-inner" style="height:37px"></div>
+      <div class="bar-label">17-18 min</div>
+    </div>
+    <div class="bar" data-index="19">
+      <div class="bar-inner" style="height:30px"></div>
+      <div class="bar-label">18-19 min</div>
+    </div>
+    <div class="bar" data-index="20">
+      <div class="bar-inner" style="height:23px"></div>
+      <div class="bar-label">19-20 min</div>
+    </div>
+    <div class="bar" data-index="21">
+      <div class="bar-inner" style="height:17px"></div>
+      <div class="bar-label">20-21 min</div>
+    </div>
+    <div class="bar" data-index="22">
+      <div class="bar-inner" style="height:14px"></div>
+      <div class="bar-label">21-22 min</div>
+    </div>
+    <div class="bar" data-index="23">
+      <div class="bar-inner" style="height:11px"></div>
+      <div class="bar-label">22-23 min</div>
+    </div>
+    <div class="bar" data-index="24">
+      <div class="bar-inner" style="height:8px"></div>
+      <div class="bar-label">23-24 min</div>
+    </div>
+    <div class="bar" data-index="25">
+      <div class="bar-inner" style="height:7px"></div>
+      <div class="bar-label">24-25 min</div>
+    </div>
+    <div class="bar" data-index="26">
+      <div class="bar-inner" style="height:5px"></div>
+      <div class="bar-label">25-26 min</div>
+    </div>
+    <div class="bar" data-index="27">
+      <div class="bar-inner" style="height:4px"></div>
+      <div class="bar-label">26-27 min</div>
+    </div>
+    <div class="bar" data-index="28">
+      <div class="bar-inner" style="height:4px"></div>
+      <div class="bar-label">27-28 min</div>
+    </div>
+    <div class="bar" data-index="29">
+      <div class="bar-inner" style="height:3px"></div>
+      <div class="bar-label">28-29 min</div>
+    </div>
+    <div class="bar" data-index="30">
+      <div class="bar-inner" style="height:2px"></div>
+      <div class="bar-label">29-30 min</div>
+    </div>
+    <div class="bar" data-index="31">
+      <div class="bar-inner" style="height:2px"></div>
+      <div class="bar-label">30-31 min</div>
+    </div>
+    <div class="bar" data-index="32">
+      <div class="bar-inner" style="height:1px"></div>
+      <div class="bar-label">31-32 min</div>
+    </div>
+    <div class="bar" data-index="33">
+      <div class="bar-inner" style="height:1px"></div>
+      <div class="bar-label">32-33 min</div>
+    </div>
+    <div class="bar" data-index="34">
+      <div class="bar-inner" style="height:1px"></div>
+      <div class="bar-label">33-34 min</div>
+    </div>
+    <div class="bar" data-index="35">
+      <div class="bar-inner" style="height:1px"></div>
+      <div class="bar-label">34-35 min</div>
+    </div>
+    <div class="bar" data-index="36">
+      <div class="bar-inner" style="height:1px"></div>
+      <div class="bar-label">35-36 min</div>
+    </div>
+    <div class="bar" data-index="37">
+      <div class="bar-inner" style="height:1px"></div>
+      <div class="bar-label">36-37 min</div>
+    </div>
+    <div class="bar" data-index="38">
+      <div class="bar-inner" style="height:0px"></div>
+      <div class="bar-label">37-38 min</div>
+    </div>
+    <div class="bar" data-index="39">
+      <div class="bar-inner" style="height:0px"></div>
+      <div class="bar-label">38-39 min</div>
+    </div>
+    <div class="bar" data-index="40">
+      <div class="bar-inner" style="height:0px"></div>
+      <div class="bar-label">39-40 min</div>
+    </div>
+    <div class="bar" data-index="41">
+      <div class="bar-inner" style="height:0px"></div>
+      <div class="bar-label">40-41 min</div>
+    </div>
+    <div class="bar" data-index="42">
+      <div class="bar-inner" style="height:0px"></div>
+      <div class="bar-label">41-42 min</div>
+    </div>
+    <div class="bar" data-index="43">
+      <div class="bar-inner" style="height:0px"></div>
+      <div class="bar-label">42-43 min</div>
+    </div>
+    <div class="bar" data-index="44">
+      <div class="bar-inner" style="height:0px"></div>
+      <div class="bar-label">43-44 min</div>
+    </div>
+    <div class="bar" data-index="45">
+      <div class="bar-inner" style="height:0px"></div>
+      <div class="bar-label">44-45 min</div>
+    </div>
+    <div class="bar" data-index="46">
+      <div class="bar-inner" style="height:0px"></div>
+      <div class="bar-label">45-46 min</div>
+    </div>
+    <div class="bar" data-index="47">
+      <div class="bar-inner" style="height:0px"></div>
+      <div class="bar-label">46-47 min</div>
+    </div>
+    <div class="bar" data-index="48">
+      <div class="bar-inner" style="height:0px"></div>
+      <div class="bar-label">47-48 min</div>
+    </div>
+    <div class="bar" data-index="49">
+      <div class="bar-inner" style="height:0px"></div>
+      <div class="bar-label">48-49 min</div>
+    </div>
+    <div class="bar" data-index="50">
+      <div class="bar-inner" style="height:0px"></div>
+      <div class="bar-label">49-50 min</div>
+    </div>
+    <div class="bar" data-index="51">
+      <div class="bar-inner" style="height:0px"></div>
+      <div class="bar-label">50-51 min</div>
+    </div>
+    <div class="bar" data-index="52">
+      <div class="bar-inner" style="height:0px"></div>
+      <div class="bar-label">51-52 min</div>
+    </div>
+    <div class="bar" data-index="53">
+      <div class="bar-inner" style="height:0px"></div>
+      <div class="bar-label">52-53 min</div>
+    </div>
+    <div class="bar" data-index="54">
+      <div class="bar-inner" style="height:0px"></div>
+      <div class="bar-label">53-54 min</div>
+    </div>
+    <div class="bar" data-index="55">
+      <div class="bar-inner" style="height:0px"></div>
+      <div class="bar-label">54-55 min</div>
+    </div>
+    <div class="bar" data-index="56">
+      <div class="bar-inner" style="height:0px"></div>
+      <div class="bar-label">55-56 min</div>
+    </div>
+    <div class="bar" data-index="57">
+      <div class="bar-inner" style="height:0px"></div>
+      <div class="bar-label">56-57 min</div>
+    </div>
+    <div class="bar" data-index="58">
+      <div class="bar-inner" style="height:0px"></div>
+      <div class="bar-label">57-58 min</div>
+    </div>
+    <div class="bar" data-index="59">
+      <div class="bar-inner" style="height:0px"></div>
+      <div class="bar-label">58-59 min</div>
+    </div>
+    <div class="bar" data-index="60">
+      <div class="bar-inner" style="height:0px"></div>
+      <div class="bar-label">59-60 min</div>
+    </div>
+    <div class="bar" data-index="61">
+      <div class="bar-inner" style="height:1px"></div>
+      <div class="bar-label">60-70 min</div>
+    </div>
+    <div class="bar" data-index="62">
+      <div class="bar-inner" style="height:1px"></div>
+      <div class="bar-label">70-80 min</div>
+    </div>
+    <div class="bar" data-index="63">
+      <div class="bar-inner" style="height:1px"></div>
+      <div class="bar-label">80-90 min</div>
+    </div>
+    <div class="bar" data-index="64">
+      <div class="bar-inner" style="height:0px"></div>
+      <div class="bar-label">90-100 min</div>
+    </div>
+    <div class="bar" data-index="65">
+      <div class="bar-inner" style="height:0px"></div>
+      <div class="bar-label">100-110 min</div>
+    </div>
+    <div class="bar" data-index="66">
+      <div class="bar-inner" style="height:0px"></div>
+      <div class="bar-label">110-120 min</div>
+    </div>
+    <div class="bar" data-index="67">
+      <div class="bar-inner" style="height:3px"></div>
+      <div class="bar-label">>2 h</div>
+    </div>
+      </div>
+    </div>
+
+    <div id="infoText">
+      Pasa el cursor por un intervalo para ver el <span class="perc">porcentaje acumulado</span>.
+    </div>
+  </div>
+</div>
+
+<script>
+  const labels = ["0", "0-1 min", "1-2 min", "2-3 min", "3-4 min", "4-5 min", "5-6 min", "6-7 min", "7-8 min", "8-9 min", "9-10 min", "10-11 min", "11-12 min", "12-13 min", "13-14 min", "14-15 min", "15-16 min", "16-17 min", "17-18 min", "18-19 min", "19-20 min", "20-21 min", "21-22 min", "22-23 min", "23-24 min", "24-25 min", "25-26 min", "26-27 min", "27-28 min", "28-29 min", "29-30 min", "30-31 min", "31-32 min", "32-33 min", "33-34 min", "34-35 min", "35-36 min", "36-37 min", "37-38 min", "38-39 min", "39-40 min", "40-41 min", "41-42 min", "42-43 min", "43-44 min", "44-45 min", "45-46 min", "46-47 min", "47-48 min", "48-49 min", "49-50 min", "50-51 min", "51-52 min", "52-53 min", "53-54 min", "54-55 min", "55-56 min", "56-57 min", "57-58 min", "58-59 min", "59-60 min", "60-70 min", "70-80 min", "80-90 min", "90-100 min", "100-110 min", "110-120 min", ">2 h"];
+  const counts = [1069, 367, 4651, 50682, 133805, 191798, 233063, 252251, 241534, 221801, 199529, 174714, 150468, 124694, 102135, 82193, 65082, 52789, 42482, 33912, 26222, 20012, 15552, 12311, 9538, 7871, 6175, 5135, 4095, 3364, 2564, 1967, 1487, 1198, 1061, 851, 728, 607, 536, 492, 474, 408, 379, 384, 317, 317, 251, 249, 260, 250, 224, 199, 223, 197, 182, 181, 182, 155, 174, 134, 132, 1128, 806, 679, 537, 427, 335, 3946];
+
+  const total = counts.reduce((a,b)=>a+b,0);
+  const bars = Array.from(document.querySelectorAll('.bar'));
+  const infoText = document.getElementById('infoText');
+
+  function update(idx){
+    let cum = 0;
+    bars.forEach((bar,i)=>{
+      const inner = bar.querySelector('.bar-inner');
+      if(i <= idx){ inner.classList.add('highlight'); cum += counts[i]; }
+      else{ inner.classList.remove('highlight'); }
+    });
+
+    const perc = (cum / total * 100).toFixed(2);
+    infoText.innerHTML =
+      `Hasta <b>${labels[idx]}</b>: ` +
+      `<span class="count">${cum.toLocaleString('es-ES')} préstamos</span>` +
+      ` (<span class="perc">${perc}%</span> del total)`;
+  }
+
+  bars.forEach((bar,i)=>{
+    bar.addEventListener('mouseenter',()=>update(i));
+    bar.addEventListener('click',()=>update(i));
+  });
+
+  document.getElementById('chart').addEventListener('mouseleave',()=>{
+    bars.forEach(b=>b.querySelector('.bar-inner').classList.remove('highlight'));
+    infoText.innerHTML =
+      `Pasa el cursor por un intervalo para ver el <span class="perc">porcentaje acumulado</span>.`;
+  });
+</script>
+</body>
+</html>

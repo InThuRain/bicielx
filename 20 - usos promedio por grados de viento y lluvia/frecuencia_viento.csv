@@ -1,0 +1,9 @@
+viento_cat,dias,porcentaje
+Calma (0–1),0,0.0
+Ventolina (1.1–5),0,0.0
+Brisa ligera (5.1–11),242,6.361724500525763
+Brisa moderada (11.1–19),2286,60.094637223974765
+Viento notable (19.1–28),1049,27.576235541535226
+Viento fuerte (28.1–38),207,5.441640378548896
+Muy fuerte (38.1–49),20,0.5257623554153523
+Vendaval (≥50),0,0.0

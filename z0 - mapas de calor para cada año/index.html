@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mapas de calor anuales – BiciElx</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg: #f3f4f6;
+      --card-bg: #ffffff;
+      --accent: #0f766e;
+      --accent2: #22c55e;
+      --text: #111827;
+      --shadow: 0 4px 10px rgba(0,0,0,0.08);
+      --radius-lg: 18px;
+      --radius-sm: 10px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: linear-gradient(120deg, var(--accent), var(--accent2));
+      color: white;
+      padding: 1.7rem 1rem;
+      box-shadow: var(--shadow);
+    }
+    .header-inner {
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.9rem;
+      letter-spacing: 0.04em;
+    }
+    .subtitle {
+      margin: 0.4rem 0 0;
+      opacity: 0.9;
+      font-size: 0.95rem;
+    }
+    main {
+      width: 100%;
+      max-width: 1600px;
+      margin: 1.2rem auto 1.8rem;
+      padding: 0 1rem;
+      flex: 1 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      font-size: 0.85rem;
+    }
+    select {
+      padding: 0.45rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid #d1d5db;
+      font-size: 0.9rem;
+      background: white;
+      min-width: 140px;
+    }
+    .radio-group {
+      display: flex;
+      gap: 0.8rem;
+      align-items: center;
+      font-size: 0.9rem;
+    }
+    .spacer {
+      flex: 1;
+    }
+    .button-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.45rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid #0f766e;
+      color: #0f766e;
+      text-decoration: none;
+      font-size: 0.85rem;
+      background: #ecfdf5;
+    }
+    .button-link:hover {
+      background: #0f766e;
+      color: white;
+    }
+    .iframe-wrapper {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow);
+      padding: 0.8rem;
+      height: 82vh;
+      min-height: 520px;
+      width: 100%;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: var(--radius-sm);
+    }
+    footer {
+      font-size: 0.8rem;
+      color: #6b7280;
+      text-align: center;
+      padding: 0.8rem 0 1.2rem;
+      flex-shrink: 0;
+    }
+    @media (max-width: 768px) {
+      .iframe-wrapper {
+        height: 70vh;
+        min-height: 420px;
+      }
+    }
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #020617;
+        color: #e5e7eb;
+      }
+      .iframe-wrapper {
+        background: #020617;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.7);
+      }
+      footer {
+        color: #9ca3af;
+      }
+      .button-link {
+        border-color: #22c55e;
+        color: #a7f3d0;
+        background: #022c22;
+      }
+      .button-link:hover {
+        background: #22c55e;
+        color: #022c22;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <h1>Mapas de calor anuales</h1>
+    <p class="subtitle">
+      Visualización de la intensidad de salidas y llegadas por estación en cada año de la serie.
+    </p>
+  </div>
+</header>
+
+<main>
+  <div class="controls">
+    <div class="control-group">
+      <label for="yearSelect">Año:</label>
+      <select id="yearSelect">
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+<option value="2021">2021</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+<option value="2024">2024</option>
+<option value="2025">2025</option>
+      </select>
+    </div>
+    <div class="control-group">
+      <span>Tipo de mapa:</span>
+      <div class="radio-group">
+        <label>
+          <input type="radio" name="tipo" value="salidas" checked> Salidas
+        </label>
+        <label>
+          <input type="radio" name="tipo" value="llegadas"> Llegadas
+        </label>
+      </div>
+    </div>
+    <div class="spacer"></div>
+    <a id="fullViewLink" href="heatmap_salidas_2015.html" target="_blank" class="button-link">
+      Ver mapa a pantalla completa
+    </a>
+  </div>
+
+  <div class="iframe-wrapper">
+    <iframe id="mapFrame" src="heatmap_salidas_2015.html" title="Mapa de calor anual"></iframe>
+  </div>
+</main>
+
+<footer>
+  Página generada automáticamente a partir de los datos de uso de BiciElx.
+</footer>
+
+<script>
+  const yearSelect = document.getElementById('yearSelect');
+  const iframe = document.getElementById('mapFrame');
+  const fullLink = document.getElementById('fullViewLink');
+  const tipoRadios = document.querySelectorAll('input[name="tipo"]');
+
+  function currentTipo() {
+    for (const r of tipoRadios) {
+      if (r.checked) return r.value;
+    }
+    return 'salidas';
+  }
+
+  function updateMap() {
+    const year = yearSelect.value;
+    const tipo = currentTipo(); // 'salidas' o 'llegadas'
+    const file = `heatmap_${tipo}_${year}.html`;
+    iframe.src = file;
+    fullLink.href = file;
+  }
+
+  yearSelect.addEventListener('change', updateMap);
+  tipoRadios.forEach(r => r.addEventListener('change', updateMap));
+</script>
+
+</body>
+</html>

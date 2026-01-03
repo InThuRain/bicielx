@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mapas de flujos TOP-10 por sentido – BiciElx</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg: #f3f4f6;
+      --card-bg: #ffffff;
+      --accent: #4338ca;
+      --accent2: #22c55e;
+      --text: #111827;
+      --shadow: 0 4px 10px rgba(0,0,0,0.08);
+      --radius-lg: 18px;
+      --radius-sm: 10px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: linear-gradient(120deg, var(--accent), var(--accent2));
+      color: white;
+      padding: 1.7rem 1rem;
+      box-shadow: var(--shadow);
+    }
+    .header-inner {
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.9rem;
+      letter-spacing: 0.04em;
+    }
+    .subtitle {
+      margin: 0.4rem 0 0;
+      opacity: 0.9;
+      font-size: 0.95rem;
+    }
+    main {
+      width: 100%;
+      max-width: 1600px;
+      margin: 1.2rem auto 1.8rem;
+      padding: 0 1rem;
+      flex: 1 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+    }
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      font-size: 0.85rem;
+    }
+    select {
+      padding: 0.45rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid #d1d5db;
+      font-size: 0.9rem;
+      background: white;
+      min-width: 280px;
+    }
+    .spacer {
+      flex: 1;
+    }
+    .button-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.45rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid #0f766e;
+      color: #0f766e;
+      text-decoration: none;
+      font-size: 0.85rem;
+      background: #ecfdf5;
+    }
+    .button-link:hover {
+      background: #0f766e;
+      color: white;
+    }
+    .iframe-wrapper {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow);
+      padding: 0.8rem;
+      height: 82vh;
+      min-height: 520px;
+      width: 100%;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border-radius: var(--radius-sm);
+    }
+    footer {
+      font-size: 0.8rem;
+      color: #6b7280;
+      text-align: center;
+      padding: 0.8rem 0 1.2rem;
+      flex-shrink: 0;
+    }
+    @media (max-width: 768px) {
+      .iframe-wrapper {
+        height: 70vh;
+        min-height: 420px;
+      }
+    }
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #020617;
+        color: #e5e7eb;
+      }
+      .iframe-wrapper {
+        background: #020617;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.7);
+      }
+      footer {
+        color: #9ca3af;
+      }
+      .button-link {
+        border-color: #22c55e;
+        color: #a7f3d0;
+        background: #022c22;
+      }
+      .button-link:hover {
+        background: #22c55e;
+        color: #022c22;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <h1>Flujos TOP-10 por sentido</h1>
+    <p class="subtitle">
+      Para cada estación central se muestran los 10 flujos más intensos en salidas (azul)
+      y los 10 en llegadas (rojo), sin solape entre sentidos, indicando también
+      el tiempo medio de viaje en cada conexión.
+    </p>
+  </div>
+</header>
+
+<main>
+  <div class="controls">
+    <div class="control-group">
+      <label for="stationSelect">Estación central:</label>
+      <select id="stationSelect">
+<option value="map_flujos_001.html">001 – Estació d’Autobusos</option>
+<option value="map_flujos_002.html">002 – Oficina de Turisme</option>
+<option value="map_flujos_003.html">003 – Plaça de la Llotja</option>
+<option value="map_flujos_004.html">004 – Plaça del Raval</option>
+<option value="map_flujos_005.html">005 – Centre de Congressos</option>
+<option value="map_flujos_006.html">006 – Ajuntament</option>
+<option value="map_flujos_007.html">007 – Pavelló Municipal</option>
+<option value="map_flujos_008.html">008 – Polivalent de Carrús</option>
+<option value="map_flujos_009.html">009 – Biblioteca de Sant Josep</option>
+<option value="map_flujos_010.html">010 – L’Escorxador</option>
+<option value="map_flujos_011.html">011 – Plaça de Crevillent</option>
+<option value="map_flujos_012.html">012 – Ambulatori de Sant Fermí</option>
+<option value="map_flujos_013.html">013 – Jardí del 1r de Maig</option>
+<option value="map_flujos_014.html">014 – Comissaria</option>
+<option value="map_flujos_015.html">015 – Av. Llibertat / Reina Victòria</option>
+<option value="map_flujos_016.html">016 – Jardí d’Asp</option>
+<option value="map_flujos_017.html">017 – Plaça de Castella</option>
+<option value="map_flujos_018.html">018 – Poliesportiu d’Altabix</option>
+<option value="map_flujos_019.html">019 – Jesuïtines</option>
+<option value="map_flujos_020.html">020 – Antoni Mena / Fra Jaume Torres</option>
+<option value="map_flujos_021.html">021 – C.P. Mariano Benlliure</option>
+<option value="map_flujos_022.html">022 – Av. Llauradors / Eslava</option>
+<option value="map_flujos_023.html">023 – Conrado del Campo / Trinquet</option>
+<option value="map_flujos_024.html">024 – Policia Local</option>
+<option value="map_flujos_025.html">025 – Cor de Jesús</option>
+<option value="map_flujos_026.html">026 – UMH / Escola Oficial d’Idiomes</option>
+<option value="map_flujos_027.html">027 – UMH / Pavelló d’Esports</option>
+<option value="map_flujos_028.html">028 – Passeig de les Germanies</option>
+<option value="map_flujos_029.html">029 – Casablanca</option>
+<option value="map_flujos_030.html">030 – Squash</option>
+<option value="map_flujos_031.html">031 – Sant Antoni</option>
+<option value="map_flujos_032.html">032 – Centre de Salut d’Altabix</option>
+<option value="map_flujos_033.html">033 – Av. Libertat / l’Aljub</option>
+<option value="map_flujos_034.html">034 – Hospital General</option>
+<option value="map_flujos_035.html">035 – Hospital del Vinalopó</option>
+<option value="map_flujos_036.html">036 – I.E.S. Victoria Kent</option>
+<option value="map_flujos_037.html">037 – Hort de Travaló</option>
+<option value="map_flujos_038.html">038 – Poliesportiu de Carrús</option>
+<option value="map_flujos_039.html">039 – Francesc Cantó</option>
+<option value="map_flujos_040.html">040 – C.P. Baix Vinalopó</option>
+<option value="map_flujos_041.html">041 – Dipòsit Municipal de Carrús</option>
+<option value="map_flujos_042.html">042 – Multi Aventura Travaló</option>
+<option value="map_flujos_043.html">043 – Palmerars – Ciutat de la Justícia</option>
+<option value="map_flujos_044.html">044 – Portes Encarnades</option>
+<option value="map_flujos_045.html">045 – Plaça de Barcelona</option>
+<option value="map_flujos_046.html">046 – UMH / Rectorado</option>
+<option value="map_flujos_047.html">047 – C.P. Virgen de la Asunción</option>
+<option value="map_flujos_048.html">048 – Av. Corts Valencianes</option>
+<option value="map_flujos_049.html">049 – Av. Alicante 59</option>
+<option value="map_flujos_050.html">050 – Borreguet</option>
+<option value="map_flujos_051.html">051 – Ciudad deportiva zona sur</option>
+<option value="map_flujos_052.html">052 – Centro salud el Toscar</option>
+<option value="map_flujos_053.html">053 – C.P. Victor Pradera</option>
+<option value="map_flujos_054.html">054 – Plaza de Benidorm</option>
+<option value="map_flujos_055.html">055 – Pere Joan Perpinyà</option>
+<option value="map_flujos_056.html">056 – UMH / Torre Vaillo</option>
+<option value="map_flujos_057.html">057 – IES Torrellano</option>
+<option value="map_flujos_058.html">058 – Polideportivo Torrellano</option>
+<option value="map_flujos_059.html">059 – Calle San Crispín 1 Torrellano</option>
+<option value="map_flujos_060.html">060 – Carrer de la Figuera 2 Torrellano</option>
+<option value="map_flujos_061.html">061 – Avenida Novelda 191</option>
+<option value="map_flujos_062.html">062 – Calle Inca con brea</option>
+<option value="map_flujos_063.html">063 – CEIP Eugeni d’Ors</option>
+<option value="map_flujos_064.html">064 – Jardín 25 de abril</option>
+<option value="map_flujos_065.html">065 – C.P. El toscar</option>
+<option value="map_flujos_066.html">066 – Jardín escritor Juan Fuster</option>
+<option value="map_flujos_067.html">067 – Calle Grao con Victoria Kent</option>
+<option value="map_flujos_068.html">068 – Arturo Salvetti Pardo</option>
+<option value="map_flujos_069.html">069 – Olegario Domarco Seller 44</option>
+<option value="map_flujos_070.html">070 – Libertad-Diagonal</option>
+<option value="map_flujos_071.html">071 – IES Carrús</option>
+<option value="map_flujos_072.html">072 – Plaza de madrid</option>
+<option value="map_flujos_073.html">073 – Plaza de la aparadora</option>
+<option value="map_flujos_074.html">074 – IES Nit de l´Albà</option>
+<option value="map_flujos_075.html">075 – L´aljub</option>
+<option value="map_flujos_076.html">076 – Puente Altamira</option>
+<option value="map_flujos_077.html">077 – Plaza Obispo Siuri</option>
+<option value="map_flujos_078.html">078 – Jorge Juan 24</option>
+<option value="map_flujos_079.html">079 – Intercambiador pasarela</option>
+<option value="map_flujos_080.html">080 – Reina Victoria con Gabriel Miró</option>
+<option value="map_flujos_081.html">081 – C.S. Doctor Sapena</option>
+<option value="map_flujos_082.html">082 – Antonio Machado 73</option>
+<option value="map_flujos_083.html">083 – Conrado del campo 35</option>
+<option value="map_flujos_084.html">084 – Fernanda Santa María 64</option>
+<option value="map_flujos_085.html">085 – Sor Josefa Alcorta 34</option>
+<option value="map_flujos_086.html">086 – El Corte Inglés</option>
+<option value="map_flujos_087.html">087 – CEIP Sanchis Guarner</option>
+<option value="map_flujos_088.html">088 – Pistas del Pla</option>
+<option value="map_flujos_089.html">089 – CEIP Dama d´Elx</option>
+<option value="map_flujos_090.html">090 – Centro salud el Pla</option>
+<option value="map_flujos_091.html">091 – Centro social el Pla</option>
+<option value="map_flujos_092.html">092 – Parking Candalix</option>
+<option value="map_flujos_093.html">093 – Parque Rey Jaume I</option>
+<option value="map_flujos_094.html">094 – Parking Gran Teatre</option>
+<option value="map_flujos_095.html">095 – IES Vicente Verdu</option>
+<option value="map_flujos_096.html">096 – Puente de Santa Teresa</option>
+<option value="map_flujos_097.html">097 – Huerto del cura</option>
+<option value="map_flujos_098.html">098 – IES Sixto Marco</option>
+<option value="map_flujos_099.html">099 – IES La Asunción</option>
+<option value="map_flujos_100.html">100 – C.S. Raval</option>
+<option value="map_flujos_101.html">101 – UMH-La Galia</option>
+<option value="map_flujos_102.html">102 – UMH-Altabix</option>
+<option value="map_flujos_103.html">103 – UMH-Altet</option>
+<option value="map_flujos_104.html">104 – UMH-Arenals</option>
+<option value="map_flujos_105.html">105 – Almansa con Avda. Novelda</option>
+<option value="map_flujos_106.html">106 – Estadio Manolo Jaén</option>
+<option value="map_flujos_107.html">107 – Josefina Manresa</option>
+<option value="map_flujos_108.html">108 – José Ferrández Cruz</option>
+<option value="map_flujos_109.html">109 – Parque Huerto del Torreret</option>
+<option value="map_flujos_110.html">110 – Avda Novelda con Obispo Barrachina</option>
+<option value="map_flujos_111.html">111 – Avenida Alicante 38</option>
+<option value="map_flujos_112.html">112 – CEIP San Fernando</option>
+<option value="map_flujos_113.html">113 – Alcalde Juan Hernández</option>
+<option value="map_flujos_114.html">114 – Jardin Biólogo Antonio de Zulueta</option>
+<option value="map_flujos_115.html">115 – Passeig d´Atzavares</option>
+      </select>
+    </div>
+    <div class="spacer"></div>
+    <a id="fullViewLink" href="map_flujos_001.html" target="_blank" class="button-link">
+      Ver mapa a pantalla completa
+    </a>
+  </div>
+
+  <div class="iframe-wrapper">
+    <iframe id="mapFrame" src="map_flujos_001.html" title="Mapa de flujos TOP-10"></iframe>
+  </div>
+</main>
+
+<footer>
+  Página generada automáticamente a partir de los datos de uso de BiciElx.
+</footer>
+
+<script>
+  const select = document.getElementById('stationSelect');
+  const iframe = document.getElementById('mapFrame');
+  const fullLink = document.getElementById('fullViewLink');
+
+  function updateMap() {
+    const file = select.value;
+    iframe.src = file;
+    fullLink.href = file;
+  }
+
+  select.addEventListener('change', updateMap);
+</script>
+
+</body>
+</html>

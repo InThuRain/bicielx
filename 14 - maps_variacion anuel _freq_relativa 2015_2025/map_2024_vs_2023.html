@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8c9f16c553e8a439738c0e5feb45fb9a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8c9f16c553e8a439738c0e5feb45fb9a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8c9f16c553e8a439738c0e5feb45fb9a = L.map(
+                "map_8c9f16c553e8a439738c0e5feb45fb9a",
+                {
+                    center: [38.267, -0.7129],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+
+            
+
+        
+    
+            var tile_layer_18209cf2f8f1d5c394a11c4d55df07b5 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_18209cf2f8f1d5c394a11c4d55df07b5.addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+            var circle_marker_4c41d8541c0153622ac6a47e90c67d1c = L.circleMarker(
+                [38.272036, -0.694305],
+                {"bubblingMouseEvents": true, "color": "#d1d4d4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d1d4d4ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.3759973157352565, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_e7f5b8015e0b946c73129d61b43bbfdf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b9963e767f3d04d0029f622fe429d46 = $(`<div id="html_1b9963e767f3d04d0029f622fe429d46" style="width: 100.0%; height: 100.0%;"><b>Estació d’Autobusos (1)</b><br>2023: 3.11%<br>2024: 3.10%<br>Δ proporción: -0.01%</div>`)[0];
+                popup_e7f5b8015e0b946c73129d61b43bbfdf.setContent(html_1b9963e767f3d04d0029f622fe429d46);
+            
+        
+
+        circle_marker_4c41d8541c0153622ac6a47e90c67d1c.bindPopup(popup_e7f5b8015e0b946c73129d61b43bbfdf)
+        ;
+
+        
+    
+    
+            var circle_marker_51a6f94af7eaeff7397488e2a6d758ab = L.circleMarker(
+                [38.268457, -0.696731],
+                {"bubblingMouseEvents": true, "color": "#b7d7e2ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b7d7e2ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.03290847874754, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_ca7f0640646d836f7e29be815a5a56fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_169afc1c6912fbba691b14a2ad53fee7 = $(`<div id="html_169afc1c6912fbba691b14a2ad53fee7" style="width: 100.0%; height: 100.0%;"><b>Oficina de Turisme (2)</b><br>2023: 3.56%<br>2024: 3.41%<br>Δ proporción: -0.15%</div>`)[0];
+                popup_ca7f0640646d836f7e29be815a5a56fd.setContent(html_169afc1c6912fbba691b14a2ad53fee7);
+            
+        
+
+        circle_marker_51a6f94af7eaeff7397488e2a6d758ab.bindPopup(popup_ca7f0640646d836f7e29be815a5a56fd)
+        ;
+
+        
+    
+    
+            var circle_marker_f09f50abca9acb40287afc1fad91de71 = L.circleMarker(
+                [38.270117, -0.685963],
+                {"bubblingMouseEvents": true, "color": "#c2d6dcff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c2d6dcff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.03851308261726, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_729a9d2a7f9d93858aa3dd666dc543d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc3d04f789aed754799169d77cbd6d6e = $(`<div id="html_bc3d04f789aed754799169d77cbd6d6e" style="width: 100.0%; height: 100.0%;"><b>Plaça de la Llotja (3)</b><br>2023: 2.51%<br>2024: 2.42%<br>Δ proporción: -0.09%</div>`)[0];
+                popup_729a9d2a7f9d93858aa3dd666dc543d7.setContent(html_bc3d04f789aed754799169d77cbd6d6e);
+            
+        
+
+        circle_marker_f09f50abca9acb40287afc1fad91de71.bindPopup(popup_729a9d2a7f9d93858aa3dd666dc543d7)
+        ;
+
+        
+    
+    
+            var circle_marker_ce4400277c820ab12cf4de9cb3a0b1c6 = L.circleMarker(
+                [38.260487, -0.698565],
+                {"bubblingMouseEvents": true, "color": "#b0d8e5ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b0d8e5ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.245545620572091, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_0b665b2678d850e1d559e10469ba9095 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0bcb8d7a107da1d71817c918ebd6341 = $(`<div id="html_d0bcb8d7a107da1d71817c918ebd6341" style="width: 100.0%; height: 100.0%;"><b>Plaça del Raval (4)</b><br>2023: 2.09%<br>2024: 1.90%<br>Δ proporción: -0.18%</div>`)[0];
+                popup_0b665b2678d850e1d559e10469ba9095.setContent(html_d0bcb8d7a107da1d71817c918ebd6341);
+            
+        
+
+        circle_marker_ce4400277c820ab12cf4de9cb3a0b1c6.bindPopup(popup_0b665b2678d850e1d559e10469ba9095)
+        ;
+
+        
+    
+    
+            var circle_marker_f3a6cbc4e8cda4498bf657ae5887028a = L.circleMarker(
+                [38.264171, -0.695433],
+                {"bubblingMouseEvents": true, "color": "#f5f532ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f5f532ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.089824516237284, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_36237a29f7186968bcf9f70e02c00b37 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_50588fad2a505ea23f03b4e9dd9ac641 = $(`<div id="html_50588fad2a505ea23f03b4e9dd9ac641" style="width: 100.0%; height: 100.0%;"><b>Centre de Congressos (5)</b><br>2023: 3.58%<br>2024: 3.73%<br>Δ proporción: 0.15%</div>`)[0];
+                popup_36237a29f7186968bcf9f70e02c00b37.setContent(html_50588fad2a505ea23f03b4e9dd9ac641);
+            
+        
+
+        circle_marker_f3a6cbc4e8cda4498bf657ae5887028a.bindPopup(popup_36237a29f7186968bcf9f70e02c00b37)
+        ;
+
+        
+    
+    
+            var circle_marker_322a52fd09d370c47aef69d0bdddab29 = L.circleMarker(
+                [38.265409, -0.699424],
+                {"bubblingMouseEvents": true, "color": "#cad5d8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#cad5d8ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.657055731106254, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_222208d21b5c1ffd9c0f4f796494bbd3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_25e438c67e0ce42dc3f5d3ac619969e8 = $(`<div id="html_25e438c67e0ce42dc3f5d3ac619969e8" style="width: 100.0%; height: 100.0%;"><b>Ajuntament (6)</b><br>2023: 4.49%<br>2024: 4.44%<br>Δ proporción: -0.05%</div>`)[0];
+                popup_222208d21b5c1ffd9c0f4f796494bbd3.setContent(html_25e438c67e0ce42dc3f5d3ac619969e8);
+            
+        
+
+        circle_marker_322a52fd09d370c47aef69d0bdddab29.bindPopup(popup_222208d21b5c1ffd9c0f4f796494bbd3)
+        ;
+
+        
+    
+    
+            var circle_marker_d4a311e947aae80c62bc66c6efdfc517 = L.circleMarker(
+                [38.273904, -0.673121],
+                {"bubblingMouseEvents": true, "color": "#cdd4d7ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#cdd4d7ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.110798962448243, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_cf86b6387eb81a277447bfc297602a7b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1eb57c07c072e0b8613e84ed913a925a = $(`<div id="html_1eb57c07c072e0b8613e84ed913a925a" style="width: 100.0%; height: 100.0%;"><b>Pavelló Municipal (7)</b><br>2023: 1.19%<br>2024: 1.16%<br>Δ proporción: -0.03%</div>`)[0];
+                popup_cf86b6387eb81a277447bfc297602a7b.setContent(html_1eb57c07c072e0b8613e84ed913a925a);
+            
+        
+
+        circle_marker_d4a311e947aae80c62bc66c6efdfc517.bindPopup(popup_cf86b6387eb81a277447bfc297602a7b)
+        ;
+
+        
+    
+    
+            var circle_marker_70f027ba9688b02384fa9c6e43faaeeb = L.circleMarker(
+                [38.270115, -0.713323],
+                {"bubblingMouseEvents": true, "color": "#c5d5dbff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c5d5dbff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.51083204163973, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_545e12038094a7c36ecfaeff1a660e66 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52e30c4407e5cc65dd7500d85c012216 = $(`<div id="html_52e30c4407e5cc65dd7500d85c012216" style="width: 100.0%; height: 100.0%;"><b>Polivalent de Carrús (8)</b><br>2023: 1.41%<br>2024: 1.33%<br>Δ proporción: -0.07%</div>`)[0];
+                popup_545e12038094a7c36ecfaeff1a660e66.setContent(html_52e30c4407e5cc65dd7500d85c012216);
+            
+        
+
+        circle_marker_70f027ba9688b02384fa9c6e43faaeeb.bindPopup(popup_545e12038094a7c36ecfaeff1a660e66)
+        ;
+
+        
+    
+    
+            var circle_marker_415aa9f8b4286dd891f72f3a36bb8360 = L.circleMarker(
+                [38.259831, -0.701275],
+                {"bubblingMouseEvents": true, "color": "#fff900ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff900ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.177232606473222, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_5a96a37014c03150fb7b78d18b642d08 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0913dd5c78024b1e4243f721923a7e0a = $(`<div id="html_0913dd5c78024b1e4243f721923a7e0a" style="width: 100.0%; height: 100.0%;"><b>Biblioteca de Sant Josep (9)</b><br>2023: 1.75%<br>2024: 1.96%<br>Δ proporción: 0.21%</div>`)[0];
+                popup_5a96a37014c03150fb7b78d18b642d08.setContent(html_0913dd5c78024b1e4243f721923a7e0a);
+            
+        
+
+        circle_marker_415aa9f8b4286dd891f72f3a36bb8360.bindPopup(popup_5a96a37014c03150fb7b78d18b642d08)
+        ;
+
+        
+    
+    
+            var circle_marker_21d8a58f0f135fcd31e845e6fc39c27c = L.circleMarker(
+                [38.256839, -0.691995],
+                {"bubblingMouseEvents": true, "color": "#c9d5d9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c9d5d9ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.876472047121323, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_f54bcb0875a171bb17ff724db6b6d009 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e3c77bf5e936db3223381b48443577aa = $(`<div id="html_e3c77bf5e936db3223381b48443577aa" style="width: 100.0%; height: 100.0%;"><b>L’Escorxador (10)</b><br>2023: 0.44%<br>2024: 0.38%<br>Δ proporción: -0.06%</div>`)[0];
+                popup_f54bcb0875a171bb17ff724db6b6d009.setContent(html_e3c77bf5e936db3223381b48443577aa);
+            
+        
+
+        circle_marker_21d8a58f0f135fcd31e845e6fc39c27c.bindPopup(popup_f54bcb0875a171bb17ff724db6b6d009)
+        ;
+
+        
+    
+    
+            var circle_marker_72ae79dd16829d0e3d184df7f12dcf45 = L.circleMarker(
+                [38.261942, -0.708752],
+                {"bubblingMouseEvents": true, "color": "#0000f9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0000f9ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.681901766616356, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_2bed627ee80cdf5582f6a6226323d8c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab435475eda21934ebf307b813879cf9 = $(`<div id="html_ab435475eda21934ebf307b813879cf9" style="width: 100.0%; height: 100.0%;"><b>Plaça de Crevillent (11)</b><br>2023: 1.93%<br>2024: 1.52%<br>Δ proporción: -0.40%</div>`)[0];
+                popup_2bed627ee80cdf5582f6a6226323d8c6.setContent(html_ab435475eda21934ebf307b813879cf9);
+            
+        
+
+        circle_marker_72ae79dd16829d0e3d184df7f12dcf45.bindPopup(popup_2bed627ee80cdf5582f6a6226323d8c6)
+        ;
+
+        
+    
+    
+            var circle_marker_7f62c3d266f95a9512f952a7a8a39474 = L.circleMarker(
+                [38.268924, -0.706933],
+                {"bubblingMouseEvents": true, "color": "#cdd4d7ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#cdd4d7ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.164507887648233, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_3474006d56e9c653004a1393e2578ddb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a21ecb82d7d5f818540310af988362d0 = $(`<div id="html_a21ecb82d7d5f818540310af988362d0" style="width: 100.0%; height: 100.0%;"><b>Ambulatori de Sant Fermí (12)</b><br>2023: 4.11%<br>2024: 4.08%<br>Δ proporción: -0.03%</div>`)[0];
+                popup_3474006d56e9c653004a1393e2578ddb.setContent(html_a21ecb82d7d5f818540310af988362d0);
+            
+        
+
+        circle_marker_7f62c3d266f95a9512f952a7a8a39474.bindPopup(popup_3474006d56e9c653004a1393e2578ddb)
+        ;
+
+        
+    
+    
+            var circle_marker_54dc87624c2a6507cb44cf3e7a91af22 = L.circleMarker(
+                [38.274553, -0.708405],
+                {"bubblingMouseEvents": true, "color": "#dcdca8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dcdca8ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.364499229316033, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_ca0e7e6016f729c7c3f44ea920d95cfd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_97ea9713e0cff4a7ec184cfe7ead02b0 = $(`<div id="html_97ea9713e0cff4a7ec184cfe7ead02b0" style="width: 100.0%; height: 100.0%;"><b>Jardí del 1r de Maig (13)</b><br>2023: 0.99%<br>2024: 1.03%<br>Δ proporción: 0.04%</div>`)[0];
+                popup_ca0e7e6016f729c7c3f44ea920d95cfd.setContent(html_97ea9713e0cff4a7ec184cfe7ead02b0);
+            
+        
+
+        circle_marker_54dc87624c2a6507cb44cf3e7a91af22.bindPopup(popup_ca0e7e6016f729c7c3f44ea920d95cfd)
+        ;
+
+        
+    
+    
+            var circle_marker_6ffda507d7ec79b66e75cb1965a7b0f8 = L.circleMarker(
+                [38.262993, -0.688257],
+                {"bubblingMouseEvents": true, "color": "#b3d8e4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b3d8e4ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.690429890586463, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_9edebe3b9b1f4d201febd27149bcaa20 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_24d6a0fffe30ad0eb25e8a329e8c3fb7 = $(`<div id="html_24d6a0fffe30ad0eb25e8a329e8c3fb7" style="width: 100.0%; height: 100.0%;"><b>Comissaria (14)</b><br>2023: 1.50%<br>2024: 1.33%<br>Δ proporción: -0.17%</div>`)[0];
+                popup_9edebe3b9b1f4d201febd27149bcaa20.setContent(html_24d6a0fffe30ad0eb25e8a329e8c3fb7);
+            
+        
+
+        circle_marker_6ffda507d7ec79b66e75cb1965a7b0f8.bindPopup(popup_9edebe3b9b1f4d201febd27149bcaa20)
+        ;
+
+        
+    
+    
+            var circle_marker_1f27cafc584a57b508312cd4a4153adc = L.circleMarker(
+                [38.26573, -0.71128],
+                {"bubblingMouseEvents": true, "color": "#ff4500ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff4500ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.1961426402972, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_6010b6a6bf7a4455bd77c168c1e7b647 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3a514432af5cf00020931a52d3e3292a = $(`<div id="html_3a514432af5cf00020931a52d3e3292a" style="width: 100.0%; height: 100.0%;"><b>Av. Llibertat / Reina Victòria (15)</b><br>2023: 2.08%<br>2024: 2.59%<br>Δ proporción: 0.50%</div>`)[0];
+                popup_6010b6a6bf7a4455bd77c168c1e7b647.setContent(html_3a514432af5cf00020931a52d3e3292a);
+            
+        
+
+        circle_marker_1f27cafc584a57b508312cd4a4153adc.bindPopup(popup_6010b6a6bf7a4455bd77c168c1e7b647)
+        ;
+
+        
+    
+    
+            var circle_marker_a391e23bbe6780cc3e29933483a0f044 = L.circleMarker(
+                [38.27609, -0.71529],
+                {"bubblingMouseEvents": true, "color": "#c7d5d9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c7d5d9ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.089748536191241, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_049fba07fa436d2534ee5e22a49dc591 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da6cae275b16f6c3545fd11517809b82 = $(`<div id="html_da6cae275b16f6c3545fd11517809b82" style="width: 100.0%; height: 100.0%;"><b>Jardí d’Asp (16)</b><br>2023: 1.60%<br>2024: 1.53%<br>Δ proporción: -0.06%</div>`)[0];
+                popup_049fba07fa436d2534ee5e22a49dc591.setContent(html_da6cae275b16f6c3545fd11517809b82);
+            
+        
+
+        circle_marker_a391e23bbe6780cc3e29933483a0f044.bindPopup(popup_049fba07fa436d2534ee5e22a49dc591)
+        ;
+
+        
+    
+    
+            var circle_marker_450171f39635b0beb92d33d1da55a3f5 = L.circleMarker(
+                [38.27662, -0.67801],
+                {"bubblingMouseEvents": true, "color": "#f5f533ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f5f533ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.034921662164104, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_cdcd8a0d8815448c743d74e1a00449fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9184461deb21ba4b424d644c7818fcb9 = $(`<div id="html_9184461deb21ba4b424d644c7818fcb9" style="width: 100.0%; height: 100.0%;"><b>Plaça de Castella (17)</b><br>2023: 3.28%<br>2024: 3.43%<br>Δ proporción: 0.15%</div>`)[0];
+                popup_cdcd8a0d8815448c743d74e1a00449fb.setContent(html_9184461deb21ba4b424d644c7818fcb9);
+            
+        
+
+        circle_marker_450171f39635b0beb92d33d1da55a3f5.bindPopup(popup_cdcd8a0d8815448c743d74e1a00449fb)
+        ;
+
+        
+    
+    
+            var circle_marker_1a9bc318feda006da8b00173e143cad4 = L.circleMarker(
+                [38.27832, -0.67195],
+                {"bubblingMouseEvents": true, "color": "#fcfc10ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fcfc10ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.140620600350516, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_40e50aa857121ede450d9b5b7817bd43 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2e9a33015a7ce392e8abfd49f57277e = $(`<div id="html_b2e9a33015a7ce392e8abfd49f57277e" style="width: 100.0%; height: 100.0%;"><b>Poliesportiu d’Altabix (18)</b><br>2023: 1.61%<br>2024: 1.79%<br>Δ proporción: 0.18%</div>`)[0];
+                popup_40e50aa857121ede450d9b5b7817bd43.setContent(html_b2e9a33015a7ce392e8abfd49f57277e);
+            
+        
+
+        circle_marker_1a9bc318feda006da8b00173e143cad4.bindPopup(popup_40e50aa857121ede450d9b5b7817bd43)
+        ;
+
+        
+    
+    
+            var circle_marker_213cfa45d6ba1a89340f15e77af1b788 = L.circleMarker(
+                [38.26674, -0.69328],
+                {"bubblingMouseEvents": true, "color": "#d1d4d5ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d1d4d5ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.445889036444419, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_d4a3aba32d4be0d45823f08c0e7ee55d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd273aa801e012cd769c37cf8fa6c4d7 = $(`<div id="html_dd273aa801e012cd769c37cf8fa6c4d7" style="width: 100.0%; height: 100.0%;"><b>Jesuïtines (19)</b><br>2023: 4.17%<br>2024: 4.16%<br>Δ proporción: -0.01%</div>`)[0];
+                popup_d4a3aba32d4be0d45823f08c0e7ee55d.setContent(html_dd273aa801e012cd769c37cf8fa6c4d7);
+            
+        
+
+        circle_marker_213cfa45d6ba1a89340f15e77af1b788.bindPopup(popup_d4a3aba32d4be0d45823f08c0e7ee55d)
+        ;
+
+        
+    
+    
+            var circle_marker_1aabff8566bca5c1b5335674e92fe6b9 = L.circleMarker(
+                [38.25835, -0.70852],
+                {"bubblingMouseEvents": true, "color": "#bdd6dfff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdd6dfff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.988408619899872, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_fa9da6dfe16419e5fa502175546e4aa5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88b721fa521990353dc8afc42b6e01ea = $(`<div id="html_88b721fa521990353dc8afc42b6e01ea" style="width: 100.0%; height: 100.0%;"><b>Antoni Mena / Fra Jaume Torres (20)</b><br>2023: 1.10%<br>2024: 0.98%<br>Δ proporción: -0.12%</div>`)[0];
+                popup_fa9da6dfe16419e5fa502175546e4aa5.setContent(html_88b721fa521990353dc8afc42b6e01ea);
+            
+        
+
+        circle_marker_1aabff8566bca5c1b5335674e92fe6b9.bindPopup(popup_fa9da6dfe16419e5fa502175546e4aa5)
+        ;
+
+        
+    
+    
+            var circle_marker_91788940ef7689f3e43d48923cf422f5 = L.circleMarker(
+                [38.25923, -0.7109],
+                {"bubblingMouseEvents": true, "color": "#00008bff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00008bff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25.0, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_f38b3a7810228887bb6b72b1bcc027b9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c3694d5b221f785830bcac16d13bd44 = $(`<div id="html_4c3694d5b221f785830bcac16d13bd44" style="width: 100.0%; height: 100.0%;"><b>C.P. Mariano Benlliure (21)</b><br>2023: 1.79%<br>2024: 1.21%<br>Δ proporción: -0.59%</div>`)[0];
+                popup_f38b3a7810228887bb6b72b1bcc027b9.setContent(html_4c3694d5b221f785830bcac16d13bd44);
+            
+        
+
+        circle_marker_91788940ef7689f3e43d48923cf422f5.bindPopup(popup_f38b3a7810228887bb6b72b1bcc027b9)
+        ;
+
+        
+    
+    
+            var circle_marker_3350f6c803292a195b77e0b877662576 = L.circleMarker(
+                [38.25399, -0.70548],
+                {"bubblingMouseEvents": true, "color": "#ffa500ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffa500ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.312330566277197, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_8d58b146e31a288c4b62792231477a1c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bcf838f6086fe61bad0ccb9fe9045e94 = $(`<div id="html_bcf838f6086fe61bad0ccb9fe9045e94" style="width: 100.0%; height: 100.0%;"><b>Av. Llauradors / Eslava (22)</b><br>2023: 1.13%<br>2024: 1.52%<br>Δ proporción: 0.39%</div>`)[0];
+                popup_8d58b146e31a288c4b62792231477a1c.setContent(html_bcf838f6086fe61bad0ccb9fe9045e94);
+            
+        
+
+        circle_marker_3350f6c803292a195b77e0b877662576.bindPopup(popup_8d58b146e31a288c4b62792231477a1c)
+        ;
+
+        
+    
+    
+            var circle_marker_04fd2b072dd880ad90780b13fe8902c2 = L.circleMarker(
+                [38.25734, -0.70461],
+                {"bubblingMouseEvents": true, "color": "#ced4d6ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ced4d6ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.918902237386663, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_84ed8e2d750585dfd5dab2031e2f870d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e34676591ba7ecdd7b7efaa154daf9ed = $(`<div id="html_e34676591ba7ecdd7b7efaa154daf9ed" style="width: 100.0%; height: 100.0%;"><b>Conrado del Campo / Trinquet (23)</b><br>2023: 1.59%<br>2024: 1.56%<br>Δ proporción: -0.03%</div>`)[0];
+                popup_84ed8e2d750585dfd5dab2031e2f870d.setContent(html_e34676591ba7ecdd7b7efaa154daf9ed);
+            
+        
+
+        circle_marker_04fd2b072dd880ad90780b13fe8902c2.bindPopup(popup_84ed8e2d750585dfd5dab2031e2f870d)
+        ;
+
+        
+    
+    
+            var circle_marker_74addfe89705621e8b65be8d528aa395 = L.circleMarker(
+                [38.27553, -0.66915],
+                {"bubblingMouseEvents": true, "color": "#bbd7e0ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bbd7e0ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.263837347079743, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_5333246eb1e7b4e17edb8d435000194f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_47487f3123240100f725498ae668ca50 = $(`<div id="html_47487f3123240100f725498ae668ca50" style="width: 100.0%; height: 100.0%;"><b>Policia Local (24)</b><br>2023: 0.75%<br>2024: 0.62%<br>Δ proporción: -0.13%</div>`)[0];
+                popup_5333246eb1e7b4e17edb8d435000194f.setContent(html_47487f3123240100f725498ae668ca50);
+            
+        
+
+        circle_marker_74addfe89705621e8b65be8d528aa395.bindPopup(popup_5333246eb1e7b4e17edb8d435000194f)
+        ;
+
+        
+    
+    
+            var circle_marker_3d2c1aab84c2432d547e477e60b0f535 = L.circleMarker(
+                [38.26718, -0.70259],
+                {"bubblingMouseEvents": true, "color": "#fbfb13ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fbfb13ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.04350375680884, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_0cc0cd2d2adeb8e79406f7d9567ea773 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab21e9dd553b49138f42b99543839922 = $(`<div id="html_ab21e9dd553b49138f42b99543839922" style="width: 100.0%; height: 100.0%;"><b>Cor de Jesús (25)</b><br>2023: 2.16%<br>2024: 2.34%<br>Δ proporción: 0.18%</div>`)[0];
+                popup_0cc0cd2d2adeb8e79406f7d9567ea773.setContent(html_ab21e9dd553b49138f42b99543839922);
+            
+        
+
+        circle_marker_3d2c1aab84c2432d547e477e60b0f535.bindPopup(popup_0cc0cd2d2adeb8e79406f7d9567ea773)
+        ;
+
+        
+    
+    
+            var circle_marker_0d7dc0fea581f49c5130dba99fa50d2e = L.circleMarker(
+                [38.27425, -0.69111],
+                {"bubblingMouseEvents": true, "color": "#d4d4cfff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d4d4cfff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.146123594541456, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_6a12f3a67ee62f8b5c622c06773169af = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ff5be8eb942f576cf180e9d20873a78f = $(`<div id="html_ff5be8eb942f576cf180e9d20873a78f" style="width: 100.0%; height: 100.0%;"><b>UMH / Escola Oficial d’Idiomes (26)</b><br>2023: 2.85%<br>2024: 2.86%<br>Δ proporción: 0.00%</div>`)[0];
+                popup_6a12f3a67ee62f8b5c622c06773169af.setContent(html_ff5be8eb942f576cf180e9d20873a78f);
+            
+        
+
+        circle_marker_0d7dc0fea581f49c5130dba99fa50d2e.bindPopup(popup_6a12f3a67ee62f8b5c622c06773169af)
+        ;
+
+        
+    
+    
+            var circle_marker_50d13af6380d8f25c3eea9b0a6befeba = L.circleMarker(
+                [38.27921, -0.68589],
+                {"bubblingMouseEvents": true, "color": "#dfdf9bff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dfdf9bff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.779104663316229, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_69c0bfb229888d32410c7da174590452 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0fc13bbc669e9f49769fedd30246e184 = $(`<div id="html_0fc13bbc669e9f49769fedd30246e184" style="width: 100.0%; height: 100.0%;"><b>UMH / Pavelló d’Esports (27)</b><br>2023: 1.45%<br>2024: 1.50%<br>Δ proporción: 0.05%</div>`)[0];
+                popup_69c0bfb229888d32410c7da174590452.setContent(html_0fc13bbc669e9f49769fedd30246e184);
+            
+        
+
+        circle_marker_50d13af6380d8f25c3eea9b0a6befeba.bindPopup(popup_69c0bfb229888d32410c7da174590452)
+        ;
+
+        
+    
+    
+            var circle_marker_8a6222626c63504bdb3cd7a749590f62 = L.circleMarker(
+                [38.262792, -0.703505],
+                {"bubblingMouseEvents": true, "color": "#c3d5dcff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c3d5dcff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.865458833364258, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_a40a4c94fbd9ad0a56b056d5edcf3a75 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8123fe19d9d0930bb0353cf741022ec1 = $(`<div id="html_8123fe19d9d0930bb0353cf741022ec1" style="width: 100.0%; height: 100.0%;"><b>Passeig de les Germanies (28)</b><br>2023: 2.71%<br>2024: 2.63%<br>Δ proporción: -0.08%</div>`)[0];
+                popup_a40a4c94fbd9ad0a56b056d5edcf3a75.setContent(html_8123fe19d9d0930bb0353cf741022ec1);
+            
+        
+
+        circle_marker_8a6222626c63504bdb3cd7a749590f62.bindPopup(popup_a40a4c94fbd9ad0a56b056d5edcf3a75)
+        ;
+
+        
+    
+    
+            var circle_marker_4ee8097c1ca8b47cd5b0d68e8d5f0c09 = L.circleMarker(
+                [38.275568, -0.703184],
+                {"bubblingMouseEvents": true, "color": "#ebeb62ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ebeb62ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.554589519694776, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_fda5788fcde9000f2f960fe94c59a5b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_643dfe76025abe882da2d254209a0a1b = $(`<div id="html_643dfe76025abe882da2d254209a0a1b" style="width: 100.0%; height: 100.0%;"><b>Casablanca (29)</b><br>2023: 0.37%<br>2024: 0.48%<br>Δ proporción: 0.10%</div>`)[0];
+                popup_fda5788fcde9000f2f960fe94c59a5b0.setContent(html_643dfe76025abe882da2d254209a0a1b);
+            
+        
+
+        circle_marker_4ee8097c1ca8b47cd5b0d68e8d5f0c09.bindPopup(popup_fda5788fcde9000f2f960fe94c59a5b0)
+        ;
+
+        
+    
+    
+            var circle_marker_113979c98a17bff9496279ad3f581928 = L.circleMarker(
+                [38.27052, -0.6702],
+                {"bubblingMouseEvents": true, "color": "#5166f4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5166f4ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.192003515198046, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_4be95d0e88a19a66f53dacefc308a3e1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b60e63382c80949ed5c7f2cec25ee59 = $(`<div id="html_4b60e63382c80949ed5c7f2cec25ee59" style="width: 100.0%; height: 100.0%;"><b>Squash (30)</b><br>2023: 1.67%<br>2024: 1.37%<br>Δ proporción: -0.30%</div>`)[0];
+                popup_4be95d0e88a19a66f53dacefc308a3e1.setContent(html_4b60e63382c80949ed5c7f2cec25ee59);
+            
+        
+
+        circle_marker_113979c98a17bff9496279ad3f581928.bindPopup(popup_4be95d0e88a19a66f53dacefc308a3e1)
+        ;
+
+        
+    
+    
+            var circle_marker_45045c1a9e4fe8eaa771f3f8be4aeda7 = L.circleMarker(
+                [38.26566, -0.67728],
+                {"bubblingMouseEvents": true, "color": "#eded58ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eded58ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.884781970819692, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_b25bcc5593b8d54613c0f185dc9a03df = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e98ea8260b1450d0b71a468d158deea7 = $(`<div id="html_e98ea8260b1450d0b71a468d158deea7" style="width: 100.0%; height: 100.0%;"><b>Sant Antoni (31)</b><br>2023: 1.31%<br>2024: 1.42%<br>Δ proporción: 0.11%</div>`)[0];
+                popup_b25bcc5593b8d54613c0f185dc9a03df.setContent(html_e98ea8260b1450d0b71a468d158deea7);
+            
+        
+
+        circle_marker_45045c1a9e4fe8eaa771f3f8be4aeda7.bindPopup(popup_b25bcc5593b8d54613c0f185dc9a03df)
+        ;
+
+        
+    
+    
+            var circle_marker_fcd86b37e9535cdd4a84912ea3deb35e = L.circleMarker(
+                [38.27272, -0.68108],
+                {"bubblingMouseEvents": true, "color": "#d0d4d5ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d0d4d5ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.507666600224528, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_33a8efed6166f3a1d3bb7e941d113ac6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0528b1b0636207f8455cd15d03fb6bf3 = $(`<div id="html_0528b1b0636207f8455cd15d03fb6bf3" style="width: 100.0%; height: 100.0%;"><b>Centre de Salut d’Altabix (32)</b><br>2023: 2.27%<br>2024: 2.26%<br>Δ proporción: -0.01%</div>`)[0];
+                popup_33a8efed6166f3a1d3bb7e941d113ac6.setContent(html_0528b1b0636207f8455cd15d03fb6bf3);
+            
+        
+
+        circle_marker_fcd86b37e9535cdd4a84912ea3deb35e.bindPopup(popup_33a8efed6166f3a1d3bb7e941d113ac6)
+        ;
+
+        
+    
+    
+            var circle_marker_fc0a4fb66a32b3e6ae5c19a759899ce8 = L.circleMarker(
+                [38.261175, -0.71614],
+                {"bubblingMouseEvents": true, "color": "#e2e28fff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e2e28fff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.15731776077656, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_3634a69744ea4a3850dbb339269584cd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ba3dec1e1cf627b64f5a44b4d3a416db = $(`<div id="html_ba3dec1e1cf627b64f5a44b4d3a416db" style="width: 100.0%; height: 100.0%;"><b>Av. Libertat / l’Aljub (33)</b><br>2023: 1.71%<br>2024: 1.77%<br>Δ proporción: 0.06%</div>`)[0];
+                popup_3634a69744ea4a3850dbb339269584cd.setContent(html_ba3dec1e1cf627b64f5a44b4d3a416db);
+            
+        
+
+        circle_marker_fc0a4fb66a32b3e6ae5c19a759899ce8.bindPopup(popup_3634a69744ea4a3850dbb339269584cd)
+        ;
+
+        
+    
+    
+            var circle_marker_a34f4a02b27ce8216bc9e1641ac1cab9 = L.circleMarker(
+                [38.25961, -0.68586],
+                {"bubblingMouseEvents": true, "color": "#bad7e0ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bad7e0ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.390462577456738, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_82e75a6fe0adfb659d2d10dc41eb2e9c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_234939276fe72bf3f1d048fbbfcd42b9 = $(`<div id="html_234939276fe72bf3f1d048fbbfcd42b9" style="width: 100.0%; height: 100.0%;"><b>Hospital General (34)</b><br>2023: 2.95%<br>2024: 2.83%<br>Δ proporción: -0.13%</div>`)[0];
+                popup_82e75a6fe0adfb659d2d10dc41eb2e9c.setContent(html_234939276fe72bf3f1d048fbbfcd42b9);
+            
+        
+
+        circle_marker_a34f4a02b27ce8216bc9e1641ac1cab9.bindPopup(popup_82e75a6fe0adfb659d2d10dc41eb2e9c)
+        ;
+
+        
+    
+    
+            var circle_marker_e0bb2b73b3a08e7c8dd84d17e553af36 = L.circleMarker(
+                [38.25515, -0.71483],
+                {"bubblingMouseEvents": true, "color": "#ecec5fff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ecec5fff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.666201647376454, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_245237caa29397010a58b9e48f6c9ba3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d51f26ac02e0994bfcb8d1ed5a864a27 = $(`<div id="html_d51f26ac02e0994bfcb8d1ed5a864a27" style="width: 100.0%; height: 100.0%;"><b>Hospital del Vinalopó (35)</b><br>2023: 0.50%<br>2024: 0.61%<br>Δ proporción: 0.11%</div>`)[0];
+                popup_245237caa29397010a58b9e48f6c9ba3.setContent(html_d51f26ac02e0994bfcb8d1ed5a864a27);
+            
+        
+
+        circle_marker_e0bb2b73b3a08e7c8dd84d17e553af36.bindPopup(popup_245237caa29397010a58b9e48f6c9ba3)
+        ;
+
+        
+    
+    
+            var circle_marker_9d366cc5946034d7038945faf6ce88f4 = L.circleMarker(
+                [38.268272, -0.677594],
+                {"bubblingMouseEvents": true, "color": "#b7d7e2ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b7d7e2ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.977801284399053, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_ba1fb4c0dc371fa2b4af4055dc4bbbe6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_47ee51f0d405b391830c6b1b4375d8f4 = $(`<div id="html_47ee51f0d405b391830c6b1b4375d8f4" style="width: 100.0%; height: 100.0%;"><b>I.E.S. Victoria Kent (36)</b><br>2023: 1.26%<br>2024: 1.12%<br>Δ proporción: -0.15%</div>`)[0];
+                popup_ba1fb4c0dc371fa2b4af4055dc4bbbe6.setContent(html_47ee51f0d405b391830c6b1b4375d8f4);
+            
+        
+
+        circle_marker_9d366cc5946034d7038945faf6ce88f4.bindPopup(popup_ba1fb4c0dc371fa2b4af4055dc4bbbe6)
+        ;
+
+        
+    
+    
+            var circle_marker_9242bf28248375d70a3f4df77637d652 = L.circleMarker(
+                [38.26345, -0.66528],
+                {"bubblingMouseEvents": true, "color": "#c5d5daff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c5d5daff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.4650906452097985, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_e77ee8fe853bc0db80e09b6f11631554 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f0b91e97bbbcb8419517850df0e8b0d = $(`<div id="html_0f0b91e97bbbcb8419517850df0e8b0d" style="width: 100.0%; height: 100.0%;"><b>Hort de Travaló (37)</b><br>2023: 0.54%<br>2024: 0.47%<br>Δ proporción: -0.07%</div>`)[0];
+                popup_e77ee8fe853bc0db80e09b6f11631554.setContent(html_0f0b91e97bbbcb8419517850df0e8b0d);
+            
+        
+
+        circle_marker_9242bf28248375d70a3f4df77637d652.bindPopup(popup_e77ee8fe853bc0db80e09b6f11631554)
+        ;
+
+        
+    
+    
+            var circle_marker_d76a0161e5dad2046b069c4c8117be2b = L.circleMarker(
+                [38.278264, -0.708628],
+                {"bubblingMouseEvents": true, "color": "#88aaecff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#88aaecff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.100016703189144, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_592e43b44b590f5fe244aa4d677c7da6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c6678e2a3d2e3a75c19ccf8b19c485f = $(`<div id="html_2c6678e2a3d2e3a75c19ccf8b19c485f" style="width: 100.0%; height: 100.0%;"><b>Poliesportiu de Carrús (38)</b><br>2023: 1.60%<br>2024: 1.37%<br>Δ proporción: -0.24%</div>`)[0];
+                popup_592e43b44b590f5fe244aa4d677c7da6.setContent(html_2c6678e2a3d2e3a75c19ccf8b19c485f);
+            
+        
+
+        circle_marker_d76a0161e5dad2046b069c4c8117be2b.bindPopup(popup_592e43b44b590f5fe244aa4d677c7da6)
+        ;
+
+        
+    
+    
+            var circle_marker_fd0dcdcf719d6ebbdf960ae9b66e6cfe = L.circleMarker(
+                [38.271382, -0.710028],
+                {"bubblingMouseEvents": true, "color": "#bbd6dfff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bbd6dfff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.184365036376128, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_770e76bbe8dcb77c18f15b58dfa752e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5ce32665c7ed09d1d873e778727c9ef = $(`<div id="html_c5ce32665c7ed09d1d873e778727c9ef" style="width: 100.0%; height: 100.0%;"><b>Francesc Cantó (39)</b><br>2023: 0.88%<br>2024: 0.76%<br>Δ proporción: -0.12%</div>`)[0];
+                popup_770e76bbe8dcb77c18f15b58dfa752e0.setContent(html_c5ce32665c7ed09d1d873e778727c9ef);
+            
+        
+
+        circle_marker_fd0dcdcf719d6ebbdf960ae9b66e6cfe.bindPopup(popup_770e76bbe8dcb77c18f15b58dfa752e0)
+        ;
+
+        
+    
+    
+            var circle_marker_b5671aef50357d042473ea5c6ed7ace7 = L.circleMarker(
+                [38.27091, -0.701044],
+                {"bubblingMouseEvents": true, "color": "#bed6deff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bed6deff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.805901928816183, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_2046499f8079eb2d19576ee0728387f6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_832b1c91777ec57ec4216c53854d67ea = $(`<div id="html_832b1c91777ec57ec4216c53854d67ea" style="width: 100.0%; height: 100.0%;"><b>C.P. Baix Vinalopó (40)</b><br>2023: 3.89%<br>2024: 3.78%<br>Δ proporción: -0.11%</div>`)[0];
+                popup_2046499f8079eb2d19576ee0728387f6.setContent(html_832b1c91777ec57ec4216c53854d67ea);
+            
+        
+
+        circle_marker_b5671aef50357d042473ea5c6ed7ace7.bindPopup(popup_2046499f8079eb2d19576ee0728387f6)
+        ;
+
+        
+    
+    
+            var circle_marker_bd3c2e35aee4952235a61399abe35c34 = L.circleMarker(
+                [38.281922, -0.712788],
+                {"bubblingMouseEvents": true, "color": "#c0d6ddff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c0d6ddff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.437239429226869, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_aa60f084d79a24c671c11043be270bd4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_decb931f6f7c542caae0c19e260377a0 = $(`<div id="html_decb931f6f7c542caae0c19e260377a0" style="width: 100.0%; height: 100.0%;"><b>Dipòsit Municipal de Carrús (41)</b><br>2023: 0.51%<br>2024: 0.41%<br>Δ proporción: -0.10%</div>`)[0];
+                popup_aa60f084d79a24c671c11043be270bd4.setContent(html_decb931f6f7c542caae0c19e260377a0);
+            
+        
+
+        circle_marker_bd3c2e35aee4952235a61399abe35c34.bindPopup(popup_aa60f084d79a24c671c11043be270bd4)
+        ;
+
+        
+    
+    
+            var circle_marker_3fed2e0c3300756fe72cedfa98bed09f = L.circleMarker(
+                [38.262263, -0.669923],
+                {"bubblingMouseEvents": true, "color": "#d1d4d4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d1d4d4ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.383276161731646, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_83489734010a4c63ab2d14a2af73eec1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ce82faf0e585e00f53f2dfc94270e3a = $(`<div id="html_7ce82faf0e585e00f53f2dfc94270e3a" style="width: 100.0%; height: 100.0%;"><b>Multi Aventura Travaló (42)</b><br>2023: 0.28%<br>2024: 0.26%<br>Δ proporción: -0.01%</div>`)[0];
+                popup_83489734010a4c63ab2d14a2af73eec1.setContent(html_7ce82faf0e585e00f53f2dfc94270e3a);
+            
+        
+
+        circle_marker_3fed2e0c3300756fe72cedfa98bed09f.bindPopup(popup_83489734010a4c63ab2d14a2af73eec1)
+        ;
+
+        
+    
+    
+            var circle_marker_172f56167959cc85dfa33a585dd659f9 = L.circleMarker(
+                [38.261994, -0.683099],
+                {"bubblingMouseEvents": true, "color": "#d5d5cdff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d5d5cdff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.2035267768238995, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_ed420733d03bc481198c4f6cfa6a0e07 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_231a8ac51c42605a1655fc8223ad8ec9 = $(`<div id="html_231a8ac51c42605a1655fc8223ad8ec9" style="width: 100.0%; height: 100.0%;"><b>Palmerars – Ciutat de la Justícia (43)</b><br>2023: 0.39%<br>2024: 0.40%<br>Δ proporción: 0.01%</div>`)[0];
+                popup_ed420733d03bc481198c4f6cfa6a0e07.setContent(html_231a8ac51c42605a1655fc8223ad8ec9);
+            
+        
+
+        circle_marker_172f56167959cc85dfa33a585dd659f9.bindPopup(popup_ed420733d03bc481198c4f6cfa6a0e07)
+        ;
+
+        
+    
+    
+            var circle_marker_4b697dbd3dd60d48243b25bc6f228156 = L.circleMarker(
+                [38.2571333, -0.696961],
+                {"bubblingMouseEvents": true, "color": "#ffed00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffed00ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.048028765415289, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_3f78e90338aed257671724e5b7927d02 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e54770cb8f000a96fc8d286cd8bac763 = $(`<div id="html_e54770cb8f000a96fc8d286cd8bac763" style="width: 100.0%; height: 100.0%;"><b>Portes Encarnades (44)</b><br>2023: 1.78%<br>2024: 2.02%<br>Δ proporción: 0.24%</div>`)[0];
+                popup_3f78e90338aed257671724e5b7927d02.setContent(html_e54770cb8f000a96fc8d286cd8bac763);
+            
+        
+
+        circle_marker_4b697dbd3dd60d48243b25bc6f228156.bindPopup(popup_3f78e90338aed257671724e5b7927d02)
+        ;
+
+        
+    
+    
+            var circle_marker_ab16e3eb742b9677e23de1c9a8668767 = L.circleMarker(
+                [38.271869, -0.70703],
+                {"bubblingMouseEvents": true, "color": "#ffcd00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcd00ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.35614805887417, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_89ffb781e8cb445bb41f7ab982dd7dee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a1bc3b6d26f071083bc8ca560e9778f2 = $(`<div id="html_a1bc3b6d26f071083bc8ca560e9778f2" style="width: 100.0%; height: 100.0%;"><b>Plaça de Barcelona (45)</b><br>2023: 0.98%<br>2024: 1.29%<br>Δ proporción: 0.30%</div>`)[0];
+                popup_89ffb781e8cb445bb41f7ab982dd7dee.setContent(html_a1bc3b6d26f071083bc8ca560e9778f2);
+            
+        
+
+        circle_marker_ab16e3eb742b9677e23de1c9a8668767.bindPopup(popup_89ffb781e8cb445bb41f7ab982dd7dee)
+        ;
+
+        
+    
+    
+            var circle_marker_3093442abb34146b86de1913f977968b = L.circleMarker(
+                [38.274244, -0.6846805],
+                {"bubblingMouseEvents": true, "color": "#f7f727ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f7f727ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.415549655724504, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_e6c762486fe932ae1d8181edb037321e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_04787eeef8625cb17b90306053415164 = $(`<div id="html_04787eeef8625cb17b90306053415164" style="width: 100.0%; height: 100.0%;"><b>UMH / Rectorado (46)</b><br>2023: 1.71%<br>2024: 1.87%<br>Δ proporción: 0.16%</div>`)[0];
+                popup_e6c762486fe932ae1d8181edb037321e.setContent(html_04787eeef8625cb17b90306053415164);
+            
+        
+
+        circle_marker_3093442abb34146b86de1913f977968b.bindPopup(popup_e6c762486fe932ae1d8181edb037321e)
+        ;
+
+        
+    
+    
+            var circle_marker_62ee748fbd177468aef10b35034b81d6 = L.circleMarker(
+                [38.26464, -0.708004],
+                {"bubblingMouseEvents": true, "color": "#eeee55ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eeee55ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.977761188868385, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_abdbed1f704bf7474c13801b641ef37e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_35e4072786c0ccbfe733871ceb1daa84 = $(`<div id="html_35e4072786c0ccbfe733871ceb1daa84" style="width: 100.0%; height: 100.0%;"><b>C.P. Virgen de la Asunción (47)</b><br>2023: 1.25%<br>2024: 1.37%<br>Δ proporción: 0.12%</div>`)[0];
+                popup_abdbed1f704bf7474c13801b641ef37e.setContent(html_35e4072786c0ccbfe733871ceb1daa84);
+            
+        
+
+        circle_marker_62ee748fbd177468aef10b35034b81d6.bindPopup(popup_abdbed1f704bf7474c13801b641ef37e)
+        ;
+
+        
+    
+    
+            var circle_marker_723a40e689e65e34fd3dcae9f3f5fb9a = L.circleMarker(
+                [38.271531, -0.7175],
+                {"bubblingMouseEvents": true, "color": "#d8d8bfff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d8d8bfff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.636982184663532, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_c22378f219193943f9b986c6891e9452 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f3d886341a86425d9855f37e5235c52e = $(`<div id="html_f3d886341a86425d9855f37e5235c52e" style="width: 100.0%; height: 100.0%;"><b>Av. Corts Valencianes (48)</b><br>2023: 0.43%<br>2024: 0.44%<br>Δ proporción: 0.02%</div>`)[0];
+                popup_c22378f219193943f9b986c6891e9452.setContent(html_f3d886341a86425d9855f37e5235c52e);
+            
+        
+
+        circle_marker_723a40e689e65e34fd3dcae9f3f5fb9a.bindPopup(popup_c22378f219193943f9b986c6891e9452)
+        ;
+
+        
+    
+    
+            var circle_marker_a47b8ad93ee889819a03170b1cb549f3 = L.circleMarker(
+                [38.26978, -0.681872],
+                {"bubblingMouseEvents": true, "color": "#b6d7e2ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b6d7e2ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.104569128837726, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_d36fc4441b241c53435105b8422cf488 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_340c3bc1f122998484796209e56ea7f9 = $(`<div id="html_340c3bc1f122998484796209e56ea7f9" style="width: 100.0%; height: 100.0%;"><b>Av. Alicante 59 (49)</b><br>2023: 2.02%<br>2024: 1.87%<br>Δ proporción: -0.15%</div>`)[0];
+                popup_d36fc4441b241c53435105b8422cf488.setContent(html_340c3bc1f122998484796209e56ea7f9);
+            
+        
+
+        circle_marker_a47b8ad93ee889819a03170b1cb549f3.bindPopup(popup_d36fc4441b241c53435105b8422cf488)
+        ;
+
+        
+    
+    
+            var circle_marker_1edf95fb82c0c5b490478c4a57f0cd92 = L.circleMarker(
+                [38.261464, -0.696053],
+                {"bubblingMouseEvents": true, "color": "#bed6deff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bed6deff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.67903191423986, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_398275b99ad46f28a5ad64428fd82f4a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7841e3476a35c1b5b293383897fb6733 = $(`<div id="html_7841e3476a35c1b5b293383897fb6733" style="width: 100.0%; height: 100.0%;"><b>Borreguet (50)</b><br>2023: 1.84%<br>2024: 1.73%<br>Δ proporción: -0.11%</div>`)[0];
+                popup_398275b99ad46f28a5ad64428fd82f4a.setContent(html_7841e3476a35c1b5b293383897fb6733);
+            
+        
+
+        circle_marker_1edf95fb82c0c5b490478c4a57f0cd92.bindPopup(popup_398275b99ad46f28a5ad64428fd82f4a)
+        ;
+
+        
+    
+    
+            var circle_marker_b5bd7fbb831d44fb30661149536a4f79 = L.circleMarker(
+                [38.271514, -0.675147],
+                {"bubblingMouseEvents": true, "color": "#f5f532ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f5f532ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.07256616985724, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_d8f2478d1142cb868e877811c31a1cae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d5daa5d13c34ae849f227ac68c301be = $(`<div id="html_2d5daa5d13c34ae849f227ac68c301be" style="width: 100.0%; height: 100.0%;"><b>Ciudad deportiva zona sur (51)</b><br>2023: 0.92%<br>2024: 1.06%<br>Δ proporción: 0.15%</div>`)[0];
+                popup_d8f2478d1142cb868e877811c31a1cae.setContent(html_2d5daa5d13c34ae849f227ac68c301be);
+            
+        
+
+        circle_marker_b5bd7fbb831d44fb30661149536a4f79.bindPopup(popup_d8f2478d1142cb868e877811c31a1cae)
+        ;
+
+        
+    
+    
+            var circle_marker_1d2b6c9acabf7a72f002631067d7769b = L.circleMarker(
+                [38.269141, -0.717211],
+                {"bubblingMouseEvents": true, "color": "#e8e872ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e8e872ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.072475526995309, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_7da866eb37ed005471649de94c516c5a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e0ce64e13a47dde4b67df0a4bf71199c = $(`<div id="html_e0ce64e13a47dde4b67df0a4bf71199c" style="width: 100.0%; height: 100.0%;"><b>Centro salud el Toscar (52)</b><br>2023: 0.74%<br>2024: 0.83%<br>Δ proporción: 0.09%</div>`)[0];
+                popup_7da866eb37ed005471649de94c516c5a.setContent(html_e0ce64e13a47dde4b67df0a4bf71199c);
+            
+        
+
+        circle_marker_1d2b6c9acabf7a72f002631067d7769b.bindPopup(popup_7da866eb37ed005471649de94c516c5a)
+        ;
+
+        
+    
+    
+            var circle_marker_7ba96c230009d5fd5ffa172c4d6c2ede = L.circleMarker(
+                [38.272525, -0.685417],
+                {"bubblingMouseEvents": true, "color": "#ffcb00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcb00ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.550839580265984, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_9b7b941f1a125516f3feaf1dc70ea2e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_acd4aa81a65fe9ca3a8588753b23d239 = $(`<div id="html_acd4aa81a65fe9ca3a8588753b23d239" style="width: 100.0%; height: 100.0%;"><b>C.P. Victor Pradera (53)</b><br>2023: 1.77%<br>2024: 2.08%<br>Δ proporción: 0.31%</div>`)[0];
+                popup_9b7b941f1a125516f3feaf1dc70ea2e4.setContent(html_acd4aa81a65fe9ca3a8588753b23d239);
+            
+        
+
+        circle_marker_7ba96c230009d5fd5ffa172c4d6c2ede.bindPopup(popup_9b7b941f1a125516f3feaf1dc70ea2e4)
+        ;
+
+        
+    
+    
+            var circle_marker_10766a3e346694741f04ba47fd377da1 = L.circleMarker(
+                [38.268475, -0.686954],
+                {"bubblingMouseEvents": true, "color": "#0405ffff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0405ffff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.157175404223008, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_faf83ac7a6fda8aa1085cb033b50b991 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d058f2f50594e95e70f8d2f830d06f8d = $(`<div id="html_d058f2f50594e95e70f8d2f830d06f8d" style="width: 100.0%; height: 100.0%;"><b>Plaza de Benidorm (54)</b><br>2023: 3.43%<br>2024: 3.04%<br>Δ proporción: -0.39%</div>`)[0];
+                popup_faf83ac7a6fda8aa1085cb033b50b991.setContent(html_d058f2f50594e95e70f8d2f830d06f8d);
+            
+        
+
+        circle_marker_10766a3e346694741f04ba47fd377da1.bindPopup(popup_faf83ac7a6fda8aa1085cb033b50b991)
+        ;
+
+        
+    
+    
+            var circle_marker_e1cb53c8aeab8fadaeeac6b2c0a4e398 = L.circleMarker(
+                [38.2590083, -0.706969],
+                {"bubblingMouseEvents": true, "color": "#ffe000ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe000ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.977672575776426, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_a1fc08642f4a46efe5a1fc9d018db3f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87bb9d261a755a5526c83f350a6fcd19 = $(`<div id="html_87bb9d261a755a5526c83f350a6fcd19" style="width: 100.0%; height: 100.0%;"><b>Pere Joan Perpinyà (55)</b><br>2023: 1.24%<br>2024: 1.51%<br>Δ proporción: 0.26%</div>`)[0];
+                popup_a1fc08642f4a46efe5a1fc9d018db3f3.setContent(html_87bb9d261a755a5526c83f350a6fcd19);
+            
+        
+
+        circle_marker_e1cb53c8aeab8fadaeeac6b2c0a4e398.bindPopup(popup_a1fc08642f4a46efe5a1fc9d018db3f3)
+        ;
+
+        
+    
+    
+            var circle_marker_5ad81dfbeb11c2900da9698bed75e79e = L.circleMarker(
+                [38.2774498, -0.691602],
+                {"bubblingMouseEvents": true, "color": "#ffec00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffec00ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.1021083508478, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_20c416434bd56af4b9591592883653b9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_37d6d4b991eeb57f4925f567630d12a7 = $(`<div id="html_37d6d4b991eeb57f4925f567630d12a7" style="width: 100.0%; height: 100.0%;"><b>UMH / Torre Vaillo (56)</b><br>2023: 0.82%<br>2024: 1.06%<br>Δ proporción: 0.24%</div>`)[0];
+                popup_20c416434bd56af4b9591592883653b9.setContent(html_37d6d4b991eeb57f4925f567630d12a7);
+            
+        
+
+        circle_marker_5ad81dfbeb11c2900da9698bed75e79e.bindPopup(popup_20c416434bd56af4b9591592883653b9)
+        ;
+
+        
+    
+    
+            var circle_marker_9a70de70f88e37d7c9b1e56f93b04d09 = L.circleMarker(
+                [38.29422, -0.587922],
+                {"bubblingMouseEvents": true, "color": "#d3d3d3ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3d3d3ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.016563225903113, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_824c27cf0db32fe95c2142b02e89181e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3310227dbb29395a9baf9c4358dd278e = $(`<div id="html_3310227dbb29395a9baf9c4358dd278e" style="width: 100.0%; height: 100.0%;"><b>Calle San Crispín 1 Torrellano (59)</b><br>2023: 0.00%<br>2024: 0.00%<br>Δ proporción: 0.00%</div>`)[0];
+                popup_824c27cf0db32fe95c2142b02e89181e.setContent(html_3310227dbb29395a9baf9c4358dd278e);
+            
+        
+
+        circle_marker_9a70de70f88e37d7c9b1e56f93b04d09.bindPopup(popup_824c27cf0db32fe95c2142b02e89181e)
+        ;
+
+        
+    
+    
+            var circle_marker_9832d125707e51ef863b299b7efe43b4 = L.circleMarker(
+                [38.29203, -0.592297],
+                {"bubblingMouseEvents": true, "color": "#d4d4d1ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d4d4d1ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.082816129515562, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_83d42413c28b60f8ea977acf92f3b774 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a20d9d80223538e98cd1ce5d095a4fbd = $(`<div id="html_a20d9d80223538e98cd1ce5d095a4fbd" style="width: 100.0%; height: 100.0%;"><b>Carrer de la Figuera 2 Torrellano (60)</b><br>2023: 0.00%<br>2024: 0.00%<br>Δ proporción: 0.00%</div>`)[0];
+                popup_83d42413c28b60f8ea977acf92f3b774.setContent(html_a20d9d80223538e98cd1ce5d095a4fbd);
+            
+        
+
+        circle_marker_9832d125707e51ef863b299b7efe43b4.bindPopup(popup_83d42413c28b60f8ea977acf92f3b774)
+        ;
+
+        
+    
+    
+            var circle_marker_7ec394c541ca61983eeedaeeb746f798 = L.circleMarker(
+                [38.26886, -0.693874],
+                {"bubblingMouseEvents": true, "color": "#d4d4ceff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d4d4ceff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.165632259031124, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_dae4db2eb0842c2d8ef1d3e181ce0837 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dc7bab280c7f57b7e97910fd8a79532c = $(`<div id="html_dc7bab280c7f57b7e97910fd8a79532c" style="width: 100.0%; height: 100.0%;"><b>Parque Rey Jaume I (93)</b><br>2023: 0.00%<br>2024: 0.00%<br>Δ proporción: 0.00%</div>`)[0];
+                popup_dae4db2eb0842c2d8ef1d3e181ce0837.setContent(html_dc7bab280c7f57b7e97910fd8a79532c);
+            
+        
+
+        circle_marker_7ec394c541ca61983eeedaeeb746f798.bindPopup(popup_dae4db2eb0842c2d8ef1d3e181ce0837)
+        ;
+
+        
+    
+    
+            var circle_marker_8adc32556c34a05ee1092c3cc1c7df20 = L.circleMarker(
+                [38.264977, -0.696934],
+                {"bubblingMouseEvents": true, "color": "#d4d4d0ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d4d4d0ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.099379355418675, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_933445fd73abb993ebe92164873618ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ccbe7e2682581b7e49d145c811db8e8 = $(`<div id="html_8ccbe7e2682581b7e49d145c811db8e8" style="width: 100.0%; height: 100.0%;"><b>Parking Gran Teatre (94)</b><br>2023: 0.00%<br>2024: 0.00%<br>Δ proporción: 0.00%</div>`)[0];
+                popup_933445fd73abb993ebe92164873618ea.setContent(html_8ccbe7e2682581b7e49d145c811db8e8);
+            
+        
+
+        circle_marker_8adc32556c34a05ee1092c3cc1c7df20.bindPopup(popup_933445fd73abb993ebe92164873618ea)
+        ;
+
+        
+    
+    
+            var circle_marker_2b7dca2ea586f6a64addcfa17fd74cf4 = L.circleMarker(
+                [38.26697, -0.68268],
+                {"bubblingMouseEvents": true, "color": "#d3d3d3ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d3d3d3ff", "fillOpacity": 0.75, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.016563225903113, "stroke": true, "weight": 3}
+            ).addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+        
+    
+        var popup_1af6e2f242a97dc8da118a97fc0a7c7b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_149789740dcfd7f45967aeef10cd207d = $(`<div id="html_149789740dcfd7f45967aeef10cd207d" style="width: 100.0%; height: 100.0%;"><b>CEIP San Fernando (112)</b><br>2023: 0.00%<br>2024: 0.00%<br>Δ proporción: 0.00%</div>`)[0];
+                popup_1af6e2f242a97dc8da118a97fc0a7c7b.setContent(html_149789740dcfd7f45967aeef10cd207d);
+            
+        
+
+        circle_marker_2b7dca2ea586f6a64addcfa17fd74cf4.bindPopup(popup_1af6e2f242a97dc8da118a97fc0a7c7b)
+        ;
+
+        
+    
+    
+    var color_map_6f1119364bfeb4dc258c041dc7cbb810 = {};
+
+    
+    color_map_6f1119364bfeb4dc258c041dc7cbb810.color = d3.scale.threshold()
+              .domain([0.0, 1.1765872421356986e-05, 2.353174484271397e-05, 3.5297617264070957e-05, 4.706348968542794e-05, 5.882936210678493e-05, 7.059523452814191e-05, 8.236110694949889e-05, 9.412697937085588e-05, 0.00010589285179221288, 0.00011765872421356986, 0.00012942459663492685, 0.00014119046905628383, 0.00015295634147764083, 0.00016472221389899778, 0.0001764880863203548, 0.00018825395874171177, 0.00020001983116306877, 0.00021178570358442575, 0.00022355157600578273, 0.0002353174484271397, 0.0002470833208484967, 0.0002588491932698537, 0.0002706150656912107, 0.00028238093811256765, 0.0002941468105339246, 0.00030591268295528166, 0.0003176785553766386, 0.00032944442779799557, 0.00034121030021935263, 0.0003529761726407096, 0.0003647420450620666, 0.00037650791748342354, 0.00038827378990478054, 0.00040003966232613755, 0.0004118055347474945, 0.0004235714071688515, 0.0004353372795902085, 0.00044710315201156546, 0.00045886902443292247, 0.0004706348968542794, 0.0004824007692756364, 0.0004941666416969934, 0.0005059325141183504, 0.0005176983865397074, 0.0005294642589610643, 0.0005412301313824214, 0.0005529960038037784, 0.0005647618762251353, 0.0005765277486464923, 0.0005882936210678492, 0.0006000594934892063, 0.0006118253659105633, 0.0006235912383319202, 0.0006353571107532772, 0.0006471229831746342, 0.0006588888555959911, 0.0006706547280173482, 0.0006824206004387053, 0.0006941864728600622, 0.0007059523452814192, 0.0007177182177027761, 0.0007294840901241332, 0.0007412499625454902, 0.0007530158349668471, 0.0007647817073882041, 0.0007765475798095611, 0.0007883134522309181, 0.0008000793246522751, 0.000811845197073632, 0.000823611069494989, 0.000835376941916346, 0.000847142814337703, 0.00085890868675906, 0.000870674559180417, 0.0008824404316017739, 0.0008942063040231309, 0.0009059721764444879, 0.0009177380488658449, 0.0009295039212872019, 0.0009412697937085588, 0.0009530356661299158, 0.0009648015385512729, 0.0009765674109726299, 0.0009883332833939868, 0.0010000991558153439, 0.0010118650282367008, 0.0010236309006580577, 0.0010353967730794148, 0.0010471626455007717, 0.0010589285179221286, 0.001070694390343486, 0.0010824602627648428, 0.0010942261351861997, 0.0011059920076075568, 0.0011177578800289137, 0.0011295237524502706, 0.0011412896248716277, 0.0011530554972929846, 0.0011648213697143415, 0.0011765872421356984, 0.0011883531145570555, 0.0012001189869784126, 0.0012118848593997695, 0.0012236507318211267, 0.0012354166042424836, 0.0012471824766638405, 0.0012589483490851976, 0.0012707142215065545, 0.0012824800939279114, 0.0012942459663492685, 0.0013060118387706254, 0.0013177777111919823, 0.0013295435836133396, 0.0013413094560346965, 0.0013530753284560534, 0.0013648412008774105, 0.0013766070732987674, 0.0013883729457201243, 0.0014001388181414812, 0.0014119046905628383, 0.0014236705629841952, 0.0014354364354055521, 0.0014472023078269094, 0.0014589681802482663, 0.0014707340526696232, 0.0014824999250909804, 0.0014942657975123372, 0.0015060316699336941, 0.0015177975423550513, 0.0015295634147764082, 0.001541329287197765, 0.0015530951596191222, 0.001564861032040479, 0.0015766269044618362, 0.0015883927768831933, 0.0016001586493045502, 0.001611924521725907, 0.001623690394147264, 0.001635456266568621, 0.001647222138989978, 0.001658988011411335, 0.001670753883832692, 0.001682519756254049, 0.001694285628675406, 0.0017060515010967631, 0.00171781737351812, 0.001729583245939477, 0.001741349118360834, 0.001753114990782191, 0.0017648808632035478, 0.001776646735624905, 0.0017884126080462619, 0.0018001784804676188, 0.0018119443528889759, 0.001823710225310333, 0.0018354760977316899, 0.0018472419701530468, 0.0018590078425744039, 0.0018707737149957608, 0.0018825395874171177, 0.0018943054598384748, 0.0019060713322598317, 0.0019178372046811886, 0.0019296030771025457, 0.0019413689495239026, 0.0019531348219452597, 0.0019649006943666166, 0.0019766665667879735, 0.001988432439209331, 0.0020001983116306877, 0.0020119641840520446, 0.0020237300564734015, 0.002035495928894759, 0.0020472618013161153, 0.0020590276737374727, 0.0020707935461588296, 0.0020825594185801865, 0.0020943252910015434, 0.0021060911634229007, 0.002117857035844257, 0.0021296229082656145, 0.002141388780686972, 0.0021531546531083283, 0.0021649205255296856, 0.0021766863979510425, 0.0021884522703723994, 0.0022002181427937563, 0.0022119840152151136, 0.00222374988763647, 0.0022355157600578274, 0.0022472816324791843, 0.0022590475049005412, 0.0022708133773218986, 0.0022825792497432554, 0.0022943451221646123, 0.0023061109945859692, 0.0023178768670073266, 0.002329642739428683, 0.0023414086118500404, 0.002353174484271397, 0.002364940356692754, 0.002376706229114111, 0.002388472101535468, 0.0024002379739568253, 0.002412003846378182, 0.002423769718799539, 0.002435535591220896, 0.0024473014636422533, 0.0024590673360636098, 0.002470833208484967, 0.002482599080906324, 0.002494364953327681, 0.002506130825749038, 0.002517896698170395, 0.002529662570591752, 0.002541428443013109, 0.0025531943154344663, 0.0025649601878558227, 0.00257672606027718, 0.002588491932698537, 0.002600257805119894, 0.0026120236775412507, 0.002623789549962608, 0.0026355554223839645, 0.002647321294805322, 0.002659087167226679, 0.0026708530396480357, 0.002682618912069393, 0.00269438478449075, 0.002706150656912107, 0.0027179165293334637, 0.002729682401754821, 0.0027414482741761775, 0.002753214146597535, 0.002764980019018892, 0.0027767458914402486, 0.002788511763861606, 0.0028002776362829624, 0.0028120435087043197, 0.0028238093811256766, 0.0028355752535470335, 0.0028473411259683904, 0.0028591069983897478, 0.0028708728708111042, 0.0028826387432324616, 0.002894404615653819, 0.0029061704880751753, 0.0029179363604965327, 0.0029297022329178896, 0.0029414681053392465, 0.0029532339777606034, 0.0029649998501819607, 0.002976765722603317, 0.0029885315950246745, 0.0030002974674460314, 0.0030120633398673883, 0.0030238292122887456, 0.0030355950847101025, 0.0030473609571314594, 0.0030591268295528163, 0.0030708927019741736, 0.00308265857439553, 0.0030944244468168874, 0.0031061903192382443, 0.0031179561916596012, 0.003129722064080958, 0.0031414879365023155, 0.0031532538089236724, 0.0031650196813450293, 0.0031767855537663866, 0.003188551426187743, 0.0032003172986091004, 0.003212083171030457, 0.003223849043451814, 0.003235614915873171, 0.003247380788294528, 0.003259146660715885, 0.003270912533137242, 0.003282678405558599, 0.003294444277979956, 0.0033062101504013133, 0.00331797602282267, 0.003329741895244027, 0.003341507767665384, 0.003353273640086741, 0.003365039512508098, 0.003376805384929455, 0.003388571257350812, 0.003400337129772169, 0.0034121030021935263, 0.0034238688746148827, 0.00343563474703624, 0.003447400619457597, 0.003459166491878954, 0.0034709323643003108, 0.003482698236721668, 0.0034944641091430246, 0.003506229981564382, 0.0035179958539857392, 0.0035297617264070957, 0.003541527598828453, 0.00355329347124981, 0.003565059343671167, 0.0035768252160925237, 0.003588591088513881, 0.0036003569609352375, 0.003612122833356595, 0.0036238887057779517, 0.0036356545781993086, 0.003647420450620666, 0.0036591863230420224, 0.0036709521954633798, 0.0036827180678847366, 0.0036944839403060935, 0.0037062498127274504, 0.0037180156851488078, 0.0037297815575701642, 0.0037415474299915216, 0.0037533133024128785, 0.0037650791748342354, 0.0037768450472555927, 0.0037886109196769496, 0.0038003767920983065, 0.0038121426645196634, 0.0038239085369410207, 0.003835674409362377, 0.0038474402817837345, 0.0038592061542050914, 0.0038709720266264483, 0.003882737899047805, 0.0038945037714691625, 0.0039062696438905194, 0.003918035516311876, 0.003929801388733233, 0.00394156726115459, 0.003953333133575947, 0.003965099005997304, 0.003976864878418662, 0.003988630750840018, 0.0040003966232613755, 0.004012162495682732, 0.004023928368104089, 0.004035694240525446, 0.004047460112946803, 0.00405922598536816, 0.004070991857789518, 0.004082757730210874, 0.004094523602632231, 0.004106289475053588, 0.004118055347474945, 0.004129821219896301, 0.004141587092317659, 0.004153352964739016, 0.004165118837160373, 0.004176884709581731, 0.004188650582003087, 0.004200416454424444, 0.004212182326845801, 0.004223948199267158, 0.004235714071688514, 0.004247479944109872, 0.004259245816531229, 0.004271011688952586, 0.004282777561373944, 0.0042945434337953, 0.0043063093062166566, 0.004318075178638014, 0.004329841051059371, 0.004341606923480727, 0.004353372795902085, 0.004365138668323442, 0.004376904540744799, 0.004388670413166156, 0.004400436285587513, 0.0044122021580088695, 0.004423968030430227, 0.004435733902851584, 0.00444749977527294, 0.004459265647694298, 0.004471031520115655, 0.004482797392537012, 0.004494563264958369, 0.0045063291373797255, 0.0045180950098010824, 0.00452986088222244, 0.004541626754643797, 0.004553392627065153, 0.004565158499486511, 0.004576924371907868, 0.004588690244329225, 0.004600456116750582, 0.0046122219891719385, 0.004623987861593295, 0.004635753734014653, 0.00464751960643601, 0.004659285478857366, 0.004671051351278724, 0.004682817223700081, 0.004694583096121438, 0.004706348968542794, 0.004718114840964151, 0.004729880713385508, 0.004741646585806866, 0.004753412458228222, 0.004765178330649579, 0.004776944203070936, 0.004788710075492294, 0.004800475947913651, 0.004812241820335007, 0.004824007692756364, 0.004835773565177721, 0.004847539437599078, 0.004859305310020435, 0.004871071182441792, 0.004882837054863149, 0.004894602927284507, 0.0049063687997058635, 0.0049181346721272196, 0.004929900544548577, 0.004941666416969934, 0.004953432289391291, 0.004965198161812648, 0.004976964034234005, 0.004988729906655362, 0.00500049577907672, 0.005012261651498076, 0.0050240275239194325, 0.00503579339634079, 0.005047559268762147, 0.005059325141183504, 0.005071091013604861, 0.005082856886026218, 0.005094622758447575, 0.0051063886308689325, 0.0051181545032902885, 0.0051299203757116454, 0.005141686248133003, 0.00515345212055436, 0.005165217992975717, 0.005176983865397074, 0.005188749737818431, 0.005200515610239788, 0.0052122814826611455, 0.0052240473550825015, 0.005235813227503858, 0.005247579099925216, 0.005259344972346573, 0.005271110844767929, 0.005282876717189287, 0.005294642589610644, 0.005306408462032001, 0.005318174334453358, 0.005329940206874714, 0.005341706079296071, 0.005353471951717429, 0.005365237824138786, 0.005377003696560142, 0.0053887695689815, 0.005400535441402857, 0.005412301313824214, 0.005424067186245571, 0.005435833058666927, 0.005447598931088284, 0.005459364803509642, 0.005471130675930999, 0.005482896548352355, 0.005494662420773713, 0.00550642829319507, 0.0055181941656164265, 0.005529960038037784, 0.00554172591045914, 0.005553491782880497, 0.005565257655301855, 0.005577023527723212, 0.005588789400144568, 0.005600555272565925, 0.005612321144987283, 0.0056240870174086395, 0.0056358528898299955, 0.005647618762251353, 0.00565938463467271, 0.005671150507094067, 0.005682916379515425, 0.005694682251936781, 0.005706448124358138, 0.0057182139967794955, 0.005729979869200852, 0.0057417457416222084, 0.005753511614043566, 0.005765277486464923, 0.00577704335888628, 0.005788809231307638, 0.005800575103728994, 0.005812340976150351, 0.0058241068485717085, 0.005835872720993065, 0.005847638593414421, 0.005859404465835779, 0.005871170338257136])
+              .range(['#d3d3d3ff', '#d4d4d2ff', '#d4d4d1ff', '#d4d4d0ff', '#d4d4ceff', '#d5d5cdff', '#d5d5ccff', '#d5d5caff', '#d5d5c9ff', '#d6d6c8ff', '#d6d6c7ff', '#d6d6c5ff', '#d7d7c4ff', '#d7d7c3ff', '#d7d7c1ff', '#d7d7c0ff', '#d8d8bfff', '#d8d8beff', '#d8d8bcff', '#d8d8bbff', '#d9d9baff', '#d9d9b9ff', '#d9d9b7ff', '#d9d9b6ff', '#dadab5ff', '#dadab3ff', '#dadab2ff', '#dadab1ff', '#dbdbb0ff', '#dbdbaeff', '#dbdbadff', '#dcdcacff', '#dcdcabff', '#dcdca9ff', '#dcdca8ff', '#dddda7ff', '#dddda5ff', '#dddda4ff', '#dddda3ff', '#dedea2ff', '#dedea0ff', '#dede9fff', '#dede9eff', '#dfdf9dff', '#dfdf9bff', '#dfdf9aff', '#e0e099ff', '#e0e097ff', '#e0e096ff', '#e0e095ff', '#e1e194ff', '#e1e192ff', '#e1e191ff', '#e1e190ff', '#e2e28fff', '#e2e28dff', '#e2e28cff', '#e2e28bff', '#e3e389ff', '#e3e388ff', '#e3e387ff', '#e4e486ff', '#e4e484ff', '#e4e483ff', '#e4e482ff', '#e5e581ff', '#e5e57fff', '#e5e57eff', '#e5e57dff', '#e6e67bff', '#e6e67aff', '#e6e679ff', '#e6e678ff', '#e7e776ff', '#e7e775ff', '#e7e774ff', '#e8e873ff', '#e8e871ff', '#e8e870ff', '#e8e86fff', '#e9e96dff', '#e9e96cff', '#e9e96bff', '#e9e96aff', '#eaea68ff', '#eaea67ff', '#eaea66ff', '#eaea65ff', '#ebeb63ff', '#ebeb62ff', '#ebeb61ff', '#ebeb5fff', '#ecec5eff', '#ecec5dff', '#ecec5cff', '#eded5aff', '#eded59ff', '#eded58ff', '#eded57ff', '#eeee55ff', '#eeee54ff', '#eeee53ff', '#eeee51ff', '#efef50ff', '#efef4fff', '#efef4eff', '#efef4cff', '#f0f04bff', '#f0f04aff', '#f0f049ff', '#f1f147ff', '#f1f146ff', '#f1f145ff', '#f1f143ff', '#f2f242ff', '#f2f241ff', '#f2f240ff', '#f2f23eff', '#f3f33dff', '#f3f33cff', '#f3f33bff', '#f3f339ff', '#f4f438ff', '#f4f437ff', '#f4f435ff', '#f5f534ff', '#f5f533ff', '#f5f532ff', '#f5f530ff', '#f6f62fff', '#f6f62eff', '#f6f62cff', '#f6f62bff', '#f7f72aff', '#f7f729ff', '#f7f727ff', '#f7f726ff', '#f8f825ff', '#f8f824ff', '#f8f822ff', '#f9f921ff', '#f9f920ff', '#f9f91eff', '#f9f91dff', '#fafa1cff', '#fafa1bff', '#fafa19ff', '#fafa18ff', '#fbfb17ff', '#fbfb16ff', '#fbfb14ff', '#fbfb13ff', '#fcfc12ff', '#fcfc10ff', '#fcfc0fff', '#fcfc0eff', '#fdfd0dff', '#fdfd0bff', '#fdfd0aff', '#fefe09ff', '#fefe08ff', '#fefe06ff', '#fefe05ff', '#ffff04ff', '#ffff02ff', '#ffff01ff', '#ffff00ff', '#ffff00ff', '#ffff00ff', '#fffe00ff', '#fffe00ff', '#fffd00ff', '#fffc00ff', '#fffc00ff', '#fffb00ff', '#fffb00ff', '#fffa00ff', '#fffa00ff', '#fff900ff', '#fff900ff', '#fff800ff', '#fff800ff', '#fff700ff', '#fff600ff', '#fff600ff', '#fff500ff', '#fff500ff', '#fff400ff', '#fff400ff', '#fff300ff', '#fff300ff', '#fff200ff', '#fff200ff', '#fff100ff', '#fff000ff', '#fff000ff', '#ffef00ff', '#ffef00ff', '#ffee00ff', '#ffee00ff', '#ffed00ff', '#ffed00ff', '#ffec00ff', '#ffec00ff', '#ffeb00ff', '#ffea00ff', '#ffea00ff', '#ffe900ff', '#ffe900ff', '#ffe800ff', '#ffe800ff', '#ffe700ff', '#ffe700ff', '#ffe600ff', '#ffe600ff', '#ffe500ff', '#ffe500ff', '#ffe400ff', '#ffe300ff', '#ffe300ff', '#ffe200ff', '#ffe200ff', '#ffe100ff', '#ffe100ff', '#ffe000ff', '#ffe000ff', '#ffdf00ff', '#ffdf00ff', '#ffde00ff', '#ffdd00ff', '#ffdd00ff', '#ffdc00ff', '#ffdc00ff', '#ffdb00ff', '#ffdb00ff', '#ffda00ff', '#ffda00ff', '#ffd900ff', '#ffd900ff', '#ffd800ff', '#ffd700ff', '#ffd700ff', '#ffd600ff', '#ffd600ff', '#ffd500ff', '#ffd500ff', '#ffd400ff', '#ffd400ff', '#ffd300ff', '#ffd300ff', '#ffd200ff', '#ffd200ff', '#ffd100ff', '#ffd000ff', '#ffd000ff', '#ffcf00ff', '#ffcf00ff', '#ffce00ff', '#ffce00ff', '#ffcd00ff', '#ffcd00ff', '#ffcc00ff', '#ffcc00ff', '#ffcb00ff', '#ffca00ff', '#ffca00ff', '#ffc900ff', '#ffc900ff', '#ffc800ff', '#ffc800ff', '#ffc700ff', '#ffc700ff', '#ffc600ff', '#ffc600ff', '#ffc500ff', '#ffc400ff', '#ffc400ff', '#ffc300ff', '#ffc300ff', '#ffc200ff', '#ffc200ff', '#ffc100ff', '#ffc100ff', '#ffc000ff', '#ffc000ff', '#ffbf00ff', '#ffbe00ff', '#ffbe00ff', '#ffbd00ff', '#ffbd00ff', '#ffbc00ff', '#ffbc00ff', '#ffbb00ff', '#ffbb00ff', '#ffba00ff', '#ffba00ff', '#ffb900ff', '#ffb900ff', '#ffb800ff', '#ffb700ff', '#ffb700ff', '#ffb600ff', '#ffb600ff', '#ffb500ff', '#ffb500ff', '#ffb400ff', '#ffb400ff', '#ffb300ff', '#ffb300ff', '#ffb200ff', '#ffb100ff', '#ffb100ff', '#ffb000ff', '#ffb000ff', '#ffaf00ff', '#ffaf00ff', '#ffae00ff', '#ffae00ff', '#ffad00ff', '#ffad00ff', '#ffac00ff', '#ffab00ff', '#ffab00ff', '#ffaa00ff', '#ffaa00ff', '#ffa900ff', '#ffa900ff', '#ffa800ff', '#ffa800ff', '#ffa700ff', '#ffa700ff', '#ffa600ff', '#ffa600ff', '#ffa500ff', '#ffa400ff', '#ffa300ff', '#ffa200ff', '#ffa100ff', '#ffa000ff', '#ff9f00ff', '#ff9e00ff', '#ff9d00ff', '#ff9c00ff', '#ff9b00ff', '#ff9a00ff', '#ff9900ff', '#ff9800ff', '#ff9700ff', '#ff9600ff', '#ff9500ff', '#ff9400ff', '#ff9300ff', '#ff9200ff', '#ff9100ff', '#ff9000ff', '#ff8f00ff', '#ff8e00ff', '#ff8d00ff', '#ff8c00ff', '#ff8b00ff', '#ff8a00ff', '#ff8900ff', '#ff8800ff', '#ff8700ff', '#ff8600ff', '#ff8500ff', '#ff8400ff', '#ff8300ff', '#ff8200ff', '#ff8100ff', '#ff8000ff', '#ff7f00ff', '#ff7e00ff', '#ff7d00ff', '#ff7c00ff', '#ff7b00ff', '#ff7a00ff', '#ff7900ff', '#ff7800ff', '#ff7700ff', '#ff7600ff', '#ff7500ff', '#ff7400ff', '#ff7300ff', '#ff7200ff', '#ff7100ff', '#ff7000ff', '#ff6f00ff', '#ff6e00ff', '#ff6d00ff', '#ff6c00ff', '#ff6b00ff', '#ff6a00ff', '#ff6900ff', '#ff6800ff', '#ff6700ff', '#ff6600ff', '#ff6500ff', '#ff6400ff', '#ff6300ff', '#ff6200ff', '#ff6100ff', '#ff6000ff', '#ff5f00ff', '#ff5e00ff', '#ff5d00ff', '#ff5c00ff', '#ff5b00ff', '#ff5a00ff', '#ff5900ff', '#ff5800ff', '#ff5700ff', '#ff5600ff', '#ff5500ff', '#ff5400ff', '#ff5300ff', '#ff5200ff', '#ff5100ff', '#ff5000ff', '#ff4f00ff', '#ff4e00ff', '#ff4d00ff', '#ff4c00ff', '#ff4b00ff', '#ff4a00ff', '#ff4900ff', '#ff4800ff', '#ff4700ff', '#ff4600ff', '#ff4500ff', '#ff4400ff', '#ff4300ff', '#ff4200ff', '#ff4100ff', '#ff4000ff', '#ff3f00ff', '#ff3e00ff', '#ff3d00ff', '#ff3c00ff', '#ff3b00ff', '#ff3a00ff', '#ff3900ff', '#ff3800ff', '#ff3700ff', '#ff3600ff', '#ff3500ff', '#ff3400ff', '#ff3300ff', '#ff3200ff', '#ff3100ff', '#ff3000ff', '#ff2f00ff', '#ff2e00ff', '#ff2d00ff', '#ff2c00ff', '#ff2b00ff', '#ff2a00ff', '#ff2900ff', '#ff2800ff', '#ff2700ff', '#ff2600ff', '#ff2500ff', '#ff2400ff', '#ff2300ff', '#ff2200ff', '#ff2100ff', '#ff2000ff', '#ff1f00ff', '#ff1e00ff', '#ff1d00ff', '#ff1c00ff', '#ff1b00ff', '#ff1a00ff', '#ff1900ff', '#ff1800ff', '#ff1700ff', '#ff1600ff', '#ff1500ff', '#ff1400ff', '#ff1300ff', '#ff1200ff', '#ff1100ff', '#ff1000ff', '#ff0f00ff', '#ff0e00ff', '#ff0d00ff', '#ff0c00ff', '#ff0b00ff', '#ff0a00ff', '#ff0900ff', '#ff0800ff', '#ff0700ff', '#ff0600ff', '#ff0500ff', '#ff0400ff', '#ff0300ff', '#ff0200ff', '#ff0100ff', '#ff0000ff', '#ff0000ff']);
+    
+
+    color_map_6f1119364bfeb4dc258c041dc7cbb810.x = d3.scale.linear()
+              .domain([0.0, 0.005871170338257136])
+              .range([0, 450 - 50]);
+
+    color_map_6f1119364bfeb4dc258c041dc7cbb810.legend = L.control({position: 'topright'});
+    color_map_6f1119364bfeb4dc258c041dc7cbb810.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_6f1119364bfeb4dc258c041dc7cbb810.legend.addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+
+    color_map_6f1119364bfeb4dc258c041dc7cbb810.xAxis = d3.svg.axis()
+        .scale(color_map_6f1119364bfeb4dc258c041dc7cbb810.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.0, 0.0019570567794190454, 0.003914113558838091, 0.005871170338257136]);
+
+    color_map_6f1119364bfeb4dc258c041dc7cbb810.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_6f1119364bfeb4dc258c041dc7cbb810.g = color_map_6f1119364bfeb4dc258c041dc7cbb810.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_6f1119364bfeb4dc258c041dc7cbb810.g.selectAll("rect")
+        .data(color_map_6f1119364bfeb4dc258c041dc7cbb810.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_6f1119364bfeb4dc258c041dc7cbb810.x(color_map_6f1119364bfeb4dc258c041dc7cbb810.color.domain()[i - 1]) : color_map_6f1119364bfeb4dc258c041dc7cbb810.x.range()[0],
+            x1: i < color_map_6f1119364bfeb4dc258c041dc7cbb810.color.domain().length ? color_map_6f1119364bfeb4dc258c041dc7cbb810.x(color_map_6f1119364bfeb4dc258c041dc7cbb810.color.domain()[i]) : color_map_6f1119364bfeb4dc258c041dc7cbb810.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_6f1119364bfeb4dc258c041dc7cbb810.g.call(color_map_6f1119364bfeb4dc258c041dc7cbb810.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Aumenta su peso relativo");
+    
+    var color_map_c2de7ccfef40a978a612c2a6a4f915de = {};
+
+    
+    color_map_c2de7ccfef40a978a612c2a6a4f915de.color = d3.scale.threshold()
+              .domain([0.0, 1.1765872421356986e-05, 2.353174484271397e-05, 3.5297617264070957e-05, 4.706348968542794e-05, 5.882936210678493e-05, 7.059523452814191e-05, 8.236110694949889e-05, 9.412697937085588e-05, 0.00010589285179221288, 0.00011765872421356986, 0.00012942459663492685, 0.00014119046905628383, 0.00015295634147764083, 0.00016472221389899778, 0.0001764880863203548, 0.00018825395874171177, 0.00020001983116306877, 0.00021178570358442575, 0.00022355157600578273, 0.0002353174484271397, 0.0002470833208484967, 0.0002588491932698537, 0.0002706150656912107, 0.00028238093811256765, 0.0002941468105339246, 0.00030591268295528166, 0.0003176785553766386, 0.00032944442779799557, 0.00034121030021935263, 0.0003529761726407096, 0.0003647420450620666, 0.00037650791748342354, 0.00038827378990478054, 0.00040003966232613755, 0.0004118055347474945, 0.0004235714071688515, 0.0004353372795902085, 0.00044710315201156546, 0.00045886902443292247, 0.0004706348968542794, 0.0004824007692756364, 0.0004941666416969934, 0.0005059325141183504, 0.0005176983865397074, 0.0005294642589610643, 0.0005412301313824214, 0.0005529960038037784, 0.0005647618762251353, 0.0005765277486464923, 0.0005882936210678492, 0.0006000594934892063, 0.0006118253659105633, 0.0006235912383319202, 0.0006353571107532772, 0.0006471229831746342, 0.0006588888555959911, 0.0006706547280173482, 0.0006824206004387053, 0.0006941864728600622, 0.0007059523452814192, 0.0007177182177027761, 0.0007294840901241332, 0.0007412499625454902, 0.0007530158349668471, 0.0007647817073882041, 0.0007765475798095611, 0.0007883134522309181, 0.0008000793246522751, 0.000811845197073632, 0.000823611069494989, 0.000835376941916346, 0.000847142814337703, 0.00085890868675906, 0.000870674559180417, 0.0008824404316017739, 0.0008942063040231309, 0.0009059721764444879, 0.0009177380488658449, 0.0009295039212872019, 0.0009412697937085588, 0.0009530356661299158, 0.0009648015385512729, 0.0009765674109726299, 0.0009883332833939868, 0.0010000991558153439, 0.0010118650282367008, 0.0010236309006580577, 0.0010353967730794148, 0.0010471626455007717, 0.0010589285179221286, 0.001070694390343486, 0.0010824602627648428, 0.0010942261351861997, 0.0011059920076075568, 0.0011177578800289137, 0.0011295237524502706, 0.0011412896248716277, 0.0011530554972929846, 0.0011648213697143415, 0.0011765872421356984, 0.0011883531145570555, 0.0012001189869784126, 0.0012118848593997695, 0.0012236507318211267, 0.0012354166042424836, 0.0012471824766638405, 0.0012589483490851976, 0.0012707142215065545, 0.0012824800939279114, 0.0012942459663492685, 0.0013060118387706254, 0.0013177777111919823, 0.0013295435836133396, 0.0013413094560346965, 0.0013530753284560534, 0.0013648412008774105, 0.0013766070732987674, 0.0013883729457201243, 0.0014001388181414812, 0.0014119046905628383, 0.0014236705629841952, 0.0014354364354055521, 0.0014472023078269094, 0.0014589681802482663, 0.0014707340526696232, 0.0014824999250909804, 0.0014942657975123372, 0.0015060316699336941, 0.0015177975423550513, 0.0015295634147764082, 0.001541329287197765, 0.0015530951596191222, 0.001564861032040479, 0.0015766269044618362, 0.0015883927768831933, 0.0016001586493045502, 0.001611924521725907, 0.001623690394147264, 0.001635456266568621, 0.001647222138989978, 0.001658988011411335, 0.001670753883832692, 0.001682519756254049, 0.001694285628675406, 0.0017060515010967631, 0.00171781737351812, 0.001729583245939477, 0.001741349118360834, 0.001753114990782191, 0.0017648808632035478, 0.001776646735624905, 0.0017884126080462619, 0.0018001784804676188, 0.0018119443528889759, 0.001823710225310333, 0.0018354760977316899, 0.0018472419701530468, 0.0018590078425744039, 0.0018707737149957608, 0.0018825395874171177, 0.0018943054598384748, 0.0019060713322598317, 0.0019178372046811886, 0.0019296030771025457, 0.0019413689495239026, 0.0019531348219452597, 0.0019649006943666166, 0.0019766665667879735, 0.001988432439209331, 0.0020001983116306877, 0.0020119641840520446, 0.0020237300564734015, 0.002035495928894759, 0.0020472618013161153, 0.0020590276737374727, 0.0020707935461588296, 0.0020825594185801865, 0.0020943252910015434, 0.0021060911634229007, 0.002117857035844257, 0.0021296229082656145, 0.002141388780686972, 0.0021531546531083283, 0.0021649205255296856, 0.0021766863979510425, 0.0021884522703723994, 0.0022002181427937563, 0.0022119840152151136, 0.00222374988763647, 0.0022355157600578274, 0.0022472816324791843, 0.0022590475049005412, 0.0022708133773218986, 0.0022825792497432554, 0.0022943451221646123, 0.0023061109945859692, 0.0023178768670073266, 0.002329642739428683, 0.0023414086118500404, 0.002353174484271397, 0.002364940356692754, 0.002376706229114111, 0.002388472101535468, 0.0024002379739568253, 0.002412003846378182, 0.002423769718799539, 0.002435535591220896, 0.0024473014636422533, 0.0024590673360636098, 0.002470833208484967, 0.002482599080906324, 0.002494364953327681, 0.002506130825749038, 0.002517896698170395, 0.002529662570591752, 0.002541428443013109, 0.0025531943154344663, 0.0025649601878558227, 0.00257672606027718, 0.002588491932698537, 0.002600257805119894, 0.0026120236775412507, 0.002623789549962608, 0.0026355554223839645, 0.002647321294805322, 0.002659087167226679, 0.0026708530396480357, 0.002682618912069393, 0.00269438478449075, 0.002706150656912107, 0.0027179165293334637, 0.002729682401754821, 0.0027414482741761775, 0.002753214146597535, 0.002764980019018892, 0.0027767458914402486, 0.002788511763861606, 0.0028002776362829624, 0.0028120435087043197, 0.0028238093811256766, 0.0028355752535470335, 0.0028473411259683904, 0.0028591069983897478, 0.0028708728708111042, 0.0028826387432324616, 0.002894404615653819, 0.0029061704880751753, 0.0029179363604965327, 0.0029297022329178896, 0.0029414681053392465, 0.0029532339777606034, 0.0029649998501819607, 0.002976765722603317, 0.0029885315950246745, 0.0030002974674460314, 0.0030120633398673883, 0.0030238292122887456, 0.0030355950847101025, 0.0030473609571314594, 0.0030591268295528163, 0.0030708927019741736, 0.00308265857439553, 0.0030944244468168874, 0.0031061903192382443, 0.0031179561916596012, 0.003129722064080958, 0.0031414879365023155, 0.0031532538089236724, 0.0031650196813450293, 0.0031767855537663866, 0.003188551426187743, 0.0032003172986091004, 0.003212083171030457, 0.003223849043451814, 0.003235614915873171, 0.003247380788294528, 0.003259146660715885, 0.003270912533137242, 0.003282678405558599, 0.003294444277979956, 0.0033062101504013133, 0.00331797602282267, 0.003329741895244027, 0.003341507767665384, 0.003353273640086741, 0.003365039512508098, 0.003376805384929455, 0.003388571257350812, 0.003400337129772169, 0.0034121030021935263, 0.0034238688746148827, 0.00343563474703624, 0.003447400619457597, 0.003459166491878954, 0.0034709323643003108, 0.003482698236721668, 0.0034944641091430246, 0.003506229981564382, 0.0035179958539857392, 0.0035297617264070957, 0.003541527598828453, 0.00355329347124981, 0.003565059343671167, 0.0035768252160925237, 0.003588591088513881, 0.0036003569609352375, 0.003612122833356595, 0.0036238887057779517, 0.0036356545781993086, 0.003647420450620666, 0.0036591863230420224, 0.0036709521954633798, 0.0036827180678847366, 0.0036944839403060935, 0.0037062498127274504, 0.0037180156851488078, 0.0037297815575701642, 0.0037415474299915216, 0.0037533133024128785, 0.0037650791748342354, 0.0037768450472555927, 0.0037886109196769496, 0.0038003767920983065, 0.0038121426645196634, 0.0038239085369410207, 0.003835674409362377, 0.0038474402817837345, 0.0038592061542050914, 0.0038709720266264483, 0.003882737899047805, 0.0038945037714691625, 0.0039062696438905194, 0.003918035516311876, 0.003929801388733233, 0.00394156726115459, 0.003953333133575947, 0.003965099005997304, 0.003976864878418662, 0.003988630750840018, 0.0040003966232613755, 0.004012162495682732, 0.004023928368104089, 0.004035694240525446, 0.004047460112946803, 0.00405922598536816, 0.004070991857789518, 0.004082757730210874, 0.004094523602632231, 0.004106289475053588, 0.004118055347474945, 0.004129821219896301, 0.004141587092317659, 0.004153352964739016, 0.004165118837160373, 0.004176884709581731, 0.004188650582003087, 0.004200416454424444, 0.004212182326845801, 0.004223948199267158, 0.004235714071688514, 0.004247479944109872, 0.004259245816531229, 0.004271011688952586, 0.004282777561373944, 0.0042945434337953, 0.0043063093062166566, 0.004318075178638014, 0.004329841051059371, 0.004341606923480727, 0.004353372795902085, 0.004365138668323442, 0.004376904540744799, 0.004388670413166156, 0.004400436285587513, 0.0044122021580088695, 0.004423968030430227, 0.004435733902851584, 0.00444749977527294, 0.004459265647694298, 0.004471031520115655, 0.004482797392537012, 0.004494563264958369, 0.0045063291373797255, 0.0045180950098010824, 0.00452986088222244, 0.004541626754643797, 0.004553392627065153, 0.004565158499486511, 0.004576924371907868, 0.004588690244329225, 0.004600456116750582, 0.0046122219891719385, 0.004623987861593295, 0.004635753734014653, 0.00464751960643601, 0.004659285478857366, 0.004671051351278724, 0.004682817223700081, 0.004694583096121438, 0.004706348968542794, 0.004718114840964151, 0.004729880713385508, 0.004741646585806866, 0.004753412458228222, 0.004765178330649579, 0.004776944203070936, 0.004788710075492294, 0.004800475947913651, 0.004812241820335007, 0.004824007692756364, 0.004835773565177721, 0.004847539437599078, 0.004859305310020435, 0.004871071182441792, 0.004882837054863149, 0.004894602927284507, 0.0049063687997058635, 0.0049181346721272196, 0.004929900544548577, 0.004941666416969934, 0.004953432289391291, 0.004965198161812648, 0.004976964034234005, 0.004988729906655362, 0.00500049577907672, 0.005012261651498076, 0.0050240275239194325, 0.00503579339634079, 0.005047559268762147, 0.005059325141183504, 0.005071091013604861, 0.005082856886026218, 0.005094622758447575, 0.0051063886308689325, 0.0051181545032902885, 0.0051299203757116454, 0.005141686248133003, 0.00515345212055436, 0.005165217992975717, 0.005176983865397074, 0.005188749737818431, 0.005200515610239788, 0.0052122814826611455, 0.0052240473550825015, 0.005235813227503858, 0.005247579099925216, 0.005259344972346573, 0.005271110844767929, 0.005282876717189287, 0.005294642589610644, 0.005306408462032001, 0.005318174334453358, 0.005329940206874714, 0.005341706079296071, 0.005353471951717429, 0.005365237824138786, 0.005377003696560142, 0.0053887695689815, 0.005400535441402857, 0.005412301313824214, 0.005424067186245571, 0.005435833058666927, 0.005447598931088284, 0.005459364803509642, 0.005471130675930999, 0.005482896548352355, 0.005494662420773713, 0.00550642829319507, 0.0055181941656164265, 0.005529960038037784, 0.00554172591045914, 0.005553491782880497, 0.005565257655301855, 0.005577023527723212, 0.005588789400144568, 0.005600555272565925, 0.005612321144987283, 0.0056240870174086395, 0.0056358528898299955, 0.005647618762251353, 0.00565938463467271, 0.005671150507094067, 0.005682916379515425, 0.005694682251936781, 0.005706448124358138, 0.0057182139967794955, 0.005729979869200852, 0.0057417457416222084, 0.005753511614043566, 0.005765277486464923, 0.00577704335888628, 0.005788809231307638, 0.005800575103728994, 0.005812340976150351, 0.0058241068485717085, 0.005835872720993065, 0.005847638593414421, 0.005859404465835779, 0.005871170338257136])
+              .range(['#d3d3d3ff', '#d3d3d3ff', '#d3d3d4ff', '#d3d3d4ff', '#d2d3d4ff', '#d2d3d4ff', '#d2d4d4ff', '#d2d4d4ff', '#d1d4d4ff', '#d1d4d4ff', '#d1d4d4ff', '#d1d4d5ff', '#d1d4d5ff', '#d0d4d5ff', '#d0d4d5ff', '#d0d4d5ff', '#d0d4d5ff', '#cfd4d5ff', '#cfd4d5ff', '#cfd4d6ff', '#cfd4d6ff', '#cfd4d6ff', '#ced4d6ff', '#ced4d6ff', '#ced4d6ff', '#ced4d6ff', '#cdd4d6ff', '#cdd4d6ff', '#cdd4d7ff', '#cdd4d7ff', '#ccd4d7ff', '#ccd4d7ff', '#ccd4d7ff', '#ccd4d7ff', '#ccd4d7ff', '#cbd4d7ff', '#cbd4d7ff', '#cbd4d8ff', '#cbd4d8ff', '#cad5d8ff', '#cad5d8ff', '#cad5d8ff', '#cad5d8ff', '#c9d5d8ff', '#c9d5d8ff', '#c9d5d8ff', '#c9d5d9ff', '#c9d5d9ff', '#c8d5d9ff', '#c8d5d9ff', '#c8d5d9ff', '#c8d5d9ff', '#c7d5d9ff', '#c7d5d9ff', '#c7d5daff', '#c7d5daff', '#c6d5daff', '#c6d5daff', '#c6d5daff', '#c6d5daff', '#c6d5daff', '#c5d5daff', '#c5d5daff', '#c5d5dbff', '#c5d5dbff', '#c4d5dbff', '#c4d5dbff', '#c4d5dbff', '#c4d5dbff', '#c4d5dbff', '#c3d5dbff', '#c3d5dbff', '#c3d6dcff', '#c3d6dcff', '#c2d6dcff', '#c2d6dcff', '#c2d6dcff', '#c2d6dcff', '#c1d6dcff', '#c1d6dcff', '#c1d6ddff', '#c1d6ddff', '#c1d6ddff', '#c0d6ddff', '#c0d6ddff', '#c0d6ddff', '#c0d6ddff', '#bfd6ddff', '#bfd6ddff', '#bfd6deff', '#bfd6deff', '#bed6deff', '#bed6deff', '#bed6deff', '#bed6deff', '#bed6deff', '#bdd6deff', '#bdd6deff', '#bdd6dfff', '#bdd6dfff', '#bcd6dfff', '#bcd6dfff', '#bcd6dfff', '#bcd6dfff', '#bbd6dfff', '#bbd6dfff', '#bbd7dfff', '#bbd7e0ff', '#bbd7e0ff', '#bad7e0ff', '#bad7e0ff', '#bad7e0ff', '#bad7e0ff', '#b9d7e0ff', '#b9d7e0ff', '#b9d7e1ff', '#b9d7e1ff', '#b8d7e1ff', '#b8d7e1ff', '#b8d7e1ff', '#b8d7e1ff', '#b8d7e1ff', '#b7d7e1ff', '#b7d7e1ff', '#b7d7e2ff', '#b7d7e2ff', '#b6d7e2ff', '#b6d7e2ff', '#b6d7e2ff', '#b6d7e2ff', '#b6d7e2ff', '#b5d7e2ff', '#b5d7e2ff', '#b5d7e3ff', '#b5d7e3ff', '#b4d7e3ff', '#b4d7e3ff', '#b4d7e3ff', '#b4d7e3ff', '#b3d8e3ff', '#b3d8e3ff', '#b3d8e3ff', '#b3d8e4ff', '#b3d8e4ff', '#b2d8e4ff', '#b2d8e4ff', '#b2d8e4ff', '#b2d8e4ff', '#b1d8e4ff', '#b1d8e4ff', '#b1d8e5ff', '#b1d8e5ff', '#b0d8e5ff', '#b0d8e5ff', '#b0d8e5ff', '#b0d8e5ff', '#b0d8e5ff', '#afd8e5ff', '#afd8e5ff', '#afd8e6ff', '#afd8e6ff', '#aed8e6ff', '#aed8e6ff', '#aed8e6ff', '#aed8e6ff', '#add8e6ff', '#add8e6ff', '#acd7e7ff', '#abd6e7ff', '#aad5e7ff', '#a9d4e7ff', '#a8d2e7ff', '#a7d1e7ff', '#a6d0e7ff', '#a5cee8ff', '#a4cde8ff', '#a3cce8ff', '#a2cae8ff', '#a1c9e8ff', '#a0c8e8ff', '#9fc7e8ff', '#9ec5e9ff', '#9dc4e9ff', '#9cc3e9ff', '#9bc1e9ff', '#9ac0e9ff', '#99bfe9ff', '#98bdeaff', '#97bceaff', '#96bbeaff', '#94b9eaff', '#93b8eaff', '#92b7eaff', '#91b6eaff', '#90b4ebff', '#8fb3ebff', '#8eb2ebff', '#8db0ebff', '#8cafebff', '#8baeebff', '#8aacebff', '#89abecff', '#88aaecff', '#87a9ecff', '#86a7ecff', '#85a6ecff', '#84a5ecff', '#83a3edff', '#82a2edff', '#81a1edff', '#809fedff', '#7f9eedff', '#7d9dedff', '#7c9cedff', '#7b9aeeff', '#7a99eeff', '#7998eeff', '#7896eeff', '#7795eeff', '#7694eeff', '#7592eeff', '#7491efff', '#7390efff', '#728eefff', '#718defff', '#708cefff', '#6f8befff', '#6e89f0ff', '#6d88f0ff', '#6c87f0ff', '#6b85f0ff', '#6a84f0ff', '#6983f0ff', '#6881f0ff', '#6780f1ff', '#657ff1ff', '#647ef1ff', '#637cf1ff', '#627bf1ff', '#617af1ff', '#6078f2ff', '#5f77f2ff', '#5e76f2ff', '#5d74f2ff', '#5c73f2ff', '#5b72f2ff', '#5a70f2ff', '#596ff3ff', '#586ef3ff', '#576df3ff', '#566bf3ff', '#556af3ff', '#5469f3ff', '#5367f3ff', '#5266f4ff', '#5165f4ff', '#5063f4ff', '#4f62f4ff', '#4d61f4ff', '#4c60f4ff', '#4b5ef5ff', '#4a5df5ff', '#495cf5ff', '#485af5ff', '#4759f5ff', '#4658f5ff', '#4556f5ff', '#4455f6ff', '#4354f6ff', '#4253f6ff', '#4151f6ff', '#4050f6ff', '#3f4ff6ff', '#3e4df6ff', '#3d4cf7ff', '#3c4bf7ff', '#3b49f7ff', '#3a48f7ff', '#3947f7ff', '#3845f7ff', '#3644f8ff', '#3543f8ff', '#3442f8ff', '#3340f8ff', '#323ff8ff', '#313ef8ff', '#303cf8ff', '#2f3bf9ff', '#2e3af9ff', '#2d38f9ff', '#2c37f9ff', '#2b36f9ff', '#2a35f9ff', '#2933faff', '#2832faff', '#2731faff', '#262ffaff', '#252efaff', '#242dfaff', '#232bfaff', '#222afbff', '#2129fbff', '#2027fbff', '#1e26fbff', '#1d25fbff', '#1c24fbff', '#1b22fbff', '#1a21fcff', '#1920fcff', '#181efcff', '#171dfcff', '#161cfcff', '#151afcff', '#1419fdff', '#1318fdff', '#1217fdff', '#1115fdff', '#1014fdff', '#0f13fdff', '#0e11fdff', '#0d10feff', '#0c0ffeff', '#0b0dfeff', '#0a0cfeff', '#090bfeff', '#0809feff', '#0608feff', '#0507ffff', '#0406ffff', '#0304ffff', '#0203ffff', '#0102ffff', '#0000ffff', '#0000ffff', '#0000ffff', '#0000feff', '#0000fdff', '#0000fcff', '#0000fcff', '#0000fbff', '#0000faff', '#0000faff', '#0000f9ff', '#0000f8ff', '#0000f8ff', '#0000f7ff', '#0000f6ff', '#0000f5ff', '#0000f5ff', '#0000f4ff', '#0000f3ff', '#0000f3ff', '#0000f2ff', '#0000f1ff', '#0000f1ff', '#0000f0ff', '#0000efff', '#0000eeff', '#0000eeff', '#0000edff', '#0000ecff', '#0000ecff', '#0000ebff', '#0000eaff', '#0000eaff', '#0000e9ff', '#0000e8ff', '#0000e7ff', '#0000e7ff', '#0000e6ff', '#0000e5ff', '#0000e5ff', '#0000e4ff', '#0000e3ff', '#0000e3ff', '#0000e2ff', '#0000e1ff', '#0000e0ff', '#0000e0ff', '#0000dfff', '#0000deff', '#0000deff', '#0000ddff', '#0000dcff', '#0000dcff', '#0000dbff', '#0000daff', '#0000d9ff', '#0000d9ff', '#0000d8ff', '#0000d7ff', '#0000d7ff', '#0000d6ff', '#0000d5ff', '#0000d5ff', '#0000d4ff', '#0000d3ff', '#0000d2ff', '#0000d2ff', '#0000d1ff', '#0000d0ff', '#0000d0ff', '#0000cfff', '#0000ceff', '#0000ceff', '#0000cdff', '#0000ccff', '#0000cbff', '#0000cbff', '#0000caff', '#0000c9ff', '#0000c9ff', '#0000c8ff', '#0000c7ff', '#0000c7ff', '#0000c6ff', '#0000c5ff', '#0000c4ff', '#0000c4ff', '#0000c3ff', '#0000c2ff', '#0000c2ff', '#0000c1ff', '#0000c0ff', '#0000c0ff', '#0000bfff', '#0000beff', '#0000bdff', '#0000bdff', '#0000bcff', '#0000bbff', '#0000bbff', '#0000baff', '#0000b9ff', '#0000b9ff', '#0000b8ff', '#0000b7ff', '#0000b6ff', '#0000b6ff', '#0000b5ff', '#0000b4ff', '#0000b4ff', '#0000b3ff', '#0000b2ff', '#0000b2ff', '#0000b1ff', '#0000b0ff', '#0000afff', '#0000afff', '#0000aeff', '#0000adff', '#0000adff', '#0000acff', '#0000abff', '#0000abff', '#0000aaff', '#0000a9ff', '#0000a8ff', '#0000a8ff', '#0000a7ff', '#0000a6ff', '#0000a6ff', '#0000a5ff', '#0000a4ff', '#0000a4ff', '#0000a3ff', '#0000a2ff', '#0000a1ff', '#0000a1ff', '#0000a0ff', '#00009fff', '#00009fff', '#00009eff', '#00009dff', '#00009dff', '#00009cff', '#00009bff', '#00009aff', '#00009aff', '#000099ff', '#000098ff', '#000098ff', '#000097ff', '#000096ff', '#000096ff', '#000095ff', '#000094ff', '#000093ff', '#000093ff', '#000092ff', '#000091ff', '#000091ff', '#000090ff', '#00008fff', '#00008fff', '#00008eff', '#00008dff', '#00008cff', '#00008cff', '#00008bff']);
+    
+
+    color_map_c2de7ccfef40a978a612c2a6a4f915de.x = d3.scale.linear()
+              .domain([0.0, 0.005871170338257136])
+              .range([0, 450 - 50]);
+
+    color_map_c2de7ccfef40a978a612c2a6a4f915de.legend = L.control({position: 'topright'});
+    color_map_c2de7ccfef40a978a612c2a6a4f915de.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_c2de7ccfef40a978a612c2a6a4f915de.legend.addTo(map_8c9f16c553e8a439738c0e5feb45fb9a);
+
+    color_map_c2de7ccfef40a978a612c2a6a4f915de.xAxis = d3.svg.axis()
+        .scale(color_map_c2de7ccfef40a978a612c2a6a4f915de.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.0, 0.0019570567794190454, 0.003914113558838091, 0.005871170338257136]);
+
+    color_map_c2de7ccfef40a978a612c2a6a4f915de.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_c2de7ccfef40a978a612c2a6a4f915de.g = color_map_c2de7ccfef40a978a612c2a6a4f915de.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_c2de7ccfef40a978a612c2a6a4f915de.g.selectAll("rect")
+        .data(color_map_c2de7ccfef40a978a612c2a6a4f915de.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_c2de7ccfef40a978a612c2a6a4f915de.x(color_map_c2de7ccfef40a978a612c2a6a4f915de.color.domain()[i - 1]) : color_map_c2de7ccfef40a978a612c2a6a4f915de.x.range()[0],
+            x1: i < color_map_c2de7ccfef40a978a612c2a6a4f915de.color.domain().length ? color_map_c2de7ccfef40a978a612c2a6a4f915de.x(color_map_c2de7ccfef40a978a612c2a6a4f915de.color.domain()[i]) : color_map_c2de7ccfef40a978a612c2a6a4f915de.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_c2de7ccfef40a978a612c2a6a4f915de.g.call(color_map_c2de7ccfef40a978a612c2a6a4f915de.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Pierde peso relativo");
+</script>
+</html>

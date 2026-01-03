@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mapas de variación anual de frecuencia relativa – BiciElx</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg: #f5f5f5;
+      --accent: #0f766e;
+      --accent2: #14b8a6;
+      --text: #111827;
+      --shadow: 0 4px 10px rgba(0,0,0,0.06);
+      --radius: 999px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(120deg, var(--accent), var(--accent2));
+      color: white;
+      padding: 1.5rem 1rem;
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      letter-spacing: 0.04em;
+    }
+    .subtitle {
+      margin: 0.3rem 0 0;
+      opacity: 0.9;
+      font-size: 0.95rem;
+    }
+    main {
+      max-width: 1200px;
+      margin: 1.5rem auto 2rem;
+      padding: 0 1rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .top-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.4rem;
+    }
+    .year-selector {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    .year-label {
+      font-size: 0.9rem;
+      margin-right: 0.3rem;
+      opacity: 0.8;
+    }
+    .year-btn {
+      border: none;
+      border-radius: var(--radius);
+      padding: 0.35rem 0.9rem;
+      font-size: 0.9rem;
+      cursor: pointer;
+      background: white;
+      color: #374151;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+      transition: background 0.13s ease, transform 0.1s ease, box-shadow 0.1s ease;
+    }
+    .year-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.16);
+    }
+    .year-btn.active {
+      background: #0f766e;
+      color: white;
+      box-shadow: 0 2px 8px rgba(15,118,110,0.55);
+    }
+    .fs-btn {
+      border: none;
+      border-radius: var(--radius);
+      padding: 0.4rem 0.9rem;
+      font-size: 0.85rem;
+      cursor: pointer;
+      background: #0f172a;
+      color: #e5e7eb;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.35);
+      transition: background 0.13s ease, transform 0.1s ease, box-shadow 0.1s ease;
+    }
+    .fs-btn:hover {
+      background: #020617;
+      transform: translateY(-1px);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.55);
+    }
+    iframe#mapFrame {
+      width: 100%;
+      min-height: 80vh;
+      border: none;
+      display: block;
+      background: #e5e7eb;
+    }
+    .map-caption {
+      font-size: 0.85rem;
+      color: #6b7280;
+      margin-top: 0.3rem;
+    }
+    footer {
+      font-size: 0.8rem;
+      color: #6b7280;
+      text-align: center;
+      padding: 1rem 0 1.2rem;
+    }
+    @media (max-width: 700px) {
+      iframe#mapFrame {
+        min-height: 85vh;
+      }
+      .top-bar {
+        align-items: flex-start;
+        gap: 0.75rem;
+      }
+    }
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #020617;
+        color: #e5e7eb;
+      }
+      main {
+        color: #e5e7eb;
+      }
+      .year-btn {
+        background: #020617;
+        color: #e5e7eb;
+      }
+      .year-btn.active {
+        background: #0f766e;
+      }
+      iframe#mapFrame {
+        background: #020617;
+      }
+      footer {
+        color: #9ca3af;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-inner">
+    <h1>Variación anual de frecuencia relativa – BiciElx</h1>
+    <p class="subtitle">
+      Cada mapa muestra cómo cambia la proporción de usos de cada estación origen
+      respecto al total del sistema entre dos años consecutivos.
+    </p>
+  </div>
+</header>
+<main>
+  <div class="top-bar">
+    <div class="year-selector">
+      <span class="year-label">Comparación:</span>
+      <button class="year-btn active" data-map="map_2016_vs_2015.html" data-year="2016">2016 vs 2015</button>
+      <button class="year-btn" data-map="map_2017_vs_2016.html" data-year="2017">2017 vs 2016</button>
+      <button class="year-btn" data-map="map_2018_vs_2017.html" data-year="2018">2018 vs 2017</button>
+      <button class="year-btn" data-map="map_2019_vs_2018.html" data-year="2019">2019 vs 2018</button>
+      <button class="year-btn" data-map="map_2020_vs_2019.html" data-year="2020">2020 vs 2019</button>
+      <button class="year-btn" data-map="map_2021_vs_2020.html" data-year="2021">2021 vs 2020</button>
+      <button class="year-btn" data-map="map_2022_vs_2021.html" data-year="2022">2022 vs 2021</button>
+      <button class="year-btn" data-map="map_2023_vs_2022.html" data-year="2023">2023 vs 2022</button>
+      <button class="year-btn" data-map="map_2024_vs_2023.html" data-year="2024">2024 vs 2023</button>
+      <button class="year-btn" data-map="map_2025_vs_2024.html" data-year="2025">2025 vs 2024</button>
+    </div>
+    <button id="fullscreenBtn" class="fs-btn">Abrir mapa en pestaña nueva</button>
+  </div>
+  <iframe id="mapFrame" src="map_2016_vs_2015.html"></iframe>
+  <p class="map-caption" id="mapCaption">Variación de frecuencia relativa 2016 vs 2015 (proporción del sistema por estación origen)</p>
+</main>
+<footer>
+  Página generada automáticamente a partir de los datos de uso de BiciElx
+  (frecuencia relativa anual por estación origen).
+</footer>
+<script>
+  const buttons = document.querySelectorAll('.year-btn');
+  const frame = document.getElementById('mapFrame');
+  const caption = document.getElementById('mapCaption');
+  const fsBtn = document.getElementById('fullscreenBtn');
+
+  const titles = {
+    "map_2016_vs_2015.html": "Variación de frecuencia relativa 2016 vs 2015 (proporción del sistema por estación origen)",
+    "map_2017_vs_2016.html": "Variación de frecuencia relativa 2017 vs 2016 (proporción del sistema por estación origen)",
+    "map_2018_vs_2017.html": "Variación de frecuencia relativa 2018 vs 2017 (proporción del sistema por estación origen)",
+    "map_2019_vs_2018.html": "Variación de frecuencia relativa 2019 vs 2018 (proporción del sistema por estación origen)",
+    "map_2020_vs_2019.html": "Variación de frecuencia relativa 2020 vs 2019 (proporción del sistema por estación origen)",
+    "map_2021_vs_2020.html": "Variación de frecuencia relativa 2021 vs 2020 (proporción del sistema por estación origen)",
+    "map_2022_vs_2021.html": "Variación de frecuencia relativa 2022 vs 2021 (proporción del sistema por estación origen)",
+    "map_2023_vs_2022.html": "Variación de frecuencia relativa 2023 vs 2022 (proporción del sistema por estación origen)",
+    "map_2024_vs_2023.html": "Variación de frecuencia relativa 2024 vs 2023 (proporción del sistema por estación origen)",
+    "map_2025_vs_2024.html": "Variación de frecuencia relativa 2025 vs 2024 (proporción del sistema por estación origen)"
+  };
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const mapFile = btn.getAttribute('data-map');
+      frame.src = mapFile;
+      caption.textContent = titles[mapFile] || "";
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+
+  fsBtn.addEventListener('click', () => {
+    if (frame && frame.src) {
+      window.open(frame.src, '_blank');
+    }
+  });
+</script>
+</body>
+</html>

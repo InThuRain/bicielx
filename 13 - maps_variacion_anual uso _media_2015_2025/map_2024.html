@@ -1,0 +1,2001 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e1609276b82be6c094980ee73107e413 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e1609276b82be6c094980ee73107e413" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e1609276b82be6c094980ee73107e413 = L.map(
+                "map_e1609276b82be6c094980ee73107e413",
+                {
+                    center: [38.267, -0.7129],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_e1609276b82be6c094980ee73107e413);
+
+            
+
+        
+    
+            var tile_layer_655ffa99552836d4ec2839cc84ae5758 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_655ffa99552836d4ec2839cc84ae5758.addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+            var circle_marker_3b9abcef1f88009430c21805ad23e7b9 = L.circleMarker(
+                [38.272036, -0.694305],
+                {"bubblingMouseEvents": true, "color": "#d2d4d4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2d4d4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.8443990466462505, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_8820b8f52929f620769f4046f1022e55 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc7e20bb1a996f74d0a61ce7723d57a2 = $(`<div id="html_cc7e20bb1a996f74d0a61ce7723d57a2" style="width: 100.0%; height: 100.0%;">1 – Estació d’Autobusos<br>Media mensual 2023: 1056.5 usos<br>Media mensual 2024: 1051.3 usos<br>Δ media: -5.2 usos (-0.5%)</div>`)[0];
+                popup_8820b8f52929f620769f4046f1022e55.setContent(html_cc7e20bb1a996f74d0a61ce7723d57a2);
+            
+        
+
+        circle_marker_3b9abcef1f88009430c21805ad23e7b9.bindPopup(popup_8820b8f52929f620769f4046f1022e55)
+        ;
+
+        
+    
+    
+            var circle_marker_960bea2bd039bab36287db66770bbc47 = L.circleMarker(
+                [38.268457, -0.696731],
+                {"bubblingMouseEvents": true, "color": "#b1d8e5ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b1d8e5ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25.109976166155924, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_d390c5a00f00c5e90bfd9f3cfae044b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7a415b39e9e5a37221727aca8a5dde48 = $(`<div id="html_7a415b39e9e5a37221727aca8a5dde48" style="width: 100.0%; height: 100.0%;">2 – Oficina de Turisme<br>Media mensual 2023: 1276.8 usos<br>Media mensual 2024: 1147.7 usos<br>Δ media: -129.2 usos (-10.1%)</div>`)[0];
+                popup_d390c5a00f00c5e90bfd9f3cfae044b0.setContent(html_7a415b39e9e5a37221727aca8a5dde48);
+            
+        
+
+        circle_marker_960bea2bd039bab36287db66770bbc47.bindPopup(popup_d390c5a00f00c5e90bfd9f3cfae044b0)
+        ;
+
+        
+    
+    
+            var circle_marker_30211166f7873f2aa7774e5ed0bba274 = L.circleMarker(
+                [38.270117, -0.685963],
+                {"bubblingMouseEvents": true, "color": "#b0d8e5ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b0d8e5ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.76336397684714, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_df468cf898a56af3ae1a6579e6ea1f73 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_533c5f5a42e4cf3db22b63f1ea278b14 = $(`<div id="html_533c5f5a42e4cf3db22b63f1ea278b14" style="width: 100.0%; height: 100.0%;">3 – Plaça de la Llotja<br>Media mensual 2023: 874.8 usos<br>Media mensual 2024: 784.5 usos<br>Δ media: -90.3 usos (-10.3%)</div>`)[0];
+                popup_df468cf898a56af3ae1a6579e6ea1f73.setContent(html_533c5f5a42e4cf3db22b63f1ea278b14);
+            
+        
+
+        circle_marker_30211166f7873f2aa7774e5ed0bba274.bindPopup(popup_df468cf898a56af3ae1a6579e6ea1f73)
+        ;
+
+        
+    
+    
+            var circle_marker_41c26095bc17f72e55fac8c4a499c4ac = L.circleMarker(
+                [38.260487, -0.698565],
+                {"bubblingMouseEvents": true, "color": "#88aaecff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#88aaecff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.549540347293167, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_0f5c0e5dfd4db619039aefa0386c9853 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b9b910df8b90362008350353d44c4f3 = $(`<div id="html_8b9b910df8b90362008350353d44c4f3" style="width: 100.0%; height: 100.0%;">4 – Plaça del Raval<br>Media mensual 2023: 838.6 usos<br>Media mensual 2024: 725.1 usos<br>Δ media: -113.5 usos (-13.5%)</div>`)[0];
+                popup_0f5c0e5dfd4db619039aefa0386c9853.setContent(html_8b9b910df8b90362008350353d44c4f3);
+            
+        
+
+        circle_marker_41c26095bc17f72e55fac8c4a499c4ac.bindPopup(popup_0f5c0e5dfd4db619039aefa0386c9853)
+        ;
+
+        
+    
+    
+            var circle_marker_b0ca802326df605a05714514310e7b9e = L.circleMarker(
+                [38.264171, -0.695433],
+                {"bubblingMouseEvents": true, "color": "#e0e096ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e0e096ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.836908409942108, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_0a61a75aca5c152871ff926d9d7d5b99 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_40fdf246a7175c48ec623d200ee7de9d = $(`<div id="html_40fdf246a7175c48ec623d200ee7de9d" style="width: 100.0%; height: 100.0%;">5 – Centre de Congressos<br>Media mensual 2023: 1287.9 usos<br>Media mensual 2024: 1329.8 usos<br>Δ media: +41.8 usos (+3.2%)</div>`)[0];
+                popup_0a61a75aca5c152871ff926d9d7d5b99.setContent(html_40fdf246a7175c48ec623d200ee7de9d);
+            
+        
+
+        circle_marker_b0ca802326df605a05714514310e7b9e.bindPopup(popup_0a61a75aca5c152871ff926d9d7d5b99)
+        ;
+
+        
+    
+    
+            var circle_marker_63f83842547ca45a87afc25e4b43862f = L.circleMarker(
+                [38.265409, -0.699424],
+                {"bubblingMouseEvents": true, "color": "#b9d7e0ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b9d7e0ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25.886278515492023, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_c8c57d9ed536ef69027e70d81a6fde11 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d92351dd642a5884f93281e08dcd125 = $(`<div id="html_4d92351dd642a5884f93281e08dcd125" style="width: 100.0%; height: 100.0%;">6 – Ajuntament<br>Media mensual 2023: 1742.9 usos<br>Media mensual 2024: 1609.0 usos<br>Δ media: -133.9 usos (-7.7%)</div>`)[0];
+                popup_c8c57d9ed536ef69027e70d81a6fde11.setContent(html_4d92351dd642a5884f93281e08dcd125);
+            
+        
+
+        circle_marker_63f83842547ca45a87afc25e4b43862f.bindPopup(popup_c8c57d9ed536ef69027e70d81a6fde11)
+        ;
+
+        
+    
+    
+            var circle_marker_f36291b59d3ea23b96339d12694ee587 = L.circleMarker(
+                [38.273904, -0.673121],
+                {"bubblingMouseEvents": true, "color": "#aed8e6ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#aed8e6ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.79026217228465, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_e16a9a8777fc7e8d21e729b2fed5a1b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f6558bb4e6307c379a73bd6dea74b7fb = $(`<div id="html_f6558bb4e6307c379a73bd6dea74b7fb" style="width: 100.0%; height: 100.0%;">7 – Pavelló Municipal<br>Media mensual 2023: 441.8 usos<br>Media mensual 2024: 394.1 usos<br>Δ media: -47.7 usos (-10.8%)</div>`)[0];
+                popup_e16a9a8777fc7e8d21e729b2fed5a1b1.setContent(html_f6558bb4e6307c379a73bd6dea74b7fb);
+            
+        
+
+        circle_marker_f36291b59d3ea23b96339d12694ee587.bindPopup(popup_e16a9a8777fc7e8d21e729b2fed5a1b1)
+        ;
+
+        
+    
+    
+            var circle_marker_2e5e7d6f0f9f14866af82383ef55e962 = L.circleMarker(
+                [38.270115, -0.713323],
+                {"bubblingMouseEvents": true, "color": "#c3d6dcff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#c3d6dcff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.29588014981273, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_b73277819b28cb3d172f187a474e3b82 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_71a612a45dc04093c3679dcdf2c7dfc2 = $(`<div id="html_71a612a45dc04093c3679dcdf2c7dfc2" style="width: 100.0%; height: 100.0%;">8 – Polivalent de Carrús<br>Media mensual 2023: 417.1 usos<br>Media mensual 2024: 396.9 usos<br>Δ media: -20.2 usos (-4.8%)</div>`)[0];
+                popup_b73277819b28cb3d172f187a474e3b82.setContent(html_71a612a45dc04093c3679dcdf2c7dfc2);
+            
+        
+
+        circle_marker_2e5e7d6f0f9f14866af82383ef55e962.bindPopup(popup_b73277819b28cb3d172f187a474e3b82)
+        ;
+
+        
+    
+    
+            var circle_marker_e04d4acf361f00033945723103e25999 = L.circleMarker(
+                [38.259831, -0.701275],
+                {"bubblingMouseEvents": true, "color": "#e6e67bff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e6e67bff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.115083418454201, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_ac86bcd0e5ced8dbbbc57eb67466e547 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac245755f2d511e76d1428f286fec573 = $(`<div id="html_ac245755f2d511e76d1428f286fec573" style="width: 100.0%; height: 100.0%;">9 – Biblioteca de Sant Josep<br>Media mensual 2023: 805.8 usos<br>Media mensual 2024: 843.2 usos<br>Δ media: +37.4 usos (+4.6%)</div>`)[0];
+                popup_ac86bcd0e5ced8dbbbc57eb67466e547.setContent(html_ac245755f2d511e76d1428f286fec573);
+            
+        
+
+        circle_marker_e04d4acf361f00033945723103e25999.bindPopup(popup_ac86bcd0e5ced8dbbbc57eb67466e547)
+        ;
+
+        
+    
+    
+            var circle_marker_d4a7e288a815484e6e1e4b241ea8252b = L.circleMarker(
+                [38.256839, -0.691995],
+                {"bubblingMouseEvents": true, "color": "#9ec5e9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9ec5e9ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.59550561797753, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_87696be37d7f4a5b73652d5e130622ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4a7157adc3273616b98e23baa25e8100 = $(`<div id="html_4a7157adc3273616b98e23baa25e8100" style="width: 100.0%; height: 100.0%;">10 – L’Escorxador<br>Media mensual 2023: 180.9 usos<br>Media mensual 2024: 158.9 usos<br>Δ media: -22.0 usos (-12.2%)</div>`)[0];
+                popup_87696be37d7f4a5b73652d5e130622ac.setContent(html_4a7157adc3273616b98e23baa25e8100);
+            
+        
+
+        circle_marker_d4a7e288a815484e6e1e4b241ea8252b.bindPopup(popup_87696be37d7f4a5b73652d5e130622ac)
+        ;
+
+        
+    
+    
+            var circle_marker_d9af978db7c855d54a86d55528f81048 = L.circleMarker(
+                [38.261942, -0.708752],
+                {"bubblingMouseEvents": true, "color": "#1317fdff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1317fdff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 32.81852230166839, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_d70d1b65ef12c3796c090d73c8516177 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3358a27246ad0ec9c228d4578729595e = $(`<div id="html_3358a27246ad0ec9c228d4578729595e" style="width: 100.0%; height: 100.0%;">11 – Plaça de Crevillent<br>Media mensual 2023: 836.5 usos<br>Media mensual 2024: 660.2 usos<br>Δ media: -176.3 usos (-21.1%)</div>`)[0];
+                popup_d70d1b65ef12c3796c090d73c8516177.setContent(html_3358a27246ad0ec9c228d4578729595e);
+            
+        
+
+        circle_marker_d9af978db7c855d54a86d55528f81048.bindPopup(popup_d70d1b65ef12c3796c090d73c8516177)
+        ;
+
+        
+    
+    
+            var circle_marker_e6a4e0d11e0ff8c396a0ea393bf53f0c = L.circleMarker(
+                [38.268924, -0.706933],
+                {"bubblingMouseEvents": true, "color": "#bad7e0ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bad7e0ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.386108273748732, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_b1e47a6426e88f6a0eff2aebed08e31c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8170424cd762b2e0a17b5b7a70fb03a0 = $(`<div id="html_8170424cd762b2e0a17b5b7a70fb03a0" style="width: 100.0%; height: 100.0%;">12 – Ambulatori de Sant Fermí<br>Media mensual 2023: 1540.2 usos<br>Media mensual 2024: 1427.8 usos<br>Δ media: -112.5 usos (-7.3%)</div>`)[0];
+                popup_b1e47a6426e88f6a0eff2aebed08e31c.setContent(html_8170424cd762b2e0a17b5b7a70fb03a0);
+            
+        
+
+        circle_marker_e6a4e0d11e0ff8c396a0ea393bf53f0c.bindPopup(popup_b1e47a6426e88f6a0eff2aebed08e31c)
+        ;
+
+        
+    
+    
+            var circle_marker_785557dc67be9f89648210cac44a3868 = L.circleMarker(
+                [38.274553, -0.708405],
+                {"bubblingMouseEvents": true, "color": "#d8d8beff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d8d8beff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.435818862785154, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_783f3a1b5212419413205dd94fa5ee80 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52a25c512695e3f608a96fd0f47c3299 = $(`<div id="html_52a25c512695e3f608a96fd0f47c3299" style="width: 100.0%; height: 100.0%;">13 – Jardí del 1r de Maig<br>Media mensual 2023: 242.8 usos<br>Media mensual 2024: 245.5 usos<br>Δ media: +2.7 usos (+1.1%)</div>`)[0];
+                popup_783f3a1b5212419413205dd94fa5ee80.setContent(html_52a25c512695e3f608a96fd0f47c3299);
+            
+        
+
+        circle_marker_785557dc67be9f89648210cac44a3868.bindPopup(popup_783f3a1b5212419413205dd94fa5ee80)
+        ;
+
+        
+    
+    
+            var circle_marker_ad07bb91275b47b38ba52891172aa289 = L.circleMarker(
+                [38.262993, -0.688257],
+                {"bubblingMouseEvents": true, "color": "#556bf3ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#556bf3ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.15253660197482, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_dd501d03d6138387da191d8cbc2053a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_641fb7b9bd618e72f92df393a5e14b20 = $(`<div id="html_641fb7b9bd618e72f92df393a5e14b20" style="width: 100.0%; height: 100.0%;">14 – Comissaria<br>Media mensual 2023: 588.6 usos<br>Media mensual 2024: 489.8 usos<br>Δ media: -98.8 usos (-16.8%)</div>`)[0];
+                popup_dd501d03d6138387da191d8cbc2053a8.setContent(html_641fb7b9bd618e72f92df393a5e14b20);
+            
+        
+
+        circle_marker_ad07bb91275b47b38ba52891172aa289.bindPopup(popup_dd501d03d6138387da191d8cbc2053a8)
+        ;
+
+        
+    
+    
+            var circle_marker_40c4c9b6171c048397774690b8040bf7 = L.circleMarker(
+                [38.26573, -0.71128],
+                {"bubblingMouseEvents": true, "color": "#ffa200ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffa200ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 29.11406196799456, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_b26af3ac3cde89d302e5254c82ff519d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1f4639701271d2afb7067a8bb4036197 = $(`<div id="html_1f4639701271d2afb7067a8bb4036197" style="width: 100.0%; height: 100.0%;">15 – Av. Llibertat / Reina Victòria<br>Media mensual 2023: 682.5 usos<br>Media mensual 2024: 836.2 usos<br>Δ media: +153.7 usos (+22.5%)</div>`)[0];
+                popup_b26af3ac3cde89d302e5254c82ff519d.setContent(html_1f4639701271d2afb7067a8bb4036197);
+            
+        
+
+        circle_marker_40c4c9b6171c048397774690b8040bf7.bindPopup(popup_b26af3ac3cde89d302e5254c82ff519d)
+        ;
+
+        
+    
+    
+            var circle_marker_02a5eb51502d0f41fc40820049253821 = L.circleMarker(
+                [38.27609, -0.71529],
+                {"bubblingMouseEvents": true, "color": "#a0c8e8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#a0c8e8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.77664283282261, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_b2d38f4effe4ada333294f608116e121 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db6b0311f3f0950c778e7cf3e75b3a96 = $(`<div id="html_db6b0311f3f0950c778e7cf3e75b3a96" style="width: 100.0%; height: 100.0%;">16 – Jardí d’Asp<br>Media mensual 2023: 396.6 usos<br>Media mensual 2024: 349.0 usos<br>Δ media: -47.6 usos (-12.0%)</div>`)[0];
+                popup_b2d38f4effe4ada333294f608116e121.setContent(html_db6b0311f3f0950c778e7cf3e75b3a96);
+            
+        
+
+        circle_marker_02a5eb51502d0f41fc40820049253821.bindPopup(popup_b2d38f4effe4ada333294f608116e121)
+        ;
+
+        
+    
+    
+            var circle_marker_8e8b740e917a2184790c4bcbc1e03527 = L.circleMarker(
+                [38.27662, -0.67801],
+                {"bubblingMouseEvents": true, "color": "#d5d5cdff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d5d5cdff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.653728294177733, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_08a012c02aaf1e953c49d5b92eeec5c8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_308ec3ff92a40ba784054a2e71e6674d = $(`<div id="html_308ec3ff92a40ba784054a2e71e6674d" style="width: 100.0%; height: 100.0%;">17 – Plaça de Castella<br>Media mensual 2023: 1145.2 usos<br>Media mensual 2024: 1149.2 usos<br>Δ media: +4.0 usos (+0.3%)</div>`)[0];
+                popup_08a012c02aaf1e953c49d5b92eeec5c8.setContent(html_308ec3ff92a40ba784054a2e71e6674d);
+            
+        
+
+        circle_marker_8e8b740e917a2184790c4bcbc1e03527.bindPopup(popup_08a012c02aaf1e953c49d5b92eeec5c8)
+        ;
+
+        
+    
+    
+            var circle_marker_0de133c87ea6af94cfc5c1a5336d3dc9 = L.circleMarker(
+                [38.27832, -0.67195],
+                {"bubblingMouseEvents": true, "color": "#d2d4d4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2d4d4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.381341504937017, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_da9215c28b6cdd63cb502c713032f7e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f4769e0dfd18d2afba29a50303cc41ad = $(`<div id="html_f4769e0dfd18d2afba29a50303cc41ad" style="width: 100.0%; height: 100.0%;">18 – Poliesportiu d’Altabix<br>Media mensual 2023: 537.0 usos<br>Media mensual 2024: 534.7 usos<br>Δ media: -2.3 usos (-0.4%)</div>`)[0];
+                popup_da9215c28b6cdd63cb502c713032f7e0.setContent(html_f4769e0dfd18d2afba29a50303cc41ad);
+            
+        
+
+        circle_marker_0de133c87ea6af94cfc5c1a5336d3dc9.bindPopup(popup_da9215c28b6cdd63cb502c713032f7e0)
+        ;
+
+        
+    
+    
+            var circle_marker_4af769fd507d0b0454495ade0c29035e = L.circleMarker(
+                [38.26674, -0.69328],
+                {"bubblingMouseEvents": true, "color": "#b7d7e2ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b7d7e2ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.84337759618657, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_68f8bbbad6b49cfa9777bd7816972ced = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa90cb006ec2d053f8f0acf18de1294f = $(`<div id="html_fa90cb006ec2d053f8f0acf18de1294f" style="width: 100.0%; height: 100.0%;">19 – Jesuïtines<br>Media mensual 2023: 1458.1 usos<br>Media mensual 2024: 1336.7 usos<br>Δ media: -121.4 usos (-8.3%)</div>`)[0];
+                popup_68f8bbbad6b49cfa9777bd7816972ced.setContent(html_fa90cb006ec2d053f8f0acf18de1294f);
+            
+        
+
+        circle_marker_4af769fd507d0b0454495ade0c29035e.bindPopup(popup_68f8bbbad6b49cfa9777bd7816972ced)
+        ;
+
+        
+    
+    
+            var circle_marker_eaf76eccd870129caff367fd75a2d4ca = L.circleMarker(
+                [38.25835, -0.70852],
+                {"bubblingMouseEvents": true, "color": "#5970f3ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5970f3ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.529792305073205, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_0167b524b6552855ce15c0b18d7e4d09 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c901051788c5086d25bc047c2000a418 = $(`<div id="html_c901051788c5086d25bc047c2000a418" style="width: 100.0%; height: 100.0%;">20 – Antoni Mena / Fra Jaume Torres<br>Media mensual 2023: 463.3 usos<br>Media mensual 2024: 386.7 usos<br>Δ media: -76.7 usos (-16.6%)</div>`)[0];
+                popup_0167b524b6552855ce15c0b18d7e4d09.setContent(html_c901051788c5086d25bc047c2000a418);
+            
+        
+
+        circle_marker_eaf76eccd870129caff367fd75a2d4ca.bindPopup(popup_0167b524b6552855ce15c0b18d7e4d09)
+        ;
+
+        
+    
+    
+            var circle_marker_e768756d4299ebc36c16780ec4346ccf = L.circleMarker(
+                [38.25923, -0.7109],
+                {"bubblingMouseEvents": true, "color": "#00008bff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#00008bff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 40.44535240040861, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_aeffddef30ba5edefee0ca55ec2eea55 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d2fe2947b286f761d18aad3a6bfcfdcf = $(`<div id="html_d2fe2947b286f761d18aad3a6bfcfdcf" style="width: 100.0%; height: 100.0%;">21 – C.P. Mariano Benlliure<br>Media mensual 2023: 666.3 usos<br>Media mensual 2024: 443.3 usos<br>Δ media: -223.0 usos (-33.5%)</div>`)[0];
+                popup_aeffddef30ba5edefee0ca55ec2eea55.setContent(html_d2fe2947b286f761d18aad3a6bfcfdcf);
+            
+        
+
+        circle_marker_e768756d4299ebc36c16780ec4346ccf.bindPopup(popup_aeffddef30ba5edefee0ca55ec2eea55)
+        ;
+
+        
+    
+    
+            var circle_marker_fb5d9d83772c4bb99011a8e7f9ba2282 = L.circleMarker(
+                [38.25399, -0.70548],
+                {"bubblingMouseEvents": true, "color": "#ffd400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffd400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.245829077289752, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_a58027bb3a4f8c74de40890142946331 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c14909c2a105434f0033f15a3401c8b8 = $(`<div id="html_c14909c2a105434f0033f15a3401c8b8" style="width: 100.0%; height: 100.0%;">22 – Av. Llauradors / Eslava<br>Media mensual 2023: 526.1 usos<br>Media mensual 2024: 613.2 usos<br>Δ media: +87.2 usos (+16.6%)</div>`)[0];
+                popup_a58027bb3a4f8c74de40890142946331.setContent(html_c14909c2a105434f0033f15a3401c8b8);
+            
+        
+
+        circle_marker_fb5d9d83772c4bb99011a8e7f9ba2282.bindPopup(popup_a58027bb3a4f8c74de40890142946331)
+        ;
+
+        
+    
+    
+            var circle_marker_477d56bafc28d6c71e3cbc58430cfee8 = L.circleMarker(
+                [38.25734, -0.70461],
+                {"bubblingMouseEvents": true, "color": "#ccd4d7ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ccd4d7ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.906707524685047, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_f17ec9d39a94f5a221e71201c32eabde = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_41dbf2398a9871de2628a109b034fafb = $(`<div id="html_41dbf2398a9871de2628a109b034fafb" style="width: 100.0%; height: 100.0%;">23 – Conrado del Campo / Trinquet<br>Media mensual 2023: 578.0 usos<br>Media mensual 2024: 566.3 usos<br>Δ media: -11.7 usos (-2.0%)</div>`)[0];
+                popup_f17ec9d39a94f5a221e71201c32eabde.setContent(html_41dbf2398a9871de2628a109b034fafb);
+            
+        
+
+        circle_marker_477d56bafc28d6c71e3cbc58430cfee8.bindPopup(popup_f17ec9d39a94f5a221e71201c32eabde)
+        ;
+
+        
+    
+    
+            var circle_marker_6e099e563d535ae6ed74bb01634d1269 = L.circleMarker(
+                [38.27553, -0.66915],
+                {"bubblingMouseEvents": true, "color": "#2b36f9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2b36f9ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.79809329247532, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_a640c9abb4be0354738e77644760c765 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c0303ad6141322868e9520906fa375e9 = $(`<div id="html_c0303ad6141322868e9520906fa375e9" style="width: 100.0%; height: 100.0%;">24 – Policia Local<br>Media mensual 2023: 276.0 usos<br>Media mensual 2024: 222.2 usos<br>Δ media: -53.8 usos (-19.5%)</div>`)[0];
+                popup_a640c9abb4be0354738e77644760c765.setContent(html_c0303ad6141322868e9520906fa375e9);
+            
+        
+
+        circle_marker_6e099e563d535ae6ed74bb01634d1269.bindPopup(popup_a640c9abb4be0354738e77644760c765)
+        ;
+
+        
+    
+    
+            var circle_marker_f90f88c749707b4e3ae6c5ce3b55de42 = L.circleMarker(
+                [38.26718, -0.70259],
+                {"bubblingMouseEvents": true, "color": "#d4d4d2ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d4d4d2ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.122574055158325, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_518c03adc427de88fe11e6ec46b328ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be3e60267d144ea66099c1bec6defdc7 = $(`<div id="html_be3e60267d144ea66099c1bec6defdc7" style="width: 100.0%; height: 100.0%;">25 – Cor de Jesús<br>Media mensual 2023: 889.8 usos<br>Media mensual 2024: 890.5 usos<br>Δ media: +0.8 usos (+0.1%)</div>`)[0];
+                popup_518c03adc427de88fe11e6ec46b328ca.setContent(html_be3e60267d144ea66099c1bec6defdc7);
+            
+        
+
+        circle_marker_f90f88c749707b4e3ae6c5ce3b55de42.bindPopup(popup_518c03adc427de88fe11e6ec46b328ca)
+        ;
+
+        
+    
+    
+            var circle_marker_d7cba4843fd32f046f21634f7c36ddab = L.circleMarker(
+                [38.27425, -0.69111],
+                {"bubblingMouseEvents": true, "color": "#b8d7e1ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b8d7e1ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.524004085801828, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_08716659f8fea8f890fd41fc14315725 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53cf57bc8b21b22854abc3e81259e71f = $(`<div id="html_53cf57bc8b21b22854abc3e81259e71f" style="width: 100.0%; height: 100.0%;">26 – UMH / Escola Oficial d’Idiomes<br>Media mensual 2023: 1041.1 usos<br>Media mensual 2024: 958.3 usos<br>Δ media: -82.7 usos (-8.0%)</div>`)[0];
+                popup_08716659f8fea8f890fd41fc14315725.setContent(html_53cf57bc8b21b22854abc3e81259e71f);
+            
+        
+
+        circle_marker_d7cba4843fd32f046f21634f7c36ddab.bindPopup(popup_08716659f8fea8f890fd41fc14315725)
+        ;
+
+        
+    
+    
+            var circle_marker_4b2058b1b9a7cbf18b41c732c41d91e3 = L.circleMarker(
+                [38.27921, -0.68589],
+                {"bubblingMouseEvents": true, "color": "#cdd4d6ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#cdd4d6ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.443649982975823, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_87e516f5e5cb05f4f5b28845a7e17dbe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56fe21204efab58914e04a456696b087 = $(`<div id="html_56fe21204efab58914e04a456696b087" style="width: 100.0%; height: 100.0%;">27 – UMH / Pavelló d’Esports<br>Media mensual 2023: 513.5 usos<br>Media mensual 2024: 504.7 usos<br>Δ media: -8.8 usos (-1.7%)</div>`)[0];
+                popup_87e516f5e5cb05f4f5b28845a7e17dbe.setContent(html_56fe21204efab58914e04a456696b087);
+            
+        
+
+        circle_marker_4b2058b1b9a7cbf18b41c732c41d91e3.bindPopup(popup_87e516f5e5cb05f4f5b28845a7e17dbe)
+        ;
+
+        
+    
+    
+            var circle_marker_720d784add1be187e9ddc4ab575cf6da = L.circleMarker(
+                [38.262792, -0.703505],
+                {"bubblingMouseEvents": true, "color": "#bcd6dfff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bcd6dfff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.663942798774265, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_e3639b8d9d7935d06fbf268ea4879b2d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4024700bd174d724c67b4c8b2cf7d49 = $(`<div id="html_e4024700bd174d724c67b4c8b2cf7d49" style="width: 100.0%; height: 100.0%;">28 – Passeig de les Germanies<br>Media mensual 2023: 969.2 usos<br>Media mensual 2024: 903.9 usos<br>Δ media: -65.2 usos (-6.7%)</div>`)[0];
+                popup_e3639b8d9d7935d06fbf268ea4879b2d.setContent(html_e4024700bd174d724c67b4c8b2cf7d49);
+            
+        
+
+        circle_marker_720d784add1be187e9ddc4ab575cf6da.bindPopup(popup_e3639b8d9d7935d06fbf268ea4879b2d)
+        ;
+
+        
+    
+    
+            var circle_marker_827b9088505cc32925183ce2fc36b654 = L.circleMarker(
+                [38.275568, -0.703184],
+                {"bubblingMouseEvents": true, "color": "#ff3d00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ff3d00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.944222614294121, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_700cd41350fcf3ef33f12ef2883623a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7df659e29e7c702a09f8b5f7d99aa97 = $(`<div id="html_a7df659e29e7c702a09f8b5f7d99aa97" style="width: 100.0%; height: 100.0%;">29 – Casablanca<br>Media mensual 2023: 124.1 usos<br>Media mensual 2024: 160.5 usos<br>Δ media: +36.4 usos (+29.3%)</div>`)[0];
+                popup_700cd41350fcf3ef33f12ef2883623a7.setContent(html_a7df659e29e7c702a09f8b5f7d99aa97);
+            
+        
+
+        circle_marker_827b9088505cc32925183ce2fc36b654.bindPopup(popup_700cd41350fcf3ef33f12ef2883623a7)
+        ;
+
+        
+    
+    
+            var circle_marker_fd73c8d1c83adfa11a92294dcc941d05 = L.circleMarker(
+                [38.27052, -0.6702],
+                {"bubblingMouseEvents": true, "color": "#313df8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#313df8ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.129383724889344, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_7bc3a4ed8f9d68cfdda237b37eff038d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e59627717e74500ec9865002493cd893 = $(`<div id="html_e59627717e74500ec9865002493cd893" style="width: 100.0%; height: 100.0%;">30 – Squash<br>Media mensual 2023: 642.7 usos<br>Media mensual 2024: 519.5 usos<br>Δ media: -123.2 usos (-19.2%)</div>`)[0];
+                popup_7bc3a4ed8f9d68cfdda237b37eff038d.setContent(html_e59627717e74500ec9865002493cd893);
+            
+        
+
+        circle_marker_fd73c8d1c83adfa11a92294dcc941d05.bindPopup(popup_7bc3a4ed8f9d68cfdda237b37eff038d)
+        ;
+
+        
+    
+    
+            var circle_marker_d1b09b411bb4b95b88072d6e001696ea = L.circleMarker(
+                [38.26566, -0.67728],
+                {"bubblingMouseEvents": true, "color": "#f0f04cff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#f0f04cff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.00612870275792, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_499f040f2a2ee3819f8e317e73decb64 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4422f06e33ddd0ccbd45fb078142e37a = $(`<div id="html_4422f06e33ddd0ccbd45fb078142e37a" style="width: 100.0%; height: 100.0%;">31 – Sant Antoni<br>Media mensual 2023: 516.5 usos<br>Media mensual 2024: 553.2 usos<br>Δ media: +36.8 usos (+7.1%)</div>`)[0];
+                popup_499f040f2a2ee3819f8e317e73decb64.setContent(html_4422f06e33ddd0ccbd45fb078142e37a);
+            
+        
+
+        circle_marker_d1b09b411bb4b95b88072d6e001696ea.bindPopup(popup_499f040f2a2ee3819f8e317e73decb64)
+        ;
+
+        
+    
+    
+            var circle_marker_4c68fedb58f08078460ee6052c955442 = L.circleMarker(
+                [38.27272, -0.68108],
+                {"bubblingMouseEvents": true, "color": "#b1d8e4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b1d8e4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.673816819884255, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_22a7eace7e83b121bb97bb2ae866a0a2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02b02d34244c66c274bd6e359da3d84c = $(`<div id="html_02b02d34244c66c274bd6e359da3d84c" style="width: 100.0%; height: 100.0%;">32 – Centre de Salut d’Altabix<br>Media mensual 2023: 840.1 usos<br>Media mensual 2024: 756.4 usos<br>Δ media: -83.7 usos (-10.0%)</div>`)[0];
+                popup_22a7eace7e83b121bb97bb2ae866a0a2.setContent(html_02b02d34244c66c274bd6e359da3d84c);
+            
+        
+
+        circle_marker_4c68fedb58f08078460ee6052c955442.bindPopup(popup_22a7eace7e83b121bb97bb2ae866a0a2)
+        ;
+
+        
+    
+    
+            var circle_marker_9e38d7e7795b5c3747466f108fec2103 = L.circleMarker(
+                [38.261175, -0.71614],
+                {"bubblingMouseEvents": true, "color": "#dadab5ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dadab5ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.743275451140614, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_a6080532976dc2356a9e9ca6fd8eaf31 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e33fcdab0c633828015227773c6cc69 = $(`<div id="html_2e33fcdab0c633828015227773c6cc69" style="width: 100.0%; height: 100.0%;">33 – Av. Libertat / l’Aljub<br>Media mensual 2023: 658.8 usos<br>Media mensual 2024: 669.5 usos<br>Δ media: +10.7 usos (+1.6%)</div>`)[0];
+                popup_a6080532976dc2356a9e9ca6fd8eaf31.setContent(html_2e33fcdab0c633828015227773c6cc69);
+            
+        
+
+        circle_marker_9e38d7e7795b5c3747466f108fec2103.bindPopup(popup_a6080532976dc2356a9e9ca6fd8eaf31)
+        ;
+
+        
+    
+    
+            var circle_marker_ee429c0abb0c4e472334f81b27057846 = L.circleMarker(
+                [38.25961, -0.68586],
+                {"bubblingMouseEvents": true, "color": "#abd5e7ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#abd5e7ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.224719101123586, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_32735abe6b57ed42d0835368c9b1fb48 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d12a9c6caa52f7695d76f67289faf7d2 = $(`<div id="html_d12a9c6caa52f7695d76f67289faf7d2" style="width: 100.0%; height: 100.0%;">34 – Hospital General<br>Media mensual 2023: 1093.1 usos<br>Media mensual 2024: 969.3 usos<br>Δ media: -123.7 usos (-11.3%)</div>`)[0];
+                popup_32735abe6b57ed42d0835368c9b1fb48.setContent(html_d12a9c6caa52f7695d76f67289faf7d2);
+            
+        
+
+        circle_marker_ee429c0abb0c4e472334f81b27057846.bindPopup(popup_32735abe6b57ed42d0835368c9b1fb48)
+        ;
+
+        
+    
+    
+            var circle_marker_09449ffeb00d9745a4bccd02caf456f5 = L.circleMarker(
+                [38.25515, -0.71483],
+                {"bubblingMouseEvents": true, "color": "#dbdbb0ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dbdbb0ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.6401089547157, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_b122724cdd4d78927b7fcce8cc3b131e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a455e0dbde087adec4f7b2ec733ab968 = $(`<div id="html_a455e0dbde087adec4f7b2ec733ab968" style="width: 100.0%; height: 100.0%;">35 – Hospital del Vinalopó<br>Media mensual 2023: 212.4 usos<br>Media mensual 2024: 216.3 usos<br>Δ media: +3.9 usos (+1.8%)</div>`)[0];
+                popup_b122724cdd4d78927b7fcce8cc3b131e.setContent(html_a455e0dbde087adec4f7b2ec733ab968);
+            
+        
+
+        circle_marker_09449ffeb00d9745a4bccd02caf456f5.bindPopup(popup_b122724cdd4d78927b7fcce8cc3b131e)
+        ;
+
+        
+    
+    
+            var circle_marker_66fb2d3bc783739a320560108a922e60 = L.circleMarker(
+                [38.268272, -0.677594],
+                {"bubblingMouseEvents": true, "color": "#7998eeff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7998eeff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.739870616275113, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_ea5a77eb96707b9cd24fb57ab43b761a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d1e414cd148b7a7df7b50eabe0b23fd2 = $(`<div id="html_d1e414cd148b7a7df7b50eabe0b23fd2" style="width: 100.0%; height: 100.0%;">36 – I.E.S. Victoria Kent<br>Media mensual 2023: 496.0 usos<br>Media mensual 2024: 424.2 usos<br>Δ media: -71.8 usos (-14.5%)</div>`)[0];
+                popup_ea5a77eb96707b9cd24fb57ab43b761a.setContent(html_d1e414cd148b7a7df7b50eabe0b23fd2);
+            
+        
+
+        circle_marker_66fb2d3bc783739a320560108a922e60.bindPopup(popup_ea5a77eb96707b9cd24fb57ab43b761a)
+        ;
+
+        
+    
+    
+            var circle_marker_f723603da80b4712ce72d080cb1d19c4 = L.circleMarker(
+                [38.26345, -0.66528],
+                {"bubblingMouseEvents": true, "color": "#5f77f2ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5f77f2ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.087844739530137, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_3e48ad0834ac5ed3783c6e8355d0d668 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_adec1f96826993e966df15699925f627 = $(`<div id="html_adec1f96826993e966df15699925f627" style="width: 100.0%; height: 100.0%;">37 – Hort de Travaló<br>Media mensual 2023: 230.1 usos<br>Media mensual 2024: 192.8 usos<br>Δ media: -37.2 usos (-16.2%)</div>`)[0];
+                popup_3e48ad0834ac5ed3783c6e8355d0d668.setContent(html_adec1f96826993e966df15699925f627);
+            
+        
+
+        circle_marker_f723603da80b4712ce72d080cb1d19c4.bindPopup(popup_3e48ad0834ac5ed3783c6e8355d0d668)
+        ;
+
+        
+    
+    
+            var circle_marker_e1a174ef43788fb5232f8d380579397c = L.circleMarker(
+                [38.278264, -0.708628],
+                {"bubblingMouseEvents": true, "color": "#1d24fbff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1d24fbff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.055158324821253, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_af057b67a90c1ab3451cf2817712bab8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb9f98a2e9ba89dda09112f1f3202d81 = $(`<div id="html_cb9f98a2e9ba89dda09112f1f3202d81" style="width: 100.0%; height: 100.0%;">38 – Poliesportiu de Carrús<br>Media mensual 2023: 420.6 usos<br>Media mensual 2024: 334.6 usos<br>Δ media: -86.0 usos (-20.4%)</div>`)[0];
+                popup_af057b67a90c1ab3451cf2817712bab8.setContent(html_cb9f98a2e9ba89dda09112f1f3202d81);
+            
+        
+
+        circle_marker_e1a174ef43788fb5232f8d380579397c.bindPopup(popup_af057b67a90c1ab3451cf2817712bab8)
+        ;
+
+        
+    
+    
+            var circle_marker_12bfa7652ae32860b74160e3a298f9ee = L.circleMarker(
+                [38.271382, -0.710028],
+                {"bubblingMouseEvents": true, "color": "#0f13fdff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#0f13fdff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.282601293837256, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_361bab697f5a9e3cead4a00e8fa65f67 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_934e072cee74a8aa73228a4395dc5463 = $(`<div id="html_934e072cee74a8aa73228a4395dc5463" style="width: 100.0%; height: 100.0%;">39 – Francesc Cantó<br>Media mensual 2023: 295.4 usos<br>Media mensual 2024: 232.5 usos<br>Δ media: -62.9 usos (-21.3%)</div>`)[0];
+                popup_361bab697f5a9e3cead4a00e8fa65f67.setContent(html_934e072cee74a8aa73228a4395dc5463);
+            
+        
+
+        circle_marker_12bfa7652ae32860b74160e3a298f9ee.bindPopup(popup_361bab697f5a9e3cead4a00e8fa65f67)
+        ;
+
+        
+    
+    
+            var circle_marker_db2b5b25e396eb7d621be5fb0b3d43bd = L.circleMarker(
+                [38.27091, -0.701044],
+                {"bubblingMouseEvents": true, "color": "#9cc3e9ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9cc3e9ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 31.306775621382364, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_0e2e3904d83e43692d8001b2573f040c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d7af77d9a9a02c0c7483f8182998e43b = $(`<div id="html_d7af77d9a9a02c0c7483f8182998e43b" style="width: 100.0%; height: 100.0%;">40 – C.P. Baix Vinalopó<br>Media mensual 2023: 1361.2 usos<br>Media mensual 2024: 1194.2 usos<br>Δ media: -167.1 usos (-12.3%)</div>`)[0];
+                popup_0e2e3904d83e43692d8001b2573f040c.setContent(html_d7af77d9a9a02c0c7483f8182998e43b);
+            
+        
+
+        circle_marker_db2b5b25e396eb7d621be5fb0b3d43bd.bindPopup(popup_0e2e3904d83e43692d8001b2573f040c)
+        ;
+
+        
+    
+    
+            var circle_marker_c2b68c0a8c937fdd7068e6fa2014ef31 = L.circleMarker(
+                [38.281922, -0.712788],
+                {"bubblingMouseEvents": true, "color": "#80a0edff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#80a0edff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.560435818862787, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_6597bfcb589fa64f31c9ee91c7a3f8cd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db1012b85d61354c85f159438ac15b1f = $(`<div id="html_db1012b85d61354c85f159438ac15b1f" style="width: 100.0%; height: 100.0%;">41 – Dipòsit Municipal de Carrús<br>Media mensual 2023: 111.5 usos<br>Media mensual 2024: 95.8 usos<br>Δ media: -15.7 usos (-14.1%)</div>`)[0];
+                popup_6597bfcb589fa64f31c9ee91c7a3f8cd.setContent(html_db1012b85d61354c85f159438ac15b1f);
+            
+        
+
+        circle_marker_c2b68c0a8c937fdd7068e6fa2014ef31.bindPopup(popup_6597bfcb589fa64f31c9ee91c7a3f8cd)
+        ;
+
+        
+    
+    
+            var circle_marker_e57f880ab9c5e105a781066d70ad7210 = L.circleMarker(
+                [38.262263, -0.669923],
+                {"bubblingMouseEvents": true, "color": "#252efaff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#252efaff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.072182499148795, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_612d6d8acab24d99bfbaf28129cb95b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b4bd5c9b6d60bd3b02265322577761ba = $(`<div id="html_b4bd5c9b6d60bd3b02265322577761ba" style="width: 100.0%; height: 100.0%;">42 – Multi Aventura Travaló<br>Media mensual 2023: 125.2 usos<br>Media mensual 2024: 100.2 usos<br>Δ media: -24.9 usos (-19.9%)</div>`)[0];
+                popup_612d6d8acab24d99bfbaf28129cb95b5.setContent(html_b4bd5c9b6d60bd3b02265322577761ba);
+            
+        
+
+        circle_marker_e57f880ab9c5e105a781066d70ad7210.bindPopup(popup_612d6d8acab24d99bfbaf28129cb95b5)
+        ;
+
+        
+    
+    
+            var circle_marker_9acb16b41c1c9b1051be15dc6606e22a = L.circleMarker(
+                [38.261994, -0.683099],
+                {"bubblingMouseEvents": true, "color": "#bdd6deff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#bdd6deff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.688798093292478, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_6b094fe38658512f4e3dabe0d5f5acf7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f0cfc3b2b7391f2d64f006102d7f48b = $(`<div id="html_0f0cfc3b2b7391f2d64f006102d7f48b" style="width: 100.0%; height: 100.0%;">43 – Palmerars – Ciutat de la Justícia<br>Media mensual 2023: 159.0 usos<br>Media mensual 2024: 148.7 usos<br>Δ media: -10.3 usos (-6.5%)</div>`)[0];
+                popup_6b094fe38658512f4e3dabe0d5f5acf7.setContent(html_0f0cfc3b2b7391f2d64f006102d7f48b);
+            
+        
+
+        circle_marker_9acb16b41c1c9b1051be15dc6606e22a.bindPopup(popup_6b094fe38658512f4e3dabe0d5f5acf7)
+        ;
+
+        
+    
+    
+            var circle_marker_e8fbc056c1cb08e3b07ab64663cf3160 = L.circleMarker(
+                [38.2571333, -0.696961],
+                {"bubblingMouseEvents": true, "color": "#e7e774ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e7e774ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.46135512427647, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_ab898697192e3571a175c847a105cbb4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d086821d68769d90194494e027940f7c = $(`<div id="html_d086821d68769d90194494e027940f7c" style="width: 100.0%; height: 100.0%;">44 – Portes Encarnades<br>Media mensual 2023: 663.3 usos<br>Media mensual 2024: 696.8 usos<br>Δ media: +33.4 usos (+5.0%)</div>`)[0];
+                popup_ab898697192e3571a175c847a105cbb4.setContent(html_d086821d68769d90194494e027940f7c);
+            
+        
+
+        circle_marker_e8fbc056c1cb08e3b07ab64663cf3160.bindPopup(popup_ab898697192e3571a175c847a105cbb4)
+        ;
+
+        
+    
+    
+            var circle_marker_f274cd66d6028027458ccf4965e7485a = L.circleMarker(
+                [38.271869, -0.70703],
+                {"bubblingMouseEvents": true, "color": "#fff100ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff100ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.722165474974467, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_97bd1b25696a9ddcefb497ffbb706776 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_637681e4ebdd4261f07c65cda5f94aaf = $(`<div id="html_637681e4ebdd4261f07c65cda5f94aaf" style="width: 100.0%; height: 100.0%;">45 – Plaça de Barcelona<br>Media mensual 2023: 365.9 usos<br>Media mensual 2024: 413.2 usos<br>Δ media: +47.2 usos (+12.9%)</div>`)[0];
+                popup_97bd1b25696a9ddcefb497ffbb706776.setContent(html_637681e4ebdd4261f07c65cda5f94aaf);
+            
+        
+
+        circle_marker_f274cd66d6028027458ccf4965e7485a.bindPopup(popup_97bd1b25696a9ddcefb497ffbb706776)
+        ;
+
+        
+    
+    
+            var circle_marker_21111d7c792582e2ee28640a2128f735 = L.circleMarker(
+                [38.274244, -0.6846805],
+                {"bubblingMouseEvents": true, "color": "#dadab4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#dadab4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.647940074906355, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_914cacf5edda5b7ee67d96c5e20adf62 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_29e36259fa01cb3dc4f3a943f459a6f6 = $(`<div id="html_29e36259fa01cb3dc4f3a943f459a6f6" style="width: 100.0%; height: 100.0%;">46 – UMH / Rectorado<br>Media mensual 2023: 618.8 usos<br>Media mensual 2024: 628.9 usos<br>Δ media: +10.1 usos (+1.6%)</div>`)[0];
+                popup_914cacf5edda5b7ee67d96c5e20adf62.setContent(html_29e36259fa01cb3dc4f3a943f459a6f6);
+            
+        
+
+        circle_marker_21111d7c792582e2ee28640a2128f735.bindPopup(popup_914cacf5edda5b7ee67d96c5e20adf62)
+        ;
+
+        
+    
+    
+            var circle_marker_48d55b33de93b7abfb740fd5adaaf640 = L.circleMarker(
+                [38.26464, -0.708004],
+                {"bubblingMouseEvents": true, "color": "#d2d3d4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d2d3d4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.177051413006466, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_8032d9353e6a2e0010977ec38b722b3d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bdb0b1a016052628a39ea55cb3cbd5eb = $(`<div id="html_bdb0b1a016052628a39ea55cb3cbd5eb" style="width: 100.0%; height: 100.0%;">47 – C.P. Virgen de la Asunción<br>Media mensual 2023: 434.2 usos<br>Media mensual 2024: 433.2 usos<br>Δ media: -1.1 usos (-0.2%)</div>`)[0];
+                popup_8032d9353e6a2e0010977ec38b722b3d.setContent(html_bdb0b1a016052628a39ea55cb3cbd5eb);
+            
+        
+
+        circle_marker_48d55b33de93b7abfb740fd5adaaf640.bindPopup(popup_8032d9353e6a2e0010977ec38b722b3d)
+        ;
+
+        
+    
+    
+            var circle_marker_6aae64fc5b4bb2c2fc77b3831aca8455 = L.circleMarker(
+                [38.271531, -0.7175],
+                {"bubblingMouseEvents": true, "color": "#d8d8beff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d8d8beff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.2179094313925765, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_d38862f5951d6107ae7ccb2c802f2661 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e92d86b7e614d9208e779f2639d00513 = $(`<div id="html_e92d86b7e614d9208e779f2639d00513" style="width: 100.0%; height: 100.0%;">48 – Av. Corts Valencianes<br>Media mensual 2023: 121.0 usos<br>Media mensual 2024: 122.3 usos<br>Δ media: +1.3 usos (+1.1%)</div>`)[0];
+                popup_d38862f5951d6107ae7ccb2c802f2661.setContent(html_e92d86b7e614d9208e779f2639d00513);
+            
+        
+
+        circle_marker_6aae64fc5b4bb2c2fc77b3831aca8455.bindPopup(popup_d38862f5951d6107ae7ccb2c802f2661)
+        ;
+
+        
+    
+    
+            var circle_marker_1a7fa936e56cbe1d29f8528c382abbe9 = L.circleMarker(
+                [38.26978, -0.681872],
+                {"bubblingMouseEvents": true, "color": "#b4d7e3ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b4d7e3ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.74565883554648, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_647a8072414b27e227f2cc1e5972b8e5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f01fc2e36d9c288399bc2171b98a4da0 = $(`<div id="html_f01fc2e36d9c288399bc2171b98a4da0" style="width: 100.0%; height: 100.0%;">49 – Av. Alicante 59<br>Media mensual 2023: 720.6 usos<br>Media mensual 2024: 654.8 usos<br>Δ media: -65.8 usos (-9.1%)</div>`)[0];
+                popup_647a8072414b27e227f2cc1e5972b8e5.setContent(html_f01fc2e36d9c288399bc2171b98a4da0);
+            
+        
+
+        circle_marker_1a7fa936e56cbe1d29f8528c382abbe9.bindPopup(popup_647a8072414b27e227f2cc1e5972b8e5)
+        ;
+
+        
+    
+    
+            var circle_marker_d837538a83bbff490bff53f1364a02eb = L.circleMarker(
+                [38.261464, -0.696053],
+                {"bubblingMouseEvents": true, "color": "#b4d7e3ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b4d7e3ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.527749404153916, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_924dc83881f35a6275d14725a52fca24 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_869b1d980543f61513064f056b292bbd = $(`<div id="html_869b1d980543f61513064f056b292bbd" style="width: 100.0%; height: 100.0%;">50 – Borreguet<br>Media mensual 2023: 705.3 usos<br>Media mensual 2024: 640.9 usos<br>Δ media: -64.4 usos (-9.1%)</div>`)[0];
+                popup_924dc83881f35a6275d14725a52fca24.setContent(html_869b1d980543f61513064f056b292bbd);
+            
+        
+
+        circle_marker_d837538a83bbff490bff53f1364a02eb.bindPopup(popup_924dc83881f35a6275d14725a52fca24)
+        ;
+
+        
+    
+    
+            var circle_marker_49f5a2a26cea68171d373d40b78fe036 = L.circleMarker(
+                [38.271514, -0.675147],
+                {"bubblingMouseEvents": true, "color": "#ffcb00ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffcb00ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.274770173646584, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_b2524e51a1d28b6883841276a7620c38 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_323bf2531ffa53edef896d336518e215 = $(`<div id="html_323bf2531ffa53edef896d336518e215" style="width: 100.0%; height: 100.0%;">51 – Ciudad deportiva zona sur<br>Media mensual 2023: 321.8 usos<br>Media mensual 2024: 378.5 usos<br>Δ media: +56.8 usos (+17.6%)</div>`)[0];
+                popup_b2524e51a1d28b6883841276a7620c38.setContent(html_323bf2531ffa53edef896d336518e215);
+            
+        
+
+        circle_marker_49f5a2a26cea68171d373d40b78fe036.bindPopup(popup_b2524e51a1d28b6883841276a7620c38)
+        ;
+
+        
+    
+    
+            var circle_marker_9050a2732cf35196d4612a510cc6237c = L.circleMarker(
+                [38.269141, -0.717211],
+                {"bubblingMouseEvents": true, "color": "#b3d8e3ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#b3d8e3ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.663602315287709, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_17a99d14b689b57115d7ac0679c8902f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad0f60fd5c73026123eff6a65bad8f69 = $(`<div id="html_ad0f60fd5c73026123eff6a65bad8f69" style="width: 100.0%; height: 100.0%;">52 – Centro salud el Toscar<br>Media mensual 2023: 237.7 usos<br>Media mensual 2024: 215.2 usos<br>Δ media: -22.4 usos (-9.4%)</div>`)[0];
+                popup_17a99d14b689b57115d7ac0679c8902f.setContent(html_ad0f60fd5c73026123eff6a65bad8f69);
+            
+        
+
+        circle_marker_9050a2732cf35196d4612a510cc6237c.bindPopup(popup_17a99d14b689b57115d7ac0679c8902f)
+        ;
+
+        
+    
+    
+            var circle_marker_790d6c8fb7c4776609c30d8fa8782eaf = L.circleMarker(
+                [38.272525, -0.685417],
+                {"bubblingMouseEvents": true, "color": "#eaea68ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#eaea68ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.951651344909768, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_49a5ea57ac36a473e2f21f68acf218dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af9b3a817f4aa31fc03e82cef4193af7 = $(`<div id="html_af9b3a817f4aa31fc03e82cef4193af7" style="width: 100.0%; height: 100.0%;">53 – C.P. Victor Pradera<br>Media mensual 2023: 642.5 usos<br>Media mensual 2024: 678.9 usos<br>Δ media: +36.4 usos (+5.7%)</div>`)[0];
+                popup_49a5ea57ac36a473e2f21f68acf218dc.setContent(html_af9b3a817f4aa31fc03e82cef4193af7);
+            
+        
+
+        circle_marker_790d6c8fb7c4776609c30d8fa8782eaf.bindPopup(popup_49a5ea57ac36a473e2f21f68acf218dc)
+        ;
+
+        
+    
+    
+            var circle_marker_bb15c7cb68f4d58f8a35cb562dcaf3d5 = L.circleMarker(
+                [38.268475, -0.686954],
+                {"bubblingMouseEvents": true, "color": "#212afbff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#212afbff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 44.0, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_99aaf603432c88bf1676d5155053702d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_887f3b6984f7e1ba4e9e661cf8b3073d = $(`<div id="html_887f3b6984f7e1ba4e9e661cf8b3073d" style="width: 100.0%; height: 100.0%;">54 – Plaza de Benidorm<br>Media mensual 2023: 1215.3 usos<br>Media mensual 2024: 970.6 usos<br>Δ media: -244.7 usos (-20.1%)</div>`)[0];
+                popup_99aaf603432c88bf1676d5155053702d.setContent(html_887f3b6984f7e1ba4e9e661cf8b3073d);
+            
+        
+
+        circle_marker_bb15c7cb68f4d58f8a35cb562dcaf3d5.bindPopup(popup_99aaf603432c88bf1676d5155053702d)
+        ;
+
+        
+    
+    
+            var circle_marker_f70a5c6b296da0abe407ec66414bd518 = L.circleMarker(
+                [38.2590083, -0.706969],
+                {"bubblingMouseEvents": true, "color": "#e5e57eff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#e5e57eff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.14027919645898, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_a706e7e855f5d40a6baf8198c6d6b225 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da5f7237dd4266adf71d0873d888ce65 = $(`<div id="html_da5f7237dd4266adf71d0873d888ce65" style="width: 100.0%; height: 100.0%;">55 – Pere Joan Perpinyà<br>Media mensual 2023: 560.5 usos<br>Media mensual 2024: 585.8 usos<br>Δ media: +25.3 usos (+4.5%)</div>`)[0];
+                popup_a706e7e855f5d40a6baf8198c6d6b225.setContent(html_da5f7237dd4266adf71d0873d888ce65);
+            
+        
+
+        circle_marker_f70a5c6b296da0abe407ec66414bd518.bindPopup(popup_a706e7e855f5d40a6baf8198c6d6b225)
+        ;
+
+        
+    
+    
+            var circle_marker_29d0b816bcb9e39129a8227bbb70f2f5 = L.circleMarker(
+                [38.2774498, -0.691602],
+                {"bubblingMouseEvents": true, "color": "#ffb400ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffb400ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.41096356826694, "stroke": true, "weight": 3}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_37cd5376406d520eff7648de3476c06e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d935002c1146a29f20f9babb9437ed57 = $(`<div id="html_d935002c1146a29f20f9babb9437ed57" style="width: 100.0%; height: 100.0%;">56 – UMH / Torre Vaillo<br>Media mensual 2023: 281.2 usos<br>Media mensual 2024: 338.8 usos<br>Δ media: +57.6 usos (+20.5%)</div>`)[0];
+                popup_37cd5376406d520eff7648de3476c06e.setContent(html_d935002c1146a29f20f9babb9437ed57);
+            
+        
+
+        circle_marker_29d0b816bcb9e39129a8227bbb70f2f5.bindPopup(popup_37cd5376406d520eff7648de3476c06e)
+        ;
+
+        
+    
+    
+            var circle_marker_74a628081bee7168eb0704a0e2507916 = L.circleMarker(
+                [38.290824, -0.5870336],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.163432073544433, "stroke": true, "weight": 2}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_175b8a83184206c6f86d289f5f119cbf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_080f949534c166f13d7d35bd571331dc = $(`<div id="html_080f949534c166f13d7d35bd571331dc" style="width: 100.0%; height: 100.0%;">58 – Polideportivo Torrellano<br>Media mensual 2024: 1.0 usos (estación nueva respecto a 2023)</div>`)[0];
+                popup_175b8a83184206c6f86d289f5f119cbf.setContent(html_080f949534c166f13d7d35bd571331dc);
+            
+        
+
+        circle_marker_74a628081bee7168eb0704a0e2507916.bindPopup(popup_175b8a83184206c6f86d289f5f119cbf)
+        ;
+
+        
+    
+    
+            var circle_marker_bdafd414756eee05f096161743c47a7e = L.circleMarker(
+                [38.29422, -0.587922],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.326864147088866, "stroke": true, "weight": 2}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_cfdef6e5add4f892d1d1465122b6fdce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ccee2fe9e5a92212b6a977049b55c952 = $(`<div id="html_ccee2fe9e5a92212b6a977049b55c952" style="width: 100.0%; height: 100.0%;">59 – Calle San Crispín 1 Torrellano<br>Media mensual 2024: 2.0 usos (estación nueva respecto a 2023)</div>`)[0];
+                popup_cfdef6e5add4f892d1d1465122b6fdce.setContent(html_ccee2fe9e5a92212b6a977049b55c952);
+            
+        
+
+        circle_marker_bdafd414756eee05f096161743c47a7e.bindPopup(popup_cfdef6e5add4f892d1d1465122b6fdce)
+        ;
+
+        
+    
+    
+            var circle_marker_3925567db778fe2636a3c7de217b7fb6 = L.circleMarker(
+                [38.29203, -0.592297],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.653728294177733, "stroke": true, "weight": 2}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_c70c523238b047e14d7d7bcfcad4a81d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c394169692536886f4c70e0d8994a719 = $(`<div id="html_c394169692536886f4c70e0d8994a719" style="width: 100.0%; height: 100.0%;">60 – Carrer de la Figuera 2 Torrellano<br>Media mensual 2024: 4.0 usos (estación nueva respecto a 2023)</div>`)[0];
+                popup_c70c523238b047e14d7d7bcfcad4a81d.setContent(html_c394169692536886f4c70e0d8994a719);
+            
+        
+
+        circle_marker_3925567db778fe2636a3c7de217b7fb6.bindPopup(popup_c70c523238b047e14d7d7bcfcad4a81d)
+        ;
+
+        
+    
+    
+            var circle_marker_d25d1f75793c4f075892ffb701dd4601 = L.circleMarker(
+                [38.274429, -0.706795],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.4902962206333, "stroke": true, "weight": 2}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_8a51e8965ab3ead0d5475042b39a5f46 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_75bf2f5e54c2e03c2698e031c952c075 = $(`<div id="html_75bf2f5e54c2e03c2698e031c952c075" style="width: 100.0%; height: 100.0%;">68 – Arturo Salvetti Pardo<br>Media mensual 2024: 3.0 usos (estación nueva respecto a 2023)</div>`)[0];
+                popup_8a51e8965ab3ead0d5475042b39a5f46.setContent(html_75bf2f5e54c2e03c2698e031c952c075);
+            
+        
+
+        circle_marker_d25d1f75793c4f075892ffb701dd4601.bindPopup(popup_8a51e8965ab3ead0d5475042b39a5f46)
+        ;
+
+        
+    
+    
+            var circle_marker_586e0b04a98cc7bc16474b8de6572cd4 = L.circleMarker(
+                [38.270459, -0.70354],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.163432073544433, "stroke": true, "weight": 2}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_618c0e38016f6638e30e6f008d16852f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30f839cd420d327576796eeb52d77bd6 = $(`<div id="html_30f839cd420d327576796eeb52d77bd6" style="width: 100.0%; height: 100.0%;">70 – Libertad-Diagonal<br>Media mensual 2024: 1.0 usos (estación nueva respecto a 2023)</div>`)[0];
+                popup_618c0e38016f6638e30e6f008d16852f.setContent(html_30f839cd420d327576796eeb52d77bd6);
+            
+        
+
+        circle_marker_586e0b04a98cc7bc16474b8de6572cd4.bindPopup(popup_618c0e38016f6638e30e6f008d16852f)
+        ;
+
+        
+    
+    
+            var circle_marker_c5c342baae720dec820cd707c198fa9e = L.circleMarker(
+                [38.267258, -0.712981],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.653728294177733, "stroke": true, "weight": 2}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_4d739e0a6e9142de410e613fe58a22fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d1bd293ca2dd4ec97935818fd2c6d416 = $(`<div id="html_d1bd293ca2dd4ec97935818fd2c6d416" style="width: 100.0%; height: 100.0%;">73 – Plaza de la aparadora<br>Media mensual 2024: 4.0 usos (estación nueva respecto a 2023)</div>`)[0];
+                popup_4d739e0a6e9142de410e613fe58a22fe.setContent(html_d1bd293ca2dd4ec97935818fd2c6d416);
+            
+        
+
+        circle_marker_c5c342baae720dec820cd707c198fa9e.bindPopup(popup_4d739e0a6e9142de410e613fe58a22fe)
+        ;
+
+        
+    
+    
+            var circle_marker_0802ce6460e89d79ab39a5b368852ff9 = L.circleMarker(
+                [38.26302, -0.714168],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.470888661899899, "stroke": true, "weight": 2}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_7599c3379ca9ab431b0075c6eda34c1f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7526fabb1ee2a049ac90d54c8947bcf8 = $(`<div id="html_7526fabb1ee2a049ac90d54c8947bcf8" style="width: 100.0%; height: 100.0%;">74 – IES Nit de l´Albà<br>Media mensual 2024: 9.0 usos (estación nueva respecto a 2023)</div>`)[0];
+                popup_7599c3379ca9ab431b0075c6eda34c1f.setContent(html_7526fabb1ee2a049ac90d54c8947bcf8);
+            
+        
+
+        circle_marker_0802ce6460e89d79ab39a5b368852ff9.bindPopup(popup_7599c3379ca9ab431b0075c6eda34c1f)
+        ;
+
+        
+    
+    
+            var circle_marker_e1c9fca191153b1871fa82bafc3a7f28 = L.circleMarker(
+                [38.26256, -0.718648],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.4902962206333, "stroke": true, "weight": 2}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_54c0aaed117a8b8eea46a6fb6f3315aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db639f908e7cd73ae647048aee0c53bc = $(`<div id="html_db639f908e7cd73ae647048aee0c53bc" style="width: 100.0%; height: 100.0%;">75 – L´aljub<br>Media mensual 2024: 3.0 usos (estación nueva respecto a 2023)</div>`)[0];
+                popup_54c0aaed117a8b8eea46a6fb6f3315aa.setContent(html_db639f908e7cd73ae647048aee0c53bc);
+            
+        
+
+        circle_marker_e1c9fca191153b1871fa82bafc3a7f28.bindPopup(popup_54c0aaed117a8b8eea46a6fb6f3315aa)
+        ;
+
+        
+    
+    
+            var circle_marker_bbd3caf1e22c9ce0fa0f9388d538a97e = L.circleMarker(
+                [38.2670206, -0.707669],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.163432073544433, "stroke": true, "weight": 2}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_ca6778face06250f461071f2fc2d6d2a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f6b093f861c6c2f09078eb3566504b49 = $(`<div id="html_f6b093f861c6c2f09078eb3566504b49" style="width: 100.0%; height: 100.0%;">77 – Plaza Obispo Siuri<br>Media mensual 2024: 1.0 usos (estación nueva respecto a 2023)</div>`)[0];
+                popup_ca6778face06250f461071f2fc2d6d2a.setContent(html_f6b093f861c6c2f09078eb3566504b49);
+            
+        
+
+        circle_marker_bbd3caf1e22c9ce0fa0f9388d538a97e.bindPopup(popup_ca6778face06250f461071f2fc2d6d2a)
+        ;
+
+        
+    
+    
+            var circle_marker_2e21702775f5222009f879435bd5a96f = L.circleMarker(
+                [38.262342, -0.710708],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.163432073544433, "stroke": true, "weight": 2}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_de70e66165279e1f2beabf72e9f8aa27 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_95849035fa64865901d05e2e492338fb = $(`<div id="html_95849035fa64865901d05e2e492338fb" style="width: 100.0%; height: 100.0%;">81 – C.S. Doctor Sapena<br>Media mensual 2024: 1.0 usos (estación nueva respecto a 2023)</div>`)[0];
+                popup_de70e66165279e1f2beabf72e9f8aa27.setContent(html_95849035fa64865901d05e2e492338fb);
+            
+        
+
+        circle_marker_2e21702775f5222009f879435bd5a96f.bindPopup(popup_de70e66165279e1f2beabf72e9f8aa27)
+        ;
+
+        
+    
+    
+            var circle_marker_a53057e278e4376a1c90aa8e29d7e8e2 = L.circleMarker(
+                [38.260897, -0.704218],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.163432073544433, "stroke": true, "weight": 2}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_be29e40f46a1d13c9d2b47656fad4409 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_68f3840ceeb4af8752c2f7325f9e1b23 = $(`<div id="html_68f3840ceeb4af8752c2f7325f9e1b23" style="width: 100.0%; height: 100.0%;">83 – Conrado del campo 35<br>Media mensual 2024: 1.0 usos (estación nueva respecto a 2023)</div>`)[0];
+                popup_be29e40f46a1d13c9d2b47656fad4409.setContent(html_68f3840ceeb4af8752c2f7325f9e1b23);
+            
+        
+
+        circle_marker_a53057e278e4376a1c90aa8e29d7e8e2.bindPopup(popup_be29e40f46a1d13c9d2b47656fad4409)
+        ;
+
+        
+    
+    
+            var circle_marker_df9228470bfd44ae8bca85b08c17053b = L.circleMarker(
+                [38.256488, -0.707359],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.163432073544433, "stroke": true, "weight": 2}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_1b3d6ecf0ca39e079727f5f09cb1e4df = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ec9d72643ab1ddc53bf0171bb6038f0 = $(`<div id="html_1ec9d72643ab1ddc53bf0171bb6038f0" style="width: 100.0%; height: 100.0%;">88 – Pistas del Pla<br>Media mensual 2024: 1.0 usos (estación nueva respecto a 2023)</div>`)[0];
+                popup_1b3d6ecf0ca39e079727f5f09cb1e4df.setContent(html_1ec9d72643ab1ddc53bf0171bb6038f0);
+            
+        
+
+        circle_marker_df9228470bfd44ae8bca85b08c17053b.bindPopup(popup_1b3d6ecf0ca39e079727f5f09cb1e4df)
+        ;
+
+        
+    
+    
+            var circle_marker_c2ad29b2d68080feea085fd7a86812ae = L.circleMarker(
+                [38.26886, -0.693874],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.59550561797753, "stroke": true, "weight": 2}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_824db5dcd2024288101289e9caf58def = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_16de938948107e4261b8f06b00e323d4 = $(`<div id="html_16de938948107e4261b8f06b00e323d4" style="width: 100.0%; height: 100.0%;">93 – Parque Rey Jaume I<br>Media mensual 2024: 22.0 usos (estación nueva respecto a 2023)</div>`)[0];
+                popup_824db5dcd2024288101289e9caf58def.setContent(html_16de938948107e4261b8f06b00e323d4);
+            
+        
+
+        circle_marker_c2ad29b2d68080feea085fd7a86812ae.bindPopup(popup_824db5dcd2024288101289e9caf58def)
+        ;
+
+        
+    
+    
+            var circle_marker_e1c4584323cf57c032791322a4407505 = L.circleMarker(
+                [38.264977, -0.696934],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.961184882533198, "stroke": true, "weight": 2}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_f4c051841895e3ecf3bb99c8a7cf8c43 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8f8cd594ab37e6876ec4ee2aa866d2fd = $(`<div id="html_8f8cd594ab37e6876ec4ee2aa866d2fd" style="width: 100.0%; height: 100.0%;">94 – Parking Gran Teatre<br>Media mensual 2024: 12.0 usos (estación nueva respecto a 2023)</div>`)[0];
+                popup_f4c051841895e3ecf3bb99c8a7cf8c43.setContent(html_8f8cd594ab37e6876ec4ee2aa866d2fd);
+            
+        
+
+        circle_marker_e1c4584323cf57c032791322a4407505.bindPopup(popup_f4c051841895e3ecf3bb99c8a7cf8c43)
+        ;
+
+        
+    
+    
+            var circle_marker_f2e608834a784cc479d87a1146730333 = L.circleMarker(
+                [38.263354, -0.7004],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.163432073544433, "stroke": true, "weight": 2}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_52e54cb19a5a79ae2578747a2224efef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_595d6b7f7fafe24faa94713d189db270 = $(`<div id="html_595d6b7f7fafe24faa94713d189db270" style="width: 100.0%; height: 100.0%;">96 – Puente de Santa Teresa<br>Media mensual 2024: 1.0 usos (estación nueva respecto a 2023)</div>`)[0];
+                popup_52e54cb19a5a79ae2578747a2224efef.setContent(html_595d6b7f7fafe24faa94713d189db270);
+            
+        
+
+        circle_marker_f2e608834a784cc479d87a1146730333.bindPopup(popup_52e54cb19a5a79ae2578747a2224efef)
+        ;
+
+        
+    
+    
+            var circle_marker_3928c1b77722861fe6d5f8d808398d4b = L.circleMarker(
+                [38.264183, -0.692711],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.326864147088866, "stroke": true, "weight": 2}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_3dbe82e67eef73b7916d79b2e5cc5f8e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_47c21787ecbfda300e3c044f59c319d8 = $(`<div id="html_47c21787ecbfda300e3c044f59c319d8" style="width: 100.0%; height: 100.0%;">97 – Huerto del cura<br>Media mensual 2024: 2.0 usos (estación nueva respecto a 2023)</div>`)[0];
+                popup_3dbe82e67eef73b7916d79b2e5cc5f8e.setContent(html_47c21787ecbfda300e3c044f59c319d8);
+            
+        
+
+        circle_marker_3928c1b77722861fe6d5f8d808398d4b.bindPopup(popup_3dbe82e67eef73b7916d79b2e5cc5f8e)
+        ;
+
+        
+    
+    
+            var circle_marker_01668d7184b2b47dce25b537e75f6266 = L.circleMarker(
+                [38.267237, -0.686321],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.326864147088866, "stroke": true, "weight": 2}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_0b9fdaaf6b7ef9b4f4fb53d159852c65 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_076b11eb08a04f748cca433f8c78d976 = $(`<div id="html_076b11eb08a04f748cca433f8c78d976" style="width: 100.0%; height: 100.0%;">98 – IES Sixto Marco<br>Media mensual 2024: 2.0 usos (estación nueva respecto a 2023)</div>`)[0];
+                popup_0b9fdaaf6b7ef9b4f4fb53d159852c65.setContent(html_076b11eb08a04f748cca433f8c78d976);
+            
+        
+
+        circle_marker_01668d7184b2b47dce25b537e75f6266.bindPopup(popup_0b9fdaaf6b7ef9b4f4fb53d159852c65)
+        ;
+
+        
+    
+    
+            var circle_marker_2d0285091ca904bbb008762730b60a72 = L.circleMarker(
+                [38.277239, -0.686979],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.163432073544433, "stroke": true, "weight": 2}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_1fd8baabb490f1ef29851aa128e58090 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0eca2f59b18832eef280e7a635ec5a1c = $(`<div id="html_0eca2f59b18832eef280e7a635ec5a1c" style="width: 100.0%; height: 100.0%;">103 – UMH-Altet<br>Media mensual 2024: 1.0 usos (estación nueva respecto a 2023)</div>`)[0];
+                popup_1fd8baabb490f1ef29851aa128e58090.setContent(html_0eca2f59b18832eef280e7a635ec5a1c);
+            
+        
+
+        circle_marker_2d0285091ca904bbb008762730b60a72.bindPopup(popup_1fd8baabb490f1ef29851aa128e58090)
+        ;
+
+        
+    
+    
+            var circle_marker_701491c7e45249dfbd2513b4e8389335 = L.circleMarker(
+                [38.277859, -0.683877],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.163432073544433, "stroke": true, "weight": 2}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_5ba12a0746326ba95d4c265b35fb7b09 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6042eed8b839056d9800ce2100f06e17 = $(`<div id="html_6042eed8b839056d9800ce2100f06e17" style="width: 100.0%; height: 100.0%;">104 – UMH-Arenals<br>Media mensual 2024: 1.0 usos (estación nueva respecto a 2023)</div>`)[0];
+                popup_5ba12a0746326ba95d4c265b35fb7b09.setContent(html_6042eed8b839056d9800ce2100f06e17);
+            
+        
+
+        circle_marker_701491c7e45249dfbd2513b4e8389335.bindPopup(popup_5ba12a0746326ba95d4c265b35fb7b09)
+        ;
+
+        
+    
+    
+            var circle_marker_6a9c53c74e6b51606d8a5a0120c2572c = L.circleMarker(
+                [38.273918, -0.671269],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.163432073544433, "stroke": true, "weight": 2}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_961123b2519a94c28eca0032047e7925 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9c18f84d355e4f7a793261a424369c4 = $(`<div id="html_b9c18f84d355e4f7a793261a424369c4" style="width: 100.0%; height: 100.0%;">109 – Parque Huerto del Torreret<br>Media mensual 2024: 1.0 usos (estación nueva respecto a 2023)</div>`)[0];
+                popup_961123b2519a94c28eca0032047e7925.setContent(html_b9c18f84d355e4f7a793261a424369c4);
+            
+        
+
+        circle_marker_6a9c53c74e6b51606d8a5a0120c2572c.bindPopup(popup_961123b2519a94c28eca0032047e7925)
+        ;
+
+        
+    
+    
+            var circle_marker_59c073eb5a441562f3db1bf3d228ffd6 = L.circleMarker(
+                [38.26697, -0.68268],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.163432073544433, "stroke": true, "weight": 2}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_b14495eda1ecc74d32dd9bda6bc4b714 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77db75ee7ed6dfcc98e05246b4013269 = $(`<div id="html_77db75ee7ed6dfcc98e05246b4013269" style="width: 100.0%; height: 100.0%;">112 – CEIP San Fernando<br>Media mensual 2024: 1.0 usos (estación nueva respecto a 2023)</div>`)[0];
+                popup_b14495eda1ecc74d32dd9bda6bc4b714.setContent(html_77db75ee7ed6dfcc98e05246b4013269);
+            
+        
+
+        circle_marker_59c073eb5a441562f3db1bf3d228ffd6.bindPopup(popup_b14495eda1ecc74d32dd9bda6bc4b714)
+        ;
+
+        
+    
+    
+            var circle_marker_50a5d2c56242a473e40e4263f4a32661 = L.circleMarker(
+                [38.262133, -0.672075],
+                {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 0.9, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.163432073544433, "stroke": true, "weight": 2}
+            ).addTo(map_e1609276b82be6c094980ee73107e413);
+        
+    
+        var popup_1ff5860fb5f530e515807a5ea707b500 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a5070fda0e68144fe78d193b4061b45b = $(`<div id="html_a5070fda0e68144fe78d193b4061b45b" style="width: 100.0%; height: 100.0%;">114 – Jardin Biólogo Antonio de Zulueta<br>Media mensual 2024: 1.0 usos (estación nueva respecto a 2023)</div>`)[0];
+                popup_1ff5860fb5f530e515807a5ea707b500.setContent(html_a5070fda0e68144fe78d193b4061b45b);
+            
+        
+
+        circle_marker_50a5d2c56242a473e40e4263f4a32661.bindPopup(popup_1ff5860fb5f530e515807a5ea707b500)
+        ;
+
+        
+    
+    
+    var color_map_e02bf91a05f5ba861cf29739fba9bcc4 = {};
+
+    
+    color_map_e02bf91a05f5ba861cf29739fba9bcc4.color = d3.scale.threshold()
+              .domain([0.0, 0.06707414829659318, 0.13414829659318636, 0.20122244488977956, 0.2682965931863727, 0.3353707414829659, 0.4024448897795591, 0.4695190380761523, 0.5365931863727454, 0.6036673346693388, 0.6707414829659318, 0.7378156312625249, 0.8048897795591182, 0.8719639278557114, 0.9390380761523046, 1.0061122244488978, 1.073186372745491, 1.1402605210420842, 1.2073346693386775, 1.2744088176352704, 1.3414829659318637, 1.408557114228457, 1.4756312625250498, 1.5427054108216431, 1.6097795591182364, 1.6768537074148298, 1.7439278557114228, 1.811002004008016, 1.8780761523046092, 1.9451503006012023, 2.0122244488977956, 2.0792985971943887, 2.146372745490982, 2.2134468937875753, 2.2805210420841684, 2.3475951903807615, 2.414669338677355, 2.4817434869739476, 2.5488176352705407, 2.6158917835671343, 2.6829659318637273, 2.7500400801603204, 2.817114228456914, 2.884188376753507, 2.9512625250500997, 3.018336673346693, 3.0854108216432863, 3.15248496993988, 3.219559118236473, 3.286633266533066, 3.3537074148296595, 3.4207815631262526, 3.4878557114228457, 3.5549298597194388, 3.622004008016032, 3.689078156312625, 3.7561523046092185, 3.8232264529058115, 3.8903006012024046, 3.957374749498998, 4.024448897795591, 4.091523046092184, 4.158597194388777, 4.225671342685371, 4.292745490981964, 4.359819639278556, 4.426893787575151, 4.493967935871743, 4.561042084168337, 4.628116232464929, 4.695190380761523, 4.762264529058116, 4.82933867735471, 4.896412825651303, 4.963486973947895, 5.030561122244489, 5.0976352705410815, 5.164709418837676, 5.2317835671342685, 5.298857715430862, 5.365931863727455, 5.433006012024047, 5.500080160320641, 5.567154308617234, 5.634228456913828, 5.7013026052104205, 5.768376753507014, 5.835450901803607, 5.902525050100199, 5.969599198396794, 6.036673346693386, 6.10374749498998, 6.170821643286573, 6.237895791583166, 6.30496993987976, 6.372044088176353, 6.439118236472946, 6.506192384769538, 6.573266533066132, 6.640340681362725, 6.707414829659319, 6.774488977955912, 6.841563126252505, 6.908637274549098, 6.975711422845691, 7.042785571142284, 7.1098597194388775, 7.176933867735471, 7.244008016032064, 7.311082164328657, 7.37815631262525, 7.445230460921844, 7.512304609218437, 7.5793787575150295, 7.646452905811623, 7.713527054108216, 7.780601202404809, 7.847675350701403, 7.914749498997996, 7.981823647294589, 8.048897795591182, 8.115971943887775, 8.183046092184368, 8.25012024048096, 8.317194388777555, 8.384268537074147, 8.451342685370742, 8.518416833667334, 8.585490981963927, 8.652565130260522, 8.719639278557112, 8.786713426853707, 8.853787575150301, 8.920861723446894, 8.987935871743487, 9.05501002004008, 9.122084168336674, 9.189158316633266, 9.256232464929859, 9.323306613226453, 9.390380761523046, 9.457454909819639, 9.524529058116231, 9.591603206412826, 9.65867735470942, 9.72575150300601, 9.792825651302605, 9.859899799599198, 9.92697394789579, 9.994048096192385, 10.061122244488978, 10.128196392785572, 10.195270541082163, 10.262344689378757, 10.329418837675352, 10.396492985971943, 10.463567134268537, 10.53064128256513, 10.597715430861724, 10.664789579158315, 10.73186372745491, 10.798937875751504, 10.866012024048095, 10.933086172344689, 11.000160320641282, 11.067234468937876, 11.134308617234469, 11.201382765531061, 11.268456913827656, 11.335531062124247, 11.402605210420841, 11.469679358717435, 11.536753507014028, 11.60382765531062, 11.670901803607213, 11.737975951903808, 11.805050100200399, 11.872124248496993, 11.939198396793588, 12.00627254509018, 12.073346693386773, 12.140420841683365, 12.20749498997996, 12.274569138276554, 12.341643286573145, 12.40871743486974, 12.475791583166332, 12.542865731462925, 12.60993987975952, 12.677014028056112, 12.744088176352706, 12.811162324649297, 12.878236472945892, 12.945310621242484, 13.012384769539077, 13.079458917835671, 13.146533066132264, 13.213607214428858, 13.28068136272545, 13.347755511022044, 13.414829659318638, 13.481903807615229, 13.548977955911823, 13.616052104208416, 13.68312625250501, 13.750200400801603, 13.817274549098196, 13.88434869739479, 13.951422845691383, 14.018496993987975, 14.085571142284568, 14.152645290581162, 14.219719438877755, 14.286793587174348, 14.353867735470942, 14.420941883767535, 14.488016032064127, 14.555090180360722, 14.622164328657314, 14.689238476953907, 14.7563126252505, 14.823386773547094, 14.890460921843689, 14.95753507014028, 15.024609218436874, 15.091683366733466, 15.158757515030059, 15.225831663326652, 15.292905811623246, 15.35997995991984, 15.427054108216431, 15.494128256513026, 15.561202404809618, 15.628276553106211, 15.695350701402806, 15.762424849699398, 15.829498997995993, 15.896573146292583, 15.963647294589178, 16.03072144288577, 16.097795591182365, 16.164869739478956, 16.23194388777555, 16.299018036072145, 16.366092184368735, 16.43316633266533, 16.50024048096192, 16.56731462925852, 16.63438877755511, 16.7014629258517, 16.768537074148295, 16.83561122244489, 16.902685370741484, 16.969759519038075, 17.03683366733467, 17.103907815631263, 17.170981963927854, 17.23805611222445, 17.305130260521043, 17.372204408817634, 17.439278557114225, 17.506352705410823, 17.573426853707414, 17.640501002004008, 17.707575150300602, 17.774649298597193, 17.841723446893788, 17.90879759519038, 17.975871743486973, 18.042945891783567, 18.11002004008016, 18.177094188376753, 18.244168336673347, 18.311242484969938, 18.378316633266532, 18.445390781563127, 18.512464929859718, 18.579539078156312, 18.646613226452907, 18.713687374749497, 18.780761523046092, 18.847835671342686, 18.914909819639277, 18.98198396793587, 19.049058116232462, 19.116132264529057, 19.18320641282565, 19.250280561122242, 19.31735470941884, 19.38442885771543, 19.45150300601202, 19.51857715430862, 19.58565130260521, 19.6527254509018, 19.719799599198396, 19.78687374749499, 19.85394789579158, 19.921022044088176, 19.98809619238477, 20.05517034068136, 20.122244488977955, 20.189318637274546, 20.256392785571144, 20.323466933867735, 20.390541082164326, 20.457615230460924, 20.524689378757515, 20.591763527054106, 20.658837675350703, 20.725911823647294, 20.792985971943885, 20.86006012024048, 20.927134268537074, 20.994208416833665, 21.06128256513026, 21.128356713426854, 21.195430861723448, 21.26250501002004, 21.32957915831663, 21.396653306613228, 21.46372745490982, 21.53080160320641, 21.597875751503008, 21.6649498997996, 21.73202404809619, 21.799098196392787, 21.866172344689378, 21.933246492985973, 22.000320641282563, 22.067394789579158, 22.134468937875752, 22.201543086172343, 22.268617234468937, 22.335691382765532, 22.402765531062123, 22.469839679358714, 22.53691382765531, 22.603987975951902, 22.671062124248493, 22.73813627254509, 22.805210420841682, 22.872284569138277, 22.93935871743487, 23.006432865731462, 23.073507014028056, 23.140581162324647, 23.20765531062124, 23.274729458917836, 23.341803607214427, 23.40887775551102, 23.475951903807616, 23.543026052104207, 23.610100200400797, 23.677174348697395, 23.744248496993986, 23.81132264529058, 23.878396793587175, 23.945470941883766, 24.01254509018036, 24.079619238476955, 24.146693386773546, 24.21376753507014, 24.28084168336673, 24.347915831663325, 24.41498997995992, 24.48206412825651, 24.54913827655311, 24.6162124248497, 24.68328657314629, 24.750360721442885, 24.81743486973948, 24.88450901803607, 24.951583166332664, 25.01865731462926, 25.08573146292585, 25.152805611222444, 25.21987975951904, 25.28695390781563, 25.354028056112224, 25.421102204408815, 25.488176352705413, 25.555250501002003, 25.622324649298594, 25.689398797595192, 25.756472945891783, 25.823547094188374, 25.89062124248497, 25.957695390781563, 26.024769539078154, 26.091843687374748, 26.158917835671343, 26.225991983967937, 26.293066132264528, 26.360140280561122, 26.427214428857717, 26.494288577154308, 26.5613627254509, 26.628436873747496, 26.695511022044087, 26.762585170340678, 26.829659318637276, 26.896733466933867, 26.963807615230458, 27.030881763527052, 27.097955911823647, 27.16503006012024, 27.232104208416832, 27.299178356713426, 27.36625250501002, 27.43332665330661, 27.500400801603206, 27.5674749498998, 27.63454909819639, 27.701623246492982, 27.76869739478958, 27.83577154308617, 27.902845691382765, 27.96991983967936, 28.03699398797595, 28.104068136272545, 28.171142284569136, 28.23821643286573, 28.305290581162325, 28.372364729458916, 28.43943887775551, 28.506513026052104, 28.573587174348695, 28.640661322645286, 28.707735470941884, 28.774809619238475, 28.84188376753507, 28.908957915831664, 28.976032064128255, 29.04310621242485, 29.110180360721444, 29.177254509018034, 29.24432865731463, 29.31140280561122, 29.378476953907814, 29.44555110220441, 29.512625250501, 29.579699398797594, 29.646773547094188, 29.71384769539078, 29.780921843687377, 29.847995991983968, 29.91507014028056, 29.982144288577153, 30.049218436873748, 30.11629258517034, 30.183366733466933, 30.250440881763527, 30.317515030060118, 30.384589178356713, 30.451663326653303, 30.5187374749499, 30.585811623246492, 30.652885771543083, 30.71995991983968, 30.787034068136272, 30.854108216432863, 30.92118236472946, 30.98825651302605, 31.055330661322643, 31.122404809619237, 31.18947895791583, 31.256553106212422, 31.323627254509017, 31.39070140280561, 31.457775551102205, 31.524849699398796, 31.591923847695387, 31.658997995991985, 31.726072144288576, 31.793146292585167, 31.860220440881765, 31.927294589178356, 31.994368737474947, 32.06144288577154, 32.12851703406813, 32.19559118236473, 32.26266533066132, 32.32973947895791, 32.39681362725451, 32.4638877755511, 32.53096192384769, 32.59803607214429, 32.66511022044088, 32.73218436873747, 32.79925851703407, 32.86633266533066, 32.93340681362726, 33.00048096192384, 33.06755511022044, 33.13462925851704, 33.20170340681362, 33.26877755511022, 33.33585170340682, 33.4029258517034, 33.47])
+              .range(['#d3d3d3ff', '#d4d4d2ff', '#d4d4d1ff', '#d4d4d0ff', '#d4d4ceff', '#d5d5cdff', '#d5d5ccff', '#d5d5caff', '#d5d5c9ff', '#d6d6c8ff', '#d6d6c7ff', '#d6d6c5ff', '#d7d7c4ff', '#d7d7c3ff', '#d7d7c1ff', '#d7d7c0ff', '#d8d8bfff', '#d8d8beff', '#d8d8bcff', '#d8d8bbff', '#d9d9baff', '#d9d9b9ff', '#d9d9b7ff', '#d9d9b6ff', '#dadab5ff', '#dadab3ff', '#dadab2ff', '#dadab1ff', '#dbdbb0ff', '#dbdbaeff', '#dbdbadff', '#dcdcacff', '#dcdcabff', '#dcdca9ff', '#dcdca8ff', '#dddda7ff', '#dddda5ff', '#dddda4ff', '#dddda3ff', '#dedea2ff', '#dedea0ff', '#dede9fff', '#dede9eff', '#dfdf9dff', '#dfdf9bff', '#dfdf9aff', '#e0e099ff', '#e0e097ff', '#e0e096ff', '#e0e095ff', '#e1e194ff', '#e1e192ff', '#e1e191ff', '#e1e190ff', '#e2e28fff', '#e2e28dff', '#e2e28cff', '#e2e28bff', '#e3e389ff', '#e3e388ff', '#e3e387ff', '#e4e486ff', '#e4e484ff', '#e4e483ff', '#e4e482ff', '#e5e581ff', '#e5e57fff', '#e5e57eff', '#e5e57dff', '#e6e67bff', '#e6e67aff', '#e6e679ff', '#e6e678ff', '#e7e776ff', '#e7e775ff', '#e7e774ff', '#e8e873ff', '#e8e871ff', '#e8e870ff', '#e8e86fff', '#e9e96dff', '#e9e96cff', '#e9e96bff', '#e9e96aff', '#eaea68ff', '#eaea67ff', '#eaea66ff', '#eaea65ff', '#ebeb63ff', '#ebeb62ff', '#ebeb61ff', '#ebeb5fff', '#ecec5eff', '#ecec5dff', '#ecec5cff', '#eded5aff', '#eded59ff', '#eded58ff', '#eded57ff', '#eeee55ff', '#eeee54ff', '#eeee53ff', '#eeee51ff', '#efef50ff', '#efef4fff', '#efef4eff', '#efef4cff', '#f0f04bff', '#f0f04aff', '#f0f049ff', '#f1f147ff', '#f1f146ff', '#f1f145ff', '#f1f143ff', '#f2f242ff', '#f2f241ff', '#f2f240ff', '#f2f23eff', '#f3f33dff', '#f3f33cff', '#f3f33bff', '#f3f339ff', '#f4f438ff', '#f4f437ff', '#f4f435ff', '#f5f534ff', '#f5f533ff', '#f5f532ff', '#f5f530ff', '#f6f62fff', '#f6f62eff', '#f6f62cff', '#f6f62bff', '#f7f72aff', '#f7f729ff', '#f7f727ff', '#f7f726ff', '#f8f825ff', '#f8f824ff', '#f8f822ff', '#f9f921ff', '#f9f920ff', '#f9f91eff', '#f9f91dff', '#fafa1cff', '#fafa1bff', '#fafa19ff', '#fafa18ff', '#fbfb17ff', '#fbfb16ff', '#fbfb14ff', '#fbfb13ff', '#fcfc12ff', '#fcfc10ff', '#fcfc0fff', '#fcfc0eff', '#fdfd0dff', '#fdfd0bff', '#fdfd0aff', '#fefe09ff', '#fefe08ff', '#fefe06ff', '#fefe05ff', '#ffff04ff', '#ffff02ff', '#ffff01ff', '#ffff00ff', '#ffff00ff', '#ffff00ff', '#fffe00ff', '#fffe00ff', '#fffd00ff', '#fffc00ff', '#fffc00ff', '#fffb00ff', '#fffb00ff', '#fffa00ff', '#fffa00ff', '#fff900ff', '#fff900ff', '#fff800ff', '#fff800ff', '#fff700ff', '#fff600ff', '#fff600ff', '#fff500ff', '#fff500ff', '#fff400ff', '#fff400ff', '#fff300ff', '#fff300ff', '#fff200ff', '#fff200ff', '#fff100ff', '#fff000ff', '#fff000ff', '#ffef00ff', '#ffef00ff', '#ffee00ff', '#ffee00ff', '#ffed00ff', '#ffed00ff', '#ffec00ff', '#ffec00ff', '#ffeb00ff', '#ffea00ff', '#ffea00ff', '#ffe900ff', '#ffe900ff', '#ffe800ff', '#ffe800ff', '#ffe700ff', '#ffe700ff', '#ffe600ff', '#ffe600ff', '#ffe500ff', '#ffe500ff', '#ffe400ff', '#ffe300ff', '#ffe300ff', '#ffe200ff', '#ffe200ff', '#ffe100ff', '#ffe100ff', '#ffe000ff', '#ffe000ff', '#ffdf00ff', '#ffdf00ff', '#ffde00ff', '#ffdd00ff', '#ffdd00ff', '#ffdc00ff', '#ffdc00ff', '#ffdb00ff', '#ffdb00ff', '#ffda00ff', '#ffda00ff', '#ffd900ff', '#ffd900ff', '#ffd800ff', '#ffd700ff', '#ffd700ff', '#ffd600ff', '#ffd600ff', '#ffd500ff', '#ffd500ff', '#ffd400ff', '#ffd400ff', '#ffd300ff', '#ffd300ff', '#ffd200ff', '#ffd200ff', '#ffd100ff', '#ffd000ff', '#ffd000ff', '#ffcf00ff', '#ffcf00ff', '#ffce00ff', '#ffce00ff', '#ffcd00ff', '#ffcd00ff', '#ffcc00ff', '#ffcc00ff', '#ffcb00ff', '#ffca00ff', '#ffca00ff', '#ffc900ff', '#ffc900ff', '#ffc800ff', '#ffc800ff', '#ffc700ff', '#ffc700ff', '#ffc600ff', '#ffc600ff', '#ffc500ff', '#ffc400ff', '#ffc400ff', '#ffc300ff', '#ffc300ff', '#ffc200ff', '#ffc200ff', '#ffc100ff', '#ffc100ff', '#ffc000ff', '#ffc000ff', '#ffbf00ff', '#ffbe00ff', '#ffbe00ff', '#ffbd00ff', '#ffbd00ff', '#ffbc00ff', '#ffbc00ff', '#ffbb00ff', '#ffbb00ff', '#ffba00ff', '#ffba00ff', '#ffb900ff', '#ffb900ff', '#ffb800ff', '#ffb700ff', '#ffb700ff', '#ffb600ff', '#ffb600ff', '#ffb500ff', '#ffb500ff', '#ffb400ff', '#ffb400ff', '#ffb300ff', '#ffb300ff', '#ffb200ff', '#ffb100ff', '#ffb100ff', '#ffb000ff', '#ffb000ff', '#ffaf00ff', '#ffaf00ff', '#ffae00ff', '#ffae00ff', '#ffad00ff', '#ffad00ff', '#ffac00ff', '#ffab00ff', '#ffab00ff', '#ffaa00ff', '#ffaa00ff', '#ffa900ff', '#ffa900ff', '#ffa800ff', '#ffa800ff', '#ffa700ff', '#ffa700ff', '#ffa600ff', '#ffa600ff', '#ffa500ff', '#ffa400ff', '#ffa300ff', '#ffa200ff', '#ffa100ff', '#ffa000ff', '#ff9f00ff', '#ff9e00ff', '#ff9d00ff', '#ff9c00ff', '#ff9b00ff', '#ff9a00ff', '#ff9900ff', '#ff9800ff', '#ff9700ff', '#ff9600ff', '#ff9500ff', '#ff9400ff', '#ff9300ff', '#ff9200ff', '#ff9100ff', '#ff9000ff', '#ff8f00ff', '#ff8e00ff', '#ff8d00ff', '#ff8c00ff', '#ff8b00ff', '#ff8a00ff', '#ff8900ff', '#ff8800ff', '#ff8700ff', '#ff8600ff', '#ff8500ff', '#ff8400ff', '#ff8300ff', '#ff8200ff', '#ff8100ff', '#ff8000ff', '#ff7f00ff', '#ff7e00ff', '#ff7d00ff', '#ff7c00ff', '#ff7b00ff', '#ff7a00ff', '#ff7900ff', '#ff7800ff', '#ff7700ff', '#ff7600ff', '#ff7500ff', '#ff7400ff', '#ff7300ff', '#ff7200ff', '#ff7100ff', '#ff7000ff', '#ff6f00ff', '#ff6e00ff', '#ff6d00ff', '#ff6c00ff', '#ff6b00ff', '#ff6a00ff', '#ff6900ff', '#ff6800ff', '#ff6700ff', '#ff6600ff', '#ff6500ff', '#ff6400ff', '#ff6300ff', '#ff6200ff', '#ff6100ff', '#ff6000ff', '#ff5f00ff', '#ff5e00ff', '#ff5d00ff', '#ff5c00ff', '#ff5b00ff', '#ff5a00ff', '#ff5900ff', '#ff5800ff', '#ff5700ff', '#ff5600ff', '#ff5500ff', '#ff5400ff', '#ff5300ff', '#ff5200ff', '#ff5100ff', '#ff5000ff', '#ff4f00ff', '#ff4e00ff', '#ff4d00ff', '#ff4c00ff', '#ff4b00ff', '#ff4a00ff', '#ff4900ff', '#ff4800ff', '#ff4700ff', '#ff4600ff', '#ff4500ff', '#ff4400ff', '#ff4300ff', '#ff4200ff', '#ff4100ff', '#ff4000ff', '#ff3f00ff', '#ff3e00ff', '#ff3d00ff', '#ff3c00ff', '#ff3b00ff', '#ff3a00ff', '#ff3900ff', '#ff3800ff', '#ff3700ff', '#ff3600ff', '#ff3500ff', '#ff3400ff', '#ff3300ff', '#ff3200ff', '#ff3100ff', '#ff3000ff', '#ff2f00ff', '#ff2e00ff', '#ff2d00ff', '#ff2c00ff', '#ff2b00ff', '#ff2a00ff', '#ff2900ff', '#ff2800ff', '#ff2700ff', '#ff2600ff', '#ff2500ff', '#ff2400ff', '#ff2300ff', '#ff2200ff', '#ff2100ff', '#ff2000ff', '#ff1f00ff', '#ff1e00ff', '#ff1d00ff', '#ff1c00ff', '#ff1b00ff', '#ff1a00ff', '#ff1900ff', '#ff1800ff', '#ff1700ff', '#ff1600ff', '#ff1500ff', '#ff1400ff', '#ff1300ff', '#ff1200ff', '#ff1100ff', '#ff1000ff', '#ff0f00ff', '#ff0e00ff', '#ff0d00ff', '#ff0c00ff', '#ff0b00ff', '#ff0a00ff', '#ff0900ff', '#ff0800ff', '#ff0700ff', '#ff0600ff', '#ff0500ff', '#ff0400ff', '#ff0300ff', '#ff0200ff', '#ff0100ff', '#ff0000ff', '#ff0000ff']);
+    
+
+    color_map_e02bf91a05f5ba861cf29739fba9bcc4.x = d3.scale.linear()
+              .domain([0.0, 33.47])
+              .range([0, 450 - 50]);
+
+    color_map_e02bf91a05f5ba861cf29739fba9bcc4.legend = L.control({position: 'topright'});
+    color_map_e02bf91a05f5ba861cf29739fba9bcc4.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_e02bf91a05f5ba861cf29739fba9bcc4.legend.addTo(map_e1609276b82be6c094980ee73107e413);
+
+    color_map_e02bf91a05f5ba861cf29739fba9bcc4.xAxis = d3.svg.axis()
+        .scale(color_map_e02bf91a05f5ba861cf29739fba9bcc4.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.0, 11.156666666666666, 22.313333333333333, 33.47]);
+
+    color_map_e02bf91a05f5ba861cf29739fba9bcc4.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_e02bf91a05f5ba861cf29739fba9bcc4.g = color_map_e02bf91a05f5ba861cf29739fba9bcc4.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_e02bf91a05f5ba861cf29739fba9bcc4.g.selectAll("rect")
+        .data(color_map_e02bf91a05f5ba861cf29739fba9bcc4.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_e02bf91a05f5ba861cf29739fba9bcc4.x(color_map_e02bf91a05f5ba861cf29739fba9bcc4.color.domain()[i - 1]) : color_map_e02bf91a05f5ba861cf29739fba9bcc4.x.range()[0],
+            x1: i < color_map_e02bf91a05f5ba861cf29739fba9bcc4.color.domain().length ? color_map_e02bf91a05f5ba861cf29739fba9bcc4.x(color_map_e02bf91a05f5ba861cf29739fba9bcc4.color.domain()[i]) : color_map_e02bf91a05f5ba861cf29739fba9bcc4.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_e02bf91a05f5ba861cf29739fba9bcc4.g.call(color_map_e02bf91a05f5ba861cf29739fba9bcc4.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Aumento % 2024 vs 2023 (capado a 100%)");
+    
+    var color_map_15f5a67a6604a18c61ceff9b66f6fb21 = {};
+
+    
+    color_map_15f5a67a6604a18c61ceff9b66f6fb21.color = d3.scale.threshold()
+              .domain([0.0, 0.06707414829659318, 0.13414829659318636, 0.20122244488977956, 0.2682965931863727, 0.3353707414829659, 0.4024448897795591, 0.4695190380761523, 0.5365931863727454, 0.6036673346693388, 0.6707414829659318, 0.7378156312625249, 0.8048897795591182, 0.8719639278557114, 0.9390380761523046, 1.0061122244488978, 1.073186372745491, 1.1402605210420842, 1.2073346693386775, 1.2744088176352704, 1.3414829659318637, 1.408557114228457, 1.4756312625250498, 1.5427054108216431, 1.6097795591182364, 1.6768537074148298, 1.7439278557114228, 1.811002004008016, 1.8780761523046092, 1.9451503006012023, 2.0122244488977956, 2.0792985971943887, 2.146372745490982, 2.2134468937875753, 2.2805210420841684, 2.3475951903807615, 2.414669338677355, 2.4817434869739476, 2.5488176352705407, 2.6158917835671343, 2.6829659318637273, 2.7500400801603204, 2.817114228456914, 2.884188376753507, 2.9512625250500997, 3.018336673346693, 3.0854108216432863, 3.15248496993988, 3.219559118236473, 3.286633266533066, 3.3537074148296595, 3.4207815631262526, 3.4878557114228457, 3.5549298597194388, 3.622004008016032, 3.689078156312625, 3.7561523046092185, 3.8232264529058115, 3.8903006012024046, 3.957374749498998, 4.024448897795591, 4.091523046092184, 4.158597194388777, 4.225671342685371, 4.292745490981964, 4.359819639278556, 4.426893787575151, 4.493967935871743, 4.561042084168337, 4.628116232464929, 4.695190380761523, 4.762264529058116, 4.82933867735471, 4.896412825651303, 4.963486973947895, 5.030561122244489, 5.0976352705410815, 5.164709418837676, 5.2317835671342685, 5.298857715430862, 5.365931863727455, 5.433006012024047, 5.500080160320641, 5.567154308617234, 5.634228456913828, 5.7013026052104205, 5.768376753507014, 5.835450901803607, 5.902525050100199, 5.969599198396794, 6.036673346693386, 6.10374749498998, 6.170821643286573, 6.237895791583166, 6.30496993987976, 6.372044088176353, 6.439118236472946, 6.506192384769538, 6.573266533066132, 6.640340681362725, 6.707414829659319, 6.774488977955912, 6.841563126252505, 6.908637274549098, 6.975711422845691, 7.042785571142284, 7.1098597194388775, 7.176933867735471, 7.244008016032064, 7.311082164328657, 7.37815631262525, 7.445230460921844, 7.512304609218437, 7.5793787575150295, 7.646452905811623, 7.713527054108216, 7.780601202404809, 7.847675350701403, 7.914749498997996, 7.981823647294589, 8.048897795591182, 8.115971943887775, 8.183046092184368, 8.25012024048096, 8.317194388777555, 8.384268537074147, 8.451342685370742, 8.518416833667334, 8.585490981963927, 8.652565130260522, 8.719639278557112, 8.786713426853707, 8.853787575150301, 8.920861723446894, 8.987935871743487, 9.05501002004008, 9.122084168336674, 9.189158316633266, 9.256232464929859, 9.323306613226453, 9.390380761523046, 9.457454909819639, 9.524529058116231, 9.591603206412826, 9.65867735470942, 9.72575150300601, 9.792825651302605, 9.859899799599198, 9.92697394789579, 9.994048096192385, 10.061122244488978, 10.128196392785572, 10.195270541082163, 10.262344689378757, 10.329418837675352, 10.396492985971943, 10.463567134268537, 10.53064128256513, 10.597715430861724, 10.664789579158315, 10.73186372745491, 10.798937875751504, 10.866012024048095, 10.933086172344689, 11.000160320641282, 11.067234468937876, 11.134308617234469, 11.201382765531061, 11.268456913827656, 11.335531062124247, 11.402605210420841, 11.469679358717435, 11.536753507014028, 11.60382765531062, 11.670901803607213, 11.737975951903808, 11.805050100200399, 11.872124248496993, 11.939198396793588, 12.00627254509018, 12.073346693386773, 12.140420841683365, 12.20749498997996, 12.274569138276554, 12.341643286573145, 12.40871743486974, 12.475791583166332, 12.542865731462925, 12.60993987975952, 12.677014028056112, 12.744088176352706, 12.811162324649297, 12.878236472945892, 12.945310621242484, 13.012384769539077, 13.079458917835671, 13.146533066132264, 13.213607214428858, 13.28068136272545, 13.347755511022044, 13.414829659318638, 13.481903807615229, 13.548977955911823, 13.616052104208416, 13.68312625250501, 13.750200400801603, 13.817274549098196, 13.88434869739479, 13.951422845691383, 14.018496993987975, 14.085571142284568, 14.152645290581162, 14.219719438877755, 14.286793587174348, 14.353867735470942, 14.420941883767535, 14.488016032064127, 14.555090180360722, 14.622164328657314, 14.689238476953907, 14.7563126252505, 14.823386773547094, 14.890460921843689, 14.95753507014028, 15.024609218436874, 15.091683366733466, 15.158757515030059, 15.225831663326652, 15.292905811623246, 15.35997995991984, 15.427054108216431, 15.494128256513026, 15.561202404809618, 15.628276553106211, 15.695350701402806, 15.762424849699398, 15.829498997995993, 15.896573146292583, 15.963647294589178, 16.03072144288577, 16.097795591182365, 16.164869739478956, 16.23194388777555, 16.299018036072145, 16.366092184368735, 16.43316633266533, 16.50024048096192, 16.56731462925852, 16.63438877755511, 16.7014629258517, 16.768537074148295, 16.83561122244489, 16.902685370741484, 16.969759519038075, 17.03683366733467, 17.103907815631263, 17.170981963927854, 17.23805611222445, 17.305130260521043, 17.372204408817634, 17.439278557114225, 17.506352705410823, 17.573426853707414, 17.640501002004008, 17.707575150300602, 17.774649298597193, 17.841723446893788, 17.90879759519038, 17.975871743486973, 18.042945891783567, 18.11002004008016, 18.177094188376753, 18.244168336673347, 18.311242484969938, 18.378316633266532, 18.445390781563127, 18.512464929859718, 18.579539078156312, 18.646613226452907, 18.713687374749497, 18.780761523046092, 18.847835671342686, 18.914909819639277, 18.98198396793587, 19.049058116232462, 19.116132264529057, 19.18320641282565, 19.250280561122242, 19.31735470941884, 19.38442885771543, 19.45150300601202, 19.51857715430862, 19.58565130260521, 19.6527254509018, 19.719799599198396, 19.78687374749499, 19.85394789579158, 19.921022044088176, 19.98809619238477, 20.05517034068136, 20.122244488977955, 20.189318637274546, 20.256392785571144, 20.323466933867735, 20.390541082164326, 20.457615230460924, 20.524689378757515, 20.591763527054106, 20.658837675350703, 20.725911823647294, 20.792985971943885, 20.86006012024048, 20.927134268537074, 20.994208416833665, 21.06128256513026, 21.128356713426854, 21.195430861723448, 21.26250501002004, 21.32957915831663, 21.396653306613228, 21.46372745490982, 21.53080160320641, 21.597875751503008, 21.6649498997996, 21.73202404809619, 21.799098196392787, 21.866172344689378, 21.933246492985973, 22.000320641282563, 22.067394789579158, 22.134468937875752, 22.201543086172343, 22.268617234468937, 22.335691382765532, 22.402765531062123, 22.469839679358714, 22.53691382765531, 22.603987975951902, 22.671062124248493, 22.73813627254509, 22.805210420841682, 22.872284569138277, 22.93935871743487, 23.006432865731462, 23.073507014028056, 23.140581162324647, 23.20765531062124, 23.274729458917836, 23.341803607214427, 23.40887775551102, 23.475951903807616, 23.543026052104207, 23.610100200400797, 23.677174348697395, 23.744248496993986, 23.81132264529058, 23.878396793587175, 23.945470941883766, 24.01254509018036, 24.079619238476955, 24.146693386773546, 24.21376753507014, 24.28084168336673, 24.347915831663325, 24.41498997995992, 24.48206412825651, 24.54913827655311, 24.6162124248497, 24.68328657314629, 24.750360721442885, 24.81743486973948, 24.88450901803607, 24.951583166332664, 25.01865731462926, 25.08573146292585, 25.152805611222444, 25.21987975951904, 25.28695390781563, 25.354028056112224, 25.421102204408815, 25.488176352705413, 25.555250501002003, 25.622324649298594, 25.689398797595192, 25.756472945891783, 25.823547094188374, 25.89062124248497, 25.957695390781563, 26.024769539078154, 26.091843687374748, 26.158917835671343, 26.225991983967937, 26.293066132264528, 26.360140280561122, 26.427214428857717, 26.494288577154308, 26.5613627254509, 26.628436873747496, 26.695511022044087, 26.762585170340678, 26.829659318637276, 26.896733466933867, 26.963807615230458, 27.030881763527052, 27.097955911823647, 27.16503006012024, 27.232104208416832, 27.299178356713426, 27.36625250501002, 27.43332665330661, 27.500400801603206, 27.5674749498998, 27.63454909819639, 27.701623246492982, 27.76869739478958, 27.83577154308617, 27.902845691382765, 27.96991983967936, 28.03699398797595, 28.104068136272545, 28.171142284569136, 28.23821643286573, 28.305290581162325, 28.372364729458916, 28.43943887775551, 28.506513026052104, 28.573587174348695, 28.640661322645286, 28.707735470941884, 28.774809619238475, 28.84188376753507, 28.908957915831664, 28.976032064128255, 29.04310621242485, 29.110180360721444, 29.177254509018034, 29.24432865731463, 29.31140280561122, 29.378476953907814, 29.44555110220441, 29.512625250501, 29.579699398797594, 29.646773547094188, 29.71384769539078, 29.780921843687377, 29.847995991983968, 29.91507014028056, 29.982144288577153, 30.049218436873748, 30.11629258517034, 30.183366733466933, 30.250440881763527, 30.317515030060118, 30.384589178356713, 30.451663326653303, 30.5187374749499, 30.585811623246492, 30.652885771543083, 30.71995991983968, 30.787034068136272, 30.854108216432863, 30.92118236472946, 30.98825651302605, 31.055330661322643, 31.122404809619237, 31.18947895791583, 31.256553106212422, 31.323627254509017, 31.39070140280561, 31.457775551102205, 31.524849699398796, 31.591923847695387, 31.658997995991985, 31.726072144288576, 31.793146292585167, 31.860220440881765, 31.927294589178356, 31.994368737474947, 32.06144288577154, 32.12851703406813, 32.19559118236473, 32.26266533066132, 32.32973947895791, 32.39681362725451, 32.4638877755511, 32.53096192384769, 32.59803607214429, 32.66511022044088, 32.73218436873747, 32.79925851703407, 32.86633266533066, 32.93340681362726, 33.00048096192384, 33.06755511022044, 33.13462925851704, 33.20170340681362, 33.26877755511022, 33.33585170340682, 33.4029258517034, 33.47])
+              .range(['#d3d3d3ff', '#d3d3d3ff', '#d3d3d4ff', '#d3d3d4ff', '#d2d3d4ff', '#d2d3d4ff', '#d2d4d4ff', '#d2d4d4ff', '#d1d4d4ff', '#d1d4d4ff', '#d1d4d4ff', '#d1d4d5ff', '#d1d4d5ff', '#d0d4d5ff', '#d0d4d5ff', '#d0d4d5ff', '#d0d4d5ff', '#cfd4d5ff', '#cfd4d5ff', '#cfd4d6ff', '#cfd4d6ff', '#cfd4d6ff', '#ced4d6ff', '#ced4d6ff', '#ced4d6ff', '#ced4d6ff', '#cdd4d6ff', '#cdd4d6ff', '#cdd4d7ff', '#cdd4d7ff', '#ccd4d7ff', '#ccd4d7ff', '#ccd4d7ff', '#ccd4d7ff', '#ccd4d7ff', '#cbd4d7ff', '#cbd4d7ff', '#cbd4d8ff', '#cbd4d8ff', '#cad5d8ff', '#cad5d8ff', '#cad5d8ff', '#cad5d8ff', '#c9d5d8ff', '#c9d5d8ff', '#c9d5d8ff', '#c9d5d9ff', '#c9d5d9ff', '#c8d5d9ff', '#c8d5d9ff', '#c8d5d9ff', '#c8d5d9ff', '#c7d5d9ff', '#c7d5d9ff', '#c7d5daff', '#c7d5daff', '#c6d5daff', '#c6d5daff', '#c6d5daff', '#c6d5daff', '#c6d5daff', '#c5d5daff', '#c5d5daff', '#c5d5dbff', '#c5d5dbff', '#c4d5dbff', '#c4d5dbff', '#c4d5dbff', '#c4d5dbff', '#c4d5dbff', '#c3d5dbff', '#c3d5dbff', '#c3d6dcff', '#c3d6dcff', '#c2d6dcff', '#c2d6dcff', '#c2d6dcff', '#c2d6dcff', '#c1d6dcff', '#c1d6dcff', '#c1d6ddff', '#c1d6ddff', '#c1d6ddff', '#c0d6ddff', '#c0d6ddff', '#c0d6ddff', '#c0d6ddff', '#bfd6ddff', '#bfd6ddff', '#bfd6deff', '#bfd6deff', '#bed6deff', '#bed6deff', '#bed6deff', '#bed6deff', '#bed6deff', '#bdd6deff', '#bdd6deff', '#bdd6dfff', '#bdd6dfff', '#bcd6dfff', '#bcd6dfff', '#bcd6dfff', '#bcd6dfff', '#bbd6dfff', '#bbd6dfff', '#bbd7dfff', '#bbd7e0ff', '#bbd7e0ff', '#bad7e0ff', '#bad7e0ff', '#bad7e0ff', '#bad7e0ff', '#b9d7e0ff', '#b9d7e0ff', '#b9d7e1ff', '#b9d7e1ff', '#b8d7e1ff', '#b8d7e1ff', '#b8d7e1ff', '#b8d7e1ff', '#b8d7e1ff', '#b7d7e1ff', '#b7d7e1ff', '#b7d7e2ff', '#b7d7e2ff', '#b6d7e2ff', '#b6d7e2ff', '#b6d7e2ff', '#b6d7e2ff', '#b6d7e2ff', '#b5d7e2ff', '#b5d7e2ff', '#b5d7e3ff', '#b5d7e3ff', '#b4d7e3ff', '#b4d7e3ff', '#b4d7e3ff', '#b4d7e3ff', '#b3d8e3ff', '#b3d8e3ff', '#b3d8e3ff', '#b3d8e4ff', '#b3d8e4ff', '#b2d8e4ff', '#b2d8e4ff', '#b2d8e4ff', '#b2d8e4ff', '#b1d8e4ff', '#b1d8e4ff', '#b1d8e5ff', '#b1d8e5ff', '#b0d8e5ff', '#b0d8e5ff', '#b0d8e5ff', '#b0d8e5ff', '#b0d8e5ff', '#afd8e5ff', '#afd8e5ff', '#afd8e6ff', '#afd8e6ff', '#aed8e6ff', '#aed8e6ff', '#aed8e6ff', '#aed8e6ff', '#add8e6ff', '#add8e6ff', '#acd7e7ff', '#abd6e7ff', '#aad5e7ff', '#a9d4e7ff', '#a8d2e7ff', '#a7d1e7ff', '#a6d0e7ff', '#a5cee8ff', '#a4cde8ff', '#a3cce8ff', '#a2cae8ff', '#a1c9e8ff', '#a0c8e8ff', '#9fc7e8ff', '#9ec5e9ff', '#9dc4e9ff', '#9cc3e9ff', '#9bc1e9ff', '#9ac0e9ff', '#99bfe9ff', '#98bdeaff', '#97bceaff', '#96bbeaff', '#94b9eaff', '#93b8eaff', '#92b7eaff', '#91b6eaff', '#90b4ebff', '#8fb3ebff', '#8eb2ebff', '#8db0ebff', '#8cafebff', '#8baeebff', '#8aacebff', '#89abecff', '#88aaecff', '#87a9ecff', '#86a7ecff', '#85a6ecff', '#84a5ecff', '#83a3edff', '#82a2edff', '#81a1edff', '#809fedff', '#7f9eedff', '#7d9dedff', '#7c9cedff', '#7b9aeeff', '#7a99eeff', '#7998eeff', '#7896eeff', '#7795eeff', '#7694eeff', '#7592eeff', '#7491efff', '#7390efff', '#728eefff', '#718defff', '#708cefff', '#6f8befff', '#6e89f0ff', '#6d88f0ff', '#6c87f0ff', '#6b85f0ff', '#6a84f0ff', '#6983f0ff', '#6881f0ff', '#6780f1ff', '#657ff1ff', '#647ef1ff', '#637cf1ff', '#627bf1ff', '#617af1ff', '#6078f2ff', '#5f77f2ff', '#5e76f2ff', '#5d74f2ff', '#5c73f2ff', '#5b72f2ff', '#5a70f2ff', '#596ff3ff', '#586ef3ff', '#576df3ff', '#566bf3ff', '#556af3ff', '#5469f3ff', '#5367f3ff', '#5266f4ff', '#5165f4ff', '#5063f4ff', '#4f62f4ff', '#4d61f4ff', '#4c60f4ff', '#4b5ef5ff', '#4a5df5ff', '#495cf5ff', '#485af5ff', '#4759f5ff', '#4658f5ff', '#4556f5ff', '#4455f6ff', '#4354f6ff', '#4253f6ff', '#4151f6ff', '#4050f6ff', '#3f4ff6ff', '#3e4df6ff', '#3d4cf7ff', '#3c4bf7ff', '#3b49f7ff', '#3a48f7ff', '#3947f7ff', '#3845f7ff', '#3644f8ff', '#3543f8ff', '#3442f8ff', '#3340f8ff', '#323ff8ff', '#313ef8ff', '#303cf8ff', '#2f3bf9ff', '#2e3af9ff', '#2d38f9ff', '#2c37f9ff', '#2b36f9ff', '#2a35f9ff', '#2933faff', '#2832faff', '#2731faff', '#262ffaff', '#252efaff', '#242dfaff', '#232bfaff', '#222afbff', '#2129fbff', '#2027fbff', '#1e26fbff', '#1d25fbff', '#1c24fbff', '#1b22fbff', '#1a21fcff', '#1920fcff', '#181efcff', '#171dfcff', '#161cfcff', '#151afcff', '#1419fdff', '#1318fdff', '#1217fdff', '#1115fdff', '#1014fdff', '#0f13fdff', '#0e11fdff', '#0d10feff', '#0c0ffeff', '#0b0dfeff', '#0a0cfeff', '#090bfeff', '#0809feff', '#0608feff', '#0507ffff', '#0406ffff', '#0304ffff', '#0203ffff', '#0102ffff', '#0000ffff', '#0000ffff', '#0000ffff', '#0000feff', '#0000fdff', '#0000fcff', '#0000fcff', '#0000fbff', '#0000faff', '#0000faff', '#0000f9ff', '#0000f8ff', '#0000f8ff', '#0000f7ff', '#0000f6ff', '#0000f5ff', '#0000f5ff', '#0000f4ff', '#0000f3ff', '#0000f3ff', '#0000f2ff', '#0000f1ff', '#0000f1ff', '#0000f0ff', '#0000efff', '#0000eeff', '#0000eeff', '#0000edff', '#0000ecff', '#0000ecff', '#0000ebff', '#0000eaff', '#0000eaff', '#0000e9ff', '#0000e8ff', '#0000e7ff', '#0000e7ff', '#0000e6ff', '#0000e5ff', '#0000e5ff', '#0000e4ff', '#0000e3ff', '#0000e3ff', '#0000e2ff', '#0000e1ff', '#0000e0ff', '#0000e0ff', '#0000dfff', '#0000deff', '#0000deff', '#0000ddff', '#0000dcff', '#0000dcff', '#0000dbff', '#0000daff', '#0000d9ff', '#0000d9ff', '#0000d8ff', '#0000d7ff', '#0000d7ff', '#0000d6ff', '#0000d5ff', '#0000d5ff', '#0000d4ff', '#0000d3ff', '#0000d2ff', '#0000d2ff', '#0000d1ff', '#0000d0ff', '#0000d0ff', '#0000cfff', '#0000ceff', '#0000ceff', '#0000cdff', '#0000ccff', '#0000cbff', '#0000cbff', '#0000caff', '#0000c9ff', '#0000c9ff', '#0000c8ff', '#0000c7ff', '#0000c7ff', '#0000c6ff', '#0000c5ff', '#0000c4ff', '#0000c4ff', '#0000c3ff', '#0000c2ff', '#0000c2ff', '#0000c1ff', '#0000c0ff', '#0000c0ff', '#0000bfff', '#0000beff', '#0000bdff', '#0000bdff', '#0000bcff', '#0000bbff', '#0000bbff', '#0000baff', '#0000b9ff', '#0000b9ff', '#0000b8ff', '#0000b7ff', '#0000b6ff', '#0000b6ff', '#0000b5ff', '#0000b4ff', '#0000b4ff', '#0000b3ff', '#0000b2ff', '#0000b2ff', '#0000b1ff', '#0000b0ff', '#0000afff', '#0000afff', '#0000aeff', '#0000adff', '#0000adff', '#0000acff', '#0000abff', '#0000abff', '#0000aaff', '#0000a9ff', '#0000a8ff', '#0000a8ff', '#0000a7ff', '#0000a6ff', '#0000a6ff', '#0000a5ff', '#0000a4ff', '#0000a4ff', '#0000a3ff', '#0000a2ff', '#0000a1ff', '#0000a1ff', '#0000a0ff', '#00009fff', '#00009fff', '#00009eff', '#00009dff', '#00009dff', '#00009cff', '#00009bff', '#00009aff', '#00009aff', '#000099ff', '#000098ff', '#000098ff', '#000097ff', '#000096ff', '#000096ff', '#000095ff', '#000094ff', '#000093ff', '#000093ff', '#000092ff', '#000091ff', '#000091ff', '#000090ff', '#00008fff', '#00008fff', '#00008eff', '#00008dff', '#00008cff', '#00008cff', '#00008bff']);
+    
+
+    color_map_15f5a67a6604a18c61ceff9b66f6fb21.x = d3.scale.linear()
+              .domain([0.0, 33.47])
+              .range([0, 450 - 50]);
+
+    color_map_15f5a67a6604a18c61ceff9b66f6fb21.legend = L.control({position: 'topright'});
+    color_map_15f5a67a6604a18c61ceff9b66f6fb21.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_15f5a67a6604a18c61ceff9b66f6fb21.legend.addTo(map_e1609276b82be6c094980ee73107e413);
+
+    color_map_15f5a67a6604a18c61ceff9b66f6fb21.xAxis = d3.svg.axis()
+        .scale(color_map_15f5a67a6604a18c61ceff9b66f6fb21.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([0.0, 11.156666666666666, 22.313333333333333, 33.47]);
+
+    color_map_15f5a67a6604a18c61ceff9b66f6fb21.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_15f5a67a6604a18c61ceff9b66f6fb21.g = color_map_15f5a67a6604a18c61ceff9b66f6fb21.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_15f5a67a6604a18c61ceff9b66f6fb21.g.selectAll("rect")
+        .data(color_map_15f5a67a6604a18c61ceff9b66f6fb21.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_15f5a67a6604a18c61ceff9b66f6fb21.x(color_map_15f5a67a6604a18c61ceff9b66f6fb21.color.domain()[i - 1]) : color_map_15f5a67a6604a18c61ceff9b66f6fb21.x.range()[0],
+            x1: i < color_map_15f5a67a6604a18c61ceff9b66f6fb21.color.domain().length ? color_map_15f5a67a6604a18c61ceff9b66f6fb21.x(color_map_15f5a67a6604a18c61ceff9b66f6fb21.color.domain()[i]) : color_map_15f5a67a6604a18c61ceff9b66f6fb21.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_15f5a67a6604a18c61ceff9b66f6fb21.g.call(color_map_15f5a67a6604a18c61ceff9b66f6fb21.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Disminuci\u00f3n % 2024 vs 2023 (capado a 100%)");
+</script>
+</html>
