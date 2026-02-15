@@ -181,24 +181,27 @@
   }
   .back-home {
     position: fixed;
-    top: 1rem;
-    left: 1rem;
+    bottom: 2rem;
+    right: 2rem;
     z-index: 10000;
     background: var(--primary);
     color: #020617;
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 0.8rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    font-size: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
     transition: transform 0.2s, background 0.2s;
     font-family: sans-serif;
   }
-  .back-home:hover { transform: scale(1.05); background: #86b32d; }
+  .back-home:hover { transform: scale(1.1); background: #86b32d; }
 </style>
 </head>
-<body><a href="../index.html" class="back-home">← Volver al inicio</a>
+<body><a href="../index.html" class="back-home" title="Volver al inicio">🏠</a>
 <header>
   <div class="header-inner">
     <h1>Patrones temporales de uso – BiciElx</h1>
