@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<head><script>
+  (function() {
+    const theme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
 <meta charset="utf-8">
 <title>BiciElx – Distribución de duraciones (viajes origen ≠ destino)</title>
 <style>
@@ -94,9 +99,41 @@
   #infoText span.perc { color:#ff9aae; font-weight:bold; }
   #infoText span.count { color:#fff; font-weight:bold; }
 
+
+  :root {
+    --primary: #9acd32;
+    --bg-body: #020617;
+    --text-main: #f9fafb;
+  }
+  [data-theme="light"] {
+    --bg-body: #f8fafc;
+    --text-main: #0f172a;
+  }
+  body {
+    background-color: var(--bg-body) !important;
+    color: var(--text-main) !important;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .back-home {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 10000;
+    background: var(--primary);
+    color: #020617;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.8rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.2s, background 0.2s;
+    font-family: sans-serif;
+  }
+  .back-home:hover { transform: scale(1.05); background: #86b32d; }
 </style>
 </head>
-<body>
+<body><a href="../index.html" class="back-home">← Volver al inicio</a>
 <div class="page">
   <h1>Distribución de duraciones de viajes</h1>
   <p class="subtitle">Viajes entre estaciones distintas | Pasa el cursor por una barra para ver el porcentaje acumulado.</p>
@@ -113,23 +150,23 @@
       <div class="bar-label">0-1 min</div>
     </div>
     <div class="bar" data-index="2">
-      <div class="bar-inner" style="height:4px"></div>
+      <div class="bar-inner" style="height:5px"></div>
       <div class="bar-label">1-2 min</div>
     </div>
     <div class="bar" data-index="3">
-      <div class="bar-inner" style="height:44px"></div>
+      <div class="bar-inner" style="height:46px"></div>
       <div class="bar-label">2-3 min</div>
     </div>
     <div class="bar" data-index="4">
-      <div class="bar-inner" style="height:117px"></div>
+      <div class="bar-inner" style="height:119px"></div>
       <div class="bar-label">3-4 min</div>
     </div>
     <div class="bar" data-index="5">
-      <div class="bar-inner" style="height:167px"></div>
+      <div class="bar-inner" style="height:169px"></div>
       <div class="bar-label">4-5 min</div>
     </div>
     <div class="bar" data-index="6">
-      <div class="bar-inner" style="height:203px"></div>
+      <div class="bar-inner" style="height:205px"></div>
       <div class="bar-label">5-6 min</div>
     </div>
     <div class="bar" data-index="7">
@@ -137,39 +174,39 @@
       <div class="bar-label">6-7 min</div>
     </div>
     <div class="bar" data-index="8">
-      <div class="bar-inner" style="height:211px"></div>
+      <div class="bar-inner" style="height:210px"></div>
       <div class="bar-label">7-8 min</div>
     </div>
     <div class="bar" data-index="9">
-      <div class="bar-inner" style="height:193px"></div>
+      <div class="bar-inner" style="height:192px"></div>
       <div class="bar-label">8-9 min</div>
     </div>
     <div class="bar" data-index="10">
-      <div class="bar-inner" style="height:174px"></div>
+      <div class="bar-inner" style="height:173px"></div>
       <div class="bar-label">9-10 min</div>
     </div>
     <div class="bar" data-index="11">
-      <div class="bar-inner" style="height:152px"></div>
+      <div class="bar-inner" style="height:150px"></div>
       <div class="bar-label">10-11 min</div>
     </div>
     <div class="bar" data-index="12">
-      <div class="bar-inner" style="height:131px"></div>
+      <div class="bar-inner" style="height:129px"></div>
       <div class="bar-label">11-12 min</div>
     </div>
     <div class="bar" data-index="13">
-      <div class="bar-inner" style="height:109px"></div>
+      <div class="bar-inner" style="height:107px"></div>
       <div class="bar-label">12-13 min</div>
     </div>
     <div class="bar" data-index="14">
-      <div class="bar-inner" style="height:89px"></div>
+      <div class="bar-inner" style="height:88px"></div>
       <div class="bar-label">13-14 min</div>
     </div>
     <div class="bar" data-index="15">
-      <div class="bar-inner" style="height:72px"></div>
+      <div class="bar-inner" style="height:71px"></div>
       <div class="bar-label">14-15 min</div>
     </div>
     <div class="bar" data-index="16">
-      <div class="bar-inner" style="height:57px"></div>
+      <div class="bar-inner" style="height:56px"></div>
       <div class="bar-label">15-16 min</div>
     </div>
     <div class="bar" data-index="17">
@@ -181,7 +218,7 @@
       <div class="bar-label">17-18 min</div>
     </div>
     <div class="bar" data-index="19">
-      <div class="bar-inner" style="height:30px"></div>
+      <div class="bar-inner" style="height:29px"></div>
       <div class="bar-label">18-19 min</div>
     </div>
     <div class="bar" data-index="20">
@@ -373,7 +410,7 @@
       <div class="bar-label">110-120 min</div>
     </div>
     <div class="bar" data-index="67">
-      <div class="bar-inner" style="height:3px"></div>
+      <div class="bar-inner" style="height:4px"></div>
       <div class="bar-label">>2 h</div>
     </div>
       </div>
@@ -387,7 +424,7 @@
 
 <script>
   const labels = ["0", "0-1 min", "1-2 min", "2-3 min", "3-4 min", "4-5 min", "5-6 min", "6-7 min", "7-8 min", "8-9 min", "9-10 min", "10-11 min", "11-12 min", "12-13 min", "13-14 min", "14-15 min", "15-16 min", "16-17 min", "17-18 min", "18-19 min", "19-20 min", "20-21 min", "21-22 min", "22-23 min", "23-24 min", "24-25 min", "25-26 min", "26-27 min", "27-28 min", "28-29 min", "29-30 min", "30-31 min", "31-32 min", "32-33 min", "33-34 min", "34-35 min", "35-36 min", "36-37 min", "37-38 min", "38-39 min", "39-40 min", "40-41 min", "41-42 min", "42-43 min", "43-44 min", "44-45 min", "45-46 min", "46-47 min", "47-48 min", "48-49 min", "49-50 min", "50-51 min", "51-52 min", "52-53 min", "53-54 min", "54-55 min", "55-56 min", "56-57 min", "57-58 min", "58-59 min", "59-60 min", "60-70 min", "70-80 min", "80-90 min", "90-100 min", "100-110 min", "110-120 min", ">2 h"];
-  const counts = [1069, 367, 4651, 50682, 133805, 191798, 233063, 252251, 241534, 221801, 199529, 174714, 150468, 124694, 102135, 82193, 65082, 52789, 42482, 33912, 26222, 20012, 15552, 12311, 9538, 7871, 6175, 5135, 4095, 3364, 2564, 1967, 1487, 1198, 1061, 851, 728, 607, 536, 492, 474, 408, 379, 384, 317, 317, 251, 249, 260, 250, 224, 199, 223, 197, 182, 181, 182, 155, 174, 134, 132, 1128, 806, 679, 537, 427, 335, 3946];
+  const counts = [1069, 465, 6367, 57827, 148775, 211869, 256451, 275579, 262928, 241027, 216192, 188365, 162060, 134276, 109906, 88687, 70511, 57331, 45997, 36669, 28393, 21745, 16930, 13403, 10350, 8512, 6662, 5541, 4413, 3625, 2753, 2134, 1623, 1288, 1138, 925, 798, 653, 583, 533, 502, 447, 412, 398, 349, 341, 274, 268, 282, 270, 246, 216, 243, 205, 196, 197, 189, 171, 189, 144, 148, 1219, 891, 739, 596, 472, 365, 4398];
 
   const total = counts.reduce((a,b)=>a+b,0);
   const bars = Array.from(document.querySelectorAll('.bar'));
@@ -419,47 +456,5 @@
       `Pasa el cursor por un intervalo para ver el <span class="perc">porcentaje acumulado</span>.`;
   });
 </script>
-
-
-
-<link href='https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap' rel='stylesheet'>
-<style>
-    .home-button {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #9acd32;
-        color: white;
-        padding: 10px 15px;
-        border-radius: 8px;
-        text-decoration: none;
-        font-family: 'Outfit', sans-serif;
-        font-weight: 600;
-        z-index: 10000;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        border: 1px solid rgba(255,255,255,0.2);
-    }
-    .home-button:hover {
-        background-color: #6b8e23;
-        transform: translateY(-2px);
-        box-shadow: 0 6px 15px rgba(0,0,0,0.4);
-        color: white;
-    }
-    @media (max-width: 768px) {
-        .home-button {
-            bottom: 15px;
-            right: 15px;
-            padding: 8px 12px;
-            font-size: 14px;
-        }
-    }
-</style>
-<a href='../index.html' class='home-button'>
-    <span>&#x1F3E0;</span> Inicio
-</a>
 </body>
 </html>

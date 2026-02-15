@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<head><script>
+  (function() {
+    const theme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
   <meta charset="UTF-8">
   <title>Variación YoY mensual de usos – BiciElx</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -199,9 +204,41 @@
         color: #9ca3af;
       }
     }
-  </style>
+  
+  :root {
+    --primary: #9acd32;
+    --bg-body: #020617;
+    --text-main: #f9fafb;
+  }
+  [data-theme="light"] {
+    --bg-body: #f8fafc;
+    --text-main: #0f172a;
+  }
+  body {
+    background-color: var(--bg-body) !important;
+    color: var(--text-main) !important;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .back-home {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 10000;
+    background: var(--primary);
+    color: #020617;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.8rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.2s, background 0.2s;
+    font-family: sans-serif;
+  }
+  .back-home:hover { transform: scale(1.05); background: #86b32d; }
+</style>
 </head>
-<body>
+<body><a href="../index.html" class="back-home">← Volver al inicio</a>
 <header>
   <div class="header-inner">
     <h1>Variación YoY mensual de usos – BiciElx</h1>
@@ -1104,11 +1141,60 @@
       <td>11674</td>
       <td>53.82</td>
     </tr>
+    <tr>
+      <td>2025-06</td>
+      <td>30345</td>
+      <td>16280</td>
+      <td>14065</td>
+      <td>86.39</td>
+    </tr>
+    <tr>
+      <td>2025-07</td>
+      <td>24652</td>
+      <td>13238</td>
+      <td>11414</td>
+      <td>86.22</td>
+    </tr>
+    <tr>
+      <td>2025-08</td>
+      <td>19927</td>
+      <td>9119</td>
+      <td>10808</td>
+      <td>118.52</td>
+    </tr>
+    <tr>
+      <td>2025-09</td>
+      <td>34557</td>
+      <td>16421</td>
+      <td>18136</td>
+      <td>110.44</td>
+    </tr>
+    <tr>
+      <td>2025-10</td>
+      <td>43476</td>
+      <td>20675</td>
+      <td>22801</td>
+      <td>110.28</td>
+    </tr>
+    <tr>
+      <td>2025-11</td>
+      <td>40680</td>
+      <td>19916</td>
+      <td>20764</td>
+      <td>104.26</td>
+    </tr>
+    <tr>
+      <td>2025-12</td>
+      <td>31168</td>
+      <td>15598</td>
+      <td>15570</td>
+      <td>99.82</td>
+    </tr>
   </tbody>
 </table>
       </div>
       <p class="footer-note">
-        
+        Descarga CSV: <code>tabla_yoy_mensual.csv</code> (incluido en esta carpeta).
       </p>
     </div>
   </section>
@@ -1174,47 +1260,5 @@
 <footer>
   Página generada automáticamente a partir de los datos de uso de BiciElx (serie histórica mensual).
 </footer>
-
-
-
-<link href='https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap' rel='stylesheet'>
-<style>
-    .home-button {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #9acd32;
-        color: white;
-        padding: 10px 15px;
-        border-radius: 8px;
-        text-decoration: none;
-        font-family: 'Outfit', sans-serif;
-        font-weight: 600;
-        z-index: 10000;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        border: 1px solid rgba(255,255,255,0.2);
-    }
-    .home-button:hover {
-        background-color: #6b8e23;
-        transform: translateY(-2px);
-        box-shadow: 0 6px 15px rgba(0,0,0,0.4);
-        color: white;
-    }
-    @media (max-width: 768px) {
-        .home-button {
-            bottom: 15px;
-            right: 15px;
-            padding: 8px 12px;
-            font-size: 14px;
-        }
-    }
-</style>
-<a href='../index.html' class='home-button'>
-    <span>&#x1F3E0;</span> Inicio
-</a>
 </body>
 </html>

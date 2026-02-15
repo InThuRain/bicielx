@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+<head><script>
+  (function() {
+    const theme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
   <meta charset="UTF-8">
   <title>Mapas de variación anual de frecuencia relativa – BiciElx</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -159,9 +164,41 @@
         color: #9ca3af;
       }
     }
-  </style>
+  
+  :root {
+    --primary: #9acd32;
+    --bg-body: #020617;
+    --text-main: #f9fafb;
+  }
+  [data-theme="light"] {
+    --bg-body: #f8fafc;
+    --text-main: #0f172a;
+  }
+  body {
+    background-color: var(--bg-body) !important;
+    color: var(--text-main) !important;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .back-home {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 10000;
+    background: var(--primary);
+    color: #020617;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.8rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.2s, background 0.2s;
+    font-family: sans-serif;
+  }
+  .back-home:hover { transform: scale(1.05); background: #86b32d; }
+</style>
 </head>
-<body>
+<body><a href="../index.html" class="back-home">← Volver al inicio</a>
 <header>
   <div class="header-inner">
     <h1>Variación anual de frecuencia relativa – BiciElx</h1>
@@ -230,47 +267,5 @@
     }
   });
 </script>
-
-
-
-<link href='https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap' rel='stylesheet'>
-<style>
-    .home-button {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #9acd32;
-        color: white;
-        padding: 10px 15px;
-        border-radius: 8px;
-        text-decoration: none;
-        font-family: 'Outfit', sans-serif;
-        font-weight: 600;
-        z-index: 10000;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        border: 1px solid rgba(255,255,255,0.2);
-    }
-    .home-button:hover {
-        background-color: #6b8e23;
-        transform: translateY(-2px);
-        box-shadow: 0 6px 15px rgba(0,0,0,0.4);
-        color: white;
-    }
-    @media (max-width: 768px) {
-        .home-button {
-            bottom: 15px;
-            right: 15px;
-            padding: 8px 12px;
-            font-size: 14px;
-        }
-    }
-</style>
-<a href='../index.html' class='home-button'>
-    <span>&#x1F3E0;</span> Inicio
-</a>
 </body>
 </html>

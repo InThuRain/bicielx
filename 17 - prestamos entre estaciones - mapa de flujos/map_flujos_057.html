@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_6f47a19246db6abdfea8fadf8a88bc87 {
+                #map_465eeac2c6bfd3fdcfee3a7956ff76c8 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,16 +54,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_6f47a19246db6abdfea8fadf8a88bc87" ></div>
+            <div class="folium-map" id="map_465eeac2c6bfd3fdcfee3a7956ff76c8" ></div>
         
-
-
 </body>
 <script>
     
     
-            var map_6f47a19246db6abdfea8fadf8a88bc87 = L.map(
-                "map_6f47a19246db6abdfea8fadf8a88bc87",
+            var map_465eeac2c6bfd3fdcfee3a7956ff76c8 = L.map(
+                "map_465eeac2c6bfd3fdcfee3a7956ff76c8",
                 {
                     center: [38.267, -0.7129],
                     crs: L.CRS.EPSG3857,
@@ -75,13 +73,13 @@
 
                 }
             );
-            L.control.scale().addTo(map_6f47a19246db6abdfea8fadf8a88bc87);
+            L.control.scale().addTo(map_465eeac2c6bfd3fdcfee3a7956ff76c8);
 
             
 
         
     
-            var tile_layer_2ee6bd4f31adce703309fb95a6fa389a = L.tileLayer(
+            var tile_layer_f91254217ff4792b6aa26bbe8124ca9e = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -98,39 +96,71 @@
             );
         
     
-            tile_layer_2ee6bd4f31adce703309fb95a6fa389a.addTo(map_6f47a19246db6abdfea8fadf8a88bc87);
+            tile_layer_f91254217ff4792b6aa26bbe8124ca9e.addTo(map_465eeac2c6bfd3fdcfee3a7956ff76c8);
         
     
-            var circle_marker_61a181bcb29a97e7a1578ab47b464c0d = L.circleMarker(
+            var circle_marker_2cc94258923bfcceeba62e09f26b6b8b = L.circleMarker(
                 [38.2954917, -0.58666],
                 {"bubblingMouseEvents": true, "color": "black", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "white", "fillOpacity": 1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
-            ).addTo(map_6f47a19246db6abdfea8fadf8a88bc87);
+            ).addTo(map_465eeac2c6bfd3fdcfee3a7956ff76c8);
         
     
-        var popup_678501dc1d52f7745cbde85582eec7ba = L.popup({
+        var popup_51053b78cdafa111649475793323747b = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_5ab82cad231bbb4f76a342a31a19091f = $(`<div id="html_5ab82cad231bbb4f76a342a31a19091f" style="width: 100.0%; height: 100.0%;">57 – IES Torrellano</div>`)[0];
-                popup_678501dc1d52f7745cbde85582eec7ba.setContent(html_5ab82cad231bbb4f76a342a31a19091f);
+                var html_c71fbfdbebbea9039371703b5bf88ef0 = $(`<div id="html_c71fbfdbebbea9039371703b5bf88ef0" style="width: 100.0%; height: 100.0%;">57 – IES Torrellano</div>`)[0];
+                popup_51053b78cdafa111649475793323747b.setContent(html_c71fbfdbebbea9039371703b5bf88ef0);
             
         
 
-        circle_marker_61a181bcb29a97e7a1578ab47b464c0d.bindPopup(popup_678501dc1d52f7745cbde85582eec7ba)
+        circle_marker_2cc94258923bfcceeba62e09f26b6b8b.bindPopup(popup_51053b78cdafa111649475793323747b)
         ;
 
         
     
     
-            var poly_line_67f2ac0642d8131d540e17ea7e6f0de0 = L.polyline(
-                [[38.295436501885604, -0.5865696982555437], [38.29416480188561, -0.5878316982555437]],
+            var poly_line_c5b6dd22fa1b854176f12fd1f702df4b = L.polyline(
+                [[38.2954209521919, -0.5865894677307268], [38.291959252191894, -0.5922264677307268]],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 14.0}
-            ).addTo(map_6f47a19246db6abdfea8fadf8a88bc87);
+            ).addTo(map_465eeac2c6bfd3fdcfee3a7956ff76c8);
         
     
-            poly_line_67f2ac0642d8131d540e17ea7e6f0de0.bindTooltip(
+            poly_line_c5b6dd22fa1b854176f12fd1f702df4b.bindTooltip(
+                `<div>
+                     10 viajes → 60 – Carrer de la Figuera 2 Torrellano (media 14m 14s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_ceb45e3b2072e5016b34bc91ba7222bb = L.polyline(
+                [[38.29548606800344, -0.5865457688087945], [38.29081836800344, -0.5869193688087946]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5.6}
+            ).addTo(map_465eeac2c6bfd3fdcfee3a7956ff76c8);
+        
+    
+            poly_line_ceb45e3b2072e5016b34bc91ba7222bb.bindTooltip(
+                `<div>
+                     3 viajes → 58 – Polideportivo Torrellano (media 18m 48s)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_46326acb2ab96b326d60eae6788e4fd1 = L.polyline(
+                [[38.295436501885604, -0.5865696982555437], [38.29416480188561, -0.5878316982555437]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 5.6}
+            ).addTo(map_465eeac2c6bfd3fdcfee3a7956ff76c8);
+        
+    
+            poly_line_46326acb2ab96b326d60eae6788e4fd1.bindTooltip(
                 `<div>
                      3 viajes → 59 – Calle San Crispín 1 Torrellano (media 06m 22s)
                  </div>`,
@@ -140,47 +170,15 @@
             );
         
     
-            var poly_line_b49c71e00e575a3266492d5e0ea7af23 = L.polyline(
-                [[38.2954209521919, -0.5865894677307268], [38.291959252191894, -0.5922264677307268]],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 10.0}
-            ).addTo(map_6f47a19246db6abdfea8fadf8a88bc87);
-        
-    
-            poly_line_b49c71e00e575a3266492d5e0ea7af23.bindTooltip(
-                `<div>
-                     2 viajes → 60 – Carrer de la Figuera 2 Torrellano (media 21m 30s)
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var poly_line_d2c2b0c8af481ce945d76482e9d6e29b = L.polyline(
-                [[38.29548606800344, -0.5865457688087945], [38.29081836800344, -0.5869193688087946]],
-                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 6.0}
-            ).addTo(map_6f47a19246db6abdfea8fadf8a88bc87);
-        
-    
-            poly_line_d2c2b0c8af481ce945d76482e9d6e29b.bindTooltip(
-                `<div>
-                     1 viajes → 58 – Polideportivo Torrellano (media 05m 32s)
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var poly_line_56e5a063293a283dc3a8ebbdab5a9087 = L.polyline(
+            var poly_line_932f9f52ce90ffb68645cb1fac34f556 = L.polyline(
                 [[38.2921007478081, -0.5923675322692731], [38.2955624478081, -0.5867305322692731]],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 14.0}
-            ).addTo(map_6f47a19246db6abdfea8fadf8a88bc87);
+            ).addTo(map_465eeac2c6bfd3fdcfee3a7956ff76c8);
         
     
-            poly_line_56e5a063293a283dc3a8ebbdab5a9087.bindTooltip(
+            poly_line_932f9f52ce90ffb68645cb1fac34f556.bindTooltip(
                 `<div>
-                     3 viajes ← 60 – Carrer de la Figuera 2 Torrellano (media 05m 35s)
+                     9 viajes ← 60 – Carrer de la Figuera 2 Torrellano (media 13m 42s)
                  </div>`,
                 {
   "sticky": true,
@@ -188,15 +186,15 @@
             );
         
     
-            var poly_line_77b62ad0dbba343695fa1e35d996642a = L.polyline(
+            var poly_line_74b0e27cca6eb52640008e0c0067f372 = L.polyline(
                 [[38.29082963199656, -0.5871478311912055], [38.29549733199656, -0.5867742311912054]],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 10.0}
-            ).addTo(map_6f47a19246db6abdfea8fadf8a88bc87);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 6.0}
+            ).addTo(map_465eeac2c6bfd3fdcfee3a7956ff76c8);
         
     
-            poly_line_77b62ad0dbba343695fa1e35d996642a.bindTooltip(
+            poly_line_74b0e27cca6eb52640008e0c0067f372.bindTooltip(
                 `<div>
-                     2 viajes ← 58 – Polideportivo Torrellano (media 25m 36s)
+                     3 viajes ← 58 – Polideportivo Torrellano (media 24m 31s)
                  </div>`,
                 {
   "sticky": true,
@@ -204,15 +202,15 @@
             );
         
     
-            var poly_line_dc85a3497bcd21af80d892e273370f73 = L.polyline(
+            var poly_line_63f06055afcdb1fdb5508b277d2d3c28 = L.polyline(
                 [[38.2942751981144, -0.5880123017444562], [38.295546898114395, -0.5867503017444562]],
-                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 6.0}
-            ).addTo(map_6f47a19246db6abdfea8fadf8a88bc87);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.75, "smoothFactor": 1.0, "stroke": true, "weight": 4.666666666666666}
+            ).addTo(map_465eeac2c6bfd3fdcfee3a7956ff76c8);
         
     
-            poly_line_dc85a3497bcd21af80d892e273370f73.bindTooltip(
+            poly_line_63f06055afcdb1fdb5508b277d2d3c28.bindTooltip(
                 `<div>
-                     1 viajes ← 59 – Calle San Crispín 1 Torrellano (media 05m 34s)
+                     2 viajes ← 59 – Calle San Crispín 1 Torrellano (media 11m 52s)
                  </div>`,
                 {
   "sticky": true,
